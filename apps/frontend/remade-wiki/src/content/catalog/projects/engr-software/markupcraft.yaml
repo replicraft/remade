@@ -1,0 +1,14 @@
+# Scope and limitations are maintainer-reported in the repository README.
+slug: markupcraft
+name: MarkupCraft
+authors: [engr-software]
+repository: https://github.com/engr-software/markupcraft
+originals: [bluebeam-revu]
+category: engineering
+languages: [Rust]
+platforms: [Linux, macOS, Windows, FreeBSD, Web]
+status: alpha
+compatibility: partial
+description: MarkupCraft by engr-software independently implements Revu-style PDF markup and quantity takeoff for construction drawings, with calibrated scales, measurements, a Markups List with totals, and reading and writing of Revu-compatible markups.
+license: MIT OR Apache-2.0
+limitations: Alpha. Proprietary formats without a public specification (tool sets, markup summaries) and binary DWG are not supported; no live cloud collaboration sessions. Full Revu compatibility is not claimed.
