@@ -1054,3 +1054,13 @@
   url: https://fosterkent.com/motionmixes/
   category: creative
   aliases: ["Foster Kent MotionMixes"]
+- slug: picsart
+  name: Picsart
+  url: https://picsart.com/
+  category: creative
+  aliases: [PicsArt, Picsart Photo Editor]
+- slug: inshot
+  name: InShot
+  url: https://inshot.com/
+  category: creative
+  aliases: [InShot Video Editor]

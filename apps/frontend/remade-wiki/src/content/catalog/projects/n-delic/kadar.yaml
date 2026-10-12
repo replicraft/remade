@@ -1,0 +1,14 @@
+# Scope, status and limitations are maintainer-reported in the repository README and ROADMAP.
+slug: kadar
+name: Kadar
+authors: [n-delic]
+repository: https://github.com/n-delic/kadar
+originals: [picsart, inshot]
+category: creative
+languages: [Kotlin]
+platforms: [Android]
+status: alpha
+compatibility: partial
+description: Kadar independently implements Picsart- and InShot-style mobile editing on Android, including layered photo editing with on-device background removal, captions and stickers, and video trimming, speed, music and timed text and sticker layers.
+license: GPL-3.0-or-later
+limitations: Early alpha and a broader alternative rather than a full clone. No Picsart or InShot project-file compatibility, AI or generative effects, templates, filter presets, multi-clip editing or transitions yet. Android only.
