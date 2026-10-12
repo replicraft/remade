@@ -1,3 +1,0 @@
-original: rhino3d
-reason: Reproduce Rhino's NURBS curves, surfaces, solid modeling and drafting workflows, with compatible geometry exchange and architectural design tools, including Grasshopper-style parametric modeling. Could extend CADCraft for architectural work or SolidCraft (https://github.com/bherbruck/solidcraft), or be separate projects sharing one 3D engine.
-suggested_names: [CurveCraft]
