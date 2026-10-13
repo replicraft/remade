@@ -45,7 +45,7 @@ The `prepare` script in `package.json` runs `lefthook install` during pnpm insta
 
 Before committing, Biome fixes and checks staged frontend files; Ruff fixes and formats staged Python files. Changed Python files or project configuration also trigger ty. Formatting fixes are automatically staged; remaining lint or type errors block the commit. Lefthook temporarily hides unstaged portions of partially staged files while running pre-commit jobs.
 
-Biome covers JavaScript, TypeScript, JSX, TSX, Astro, HTML, CSS and JSON here. SVG assets are explicitly excluded. Its frontend CI step reports diagnostics without failing the required build check; frontend type checks, unit tests and production build remain required. It does not format Markdown, YAML or TOML; CI validates catalog YAML with the existing strict validator. These hooks do not run the browser suites.
+Biome covers JavaScript, TypeScript, JSX, TSX, Astro, HTML, CSS and JSON here. SVG assets and the generated `cache/github-metadata.json` are explicitly excluded. The metadata collector owns the cache serialization; formatting it during a PR merge creates unnecessary conflicts with automated refreshes. Its frontend CI step reports diagnostics without failing the required build check; frontend type checks, unit tests and production build remain required. It does not format Markdown, YAML or TOML; CI validates catalog YAML with the existing strict validator. These hooks do not run the browser suites.
 
 ## Local metadata refresh
 

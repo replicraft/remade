@@ -6,7 +6,13 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"includes": ["**", "!!**/dist", "!!**/*.svg", "*.md"]
+		"includes": [
+			"**",
+			"!!**/dist",
+			"!!**/*.svg",
+			"!!cache/github-metadata.json",
+			"*.md"
+		]
 	},
 	"formatter": {
 		"enabled": true,

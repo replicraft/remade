@@ -1055,6 +1055,12 @@
   category: creative
   aliases: ["Foster Kent MotionMixes"]
 
+- slug: google-earth
+  name: Google Earth
+  url: https://earth.google.com/
+  category: engineering
+  aliases: [Google Earth Pro]
+
 # Requested in https://github.com/replicraft/remade/issues/34.
 # Microsoft's public repository covers MS-DOS 1.25, 2.0 and 4.0; this target is later DOS compatibility.
 - slug: microsoft-ms-dos

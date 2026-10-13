@@ -1,0 +1,15 @@
+# Features are maintainer-reported in the README; MIT is declared in Cargo.toml.
+slug: earthcraft
+name: EarthCraft
+authors: [therichronicles]
+repository: https://github.com/therichronicles/EarthCraft
+originals: [google-earth]
+category: engineering
+languages: [Rust]
+platforms: [Windows, macOS, Linux]
+status: experimental
+compatibility: partial
+description: An early Rust implementation targeting Google Earth-style globe navigation and KML placemark workflows. Uses egui and CPU ray-casting, with satellite, street and topographic tiles, place search, animated fly-to navigation, a geodesic ruler and KML import/export.
+license: MIT
+docs: https://github.com/therichronicles/EarthCraft#readme
+limitations: Just begun; compatibility is maintainer-reported and not independently verified. No real 3D terrain, buildings, Street View or Earth Studio workflows. Imagery and search rely on third-party online services and their usage limits. MIT is declared in Cargo.toml; no standalone license file is included.
