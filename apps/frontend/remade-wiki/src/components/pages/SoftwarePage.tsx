@@ -50,6 +50,8 @@ export default function SoftwarePage({
 			</div>
 
 			<section className="relative">
+				{request && <div className="mb-8">{children}</div>}
+
 				<h2
 					className={entries.length > 1 ? "min-h-[50px] pr-[160px]" : undefined}
 				>
@@ -100,8 +102,6 @@ export default function SoftwarePage({
 						These are community wishes, not active implementation projects or
 						reserved names.
 					</p>
-
-					{children}
 
 					<a
 						className="inline-flex cursor-pointer items-center justify-center rounded-lg border border-lime bg-lime px-4 py-3 text-sm font-semibold text-canvas hover:bg-lime-light hover:text-canvas"

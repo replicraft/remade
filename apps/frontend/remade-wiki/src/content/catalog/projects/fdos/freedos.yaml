@@ -1,0 +1,16 @@
+# Requested in https://github.com/replicraft/remade/issues/34.
+# The source link identifies the kernel; distribution components retain their own licenses.
+slug: freedos
+name: FreeDOS
+authors: [fdos]
+repository: https://github.com/FDOS/kernel
+originals: [microsoft-ms-dos]
+category: operating-systems
+languages: [C, Assembly]
+status: stable
+compatibility: high
+description: FreeDOS independently implements a DOS-compatible operating system for running legacy MS-DOS applications and games on IBM-compatible PCs. Its kernel derives from Pat Villani's DOS-C and implements DOS services alongside a separately maintained command interpreter and utilities.
+license: GPL-2.0-or-later
+website: https://www.freedos.org/
+docs: https://github.com/FDOS/kernel#readme
+limitations: DOS compatibility is project-reported, not independently verified for every application or hardware configuration. Targets DOS programs rather than modern Windows applications. Distribution components use their own licenses. The catalog target covers later MS-DOS releases, not the early versions Microsoft has open-sourced.

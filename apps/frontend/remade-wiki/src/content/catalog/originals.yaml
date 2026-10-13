@@ -1054,6 +1054,15 @@
   url: https://fosterkent.com/motionmixes/
   category: creative
   aliases: ["Foster Kent MotionMixes"]
+
+# Requested in https://github.com/replicraft/remade/issues/34.
+# Microsoft's public repository covers MS-DOS 1.25, 2.0 and 4.0; this target is later DOS compatibility.
+- slug: microsoft-ms-dos
+  name: Microsoft MS-DOS (5.x and 6.x)
+  url: https://github.com/microsoft/MS-DOS
+  category: operating-systems
+  aliases: [MS-DOS, MS-DOS 5, MS-DOS 6, MS-DOS 6.22]
+
 - slug: picsart
   name: Picsart
   url: https://picsart.com/

@@ -3,6 +3,7 @@ slug: lookout
 name: Lookout
 authors: [gavindi]
 repository: https://github.com/gavindi/lookout
+website: https://lookout-mail.com/
 originals: [microsoft-outlook]
 category: productivity
 languages: [Rust]
