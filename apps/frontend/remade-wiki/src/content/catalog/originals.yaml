@@ -1079,3 +1079,9 @@
   url: https://inshot.com/
   category: creative
   aliases: [InShot Video Editor]
+
+- slug: final-draft
+  name: Final Draft
+  url: https://www.finaldraft.com/
+  category: creative
+  aliases: [Final Draft 13]

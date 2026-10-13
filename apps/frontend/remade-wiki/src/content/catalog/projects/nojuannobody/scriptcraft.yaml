@@ -1,0 +1,15 @@
+# Scope and limitations are based on the repository README; compatibility is not independently verified.
+slug: scriptcraft
+name: ScriptCraft
+authors: [nojuannobody]
+repository: https://github.com/NoJuanNobody/scriptcraft
+originals: [final-draft]
+category: creative
+languages: [Rust]
+platforms: [Linux, macOS, Windows, Web]
+status: experimental
+compatibility: partial
+description: An independent Final Draft-style screenwriting application with Enter/Tab element flow, SmartType autocompletion, industry-standard pagination with (MORE)/(CONT'D) dialogue breaks, dual dialogue, a scene navigator, index cards, character and scene reports, FDX and Fountain reading and writing, and PDF export.
+license: MIT OR Apache-2.0
+docs: https://github.com/NoJuanNobody/scriptcraft/blob/main/docs/parity-checklist.md
+limitations: Early development; revision mode, locked pages, Beat Board, Outline Editor, collaboration and templates are not yet implemented. FDX compatibility is partial and maintainer-reported; Final Draft behavior has not been verified side by side.

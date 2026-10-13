@@ -171,6 +171,15 @@
       "pushedAt": "2026-07-26T16:09:14Z",
       "stars": 37
     },
+    "nojuannobody/scriptcraft": {
+      "fetchedAt": "2026-10-13T01:39:10Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-10-12T22:04:32Z",
+      "stars": 1
+    },
     "opencut-app/opencut": {
       "fetchedAt": "2026-10-12T17:00:05Z",
       "forks": 9200,
