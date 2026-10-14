@@ -1,0 +1,13 @@
+slug: clothcraft
+name: ClothCraft
+repository: https://github.com/erythrofr/ClothCraft
+originals: [marvelous-designer]
+category: creative
+languages: [Rust]
+platforms: [Windows]
+status: alpha
+compatibility: targeting
+description: Independent implementation targeting Marvelous Designer's pattern-based garment workflow, with 2D polygon and Bezier drafting, linked 2D/3D edge sewing, 3D arrangement and cloth simulation.
+license: MIT
+docs: https://github.com/erythrofr/ClothCraft/blob/main/README.md
+limitations: Early alpha with a French UI; Windows is the only exercised desktop platform. No native Marvelous/CLO file support or verified feature/simulation parity. Contact detection remains CPU in the hybrid GPU solver. Friction, animated avatars, calibrated fabrics, interactive partial sewing and most industry formats are not implemented.
