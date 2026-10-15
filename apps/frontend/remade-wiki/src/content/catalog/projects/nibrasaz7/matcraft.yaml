@@ -1,0 +1,25 @@
+slug: matcraft
+name: MatCraft
+authors: [nibrasaz7]
+repository: https://github.com/NibrasAz7/matcraft
+originals: [matlab]
+category: engineering
+languages:
+  - Rust
+platforms:
+  - Windows
+status: alpha
+compatibility: partial
+description: >-
+  Clean-room numerical computing environment implementing the MATLAB
+  language: a native Rust interpreter for .m files with a column-major
+  matrix core, ~280 builtins, complex and sparse matrices, 2D/3D plotting
+  with SVG/PNG/PDF export, a MATLAB-style desktop Studio, .mat v5 file
+  I/O, a CLI, and MCP/TCP automation channels.
+license: MIT OR Apache-2.0
+docs: https://github.com/NibrasAz7/matcraft/blob/master/docs/language.md
+limitations: >-
+  Alpha. No anonymous function handles (@), classdef OOP, N-D indexing,
+  image I/O, or Simulink-style block modeling yet. In a sweep of 638
+  real-world pre-2022 .m files across 8 domains, ~87% parse cleanly;
+  methodology and ranked gaps in docs/wild-corpus.md.

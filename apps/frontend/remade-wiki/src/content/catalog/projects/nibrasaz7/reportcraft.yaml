@@ -1,0 +1,14 @@
+# The README explicitly identifies this repository as research without working code.
+slug: reportcraft
+name: ReportCraft
+authors: [nibrasaz7]
+repository: https://github.com/NibrasAz7/ReportCraft
+originals: [microsoft-power-bi]
+category: productivity
+languages: [Rust]
+status: planned
+compatibility: targeting
+description: A planned Rust-native business-intelligence studio targeting Power BI-style data connections, relationship modeling, measures, dashboards and reports. The repository currently defines the product vision and research; these features are proposed rather than implemented.
+license: MIT OR Apache-2.0
+docs: https://github.com/NibrasAz7/ReportCraft/blob/main/vision.md
+limitations: Planned; no working code or usable application yet. Rust is the intended language, not an implemented engine. The name is provisional, and Power BI file, expression, connector and report compatibility have not been demonstrated.

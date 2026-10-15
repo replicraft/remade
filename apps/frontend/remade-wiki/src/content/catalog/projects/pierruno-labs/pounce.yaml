@@ -1,0 +1,15 @@
+# Features and platform restrictions are documented in the upstream README.
+slug: pounce
+name: Pounce
+authors: [pierruno-labs]
+repository: https://github.com/pierruno-labs/Pounce
+originals: [everything]
+category: productivity
+languages: [Rust]
+platforms: [Windows]
+status: experimental
+compatibility: partial
+description: An Everything-style file search application with cached drive indexes, NTFS master-file-table indexing and a parallel folder-scan fallback. Supports Everything-style filters, wildcards and regular expressions, with text editing, image and hex previews, and Windows shell actions.
+license: MIT
+docs: https://github.com/pierruno-labs/Pounce/blob/main/docs/user-guide.md
+limitations: Windows only. Direct NTFS master-file-table indexing requires administrator privileges; otherwise it scans folders. Focuses on its own search and preview workflow; full Everything query, interface and SDK compatibility are not documented.

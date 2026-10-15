@@ -1,3 +1,0 @@
-original: quadspinner-gaea
-reason: Reproduce Gaea's node-based terrain generation, erosion, masks and landscape export workflows.
-suggested_names: [TerrainCraft]

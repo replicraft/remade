@@ -1,0 +1,16 @@
+# Compatibility claims and remaining differences are documented in the README.
+slug: nerthus
+name: Nerthus
+authors: [danemadsen]
+repository: https://github.com/danemadsen/nerthus
+originals: [quadspinner-gaea]
+category: creative
+languages: [Rust]
+platforms: [macOS, Web]
+status: experimental
+compatibility: partial
+description: Independent Gaea-style node-based terrain generator with terrain primitives, erosion, surface detail, coloring and map export. The maintainer reports reading and writing Gaea .terrain projects. Includes a desktop editor, command-line builds and local MCP automation, plus a restricted browser editor.
+license: MIT
+website: https://nerthus.app/
+docs: https://github.com/danemadsen/nerthus#readme
+limitations: Windows and Linux builds are untested. Node output, palettes, interface behavior and image decoding differ from Gaea; Houdini, Unity and Unreal bridges are omitted. Browser builds run on one CPU thread and omit map export, file imports, baking, persistent settings and MCP.

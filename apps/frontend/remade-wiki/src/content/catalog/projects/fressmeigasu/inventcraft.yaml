@@ -1,0 +1,14 @@
+# The roadmap and core source distinguish implemented modeling from placeholder apps.
+slug: inventcraft
+name: InventCraft
+authors: [fressmeigasu]
+repository: https://github.com/Fressmeigasu/InventCraft
+originals: [autodesk-inventor]
+category: engineering
+languages: [Rust]
+status: experimental
+compatibility: targeting
+description: An experimental Autodesk Inventor-style CAD core built on SolidCraft, with part documents and extrude, revolve and cut commands. Plans to integrate CADCraft sketch constraints and FieldCraft finite-element analysis. Current work is a modeling library foundation rather than a usable desktop CAD application.
+license: MIT OR Apache-2.0
+docs: https://github.com/Fressmeigasu/InventCraft/blob/main/ROADMAP.md
+limitations: Very early. The desktop app is a placeholder; CLI snapshot and MCP commands are stubs, and CLI measurement prints mock values. Sketch constraints, FEA, STEP/STL export and the desktop viewport remain planned. Native Inventor file compatibility is not documented. Requires upstream Craft submodules; licensing is declared in Cargo.toml without standalone license texts.

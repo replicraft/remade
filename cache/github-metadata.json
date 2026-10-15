@@ -144,6 +144,15 @@
       "pushedAt": "2026-10-14T10:02:22Z",
       "stars": 0
     },
+    "erythrofr/clothcraft": {
+      "fetchedAt": "2026-10-15T02:34:10Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": "MIT",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-10-14T22:23:52Z",
+      "stars": 1
+    },
     "fdos/kernel": {
       "fetchedAt": "2026-10-14T13:05:01Z",
       "forks": 179,

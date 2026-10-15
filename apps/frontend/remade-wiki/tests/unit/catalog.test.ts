@@ -10,6 +10,7 @@ import {
 	badgeLanguages,
 	entryCategories,
 	findBySlug,
+	label,
 } from "../../src/lib/presentation";
 import {
 	type Catalog,
@@ -26,6 +27,17 @@ beforeAll(async () => {
 });
 
 describe("catalog loading and validation", () => {
+	it("accepts and labels planned projects without claiming working compatibility", () => {
+		const project = v.parse(projectSchema, {
+			...catalog.projects[0],
+			status: "planned",
+			compatibility: "targeting",
+		});
+
+		expect(project.status).toBe("planned");
+		expect(label(project.status)).toBe("Planned");
+	});
+
 	it("preserves authored entries, project references and featured selections", () => {
 		expect(catalog.entries).toHaveLength(
 			catalog.projects.length + catalog.tools.length,

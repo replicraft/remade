@@ -1,3 +1,0 @@
-original: matlab
-reason: Reproduce MATLAB's numerical computing language, array operations, plotting and script compatibility, together with Simulink's block-diagram modeling, simulation and control-system workflows. MathCraft could also include Mathcad-style engineering worksheets with readable equations, unit checking, live calculations and annotated reports in one application.
-suggested_names: [MathCraft, LabCraft]

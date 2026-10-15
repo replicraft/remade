@@ -1,3 +1,0 @@
-original: autodesk-inventor
-reason: Reproduce Inventor's parametric mechanical parts, assemblies, sheet-metal design and manufacturing drawings. Could extend SolidCraft (https://github.com/bherbruck/solidcraft), or be separate projects sharing one 3D engine.
-suggested_names: [PartCraft, InventCraft]

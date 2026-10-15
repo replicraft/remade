@@ -13,11 +13,11 @@ A submission must meet **all** of these conditions:
 1. **Identifiable original.** It targets a specific, existing software product or a well-defined software interface, protocol, or subsystem. The original must be identifiable by name and a credible reference URL.
 2. **Independent implementation.** Its implementation is independently authored and must not incorporate leaked, stolen, or otherwise unauthorized source code, binaries, or copyrighted assets from the original.
 3. **Faithful reimplementation goal.** It aims to reproduce the original's observable behavior, compatibility, interface, file formats, or other specified functionality. Exact compatibility is a **goal**, not a requirement that every feature already be finished. Broader alternatives may be included **with maintainer approval**, provided they meet the other eligibility requirements and accurately describe their scope and limitations.
-4. **Open-source implementation.** The submitted source is publicly accessible, under an identifiable open-source license, and has enough substance to demonstrate an actual implementation rather than an announcement or empty scaffold.
+4. **Public source and licensing.** The submitted repository is publicly accessible and normally under an identifiable open-source license. Maintainers may also accept publicly visible projects without a license, recorded exactly as `license: Unlicensed`; these are not represented as open-source software or as granting reuse rights. Implemented projects must contain substantive source. Early projects with only research, plans or scaffolding may be listed with `status: planned`, a specific compatibility target and a description that clearly distinguishes planned work from implemented features.
 5. **Current catalog scope.** For now, Remade focuses on reimplementations of software whose original implementation is **not released as open-source software**. A separate rewrite of an already-open-source application does not currently qualify.
 6. **Honest documentation.** The repository must describe its scope and limitations accurately. Projects must not claim complete compatibility or a verified clean-room process without adequate support.
 
-Work-in-progress projects are welcome if they have meaningful code and a specific compatibility target. The directory may display self-reported project status and compatibility claims as such; publication is not an independent verification.
+Work-in-progress projects are welcome, including planned projects clearly labeled **Planned**. That status does not establish working software. Undocumented maturity alone does not justify the Planned status; review the repository's actual state. The directory may display self-reported project status and compatibility claims as such; publication is not an independent verification.
 
 ## 2. Projects not accepted
 
@@ -28,7 +28,7 @@ Remade does not accept the following as reimplementation listings:
 - General alternatives, lookalike interfaces, or products only inspired by the original, without a meaningful behavioral or compatibility objective, unless accepted **with maintainer approval**.
 - Repositories primarily redistributing unauthorized original source code, binaries, firmware, game assets, or other copyrighted material.
 - Projects whose main purpose is distributing cracks, pirated copies, or tools for unauthorized access.
-- Empty repositories, ideas without working source, deceptive listings, or duplicates of an existing listing.
+- Empty repositories without a documented target or plan, deceptive listings, or duplicates of an existing listing. Research, plans and scaffolding must use the Planned status until meaningful implementation exists.
 
 **Emulators, compatibility layers, and protocol implementations** are reviewed case by case. They qualify only when they genuinely implement a defined target and meet the independent-development requirements above.
 
@@ -67,7 +67,7 @@ Each submission must include:
 - A neutral, concise description of what functionality is being reimplemented.
 - Category, primary programming language(s), and development status.
 - Stated compatibility scope and known limitations, where documented.
-- Open-source license identifier or a link to the project's license file.
+- Open-source license identifier or a link to the project's license file; for a maintainer-approved project with no license grant, use `Unlicensed`. This is distinct from `Unlicense`, which is a permissive public-domain dedication.
 
 The project URL must link to the actual implementation, not merely a marketing page. Links must be relevant and functional. Avoid unsubstantiated superlatives and promotional claims.
 

@@ -80,10 +80,10 @@ license: MIT
 | `category` | Yes | `creative`, `productivity`, `engineering`, `operating-systems`, `games`, `developer-tools`, `protocols`, `other` |
 | `languages` | Yes | Nonempty list of programming language names |
 | `platforms` | No | Optional list of platforms |
-| `status` | Yes | `experimental`, `alpha`, `beta`, `stable`, `archived` (self-reported except GitHub archive flag) |
+| `status` | Yes | `planned`, `experimental`, `alpha`, `beta`, `stable`, `archived` (self-reported except GitHub archive flag) |
 | `compatibility` | Yes | `targeting`, `partial`, `high`, `claimed-complete` (self-reported) |
 | `description` | Yes | Plain text, factual, no user-supplied HTML |
-| `license` | Yes | SPDX-style identifier or e.g. `LicenseRef-custom` for review |
+| `license` | Yes | SPDX-style identifier, e.g. `LicenseRef-custom` for review, or `Unlicensed` for a maintainer-approved project with no license grant. `Unlicensed` is not the SPDX `Unlicense` dedication. |
 | `docs` | No | HTTPS URL |
 | `website` | No | Public HTTPS URL for the implementation's official website. Displays an Official website button on its implementation page, opening in a new tab. Omit when no official website is documented. |
 | `mirrors` | No | Nonempty list of distinct public HTTPS repository root URLs, following the `repository` URL rules. Supply documented mirrors of the same implementation, not forks or competing projects. Shown on the implementation page as Repository mirrors, opening in new tabs. |
@@ -91,6 +91,8 @@ license: MIT
 | `authors` | No | Nonempty, duplicate-free list of lowercase GitHub handles |
 
 Compatibility is not scored by Remade. `claimed-complete` is **not** a certification.
+
+Use `planned` for projects accepted under POLICY.md whose current substance is research, plans or scaffolding, with no meaningful implementation yet. Its badge reads **Planned**. Use `compatibility: targeting`, describe intended features as plans, and state the lack of working software in `limitations`. Languages may identify the documented intended implementation language at this stage. Unknown maturity alone does not justify this status. Accepted planned listings replace corresponding requests under the usual uniqueness rule; their badge and limitations must make their stage clear.
 
 ### Choosing a category
 

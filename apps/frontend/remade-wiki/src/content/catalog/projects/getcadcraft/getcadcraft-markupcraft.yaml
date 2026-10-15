@@ -9,7 +9,7 @@ languages: [JavaScript]
 platforms: [Windows, Linux, Web]
 status: experimental
 compatibility: partial
-description: A Revu-style PDF drawing-review application with markup tools, a saved Tool Chest, document comparisons and punch lists. This JavaScript application belongs to the getcadcraft suite and is separate from engr-software's Rust MarkupCraft.
+description: A Revu-style PDF drawing-review application with markup tools, a saved Tool Chest, document comparisons and punch lists. This JavaScript application belongs to the getcadcraft suite.
 license: Apache-2.0
 docs: https://github.com/getcadcraft/markupcraft#readme
 website: https://getcadcraft.com/apps/markupcraft

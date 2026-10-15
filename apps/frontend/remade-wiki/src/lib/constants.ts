@@ -9,6 +9,7 @@ export const categories = [
 	"other",
 ] as const;
 export const statuses = [
+	"planned",
 	"experimental",
 	"alpha",
 	"beta",

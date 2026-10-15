@@ -1,0 +1,16 @@
+# Scope and attribution obligations are documented in the README and LICENSE.
+slug: doory
+name: Doory
+authors: [shaongitbd]
+repository: https://github.com/shaongitbd/doory
+originals: [canva]
+category: creative
+languages: [TypeScript, Python, JavaScript]
+platforms: [Web]
+status: experimental
+compatibility: partial
+description: A broader Canva alternative for browser-based posters, social graphics, slides and other page designs. Offers templates, layers, text effects, animation, media and exports to images, PDF, video and GIF. Supports guest designs stored in the browser and self-hosted accounts, sharing and collaboration.
+license: AAL
+website: https://doory.art/
+docs: https://github.com/shaongitbd/doory#self-host-it
+limitations: Young project with a small starter template library; Canva project import and full feature compatibility are not documented. Guest designs stay in that browser; accounts and sharing require a server. Server-side PDF export needs Chromium. The Attribution Assurance License requires prominent author credit in the running application.

@@ -1,0 +1,15 @@
+# Format compatibility and remaining workflows are maintainer-reported.
+slug: openmailclient
+name: OpenMailClient
+authors: [adriaanboshoff]
+repository: https://github.com/AdriaanBoshoff/OpenMailClient
+originals: [microsoft-outlook]
+category: productivity
+languages: [Rust]
+status: experimental
+compatibility: partial
+description: Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes a CLI and PDF printing of messages and folder lists.
+license: MIT OR Apache-2.0
+website: https://adriaanboshoff.github.io/OpenMailClient/
+docs: https://github.com/AdriaanBoshoff/OpenMailClient/blob/main/docs/gaps.md
+limitations: Early development. IMAP receives Inbox mail without full folder or message-state synchronization. Calendar, People, Tasks, MCP and browser builds are unfinished. OST files are read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs, and printing produces PDF rather than sending to a printer.

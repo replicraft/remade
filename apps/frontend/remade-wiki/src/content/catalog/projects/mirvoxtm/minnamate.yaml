@@ -1,0 +1,15 @@
+# Scope and gaps are maintainer-reported; no project license grant is declared.
+slug: minnamate
+name: minnamate
+authors: [mirvoxtm]
+repository: https://github.com/mirvoxtm/minnamate
+originals: [adobe-animate]
+category: creative
+languages: [Rust]
+platforms: [Windows]
+status: experimental
+compatibility: partial
+description: An independent Animate-style editor that opens FLA files and unpacked XFL folders. Supports basic drawing, selection, symbols, frame editing, classic tweens and color effects, with undo and movie testing. Command-line tools render frames to PNG and publish SWF movies that the maintainer reports playing in Ruffle.
+license: Unlicensed
+docs: https://github.com/mirvoxtm/minnamate#readme
+limitations: No project license grant is declared. Early implementation; masks, gradients, bitmaps, shape and motion tweens, most button states and ActionScript are not implemented. Unsupported document features are reported as warnings. Desktop instructions document Windows only.

@@ -2,12 +2,22 @@ from collections.abc import Callable
 from pathlib import Path
 
 import pytest
+import yaml
 
 from catalog import collect, collect_tools, entries_by_author
 
 
 def test_empty_catalog_valid(catalog_root: Path) -> None:
     assert not collect(catalog_root)[-1]
+
+
+def test_planned_project_valid(project_catalog: Path) -> None:
+    project = project_catalog / "apps/frontend/remade-wiki/src/content/catalog/projects/impl-a.yaml"
+    source = project.read_text()
+    current_status = yaml.safe_load(source)["status"]
+    source = source.replace(f"status: {current_status}", "status: planned")
+    project.write_text(source.replace("compatibility: partial", "compatibility: targeting"))
+    assert not collect(project_catalog)[-1]
 
 
 @pytest.mark.parametrize(

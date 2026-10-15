@@ -1,0 +1,16 @@
+# Scope, hardware support and model licensing are documented in the README and license notice.
+slug: voicestudio
+name: VoiceStudio
+authors: [debpalash]
+repository: https://github.com/debpalash/VoiceStudio
+originals: [elevenlabs]
+category: creative
+languages: [Python, TypeScript, JavaScript, Rust]
+platforms: [Windows, macOS, Linux, Web]
+status: experimental
+compatibility: partial
+description: A broader ElevenLabs alternative for local voice cloning, voice design, speech generation, video dubbing, dictation, transcription and audiobooks. Combines an Electron interface and Python backend with selectable speech engines, including OmniVoice, plus a local API, MCP, batch jobs and watch folders. Remote services are optional.
+license: AGPL-3.0-only
+website: https://voicestudio.sh/
+docs: https://github.com/debpalash/VoiceStudio/blob/main/docs/feature-catalog.md
+limitations: ElevenLabs API, voice and project compatibility are not documented. Models require downloads; speed and memory needs vary by engine. Intel Macs need a remote backend; Windows ARM support is experimental. Model and tokenizer terms are separate from the app license; default OmniVoice weights are noncommercial, and some licensing reviews remain unresolved.

@@ -1,0 +1,15 @@
+# Current features, planned workflows and camera SDK limits are maintainer-reported.
+slug: open-stop-motion-studio
+name: Open Stop Motion Studio
+authors: [realhartlmax]
+repository: https://github.com/RealHartlMax/Open-Stop-Motion-Studio
+originals: [dragonframe]
+category: creative
+languages: [C#]
+platforms: [Windows, macOS, Linux]
+status: experimental
+compatibility: partial
+description: A broader Dragonframe alternative for stop-motion capture, built with Avalonia and .NET. Offers camera preview, frame capture, onion skinning, timeline playback, reference overlays and JPEG or PNG image sequences, with initial RAW import and vendor-camera integrations.
+license: GPL-3.0
+docs: https://github.com/RealHartlMax/Open-Stop-Motion-Studio#readme
+limitations: Early MVP; Dragonframe project compatibility is not documented. EXR master output, complete tethered DSLR workflows, motion control and DMX authoring remain unfinished. Some camera and RAW workflows require separately obtained vendor SDKs; integrations vary by vendor and platform.

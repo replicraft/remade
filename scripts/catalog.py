@@ -22,7 +22,7 @@ CATEGORIES = {
     "protocols",
     "other",
 }
-STATUSES = {"experimental", "alpha", "beta", "stable", "archived"}
+STATUSES = {"planned", "experimental", "alpha", "beta", "stable", "archived"}
 COMPATIBILITY = {"targeting", "partial", "high", "claimed-complete"}
 SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
 GH_REPO = re.compile(r"https://github\.com/([A-Za-z0-9-]+)/([A-Za-z0-9_.-]+)\Z")
