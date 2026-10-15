@@ -102,7 +102,7 @@ export const projectSchema = v.strictObject({
 	authors,
 	status: v.picklist(statuses),
 	compatibility: v.picklist(compatibility),
-	description: text(20, 400),
+	description: text(20, 500),
 	license: text(2, 80),
 	docs: v.optional(https),
 	website: v.optional(https),
@@ -120,7 +120,7 @@ export const toolSchema = v.strictObject({
 	name: text(2, 100),
 	repository,
 	url: https,
-	description: text(20, 400),
+	description: projectSchema.entries.description,
 	authors,
 	platforms,
 	projects: v.pipe(

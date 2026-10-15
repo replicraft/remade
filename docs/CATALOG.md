@@ -82,7 +82,7 @@ license: MIT
 | `platforms` | No | Optional list of platforms |
 | `status` | Yes | `planned`, `experimental`, `alpha`, `beta`, `stable`, `archived` (self-reported except GitHub archive flag) |
 | `compatibility` | Yes | `targeting`, `partial`, `high`, `claimed-complete` (self-reported) |
-| `description` | Yes | Plain text, factual, no user-supplied HTML |
+| `description` | Yes | 20–500 plain-text characters, factual, no user-supplied HTML |
 | `license` | Yes | SPDX-style identifier, e.g. `LicenseRef-custom` for review, or `Unlicensed` for a maintainer-approved project with no license grant. `Unlicensed` is not the SPDX `Unlicense` dedication. |
 | `docs` | No | HTTPS URL |
 | `website` | No | Public HTTPS URL for the implementation's official website. Displays an Official website button on its implementation page, opening in a new tab. Omit when no official website is documented. |
@@ -161,7 +161,7 @@ description: A browser launcher that adds access to the indexed implementation.
 projects: [example-implementation]
 ```
 
-All seven fields are required; unknown fields are rejected. `slug` must match the filename and share a unique namespace with project slugs. `name` is 2–100 plain-text characters and `description` is 20–400. `repository` follows the project repository URL rules and must be unique across projects and tools; `url` must be public HTTPS. `projects` is a nonempty, duplicate-free list of existing project slugs. This relationship identifies what a tool extends, without inventing an original or compatibility claim. A repository link does not imply an open-source license; tool licensing must be reviewed from its sources.
+All seven fields are required; unknown fields are rejected. `slug` must match the filename and share a unique namespace with project slugs. `name` is 2–100 plain-text characters and `description` is 20–500. `repository` follows the project repository URL rules and must be unique across projects and tools; `url` must be public HTTPS. `projects` is a nonempty, duplicate-free list of existing project slugs. This relationship identifies what a tool extends, without inventing an original or compatibility claim. A repository link does not imply an open-source license; tool licensing must be reviewed from its sources.
 
 Tools require `languages` (a nonempty list of 1–40 character names). They also accept optional `mirrors` (a nonempty list of unique canonical repository URLs, following the project mirror rules), `status` (the project maturity enum, maintainer-reported), `docs` and `website` (public HTTPS URLs), and `limitations` (2–400 plain-text characters). Tools inherit categories from the indexed projects they support, using every distinct category when they extend multiple projects. These derived categories appear on detail pages and match Explore category filters; the Supporting tools filter remains available. Tool card badges follow this order: Tool, documented Status, Language, and Stars when metadata is available. Categories are not card badges. No separate tool category field is needed.
 

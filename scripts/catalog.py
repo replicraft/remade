@@ -239,8 +239,8 @@ def collect(root=ROOT):
             or project["compatibility"] not in COMPATIBILITY
         ):
             errors.append(f"{loc}: invalid compatibility")
-        if not is_text(project["description"], 20, 400):
-            errors.append(f"{loc}: description must be 20–400 plain-text characters")
+        if not is_text(project["description"], 20, 500):
+            errors.append(f"{loc}: description must be 20–500 plain-text characters")
         if not is_text(project["license"], 2, 80):
             errors.append(f"{loc}: license must be a short license identifier")
         if "limitations" in project and not is_text(project["limitations"], 2, 400):
@@ -413,8 +413,8 @@ def collect_tools(root: Path = ROOT) -> tuple[list[dict], list[str]]:
             errors.append(f"{loc}: slug must match filename and be lowercase-kebab-case")
         if not is_text(tool["name"], 2, 100):
             errors.append(f"{loc}: invalid name")
-        if not is_text(tool["description"], 20, 400):
-            errors.append(f"{loc}: description must be 20–400 plain-text characters")
+        if not is_text(tool["description"], 20, 500):
+            errors.append(f"{loc}: description must be 20–500 plain-text characters")
         if not is_https(tool["url"]):
             errors.append(f"{loc}: url must be a public HTTPS URL")
         repo = tool["repository"]
