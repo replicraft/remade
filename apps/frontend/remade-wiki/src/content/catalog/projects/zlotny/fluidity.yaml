@@ -1,0 +1,14 @@
+slug: fluidity
+name: Fluidity
+authors: [zlotny]
+repository: https://github.com/zlotny/fluidity-vpn
+originals: [viscosity]
+category: other
+languages: [Rust, Swift]
+platforms: [macOS, Windows, Linux]
+status: stable
+compatibility: partial
+description: Independent OpenVPN client modeled on Viscosity's menu bar workflow. Manages connections in folders, shows live traffic and logs, and handles DNS, proxies, kill switch, credentials in the system keychain, OTP challenges, smart cards and reconnects. Includes a connection editor, import of .ovpn files and other clients' bundles, scripts, a CLI and managed deployments. A privileged service runs OpenVPN so the app runs as the user.
+license: 0BSD
+website: https://fluidity.ndrs.es
+limitations: Imports a Viscosity connection's OpenVPN config and certificates, but not its app-specific settings. System proxy push and the global shortcut are macOS only. Windows needs OpenVPN installed separately.

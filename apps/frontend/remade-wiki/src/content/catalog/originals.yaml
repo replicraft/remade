@@ -1260,3 +1260,7 @@
   name: ManicTime
   url: https://www.manictime.com/
   category: productivity
+- slug: viscosity
+  name: Viscosity
+  url: https://www.sparklabs.com/viscosity/
+  category: other
