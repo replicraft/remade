@@ -50,10 +50,10 @@ pub async fn me(req: &Request, env: &worker::Env, config: &Config) -> Result<Res
     let Some(raw_token) = session_token(req, config)? else {
         return Response::error("Unauthorized", 401);
     };
-    let row = env.d1("DB")?.prepare("SELECT u.id, u.display_name, u.avatar_url, i.username FROM user_sessions s JOIN users u ON u.id = s.user_id JOIN user_identities i ON i.user_id = u.id AND i.provider = 'github' WHERE s.token_hash = ? AND s.expires_at > ?")
-        .bind(&[token_hash(&raw_token).into(), (now() as f64).into()])?.first::<UserRow>(None).await?;
-    match row {
-        Some(row) => Response::from_json(&User::from(row)),
+    let row = env.d1("DB")?.prepare("SELECT u.id, u.display_name, u.avatar_url, i.provider, i.username FROM user_sessions s JOIN users u ON u.id = s.user_id JOIN user_identities i ON i.user_id = u.id WHERE s.token_hash = ? AND s.expires_at > ? ORDER BY i.created_at, i.id")
+        .bind(&[token_hash(&raw_token).into(), (now() as f64).into()])?.all().await?.results::<UserRow>()?;
+    match User::from_rows(row) {
+        Some(user) => Response::from_json(&user),
         None => Response::error("Unauthorized", 401),
     }
 }

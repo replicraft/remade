@@ -193,7 +193,7 @@ test("static catalog exports and discovery files are served by the production bu
 	expect((await request.get("/sitemap-index.xml")).ok()).toBe(true);
 });
 
-test("anonymous browsing keeps account access reachable without an authentication lookup", async ({
+test("anonymous browsing offers sign-in without contacting the authentication API", async ({
 	page,
 }) => {
 	const authRequests: string[] = [];
@@ -204,10 +204,27 @@ test("anonymous browsing keeps account access reachable without an authenticatio
 	await page.goto("/");
 	const login = page.getByRole("link", { name: "Login", exact: true });
 	await expect(login).toBeVisible();
+	await expect(login).toHaveAttribute("href", "/login/");
 	await page.getByRole("link", { name: "Explore", exact: true }).click();
 	await expect(
 		page.getByRole("link", { name: "Login", exact: true }),
 	).toBeVisible();
+	await page.getByRole("link", { name: "Login", exact: true }).click();
+	await expect(
+		page.getByRole("heading", { name: "Sign in to Remade" }),
+	).toBeVisible();
+	await expect(
+		page.getByRole("link", { name: "Continue with GitHub" }),
+	).toHaveAttribute("href", /\/auth\/github$/);
+	if (process.env.PUBLIC_REMADE_DISCORD_AUTH_ENABLED === "true") {
+		await expect(
+			page.getByRole("link", { name: "Continue with Discord" }),
+		).toHaveAttribute("href", /\/auth\/discord$/);
+	} else {
+		await expect(
+			page.getByRole("link", { name: "Continue with Discord" }),
+		).toHaveCount(0);
+	}
 	expect(authRequests).toEqual([]);
 });
 
