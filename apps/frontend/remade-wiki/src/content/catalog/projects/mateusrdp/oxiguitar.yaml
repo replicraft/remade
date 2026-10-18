@@ -1,4 +1,4 @@
-# Current implementation scope follows the upstream M0 roadmap, not its planned feature list.
+# Current implementation scope follows the upstream M1 status, not its broader introduction.
 slug: oxiguitar
 name: OxiGuitar
 authors: [mateusrdp]
@@ -9,7 +9,7 @@ languages: [Rust]
 platforms: [Windows, macOS, Linux]
 status: experimental
 compatibility: partial
-description: Early Rust implementation targeting Guitar Pro's tablature, notation, editing and playback workflows. Its current command-line tool reads Guitar Pro 3, 4 and 5 files and reports their score structure. A desktop viewer, editor and MIDI player are planned, followed by broader Guitar Pro 8 compatibility.
-license: GPL-3.0-or-later
-docs: https://github.com/mateusrdp/oxiguitar/blob/develop/ROADMAP.md
-limitations: Foundations stage; no usable graphical viewer, editor or playback yet. Newer Guitar Pro formats and exports remain planned. Interactive testing is currently limited to Debian Linux. Current code declares GPL-3.0-or-later; planned MuseScore code ports would constrain the combined program to GPL-3.0-only.
+description: Early Rust implementation targeting Guitar Pro's tablature and notation workflows. Its M1 desktop viewer opens Guitar Pro 3 through 8 files, displays standard notation and tablature in multiple layouts and exports PDF. Editing, playback and broader interchange are subsequent milestones.
+license: GPL-3.0-only
+docs: https://mateusrdp.github.io/oxiguitar/
+limitations: Early M1 viewer; editing and playback remain planned despite broader wording in the README introduction. MuseScore, MusicXML, ABC and MIDI interchange await plugins. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only.

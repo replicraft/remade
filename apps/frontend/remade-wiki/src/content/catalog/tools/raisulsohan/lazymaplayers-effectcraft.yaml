@@ -7,6 +7,6 @@ languages: [JavaScript, TypeScript]
 platforms: [Windows, macOS, Linux]
 license: MIT
 status: alpha
-limitations: Requires Node.js 22 or newer, Edge or Chrome, and a separate LazyMapLayers checkout. The author reported host API gaps during porting, including undo groups, object identity, removeKey performance and matchNames; consult the repository for current coverage.
-description: "Map animation panel for EffectCraft: globe-to-street flights, routes, labels in every script, data maps and historical maps. The author reports all 369 generated expression kinds match After Effects' maths. The original host script runs unchanged through a small compatibility layer, with a separate panel window communicating over --control."
+limitations: Requires EffectCraft 0.8.0 or newer, Node.js 22 or newer, and Edge or Chrome. In 0.8.0, the Self-test cannot compare pixels because sampleImage returns empty footage samples; large actions span undo steps, long shot lists are slow and keyframes use whole frames. Detailed outlines are costly. Coverage is maintainer-reported.
+description: "Map animation panel for EffectCraft: globe-to-street flights, routes, multilingual labels, data maps, historical maps and TCX import. The author reports 657 expression cases in 62 kinds match After Effects' maths. The original panel runs through a compatibility layer in a separate window communicating over --control."
 projects: [effectcraft]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remade Catalog Audit"
+  short_description: "Audit upstream changes across the Remade catalog"
+  default_prompt: "Use $remade-catalog-audit to audit every Remade project and tool, correct supported upstream changes, and report coverage and unresolved findings."

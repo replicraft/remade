@@ -7,9 +7,9 @@ originals: [adobe-substance-3d-designer]
 category: creative
 languages: [Rust]
 platforms: [Windows, Linux, macOS]
-status: experimental
+status: beta
 compatibility: partial
-description: A Substance Designer-style procedural material editor with node graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.
-license: MIT
+description: A Substance Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.
+license: MIT OR Apache-2.0
 docs: https://github.com/PiJellyPin/MaterialCraft#readme
-limitations: Third-party material and project formats are unsupported. FX-Maps, function graphs, splines, color management, scripting, some import/export formats and custom preview meshes are missing. MIT is declared in Cargo.toml, but no standalone license file is included. Compatibility is not independently verified.
+limitations: Initial beta release. Third-party material and project formats are unsupported. Splines, AxF import, OCIO/ACE color management, scripting, SVG gradients, CFF fonts, path-traced rendering and custom preview meshes remain unimplemented. Compatibility is maintainer-reported.

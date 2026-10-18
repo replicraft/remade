@@ -8,9 +8,9 @@ originals: [adobe-animate]
 category: creative
 languages: [C++, Rust, Python]
 platforms: [Linux, macOS, Windows]
-status: planned
-compatibility: targeting
-description: A planned Animate-style animation application based on OpenToonz. Its goals include Flash and Animate import, incorporating AnimationCraft's Rust capabilities and integrating Next2Flash's ActionScript tooling. These are development goals rather than a usable Animate replacement.
+status: alpha
+compatibility: partial
+description: An Animate-style animation application based on OpenToonz, with vector and raster drawing, timelines, rigging and effects. Imports Flash/Animate containers through native readers and offers optional Next2Flash tooling for SWF round-trips and ActionScript decompilation. Moho import reads structure, rigs and asset manifests.
 license: BSD-3-Clause
 docs: https://github.com/Flare-Animate/Flare#readme
-limitations: Planned; no usable Flare implementation is established. Animate compatibility, Flash import and export, AnimationCraft integration and ActionScript workflows remain goals rather than verified capabilities. Listed platforms are intended targets. OpenToonz-derived; third-party components retain their own licenses.
+limitations: Very early alpha; import fidelity is incomplete. OpenToonz-derived, with separate third-party licenses. Flash's merge-drawing model and Moho rig rendering are not implemented. Game creation and Android builds are scaffolds; P2P remote control has no transport. Features are maintainer-reported.

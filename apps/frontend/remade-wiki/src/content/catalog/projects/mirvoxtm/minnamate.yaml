@@ -9,7 +9,7 @@ languages: [Rust]
 platforms: [Windows]
 status: experimental
 compatibility: partial
-description: An independent Animate-style editor that opens FLA files and unpacked XFL folders. Supports basic drawing, selection, symbols, frame editing, classic tweens and color effects, with undo and movie testing. Command-line tools render frames to PNG and publish SWF movies that the maintainer reports playing in Ruffle.
+description: An independent Animate-style editor that opens FLA files and XFL folders. Supports drawing, gradient and bitmap fills, symbols, classic/motion/shape tweens, masks, filters, sound and basic frame scripts. Publishes SWF, HTML5 Canvas, GIF, image sequences and video; includes CLI rendering.
 license: Unlicensed
 docs: https://github.com/mirvoxtm/minnamate#readme
-limitations: No project license grant is declared. Early implementation; masks, gradients, bitmaps, shape and motion tweens, most button states and ActionScript are not implemented. Unsupported document features are reported as warnings. Desktop instructions document Windows only.
+limitations: No project license grant is declared. Early implementation; bones, 3D, Asset Warp, input text, multiple open documents and custom workspaces remain unavailable. Basic frame scripts do not establish full ActionScript compatibility. Unsupported document features produce warnings. Desktop instructions document Windows only.

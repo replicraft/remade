@@ -12,4 +12,4 @@ compatibility: partial
 description: A native Rust player reproducing classic iTunes-style local music-library workflows, with album artwork, playlists, a playback queue, search, metadata editing and persistent settings. Uses iTunes 11 as its visual reference.
 license: MIT
 docs: https://github.com/cmspeedau/iCraftMusic#readme
-limitations: Release packaging and accessibility polish are unfinished; no installer or release artifact is available. Movies, TV shows and podcasts are planned, and iPod synchronization has no decided implementation. Some audio formats are recognized but not playable. Native iTunes library compatibility is not documented.
+limitations: Release packaging remains planned; no installer or release artifact is available. Accessibility support is maintainer-reported. Movies, TV shows and podcasts are planned, and iPod synchronization has no decided implementation. Some audio formats are recognized but not playable. Native iTunes library compatibility is not documented.

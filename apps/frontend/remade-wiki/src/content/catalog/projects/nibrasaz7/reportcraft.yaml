@@ -6,9 +6,9 @@ repository: https://github.com/NibrasAz7/ReportCraft
 originals: [microsoft-power-bi]
 category: productivity
 languages: [Rust]
-status: planned
-compatibility: targeting
-description: A planned Rust-native business-intelligence studio targeting Power BI-style data connections, relationship modeling, measures, dashboards and reports. The repository currently defines the product vision and research; these features are proposed rather than implemented.
+status: alpha
+compatibility: partial
+description: A Rust-native business-intelligence studio targeting Power BI workflows. Imports CSV, TSV and JSON, models table relationships and DAX-class measures, applies row-level security and Power Query-style transformations, and exchanges TMDL semantic models. Provides a desktop Studio, SVG/HTML/PDF reports, CLI and MCP automation.
 license: MIT OR Apache-2.0
-docs: https://github.com/NibrasAz7/ReportCraft/blob/main/vision.md
-limitations: Planned; no working code or usable application yet. Rust is the intended language, not an implemented engine. The name is provisional, and Power BI file, expression, connector and report compatibility have not been demonstrated.
+docs: https://github.com/NibrasAz7/ReportCraft#readme
+limitations: Alpha; compatibility is maintainer-reported. Live database drivers, Excel and Parquet readers, and proprietary binary PBIX extraction remain planned. SQL query folding generates queries rather than providing database connections. TMDL exchange does not establish full Power BI file or behavioral parity.

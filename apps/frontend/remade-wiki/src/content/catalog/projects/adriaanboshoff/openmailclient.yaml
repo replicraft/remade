@@ -12,4 +12,4 @@ description: Independent Outlook Classic-style mail client with a ribbon, folder
 license: MIT OR Apache-2.0
 website: https://adriaanboshoff.github.io/OpenMailClient/
 docs: https://github.com/AdriaanBoshoff/OpenMailClient/blob/main/docs/gaps.md
-limitations: Early development. IMAP receives Inbox mail without full folder or message-state synchronization. Calendar, People, Tasks, MCP and browser builds are unfinished. OST files are read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs, and printing produces PDF rather than sending to a printer.
+limitations: Early development; compatibility is maintainer-reported. IMAP synchronizes folders and message states; calendar views and appointment editing exist, while recurrence, CalDAV, People and Tasks remain unfinished. MCP and browser builds are planned. OST is read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs.

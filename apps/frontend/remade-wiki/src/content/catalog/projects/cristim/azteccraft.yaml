@@ -1,4 +1,4 @@
-# Current prototype scope and absent distribution license are explicit in the README.
+# Prototype scope and dual licensing are documented in the upstream README.
 slug: azteccraft
 name: AztecCraft
 authors: [cristim]
@@ -8,7 +8,7 @@ category: creative
 languages: [Rust]
 status: experimental
 compatibility: targeting
-description: A Rust desktop prototype targeting Maya's interface and behavior. Currently offers cube and plane creation, selection, numeric transforms, undo/redo and perspective navigation, with bounded Maya binary scene decoding. Library APIs provide single-face extrusion and OBJ export; an optional MCP server controls a new editor window.
-license: Unlicensed
+description: A Rust desktop prototype targeting Maya's interface and behavior. Offers primitive creation, selection, transforms, undo/redo and perspective navigation, with bounded Maya binary scene decoding and provisional Unix writing for supported existing records. Library APIs provide single-face extrusion and OBJ export; optional MCP controls a new editor window.
+license: MIT OR Apache-2.0
 docs: https://github.com/cristim/AztecCraft#current-capabilities
-limitations: No distribution license has been selected. Native Save and Save As are disabled; GUI export and face extrusion remain unfinished. Animation, rigging, UVs, materials, simulation, rendering, scripting and plug-in compatibility are planned. Overall Maya coverage is unmeasured, and cross-platform packaging and launch verification remain incomplete.
+limitations: Provisional Unix Maya binary Save/Save As needs native QA; Maya ASCII, structural rewriting and Windows writing are unsupported. GUI export and extrusion remain unfinished. Animation, rigging, UVs, rendering, scripting and plug-in compatibility are planned. Overall Maya coverage is unmeasured; cross-platform launch verification remains incomplete.

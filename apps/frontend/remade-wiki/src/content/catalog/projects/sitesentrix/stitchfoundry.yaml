@@ -2,7 +2,7 @@
 slug: stitchfoundry
 name: StitchFoundry
 authors: [sitesentrix]
-repository: https://github.com/SiteSentrix/StitchFoundry
+repository: https://github.com/Stitchwright/StitchFoundry
 originals: [wilcom-embroiderystudio]
 category: creative
 languages: [Rust]
@@ -11,5 +11,5 @@ status: experimental
 compatibility: partial
 license: MIT OR Apache-2.0
 description: A Wilcom EmbroideryStudio-style digitizing application built on VectorCraft, with running, satin and fill stitches, applique, automatic stitch sequencing, lettering, design checks and embroidery-file import/export. Includes stitch previews and headless automation.
-docs: https://github.com/SiteSentrix/StitchFoundry/blob/main/docs/embroidery.md
+docs: https://github.com/Stitchwright/StitchFoundry#readme
 limitations: Pre-release; no binaries. A broader Wilcom alternative built on VectorCraft; native Wilcom project-file compatibility is not documented. Machine files have been checked in software but not sewn on real hardware. AI-assisted artwork generation requires a separate Anthropic API key.

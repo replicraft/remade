@@ -9,9 +9,9 @@ languages: [Rust, TypeScript]
 platforms: [Windows, Linux, macOS, Web]
 status: experimental
 compatibility: partial
-description: A very early accounting project aiming to reproduce QuickBooks, Xero, MYOB Acumatica and Sage-style workflows through a shared Rust engine. Planned scope includes local company files, bookkeeping, invoicing, reconciliation, reporting and payroll.
+description: A Rust accounting application with QuickBooks, Xero, MYOB Acumatica and Sage-style layouts over a shared local engine. Upstream documents invoicing, purchases, reconciliation, double-entry bookkeeping, reports, inventory, payroll and local company databases, with a native desktop app and optional web interface.
 license: AGPL-3.0-or-later
 docs: https://github.com/Wr3nch98DEV/LedgerCraft#readme
 discord_server: https://discord.gg/artcraft
 discord_thread: https://discord.com/channels/1359579021108842617/1559141861623599164
-limitations: Very experimental; usable accounting workflows have not been verified, and the listed scope should be treated as development goals. Not ready for live business accounts. No complete behavioral, API or native project-file compatibility is established. Documented payroll calculations include approximations, and government submissions are not automatically lodged.
+limitations: Work in progress; workflows and results are maintainer-reported. Build from source and verify results before using live business accounts. Full native file, API and behavioral compatibility is not established. Payroll tax calculations include approximations; bank feeds need a provider or plugin, and government submissions are not automatically lodged.

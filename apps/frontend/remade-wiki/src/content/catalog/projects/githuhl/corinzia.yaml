@@ -9,7 +9,7 @@ languages: [Rust]
 platforms: [Linux, Windows]
 status: experimental
 compatibility: partial
-description: A broader Dorico, Sibelius and Finale alternative combining a music-notation editor and DAW. Uses its own engraver for scores and parts, with note entry, lyrics, chord symbols and CLAP instrument playback. Imports MusicXML and exports PDF, MIDI and MusicXML, with an arrange view and mixer.
+description: A broader Dorico, Sibelius and Finale alternative combining notation and DAW workflows. Its Rust engraver provides scores and parts, note entry, lyrics and chord symbols. Hosts CLAP and VST3 instruments, imports MusicXML and exports PDF, MIDI and MusicXML, with an arrange view and mixer.
 license: MIT
 docs: https://github.com/GitHuhl/Corinzia/blob/main/docs/ARCHITECTURE.md
-limitations: Preview; project saving is disabled while the format changes. Bus routing, plug-in delay compensation, automation playback and plug-in GUIs are unfinished. Native Dorico, Sibelius and Finale file compatibility is not documented. Linux audio needs PipeWire. MIT is declared in the Rust workspace manifests; no standalone project license text is provided.
+limitations: Pre-alpha; native Dorico/Sibelius/Finale compatibility is undocumented. Bus routing, plug-in delay compensation, automation playback and saving plug-in settings are unfinished. README sections conflict on project saving. Linux audio needs PipeWire. MIT workspace metadata conflicts with an AGPL-3.0 LICENSE; upstream clarification is needed.
