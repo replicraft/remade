@@ -3,6 +3,7 @@ import { basename, join, relative } from "node:path";
 import { pathToFileURL } from "node:url";
 import * as v from "valibot";
 import { catalogAddedAt, loadAdditionDates } from "./catalog-history";
+import { parseLauncher } from "./launcher-config";
 import {
 	type Catalog,
 	featuredSchema,
@@ -100,6 +101,10 @@ export async function loadCatalog() {
 		projects: supportedProjectSlugs(tool, suites),
 	}));
 	const catalog = { ...source, tools, suites };
+	const launcher = parseLauncher(
+		await readFile(new URL("launcher.yaml", repositoryRoot), "utf8"),
+		projects.map((project) => project.slug),
+	);
 
 	// Old slugs in project redirects preserve the original catalog addition date.
 	const redirects = await readFile(new URL("public/_redirects", root), "utf8");
@@ -156,7 +161,7 @@ export async function loadCatalog() {
 				a.original.localeCompare(b.original),
 		);
 
-	return { ...catalog, entries, requests: recentRequests };
+	return { ...catalog, launcher, entries, requests: recentRequests };
 }
 
 const metadataSchema = v.object({

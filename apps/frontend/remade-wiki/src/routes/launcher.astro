@@ -1,0 +1,15 @@
+---
+import LauncherDownloads from "../components/launcher/LauncherDownloads";
+import LauncherPage from "../components/pages/LauncherPage";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+	description="Remade Launcher is a planned cross-platform app for discovering, installing, updating and managing curated independent software reimplementations."
+	index
+	title="Remade Launcher"
+>
+	<LauncherPage>
+		<LauncherDownloads client:load />
+	</LauncherPage>
+</Layout>

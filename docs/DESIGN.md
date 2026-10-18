@@ -59,6 +59,14 @@ Authentication sits at the far right of the header: a compact **Login** link whe
 7. **Project Requests**: place **“Step up to the plate?”** in smaller text after the introductory description; unfulfilled targets, concise contextual descriptions, link to requests index and PR contribution instructions. Show an intentional empty state when no requests exist.
 8. Footer: brand/tagline + GitHub, Submit, **About**, and **Disclaimer** links.
 
+## Launcher preview
+
+`/launcher` is a gated preview of the planned standalone Rust application, separate from the catalog browsing experience. Use the existing Remade mark, palette, typography, spacing and responsive React components. Lead with **Remade Launcher** and **The official launcher for unofficial apps.** Describe intended capabilities as plans until implemented. Keep a prominent download panel, manual platform and architecture controls, a labeled future screenshot area, and concise discovery, installation, update and library-management copy. Support Windows, macOS, Linux, FreeBSD and other-platform selection without implying builds exist.
+
+The download panel automatically suggests a recognized desktop OS after hydration; manual selection remains available. Architecture options cover x86, x64, ARM and macOS Universal where applicable. Unknown/mobile OSes fall back to Other platform. Release loading, unavailable and unsupported-build states never produce guessed download links. Future release assets and optional source/releases links enter through a typed view model, supplied by build-time GitHub Releases metadata; visitors do not fetch GitHub APIs. No versions, file sizes or repository URLs are fabricated.
+
+The build flag and publishing rules are documented in [Architecture](ARCHITECTURE.md#launcher-page-gate). Disabled builds omit the route and navigation entirely; the public allowlist feed is independent.
+
 ## About page
 
 - `/about` presents Remade's story, mission, engineering philosophy, and community contribution links in well-spaced editorial sections, with narrow reading columns.

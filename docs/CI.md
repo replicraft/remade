@@ -101,6 +101,10 @@ The initial package intentionally has no `scripts/uv.lock` because its dependenc
 
 ## Frontend tests
 
+Catalog integrity validation also checks root `launcher.yaml` against canonical project slugs using the existing safe YAML loader. The frontend workflow treats allowlist changes as build inputs, so changing only `launcher.yaml` still runs type checks, unit tests and the static feed build.
+
+After the normal default build, the workflow verifies the emitted Launcher feed matches YAML and the page, navigation link and sitemap entry are absent. It then builds with `REMADE_LAUNCHER_ENABLED=true` and verifies the page and discovery entries are present while the same feed contract still holds. These are build artifact checks in `tests/build/launcher.mjs`; the enabled output stays in CI and does not enable production hosting. Unit tests cover allowlist validation, platform detection and exact asset selection. React component tests cover manual selection and release states; like the other browser suites, they remain local.
+
 Vitest configuration lives in `apps/frontend/remade-wiki/tests/vitest.config.ts`, `apps/frontend/remade-wiki/tests/vitest.react.config.ts` and `apps/frontend/remade-wiki/tests/vitest.auth.config.ts`. The frontend package scripts select each config explicitly; all use `apps/frontend/remade-wiki/` as their working root for test and fixture paths. Root pnpm commands delegate to that workspace, so the existing just recipes still work.
 
 - `pnpm test`: runs the unit, React component, E2E and auth integration suites in sequence.

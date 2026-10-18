@@ -193,6 +193,16 @@ export const requestSchema = v.strictObject({
 });
 export const featuredSchema = v.array(slug);
 
+export const launcherSchema = v.strictObject({
+	projects: v.pipe(
+		v.array(slug),
+		v.check(
+			(values) => new Set(values).size === values.length,
+			"Remove duplicate project slugs from launcher.yaml projects.",
+		),
+	),
+});
+
 export type Original = v.InferOutput<typeof originalSchema>;
 
 export type Project = v.InferOutput<typeof projectSchema>;

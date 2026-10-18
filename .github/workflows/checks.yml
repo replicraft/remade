@@ -32,7 +32,7 @@ jobs:
           uv run --project scripts ruff format --check scripts
       - name: Check Python types
         run: uv run --project scripts ty check --project scripts
-      - name: Validate all project, original, request and featured records
+      - name: Validate catalog records and launcher allowlist
         run: uv run --project scripts python scripts/validate_catalog.py
       - name: Check policy acknowledgment in PR description
         if: github.event_name == 'pull_request'

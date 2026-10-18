@@ -38,6 +38,7 @@ Git-tracked project YAML + original records + featured selections
            ├── /about                 story, mission and community
            ├── /data/catalog.json     public machine-readable catalog
            ├── /data/requests.json    public machine-readable requests
+           ├── /data/launcher.json    explicit Launcher eligibility allowlist
            ├── /disclaimer            approved text
            └── Pagefind index         no hosted search service
 
@@ -82,6 +83,20 @@ Astro prerenders `/data/catalog.json` and `/data/requests.json` into static file
 `apps/frontend/remade-wiki/src/lib/catalog-export.ts` defines explicit public field allowlists using Valibot. Unknown source fields, collection IDs and future editorial metadata are stripped before serialization. Both documents have `schemaVersion: 1` and `site`; records are sorted by slug for deterministic output. Once exports are in use, breaking changes to the public contract require a schema version change and documentation update.
 
 The response helper declares JSON content type, one-hour public caching and `Access-Control-Allow-Origin: *`. Static response headers are configured separately in `apps/frontend/remade-wiki/public/_headers` for Cloudflare Pages, because build-time Response headers are not embedded in the JSON files. Other static hosts should apply equivalent headers. JSON updates when the site rebuilds, and clients may cache it for an hour.
+
+## Launcher page gate
+
+Remade Launcher is planned standalone Rust software; this repository implements only its website preview and eligibility feed. A local Astro integration injects `/launcher` only when the build environment variable `REMADE_LAUNCHER_ENABLED` is exactly `true`. It defaults to disabled in every mode. The same integration provides the compiled boolean used by the shared header. When disabled, there is no usable Launcher page, navigation entry, sitemap entry or Pagefind page to publish. The always-generated `/data/launcher.json` is independent of this gate and exports only the validated root `launcher.yaml` allowlist in its original order, with the same CORS and cache headers as other feeds. Existing catalog exports retain their contract.
+
+Explicit local preview:
+
+```sh
+REMADE_LAUNCHER_ENABLED=true pnpm dev
+```
+
+For a static preview use `REMADE_LAUNCHER_ENABLED=true pnpm build`, then `pnpm preview`. Cloudflare Pages can set this build environment variable for its Preview environment only; leave it unset in Production until an explicit launch decision. Set it in the build process environment, not a public browser setting. Changing the flag requires rebuilding; it is not runtime authorization. A previously enabled deployment must be rebuilt with the flag unset to remove the page and generated discovery entries.
+
+`LauncherDownloads` is the only hydrated Launcher island. OS suggestion and manual platform/architecture selection run locally. The default release model is unavailable, with no fake assets or repository links. A future trusted build-time GitHub Releases adapter can supply the typed release/asset view model without changing the layout or adding visitor API calls. The allowlist does not imply downloadable builds or provenance certification.
 
 ## LLM discovery
 

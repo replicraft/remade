@@ -1,4 +1,34 @@
+import { readFile } from "node:fs/promises";
 import { expect, test } from "@playwright/test";
+import { parseYaml } from "../../src/lib/schemas";
+
+test("launcher feed matches the source allowlist even with the page disabled", async ({
+	request,
+}) => {
+	const response = await request.get("/data/launcher.json");
+	const source = await readFile("../../../launcher.yaml", "utf8");
+
+	expect(response.ok()).toBe(true);
+	expect(await response.json()).toEqual(parseYaml(source));
+});
+
+test("the Launcher page and its discovery entries follow the explicit build flag", async ({
+	page,
+	request,
+}) => {
+	const enabled = process.env.REMADE_LAUNCHER_ENABLED === "true";
+
+	await page.goto("/");
+	await expect(
+		page.getByRole("link", { name: "Launcher", exact: true }),
+	).toHaveCount(enabled ? 1 : 0);
+
+	const response = await request.get("/launcher/");
+	const sitemap = await (await request.get("/sitemap-0.xml")).text();
+
+	expect(response.status()).toBe(enabled ? 200 : 404);
+	expect(sitemap.includes("https://remade.wiki/launcher")).toBe(enabled);
+});
 
 for (const [previous, current, heading] of [
 	["/projects/pounce/", "/projects/filecraft/", "FileCraft"],

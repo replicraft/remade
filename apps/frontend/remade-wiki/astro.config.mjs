@@ -2,6 +2,7 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import launcherIntegration from "./src/integrations/launcher.ts";
 export default defineConfig({
 	site: "https://remade.wiki",
 	output: "static",
@@ -23,6 +24,10 @@ export default defineConfig({
 			status: 302,
 		},
 	},
-	integrations: [react(), sitemap()],
+	integrations: [
+		react(),
+		launcherIntegration(process.env.REMADE_LAUNCHER_ENABLED),
+		sitemap(),
+	],
 	vite: { plugins: [tailwindcss()] },
 });

@@ -51,7 +51,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 		>
 			Skip to content
 		</a>
-		<Header pathname={Astro.url.pathname}>
+		<Header
+			launcherEnabled={import.meta.env.REMADE_LAUNCHER_ENABLED}
+			pathname={Astro.url.pathname}
+		>
 			<div class="h-[46px] w-[104px] shrink-0" data-auth-host>
 				<AuthMenu client:load />
 			</div>

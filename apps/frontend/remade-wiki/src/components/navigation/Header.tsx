@@ -5,9 +5,14 @@ import { contributeUrl, repositoryUrl } from "../../lib/presentation";
 interface Props {
 	pathname: string;
 	children?: ReactNode;
+	launcherEnabled?: boolean;
 }
 
-export default function Header({ pathname, children }: Props) {
+export default function Header({
+	pathname,
+	children,
+	launcherEnabled = false,
+}: Props) {
 	return (
 		<header className="border-b border-line" data-pagefind-ignore>
 			<div className="mx-auto flex min-h-[88px] max-w-[1180px] flex-wrap items-center justify-between gap-5 px-[18px] py-[18px] sm:px-6 sm:py-0">
@@ -48,6 +53,18 @@ export default function Header({ pathname, children }: Props) {
 					>
 						Requests
 					</a>
+
+					{launcherEnabled && (
+						<a
+							aria-current={
+								pathname.startsWith("/launcher") ? "page" : undefined
+							}
+							className="aria-[current=page]:text-lime"
+							href="/launcher/"
+						>
+							Launcher
+						</a>
+					)}
 
 					<a href={repositoryUrl}>GitHub ↗</a>
 

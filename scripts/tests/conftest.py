@@ -6,6 +6,7 @@ import pytest
 
 @pytest.fixture
 def catalog_root(tmp_path: Path) -> Path:
+    (tmp_path / "launcher.yaml").write_text("projects: []\n")
     for folder in ("projects", "requests"):
         (tmp_path / "apps/frontend/remade-wiki/src/content/catalog" / folder).mkdir(parents=True)
     (tmp_path / "apps/frontend/remade-wiki/src/content/catalog/originals.yaml").write_text("[]\n")

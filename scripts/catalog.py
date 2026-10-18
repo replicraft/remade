@@ -354,6 +354,7 @@ def collect(root=ROOT):
                 f"apps/frontend/remade-wiki/src/content/catalog/featured.yaml entry #{i + 1}: unknown project or tool {slug}"
             )
         featured_slugs.add(slug)
+    validate_launcher(root, set(project_by_slug), errors)
     return (
         originals,
         list(project_by_slug.values()),
@@ -361,6 +362,31 @@ def collect(root=ROOT):
         featured,
         errors,
     )
+
+
+def validate_launcher(root: Path, project_slugs: set[str], errors: list[str]) -> None:
+    path = root / "launcher.yaml"
+    if not path.is_file():
+        errors.append("launcher.yaml: missing required file; create it with projects: []")
+        return
+    launcher = checked_load(path, errors)
+    if not fields(launcher, {"projects"}, set(), "launcher.yaml", errors):
+        return
+    projects = launcher["projects"]
+    if not isinstance(projects, list):
+        errors.append("launcher.yaml: projects must be an array of canonical project slugs")
+        return
+    seen: set[str] = set()
+    for index, slug in enumerate(projects):
+        loc = f"launcher.yaml projects entry #{index + 1}"
+        if not is_slug(slug):
+            errors.append(f"{loc}: expected a nonempty lowercase-kebab-case project slug")
+            continue
+        if slug in seen:
+            errors.append(f"{loc}: duplicate project slug {slug}; remove the duplicate")
+        elif slug not in project_slugs:
+            errors.append(f"{loc}: unknown catalog project {slug}; use its canonical project slug")
+        seen.add(slug)
 
 
 def validate_mirrors(record: dict, loc: str, errors: list[str]) -> None:
