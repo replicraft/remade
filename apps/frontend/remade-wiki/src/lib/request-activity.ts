@@ -15,6 +15,8 @@ export type RequestActivity = v.InferOutput<typeof activitySchema>;
 export type RequestAction = "upvote" | "unvote" | "build" | "unbuild";
 
 export async function readRequestActivity(signal?: AbortSignal) {
+	if (import.meta.env.DEV)
+		return (await import("./request-activity-preview")).readPreviewActivity();
 	const response = await fetch(`${apiUrl}/requests/activity`, {
 		credentials: "include",
 		cache: "no-store",
@@ -30,6 +32,11 @@ export async function changeRequestActivity(
 	original: string,
 	action: RequestAction,
 ) {
+	if (import.meta.env.DEV)
+		return (await import("./request-activity-preview")).changePreviewActivity(
+			original,
+			action,
+		);
 	const response = await fetch(
 		`${apiUrl}/requests/${encodeURIComponent(original)}/${action}`,
 		{ method: "POST", credentials: "include" },

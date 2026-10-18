@@ -1,0 +1,38 @@
+---
+import DirectoryPage from "../../../components/pages/DirectoryPage";
+import Layout from "../../../layouts/Layout.astro";
+import { loadCatalog, loadMetadata } from "../../../lib/catalog";
+import {
+	directoryRecords,
+	directoryResults,
+	pageSize,
+} from "../../../lib/directory";
+export async function getStaticPaths() {
+	const catalog = await loadCatalog();
+	const metadata = await loadMetadata();
+	const records = directoryRecords(catalog, metadata);
+	const count = directoryResults(
+		records,
+		{ q: "", sort: "upvotes" },
+		"request",
+	).length;
+	return Array.from(
+		{ length: Math.max(0, Math.ceil(count / pageSize) - 1) },
+		(_, index) => ({
+			params: { page: String(index + 2) },
+			props: { records, featured: catalog.featured, page: index + 2 },
+		}),
+	);
+}
+const { records, featured, page } = Astro.props;
+---
+
+<Layout title={`Project Requests: page ${page}`}>
+	<DirectoryPage
+		featured={featured}
+		initialPage={page}
+		kind="request"
+		records={records}
+		client:load
+	/>
+</Layout>

@@ -1,22 +1,21 @@
-import type { Original, Request } from "../../lib/schemas";
-import RequestCard from "../catalog/RequestCard";
+import type { DirectoryRecord } from "../../lib/directory";
+import DirectoryCard from "../catalog/DirectoryCard";
 import RequestActions from "./RequestActions";
 import RequestActivityProvider from "./RequestActivityProvider";
 
 export default function RequestPreview({
-	items,
+	records,
 }: {
-	items: { request: Request; original: Original }[];
+	records: DirectoryRecord[];
 }) {
 	return (
 		<RequestActivityProvider>
-			<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
-				{items.map(({ request, original }) => (
-					<RequestCard
-						actions={<RequestActions original={original.slug} />}
-						key={original.slug}
-						original={original}
-						request={request}
+			<div className="directory-grid">
+				{records.map((record) => (
+					<DirectoryCard
+						actions={<RequestActions original={record.id} />}
+						key={record.id}
+						record={record}
 					/>
 				))}
 			</div>

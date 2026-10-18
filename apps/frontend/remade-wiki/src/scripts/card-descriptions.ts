@@ -30,7 +30,9 @@ function fitDescription(container: HTMLElement) {
 	const fullHeight = text.scrollHeight;
 	const card = container.closest("article");
 
-	if (card) {
+	// Directory cards size their previews intrinsically. Measuring their stretched
+	// grid height would count empty space and inflate the rows on each resize.
+	if (card && !card.classList.contains("directory-card")) {
 		// Wrapped headings and footers must not squeeze the preview to a sentence.
 		const chromeHeight =
 			card.getBoundingClientRect().height - container.clientHeight;

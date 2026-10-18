@@ -1,22 +1,28 @@
 ---
 import HomePage from "../components/pages/HomePage";
 import RequestPreview from "../components/requests/RequestPreview";
+import DirectorySearch from "../components/search/DirectorySearch";
 import Layout from "../layouts/Layout.astro";
 import { loadCatalog, loadMetadata } from "../lib/catalog";
-import { findBySlug } from "../lib/presentation";
+import { directoryRecords, searchIndex } from "../lib/directory";
 
 const catalog = await loadCatalog();
 const metadata = await loadMetadata();
+const requests = directoryRecords(catalog, metadata)
+	.filter((record) => record.kind === "request")
+	.sort(
+		(a, b) =>
+			b.addedAt.localeCompare(a.addedAt) || a.name.localeCompare(b.name),
+	)
+	.slice(0, 6);
 ---
 
-<Layout title="Remade Directory">
+<Layout title="Software reimplementations and project requests">
 	<HomePage catalog={catalog} metadata={metadata}>
-		<RequestPreview
-			items={catalog.requests.slice(0, 3).map((request) => ({
-				request,
-				original: findBySlug(catalog.originals, request.original),
-			}))}
+		<DirectorySearch
+			records={searchIndex(directoryRecords(catalog, metadata))}
 			client:load
 		/>
+		<RequestPreview records={requests} slot="request-preview" client:load />
 	</HomePage>
 </Layout>

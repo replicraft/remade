@@ -54,7 +54,7 @@ describe("multi-target project links", () => {
 			);
 
 			await expect
-				.element(screen.getByRole("link", { name: "Plane ↗", exact: true }))
+				.element(screen.getByRole("link", { name: "Plane", exact: true }))
 				.toHaveAttribute("href", "/projects/plane/");
 		},
 	);

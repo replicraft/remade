@@ -1,6 +1,5 @@
 import { Hammer, Info, ThumbsUp } from "lucide-react";
 import { useId, useState } from "react";
-import { contributeUrl } from "../../lib/presentation";
 import { useRequestActivity } from "../../stores/request-activity-store";
 
 export default function RequestActions({ original }: { original: string }) {
@@ -15,7 +14,7 @@ export default function RequestActions({ original }: { original: string }) {
 	);
 
 	const button =
-		"inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition-colors disabled:cursor-default disabled:opacity-60";
+		"inline-flex items-center gap-1.5 rounded-lg border min-h-11 px-3 py-2 text-xs font-semibold transition-colors disabled:cursor-default disabled:opacity-60";
 	const inactive = "border-line hover:border-lime hover:text-lime";
 	const selected = "border-lime bg-lime/10 text-lime hover:bg-lime/20";
 
@@ -34,7 +33,7 @@ export default function RequestActions({ original }: { original: string }) {
 					<ThumbsUp aria-hidden="true" size={14} />
 					Upvote{" "}
 					<span className="tabular-nums">
-						{ready && item ? item.upvotes : "—"}
+						{ready && item ? item.upvotes : "Unavailable"}
 					</span>
 				</button>
 
@@ -51,7 +50,7 @@ export default function RequestActions({ original }: { original: string }) {
 						<Hammer aria-hidden="true" size={14} />
 						I’m building this{" "}
 						<span className="tabular-nums">
-							{ready && item ? item.builders : "—"}
+							{ready && item ? item.builders : "Unavailable"}
 						</span>
 					</button>
 
@@ -90,13 +89,6 @@ export default function RequestActions({ original }: { original: string }) {
 					</fieldset>
 				</div>
 			</div>
-
-			<p className="mb-0 mt-3 text-xs">
-				Know an alternative?{" "}
-				<a className="text-muted hover:underline" href={contributeUrl}>
-					Add it to the catalog.
-				</a>
-			</p>
 
 			{message && (
 				<p className="mb-0 mt-3 text-xs" role="status">

@@ -36,7 +36,10 @@ export default function ProjectPage({
 
 	return (
 		<>
-			<div className="max-w-[860px] pt-16">
+			<div className="max-w-[860px] pt-12 sm:pt-16">
+				<a className="mb-5 inline-block text-sm text-muted" href="/explore/">
+					← Explore projects
+				</a>
 				<p className="mb-5 text-xs font-bold uppercase tracking-[0.16em] text-lime">
 					Reimplementation · {label(project.category)}
 				</p>
@@ -84,8 +87,12 @@ export default function ProjectPage({
 				</div>
 
 				{(project.discord_server || project.discord_thread) && (
-					<div className="mt-6">
+					<div className="mt-8 rounded-xl border border-line bg-surface p-5">
+						<h2 className="!mb-3 text-lg">Community</h2>
 						<DiscordLinks {...project} />
+						<p className="!mb-0 text-xs">
+							Opens Discord. Some threads require server membership.
+						</p>
 					</div>
 				)}
 

@@ -1,0 +1,62 @@
+---
+import { createHash } from "node:crypto";
+import { readFile } from "node:fs/promises";
+import ProjectRequestForm from "../../components/requests/ProjectRequestForm";
+import Layout from "../../layouts/Layout.astro";
+import { loadCatalog, loadMetadata } from "../../lib/catalog";
+import { directoryRecords, searchIndex } from "../../lib/directory";
+import { repositoryUrl } from "../../lib/presentation";
+
+const catalog = await loadCatalog();
+const metadata = await loadMetadata();
+const policyVersion = createHash("sha256")
+	.update(
+		await readFile(new URL("../../../../../../POLICY.md", import.meta.url)),
+	)
+	.digest("hex");
+---
+
+<Layout noindex title="Request a project">
+	<div class="max-w-[800px] pb-6 pt-12 sm:pt-16">
+		<a class="mb-5 inline-block text-sm text-muted" href="/requests/">
+			← Project Requests
+		</a>
+		<h1>What would you like to see remade?</h1>
+		<p>
+			Tell the community which software you miss and what matters to you. You do
+			not need a repository or a technical specification.
+		</p>
+	</div>
+	{import.meta.env.DEV ? (
+		<ProjectRequestForm
+			client:load
+			policyVersion={policyVersion}
+			records={searchIndex(directoryRecords(catalog, metadata))}
+		/>
+	) : (
+		<div class="max-w-[720px] rounded-xl border border-line bg-surface p-6">
+			<h2>Send a Project Request</h2>
+			<p>
+				The on-site form is being prepared. You can submit through GitHub now.
+				Maintainers review requests before they appear in the directory.
+			</p>
+			<a
+				class="action-primary"
+				href={`${repositoryUrl}/issues/new?template=project-request.yml`}
+			>
+				Open the GitHub request form ↗
+			</a>
+		</div>
+	)}
+	<noscript>
+		<p class="mt-8">
+			JavaScript is needed for the local draft form.<a
+				class="underline"
+				href={`${repositoryUrl}/issues/new?template=project-request.yml`}
+			>
+				Use the external GitHub Project Request form ↗
+			</a>
+			.
+		</p>
+	</noscript>
+</Layout>

@@ -131,4 +131,10 @@ Tool cards and tool pages show a clickable suite name, such as ArtCraft Suite, i
 
 ## Discord community links
 
-Project and request cards show optional Discord server/thread links with the Discord logo and visible text labels. Project detail pages and request sections on software pages expose the same links. Use the existing lime link styling, keep icon shapes decorative for screen readers, and keep links above stretched card targets so pointer and keyboard navigation reach the intended destination. Omitted links render no controls. These are static links, with no Discord embeds or scripts.
+Project detail pages and request sections on software pages show optional Discord server/thread links with the Discord logo and visible text labels. Cards link to their detail pages and omit Discord links. Use the existing lime link styling, keep icon shapes decorative for screen readers, and keep links above stretched card targets so pointer and keyboard navigation reach the intended destination. Omitted links render no controls. These are static links, with no Discord embeds or scripts.
+
+## Refined Directory candidate
+
+The draft Refined Directory implementation prioritizes Request a project, compact previews and static paginated browsing. Project/request classification, full detail content, suite/community links, badges and existing support semantics remain intact. See [the candidate report](experiments/refined-directory/README.md) for route changes, local form simulation, verification and production limitations. The on-site submission flow is development-only until a shared verified submission service is ready; production links to the existing GitHub Project Request form.
+
+Card titles use a stretched link to make the card surface clickable. Author, original-software, suite and tool links, plus vote/builder controls, remain independently operable above that surface. Cards place original-software and suite/tool relationships above the description, show authors inline without separator dots, and omit a separate View project/request/tool footer action. Directory previews size from their content rather than stretched grid height; the leading featured card keeps its two-row desktop layout.

@@ -11,8 +11,8 @@ export default function DiscordLinks({
 	return (
 		<div className="relative z-10 mb-3.5 flex shrink-0 flex-wrap gap-4 text-sm">
 			{[
-				{ href: discord_server, label: "Discord server" },
 				{ href: discord_thread, label: "Discord thread" },
+				{ href: discord_server, label: "Discord server" },
 			]
 				.filter((link) => link.href)
 				.map((link) => (

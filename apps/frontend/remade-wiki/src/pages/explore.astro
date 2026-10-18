@@ -1,12 +1,18 @@
 ---
-import ExplorePage from "../components/pages/ExplorePage";
+import DirectoryPage from "../components/pages/DirectoryPage";
 import Layout from "../layouts/Layout.astro";
 import { loadCatalog, loadMetadata } from "../lib/catalog";
+import { directoryRecords } from "../lib/directory";
 
 const catalog = await loadCatalog();
 const metadata = await loadMetadata();
 ---
 
-<Layout title="Explore">
-	<ExplorePage catalog={catalog} metadata={metadata} client:load />
+<Layout title="Explore projects">
+	<DirectoryPage
+		featured={catalog.featured}
+		kind="project"
+		records={directoryRecords(catalog, metadata)}
+		client:load
+	/>
 </Layout>

@@ -17,7 +17,15 @@ const { original, catalog } = Astro.props;
 const metadata = await loadMetadata();
 ---
 
-<Layout index title={original.name}>
+<Layout
+	description={catalog.requests.find(
+		(request) => request.original === original.slug,
+	)?.reason}
+	index
+	title={catalog.requests.some((request) => request.original === original.slug)
+		? `${original.name} reimplementation request`
+		: original.name}
+>
 	<SoftwarePage catalog={catalog} metadata={metadata} original={original}>
 		{catalog.requests.some((request) => request.original === original.slug) && (
 			<RequestEngagement client:load original={original.slug} />

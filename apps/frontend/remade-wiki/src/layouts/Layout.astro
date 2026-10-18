@@ -8,12 +8,14 @@ interface Props {
 	title: string;
 	description?: string;
 	index?: boolean;
+	noindex?: boolean;
 }
 
 const {
 	title,
 	description = "Discover independently developed software reimplementations. Everything can be remade.",
 	index = false,
+	noindex = false,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -25,10 +27,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 		<meta content="width=device-width" name="viewport">
 		<title>
 			{title === "Remade"
-				? "Remade — Everything can be remade."
+				? "Remade | Everything can be remade."
 				: `${title} · Remade`}
 		</title>
 		<meta content={description} name="description">
+		{noindex && <meta content="noindex, follow" name="robots" />}
 		<link href={canonical} rel="canonical">
 		<link href="/llms.txt" rel="describedby" type="text/plain">
 		<link href="/favicon.svg" rel="icon" type="image/svg+xml">
@@ -51,13 +54,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 		>
 			Skip to content
 		</a>
+		{import.meta.env.DEV && (
+			<div
+				class="border-b border-line bg-deep px-4 py-2 text-center text-xs text-muted"
+				data-pagefind-ignore
+			>
+				Local design preview. Login, counters and request delivery are
+				simulated. No public writes.
+			</div>
+		)}
 		<Header pathname={Astro.url.pathname}>
 			<div class="h-[46px] w-[104px] shrink-0" data-auth-host>
 				<AuthMenu client:load />
 			</div>
 		</Header>
 		<main
-			class="mx-auto min-h-[65vh] max-w-[1180px] px-[18px] pb-[72px] sm:px-6"
+			class="mx-auto min-h-[65vh] max-w-[1228px] px-[18px] pb-[72px] sm:px-6"
 			data-pagefind-body={index ? "" : undefined}
 			data-pagefind-ignore={!index ? "" : undefined}
 			id="main"
