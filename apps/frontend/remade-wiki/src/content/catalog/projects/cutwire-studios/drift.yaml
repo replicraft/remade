@@ -13,4 +13,5 @@ description: An independent CapCut-style video editor built with Qt and FFmpeg, 
 license: GPL-3.0
 docs: https://docs.cutwire.org/drift/
 website: https://cutwire.org/drift/
+discord_server: https://discord.gg/J5ANFz6Z3y
 limitations: Early software; full CapCut behavior and project-file compatibility are not documented. Android distribution is in closed testing. macOS builds are ad-hoc signed and are not notarized. Some local AI features depend on separately downloaded models.

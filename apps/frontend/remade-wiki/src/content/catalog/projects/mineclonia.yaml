@@ -12,4 +12,5 @@ compatibility: partial
 description: Mineclonia recreates Minecraft gameplay on the Luanti engine, including survival, crafting, mobs and redstone. It builds on VoxeLibre with a focus on stability and multiplayer performance.
 license: GPL-3.0-or-later
 docs: https://mineclonia.codeberg.page/wiki/
+discord_server: https://discord.gg/WAwpPWHTXZ
 limitations: Requires Luanti 5.10 or later. Gameplay is incomplete, the interface is only roughly imitated, and textures and sounds differ from Minecraft. World updates may break backwards compatibility.

@@ -12,4 +12,5 @@ compatibility: partial
 description: A clip-launching DAW implementing Ableton Live-style Session and Arrangement workflows. Opens ALS Live Sets for playback and rendering, with time-stretched audio, MIDI synthesis, sandboxed CLAP and VST3 plugins, CLI commands and MCP automation.
 license: GPL-3.0-or-later
 docs: https://github.com/suhina-daw/suhina-daw#readme
+discord_server: https://discord.gg/rgwp4DDNsU
 limitations: Pre-alpha; Live Set compatibility is partial and maintainer-reported. Full Ableton device, editing and project round-trip parity is not claimed. Nightly binaries are unsigned; optional ASIO support uses a separate SDK.

@@ -13,4 +13,5 @@ description: A PlanSwift- and Revu-style quantity-takeoff application with calib
 license: Apache-2.0
 docs: https://github.com/getcadcraft/takeoffcraft#readme
 website: https://getcadcraft.com/apps/takeoffcraft
+discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. Full PlanSwift or Revu project-file and plugin compatibility is not documented. Some website content describes planned workflows. macOS and mobile editions are planned.

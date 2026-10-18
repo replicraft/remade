@@ -13,4 +13,5 @@ description: RPG Reactor provides an RPG Maker-style map, event and database edi
 license: MIT
 website: https://psychronic.itch.io/rpg-reactor
 docs: https://github.com/Psychronic-Games/RPGReactor/blob/main/docs/IMPORTING-LEGACY-PROJECTS.md
+discord_server: https://discord.gg/kc2pTMb
 limitations: XP support is a conversion workflow rather than a drop-in RGSS runtime or identical XP editor. Plugin and Ruby-script compatibility is maintainer-reported and incomplete; imported projects require appropriate rights to their assets. Bundled third-party components have separate licenses.

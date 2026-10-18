@@ -13,4 +13,5 @@ description: An independent RadioBOSS-style broadcast automation application wit
 license: MIT
 website: https://radiomaster.dovafm.com/
 docs: https://github.com/epell-development/RadioMaster#readme
+discord_server: https://discord.gg/zVxeUXCjhc
 limitations: Early releases; features and platform coverage are maintainer-reported. Full RadioBOSS project, settings and plugin compatibility is not documented. Embedded web panels are Windows-only; macOS and Linux open them in a browser. macOS builds are unsigned. AzuraCast management is optional, with privileged actions requiring an API key.

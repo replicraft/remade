@@ -13,4 +13,5 @@ description: An independent Revit-style BIM application with parametric building
 license: Apache-2.0
 docs: https://github.com/getcadcraft/bimcraft#readme
 website: https://getcadcraft.com/apps/bimcraft
+discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. RVT reading exposes container metadata, previews and links rather than model geometry. Worksharing and full Revit family or project compatibility are not claimed. macOS and mobile builds are planned.

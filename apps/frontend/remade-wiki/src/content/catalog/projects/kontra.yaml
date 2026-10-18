@@ -18,6 +18,7 @@ description: An independent sampler targeting Kontakt instruments and UVI Falcon
   instrument interfaces and effects.
 license: Apache-2.0
 docs: https://github.com/DerpcatMusic/KONTRA#readme
+discord_server: https://discord.gg/7hpCbGasQa
 limitations: Alpha nightly builds; Kontakt playback, scripts, interfaces and effects are partial.
   Falcon/UFS coverage and sound parity are incomplete. Bring separately authorized libraries; a purchase
   may not authorize third-party playback. Upstream says parser redistribution rights remain unresolved.

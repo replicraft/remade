@@ -11,4 +11,5 @@ compatibility: targeting
 description: A broader Substance Designer alternative for node-based procedural PBR materials. Evaluates GPU node graphs, previews materials in 2D and 3D, and exports PNG or EXR texture maps with Blender and Unreal Engine presets. Saves graphs in its own .mcgraph JSON format.
 license: MIT OR Apache-2.0
 docs: https://github.com/Calla-Ji/materialcreator#readme
+discord_server: https://discord.gg/fJHS44mQ5E
 limitations: Early pre-release. Uses its own graph format; Substance project, package and plug-in compatibility are not claimed. Requires a GPU with a Vulkan, Metal or DX12 driver; there is no OpenGL fallback. Features and rendering behavior are not independently verified against Substance Designer.

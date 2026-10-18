@@ -13,4 +13,5 @@ description: A Tekla-style steel and rebar detailing application with structural
 license: Apache-2.0
 docs: https://github.com/getcadcraft/detailcraft#readme
 website: https://getcadcraft.com/apps/detailcraft
+discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. Native Tekla model and plugin compatibility is not documented. Fabrication output requires checking in the shop's own viewer. Some website content describes planned workflows. macOS and mobile editions are planned.

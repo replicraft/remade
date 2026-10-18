@@ -13,4 +13,5 @@ description: A broader ElevenLabs alternative for local voice cloning, voice des
 license: AGPL-3.0-only
 website: https://voicestudio.sh/
 docs: https://github.com/debpalash/VoiceStudio/blob/main/docs/feature-catalog.md
+discord_server: https://discord.gg/bzQavDfVV9
 limitations: ElevenLabs API, voice and project compatibility are not documented. Models require downloads; speed and memory needs vary by engine. Intel Macs need a remote backend; Windows ARM support is experimental. Model and tokenizer terms are separate from the app license; default OmniVoice weights are noncommercial, and some licensing reviews remain unresolved.

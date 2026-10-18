@@ -11,4 +11,5 @@ status: alpha
 compatibility: partial
 description: An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering.
 license: MIT OR Apache-2.0
+discord_server: https://discord.gg/artcraft
 limitations: Cannot open AEP or AEPX projects or run After Effects plug-ins. Render behavior has not yet been systematically compared with After Effects.

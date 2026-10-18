@@ -11,4 +11,5 @@ status: experimental
 compatibility: partial
 description: An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, threaded text frames, paragraph composition and PDF export.
 license: MIT OR Apache-2.0
+discord_server: https://discord.gg/artcraft
 limitations: Development and fidelity work are ongoing. Complete InDesign behavior and native document-format compatibility is not asserted by this listing.

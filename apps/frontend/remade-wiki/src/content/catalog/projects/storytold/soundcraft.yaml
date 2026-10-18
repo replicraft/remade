@@ -12,4 +12,5 @@ status: experimental
 compatibility: partial
 description: An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing.
 license: MIT OR Apache-2.0
+discord_server: https://discord.gg/artcraft
 limitations: Maintainers describe it as pre-alpha. Menu coverage does not establish complete behavioral or session-format compatibility.

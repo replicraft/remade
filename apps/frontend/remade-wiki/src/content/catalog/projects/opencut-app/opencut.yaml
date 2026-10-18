@@ -12,4 +12,5 @@ compatibility: targeting
 description: OpenCut is an independently developed video editor targeting CapCut-style editing workflows. Its existing browser editor remains available while a rewrite aims to bring a shared Rust core, plugins and automation to web, desktop and mobile.
 license: MIT
 docs: https://github.com/OpenCut-app/OpenCut#readme
+discord_server: https://discord.gg/zmR9N35cjK
 limitations: The repository is undergoing a rewrite; opencut.app still serves the classic editor. Desktop support is an early window-only prototype and mobile support is planned. CapCut project-file compatibility is not documented.

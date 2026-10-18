@@ -12,4 +12,5 @@ compatibility: partial
 description: A Substance Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.
 license: MIT OR Apache-2.0
 docs: https://github.com/PiJellyPin/MaterialCraft#readme
+discord_server: https://discord.gg/9KVCNatNvX
 limitations: Initial beta release. Third-party material and project formats are unsupported. Splines, AxF import, OCIO/ACE color management, scripting, SVG gradients, CFF fonts, path-traced rendering and custom preview meshes remain unimplemented. Compatibility is maintainer-reported.

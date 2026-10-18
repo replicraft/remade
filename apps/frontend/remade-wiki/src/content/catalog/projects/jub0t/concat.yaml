@@ -13,4 +13,5 @@ compatibility: targeting
 description: Concat provides CapCut-style video editing with a native Rust engine, multi-track timelines, automatic captions, keyframe animation, effects and local video export.
 license: AGPL-3.0-or-later
 docs: https://concatenate.pages.dev/docs
+discord_server: https://discord.gg/DVuPfpXfqP
 limitations: Beta software. CapCut project-file compatibility is not documented. iOS and iPadOS builds require sideloading; licensing includes an additional permission for independent plugins.
