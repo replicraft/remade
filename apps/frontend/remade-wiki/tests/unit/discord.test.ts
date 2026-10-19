@@ -67,7 +67,7 @@ beforeAll(async () => {
 	catalog = await loadCatalog();
 });
 
-it("exports supplied links and omits absent links for projects and requests", () => {
+it("omits Discord links from project and request exports", () => {
 	const output = catalogExport(
 		{
 			...catalog,
@@ -81,7 +81,7 @@ it("exports supplied links and omits absent links for projects and requests", ()
 		output.projects.find(
 			(project) => project.slug === catalog.projects[0].slug,
 		),
-	).toMatchObject(links);
+	).toEqual(expect.not.objectContaining(links));
 	expect(
 		JSON.stringify(
 			output.projects.find(
@@ -102,7 +102,7 @@ it("exports supplied links and omits absent links for projects and requests", ()
 		requests.requests.find(
 			(request) => request.original === catalog.requests[0].original,
 		),
-	).toMatchObject(links);
+	).toEqual(expect.not.objectContaining(links));
 	expect(
 		JSON.stringify(
 			requests.requests.find(
@@ -110,4 +110,8 @@ it("exports supplied links and omits absent links for projects and requests", ()
 			),
 		),
 	).not.toContain("discord_");
+
+	for (const entry of [...output.projects, ...requests.requests]) {
+		for (const field of fields) expect(entry).not.toHaveProperty(field);
+	}
 });
