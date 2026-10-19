@@ -11,13 +11,17 @@ const site = "https://remade.wiki/";
 it("exports preserve public relationships and strip unlisted fields at every level", async () => {
 	const catalog = cachedCatalog;
 	const internal = { reviewNotes: "PRIVATE EDITORIAL NOTE", id: "INTERNAL ID" };
+	const discord = {
+		discord_server: "https://discord.gg/export-test",
+		discord_thread: "https://discord.com/channels/123/456/789",
+	};
 	const originals = catalog.originals.map((o) => ({ ...o, ...internal }));
 	const output = catalogExport(
 		{
 			originals,
 			projects: catalog.entries
 				.filter((e) => e.kind === "project")
-				.map((p) => ({ ...p, ...internal })),
+				.map((p) => ({ ...p, ...internal, ...discord })),
 			tools: catalog.entries
 				.filter((e) => e.kind === "tool")
 				.map((t) => ({
@@ -38,7 +42,11 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	const requests = requestsExport(
 		{
 			originals,
-			requests: catalog.requests.map((r) => ({ ...r, ...internal })),
+			requests: catalog.requests.map((r) => ({
+				...r,
+				...internal,
+				...discord,
+			})),
 		},
 		site,
 	);
@@ -48,7 +56,17 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 
 	expect(!serialized.includes("INTERNAL ID")).toBeTruthy();
 
-	expect(output.schemaVersion).toBe(1);
+	for (const entry of [...output.projects, ...requests.requests]) {
+		expect(entry).not.toHaveProperty("discord_server");
+		expect(entry).not.toHaveProperty("discord_thread");
+	}
+
+	expect(serialized).not.toContain(discord.discord_server);
+	expect(serialized).not.toContain(discord.discord_thread);
+
+	expect(output.schemaVersion).toBe(2);
+
+	expect(requests.schemaVersion).toBe(2);
 
 	expect(output.projects.length).toBe(catalog.projects.length);
 

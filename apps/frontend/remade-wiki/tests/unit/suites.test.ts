@@ -124,7 +124,7 @@ it("exports public suites and retains expanded project references for existing c
 		"https://remade.wiki/",
 	);
 
-	expect(output.schemaVersion).toBe(1);
+	expect(output.schemaVersion).toBe(2);
 	expect(output.tools[0].projects).toEqual(
 		findBySlug(catalog.suites, "artcraft").projects,
 	);
