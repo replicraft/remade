@@ -44,7 +44,7 @@ export default function ProjectPage({
 				<h1 data-pagefind-meta="title">{project.name}</h1>
 
 				<p>
-					Reimplements{" "}
+					Replaces:{" "}
 					<OriginalLinks
 						className="text-sm text-lime hover:underline"
 						originals={catalog.originals}

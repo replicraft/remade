@@ -72,7 +72,7 @@ export default function EntryCard({
 			<p className="mb-3.5 shrink-0 text-xs">
 				{entry.kind === "project" ? (
 					<>
-						Reimplements{" "}
+						Replaces:{" "}
 						<OriginalLinks
 							className="relative z-10 text-lime hover:underline"
 							originals={originals}
