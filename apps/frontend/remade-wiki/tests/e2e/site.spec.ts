@@ -162,7 +162,7 @@ test("static catalog exports and discovery files are served by the production bu
 
 	const catalog = await catalogResponse.json();
 
-	expect(catalog.schemaVersion).toBe(1);
+	expect(catalog.schemaVersion).toBe(2);
 
 	expect(catalog.projects.length).toBeGreaterThan(0);
 
