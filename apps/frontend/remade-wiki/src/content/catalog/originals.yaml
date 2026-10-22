@@ -2188,3 +2188,8 @@
   url: https://auth0.com/
   category: developer-tools
   aliases: [Auth0 by Okta, Okta Customer Identity Cloud]
+- slug: crimsonland
+  name: Crimsonland
+  url: https://store.steampowered.com/app/262830/Crimsonland/
+  category: games
+  aliases: [Crimsonland 2014, Crimsonland Remastered]
