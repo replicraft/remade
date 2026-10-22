@@ -1,4 +1,4 @@
-use crate::security::unavailable;
+use crate::{provider::Provider, security::unavailable};
 use url::Url;
 use worker::{Env, Result};
 
@@ -55,8 +55,8 @@ impl Config {
         })
     }
 
-    pub fn callback(&self) -> String {
-        format!("{}/api/v1/auth/github/callback", self.api)
+    pub fn callback(&self, provider: Provider) -> String {
+        format!("{}/api/v1/auth/{}/callback", self.api, provider.name())
     }
 
     pub fn session_name(&self) -> &str {
@@ -67,11 +67,12 @@ impl Config {
         }
     }
 
-    pub fn flow_name(&self) -> &str {
-        if self.local {
-            "remade_oauth_dev"
-        } else {
-            "__Host-remade_oauth"
+    pub fn flow_name(&self, provider: Provider) -> &str {
+        match (self.local, provider) {
+            (true, Provider::Github) => "remade_oauth_dev",
+            (false, Provider::Github) => "__Host-remade_oauth",
+            (true, Provider::Discord) => "remade_discord_oauth_dev",
+            (false, Provider::Discord) => "__Host-remade_discord_oauth",
         }
     }
 
@@ -125,8 +126,24 @@ mod tests {
             .contains("Secure"));
         assert!(!config.hint(true).contains("Domain="));
         assert_eq!(
-            config.callback(),
+            config.callback(Provider::Github),
             "http://localhost:8787/api/v1/auth/github/callback"
         );
+    }
+
+    #[test]
+    fn provider_flows_have_separate_cookies_and_fixed_callbacks() {
+        let config = Config::parse("https://remade.wiki", "https://api.remade.wiki").unwrap();
+        assert_ne!(
+            config.flow_name(Provider::Github),
+            config.flow_name(Provider::Discord)
+        );
+        assert_eq!(
+            config.callback(Provider::Discord),
+            "https://api.remade.wiki/api/v1/auth/discord/callback"
+        );
+        assert!(config
+            .cookie(config.flow_name(Provider::Discord), "value", 600)
+            .starts_with("__Host-remade_discord_oauth="));
     }
 }

@@ -1,16 +1,15 @@
 import { toast } from "sonner";
-import { type Account, apiUrl } from "./auth";
+import { type Account, accountUsername, loginUrl } from "./auth";
 
 const loginToastKey = "remade-pending-login-toast";
 
 export function promptLoginToVote() {
-	toast.info("Login with github to vote", {
+	toast.info("Login to vote", {
 		id: "request-login-required",
 		action: {
 			label: "Login",
 			onClick: () => {
-				rememberLogin();
-				window.location.assign(`${apiUrl}/auth/github`);
+				window.location.assign(loginUrl);
 			},
 		},
 	});
@@ -29,9 +28,7 @@ export function announceLogin(account: Account | null) {
 		const pending = sessionStorage.getItem(loginToastKey);
 		sessionStorage.removeItem(loginToastKey);
 
-		const username = account?.identities.find(
-			(identity) => identity.provider === "github",
-		)?.username;
+		const username = accountUsername(account);
 		const elapsed = Date.now() - Number(pending);
 
 		if (pending && username && elapsed >= 0 && elapsed < 10 * 60 * 1000) {

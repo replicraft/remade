@@ -38,7 +38,7 @@ Show software and interfaces that community members want faithfully reimplemente
 
 ## Request activity
 
-Keep the controls compact, with visible upvote and builder totals for both signed-in and signed-out visitors. Put the builder explanation in a hover and keyboard-focus tooltip on an accessible info icon beside “I’m building this”; keep “Know an alternative? Add it to the catalog” underneath. An unauthorized action shows the toast “Login with github to vote” with a Login action, rather than expanding the card with a login prompt.
+Keep the controls compact, with visible upvote and builder totals for both signed-in and signed-out visitors. Put the builder explanation in a hover and keyboard-focus tooltip on an accessible info icon beside “I’m building this”; keep “Know an alternative? Add it to the catalog” underneath. An unauthorized action shows the toast “Login to vote” with a Login action opening the provider chooser, rather than expanding the card with a login prompt.
 
 Catalog YAML and static JSON exports remain the source of truth for requests. Counters are separate runtime D1 records in `request_upvotes` and `request_builders`, tied to the provider-independent Remade user ID. They do not change request fulfillment or catalog publication. Visitors may withdraw either indication. Public totals come from one bulk `/api/v1/requests/activity` request per page, with no polling and no anonymous `/auth/me` calls. Logged-in responses include only the caller’s selected states; no builder names or user IDs are published. API failures leave static browsing available and show unavailable counters rather than fabricated zeros.
 

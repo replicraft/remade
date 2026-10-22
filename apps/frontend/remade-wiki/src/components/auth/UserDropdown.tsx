@@ -1,5 +1,6 @@
 import { ChevronDown, ChevronUp, LogOut } from "lucide-react";
 import Dropdown from "react-dropdown";
+import { accountUsername } from "../../lib/auth";
 import { useAuthStore } from "../../stores/auth-store.ts";
 import UserAvatar from "./UserAvatar";
 
@@ -8,9 +9,7 @@ export default function UserDropdown() {
 	const busy = useAuthStore((state) => state.busy);
 	const message = useAuthStore((state) => state.message);
 	const signOut = useAuthStore((state) => state.signOut);
-	const username = account?.identities.find(
-		(identity) => identity.provider === "github",
-	)?.username;
+	const username = accountUsername(account);
 	const name = account?.displayName || username || "Account";
 
 	if (!account) return null;

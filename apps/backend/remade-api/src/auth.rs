@@ -1,6 +1,8 @@
 use crate::{
     config::Config,
-    db::{self, GithubUser},
+    db,
+    profile::{DiscordUser, GithubUser, Profile},
+    provider::Provider,
     security::{self, FLOW_SECONDS, SESSION_SECONDS},
     session,
 };
@@ -13,33 +15,34 @@ use std::time::Duration;
 use url::Url;
 use worker::*;
 
-fn credentials(env: &Env) -> Result<(String, String)> {
-    let id = env.var("GITHUB_CLIENT_ID")?.to_string();
-    let secret = env.secret("GITHUB_CLIENT_SECRET")?.to_string();
+fn credentials(env: &Env, provider: Provider) -> Result<(String, String)> {
+    let id = env.var(provider.client_id_key())?.to_string();
+    let secret = env.secret(provider.secret_key())?.to_string();
     if id.is_empty() || id.starts_with("REPLACE_") || secret.is_empty() {
         return Err(security::unavailable());
     }
     Ok((id, secret))
 }
 
-pub fn begin(env: &Env, config: &Config) -> Result<Response> {
-    let (client_id, secret) = credentials(env)?;
+pub fn begin(env: &Env, config: &Config, provider: Provider) -> Result<Response> {
+    let (client_id, secret) = credentials(env, provider)?;
     let state = security::token()?;
     let verifier = security::token()?;
-    let mut authorize = Url::parse("https://github.com/login/oauth/authorize")?;
+    let mut authorize = Url::parse(provider.authorize_url())?;
     authorize.query_pairs_mut().extend_pairs([
         ("client_id", client_id.as_str()),
-        ("redirect_uri", config.callback().as_str()),
+        ("redirect_uri", config.callback(provider).as_str()),
         ("state", state.as_str()),
         ("code_challenge", security::challenge(&verifier).as_str()),
         ("code_challenge_method", "S256"),
-        ("scope", ""),
+        ("scope", provider.scope()),
+        ("response_type", "code"),
     ]);
     let mut response = redirect(authorize.as_str())?;
     response.headers_mut().append(
         "Set-Cookie",
         &config.cookie(
-            config.flow_name(),
+            config.flow_name(provider),
             &security::flow_cookie(&state, &verifier, security::now() + FLOW_SECONDS, &secret),
             FLOW_SECONDS,
         ),
@@ -47,21 +50,32 @@ pub fn begin(env: &Env, config: &Config) -> Result<Response> {
     Ok(response)
 }
 
-pub async fn callback(req: &Request, env: &Env, config: &Config) -> Result<Response> {
+pub async fn callback(
+    req: &Request,
+    env: &Env,
+    config: &Config,
+    provider: Provider,
+) -> Result<Response> {
     // Clear transient credentials even on rejected state, provider errors, or D1 failures.
-    let result = complete(req, env, config).await;
+    let result = complete(req, env, config, provider).await;
     let mut response = match result {
         Ok(response) => response,
         Err(_) => Response::error("Unable to sign in. Please start login again.", 400)?,
     };
-    response
-        .headers_mut()
-        .append("Set-Cookie", &config.cookie(config.flow_name(), "", 0))?;
+    response.headers_mut().append(
+        "Set-Cookie",
+        &config.cookie(config.flow_name(provider), "", 0),
+    )?;
     Ok(response)
 }
 
-async fn complete(req: &Request, env: &Env, config: &Config) -> Result<Response> {
-    let (client_id, secret) = credentials(env)?;
+async fn complete(
+    req: &Request,
+    env: &Env,
+    config: &Config,
+    provider: Provider,
+) -> Result<Response> {
+    let (client_id, secret) = credentials(env, provider)?;
     let url = req.url()?;
     let query: Vec<_> = url.query_pairs().collect();
     let parameter = |name: &str| -> Option<String> {
@@ -71,6 +85,11 @@ async fn complete(req: &Request, env: &Env, config: &Config) -> Result<Response>
         }
         Some(values[0].1.to_string())
     };
+    if query.iter().filter(|(key, _)| key == "iss").count() > 1
+        || !provider.accepts_issuer(parameter("iss").as_deref())
+    {
+        return Err(security::unavailable());
+    }
     let state = parameter("state").ok_or_else(security::unavailable)?;
     let code = parameter("code")
         .filter(|v| !v.is_empty() && v.len() <= 512 && !v.chars().any(char::is_control))
@@ -79,23 +98,26 @@ async fn complete(req: &Request, env: &Env, config: &Config) -> Result<Response>
         return Err(security::unavailable());
     }
     let cookies = req.headers().get("Cookie")?.unwrap_or_default();
-    let verifier = security::cookie_value(&cookies, config.flow_name())
+    let verifier = security::cookie_value(&cookies, config.flow_name(provider))
         .and_then(|cookie| security::validate_flow(cookie, &state, security::now(), &secret))
         .ok_or_else(security::unavailable)?;
-    let body = url::form_urlencoded::Serializer::new(String::new())
-        .extend_pairs([
-            ("client_id", client_id.as_str()),
-            ("client_secret", secret.as_str()),
-            ("code", code.as_str()),
-            ("redirect_uri", config.callback().as_str()),
-            ("code_verifier", verifier.as_str()),
-        ])
-        .finish();
+    let mut form = url::form_urlencoded::Serializer::new(String::new());
+    form.extend_pairs([
+        ("client_id", client_id.as_str()),
+        ("client_secret", secret.as_str()),
+        ("code", code.as_str()),
+        ("redirect_uri", config.callback(provider).as_str()),
+        ("code_verifier", verifier.as_str()),
+    ]);
+    if provider == Provider::Discord {
+        form.append_pair("grant_type", "authorization_code");
+    }
+    let body = form.finish();
     let headers = Headers::new();
     headers.set("Accept", "application/json")?;
     headers.set("Content-Type", "application/x-www-form-urlencoded")?;
     let token_request = Request::new_with_init(
-        "https://github.com/login/oauth/access_token",
+        provider.token_url(),
         RequestInit::new()
             .with_method(Method::Post)
             .with_headers(headers)
@@ -106,23 +128,43 @@ async fn complete(req: &Request, env: &Env, config: &Config) -> Result<Response>
     let access_token = exchange
         .access_token
         .filter(|v| !v.is_empty() && v.len() <= 2048 && !v.chars().any(char::is_control))
-        .filter(|_| exchange.error.is_none() && exchange.token_type.as_deref() == Some("bearer"))
+        .filter(|_| {
+            exchange.error.is_none()
+                && exchange
+                    .token_type
+                    .as_deref()
+                    .is_some_and(|v| v.eq_ignore_ascii_case("bearer"))
+                && (provider != Provider::Discord
+                    || exchange.scope.as_deref().is_some_and(|scope| {
+                        scope
+                            .split_ascii_whitespace()
+                            .any(|value| value == "identify")
+                    }))
+        })
         .ok_or_else(security::unavailable)?;
     let headers = Headers::new();
-    headers.set("Accept", "application/vnd.github+json")?;
+    headers.set("Accept", "application/json")?;
     headers.set("Authorization", &format!("Bearer {access_token}"))?;
     headers.set("User-Agent", "Remade-Authentication")?;
-    headers.set("X-GitHub-Api-Version", "2022-11-28")?;
+    if provider == Provider::Github {
+        headers.set("X-GitHub-Api-Version", "2022-11-28")?;
+    }
     let user_request = Request::new_with_init(
-        "https://api.github.com/user",
+        provider.user_url(),
         RequestInit::new()
             .with_headers(headers)
             .with_redirect(RequestRedirect::Manual),
     )?;
-    let github: GithubUser = bounded_json(user_request).await?;
-    github.validate()?;
+    let profile: Profile = match provider {
+        Provider::Github => bounded_json::<GithubUser>(user_request)
+            .await?
+            .into_profile()?,
+        Provider::Discord => bounded_json::<DiscordUser>(user_request)
+            .await?
+            .into_profile()?,
+    };
     let db = env.d1("DB")?;
-    let user_id = db::resolve_identity(&db, &github).await?;
+    let user_id = db::resolve_identity(&db, &profile).await?;
     let raw_token = session::create(&db, &user_id).await?;
     let mut response = redirect(&config.frontend)?;
     response.headers_mut().append(
@@ -150,6 +192,7 @@ struct TokenResponse {
     access_token: Option<String>,
     token_type: Option<String>,
     error: Option<String>,
+    scope: Option<String>,
 }
 
 async fn bounded_json<T: DeserializeOwned>(request: Request) -> Result<T> {

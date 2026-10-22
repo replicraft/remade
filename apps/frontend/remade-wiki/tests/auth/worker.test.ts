@@ -12,6 +12,7 @@ let userCalls = 0;
 let releaseRace: (() => void) | undefined;
 let barrier: Promise<void>;
 let username = "example";
+let discordId = "123456789012345678";
 let requestOriginal: string;
 
 beforeAll(async () => {
@@ -68,6 +69,11 @@ beforeAll(async () => {
 						API_ORIGIN: { type: "text", value: api },
 						GITHUB_CLIENT_ID: { type: "text", value: "test-client" },
 						GITHUB_CLIENT_SECRET: { type: "text", value: "test-secret" },
+						DISCORD_CLIENT_ID: { type: "text", value: "test-discord-client" },
+						DISCORD_CLIENT_SECRET: {
+							type: "text",
+							value: "test-discord-secret",
+						},
 					},
 				},
 				dev: {
@@ -75,18 +81,34 @@ beforeAll(async () => {
 						type: "fetcher",
 						handler: async (request) => {
 							providerCalls++;
-							if (new URL(request.url).hostname === "github.com") {
+							const url = new URL(request.url);
+							const discord = url.hostname === "discord.com";
+							if (
+								url.pathname.endsWith("/oauth2/token") ||
+								url.hostname === "github.com"
+							) {
 								const body = new URLSearchParams(await request.text());
 								expect(body.get("redirect_uri")).toBe(
-									`${api}/api/v1/auth/github/callback`,
+									`${api}/api/v1/auth/${discord ? "discord" : "github"}/callback`,
 								);
 								expect(body.get("code_verifier")).toHaveLength(43);
+								if (discord) {
+									expect(body.get("grant_type")).toBe("authorization_code");
+									expect(body.get("client_id")).toBe("test-discord-client");
+									expect(body.get("client_secret")).toBe("test-discord-secret");
+								}
 								return Response.json(
 									mode === "invalid-code"
 										? { error: "bad_verification_code" }
 										: {
 												access_token: "test-provider-token",
-												token_type: "bearer",
+												token_type:
+													mode === "invalid-token-type"
+														? "MAC"
+														: discord
+															? "Bearer"
+															: "bearer",
+												scope: mode === "missing-scope" ? "" : "identify",
 											},
 								);
 							}
@@ -105,6 +127,18 @@ beforeAll(async () => {
 								if (userCalls === 2) releaseRace?.();
 								await barrier;
 							}
+							expect(url.href).toBe(
+								discord
+									? "https://discord.com/api/v10/users/@me"
+									: "https://api.github.com/user",
+							);
+							if (discord)
+								return Response.json({
+									id: mode === "invalid-id" ? 123 : discordId,
+									username,
+									global_name: null,
+									avatar: "0123456789abcdef0123456789abcdef",
+								});
 							return Response.json({
 								id: mode === "invalid-id" ? "123" : 123,
 								login: username,
@@ -230,6 +264,7 @@ beforeEach(async () => {
 	providerCalls = 0;
 	userCalls = 0;
 	username = "example";
+	discordId = "123456789012345678";
 	barrier = new Promise((resolve) => {
 		releaseRace = resolve;
 	});
@@ -245,10 +280,13 @@ afterAll(async () => {
 	await worker?.dispose();
 });
 
-async function begin() {
-	const response = await worker.dispatchFetch(`${api}/api/v1/auth/github`, {
-		redirect: "manual",
-	});
+async function begin(provider: "github" | "discord" = "github") {
+	const response = await worker.dispatchFetch(
+		`${api}/api/v1/auth/${provider}`,
+		{
+			redirect: "manual",
+		},
+	);
 	expect(response.status).toBe(302);
 	const location = new URL(response.headers.get("Location") || "");
 	const cookie = response.headers.getSetCookie()[0].split(";")[0];
@@ -260,10 +298,10 @@ async function begin() {
 	};
 }
 
-async function login() {
-	const flow = await begin();
+async function login(provider: "github" | "discord" = "github") {
+	const flow = await begin(provider);
 	return worker.dispatchFetch(
-		`${api}/api/v1/auth/github/callback?code=valid&state=${flow.state}`,
+		`${api}/api/v1/auth/${provider}/callback?code=valid&state=${flow.state}${provider === "discord" ? "&iss=https%3A%2F%2Fdiscord.com" : ""}`,
 		{ headers: { Cookie: flow.cookie }, redirect: "manual" },
 	);
 }
@@ -276,6 +314,188 @@ function sessionCookie(response: Awaited<ReturnType<typeof login>>) {
 			?.split(";")[0] || ""
 	);
 }
+
+describe("Discord OAuth", () => {
+	it("requests only identity access with PKCE and a separate browser cookie", async () => {
+		const discord = await begin("discord");
+		const github = await begin();
+		expect(discord.location.origin).toBe("https://discord.com");
+		expect(discord.location.searchParams.get("scope")).toBe("identify");
+		expect(discord.location.searchParams.get("response_type")).toBe("code");
+		expect(discord.location.searchParams.get("code_challenge_method")).toBe(
+			"S256",
+		);
+		const verifier = discord.cookie.split("=")[1].split(".")[1];
+		expect(discord.location.searchParams.get("code_challenge")).toBe(
+			createHash("sha256").update(verifier).digest("base64url"),
+		);
+		expect(discord.cookie).toMatch(/^__Host-remade_discord_oauth=/);
+		expect(github.cookie).toMatch(/^__Host-remade_oauth=/);
+	});
+
+	it.each([
+		"",
+		"&iss=https%3A%2F%2Fevil.example",
+		"&iss=https%3A%2F%2Fdiscord.com&iss=https%3A%2F%2Fdiscord.com",
+	])("rejects a missing, foreign or duplicate issuer: %s", async (issuer) => {
+		const flow = await begin("discord");
+		const response = await worker.dispatchFetch(
+			`${api}/api/v1/auth/discord/callback?code=valid&state=${flow.state}${issuer}`,
+			{ headers: { Cookie: flow.cookie } },
+		);
+		expect(response.status).toBe(400);
+		expect(response.headers.getSetCookie()[0]).toContain(
+			"__Host-remade_discord_oauth=;",
+		);
+		expect(response.headers.getSetCookie()[0]).toContain("Max-Age=0");
+		expect(providerCalls).toBe(0);
+	});
+
+	it.each(["github", "discord"] as const)(
+		"rejects a %s flow at the other provider's callback",
+		async (provider) => {
+			const flow = await begin(provider);
+			const other = provider === "github" ? "discord" : "github";
+			const response = await worker.dispatchFetch(
+				`${api}/api/v1/auth/${other}/callback?code=valid&state=${flow.state}&iss=https%3A%2F%2Fdiscord.com`,
+				{ headers: { Cookie: flow.cookie } },
+			);
+			expect(response.status).toBe(400);
+			expect(providerCalls).toBe(0);
+		},
+	);
+
+	it.each([
+		"missing",
+		"mismatch",
+		"tampered",
+		"duplicate",
+		"no-cookie",
+		"denied",
+	])("rejects %s Discord callbacks before provider access", async (failure) => {
+		const flow = await begin("discord");
+		const state = failure === "mismatch" ? "x".repeat(43) : flow.state;
+		const query =
+			failure === "missing"
+				? "code=valid"
+				: `code=valid&state=${state}${failure === "duplicate" ? `&state=${state}` : ""}${failure === "denied" ? "&error=access_denied" : ""}`;
+		const cookie =
+			failure === "no-cookie"
+				? ""
+				: failure === "tampered"
+					? flow.cookie.replace(/.$/, "!")
+					: flow.cookie;
+		const response = await worker.dispatchFetch(
+			`${api}/api/v1/auth/discord/callback?${query}&iss=https%3A%2F%2Fdiscord.com`,
+			{ headers: { Cookie: cookie } },
+		);
+		expect(response.status).toBe(400);
+		expect(providerCalls).toBe(0);
+	});
+
+	it.each([
+		"invalid-code",
+		"provider-failure",
+		"invalid-id",
+		"oversized-response",
+		"invalid-json",
+		"redirected-response",
+		"invalid-token-type",
+		"missing-scope",
+	])("creates no Discord account after %s", async (failure) => {
+		mode = failure;
+		const response = await login("discord");
+		expect(response.status).toBe(400);
+		expect(response.headers.getSetCookie()[0]).toContain("Max-Age=0");
+		const db = await worker.getD1Database("DB");
+		expect(
+			await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+		).toBe(0);
+	});
+
+	it("preserves a Discord identity across username changes and resolves its session", async () => {
+		const response = await login("discord");
+		expect(response.status).toBe(302);
+		const cookie = sessionCookie(response);
+		const db = await worker.getD1Database("DB");
+		const id = await db.prepare("SELECT id FROM users").first("id");
+		expect(
+			await db
+				.prepare("SELECT provider_user_id FROM user_identities")
+				.first("provider_user_id"),
+		).toBe("123456789012345678");
+		username = "renamed.user";
+		await login("discord");
+		const me = await worker.dispatchFetch(`${api}/api/v1/auth/me`, {
+			headers: { Cookie: cookie },
+		});
+		expect(await me.json()).toMatchObject({
+			id,
+			displayName: null,
+			identities: [{ provider: "discord", username: "renamed.user" }],
+		});
+		expect(
+			await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+		).toBe(1);
+	});
+
+	it("keeps equal GitHub and Discord IDs and usernames as separate accounts", async () => {
+		discordId = "123";
+		const github = sessionCookie(await login());
+		const discord = sessionCookie(await login("discord"));
+		const db = await worker.getD1Database("DB");
+		expect(
+			await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+		).toBe(2);
+		for (const cookie of [github, discord]) {
+			const vote = await worker.dispatchFetch(
+				`${api}/api/v1/requests/${requestOriginal}/upvote`,
+				{ method: "POST", headers: { Cookie: cookie, Origin: origin } },
+			);
+			expect(vote.status).toBe(204);
+		}
+		expect(
+			await db
+				.prepare("SELECT count(*) FROM request_upvotes WHERE original = ?")
+				.bind(requestOriginal)
+				.first("count(*)"),
+		).toBe(2);
+		const logout = await worker.dispatchFetch(`${api}/api/v1/auth/logout`, {
+			method: "POST",
+			headers: { Cookie: discord, Origin: origin },
+		});
+		expect(logout.status).toBe(204);
+		expect(
+			(
+				await worker.dispatchFetch(`${api}/api/v1/auth/me`, {
+					headers: { Cookie: discord },
+				})
+			).status,
+		).toBe(401);
+		expect(
+			(
+				await worker.dispatchFetch(`${api}/api/v1/auth/me`, {
+					headers: { Cookie: github },
+				})
+			).status,
+		).toBe(200);
+	});
+
+	it("arbitrates concurrent Discord first logins through the provider identity constraint", async () => {
+		mode = "race";
+		const responses = await Promise.all([login("discord"), login("discord")]);
+		expect(responses.map((response) => response.status)).toEqual([302, 302]);
+		const db = await worker.getD1Database("DB");
+		expect(
+			await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+		).toBe(1);
+		expect(
+			await db
+				.prepare("SELECT count(*) FROM user_identities")
+				.first("count(*)"),
+		).toBe(1);
+	});
+});
 
 describe("Worker OAuth and sessions", () => {
 	it("uses unpredictable runtime randomness, fixed redirects, and PKCE S256", async () => {

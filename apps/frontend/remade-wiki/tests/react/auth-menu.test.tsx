@@ -29,7 +29,7 @@ describe("header authentication", () => {
 		const screen = await render(<AuthMenu />);
 		await expect
 			.element(screen.getByRole("link", { name: "Login" }))
-			.toHaveAttribute("href", `${auth.apiUrl}/auth/github`);
+			.toHaveAttribute("href", auth.loginUrl);
 		expect(auth.resolveAccount).not.toHaveBeenCalled();
 	});
 
@@ -66,6 +66,27 @@ describe("header authentication", () => {
 		await render(<AuthMenu />);
 		await expect.poll(() => auth.resolveAccount).toHaveBeenCalledTimes(2);
 		expect(toast.success).toHaveBeenCalledOnce();
+	});
+
+	it("shows a Discord username and announces a confirmed Discord sign-in", async () => {
+		vi.mocked(auth.hasLoginHint).mockReturnValue(true);
+		vi.mocked(auth.resolveAccount).mockResolvedValue({
+			...account,
+			displayName: null,
+			identities: [{ provider: "discord", username: "discord.user" }],
+		});
+		sessionStorage.setItem("remade-pending-login-toast", String(Date.now()));
+		const screen = await render(<AuthMenu />);
+		await expect
+			.element(
+				screen.getByRole("combobox", { name: "Account menu for discord.user" }),
+			)
+			.toBeVisible();
+		expect(toast.success).toHaveBeenCalledWith("Logged in as discord.user");
+		await screen
+			.getByRole("combobox", { name: "Account menu for discord.user" })
+			.click();
+		await expect.element(screen.getByText("@discord.user")).toBeVisible();
 	});
 
 	it("does not announce an unsuccessful OAuth return", async () => {

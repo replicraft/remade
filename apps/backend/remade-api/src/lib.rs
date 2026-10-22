@@ -1,12 +1,15 @@
 mod auth;
 mod config;
 mod db;
+mod profile;
+mod provider;
 mod requests;
 mod security;
 mod session;
 
 use config::Config;
 use futures_util::StreamExt;
+use provider::Provider;
 use worker::*;
 
 #[event(fetch)]
@@ -31,13 +34,13 @@ async fn fetch(req: Request, env: Env, _ctx: Context) -> Result<Response> {
         // Do not log or expose provider responses, URLs, cookies, or D1 errors.
         Err(_) => Response::error("Authentication unavailable", 503)?,
     };
-    if req.path() == "/api/v1/auth/github/callback"
-        && response.status_code() >= 400
-        && response.headers().get("Set-Cookie")?.is_none()
-    {
-        response
-            .headers_mut()
-            .append("Set-Cookie", &config.cookie(config.flow_name(), "", 0))?;
+    let clear_flow =
+        response.status_code() >= 400 && response.headers().get("Set-Cookie")?.is_none();
+    if let Some(provider) = callback_provider(&req.path()).filter(|_| clear_flow) {
+        response.headers_mut().append(
+            "Set-Cookie",
+            &config.cookie(config.flow_name(provider), "", 0),
+        )?;
     }
     response.headers_mut().set("Cache-Control", "no-store")?;
     response
@@ -61,7 +64,11 @@ async fn fetch(req: Request, env: Env, _ctx: Context) -> Result<Response> {
 async fn route(req: &Request, env: &Env, config: &Config) -> Result<Response> {
     let path = req.path();
     let allowed = match path.as_str() {
-        "/api/v1/auth/github" | "/api/v1/auth/github/callback" | "/api/v1/auth/me" => "GET",
+        "/api/v1/auth/github"
+        | "/api/v1/auth/github/callback"
+        | "/api/v1/auth/discord"
+        | "/api/v1/auth/discord/callback"
+        | "/api/v1/auth/me" => "GET",
         "/api/v1/auth/logout" => "POST",
         "/api/v1/requests/activity" => "GET",
         _ if requests::action_path(&path).is_some() => "POST",
@@ -129,12 +136,24 @@ async fn route(req: &Request, env: &Env, config: &Config) -> Result<Response> {
         }
     }
     match path.as_str() {
-        "/api/v1/auth/github" => auth::begin(env, config),
-        "/api/v1/auth/github/callback" => auth::callback(req, env, config).await,
+        "/api/v1/auth/github" => auth::begin(env, config, Provider::Github),
+        "/api/v1/auth/discord" => auth::begin(env, config, Provider::Discord),
+        "/api/v1/auth/github/callback" => auth::callback(req, env, config, Provider::Github).await,
+        "/api/v1/auth/discord/callback" => {
+            auth::callback(req, env, config, Provider::Discord).await
+        }
         "/api/v1/auth/me" => session::me(req, env, config).await,
         "/api/v1/auth/logout" => session::logout(req, env, config).await,
         "/api/v1/requests/activity" => requests::activity(req, env, config).await,
         _ if requests::action_path(&path).is_some() => requests::change(req, env, config).await,
         _ => unreachable!(),
+    }
+}
+
+fn callback_provider(path: &str) -> Option<Provider> {
+    match path {
+        "/api/v1/auth/github/callback" => Some(Provider::Github),
+        "/api/v1/auth/discord/callback" => Some(Provider::Discord),
+        _ => None,
     }
 }

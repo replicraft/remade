@@ -4,16 +4,27 @@ export const apiUrl = (
 	import.meta.env.PUBLIC_REMADE_API_BASE_URL || "https://api.remade.wiki/api/v1"
 ).replace(/\/$/, "");
 
+export const loginUrl = "/login/";
+export const discordLoginEnabled =
+	import.meta.env.PUBLIC_REMADE_DISCORD_AUTH_ENABLED === "true";
+
 const accountSchema = v.object({
 	id: v.pipe(v.string(), v.uuid()),
 	displayName: v.nullable(v.string()),
 	avatarUrl: v.nullable(v.pipe(v.string(), v.url())),
 	identities: v.array(
-		v.object({ provider: v.literal("github"), username: v.string() }),
+		v.object({
+			provider: v.picklist(["github", "discord"]),
+			username: v.string(),
+		}),
 	),
 });
 
 export type Account = v.InferOutput<typeof accountSchema>;
+
+export function accountUsername(account: Account | null): string | undefined {
+	return account?.identities[0]?.username;
+}
 
 export function hasLoginHint(cookies: string): boolean {
 	return cookies
