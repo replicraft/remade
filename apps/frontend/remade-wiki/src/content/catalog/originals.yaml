@@ -2188,3 +2188,8 @@
   url: https://auth0.com/
   category: developer-tools
   aliases: [Auth0 by Okta, Okta Customer Identity Cloud]
+
+- slug: modbus-poll
+  name: Modbus Poll
+  url: https://modbuspoll.com/
+  category: engineering
