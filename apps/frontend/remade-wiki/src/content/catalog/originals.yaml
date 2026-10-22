@@ -2188,3 +2188,22 @@
   url: https://auth0.com/
   category: developer-tools
   aliases: [Auth0 by Okta, Okta Customer Identity Cloud]
+- slug: tactiq
+  name: Tactiq
+  url: https://tactiq.io/
+  category: productivity
+  aliases: [Tactiq.io]
+- slug: read-ai
+  name: Read AI
+  url: https://www.read.ai/
+  category: productivity
+  aliases: [Read.ai]
+- slug: granola
+  name: Granola
+  url: https://www.granola.ai/
+  category: productivity
+- slug: xsplit-vcam
+  name: XSplit VCam
+  url: https://www.xsplit.com/vcam
+  category: creative
+  aliases: [VCam]
