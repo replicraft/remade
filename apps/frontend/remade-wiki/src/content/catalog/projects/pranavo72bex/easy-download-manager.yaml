@@ -1,0 +1,15 @@
+# Accepted with maintainer approval as a broader IDM alternative.
+slug: easy-download-manager
+name: Easy Download Manager
+authors: [pranavo72bex]
+repository: https://github.com/pranavo72bex/Easy-Download-Manager
+originals: [internet-download-manager]
+category: productivity
+languages: [Rust, JavaScript]
+platforms: [Windows, macOS, Linux]
+status: experimental
+compatibility: partial
+description: A broader Internet Download Manager alternative with a native desktop interface, segmented downloads, interrupted-download resume, queues, scheduling and speed limits. Its browser extension hands downloads to the app through native messaging. Supports HTTP, FTP and magnet links, with video downloads using yt-dlp and FFmpeg.
+license: MIT
+docs: https://github.com/pranavo72bex/Easy-Download-Manager#readme
+limitations: Upstream documents remaining production-readiness and platform-verification gaps. Installers are unsigned; Intel Mac builds are not provided. Chromium browsers require an unpacked extension. IDM settings and extension compatibility are not established; yt-dlp and FFmpeg are separate dependencies for supported video workflows.

@@ -1,3 +1,8 @@
+- slug: google-notebooklm
+  name: Gemini Notebook
+  url: https://notebook.google/
+  category: productivity
+  aliases: [NotebookLM, Notebook LM, Google NotebookLM, Google Notebook LM, Google Gemini Notebook]
 - slug: adobe-photoshop
   name: Adobe Photoshop
   url: https://www.adobe.com/products/photoshop.html

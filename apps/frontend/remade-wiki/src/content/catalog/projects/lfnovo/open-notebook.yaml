@@ -1,0 +1,16 @@
+slug: open-notebook
+name: Open Notebook
+authors: [lfnovo]
+repository: https://github.com/lfnovo/open-notebook
+originals: [google-notebooklm]
+category: productivity
+languages: [Python, TypeScript]
+platforms: [Web]
+status: experimental
+compatibility: partial
+description: A self-hosted implementation of NotebookLM-style research workflows. Organizes documents, web pages, audio and video into notebooks, provides source-grounded chat with citations, searches collected material and generates multi-speaker podcasts. Supports local model servers and multiple hosted AI providers, with a REST API for integrations.
+license: MIT
+website: https://www.open-notebook.ai
+docs: https://github.com/lfnovo/open-notebook/tree/main/docs
+discord_server: https://discord.gg/37XJPXfz2w
+limitations: An independent research workspace, without documented compatibility with NotebookLM accounts or notebook imports. Currently designed for a single user; multi-user support remains a future direction. Requires a configured local model server or hosted AI provider. OCR and local JavaScript-rendered page extraction require optional runtimes.
