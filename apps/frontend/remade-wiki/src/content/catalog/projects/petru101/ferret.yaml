@@ -1,0 +1,16 @@
+# Proposed with maintainer approval as a broader Wand (formerly WeMod) alternative: it does not
+# reproduce Wand's per-game trainers; it finds values in any single-player game itself.
+slug: ferret
+name: Ferret
+authors: [petru101]
+repository: https://github.com/Petru101/ferret
+originals: [wand]
+category: games
+languages: [Rust]
+platforms: [Linux, Windows]
+status: alpha
+compatibility: partial
+description: "A free, open-source alternative to Wand's single-player game cheats, with no daily time limit. Instead of per-game trainers, it finds a number the player picks in the game window (health, gold, ammo) in the game's memory, then sets it, keeps it in a range and finds it again in later runs. Unreal, Unity, Godot, RPG Maker and other engines' values can be listed by name. Found values can be exported or shared through a community library."
+license: GPL-3.0-or-later
+docs: https://github.com/Petru101/ferret#readme
+limitations: "Not a reimplementation of Wand's app: no curated per-game trainers, overlay, remote app or Wand account features; values are found by the player or taken from the shared library. Single-player only: games with running anti-cheat and online-only games are refused. Linux (Flatpak) and 64-bit Windows 10/11; the Windows build is newer and less tested. Most of the code was written with an AI assistant."
