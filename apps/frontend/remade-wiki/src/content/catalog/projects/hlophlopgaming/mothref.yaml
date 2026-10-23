@@ -1,0 +1,14 @@
+# Scope and limitations are based on the repository README and ROADMAP; compatibility is not independently verified.
+slug: mothref
+name: MothRef
+authors: [hlophlopgaming]
+repository: https://github.com/hlophlopgaming/mothRef
+originals: [pureref]
+category: creative
+languages: [Rust]
+platforms: [Linux, macOS, Windows]
+status: experimental
+compatibility: partial
+description: A native reference-image board for artists with an infinite canvas, image transforms, text notes, a board library, PureRef-style navigation presets and import of PureRef .pur boards.
+license: GPL-3.0-or-later
+limitations: Experimental early release. PureRef .pur import is read-only and limited to verified files and supported content, using a fork of LazyRef's MIT-licensed purcore; .pur writing is out of scope. Full PureRef 2 feature parity is a roadmap goal, not yet reached.
