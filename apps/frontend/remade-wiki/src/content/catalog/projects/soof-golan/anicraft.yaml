@@ -1,0 +1,14 @@
+slug: anicraft
+name: AniCraft
+authors: [soof-golan]
+repository: https://github.com/soof-golan/anicraft
+originals: [adobe-animate]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS, Linux]
+status: experimental
+compatibility: partial
+description: An independent Adobe Animate-compatible 2D animation editor built on AniCraft and Craft engine crates. Reads and writes XFL folders and zipped FLA documents, with vector drawing, symbols, timelines, tweens and text. Exports SWF, GIF, MP4, PNG sequences and SVG, with command-line and MCP interfaces for inspection, rendering, conversion and editing.
+license: MIT OR BSD-3-Clause
+docs: https://github.com/soof-golan/anicraft#readme
+limitations: Prerelease for inspection, conversion and light editing. ActionScript has a limited main-timeline subset, without a general VM or component behavior. Some document features are only preserved; 3D and armature fidelity is not established. SWF output is untested in Adobe Flash Player. Large exports are slow; binaries are unsigned.
