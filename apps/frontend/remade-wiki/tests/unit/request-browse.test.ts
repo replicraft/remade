@@ -128,7 +128,7 @@ describe("request facets and dates", () => {
 	});
 
 	it.each([
-		{ original: "logic-pro", vendor: "apple" },
+		{ original: "garageband", vendor: "apple" },
 		{ original: "adobe-character-animator", vendor: "adobe" },
 	])(
 		"derives vendors from paths without changing identity: %j",
