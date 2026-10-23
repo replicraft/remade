@@ -1,0 +1,15 @@
+# Scope and limitations are maintainer-reported in the repository documentation.
+slug: ipedrax-bimcraft
+name: BIMCraft
+authors: [ipedrax]
+repository: https://github.com/IPedrax/BIMCraft
+originals: [autodesk-revit]
+category: engineering
+languages: [Rust]
+platforms: [Windows, Linux, macOS]
+status: experimental
+compatibility: partial
+description: An independent, clean-room take on the Revit workflow in pure Rust. Levels, walls, doors and windows, floors, roofs, rooms, stairs, families and schedules live in one model that draws plans, sections, elevations, 3D views and printable sheets. Reads IFC2x3 and IFC4, writes IFC4, and exposes every action as a command to the desktop app, a CLI and an MCP server.
+license: MIT OR Apache-2.0
+docs: https://github.com/IPedrax/BIMCraft#readme
+limitations: Early development; compatibility is maintainer-reported. Revit's closed .rvt format is not read and families are BIMCraft's own JSON, never .rfa, so IFC is the way in and out. Several people editing one model is not supported. The macOS app is untried on a Mac and installers are unsigned. A separate project from getcadcraft's BimCraft.
