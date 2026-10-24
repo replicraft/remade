@@ -48,7 +48,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 - Max content width approximately 1100–1200px; reading sections narrower.
 - Responsive project cards: 1 column small screens, 2 on tablets, 3 on desktop.
 - Usable down to 320px width; cards should not truncate vital project names.
-- Keep card rows equal in height. Cards show the entry's required `summary` (1–144 characters) in full, without clamping or a “Read more” link. Project and tool detail pages lead with the summary in larger type, followed by the full `description` in smaller muted text. Software request sections use the same treatment for the summary and full `reason`. Preserve full project names and keep author links or suggested names at the bottom.
+- Keep card rows equal in height. Cards show the entry's required `summary` (1–144 characters) in full, without clamping or a “Read more” link. Project and tool detail pages show a bordered panel with clearly labeled Summary and Description sections, separated by a subtle divider. Summary comes first; the full `description` follows in muted text. Software request sections use the same treatment with their full `reason`, using nested headings. Preserve full project names and keep author links or suggested names at the bottom.
 
 ## Home page sections (ordered)
 

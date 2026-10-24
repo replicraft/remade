@@ -94,6 +94,7 @@ export default function SoftwarePage({
 
 					<ListingDescription
 						description={request.reason}
+						headingLevel={3}
 						summary={request.summary}
 					/>
 

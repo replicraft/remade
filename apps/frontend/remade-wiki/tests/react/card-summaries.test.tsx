@@ -40,6 +40,12 @@ it.each(["project", "tool"] as const)(
 			),
 		);
 
+		for (const name of ["Summary", "Description"]) {
+			await expect
+				.element(page.getByRole("heading", { name, level: 2, exact: true }))
+				.toBeVisible();
+		}
+
 		await expect
 			.element(page.getByText(entry.summary, { exact: true }))
 			.toBeVisible();
@@ -69,6 +75,12 @@ it("shows a request summary on the card and the full reason on its software page
 	const page = await render(
 		<SoftwarePage catalog={catalog} metadata={{}} original={original} />,
 	);
+
+	for (const name of ["Summary", "Description"]) {
+		await expect
+			.element(page.getByRole("heading", { name, level: 3, exact: true }))
+			.toBeVisible();
+	}
 
 	await expect
 		.element(page.getByText(request.summary, { exact: true }))
