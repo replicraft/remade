@@ -10,7 +10,7 @@ import { findBySlug } from "../../src/lib/presentation";
 const catalog = inject("catalog");
 
 it.each(["project", "tool"] as const)(
-	"shows the %s summary on its card, keeping the full description on its page",
+	"shows the %s summary on its card and both summary and description on its page",
 	async (kind) => {
 		const entry = catalog.entries.find((item) => item.kind === kind);
 		if (!entry) throw new Error(`Missing ${kind} fixture`);
@@ -41,6 +41,10 @@ it.each(["project", "tool"] as const)(
 		);
 
 		await expect
+			.element(page.getByText(entry.summary, { exact: true }))
+			.toBeVisible();
+
+		await expect
 			.element(page.getByText(entry.description, { exact: true }))
 			.toBeVisible();
 	},
@@ -65,6 +69,10 @@ it("shows a request summary on the card and the full reason on its software page
 	const page = await render(
 		<SoftwarePage catalog={catalog} metadata={{}} original={original} />,
 	);
+
+	await expect
+		.element(page.getByText(request.summary, { exact: true }))
+		.toBeVisible();
 
 	await expect
 		.element(page.getByText(request.reason, { exact: true }))

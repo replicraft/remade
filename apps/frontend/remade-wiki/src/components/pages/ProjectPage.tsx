@@ -6,6 +6,7 @@ import BadgeShareSection from "../badges/BadgeShareSection";
 import Authors from "../catalog/Authors";
 import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
+import ListingDescription from "../catalog/ListingDescription";
 import OriginalLinks from "../catalog/OriginalLinks";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
@@ -52,7 +53,10 @@ export default function ProjectPage({
 					/>
 				</p>
 
-				<p>{project.description}</p>
+				<ListingDescription
+					description={project.description}
+					summary={project.summary}
+				/>
 
 				<div className="flex flex-wrap items-center gap-6">
 					<a

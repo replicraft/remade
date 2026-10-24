@@ -4,6 +4,7 @@ import { contributeUrl, label, metadataFor } from "../../lib/presentation";
 import type { Original } from "../../lib/schemas";
 import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
+import ListingDescription from "../catalog/ListingDescription";
 import ProjectComparison from "../catalog/ProjectComparison";
 
 interface Props {
@@ -91,7 +92,10 @@ export default function SoftwarePage({
 
 					<DiscordLinks {...request} />
 
-					<p>{request.reason}</p>
+					<ListingDescription
+						description={request.reason}
+						summary={request.summary}
+					/>
 
 					{request.suggested_names && (
 						<p>
