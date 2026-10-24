@@ -38,8 +38,23 @@ export default function ProjectPage({
 	return (
 		<>
 			<div className="max-w-[860px] pt-12 sm:pt-16">
-				<a className="mb-5 inline-block text-sm text-muted" href="/explore/">
-					← Explore projects
+				<a
+					className="mb-6 inline-flex items-center gap-3 rounded-xl border border-line bg-deep px-5 py-3 text-base font-medium text-ink transition-colors hover:border-muted hover:bg-surface motion-reduce:transition-none"
+					href="/explore/"
+				>
+					<svg
+						aria-hidden="true"
+						className="h-5 w-5 shrink-0"
+						fill="none"
+						stroke="currentColor"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						strokeWidth="1.5"
+						viewBox="0 0 24 24"
+					>
+						<path d="M19 12H5m7 7-7-7 7-7" />
+					</svg>
+					Back to catalog
 				</a>
 				<p className="mb-5 text-xs font-bold uppercase tracking-[0.16em] text-lime">
 					Reimplementation · {label(project.category)}
