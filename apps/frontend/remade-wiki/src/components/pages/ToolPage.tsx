@@ -36,6 +36,10 @@ export default function ToolPage({ tool, catalog, metadata, children }: Props) {
 
 				<h1 data-pagefind-meta="title">{tool.name}</h1>
 
+				<div className="mb-6 [&>div]:pt-0">
+					<Authors authors={tool.authors} inline />
+				</div>
+
 				<ListingDescription
 					description={tool.description}
 					summary={tool.summary}
@@ -81,8 +85,6 @@ export default function ToolPage({ tool, catalog, metadata, children }: Props) {
 
 				<div className="mt-6">
 					<RepositoryMirrors mirrors={tool.mirrors} />
-
-					<Authors authors={tool.authors} />
 				</div>
 			</div>
 

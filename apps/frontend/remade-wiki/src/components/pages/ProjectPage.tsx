@@ -47,6 +47,10 @@ export default function ProjectPage({
 
 				<h1 data-pagefind-meta="title">{project.name}</h1>
 
+				<div className="mb-6 [&>div]:pt-0">
+					<Authors authors={project.authors} inline />
+				</div>
+
 				<p>
 					Replaces:{" "}
 					<OriginalLinks
@@ -91,19 +95,14 @@ export default function ProjectPage({
 				</div>
 
 				{(project.discord_server || project.discord_thread) && (
-					<div className="mt-8 rounded-xl border border-line bg-surface p-5">
+					<div className="mt-8 rounded-xl border border-line bg-surface p-5 [&>div]:mb-0">
 						<h2 className="!mb-3 text-lg">Community</h2>
 						<DiscordLinks {...project} />
-						<p className="!mb-0 text-xs">
-							Opens Discord. Some threads require server membership.
-						</p>
 					</div>
 				)}
 
 				<div className="mt-6">
 					<RepositoryMirrors mirrors={project.mirrors} />
-
-					<Authors authors={project.authors} />
 				</div>
 			</div>
 

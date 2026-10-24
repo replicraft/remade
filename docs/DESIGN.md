@@ -48,7 +48,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 - Max content width approximately 1100–1200px; reading sections narrower.
 - Responsive project cards: 1 column small screens, 2 on tablets, 3 on desktop.
 - Usable down to 320px width; cards should not truncate vital project names.
-- Keep card rows equal in height. Cards show the entry's required `summary` (1–144 characters) in full, without clamping or a “Read more” link. Project and tool detail pages show a bordered panel with clearly labeled Summary and Description sections, separated by a subtle divider. Summary comes first; the full `description` follows in muted text. Software request sections use the same treatment with their full `reason`, using nested headings. Preserve full project names and keep author links or suggested names at the bottom.
+- Keep card rows equal in height. Cards show the entry's required `summary` (1–144 characters) in full, without clamping or a “Read more” link. Project and tool detail pages show a bordered panel with clearly labeled Summary and Description sections. Summary leads with larger text on an elevated surface. Description follows below a divider, with its label beside the full text on wider screens and above it on mobile. Software request sections use the same treatment with their full `reason`, using nested headings. Preserve full project names and keep author links or suggested names at the bottom of cards. Detail pages place author links beneath the title.
 
 ## Home page sections (ordered)
 
@@ -103,7 +103,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 - Neutral statement of compatibility aims; clearly mark *maintainer-reported* information.
 - Primary repository CTA and optional docs link, language/license/category/status tags.
 - Show an Official website button beside the repository CTA when a project supplies a documented website; open that link in a new tab.
-- Show a Repository Mirrors header below the primary links. When mirrors exist, show a collapsed View Mirrors accordion with bordered links identifying each mirror by host and repository path and opening in new tabs. When none are listed, display “No mirrors found” and a contribution link directly beneath the header, without an accordion. Metadata continues to come from the primary repository.
+- Show a Repository Mirrors card below the primary links and optional community card. When mirrors exist, show a collapsed View Mirrors accordion with links identifying each mirror by host and repository path and opening in new tabs. When none are listed, display “No mirrors found” and a contribution link inside the card, without an accordion. Metadata continues to come from the primary repository.
 - GitHub stats (stars, forks, last push and archive status when available).
 - Small note: **GitHub statistics are refreshed approximately every 24 hours.**
 - Focus/hover timestamp from `fetchedAt` when present; if absent, state `Statistics currently unavailable` instead of implying freshness.

@@ -69,12 +69,9 @@ export default function SoftwarePage({
 						</p>
 					)}
 					{(request.discord_thread || request.discord_server) && (
-						<div className="mt-6 rounded-xl border border-line bg-surface p-5">
+						<div className="mt-6 rounded-xl border border-line bg-surface p-5 [&>div]:mb-0">
 							<h2 className="!mb-3 text-lg">Community</h2>
 							<DiscordLinks {...request} />
-							<p className="!mb-0 text-xs">
-								Opens Discord. Some threads require server membership.
-							</p>
 						</div>
 					)}
 					<p className="mt-6 text-sm">
