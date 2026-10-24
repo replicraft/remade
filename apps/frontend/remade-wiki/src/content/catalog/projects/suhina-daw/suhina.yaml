@@ -14,3 +14,4 @@ license: GPL-3.0-or-later
 docs: https://github.com/suhina-daw/suhina-daw#readme
 discord_server: https://discord.gg/rgwp4DDNsU
 limitations: Pre-alpha; Live Set compatibility is partial and maintainer-reported. Full Ableton device, editing and project round-trip parity is not claimed. Nightly binaries are unsigned; optional ASIO support uses a separate SDK.
+summary: "Ableton-style clip launching and arrangement with ALS playback, MIDI synthesis, plugins and rendering."

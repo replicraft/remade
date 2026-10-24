@@ -1,3 +1,4 @@
 original: xtool-studio
 reason: Reproduce xTool Studio's familiar design-to-fabrication workflows, including image and vector editing, layer processing, material presets, job preview, batch layout and supported machine communication for laser cutting and engraving, with compatible project import and export.
 suggested_names: [LaserCraft]
+summary: "Wanted: xTool-style design-to-fabrication workflows."

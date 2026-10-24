@@ -14,3 +14,4 @@ description: A broader alternative to Texifier and WinEdt for local LaTeX author
 license: MIT OR Apache-2.0
 docs: https://github.com/NibrasAz7/warraqcraft#readme
 limitations: Alpha; compilation uses bundled Tectonic or installed TeX. The in-process typesetter and bidirectional Arabic editing remain incomplete. Windows is verified by the maintainer; Linux, macOS and Web are planned. Full Texifier or WinEdt project, macro and settings compatibility is not claimed. Upstream also uses Overleaf and TeXstudio UI references.
+summary: "Write LaTeX locally with a project tree, syntax highlighting, PDF preview, SyncTeX and templates."

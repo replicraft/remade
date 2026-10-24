@@ -2,3 +2,4 @@ original: cascadeur
 reason: Reproduce Cascadeur's character animation workflow, including rigging, assisted posing, keyframe editing, physics-based motion adjustment and animation import/export for games and films.
 suggested_names:
 - KineticCraft
+summary: "Wanted: Cascadeur-style character animation and pose editing."

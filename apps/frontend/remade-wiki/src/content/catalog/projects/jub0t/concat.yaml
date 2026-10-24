@@ -15,3 +15,4 @@ license: AGPL-3.0-or-later
 docs: https://concatenate.pages.dev/docs
 discord_server: https://discord.gg/DVuPfpXfqP
 limitations: Beta software. CapCut project-file compatibility is not documented. iOS and iPadOS builds require sideloading; licensing includes an additional permission for independent plugins.
+summary: "CapCut-style local video editing with multitrack timelines, captions, keyframes and effects."

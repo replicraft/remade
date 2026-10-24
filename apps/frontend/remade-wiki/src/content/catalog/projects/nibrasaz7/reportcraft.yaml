@@ -12,3 +12,4 @@ description: A Rust-native business-intelligence studio targeting Power BI workf
 license: MIT OR Apache-2.0
 docs: https://github.com/NibrasAz7/ReportCraft#readme
 limitations: Alpha; compatibility is maintainer-reported. Live database drivers, Excel and Parquet readers, and proprietary binary PBIX extraction remain planned. SQL query folding generates queries rather than providing database connections. TMDL exchange does not establish full Power BI file or behavioral parity.
+summary: "Power BI-style reporting with data imports, table models, measures, visualizations and row-level security."

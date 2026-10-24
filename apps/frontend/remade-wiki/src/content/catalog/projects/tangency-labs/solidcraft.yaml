@@ -15,3 +15,4 @@ compatibility: partial
 description: SolidCraft by Tangency Labs independently implements Fusion-style parametric CAD, with constrained sketches, solid modeling and a rebuildable feature timeline.
 license: MIT OR Apache-2.0
 limitations: Early development focused on simple parts and the Fusion Design workspace. Full Fusion compatibility is not claimed.
+summary: "Fusion-style parametric 3D CAD with constrained sketches, solid modeling and a rebuildable feature timeline."

@@ -14,3 +14,4 @@ website: https://reactos.org/
 docs: https://reactos.org/wiki/
 discord_server: https://discord.gg/7knjvhT
 limitations: Still alpha; application and driver compatibility is incomplete. The project does not guarantee stability or safety of files and does not provide full compatibility with current Windows releases. Components retain their respective licenses.
+summary: "A Windows NT-compatible operating system aiming to run existing Windows applications and drivers."

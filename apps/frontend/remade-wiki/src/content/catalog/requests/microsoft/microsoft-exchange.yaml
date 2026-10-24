@@ -1,3 +1,4 @@
 original: microsoft-exchange
 reason: Self-hosted mailbox, calendar, contacts and synchronization behavior using documented Exchange
   protocols and compatible client-facing interfaces.
+summary: "Wanted: Self-hosted mailbox, calendar and Exchange-style collaboration workflows."

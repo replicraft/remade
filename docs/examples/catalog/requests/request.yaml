@@ -10,3 +10,6 @@ suggested_names: [ExampleCraft]
 # discord_server: https://discord.gg/example
 # A reviewed project-owned HTTPS /discord redirect is also accepted.
 # discord_thread: https://discord.com/channels/123456789/987654321
+
+# Required card text: one line, 1–144 characters. Keep full details above.
+summary: "Wanted: compatible editing and file workflows."

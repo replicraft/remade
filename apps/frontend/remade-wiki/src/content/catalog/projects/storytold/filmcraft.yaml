@@ -14,3 +14,4 @@ description: An independent Premiere-style video editor by ArtCraft with multitr
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Under active development. Full Premiere behavioral, project-format and plug-in compatibility is not asserted by this listing.
+summary: "Premiere-style video editing with multitrack timelines, color adjustments, audio, titles and exports."

@@ -2,3 +2,4 @@ original: norton-commander
 reason: >-
   Reproduce Norton Commander's familiar two-pane, keyboard-driven file manager, function-key commands, copy and move operations, file search, archive browsing, viewer and editor. Preserve its terminal-style interface while safely handling modern filesystems and long filenames.
 suggested_names: [PaneCraft]
+summary: "Wanted: Norton Commander's two-pane, keyboard-driven file manager, function-key commands, copy and move operations, file search."

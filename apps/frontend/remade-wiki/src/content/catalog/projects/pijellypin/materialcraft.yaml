@@ -14,3 +14,4 @@ license: MIT OR Apache-2.0
 docs: https://github.com/PiJellyPin/MaterialCraft#readme
 discord_server: https://discord.gg/9KVCNatNvX
 limitations: Initial beta release. Third-party material and project formats are unsupported. Splines, AxF import, OCIO/ACE color management, scripting, SVG gradients, CFF fonts, path-traced rendering and custom preview meshes remain unimplemented. Compatibility is maintainer-reported.
+summary: "Substance Designer-style procedural materials with node graphs, previews, mesh baking and texture exports."

@@ -13,3 +13,4 @@ description: A native Rust player reproducing classic iTunes-style local music-l
 license: MIT
 docs: https://github.com/cmspeedau/iCraftMusic#readme
 limitations: Release packaging remains planned; no installer or release artifact is available. Accessibility support is maintainer-reported. Movies, TV shows and podcasts are planned, and iPod synchronization has no decided implementation. Some audio formats are recognized but not playable. Native iTunes library compatibility is not documented.
+summary: "An iTunes-style local music player with album artwork, playlists, a queue and metadata editing."

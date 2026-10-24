@@ -1,3 +1,4 @@
 original: rizomuv-real-space
 reason: Reproduce RizomUV Real Space's dimension-preserving mesh flattening, stretch analysis, alignment and pinning constraints, and packing within physical sheet boundaries. Include DXF and PostScript outline exports for manufacturing and laser texturing. Could share one implementation with the requested Virtual Spaces workflows.
 suggested_names: [UnwrapCraft]
+summary: "Wanted: RizomUV Real Space's dimension-preserving mesh flattening, stretch analysis, alignment and pinning constraints."

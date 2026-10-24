@@ -1,3 +1,4 @@
 original: vmix
 reason: Reproduce vMix's familiar live-production workflow with multi-camera switching, audio mixing, titles and overlays, chroma key, virtual sets, remote guests and instant replay. Support capture devices, NDI and SRT inputs/outputs, simultaneous streaming and recording, and separate camera recordings.
 suggested_names: [BroadcastCraft]
+summary: "Wanted: Live video production with camera switching, audio mixing, titles, overlays and virtual sets."

@@ -20,3 +20,4 @@ docs: https://github.com/rallegretti/PlanCraft#readme
 limitations: Early preview; Microsoft Project native file and complete scheduling compatibility are
   not documented. Uses its own project data rather than claiming MPP fidelity. Windows packages are
   unsigned and macOS builds are not notarized; feature behavior is maintainer-reported.
+summary: "Microsoft Project-style planning with tasks, dependencies, Gantt charts, resources and workload views."

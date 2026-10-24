@@ -1,3 +1,4 @@
 original: synology-dsm
 reason: NAS storage, sharing, permissions, backups and package workflows with documented protocol
   and data interchange, without copying Synology binaries.
+summary: "Wanted: NAS storage, sharing, permissions, backups and package workflows with documented protocol and data interchange."

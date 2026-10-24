@@ -13,3 +13,4 @@ description: An independent InDesign-style publishing application by ArtCraft wi
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Development and fidelity work are ongoing. Complete InDesign behavior and native document-format compatibility is not asserted by this listing.
+summary: "InDesign-style page layout with spreads, threaded text frames, typography and PDF export."

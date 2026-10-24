@@ -1,3 +1,4 @@
 original: ptc-mathcad
 reason: Reproduce Mathcad's engineering worksheets with readable mathematical notation, unit checking and conversion, numerical and symbolic calculations, plots, annotations and compatible worksheet workflows. MathCraft could combine these features with MATLAB scripting and Simulink modeling in one application.
 suggested_names: [MathCraft, LabCraft]
+summary: "Wanted: Mathcad's engineering worksheets with readable mathematical notation, unit checking and conversion."

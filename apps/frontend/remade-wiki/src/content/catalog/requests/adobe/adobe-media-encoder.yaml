@@ -1,3 +1,4 @@
 original: adobe-media-encoder
 reason: Reproduce Media Encoder's batch encoding queue, format and codec presets, watch folders, proxy generation and export workflows, including LUTs and loudness correction. Could integrate with FilmCraft and EffectCraft for background encoding while editing and compositing continue, with HandBrake as a possible inspiration.
 suggested_names: [EncodeCraft]
+summary: "Wanted: Media Encoder's batch encoding queue, format and codec presets, watch folders, proxy generation and export workflows."

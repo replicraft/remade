@@ -9,3 +9,4 @@ description: OpenPlayground by Daijro runs ArtCraft implementations in the brows
 suites: [artcraft]
 # Additional supported apps from the upstream tools.yaml manifest.
 projects: [lightcraft-classic, solidcraft, mailcraft]
+summary: "Run ArtCraft apps in your browser with optimized WebAssembly builds, themes and clipboard integration."

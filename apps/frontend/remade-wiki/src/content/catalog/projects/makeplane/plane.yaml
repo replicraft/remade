@@ -14,3 +14,4 @@ description: Plane provides familiar Jira, Linear, monday.com and ClickUp-style 
 license: AGPL-3.0-only
 discord_server: https://discord.com/invite/A92xrEGCge
 limitations: Exact UI, API and data-format parity with the listed targets is not documented. Features vary by edition; documented importers are available in Plane Cloud and the commercial self-hosted edition, so migration coverage should not be assumed for the open-source Community Edition.
+summary: "Manage tasks, boards, sprints and documentation with Jira-, Linear- and ClickUp-style workflows."

@@ -18,3 +18,6 @@ description: A browser launcher that adds access to an indexed implementation.
 projects: [example-implementation]
 # Alternatively, or alongside projects, reference a suite supported in full:
 # suites: [example-suite]
+
+# Required card text: one line, 1–144 characters. Keep full details above.
+summary: A short, factual overview of the software or requested workflows.

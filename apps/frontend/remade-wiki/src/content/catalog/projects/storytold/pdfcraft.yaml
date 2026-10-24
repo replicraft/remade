@@ -14,3 +14,4 @@ description: An independent Acrobat-style PDF workbench by ArtCraft for viewing,
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Young project. Existing-text editing, OCR, Office conversion, signature validation and PDF preflight remain incomplete.
+summary: "Acrobat-style PDF viewing, page organization, annotation, forms and document protection."

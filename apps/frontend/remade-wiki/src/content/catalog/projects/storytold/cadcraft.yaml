@@ -13,3 +13,4 @@ description: An independent AutoCAD-style drafting application by ArtCraft with 
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Early development. DWG support uses the open-source acadrust library; complete AutoCAD behavioral and file-format fidelity is not asserted.
+summary: "AutoCAD-style drafting with drawing commands, layers, dimensions and DXF/DWG support."

@@ -15,3 +15,4 @@ docs: https://github.com/getcadcraft/cadcraft#readme
 website: https://getcadcraft.com/apps/cadcraft
 discord_server: https://discord.gg/29Jtkqcq
 limitations: In development; compatibility is maintainer-reported. Full AutoCAD behavior, plugin support and DWG fidelity are not claimed. macOS and mobile editions are planned. This is a separate project from ArtCraft's Rust CADCraft.
+summary: "AutoCAD-style drafting with layers, blocks, dimensions, layouts and DWG/DXF file support."

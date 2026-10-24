@@ -15,3 +15,4 @@ docs: https://github.com/therichronicles/EarthCraft#readme
 discord_server: https://discord.gg/artcraft
 discord_thread: https://discord.com/channels/1359579021108842617/1559160946625224715
 limitations: Experimental; features are maintainer-reported. CPU rendering is the default; GPU acceleration is experimental. No detailed 3D terrain, buildings, Street View or Earth Studio workflows. Imagery, search and live-data links depend on third-party services and their terms.
+summary: "Explore a 3D globe with satellite imagery, place search, animated flights and live data layers."

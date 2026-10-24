@@ -11,6 +11,7 @@ export const project: Extract<Entry, { kind: "project" }> = {
 	platforms: ["Linux", "Windows"],
 	status: "experimental",
 	compatibility: "targeting",
+	summary: "An early animation editor with familiar tools.",
 	description: "Targets familiar animation editing workflows.",
 	license: "MIT",
 	limitations: "Project files are not yet supported.",

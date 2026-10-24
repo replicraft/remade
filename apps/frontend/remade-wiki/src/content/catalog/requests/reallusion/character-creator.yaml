@@ -1,3 +1,4 @@
 original: character-creator
 reason: Reproduce Character Creator's familiar 3D character creation workflow, including body and face customization, materials, clothing, rigging and export for animation and game engines.
 suggested_names: [CharacterCraft]
+summary: "Wanted: Character Creator-style 3D character authoring."

@@ -12,3 +12,4 @@ description: Independent implementation targeting the pattern-based garment work
 license: MIT
 docs: https://github.com/erythrofr/ClothCraft/blob/main/README.md
 limitations: Early alpha with an English UI; only Windows is exercised. No native Marvelous/CLO files or verified parity. Contact detection remains CPU-based. Friction, animated avatars, calibrated fabrics, partial sewing and most industry interchange are unfinished. No autosave or recovery; export overwrites fixed filenames.
+summary: "Design and sew garment patterns in 2D and 3D, following Marvelous Designer and CLO workflows."

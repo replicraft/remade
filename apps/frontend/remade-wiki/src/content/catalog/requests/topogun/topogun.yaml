@@ -1,3 +1,4 @@
 original: topogun
 reason: Reproduce TopoGun's dedicated retopology workflow for high-resolution meshes, including surface-conforming polygon construction, topology editing and texture-map baking to transfer sculpted detail to lower-resolution assets, with compatible mesh import/export.
 suggested_names: [RetopoCraft]
+summary: "Wanted: TopoGun's dedicated retopology workflow for high-resolution meshes."

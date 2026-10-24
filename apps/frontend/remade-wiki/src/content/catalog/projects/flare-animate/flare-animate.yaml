@@ -15,3 +15,4 @@ license: BSD-3-Clause
 docs: https://github.com/Flare-Animate/Flare#readme
 discord_server: https://discord.com/invite/JpeScW8Awa
 limitations: Very early alpha; import fidelity is incomplete. OpenToonz-derived, with separate third-party licenses. Flash's merge-drawing model and Moho rig rendering are not implemented. Game creation and Android builds are scaffolds; P2P remote control has no transport. Features are maintainer-reported.
+summary: "An OpenToonz-based animation editor with Animate-style workflows, drawing, rigging and effects."

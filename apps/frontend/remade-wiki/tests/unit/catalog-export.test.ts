@@ -59,6 +59,10 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	expect(output.featured).toEqual(catalog.featured);
 
 	for (const project of output.projects) {
+		expect(project.summary).toBe(
+			catalog.projects.find((item) => item.slug === project.slug)?.summary,
+		);
+
 		expect(
 			project.originals.every((slug) =>
 				output.originals.some((o) => o.slug === slug),
@@ -77,6 +81,10 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	).toBe("MIT");
 
 	for (const tool of output.tools) {
+		expect(tool.summary).toBe(
+			catalog.tools.find((item) => item.slug === tool.slug)?.summary,
+		);
+
 		expect(tool.mirrors).toEqual(["https://codeberg.org/example/tool"]);
 
 		expect(tool.languages).toEqual(["JavaScript"]);
@@ -99,6 +107,11 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	}
 
 	for (const request of requests.requests) {
+		expect(request.summary).toBe(
+			catalog.requests.find((item) => item.original === request.original)
+				?.summary,
+		);
+
 		expect(request.software.slug).toBe(request.original);
 
 		expect(request.software.pageUrl).toBe(
@@ -123,6 +136,7 @@ it("request export fails for dangling originals", () => {
 				requests: [
 					{
 						original: "missing",
+						summary: "A short overview of the requested workflows.",
 						reason: "A compatible implementation is requested.",
 						vendor: "example",
 					},

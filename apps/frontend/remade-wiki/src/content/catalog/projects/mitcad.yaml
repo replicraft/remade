@@ -24,3 +24,4 @@ limitations: Early active development; format support is maintainer-reported. In
   currently brings bodies without design history. Native Fusion/Inventor export and full behavioral
   parity are not claimed. Direct modeling and some loft combinations remain incomplete. macOS targets
   Apple Silicon.
+summary: "Parametric CAD with constrained sketches, feature history, assemblies and partial Fusion design import."

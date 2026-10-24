@@ -1,3 +1,4 @@
 original: adobe-fresco
 reason: Reproduce Fresco's touch and stylus drawing workflow, including pixel and vector brushes, live watercolor and oil brush behavior, layers and familiar brush controls, with compatible document and brush workflows.
 suggested_names: [BrushCraft]
+summary: "Wanted: Touch and stylus illustration with Fresco-style brushes and painting workflows."

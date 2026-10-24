@@ -15,3 +15,4 @@ docs: https://github.com/Wr3nch98DEV/LedgerCraft#readme
 discord_server: https://discord.gg/artcraft
 discord_thread: https://discord.com/channels/1359579021108842617/1559141861623599164
 limitations: Work in progress; workflows and results are maintainer-reported. Build from source and verify results before using live business accounts. Full native file, API and behavioral compatibility is not established. Payroll tax calculations include approximations; bank feeds need a provider or plugin, and government submissions are not automatically lodged.
+summary: "Local accounting with invoices, purchases, reconciliation and QuickBooks-, Xero-, MYOB- and Sage-style layouts."

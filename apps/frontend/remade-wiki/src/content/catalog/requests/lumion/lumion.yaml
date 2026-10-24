@@ -1,3 +1,4 @@
 # Requested in https://github.com/replicraft/remade/issues/40.
 original: lumion
 reason: Reproduce Lumion's architectural visualization workflows for interiors and exteriors, including CAD/BIM model import, scene composition, materials, lighting, landscape context and photorealistic image, video and 360-degree panorama output. Support iterative model updates using original or appropriately licensed scene assets.
+summary: "Wanted: Lumion-style rendering and visualization for architectural interiors and exteriors."

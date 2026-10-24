@@ -14,3 +14,4 @@ license: Apache-2.0
 docs: https://github.com/ifpintac/tequila#readme
 discord_server: https://discord.gg/Na5T2qgQBX
 limitations: Features are maintainer-reported. Animation is not implemented, and KeyShot scene, material and plugin compatibility is not documented. Distributed builds are unsigned. macOS downloads require Apple Silicon; Windows GPU rendering requires supported NVIDIA hardware, with CPU rendering otherwise.
+summary: "KeyShot-style product rendering with CAD import, materials, labels, HDRI lighting and live previews."

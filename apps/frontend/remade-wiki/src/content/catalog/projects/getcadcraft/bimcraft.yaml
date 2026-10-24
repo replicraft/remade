@@ -15,3 +15,4 @@ docs: https://github.com/getcadcraft/bimcraft#readme
 website: https://getcadcraft.com/apps/bimcraft
 discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. RVT reading exposes container metadata, previews and links rather than model geometry. Worksharing and full Revit family or project compatibility are not claimed. macOS and mobile builds are planned.
+summary: "Revit-style BIM authoring with parametric building elements, schedules, sheets and clash checks."

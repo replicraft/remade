@@ -9,3 +9,4 @@ license: MIT
 description: Build scripts and Android adapters for packaging ArtCraft Suite apps as ARM64 APKs from their existing source repositories. Provides release and debug builds, app metadata overrides, per-app build outputs, soft-keyboard integration and shared Android file associations, with adapters for specialized app startup paths.
 docs: https://github.com/MostafaXS1/artcraft-android#readme
 limitations: Builds ports of the existing apps rather than independent implementations. Android behavior varies by app and adapter; a successful build does not establish full desktop feature parity. The generated keystore is for local use; public distribution requires separate release signing. Source checkouts must be updated deliberately.
+summary: "Build ARM64 Android packages for ArtCraft apps using their existing source and platform adapters."

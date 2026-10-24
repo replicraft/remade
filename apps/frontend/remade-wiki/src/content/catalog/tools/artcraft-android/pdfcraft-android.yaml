@@ -11,3 +11,4 @@ license: MIT OR Apache-2.0
 description: An Android frontend for PdfCraft using its existing Rust engine with a Kotlin and Jetpack Compose interface. Adds PDF reading and navigation, annotations, forms and signatures, text and image editing, page organization, document conversion and read-aloud controls.
 docs: https://github.com/artcraft-android/pdfcraft-android#readme
 limitations: Beta; requires Android 10 or later. Reuses PdfCraft's engine. OCR currently covers Latin letters without accents. Image cropping and Word 97 export remain planned. AI assistance, cloud storage and shared reviews are not planned. Coverage is maintainer-reported.
+summary: "Read, annotate and edit PDFs on Android with PdfCraft's Rust engine and a native touch interface."

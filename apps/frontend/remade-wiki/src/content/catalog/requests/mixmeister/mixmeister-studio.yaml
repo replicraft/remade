@@ -1,2 +1,3 @@
 original: mixmeister-studio
 reason: Reproduce MixMeister Studio's timeline-based DJ mix authoring, including automatic beat matching, tempo and key analysis, time stretching, editable transitions, looping, sample overlays and effects. Support MIDI controllers, finished audio export and opening existing MixMeister mix projects.
+summary: "Wanted: MixMeister Studio's timeline-based DJ mix authoring."

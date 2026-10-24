@@ -13,3 +13,4 @@ license: MIT OR Apache-2.0
 description: A Wilcom EmbroideryStudio-style embroidery digitizing application built on VectorCraft, with stitch generators and sequencing, lettering, realistic stitch previews, garment mockups and production worksheets. Imports and exports machine embroidery formats and supports CLI and MCP automation.
 docs: https://github.com/lork-fork/Roidery/blob/main/ROIDERY.md
 limitations: Early software built from source. A broader Wilcom alternative, not a full clone; native Wilcom project-file compatibility is not documented. Built on VectorCraft. Test-sewing is recommended before production. Optional Ink/Stitch fonts are downloaded separately and retain their own licenses.
+summary: "Wilcom-style embroidery digitizing with stitch generators, lettering, previews and machine-format exports."

@@ -14,3 +14,4 @@ license: MIT
 docs: https://github.com/OpenCut-app/OpenCut#readme
 discord_server: https://discord.gg/zmR9N35cjK
 limitations: The repository is undergoing a rewrite; opencut.app still serves the classic editor. Desktop support is an early window-only prototype and mobile support is planned. CapCut project-file compatibility is not documented.
+summary: "An independent CapCut-style video editor, with a browser editor and a shared-engine rewrite in progress."

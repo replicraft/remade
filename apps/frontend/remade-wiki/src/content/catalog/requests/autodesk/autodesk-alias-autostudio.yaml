@@ -2,3 +2,4 @@ original: autodesk-alias-autostudio
 reason: Reproduce Alias AutoStudio's automotive and industrial design workflow, including curve modeling, NURBS and subdivision surfaces, Class-A surfacing, continuity analysis and compatible model exchange. Prioritize native macOS support for users who miss Alias Studio on Mac and want an open-source Class-A surface modeler.
 suggested_names:
 - AutoCraft
+summary: "Wanted: Alias-style automotive and industrial design workflows."

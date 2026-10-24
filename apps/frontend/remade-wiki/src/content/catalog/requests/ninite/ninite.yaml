@@ -1,3 +1,4 @@
 original: ninite
 reason: Reproduce Ninite's familiar app-selection and unattended Windows installation workflow, downloading applications from official sources, choosing appropriate versions, skipping bundled offers and keeping selected apps updated without repeated installer prompts.
 suggested_names: [InstallCraft]
+summary: "Wanted: Ninite's app-selection and unattended Windows installation workflow, downloading applications from official sources."

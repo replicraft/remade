@@ -48,7 +48,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 - Max content width approximately 1100–1200px; reading sections narrower.
 - Responsive project cards: 1 column small screens, 2 on tablets, 3 on desktop.
 - Usable down to 320px width; cards should not truncate vital project names.
-- Keep card rows equal in height, allowing enough room for six description lines when needed even when headings or author links wrap. Bound the description preview to six lines plus room for its link so long text cannot expand automatically sized grid rows. Show descriptions in full when they fit the preview boundary; truncate overflowing descriptions and show a subtle “Read more…” link only when there is more text. Preserve full project names and keep author links or suggested names at the bottom.
+- Keep card rows equal in height. Cards show the entry's required `summary` (1–144 characters) in full, without clamping or a “Read more” link. Project and tool detail pages retain the full `description`; software request sections retain the full `reason`. Preserve full project names and keep author links or suggested names at the bottom.
 
 ## Home page sections (ordered)
 
@@ -88,7 +88,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 
 ## Explore page
 
-- Search across original software name, project name, description, languages.
+- Search across original software name, project name, summary, full description, and languages.
 - Compact category, language, and platform filters beneath the search field; expandable additional filters for compatibility and development status. Filters apply immediately. Keep sorting beside the result count.
 - Sorting: recent, alphabetical, stars. `stars: null` sorts after known counts.
 - Cards expose original → implementation relationship at a glance.

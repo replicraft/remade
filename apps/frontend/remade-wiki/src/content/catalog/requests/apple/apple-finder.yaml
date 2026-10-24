@@ -1,2 +1,3 @@
 original: apple-finder
 reason: Reproduce macOS Finder's file-management workflow in a native Windows application, including folder navigation, familiar file views, previews and everyday file operations. Focus on Finder-style interaction on Windows rather than requiring macOS or changing to an unrelated file-manager workflow.
+summary: "Wanted: macOS Finder-style file management in a native Windows app."

@@ -14,3 +14,4 @@ description: PhotoCraft by ArtCraft independently implements Photoshop-style ima
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Early alpha. The maintainers report gaps in AI and generative features, typography, professional workflows and Photoshop plug-in compatibility.
+summary: "Photoshop-style image editing with layers, adjustments, selections and layered PSD files."

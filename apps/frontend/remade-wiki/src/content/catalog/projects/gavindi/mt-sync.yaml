@@ -14,3 +14,4 @@ description: A broader RcloneView and GoodSync alternative built as a native GTK
 license: GPL-2.0
 docs: https://github.com/gavindi/MtSync#readme
 limitations: Targets Linux/GNOME workflows. Native GoodSync or RcloneView job/configuration import and full behavioral compatibility are not documented. Storage-provider support and transfer behavior depend on rclone. File-watch triggers monitor local source directories, not remote sources; scheduled jobs remain available for remotes.
+summary: "Browse, compare, mount and sync remote storage through a native GNOME frontend to rclone."

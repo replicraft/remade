@@ -13,3 +13,4 @@ description: A downstream fork of ArtCraft's LightCraft focused on Lightroom Cla
 license: MIT AND Apache-2.0
 docs: https://github.com/emmertex/lightcraft-classic#readme
 limitations: Compatibility is incomplete and maintainer-reported. Expanded Lightroom catalog support, camera calibration, some compressed RAW formats, AI masking and denoising, HDR and video remain works in progress; real-camera tethering checks are pending.
+summary: "Lightroom Classic-style photo catalogs and non-destructive RAW development, built on LightCraft."

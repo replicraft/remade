@@ -14,3 +14,4 @@ description: An independent Word-style document editor by ArtCraft with ribbon w
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Development and fidelity work are ongoing. Full Word layout, behavior and document-format parity is not asserted by this listing.
+summary: "Word-style document editing with styles, tables, review tools, DOCX files and PDF export."

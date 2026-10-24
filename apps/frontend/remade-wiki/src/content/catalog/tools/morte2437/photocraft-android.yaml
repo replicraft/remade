@@ -11,3 +11,4 @@ license: MIT OR Apache-2.0
 description: An unofficial Android tablet port of PhotoCraft retaining its Rust engine and desktop interface. Adds stylus pressure, tilt and eraser input, multitouch gestures, Android document pickers and sharing, keyboard support and a configurable on-screen Shortcut Pad with touch keys and a wheel.
 docs: https://github.com/morte2437/photocraft-android/blob/android-port/apps/photocraft-android/README.md
 limitations: Functional prototype for ARM64 tablets running Android 8 or later; not an official ArtCraft release. APKs use a debug signing key for sideloading. The Android work lives on the android-port branch. Device and stylus coverage is maintainer-reported; the desktop interface is not fully adapted to touch.
+summary: "Use PhotoCraft on Android tablets with stylus pressure, tilt, gestures and document integration."

@@ -13,3 +13,4 @@ license: MIT OR Apache-2.0
 docs: https://github.com/aliasfoxkde/FireCraft/blob/main/docs/PROGRESS.md
 limitations: File round-trip and scripting fidelity are maintainer-reported, not independently verified across arbitrary Fireworks documents. The progress matrix records partial commands and outstanding behavior differences; full CS6 application parity is not established. Some image formats and WebOS packaging remain in development.
 website: https://firecraft-web.pages.dev
+summary: "Fireworks-style vector and bitmap editing with Fireworks PNG files, symbols and scripting."

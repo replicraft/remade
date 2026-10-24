@@ -13,3 +13,4 @@ description: Rust file explorer and file picker recreating Windows 10/11-style f
 license: GPL-3.0
 docs: https://github.com/Minnowo/itamiiru/blob/main/docs/linux-setup/README.md
 limitations: Linux only; Windows and macOS support is deferred. Does not reproduce the full Windows shell. Portal integration excludes applications using their own dialogs; external drag and drop is X11-only. Accessibility remains unfinished.
+summary: "A Linux file explorer and picker with Windows-style dialogs, tabs, split views and image thumbnails."

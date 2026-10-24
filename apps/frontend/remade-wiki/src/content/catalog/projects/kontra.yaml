@@ -23,3 +23,4 @@ limitations: Alpha nightly builds; Kontakt playback, scripts, interfaces and eff
   Falcon/UFS coverage and sound parity are incomplete. Bring separately authorized libraries; a purchase
   may not authorize third-party playback. Upstream says parser redistribution rights remain unresolved.
 website: https://derpcatmusic.github.io/KONTRA/
+summary: "An experimental sampler for Kontakt instruments and UVI Falcon/UFS playback, with CLAP and VST3 builds."

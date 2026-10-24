@@ -1,3 +1,4 @@
 original: intel-graphics-command-center
 reason: Display configuration, graphics profiles and image or video adjustments using independently
   implemented controls for supported Intel graphics hardware.
+summary: "Wanted: Intel-style display configuration and graphics settings."

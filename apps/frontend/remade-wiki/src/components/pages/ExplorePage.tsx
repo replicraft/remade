@@ -120,6 +120,7 @@ function ExploreContent({ catalog, metadata }: Props) {
 					aliases: original.aliases,
 					suggestedNames: request.suggested_names,
 					reason: request.reason,
+					summary: request.summary,
 				};
 			})
 			.filter((request) => request !== undefined)

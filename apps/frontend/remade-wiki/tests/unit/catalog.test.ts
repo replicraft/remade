@@ -161,6 +161,7 @@ describe("catalog loading and validation", () => {
 			input.requests = [
 				{
 					original: catalog.projects[0].originals[0],
+					summary: "A short overview of the requested workflows.",
 					reason: "A compatible implementation would be useful.",
 				},
 			];

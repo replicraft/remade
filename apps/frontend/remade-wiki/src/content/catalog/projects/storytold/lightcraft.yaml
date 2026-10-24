@@ -14,3 +14,4 @@ description: An independent Lightroom-style photography application by ArtCraft 
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Camera calibration and some compressed RAW variants remain limited. AI masking, denoise, HDR, video and Classic Print, Book and Map workflows have gaps.
+summary: "Lightroom-style photo management with non-destructive RAW development, adjustments and masking."

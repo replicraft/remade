@@ -27,11 +27,7 @@ export default function RequestCard({ request, original, actions }: Props) {
 				</a>
 			</h3>
 
-			<CardDescription
-				href={`/software/${original.slug}/`}
-				label={`Read more about the ${original.name} request`}
-				text={request.reason}
-			/>
+			<CardDescription text={request.summary} />
 
 			<div className="mt-auto shrink-0">
 				{request.suggested_names && (

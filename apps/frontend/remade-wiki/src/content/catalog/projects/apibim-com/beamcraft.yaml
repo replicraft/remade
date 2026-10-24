@@ -13,3 +13,4 @@ license: MPL-2.0
 website: https://beamcraft.cl/
 docs: https://github.com/Apibim-com/BeamCraft/blob/master/ROADMAP.md
 limitations: Planned; no usable detailing application yet. Model and geometry contracts, plate creation, project saving and industry-format export remain milestones. Windows and Linux are initial build targets; macOS and browser delivery are goals. Native Tekla project or behavioral compatibility is not demonstrated.
+summary: "Planned Tekla-style steel detailing workbench for structural models, IFC exchange and fabrication drawings."

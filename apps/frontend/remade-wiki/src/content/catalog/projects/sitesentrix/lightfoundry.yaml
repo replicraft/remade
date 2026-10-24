@@ -12,3 +12,4 @@ description: A LightBurn-style laser layout and control application with vector 
 license: MIT OR Apache-2.0
 docs: https://github.com/Stitchwright/lightfoundry#readme
 limitations: Early development; machine control has only been verified against a simulator. Marlin and Smoothieware output is untested on hardware. Many LightBurn workflows and controller families are missing; native LightBurn project compatibility is not documented.
+summary: "LightBurn-style laser design and control with vector editing, cut settings, dithering and GRBL output."

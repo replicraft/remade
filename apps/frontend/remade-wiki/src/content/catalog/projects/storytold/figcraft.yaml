@@ -15,3 +15,4 @@ license: MIT OR Apache-2.0
 docs: https://github.com/storytold/figcraft/blob/main/docs/target-app-parity.md
 discord_server: https://discord.gg/artcraft
 limitations: Compatibility is maintainer-reported and has not been checked against real Figma documents. Figma file import is best effort. Multiplayer is a preview without accounts, teams or cloud parity. Uses its own WebAssembly plugins rather than Figma plugins. Online sharing uploads files to a server and is not end-to-end encrypted.
+summary: "Figma-style interface design and prototyping with auto layout, components, variants, vectors and variables."

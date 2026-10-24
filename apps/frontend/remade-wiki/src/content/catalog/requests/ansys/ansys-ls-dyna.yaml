@@ -1,3 +1,4 @@
 original: ansys-ls-dyna
 reason: Keyword-deck compatibility and headless structural simulation, including explicit dynamics,
   contact and HPC execution, with reproducible solver input and results.
+summary: "Wanted: LS-DYNA-compatible keyword decks and headless structural simulation."

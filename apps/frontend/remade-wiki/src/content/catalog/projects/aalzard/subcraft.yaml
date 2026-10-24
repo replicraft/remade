@@ -13,3 +13,4 @@ description: An independent Painter-style 3D texture painting application with l
 license: MIT OR Apache-2.0
 docs: https://github.com/Aalzard/subcraft#readme
 limitations: Early but usable, with breaking project-format changes possible. Painter project compatibility is not documented. SBSAR materials cannot be read directly; exported texture maps can be imported instead. Some painting and export workflows remain incomplete. Windows binaries are unsigned.
+summary: "Painter-style 3D texture painting with PBR layers, masks, mesh baking and game-engine exports."

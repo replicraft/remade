@@ -1,3 +1,4 @@
 original: intel-arc-control
 reason: Graphics performance monitoring, application profiles and tuning controls with documented
   hardware support and exportable local settings.
+summary: "Wanted: Intel Arc-style graphics performance monitoring and controls."

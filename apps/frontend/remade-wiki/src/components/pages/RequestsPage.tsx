@@ -96,6 +96,7 @@ function RequestList({ catalog, metadata }: Props) {
 					aliases: original.aliases,
 					suggestedNames: request.suggested_names,
 					reason: request.reason,
+					summary: request.summary,
 				};
 			}),
 		[catalog],

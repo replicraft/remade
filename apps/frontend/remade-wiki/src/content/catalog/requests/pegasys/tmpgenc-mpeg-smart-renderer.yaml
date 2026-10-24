@@ -1,3 +1,4 @@
 original: tmpgenc-mpeg-smart-renderer
 reason: Reproduce smart-rendering cuts and joins without required disk caches or proxies, copying unchanged streams for fast, lossless export. Import MKV with multiple language audio tracks and preserve them. Offer basic video/audio filters and two-track audio mixing, re-encoding only affected streams or regions. Could share an implementation with VideoReDo.
 suggested_names: [SpliceCraft]
+summary: "Wanted: Smart-rendering cuts and joins without required disk caches or proxies, copying unchanged streams for fast, lossless export."

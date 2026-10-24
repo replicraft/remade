@@ -2,3 +2,4 @@ original: windows-live-writer
 reason: >-
   Reproduce Windows Live Writer's offline blog editor, WYSIWYG and HTML views, theme-aware previews, drafts, images and publishing to compatible blog services. Open Live Writer (https://github.com/OpenLiveWriter/OpenLiveWriter), an open-source fork, can inform the desired workflow; this request is for an independently authored implementation.
 suggested_names: [BlogCraft]
+summary: "Wanted: Offline blog authoring with visual and HTML editors, theme-aware previews and drafts."

@@ -13,3 +13,4 @@ website: https://writewithharper.com/
 docs: https://writewithharper.com/docs/about
 discord_server: https://discord.com/invite/JBqcAaKrzQ
 limitations: Supports English and its dialects only. Its scope is narrower than Grammarly's broader writing assistant; full feature parity and interface compatibility are not claimed. Available features vary by integration.
+summary: "Check English spelling and grammar locally in your browser and editor, without sending text to a server."

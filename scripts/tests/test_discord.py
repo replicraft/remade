@@ -71,6 +71,7 @@ def test_links_allowed_in_project_and_request_records(
         yaml.safe_dump(
             {
                 "original": "product-a",
+                "summary": "Wanted: compatible application workflows.",
                 "reason": "A faithful implementation of the original software is wanted.",
                 **LINKS,
             }

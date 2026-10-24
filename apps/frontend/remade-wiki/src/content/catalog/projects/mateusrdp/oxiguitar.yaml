@@ -13,3 +13,4 @@ description: Early Rust implementation targeting Guitar Pro's tablature and nota
 license: GPL-3.0-only
 docs: https://mateusrdp.github.io/oxiguitar/
 limitations: Early M1 viewer; editing and playback remain planned despite broader wording in the README introduction. MuseScore, MusicXML, ABC and MIDI interchange await plugins. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only.
+summary: "An early Guitar Pro-style score viewer with GP3-GP8 file support and notation and tablature display."

@@ -14,3 +14,4 @@ compatibility: partial
 description: An independently developed, command-driven NURBS CAD application with four-view modeling, exact solid geometry, layers, object snaps, manufacturing-oriented export, and a growing command interface.
 license: GPL-3.0-or-later
 limitations: Early Linux x86_64 preview. Many commands, options, panels, rendering features, and platforms remain incomplete. The application uses a patched open-source Blender runtime and Open CASCADE. Some exact multi-face .3dm persistence and optional vector conversion require additional components.
+summary: "Rhino-style NURBS CAD with exact solid geometry, four-view modeling, snaps and manufacturing exports."

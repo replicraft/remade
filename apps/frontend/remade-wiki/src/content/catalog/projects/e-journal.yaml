@@ -20,3 +20,4 @@ docs: https://github.com/EkarinLB/e-journal#readme
 limitations: Beta; Journal INK import is partial and currently relies on page snapshots, with some
   files importing blank. Stroke-blob decoding is unfinished. PDF/PNG ink export is not implemented.
   Windows binaries are unsigned; Linux uses WebKitGTK.
+summary: "A local handwriting notebook with pressure-sensitive ink, highlighters and Microsoft Journal INK import."

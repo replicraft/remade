@@ -14,3 +14,4 @@ license: MIT
 docs: https://github.com/surfrpt1/procraft#readme
 discord_server: https://discord.gg/eaxeQGzgtt
 limitations: Compatibility is maintainer-reported and incomplete. Procreate brush import targets shape tips; complete brush-engine and native Procreate document compatibility are not claimed. PSD masks and uncommon blend modes have gaps. The iOS build requires sideloading.
+summary: "Procreate-style layered painting with brush dynamics, masks, selections, guides and Animation Assist."

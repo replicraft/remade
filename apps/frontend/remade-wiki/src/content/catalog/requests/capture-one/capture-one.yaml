@@ -1,3 +1,4 @@
 # Requested in https://github.com/replicraft/remade/issues/47.
 original: capture-one
 reason: Reproduce Capture One's RAW development and color-editing behavior, with particular attention to camera-specific color rendering and tethered capture. Support live camera previews, capture settings, immediate image review and consistent adjustments from capture through export in an independently implemented photography workflow.
+summary: "Wanted: Capture One-style RAW photo development and color editing."

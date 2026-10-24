@@ -13,3 +13,4 @@ description: NoteCraft is a newly started Rust implementation targeting Windows 
 license: MIT
 docs: https://github.com/cmspeedau/NoteCraft/blob/main/ROADMAP.md
 limitations: Repository created on October 11, 2026. Specification and application foundation are in progress; listed workflows are goals rather than completed features. The reference Notepad version is not yet pinned, and the parity report has no measurements.
+summary: "An early Rust project targeting Windows 11 Notepad's editing, tabs, file handling and session workflows."

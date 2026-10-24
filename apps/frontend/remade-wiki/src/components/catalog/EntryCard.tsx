@@ -102,11 +102,7 @@ export default function EntryCard({
 						</p>
 					))}
 
-			<CardDescription
-				href={entryUrl(entry)}
-				label={`Read more about ${entry.name}`}
-				text={entry.description}
-			/>
+			<CardDescription text={entry.summary} />
 
 			{entry.kind === "project" && <DiscordLinks {...entry} />}
 

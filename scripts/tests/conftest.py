@@ -37,6 +37,7 @@ category: other
 languages: [Rust]
 status: experimental
 compatibility: targeting
+summary: A short overview of the implementation.
 description: An independent implementation of a public software interface.
 license: MIT
 """)
@@ -53,6 +54,7 @@ name: Example Tool
 languages: [JavaScript]
 repository: https://github.com/example/example-tool
 url: https://example.org/tool
+summary: A short overview of the implementation.
 description: A browser launcher for the indexed implementation.
 projects: [impl-a]
 """)

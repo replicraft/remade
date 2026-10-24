@@ -10,3 +10,4 @@ status: stable
 description: Discord Rich Presence companion for ArtCraft apps, showing the active app, project and activity. Runs in the system tray with local detection, privacy controls and configurable activities.
 limitations: Maintainer-designated stable release; detection can still be incomplete. Recognizes seven apps, focusing on PhotoCraft and LightCraft. Windows uses live API and UI Automation; macOS uses app/window titles. Linux supports live detection and selected X11/Wayland desktops; GNOME Wayland cannot enumerate native windows. Linux needs native GUI libraries and optional compositor helpers.
 projects: [photocraft, vectorcraft, filmcraft, lightcraft, pdfcraft, effectcraft, designcraft]
+summary: "Show your active ArtCraft app, project and activity in Discord Rich Presence, with privacy controls."

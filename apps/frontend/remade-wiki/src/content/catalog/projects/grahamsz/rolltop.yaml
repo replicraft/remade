@@ -21,3 +21,4 @@ limitations: >-
   Requires a self-hosted server and existing IMAP/SMTP accounts. Gmail API
   compatibility and full feature parity are not claimed. Offline access is
   limited to previously viewed mail.
+summary: "Self-hosted email with Gmail-style search, threaded conversations, snooze and multiple IMAP accounts."

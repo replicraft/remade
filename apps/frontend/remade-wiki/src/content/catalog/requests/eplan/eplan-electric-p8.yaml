@@ -1,3 +1,4 @@
 original: eplan-electric-p8
 reason: Reproduce EPLAN Electric P8's electrical schematic design, device and cable management, automated wire numbering, cross-references, PLC connection diagrams and generated parts lists and reports, with compatible project interchange for electrical engineering documentation.
 suggested_names: [WireCraft]
+summary: "Wanted: Electrical schematics, device and cable management, wire numbering and cross-references."

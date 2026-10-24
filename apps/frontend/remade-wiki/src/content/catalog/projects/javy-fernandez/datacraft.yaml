@@ -20,3 +20,4 @@ docs: https://github.com/javy-fernandez/datacraft#readme
 limitations: Early implementation; full DataGrip feature, project and plugin compatibility is not
   documented. The README documents macOS builds only. Packages are ad-hoc signed rather than notarized.
   Other database engines and cross-platform behavior are not established.
+summary: "Browse databases, write SQL and edit table data in a native DataGrip-style client."

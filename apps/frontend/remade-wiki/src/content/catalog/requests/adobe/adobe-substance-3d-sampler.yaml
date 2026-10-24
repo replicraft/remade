@@ -1,3 +1,4 @@
 original: adobe-substance-3d-sampler
 reason: Reproduce Sampler's image-to-material conversion, texture tiling, material mixing and photogrammetry workflows. One application could cover the Substance 3D suite; these requests describe separate compatibility targets.
 suggested_names: [ScanCraft]
+summary: "Wanted: Sampler's image-to-material conversion, texture tiling, material mixing and photogrammetry."

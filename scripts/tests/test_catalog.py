@@ -75,7 +75,9 @@ def test_additional_target_fulfills_request(project_catalog: Path) -> None:
     request = (
         project_catalog / "apps/frontend/remade-wiki/src/content/catalog/requests/product-b.yaml"
     )
-    request.write_text("original: product-b\nreason: Please faithfully recreate this software.\n")
+    request.write_text(
+        "original: product-b\nsummary: Requested compatible workflows.\nreason: Please faithfully recreate this software.\n"
+    )
     assert any("already fulfilled" in error for error in collect(project_catalog)[-1])
 
 
@@ -211,6 +213,7 @@ def test_request_valid_when_no_project(original_catalog: Path) -> None:
         original_catalog / "apps/frontend/remade-wiki/src/content/catalog/requests/product-a.yaml"
     ).write_text("""
 original: product-a
+summary: Requested compatible workflows.
 reason: An independently authored compatible implementation would be useful.
 """)
     assert not collect(original_catalog)[-1]
@@ -222,7 +225,9 @@ def test_requests_load_recursively_and_reject_duplicates_across_vendors(
     directory = original_catalog / "apps/frontend/remade-wiki/src/content/catalog/requests/vendor"
     directory.mkdir()
     path = directory / "product-a.yaml"
-    path.write_text("original: product-a\nreason: Reproduce the original application workflows.\n")
+    path.write_text(
+        "original: product-a\nsummary: Requested compatible workflows.\nreason: Reproduce the original application workflows.\n"
+    )
     _, _, requests, _, errors = collect(original_catalog)
     assert not errors
     assert [request["original"] for request in requests] == ["product-a"]
@@ -236,7 +241,7 @@ def test_nested_request_is_rejected_when_fulfilled(project_catalog: Path) -> Non
     directory = project_catalog / "apps/frontend/remade-wiki/src/content/catalog/requests/vendor"
     directory.mkdir()
     (directory / "product-a.yaml").write_text(
-        "original: product-a\nreason: Reproduce the original application workflows.\n"
+        "original: product-a\nsummary: Requested compatible workflows.\nreason: Reproduce the original application workflows.\n"
     )
     assert any("already fulfilled" in error for error in collect(project_catalog)[-1])
 
@@ -261,7 +266,7 @@ def test_request_suggested_names_validation(
         original_catalog / "apps/frontend/remade-wiki/src/content/catalog/requests/product-a.yaml"
     )
     path.write_text(
-        "original: product-a\nreason: A faithful implementation would be useful.\nsuggested_names: "
+        "original: product-a\nsummary: Requested compatible workflows.\nreason: A faithful implementation would be useful.\nsuggested_names: "
         + names
         + """
 """
@@ -377,6 +382,7 @@ def test_request_cannot_coexist_with_project(project_catalog: Path) -> None:
         project_catalog / "apps/frontend/remade-wiki/src/content/catalog/requests/product-a.yaml"
     ).write_text("""
 original: product-a
+summary: Requested compatible workflows.
 reason: An independently authored compatible implementation would be useful.
 """)
     assert any("already fulfilled" in x for x in collect(project_catalog)[-1])
@@ -404,6 +410,7 @@ def test_duplicate_yaml_keys_rejected(original_catalog: Path) -> None:
     ).write_text("""
 original: product-a
 original: product-b
+summary: Requested compatible workflows.
 reason: An independent compatible implementation would be useful.
 """)
     assert any("Duplicate YAML key" in x for x in collect(original_catalog)[-1])

@@ -1,3 +1,4 @@
 original: ibm-spss-statistics
 reason: Reproduce SPSS Statistics' familiar data and variable editors, statistical tests, regression, forecasting, charts and output tables, with compatible SPSS syntax and data-file import/export for reproducible analysis.
 suggested_names: [StatsCraft]
+summary: "Wanted: SPSS Statistics' data and variable editors, statistical tests, regression, forecasting, charts and output tables."
