@@ -112,6 +112,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 ## Original-software page
 
 - Original name and official/reliable reference URL.
+- For unfulfilled requests, place upvote and building controls beneath the title with their self-reporting caveat. Follow with Summary and Description, then request details and optional community links in a responsive grid. Finish with a separate catalog suggestion action. Keep the original reference and any suggested names in the request details card.
 - Brief factual synopsis, original software category.
 - All approved reimplementations targeting that original.
 - When there are multiple reimplementations, show a prominent Compare button beside the listing heading. Expand a static side-by-side table of languages, platforms, maintainer-reported compatibility and maturity, license, scope, limitations and cached development activity. Show missing activity as unavailable, include cache freshness, and allow keyboard-accessible horizontal scrolling on small screens. Comparison works without JavaScript.
