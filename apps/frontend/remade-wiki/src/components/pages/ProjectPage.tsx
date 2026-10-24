@@ -39,7 +39,7 @@ export default function ProjectPage({
 		<>
 			<div className="max-w-[860px] pt-12 sm:pt-16">
 				<a
-					className="mb-6 inline-flex h-9 max-w-full items-center justify-center gap-2 rounded-[9px] border border-[#29292c] bg-[#171719] px-3.5 font-[Arial,sans-serif] text-[15px] leading-5 font-normal tracking-normal text-[#e8e8e8] transition-colors hover:border-[#454548] hover:bg-[#202023] hover:text-[#e8e8e8] motion-reduce:transition-none"
+					className="mb-6 inline-flex h-9 max-w-full items-center justify-center gap-2 rounded-[9px] border border-[#29292c] bg-transparent px-3.5 font-[Arial,sans-serif] text-[15px] leading-5 font-normal tracking-normal text-[#e8e8e8] transition-colors hover:border-[#454548] hover:text-[#e8e8e8] motion-reduce:transition-none"
 					href="/explore/"
 				>
 					<svg
