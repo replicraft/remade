@@ -1,0 +1,15 @@
+slug: blok
+name: Blok
+authors: [jackuait]
+repository: https://github.com/JackUait/blok
+website: https://blokeditor.com
+docs: https://blokeditor.com/docs/
+originals: [notion]
+category: productivity
+languages: [TypeScript, C#]
+platforms: [Web]
+status: stable
+compatibility: partial
+description: Blok is an embeddable block-based rich text editor modeled on Notion's editor. Content is saved as typed JSON blocks that can be dragged, nested and converted. It includes Notion-style toggles, callouts, columns, tables and a database block whose rows are child blocks, plus pasting pages from Notion as blocks. It ships React, Vue and Angular adapters and a collaboration server.
+license: Apache-2.0
+limitations: Blok is an editor library, not a Notion workspace app. It has no Notion API or export-format compatibility beyond pasting copied content. It is a fork of the Apache-2.0 Editor.js project, not of Notion code.
