@@ -15,6 +15,7 @@ export interface DirectoryRecord extends BrowseEntry {
 	kind: "project" | "tool" | "request";
 	href: string;
 	summary: string;
+	description: string;
 	target: string;
 	aliases: string[];
 	authors: string[];
@@ -67,7 +68,8 @@ export function directoryRecords(
 				id: entry.slug,
 				kind: entry.kind,
 				href: entryUrl(entry),
-				summary: entry.description,
+				summary: entry.summary,
+				description: entry.description,
 				originals: targets.map((original) => ({
 					name: original.name,
 					href: `/software/${original.slug}/`,
@@ -123,11 +125,13 @@ export function directoryRecords(
 				kind: "request",
 				href: `/software/${original.slug}/`,
 				name: original.name,
-				summary: request.reason,
+				summary: request.summary,
+				description: request.reason,
 				suggestedNames: request.suggested_names,
 				search: [
 					original.name,
 					...(original.aliases ?? []),
+					request.summary,
 					request.reason,
 					...(request.suggested_names ?? []),
 				].join(" "),
@@ -195,7 +199,8 @@ export function directoryResults(
 							vendor: record.vendor,
 							addedAt: record.addedAt,
 							aliases: record.aliases,
-							reason: record.summary,
+							reason: record.description,
+							summary: record.summary,
 							suggestedNames: record.suggestedNames,
 						},
 						{ ...defaultRequestFilters, ...filters },

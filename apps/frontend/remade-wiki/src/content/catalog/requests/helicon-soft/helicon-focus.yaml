@@ -2,3 +2,4 @@ original: helicon-focus
 reason: Reproduce Helicon Focus's focus-stacking workflow, including alignment, blending images taken at different focus distances, retouching from source frames, batch processing and high-quality image export.
 suggested_names:
 - FocusCraft
+summary: "Wanted: Combine photo stacks into sharp images with Helicon Focus-style controls."

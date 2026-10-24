@@ -13,3 +13,4 @@ description: A broader Altium Designer alternative for schematic capture and PCB
 license: GPL-3.0-or-later
 docs: https://github.com/tangency-labs/pcbcraft#readme
 limitations: Upstream currently documents KiCad workflows and interchange, not Altium file, interface or API compatibility. General KiCad project import, vias, zone fills, hierarchical designs and comprehensive electrical rules remain planned. Browser code compiles to WebAssembly, but browser file operations are not implemented.
+summary: "An Altium-style PCB design project built around KiCad workflows, libraries and a Rust editor."

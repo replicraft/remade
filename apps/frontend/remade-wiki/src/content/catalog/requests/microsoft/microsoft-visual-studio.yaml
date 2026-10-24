@@ -1,3 +1,4 @@
 original: microsoft-visual-studio
 reason: Reproduce the full Visual Studio IDE's familiar C++, C# and .NET development workflows, including solution and project management, code navigation, completion, integrated debugging, profiling, testing and visual UI designers, with compatible SLN and project files and build-tool integration.
 suggested_names: [StudioCraft]
+summary: "Wanted: The full Visual Studio IDE's C++, C# and .NET development workflows."

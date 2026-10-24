@@ -120,10 +120,7 @@ test("request search points visitors to existing implementations", async ({
 		page.getByRole("heading", { name: "Related projects" }),
 	).toBeVisible();
 
-	await page
-		.getByRole("link", { name: "MailCraft", exact: true })
-		.first()
-		.click();
+	await page.locator('a[href="/projects/mailcraft/"]').first().click();
 
 	await expect(page).toHaveURL(/\/projects\/mailcraft\/$/);
 });
@@ -148,9 +145,7 @@ test("software comparisons open without client-side JavaScript", async ({
 
 		await expect(table.getByRole("link", { name: /Flare/ })).toBeVisible();
 
-		await expect(
-			table.getByRole("link", { name: /AnimationCraft/ }),
-		).toBeVisible();
+		await expect(table.getByRole("link", { name: /Next2D/ })).toBeVisible();
 	} finally {
 		await context.close();
 	}
@@ -198,11 +193,11 @@ test("anonymous browsing keeps account access reachable without an authenticatio
 	});
 	await page.goto("/");
 	const login = page.getByRole("link", { name: "Login", exact: true });
-	await expect(login).toHaveCount(1);
+	await expect(login).toBeVisible();
 	await page.getByRole("link", { name: "Explore", exact: true }).click();
 	await expect(
 		page.getByRole("link", { name: "Login", exact: true }),
-	).toHaveCount(0);
+	).toBeVisible();
 	expect(authRequests).toEqual([]);
 });
 

@@ -1,3 +1,4 @@
 original: sql-server-management-studio
 reason: Reproduce SSMS's familiar Object Explorer, query editor, execution plans, schema editing and database administration workflows in a native macOS application. Support connections to SQL Server and a compatible open-source engine; could share DBCraft with the SQL Server request.
 suggested_names: [DBCraft]
+summary: "Wanted: SQL Server administration with an Object Explorer, query editor and execution plans."

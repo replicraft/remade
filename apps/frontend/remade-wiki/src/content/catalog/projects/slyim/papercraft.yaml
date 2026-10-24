@@ -1,0 +1,26 @@
+slug: papercraft
+name: PaperCraft
+authors:
+- slyim
+repository: https://github.com/slyim/papercraft
+originals:
+- paper
+category: creative
+languages:
+- Rust
+platforms:
+- Linux
+- macOS
+- Windows
+status: experimental
+compatibility: partial
+description: A local design editor targeting Paper-style layout workflows, with an artboard, rectangle
+  and text layers, color tokens, alignment, layer controls and undo. Saves its own JSON documents
+  and exports standalone HTML and SVG; bounded SVG exchange with FigCraft and VectorCraft is documented.
+license: MIT
+docs: https://github.com/slyim/papercraft#readme
+limitations: Early prerelease; Paper document compatibility, nested layouts, images, vector editing,
+  SVG import, arbitrary CSS, collaboration and MCP remain deferred. SVG export does not preserve
+  automatic text wrapping. Windows native interaction is unverified; desktop packages are unsigned
+  or ad-hoc signed.
+summary: "A local Paper-style design editor with artboards, text, shapes, color tokens, alignment and undo."

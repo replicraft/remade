@@ -16,6 +16,7 @@ export function browseData(
 		name: entry.name,
 		search: [
 			entry.name,
+			entry.summary,
 			entry.description,
 			...originals.flatMap((o) => [o.name, ...(o.aliases ?? [])]),
 			...(entry.authors ?? []),

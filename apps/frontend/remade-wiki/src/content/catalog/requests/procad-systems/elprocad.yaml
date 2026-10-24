@@ -1,3 +1,4 @@
 original: elprocad
 reason: Reproduce ELPROCAD's electrical design and installation drawing workflows, including circuit and single-line diagrams, electrical symbols, connection diagrams, automatic cross-references, device lists and reports, with compatible DWG interchange. Could extend CADCraft with electrical drafting tools or be a separate application sharing its CAD engine.
 suggested_names: [ElectroCraft]
+summary: "Wanted: Electrical design and installation drawings with ELPROCAD-style workflows."

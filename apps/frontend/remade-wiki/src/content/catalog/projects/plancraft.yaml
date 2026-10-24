@@ -1,0 +1,23 @@
+slug: plancraft
+name: PlanCraft
+repository: https://github.com/rallegretti/PlanCraft
+originals:
+- microsoft-project
+category: productivity
+languages:
+- Rust
+platforms:
+- Windows
+- macOS
+- Linux
+status: experimental
+compatibility: partial
+description: A Project-style desktop planner with tasks, dependencies, Gantt charts, milestones,
+  people, costs and workload views. Supports resource planning and a shared command engine exposed
+  through MCP so agents can inspect and edit plans with undo.
+license: CC0-1.0
+docs: https://github.com/rallegretti/PlanCraft#readme
+limitations: Early preview; Microsoft Project native file and complete scheduling compatibility are
+  not documented. Uses its own project data rather than claiming MPP fidelity. Windows packages are
+  unsigned and macOS builds are not notarized; feature behavior is maintainer-reported.
+summary: "Microsoft Project-style planning with tasks, dependencies, Gantt charts, resources and workload views."

@@ -1,0 +1,24 @@
+slug: tracedraw
+name: TraceDraw
+repository: https://github.com/igtoth/tracedraw
+originals:
+- coreldraw
+category: creative
+languages:
+- Rust
+platforms:
+- Windows
+- macOS
+- Linux
+- Web
+status: alpha
+compatibility: partial
+description: A CorelDRAW-style vector and page-layout editor with curves, nodes, text, layers, symbols,
+  effects and print export. Implements CDR reading and writing alongside SVG, PDF and other interchange
+  formats, with native and browser interfaces.
+license: MIT OR Apache-2.0
+docs: https://github.com/igtoth/tracedraw#readme
+limitations: Alpha; CDR fidelity is maintainer-reported and needs testing on real documents. Reading
+  and writing support different format-version ranges; older output may require older CorelDRAW versions.
+  Complete behavior or plugin parity is not claimed. Desktop builds are unsigned.
+summary: "CorelDRAW-style vector and page layout with curves, text, layers, symbols, effects and CDR file support."

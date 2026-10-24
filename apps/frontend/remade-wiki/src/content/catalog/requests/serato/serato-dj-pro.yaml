@@ -1,3 +1,4 @@
 original: serato-dj-pro
 reason: Reproduce Serato DJ Pro's deck mixing, crate organization, cue points, loops, effects and controller workflows with compatible libraries. DJCraft should combine Serato DJ, Traktor Pro and Rekordbox workflows in one application, preserving each target's familiar behavior and library interoperability. Mixxx (https://mixxx.org/) is an open-source inspiration.
 suggested_names: [DJCraft]
+summary: "Wanted: DJ mixing with crates, cue points, loops, effects and controller workflows."

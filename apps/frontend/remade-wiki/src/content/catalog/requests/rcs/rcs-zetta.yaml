@@ -1,3 +1,4 @@
 original: rcs-zetta
 reason: Reproduce Zetta's radio automation and on-air playout, sequencer, hot keys, audio library imports, shared log updates, remote browser control and GPIO integration. Prioritize affordable self-hosted use for small and medium stations. RadioCraft could pair these workflows with GSelector-style music scheduling in one integrated suite.
 suggested_names: [RadioCraft]
+summary: "Wanted: Radio automation with on-air playout, hot keys, audio libraries and shared logs."

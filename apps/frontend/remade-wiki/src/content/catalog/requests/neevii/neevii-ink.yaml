@@ -1,3 +1,4 @@
 # Requested in https://github.com/replicraft/remade/issues/27.
 original: neevii-ink
 reason: Reproduce Neevii Ink's scene-linear image editing and VFX compositing workflows with macOS support, including ACEScg working space, OCIO color management, EXR and 16/32-bit float imagery. Preserve familiar editing tools and optional local, offline generative editing without requiring cloud services.
+summary: "Wanted: Neevii Ink's scene-linear image editing and VFX compositing workflows with macOS support."

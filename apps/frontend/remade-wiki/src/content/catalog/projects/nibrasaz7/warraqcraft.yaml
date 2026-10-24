@@ -1,0 +1,17 @@
+# Scope checked against the upstream roadmap and engine/UI source.
+# Submitted in https://github.com/replicraft/remade/pull/71.
+slug: warraqcraft
+name: WarraqCraft
+authors: [nibrasaz7]
+repository: https://github.com/NibrasAz7/warraqcraft
+originals: [texpad, winedt]
+category: productivity
+languages: [Rust]
+platforms: [Windows]
+status: alpha
+compatibility: targeting
+description: A broader alternative to Texifier and WinEdt for local LaTeX authoring. Provides a project tree, syntax-highlighted editor, PDF compilation and preview, SyncTeX navigation, templates, bibliography-aware citation insertion, local snapshots and spell-checking. Exposes CLI, TCP and MCP automation.
+license: MIT OR Apache-2.0
+docs: https://github.com/NibrasAz7/warraqcraft#readme
+limitations: Alpha; compilation uses bundled Tectonic or installed TeX. The in-process typesetter and bidirectional Arabic editing remain incomplete. Windows is verified by the maintainer; Linux, macOS and Web are planned. Full Texifier or WinEdt project, macro and settings compatibility is not claimed. Upstream also uses Overleaf and TeXstudio UI references.
+summary: "Write LaTeX locally with a project tree, syntax highlighting, PDF preview, SyncTeX and templates."

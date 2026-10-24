@@ -15,3 +15,4 @@ license: GPL-3.0-or-later
 docs: https://github.com/ItsAlphaNeon/Lemon-Studio#readme
 discord_server: https://discord.gg/R9JQ9zdeH
 limitations: Pre-alpha and not yet a usable replacement DAW. FLP support is limited to newer FL Studio projects and remains unstable. Audio recording, MIDI file interchange, plugin delay compensation and many controls are missing. No macOS build or prebuilt binaries.
+summary: "FL Studio-style music production with patterns, a piano roll, mixer routing, plugins and FLP files."

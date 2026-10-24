@@ -14,3 +14,4 @@ description: Lookout reimplements Outlook-style mail, calendar, contacts and tas
 license: GPL-3.0-or-later
 docs: https://github.com/gavindi/lookout#readme
 limitations: Compatibility is maintainer-reported; full Outlook feature or file-format compatibility is not claimed. Targets the Linux GNOME desktop with GTK 4, libadwaita and WebKitGTK.
+summary: "Outlook-style mail, calendar, contacts and tasks in a native GNOME app with IMAP, SMTP, CalDAV and CardDAV."

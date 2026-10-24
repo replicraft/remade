@@ -1,3 +1,4 @@
 original: videoredo
 reason: Reproduce VideoReDo's frame-accurate cutting and joining with fast stream-copy export and no required disk caches or proxies. Preserve multiple MKV audio tracks, offer basic video/audio filters and mix two audio tracks, re-encoding only affected streams or regions. Could combine with the TMPGEnc MPEG Smart Renderer request in one application.
 suggested_names: [SpliceCraft]
+summary: "Wanted: VideoReDo's frame-accurate cutting and joining with fast stream-copy export and no required disk caches or proxies."

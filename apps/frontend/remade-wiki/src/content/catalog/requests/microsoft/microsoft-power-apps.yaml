@@ -1,3 +1,4 @@
 original: microsoft-power-apps
 reason: Reproduce Power Apps' familiar low-code business app workflows, including canvas and model-driven apps, forms, data bindings, formulas, connectors and web/mobile interfaces, with compatible app and data interchange. Could share data models and integrations with Power Automate, Power Pages and Power BI reimplementations.
 suggested_names: [AppCraft]
+summary: "Wanted: Power Apps-style low-code business application building."

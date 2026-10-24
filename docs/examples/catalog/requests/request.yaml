@@ -1,6 +1,7 @@
 # Documentation example only; never publish as a real request.
 # A request is for an original with NO indexed qualifying implementation.
 # If sourced from an issue, add: # Requested in https://github.com/OWNER/REPO/issues/NUMBER.
+# Approved open-source-original exceptions require disclosure in the first comments and public reason; see POLICY.md.
 original: example-software
 reason: A faithful, independently written implementation of the program's public behavior would support compatibility and historical preservation.
 # Optional naming ideas; not reserved names or existing implementations.
@@ -9,3 +10,6 @@ suggested_names: [ExampleCraft]
 # discord_server: https://discord.gg/example
 # A reviewed project-owned HTTPS /discord redirect is also accepted.
 # discord_thread: https://discord.com/channels/123456789/987654321
+
+# Required card text: one line, 1–144 characters. Keep full details above.
+summary: "Wanted: compatible editing and file workflows."

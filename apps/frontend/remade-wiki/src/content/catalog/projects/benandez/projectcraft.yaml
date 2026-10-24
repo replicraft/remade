@@ -13,3 +13,4 @@ description: ProjectCraft independently implements Microsoft Project-style deskt
 license: MIT OR Apache-2.0
 docs: https://github.com/UCS-Care-Group/projectcraft#readme
 limitations: Pre-alpha with no releases yet; build from source. Coverage is maintainer-reported. Resource calendars, resource leveling, baselines, tracking, MPP/XML/XER interchange and printing remain incomplete or planned. Full Microsoft Project file and behavioral compatibility is not claimed.
+summary: "Microsoft Project-style scheduling with Gantt charts, task dependencies, calendars and resource planning."

@@ -32,6 +32,8 @@ Use React components for the UI and Tailwind utility classes for layout, spacing
 
 Authentication sits at the far right of the header: a compact **Login** link when signed out, or an initial-based dropdown with the account name and **Logout** when signed in. Hydrate only this small island; anonymous browsing makes no auth API calls. Keep the account dropdown in `UserDropdown`: an uppercase account initial in a circle and a chevron trigger, a separated identity section with display name and GitHub handle, and a Logout button with a Lucide icon. Use `react-dropdown` for open state, outside-click dismissal, Escape and keyboard navigation; customize its trigger, group heading and Logout option. Preserve keyboard focus and mobile wrapping. See `AUTH.md` for the authentication boundary.
 
+The header GitHub link includes Remade's own star count from the daily metadata cache. Render it statically, omit the count when metadata is unavailable, and keep the full count accessible to screen readers.
+
 ### Source readability
 
 - Separate logical blocks with a blank line: imports and declarations, setup and assertions, independent test cases, control-flow blocks and returns. Keep related statements together rather than compressing an entire component or test into uninterrupted lines.
@@ -46,7 +48,7 @@ Authentication sits at the far right of the header: a compact **Login** link whe
 - Max content width approximately 1100–1200px; reading sections narrower.
 - Responsive project cards: 1 column small screens, 2 on tablets, 3 on desktop.
 - Usable down to 320px width; cards should not truncate vital project names.
-- Keep card rows equal in height, allowing enough room for six description lines when needed even when headings or author links wrap. Bound the description preview to six lines plus room for its link so long text cannot expand automatically sized grid rows. Show descriptions in full when they fit the preview boundary; truncate overflowing descriptions and show a subtle “Read more…” link only when there is more text. Preserve full project names and keep author links or suggested names at the bottom.
+- Keep card rows equal in height. Cards show the entry's required `summary` (1–144 characters) in full, without clamping or a “Read more” link. Project and tool detail pages show a bordered panel with clearly labeled Summary and Description sections, separated by a subtle divider. Summary comes first; the full `description` follows in muted text. Software request sections use the same treatment with their full `reason`, using nested headings. Preserve full project names and keep author links or suggested names at the bottom.
 
 ## Home page sections (ordered)
 
@@ -86,7 +88,7 @@ Authentication sits at the far right of the header: a compact **Login** link whe
 
 ## Explore page
 
-- Search across original software name, project name, description, languages.
+- Search across original software name, project name, summary, full description, and languages.
 - Compact category, language, and platform filters beneath the search field; expandable additional filters for compatibility and development status. Filters apply immediately. Keep sorting beside the result count.
 - Sorting: recent, alphabetical, stars. `stars: null` sorts after known counts.
 - Cards expose original → implementation relationship at a glance.

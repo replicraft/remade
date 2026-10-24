@@ -14,3 +14,4 @@ license: MIT
 website: https://screencraft.mdnlabs.dev/
 docs: https://github.com/MarshallNickolauson/ScreenCraft#readme
 limitations: Early alpha; native Screen Studio project compatibility is not documented. macOS and Windows only; installers are unsigned or not notarized. Windows lacks the standalone compressor. Caret tracking depends on application accessibility support. Preview proxies consume substantial disk space; captions require a model download.
+summary: "Record and edit screens with automatic zooms, camera layouts, annotations and on-device captions."

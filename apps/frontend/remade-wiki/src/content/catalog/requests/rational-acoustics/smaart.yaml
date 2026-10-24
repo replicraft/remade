@@ -1,3 +1,4 @@
 original: smaart
 reason: Reproduce Smaart's familiar real-time acoustic measurement workflows, including FFT spectrum analysis, dual-channel transfer functions, impulse responses and SPL metering and logging, for sound-system alignment and troubleshooting with measurement microphones and audio interfaces.
 suggested_names: [AcousticCraft]
+summary: "Wanted: Real-time acoustic measurement and analysis."

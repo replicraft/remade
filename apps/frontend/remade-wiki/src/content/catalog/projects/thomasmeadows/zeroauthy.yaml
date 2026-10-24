@@ -1,0 +1,16 @@
+# Scope, compatibility and the clean-room process are maintainer-reported in the repository (README, CLEAN_ROOM.md, docs/compat/).
+slug: zeroauthy
+name: zeroauthy
+authors: [thomasmeadows]
+repository: https://github.com/occupysaas/zeroauthy
+originals: [auth0]
+category: developer-tools
+languages: [Go, TypeScript]
+platforms: [Linux, macOS, Windows]
+status: alpha
+compatibility: partial
+description: An independently developed identity server targeting Auth0's Authentication API and existing Auth0 SDK workflows. Implements authorization code with PKCE, rotating refresh tokens, client credentials, password and device grants, pushed authorization requests, consent and logout. Provides hosted database logins, custom-database connections, application-management endpoints and an admin console, with SQLite, PostgreSQL, MySQL or plugin storage.
+license: Apache-2.0
+docs: https://github.com/occupysaas/zeroauthy/blob/main/docs/compat/matrix.md
+limitations: Management API coverage currently focuses on applications; remaining resources, social/enterprise connections, MFA, passwordless login, Actions and organizations remain incomplete. Some SDK cases differ or have only upstream test coverage. OpenID certification is pending; compatibility and platform support are maintainer-reported.
+summary: "An Auth0-style identity server targeting existing SDKs, authorization flows and token-based authentication."

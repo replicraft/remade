@@ -1,0 +1,18 @@
+# Features and platform limitations are maintainer-reported in the upstream README.
+slug: radiomaster
+name: RadioMaster
+authors: [epell-development]
+repository: https://github.com/epell-development/RadioMaster
+originals: [radioboss]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS, Linux]
+status: alpha
+compatibility: partial
+description: An independent RadioBOSS-style broadcast automation application with tabbed playlists, timed hour markers, crossfading, voice tracks, a cart wall, microphone ducking, scheduling and broadcast reports. Streams to Icecast and Shoutcast, provides optional AzuraCast station management, and supports plugins and an HTTP control API.
+license: MIT
+website: https://radiomaster.dovafm.com/
+docs: https://github.com/epell-development/RadioMaster#readme
+discord_server: https://discord.gg/zVxeUXCjhc
+limitations: Early releases; features and platform coverage are maintainer-reported. Full RadioBOSS project, settings and plugin compatibility is not documented. Embedded web panels are Windows-only; macOS and Linux open them in a browser. macOS builds are unsigned. AzuraCast management is optional, with privileged actions requiring an API key.
+summary: "RadioBOSS-style broadcast automation with playlists, crossfades, voice tracks, scheduling and a cart wall."

@@ -1,0 +1,14 @@
+slug: notecraft-onenote
+name: NoteCraft
+repository: https://github.com/AlienTechSoftware/notecraft
+originals: [microsoft-onenote]
+category: productivity
+languages: [Rust]
+platforms: [Windows]
+status: experimental
+compatibility: partial
+description: A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, search, autosave and CLI/MCP access. A partial ONE section-file reader is implemented.
+license: MIT OR Apache-2.0
+docs: https://github.com/AlienTechSoftware/notecraft/blob/main/docs/gaps.md
+limitations: Early development; the ONE reader cannot yet import into notebook folders and does not support ONETOC2, encrypted sections or ink. Cross-block selection and parts of the ribbon are missing. Built and run on Windows; macOS/Linux are untested. Koala artwork has unverified origins and is excluded from the code license.
+summary: "OneNote-style notebooks with a ribbon, nested pages, formatted editing, tags, attachments and search."

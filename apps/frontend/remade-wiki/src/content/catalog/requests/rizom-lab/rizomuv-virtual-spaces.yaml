@@ -1,3 +1,4 @@
 original: rizomuv-virtual-spaces
 reason: Reproduce RizomUV Virtual Spaces' UV seam editing, constrained unwrapping, interactive optimization, island welding and packing, grouping and locking, and distortion visualization, with OBJ, FBX and USD exchange for 3D asset workflows.
 suggested_names: [UnwrapCraft]
+summary: "Wanted: RizomUV Virtual Spaces' UV seam editing, constrained unwrapping, interactive optimization, island welding and packing."

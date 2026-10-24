@@ -1,3 +1,4 @@
 original: tiermaker
 reason: Reproduce TierMaker's familiar drag-and-drop image ranking, customizable tiers, templates and export. Additional goals include vector cropping, background removal, text overlays, color adjustments, batch folder import and alternative Kanban, Eisenhower matrix and priority-list views, with responsive handling of hundreds of high-resolution assets on desktop and WebAssembly/WebGPU browser targets.
 suggested_names: [TierCraft, RankCraft]
+summary: "Wanted: TierMaker's drag-and-drop image ranking, customizable tiers, templates and export."

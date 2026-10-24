@@ -1,0 +1,26 @@
+slug: openlogi
+name: OpenLogi
+authors:
+- aprilnea
+repository: https://github.com/AprilNEA/OpenLogi
+originals:
+- logitech-options-plus
+category: other
+languages:
+- Rust
+platforms:
+- macOS
+- Linux
+- Windows
+status: experimental
+compatibility: partial
+description: An independent Logi Options+-style configuration application using Logitech HID++ device
+  communication. Provides supported-device button remapping, DPI, SmartShift, gestures and local
+  application profiles, with selected keyboard and Litra controls.
+license: MIT OR Apache-2.0
+docs: https://github.com/AprilNEA/OpenLogi#readme
+limitations: Under active development; device capabilities and platform behavior vary. Linux application
+  focus works through X11/XWayland and requires device-access rules. Unsupported controls may be
+  no-ops; full Options+ behavior is not claimed. Branding has separate terms from the code.
+website: https://openlogi.org
+summary: "Remap supported Logitech mice locally: buttons, DPI, SmartShift and gestures, without an account."

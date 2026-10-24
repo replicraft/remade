@@ -1,3 +1,4 @@
 # Requested in https://github.com/replicraft/remade/issues/31.
 original: articulate-storyline-360
 reason: Independently reproduce Storyline's slide-based e-learning authoring workflows, including layers, triggers, variables, quizzes, branching scenarios and multimedia. Support SCORM publishing for learning-management systems and compatibility with existing Storyline course projects.
+summary: "Wanted: Slide-based e-learning authoring with Storyline-style interactive lessons."

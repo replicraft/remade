@@ -1,3 +1,4 @@
 original: catia
 reason: Reproduce CATIA's parametric part and assembly modeling, precision surfacing, engineering drawings and mechanical design workflows, with compatible project interchange. Could extend SolidCraft (https://github.com/tangency-labs/solidcraft), or be a separate application sharing a 3D engine with other CAD projects.
 suggested_names: [ShapeCraft]
+summary: "Wanted: CATIA's parametric part and assembly modeling, precision surfacing, engineering drawings and mechanical design."

@@ -1,0 +1,17 @@
+# Scope: https://github.com/wdunn001/lasercraft/blob/main/PARITY.md
+# License is declared in Cargo.toml; no repository license file is currently present.
+slug: lasercraft
+name: LaserCraft
+authors: [wdunn001]
+repository: https://github.com/wdunn001/lasercraft
+originals: [lightburn]
+category: engineering
+languages: [Rust, JavaScript]
+platforms: [Web]
+status: experimental
+compatibility: partial
+summary: LightBurn-style laser design and control with vector editing, raster engraving, toolpath preview and a browser editor.
+description: A Rust laser-design and machine-control app targeting LightBurn-style workflows. Includes vector drawing, per-layer cut and engrave settings, raster dithering, toolpath preview, .lbrn import and G-code output. Provides a WebAssembly browser editor and a CLI, with controller modules for GRBL, Marlin, Snapmaker, DSP and galvo marking.
+license: MIT OR Apache-2.0
+docs: https://github.com/wdunn001/lasercraft#readme
+limitations: Early implementation; documented feature parity and controller support are maintainer-reported, with no independent hardware validation. Full LightBurn workflow and project-format compatibility is not claimed.

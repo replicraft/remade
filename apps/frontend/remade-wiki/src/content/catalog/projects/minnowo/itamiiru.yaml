@@ -12,4 +12,5 @@ compatibility: partial
 description: Rust file explorer and file picker recreating Windows 10/11-style file-dialog workflows on Linux. Includes tabs, split view, folder search, image thumbnails, custom context-menu actions, trash and USB drive management. Its xdg-desktop-portal backend supplies Open, Save As and folder-selection dialogs to compatible applications.
 license: GPL-3.0
 docs: https://github.com/Minnowo/itamiiru/blob/main/docs/linux-setup/README.md
-limitations: Linux only; Windows and macOS support is deferred. Does not reproduce the full Windows shell. Portal integration excludes applications using their own dialogs; external drag and drop is X11-only. Accessibility remains unfinished. LICENSE contains GPL-3.0, while Cargo metadata declares MIT OR Apache-2.0; upstream clarification is needed.
+limitations: Linux only; Windows and macOS support is deferred. Does not reproduce the full Windows shell. Portal integration excludes applications using their own dialogs; external drag and drop is X11-only. Accessibility remains unfinished.
+summary: "A Linux file explorer and picker with Windows-style dialogs, tabs, split views and image thumbnails."

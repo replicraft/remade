@@ -13,3 +13,4 @@ description: A client-server reimplementation targeting Windows Recall's API and
 license: GPL-2.0-only
 docs: https://github.com/erkinalp/PreCall#readme
 limitations: Compatibility is maintainer-reported, not independently verified. PreCall capture requires Windows; Linux hosts the server and Web is its interface. Limited Linux and macOS capture support is handled by https://github.com/erkinalp/recalld and https://github.com/erkinalp/recalld-macos respectively, without Recall data compatibility. Captures are sent to a server for processing and storage.
+summary: "A Windows Recall-style desktop capture client and server targeting its API and database workflows."

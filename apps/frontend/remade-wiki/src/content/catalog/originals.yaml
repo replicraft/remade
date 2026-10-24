@@ -1292,3 +1292,903 @@
   url: https://essay.app/
   category: productivity
   aliases: [essay.app]
+- slug: keyshot
+  name: KeyShot
+  url: https://www.keyshot.com/
+  category: creative
+  aliases: [KeyShot Studio]
+- slug: calibre
+  name: Calibre
+  url: https://calibre-ebook.com/
+  category: productivity
+- slug: texpad
+  name: Texifier
+  url: https://www.texifier.com/
+  category: productivity
+  aliases: [Texpad, Texpad TeX editor]
+- slug: winedt
+  name: WinEdt
+  url: https://www.winedt.com/
+  category: productivity
+- slug: coreldraw
+  name: CorelDRAW
+  url: https://www.coreldraw.com/
+  category: creative
+- slug: datagrip
+  name: DataGrip
+  url: https://www.jetbrains.com/datagrip/
+  category: developer-tools
+- slug: paper
+  name: Paper
+  url: https://paper.design/
+  category: creative
+- slug: logitech-options-plus
+  name: Logi Options+
+  url: https://www.logitech.com/software/logi-options-plus.html
+  category: other
+- slug: macos
+  name: macOS application interfaces
+  url: https://developer.apple.com/macos/
+  category: operating-systems
+- slug: microsoft-journal
+  name: Microsoft Journal
+  url: https://www.microsoft.com/en-us/garage/profiles/journal/
+  category: productivity
+- slug: uvi-falcon
+  name: UVI Falcon
+  url: https://www.uvi.net/falcon.html
+  category: creative
+- slug: akeytsu
+  name: Akeytsu
+  url: https://www.nukeygara.com/
+  category: creative
+- slug: adobe-photoshop-elements
+  name: Adobe Photoshop Elements
+  url: https://www.adobe.com/products/photoshop-elements.html
+  category: creative
+- slug: adobe-premiere-elements
+  name: Adobe Premiere Elements
+  url: https://www.adobe.com/products/premiere-elements.html
+  category: creative
+- slug: adobe-podcast
+  name: Adobe Podcast
+  url: https://podcast.adobe.com/
+  category: creative
+- slug: accentize-dxrevive
+  name: Accentize dxRevive
+  url: https://www.accentize.com/dxrevive/
+  category: creative
+- slug: affinity
+  name: Affinity
+  url: https://www.affinity.studio/
+  category: creative
+- slug: imagen
+  name: Imagen
+  url: https://imagen-ai.com/
+  category: creative
+- slug: arturia-v-collection
+  name: Arturia V Collection
+  url: https://www.arturia.com/products/software-instruments/v-collection/overview
+  category: creative
+- slug: arturia-fx-collection
+  name: Arturia FX Collection
+  url: https://www.arturia.com/products/software-effects/fx-collection/overview
+  category: creative
+- slug: arturia-pigments
+  name: Arturia Pigments
+  url: https://www.arturia.com/products/software-instruments/pigments/overview
+  category: creative
+- slug: aseprite
+  name: Aseprite
+  url: https://www.aseprite.org/
+  category: creative
+- slug: on1-resize-ai
+  name: ON1 Resize AI
+  url: https://www.on1.com/products/resize-ai/
+  category: creative
+- slug: aiarty-image-enhancer
+  name: Aiarty Image Enhancer
+  url: https://www.aiarty.com/ai-image-enhancer/
+  category: creative
+- slug: autodesk-flame
+  name: Autodesk Flame
+  url: https://www.autodesk.com/products/flame/overview
+  category: creative
+- slug: remove-bg
+  name: remove.bg
+  url: https://www.remove.bg/
+  category: creative
+- slug: adobe-firefly
+  name: Adobe Firefly
+  url: https://www.adobe.com/products/firefly.html
+  category: creative
+- slug: camo-studio
+  name: Camo Studio
+  url: https://camo.com/studio
+  category: creative
+- slug: celaction-2d
+  name: CelAction2D
+  url: https://answers.celaction.com/
+  category: creative
+- slug: reaper
+  name: REAPER
+  url: https://www.reaper.fm/
+  category: creative
+- slug: corel-photo-paint
+  name: Corel PHOTO-PAINT
+  url: https://www.coreldraw.com/en/product/coreldraw/
+  category: creative
+- slug: microsoft-creative-writer
+  name: Microsoft Creative Writer
+  url: https://ftp.zx.net.nz/pub/archive/ftp.microsoft.com/MISC/KB/en-us/147/850.HTM
+  category: creative
+- slug: microsoft-fine-artist
+  name: Microsoft Fine Artist
+  url: https://ftp.zx.net.nz/pub/archive/ftp.microsoft.com/MISC/KB/en-us/147/850.HTM
+  category: creative
+- slug: sure-cuts-a-lot
+  name: Sure Cuts A Lot
+  url: https://www.craftedge.com/products/products_scal.html
+  category: creative
+- slug: antares-auto-tune
+  name: Auto-Tune
+  url: https://www.antarestech.com/
+  category: creative
+- slug: feather
+  name: Feather
+  url: https://www.feather.art/
+  category: creative
+- slug: evoto
+  name: Evoto
+  url: https://www.evoto.ai/
+  category: creative
+- slug: filter-forge
+  name: Filter Forge
+  url: https://www.filterforge.com/
+  category: creative
+- slug: sai-flexi
+  name: SAi Flexi
+  url: https://www.thinksai.com/products/flexi
+  category: creative
+- slug: fontlab
+  name: FontLab
+  url: https://www.fontlab.com/
+  category: creative
+- slug: fontcreator
+  name: FontCreator
+  url: https://www.high-logic.com/font-editor/fontcreator
+  category: creative
+- slug: glyphs
+  name: Glyphs
+  url: https://glyphsapp.com/
+  category: creative
+- slug: fontself-maker
+  name: Fontself Maker
+  url: https://www.fontself.com/
+  category: creative
+- slug: ifontmaker
+  name: iFontMaker
+  url: https://2ttf.com/
+  category: creative
+- slug: connect-fonts
+  name: Connect Fonts
+  url: https://www.extensis.com/connect/fonts
+  category: creative
+- slug: fontexplorer-x
+  name: FontExplorer X Pro
+  url: https://www.fontexplorerx.com/
+  category: creative
+- slug: garageband
+  name: GarageBand
+  url: https://www.apple.com/mac/garageband/
+  category: creative
+- slug: heavym
+  name: HeavyM
+  url: https://www.heavym.net/
+  category: creative
+- slug: serum-2
+  name: Serum 2
+  url: https://xferrecords.com/products/serum-2
+  category: creative
+- slug: jangafx-geogen
+  name: GeoGen
+  url: https://jangafx.com/software/geogen
+  category: creative
+- slug: jangafx-liquigen
+  name: LiquiGen
+  url: https://jangafx.com/software/liquigen
+  category: creative
+- slug: jangafx-embergen
+  name: EmberGen
+  url: https://jangafx.com/software/embergen
+  category: creative
+- slug: kodak-preps
+  name: KODAK PREPS
+  url: https://www.kodak.com/content/pdfs/print/KODAK-PRINERGY-PREPS-Imposition-Software-datasheet-EN.pdf
+  category: creative
+- slug: komplete-ultimate
+  name: Komplete Ultimate
+  url: https://support.native-instruments.com/support/solutions/articles/69000879171-which-products-are-included-in-komplete-15-
+  category: creative
+- slug: lexicon-dj
+  name: Lexicon DJ
+  url: https://www.lexicondj.com/
+  category: creative
+- slug: lexicon-pcm-total-bundle
+  name: Lexicon PCM Total Bundle
+  url: https://lexiconpro.com/en/products/pcm-total-bundle
+  category: creative
+- slug: live2d-cubism
+  name: Live2D Cubism
+  url: https://www.live2d.com/en/
+  category: creative
+- slug: madmapper
+  name: MadMapper
+  url: https://madmapper.com/
+  category: creative
+- slug: makemkv
+  name: MakeMKV
+  url: https://www.makemkv.com/
+  category: creative
+- slug: mixed-in-key
+  name: Mixed In Key
+  url: https://mixedinkey.com/
+  category: creative
+- slug: mixed-in-key-wingman
+  name: Wingman
+  url: https://mixedinkey.com/wingman/
+  category: creative
+- slug: musicbee
+  name: MusicBee
+  url: https://www.getmusicbee.com/
+  category: creative
+- slug: painttool-sai
+  name: PaintTool SAI
+  url: https://www.systemax.jp/en/sai/
+  category: creative
+- slug: magicpath
+  name: MagicPath
+  url: https://www.magicpath.ai/
+  category: creative
+- slug: framer
+  name: Framer
+  url: https://www.framer.com/
+  category: creative
+- slug: photo-mechanic
+  name: Photo Mechanic
+  url: https://home.camerabits.com/
+  category: creative
+- slug: enfocus-pitstop
+  name: Enfocus PitStop Pro
+  url: https://www.enfocus.com/en/products/pitstop-pro
+  category: creative
+- slug: propresenter
+  name: ProPresenter
+  url: https://www.renewedvision.com/propresenter
+  category: creative
+- slug: protopie
+  name: ProtoPie
+  url: https://www.protopie.io/
+  category: creative
+- slug: reason
+  name: Reason
+  url: https://www.reasonstudios.com/
+  category: creative
+- slug: rive
+  name: Rive Editor
+  url: https://rive.app/editor
+  category: creative
+- slug: swam-orchestra
+  name: SWAM Orchestra Bundle
+  url: https://www.audiomodeling.com/products?kind=bundle
+  category: creative
+- slug: microsoft-photos
+  name: Microsoft Photos
+  url: https://apps.microsoft.com/detail/9wzdncrfjbh4
+  category: creative
+- slug: studiobinder
+  name: StudioBinder
+  url: https://www.studiobinder.com/
+  category: creative
+- slug: apple-mainstage
+  name: MainStage
+  url: https://apps.apple.com/us/app/mainstage/id634159523
+  category: creative
+- slug: steinberg-absolute
+  name: Steinberg Absolute
+  url: https://www.steinberg.net/vst-instruments/absolute/
+  category: creative
+- slug: submagic
+  name: Submagic
+  url: https://www.submagic.co/
+  category: creative
+- slug: svgator
+  name: SVGator
+  url: https://www.svgator.com/
+  category: creative
+- slug: synthesia
+  name: Synthesia
+  url: https://www.synthesia.io/
+  category: creative
+- slug: texturepacker
+  name: TexturePacker
+  url: https://www.codeandweb.com/texturepacker
+  category: creative
+- slug: vectorizer-ai
+  name: Vectorizer.AI
+  url: https://vectorizer.ai/
+  category: creative
+- slug: vocaloid
+  name: VOCALOID
+  url: https://www.vocaloid.com/en/
+  category: creative
+- slug: melodyne
+  name: Melodyne
+  url: https://www.celemony.com/en/melodyne/what-is-melodyne
+  category: creative
+- slug: chaos-vantage
+  name: Chaos Vantage
+  url: https://www.chaos.com/vantage
+  category: creative
+- slug: wallpaper-engine
+  name: Wallpaper Engine
+  url: https://www.wallpaperengine.io/
+  category: creative
+- slug: steinberg-wavelab
+  name: WaveLab
+  url: https://www.steinberg.net/wavelab/
+  category: creative
+- slug: wondershare-filmora
+  name: Wondershare Filmora
+  url: https://filmora.wondershare.com/
+  category: creative
+- slug: izotope-rx
+  name: iZotope RX
+  url: https://docs.izotope.com/rx11/en/index.html
+  category: creative
+- slug: mecabricks
+  name: Mecabricks
+  url: https://www.mecabricks.com/
+  category: creative
+- slug: camtasia
+  name: Camtasia
+  url: https://www.techsmith.com/camtasia/
+  category: creative
+- slug: sonible-plugins
+  name: sonible audio plug-ins
+  url: https://www.sonible.com/
+  category: creative
+- slug: insydium-x-particles
+  name: INSYDIUM X-Particles
+  url: https://insydium.ltd/products/x-particles/
+  category: creative
+- slug: insydium-nexus
+  name: INSYDIUM Nexus
+  url: https://insydium.ltd/products/nexus/
+  category: creative
+- slug: 3cad
+  name: 3CAD
+  url: https://www.cyncly.com/products/3cad
+  category: engineering
+- slug: amd-vivado
+  name: AMD Vivado
+  url: https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html
+  category: engineering
+- slug: autodesk-recap
+  name: Autodesk ReCap
+  url: https://www.autodesk.com/products/recap/overview
+  category: engineering
+- slug: autodesk-robot-structural-analysis
+  name: Autodesk Robot Structural Analysis Professional
+  url: https://www.autodesk.com/products/robot-structural-analysis/overview
+  category: engineering
+- slug: chem3d
+  name: Chem3D
+  url: https://revvitysignals.com/products/research/chemdraw
+  category: engineering
+- slug: mnova
+  name: Mnova
+  url: https://mestrelab.com/software/mnova/
+  category: engineering
+- slug: chief-architect
+  name: Chief Architect
+  url: https://www.chiefarchitect.com/
+  category: engineering
+- slug: lychee-slicer
+  name: Lychee Slicer
+  url: https://lychee.co/
+  category: engineering
+- slug: ansys-spaceclaim
+  name: Ansys SpaceClaim
+  url: https://www.ansys.com/products/3d-design/ansys-spaceclaim
+  category: engineering
+- slug: cisco-packet-tracer
+  name: Cisco Packet Tracer
+  url: https://www.netacad.com/cisco-packet-tracer
+  category: engineering
+- slug: siser-leonardo-design-studio
+  name: Siser Leonardo Design Studio
+  url: https://www.siser.com/leonardo-design-studio/
+  category: engineering
+- slug: csi-etabs
+  name: ETABS
+  url: https://www.csiamerica.com/products/etabs
+  category: engineering
+- slug: csi-sap2000
+  name: SAP2000
+  url: https://www.csiamerica.com/products/sap2000
+  category: engineering
+- slug: sai-enroute
+  name: SAi EnRoute
+  url: https://www.thinksai.com/products/enroute
+  category: engineering
+- slug: autodesk-cfd
+  name: Autodesk CFD
+  url: https://www.autodesk.com/products/cfd/overview
+  category: engineering
+- slug: artioscad
+  name: ArtiosCAD
+  url: https://www.esko.com/en/products/artioscad
+  category: engineering
+- slug: originlab-origin
+  name: Origin
+  url: https://www.originlab.com/
+  category: engineering
+- slug: mozaik
+  name: Mozaik
+  url: https://www.mozaiksoftware.com/
+  category: engineering
+- slug: optitex-pds
+  name: Optitex PDS
+  url: https://optitex.com/
+  category: engineering
+- slug: lectra-modaris
+  name: Lectra Modaris
+  url: https://www.lectra.com/en/fashion/products/modaris
+  category: engineering
+- slug: progecad
+  name: progeCAD Professional
+  url: https://www.progesoft.com/products/progecad-professional
+  category: engineering
+- slug: sigmanest
+  name: SigmaNEST
+  url: https://www.sigmanest.com/
+  category: engineering
+- slug: pronest
+  name: ProNest
+  url: https://www.hypertherm.com/hypertherm/pronest/pronest-cadcam-nesting-software/
+  category: engineering
+- slug: snapgene
+  name: SnapGene
+  url: https://www.snapgene.com/
+  category: engineering
+- slug: autodesk-vault
+  name: Autodesk Vault
+  url: https://www.autodesk.com/products/vault/overview
+  category: engineering
+- slug: siemens-step-7
+  name: SIMATIC STEP 7
+  url: https://www.siemens.com/global/en/products/automation/industry-software/automation-software/tia-portal/software/step7-tia-portal.html
+  category: engineering
+- slug: siemens-wincc-unified
+  name: SIMATIC WinCC Unified
+  url: https://www.siemens.com/en-us/products/simatic-wincc/unified/
+  category: engineering
+- slug: vcarve-pro
+  name: VCarve Pro
+  url: https://www.vectric.com/products/vcarve-pro
+  category: engineering
+- slug: vectric-aspire
+  name: Vectric Aspire
+  url: https://www.vectric.com/products/aspire
+  category: engineering
+- slug: nanocad
+  name: nanoCAD
+  url: https://nanocad.com/
+  category: engineering
+- slug: ansys-ls-dyna
+  name: Ansys LS-DYNA
+  url: https://www.ansys.com/products/structures/ansys-ls-dyna
+  category: engineering
+- slug: duolingo
+  name: Duolingo
+  url: https://www.duolingo.com/
+  category: productivity
+- slug: gizmo
+  name: Gizmo
+  url: https://gizmo.ai/
+  category: productivity
+- slug: anydesk
+  name: AnyDesk
+  url: https://anydesk.com/
+  category: productivity
+- slug: teamviewer
+  name: TeamViewer Remote
+  url: https://www.teamviewer.com/en/products/remote/
+  category: productivity
+- slug: adobe-captivate
+  name: Adobe Captivate
+  url: https://www.adobe.com/products/captivate.html
+  category: productivity
+- slug: adobe-framemaker
+  name: Adobe FrameMaker
+  url: https://www.adobe.com/products/framemaker.html
+  category: productivity
+- slug: adobe-livecycle-designer
+  name: Adobe LiveCycle Designer
+  url: https://helpx.adobe.com/livecycle/topics/livecycle-designer.html
+  category: productivity
+- slug: buffer
+  name: Buffer
+  url: https://buffer.com/
+  category: productivity
+- slug: hootsuite
+  name: Hootsuite
+  url: https://www.hootsuite.com/
+  category: productivity
+- slug: sprout-social
+  name: Sprout Social
+  url: https://sproutsocial.com/
+  category: productivity
+- slug: loomly
+  name: Loomly
+  url: https://www.loomly.com/
+  category: productivity
+- slug: bloomberg-terminal
+  name: Bloomberg Terminal
+  url: https://www.bloomberg.com/professional/products/bloomberg-terminal/
+  category: productivity
+- slug: tradingview
+  name: TradingView
+  url: https://www.tradingview.com/
+  category: productivity
+- slug: cobrowse
+  name: Cobrowse.io
+  url: https://cobrowse.io/
+  category: productivity
+- slug: collectorz-movie-collector
+  name: Movie Collector
+  url: https://clz.com/movies/desktop
+  category: productivity
+- slug: think-cell
+  name: think-cell
+  url: https://www.think-cell.com/
+  category: productivity
+- slug: efficient-elements
+  name: Efficient Elements for presentations
+  url: https://www.efficient-elements.com/
+  category: productivity
+- slug: uber
+  name: Uber
+  url: https://play.google.com/store/apps/details?id=com.ubercab
+  category: productivity
+- slug: ola
+  name: Ola
+  url: https://www.olacabs.com/
+  category: productivity
+- slug: elgato-stream-deck
+  name: Elgato Stream Deck
+  url: https://www.elgato.com/stream-deck
+  category: productivity
+- slug: miro
+  name: Miro
+  url: https://miro.com/
+  category: productivity
+- slug: lucidchart
+  name: Lucidchart
+  url: https://www.lucidchart.com/
+  category: productivity
+- slug: dragon-professional
+  name: Dragon Professional
+  url: https://dragon.nuance.com/en-us/dragon-professional
+  category: productivity
+- slug: talon-voice
+  name: Talon Voice
+  url: https://talonvoice.com/
+  category: productivity
+- slug: noteshelf
+  name: Noteshelf
+  url: https://www.noteshelf.net/
+  category: productivity
+- slug: samsung-notes
+  name: Samsung Notes
+  url: https://play.google.com/store/apps/details?id=com.samsung.android.app.notes
+  category: productivity
+- slug: jw-library
+  name: JW Library
+  url: https://www.jw.org/en/online-help/jw-library/
+  category: productivity
+- slug: launchbox
+  name: LaunchBox
+  url: https://www.launchbox-app.com/
+  category: productivity
+- slug: lotus-improv
+  name: Lotus Improv
+  url: https://archive.computerhistory.org/resources/access/text/2024/03/102805753-05-01-acc.pdf
+  category: productivity
+- slug: quantrix
+  name: Quantrix Modeler
+  url: https://quantrix.com/
+  category: productivity
+- slug: tableau
+  name: Tableau
+  url: https://www.tableau.com/
+  category: productivity
+- slug: microsoft-teams
+  name: Microsoft Teams
+  url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
+  category: productivity
+- slug: microsoft-whiteboard
+  name: Microsoft Whiteboard
+  url: https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app
+  category: productivity
+- slug: mindmanager
+  name: MindManager
+  url: https://www.mindmanager.com/
+  category: productivity
+- slug: figjam
+  name: FigJam
+  url: https://www.figma.com/figjam/
+  category: productivity
+- slug: scrivener
+  name: Scrivener
+  url: https://www.literatureandlatte.com/scrivener/overview
+  category: productivity
+- slug: vellum
+  name: Vellum
+  url: https://vellum.pub/
+  category: productivity
+- slug: pdf-annotator
+  name: PDF Annotator
+  url: https://www.pdfannotator.com/
+  category: productivity
+- slug: quicken
+  name: Quicken
+  url: https://www.quicken.com/
+  category: productivity
+- slug: banktivity
+  name: Banktivity
+  url: https://www.banktivity.com/
+  category: productivity
+- slug: ynab
+  name: YNAB
+  url: https://www.ynab.com/
+  category: productivity
+- slug: sap-businessobjects-bi
+  name: SAP BusinessObjects BI
+  url: https://www.sap.com/products/technology-platform/bi-platform.html
+  category: productivity
+- slug: quickbase
+  name: Quickbase
+  url: https://www.quickbase.com/
+  category: productivity
+- slug: airtable
+  name: Airtable
+  url: https://www.airtable.com/
+  category: productivity
+- slug: ragtime
+  name: RagTime
+  url: https://www.ragtime.de/
+  category: productivity
+- slug: liquidtext
+  name: LiquidText
+  url: https://www.liquidtext.net/
+  category: productivity
+- slug: sage-50
+  name: Sage 50
+  url: https://www.sage.com/en-us/products/sage-50/
+  category: productivity
+- slug: salesforce-sales-cloud
+  name: Salesforce Sales Cloud
+  url: https://www.salesforce.com/sales/cloud/
+  category: productivity
+- slug: serveboard
+  name: ServeBoard
+  url: https://serveboard.app/
+  category: productivity
+- slug: tallyprime
+  name: TallyPrime
+  url: https://tallysolutions.com/tally-prime/
+  category: productivity
+- slug: teamwire
+  name: Teamwire
+  url: https://teamwire.eu/
+  category: productivity
+- slug: tenorshare-icarefone
+  name: Tenorshare iCareFone
+  url: https://www.tenorshare.com/products/icarefone.html
+  category: productivity
+- slug: ticktick
+  name: TickTick
+  url: https://ticktick.com/
+  category: productivity
+- slug: lunatask
+  name: Lunatask
+  url: https://lunatask.app/
+  category: productivity
+- slug: trados-studio
+  name: Trados Studio
+  url: https://www.trados.com/products/trados-studio/
+  category: productivity
+- slug: wondershare-recoverit
+  name: Wondershare Recoverit
+  url: https://recoverit.wondershare.com/
+  category: productivity
+- slug: xmind
+  name: Xmind
+  url: https://xmind.com/
+  category: productivity
+- slug: youversion-bible
+  name: YouVersion Bible App
+  url: https://www.youversion.com/bible-app/
+  category: productivity
+- slug: bible-gateway
+  name: Bible Gateway
+  url: https://www.biblegateway.com/
+  category: productivity
+- slug: olive-tree-bible
+  name: Olive Tree Bible App
+  url: https://www.olivetree.com/
+  category: productivity
+- slug: myq-x
+  name: MyQ X
+  url: https://www.myq-solution.com/myq-x
+  category: productivity
+- slug: ysoft-safeq
+  name: YSoft SAFEQ
+  url: https://www.ysoft.com/safeq
+  category: productivity
+- slug: priprinter
+  name: priPrinter
+  url: https://www.priprinter.com/
+  category: productivity
+- slug: unity
+  name: Unity
+  url: https://unity.com/products/unity-engine
+  category: developer-tools
+- slug: xcode
+  name: Xcode
+  url: https://developer.apple.com/xcode/
+  category: developer-tools
+- slug: astah-professional
+  name: Astah Professional
+  url: https://astah.net/products/astah-professional/
+  category: developer-tools
+- slug: gitkraken
+  name: GitKraken Desktop
+  url: https://www.gitkraken.com/git-client
+  category: developer-tools
+- slug: intellij-idea-ultimate
+  name: IntelliJ IDEA Ultimate
+  url: https://www.jetbrains.com/idea/
+  category: developer-tools
+- slug: mobaxterm
+  name: MobaXterm
+  url: https://mobaxterm.mobatek.net/
+  category: developer-tools
+- slug: postman
+  name: Postman
+  url: https://www.postman.com/
+  category: developer-tools
+- slug: dotnet-reflector
+  name: .NET Reflector
+  url: https://www.red-gate.com/products/reflector/
+  category: developer-tools
+- slug: royal-ts
+  name: Royal TS
+  url: https://www.royalapps.com/ts/
+  category: developer-tools
+- slug: screaming-frog-seo-spider
+  name: Screaming Frog SEO Spider
+  url: https://www.screamingfrog.co.uk/seo-spider/
+  category: developer-tools
+- slug: ibm-rational-rose
+  name: IBM Rational Rose
+  url: https://www.ibm.com/products/rational-rose
+  category: developer-tools
+- slug: ibm-rational-application-developer
+  name: IBM Rational Application Developer
+  url: https://www.ibm.com/products/rational-application-developer
+  category: developer-tools
+- slug: visual-paradigm
+  name: Visual Paradigm
+  url: https://www.visual-paradigm.com/
+  category: developer-tools
+- slug: navicat-premium
+  name: Navicat Premium
+  url: https://www.navicat.com/en/products/navicat-premium
+  category: developer-tools
+- slug: bluestacks
+  name: BlueStacks
+  url: https://www.bluestacks.com/
+  category: operating-systems
+- slug: vmware-esxi
+  name: VMware ESXi
+  url: https://www.vmware.com/products/cloud-infrastructure/vsphere
+  category: operating-systems
+- slug: unraid
+  name: Unraid
+  url: https://unraid.net/
+  category: operating-systems
+- slug: zimaos
+  name: ZimaOS
+  url: https://www.zimaspace.com/zimaos
+  category: operating-systems
+- slug: ugos-pro
+  name: UGOS Pro
+  url: https://ai.ugreen.com/pages/operating-system
+  category: operating-systems
+- slug: synology-dsm
+  name: Synology DiskStation Manager
+  url: https://www.synology.com/en-global/dsm
+  category: operating-systems
+- slug: exitlag
+  name: ExitLag
+  url: https://www.exitlag.com/
+  category: other
+- slug: lagofast
+  name: LagoFast
+  url: https://www.lagofast.com/
+  category: other
+- slug: razer-synapse
+  name: Razer Synapse
+  url: https://www.razer.com/synapse-4
+  category: other
+- slug: asus-armoury-crate
+  name: ASUS Armoury Crate
+  url: https://www.asus.com/supportonly/armoury%20crate/helpdesk_download/
+  category: other
+- slug: xbox-accessories
+  name: Xbox Accessories
+  url: https://apps.microsoft.com/detail/9nblggh30xj3
+  category: other
+- slug: corsair-icue
+  name: CORSAIR iCUE
+  url: https://www.corsair.com/us/en/s/icue
+  category: other
+- slug: nvidia-app
+  name: NVIDIA App
+  url: https://www.nvidia.com/en-us/software/nvidia-app/
+  category: other
+- slug: intel-graphics-command-center
+  name: Intel Graphics Command Center
+  url: https://www.intel.com/content/www/us/en/products/docs/graphics/graphics-command-center.html
+  category: other
+- slug: intel-arc-control
+  name: Intel Arc Control
+  url: https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/arc-control.html
+  category: other
+- slug: microsoft-exchange
+  name: Microsoft Exchange Server
+  url: https://www.microsoft.com/en-us/microsoft-365/exchange/email
+  category: protocols
+- slug: virtualhere
+  name: VirtualHere
+  url: https://www.virtualhere.com/
+  category: protocols
+- slug: rules-of-survival
+  name: Rules of Survival
+  url: https://steamcommunity.com/app/788260/allnews/
+  category: games
+- slug: starcraft
+  name: StarCraft
+  url: https://starcraft.com/
+  category: games
+- slug: windows-desktop-shell
+  name: Windows desktop shell
+  url: https://learn.microsoft.com/en-us/windows/win32/shell/shell-entry
+  category: operating-systems
+- slug: nvidia-shadowplay
+  name: NVIDIA ShadowPlay
+  url: https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/
+  category: creative
+  aliases: [ShadowPlay]
+- slug: auth0
+  name: Auth0
+  url: https://auth0.com/
+  category: developer-tools
+  aliases: [Auth0 by Okta, Okta Customer Identity Cloud]
+- slug: flipaclip
+  name: FlipaClip
+  url: https://www.flipaclip.com/
+  category: creative

@@ -1,3 +1,4 @@
 original: silhouette-studio
 reason: Reproduce Silhouette Studio's vector drawing, image tracing, text editing, cut-line setup, print-and-cut registration and cutter workflows, with compatible design files. Include Cricut Design Space-style canvas, layer and mat-preparation features; PlotCraft could cover both targets in one application.
 suggested_names: [PlotCraft]
+summary: "Wanted: Vector drawing, tracing, text, cut lines, registration and Silhouette cutter workflows."

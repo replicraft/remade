@@ -1,0 +1,17 @@
+# Sources: https://github.com/hazielcampos/trazo#readme and https://github.com/hazielcampos/trazo/blob/main/LICENSE
+# Maintainer-approved FlipaClip alternative; native project-file compatibility is not claimed.
+slug: trazo
+name: Trazo
+authors: [hazielcampos]
+repository: https://github.com/hazielcampos/trazo
+originals: [flipaclip]
+category: creative
+languages: [Rust]
+platforms: [Android, Windows, macOS, Linux]
+status: experimental
+compatibility: partial
+summary: Frame-by-frame animation with layered timelines, onion skinning, drawing tools, audio and video export.
+description: A Rust drawing and animation alternative to FlipaClip with layered timelines, onion skinning, brushes, audio tracks, rotoscoping and GIF, PNG and video export. Designed for phones, tablets and desktop, with its own .anim project format.
+license: GPL-3.0-or-later
+docs: https://github.com/hazielcampos/trazo#readme
+limitations: FlipaClip project-file compatibility is not claimed. Prebuilt releases cover Android and Windows; macOS and Linux require building from source, and MP4 export on those platforms remains planned.

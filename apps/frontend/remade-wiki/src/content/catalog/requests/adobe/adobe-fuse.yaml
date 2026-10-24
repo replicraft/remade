@@ -2,3 +2,4 @@ original: adobe-fuse
 reason: >-
   Reproduce Adobe Fuse's modular 3D character assembly, body proportions, clothing fitting, hair and material customization. Support reusable user-created parts, mesh and texture export, and rigging/animation interchange, using independently authored assets rather than redistributing Adobe's content library.
 suggested_names: [FigureCraft]
+summary: "Wanted: Adobe Fuse's modular 3D character assembly, body proportions, clothing fitting, hair and material customization."

@@ -13,3 +13,4 @@ description: An independent Final Draft-style screenwriting application with Ent
 license: MIT OR Apache-2.0
 docs: https://github.com/NoJuanNobody/scriptcraft/blob/main/docs/parity-checklist.md
 limitations: Early development; revision mode, locked pages, Beat Board, Outline Editor, collaboration and templates are not yet implemented. FDX compatibility is partial and maintainer-reported; Final Draft behavior has not been verified side by side.
+summary: "Final Draft-style screenwriting with automatic pagination, SmartType, index cards and Fountain/FDX files."

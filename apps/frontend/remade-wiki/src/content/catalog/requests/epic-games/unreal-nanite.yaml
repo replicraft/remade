@@ -1,3 +1,4 @@
 original: unreal-nanite
 reason: Reproduce Nanite-style virtualized geometry and automatic detail management for very large scenes without manual proxy preparation.
 suggested_names: [MeshCraft]
+summary: "Wanted: Nanite-style virtualized geometry and automatic detail management for very large scenes without manual proxy preparation."

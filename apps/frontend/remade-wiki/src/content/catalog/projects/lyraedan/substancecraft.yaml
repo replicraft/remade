@@ -13,3 +13,4 @@ description: An independent Rust implementation of Painter-style 3D texture pain
 license: MIT OR Apache-2.0
 docs: https://github.com/Lyraedan/SubstanceCraft/blob/main/docs/target-app-parity.md
 limitations: Early development; compatibility is maintainer-reported. Painter project-file compatibility is not documented. Native pen pressure, UDIM-aware painting, smart materials and masks, anchor points and layer instancing remain incomplete. GPU compositing is limited, and signed release packaging is not available.
+summary: "Painter-style 3D texture painting with layered PBR materials, masks, generators and mesh-map baking."

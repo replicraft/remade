@@ -2,3 +2,4 @@ original: cadence-eda
 reason: >-
   Reproduce Cadence digital IC design, analog/RF schematics and layout, circuit simulation, verification, PCB and package design. Cover workflows from Virtuoso, Spectre, Genus, Innovus, Xcelium, Jasper, OrCAD and Allegro, with design interchange, constraints and automation. Could share engines and formats with Synopsys EDA across several applications.
 suggested_names: [CircuitCraft]
+summary: "Wanted: Cadence digital IC design, analog/RF schematics and layout, circuit simulation, verification, PCB and package design."

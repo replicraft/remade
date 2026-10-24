@@ -14,3 +14,4 @@ license: MIT
 website: https://nerthus.app/
 docs: https://github.com/danemadsen/nerthus#readme
 limitations: Windows and Linux builds are untested. Node output, palettes, interface behavior and image decoding differ from Gaea; Houdini, Unity and Unreal bridges are omitted. Browser builds run on one CPU thread and omit map export, file imports, baking, persistent settings and MCP.
+summary: "Create Gaea-style terrains with node graphs, erosion, surface detail, coloring and map exports."

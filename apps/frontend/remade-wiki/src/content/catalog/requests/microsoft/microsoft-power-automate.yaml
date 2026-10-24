@@ -1,3 +1,4 @@
 original: microsoft-power-automate
 reason: Reproduce Power Automate's visual workflow designer, triggers, actions, conditions, approvals, scheduled flows, connectors and desktop automation, with compatible workflow interchange. Could integrate with Power Apps, Power Pages and Power BI reimplementations through shared data models and automation interfaces.
 suggested_names: [FlowCraft]
+summary: "Wanted: Visual automations with triggers, actions, conditions, approvals and scheduled flows."

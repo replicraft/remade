@@ -14,3 +14,4 @@ license: MIT OR Apache-2.0
 website: https://tangency-labs.github.io/fieldcraft/
 docs: https://github.com/tangency-labs/fieldcraft/blob/develop/docs/parity.md
 limitations: Early development; coverage and benchmark results are maintainer-reported. Contact, buckling and broader material and multiphysics coverage remain planned. Deck writers reject unsupported features; full Abaqus project, scripting or solver compatibility is not claimed. The upstream oracle suite documents known failures.
+summary: "Abaqus-style simulation with mesh generation and structural, heat-transfer and fluid-analysis workflows."

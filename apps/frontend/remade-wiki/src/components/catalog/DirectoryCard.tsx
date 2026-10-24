@@ -57,7 +57,7 @@ export default function DirectoryCard({
 			</h3>
 			{record.kind === "project" && (
 				<p className="!mb-3 text-xs">
-					Reimplements{" "}
+					Replaces:{" "}
 					{record.originals?.map((original, index) => (
 						<span key={original.href}>
 							{index > 0 && ", "}
@@ -91,12 +91,7 @@ export default function DirectoryCard({
 					))}
 				</p>
 			)}
-			<CardDescription
-				fillSpace={false}
-				href={record.href}
-				label={`Read more about ${record.name}`}
-				text={record.summary}
-			/>
+			<CardDescription fillSpace={false} text={record.summary} />
 
 			{record.suggestedNames?.length ? (
 				<p className="mb-3 shrink-0 pt-2">

@@ -1,3 +1,4 @@
 original: instamat
 reason: Reproduce InstaMAT's node-based procedural material creation, non-destructive layer painting, masks, texture baking and UDIM workflows, with PBR texture export and batch asset processing. Could share material and texturing tools with the requested Substance 3D implementations.
 suggested_names: [MaterialCraft]
+summary: "Wanted: InstaMAT's node-based procedural material creation, non-destructive layer painting, masks, texture baking and UDIM workflows."

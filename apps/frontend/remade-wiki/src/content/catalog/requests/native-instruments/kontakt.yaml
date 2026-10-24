@@ -1,3 +1,0 @@
-original: kontakt
-reason: Reproduce Kontakt's familiar sampler workflow, including instrument building, sample mapping, velocity layers, scripting, effects and MIDI control, with compatible loading of user-authored instruments and libraries.
-suggested_names: [SamplerCraft]

@@ -13,3 +13,4 @@ description: A Revu-style PDF review and quantity-takeoff application with marku
 license: AGPL-3.0-or-later
 docs: https://github.com/vineetpadia/openrevu#readme
 limitations: No live Studio collaboration or cross-file revision database. Tool-set import supports BTX but not BPX or BAX. Signature checks do not check revocation. OCR and PDF/A functions require external programs; macOS and Windows GUI usability has not been tested by hand.
+summary: "Revu-style PDF review with markups, calibrated measurements, a Tool Chest, comparisons and batch tools."

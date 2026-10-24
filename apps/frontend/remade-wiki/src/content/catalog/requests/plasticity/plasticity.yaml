@@ -1,3 +1,4 @@
 original: plasticity
 reason: Reproduce Plasticity's direct NURBS and solid modeling workflows, including fillets, booleans and surface editing for artists. Could extend SolidCraft (https://github.com/tangency-labs/solidcraft), or be separate projects sharing one 3D engine.
 suggested_names: [SurfaceCraft]
+summary: "Wanted: Plasticity's direct NURBS and solid modeling workflows, including fillets, booleans and surface editing for artists."

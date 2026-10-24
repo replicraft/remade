@@ -14,3 +14,4 @@ license: AGPL-3.0-or-later
 website: https://sottocall.com/
 docs: https://github.com/rbr48/sotto/blob/main/docs/SELF_HOSTING.md
 limitations: A broader alternative, not a Zoom-compatible client. Group calls and consent-based recording are planned; no native macOS or iOS apps. No independent security audit yet, and call/chat setup lacks forward secrecy. Browser security depends on server-delivered code; Windows installers are unsigned.
+summary: "Self-hostable calling and messaging with Zoom-style guest links, browser calls and native apps."

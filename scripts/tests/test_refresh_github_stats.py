@@ -94,7 +94,12 @@ def test_full_refresh_selection_includes_existing_projects_and_tools(
 ) -> None:
     result = CliRunner().invoke(stats.app, ["--list-only"])
     assert result.exit_code == 0, result.output
-    assert result.output.splitlines() == ["example/existing", "example/new", "example/tool"]
+    assert result.output.splitlines() == [
+        "example/existing",
+        "example/new",
+        "example/tool",
+        "replicraft/remade",
+    ]
 
 
 def test_no_new_repositories_leaves_cache_untouched(

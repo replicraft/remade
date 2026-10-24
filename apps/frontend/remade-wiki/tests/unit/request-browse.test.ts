@@ -237,3 +237,11 @@ describe("request sorting", () => {
 		).toBe(true);
 	});
 });
+
+it("searches card summaries as well as full request reasons", () => {
+	const entry = { ...request, summary: "Specialist engraving workflows" };
+
+	expect(
+		filterRequest(entry, { ...defaultRequestFilters, q: "engraving" }, now),
+	).toBe(true);
+});

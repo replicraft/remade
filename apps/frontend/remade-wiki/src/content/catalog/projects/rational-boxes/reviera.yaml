@@ -1,0 +1,16 @@
+# Scope, implementation status and format exclusions are maintainer-reported in the README.
+slug: reviera
+name: BIM Reviera
+authors: [rational-boxes]
+repository: https://github.com/Rational-Boxes/NoDesk_Reviera
+originals: [autodesk-revit]
+category: engineering
+languages: [Rust, C++, Lua]
+platforms: [Linux, Windows]
+status: experimental
+compatibility: partial
+description: A broader Revit-style BIM alternative using IFC as its native format. Provides parametric building elements, levels, grids, rooms, component libraries, clash checks and model-derived plans, sections, elevations, schedules and sheets. Uses IfcOpenShell and OpenCASCADE, with a shared command engine for the desktop interface, Lua scripting and MCP automation.
+license: GPL-3.0-or-later
+docs: https://github.com/Rational-Boxes/NoDesk_Reviera#readme
+limitations: Early development; features are maintainer-reported. Explicitly does not target Revit's proprietary RVT or RFA formats. MEP, families, collaboration and CAD import are not built yet; structural and analysis tools remain incomplete. Linux and Windows prerelease packages are available; macOS packaging is untested.
+summary: "Revit-style BIM with native IFC storage, parametric building elements, rooms and clash checks."

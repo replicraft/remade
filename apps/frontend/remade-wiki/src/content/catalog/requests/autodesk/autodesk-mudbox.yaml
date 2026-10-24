@@ -1,3 +1,4 @@
 original: autodesk-mudbox
 reason: Reproduce Mudbox's brush-based 3D sculpting and texture-painting workflows, including multiresolution subdivision, sculpt and paint layers, masks, stamps and stencils, displacement and normal-map extraction, and compatible OBJ/FBX mesh exchange.
 suggested_names: [ClayCraft]
+summary: "Wanted: Mudbox's brush-based 3D sculpting and texture-painting workflows."

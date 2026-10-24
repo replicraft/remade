@@ -1,0 +1,24 @@
+slug: vibedarling
+name: VibeDarling
+repository: https://github.com/VibeDarling/darling
+originals:
+- macos
+category: operating-systems
+languages:
+- Objective-C
+- C
+- C++
+platforms:
+- Linux
+status: experimental
+compatibility: partial
+description: A development fork of Darling implementing macOS application interfaces on Linux without
+  a virtual machine. Works on Mach-O loading, runtime services and framework compatibility including
+  Foundation, AppKit and CoreAudio, using Darling and separately licensed open-source components.
+license: GPL-3.0
+docs: https://github.com/VibeDarling/darling#readme
+limitations: Experimental compatibility depends on application version, architecture, frameworks
+  and runtime revision. Installing an application or opening a window does not establish working
+  workflows. It is a Linux compatibility layer, not a full macOS replacement; bundled components
+  retain separate licenses.
+summary: "A Darling development fork working to run macOS applications on Linux without a virtual machine."

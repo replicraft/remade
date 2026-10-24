@@ -1,0 +1,14 @@
+slug: hexe
+name: Hexe
+repository: https://github.com/pascaldisse/hexe
+originals: [sidefx-houdini]
+category: creative
+languages: [Rust, TypeScript]
+platforms: [macOS]
+status: experimental
+compatibility: partial
+description: Targets Houdini's procedural geometry workflows with a Rust SOP engine, node graphs, a Tauri desktop viewport and a command-line interface. Implements a subset of SOPs, VEX expressions, geometry formats and HIP scene import. Also includes experimental Endorphin scene reading and passive ragdoll simulation.
+license: Unlicensed
+docs: https://github.com/pascaldisse/hexe/blob/main/STATUS.md
+limitations: SOP, VEX and HIP coverage is partial; many nodes, animated parameters and scene behaviors remain unsupported or unverified. Endorphin support does not reproduce its behavior controllers or solver. macOS is the documented app build. No project-level license file; package metadata declares MIT OR Apache-2.0, pending clarification.
+summary: "Houdini-style procedural geometry with a Rust SOP engine, node graphs, desktop viewport and CLI."

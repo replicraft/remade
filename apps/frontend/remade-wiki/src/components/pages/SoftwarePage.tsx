@@ -5,6 +5,7 @@ import { label, metadataFor, repositoryUrl } from "../../lib/presentation";
 import type { Original } from "../../lib/schemas";
 import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
+import ListingDescription from "../catalog/ListingDescription";
 import ProjectComparison from "../catalog/ProjectComparison";
 export default function SoftwarePage({
 	original,
@@ -52,7 +53,11 @@ export default function SoftwarePage({
 			{request && (
 				<section className="max-w-[780px]">
 					<h2>What people want recreated</h2>
-					<p>{request.reason}</p>
+					<ListingDescription
+						description={request.reason}
+						headingLevel={3}
+						summary={request.summary}
+					/>
 					{children}
 					<p className="mt-4 text-xs">
 						Upvotes express interest. Builder indications are self-reported, not

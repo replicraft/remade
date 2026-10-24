@@ -1,3 +1,4 @@
 original: powerworld-simulator
 reason: Reproduce PowerWorld Simulator's interactive single-line diagrams, power-flow modeling, contingency and fault analysis, time-step simulation and result visualization, with compatible power-system case interchange. Could integrate with the requested electrical design and simulation tools in one workspace.
 suggested_names: [PowerCraft]
+summary: "Wanted: PowerWorld Simulator's interactive single-line diagrams, power-flow modeling, contingency and fault analysis."

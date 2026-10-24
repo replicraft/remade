@@ -151,7 +151,9 @@ def main(
             key = f"{match.group(1)}/{match.group(2)}".casefold()
             repositories[key] = match.group(1), match.group(2)
 
-    if added_since is not None:
+    if added_since is None:
+        repositories["replicraft/remade"] = "replicraft", "remade"
+    else:
         previous_repositories = repositories_at_revision(added_since)
         repositories = {
             key: value for key, value in repositories.items() if key not in previous_repositories

@@ -1,3 +1,4 @@
 original: autodesk-powermill
 reason: Reproduce PowerMill's complex-part CAM workflows, including three- and five-axis machining, roughing and finishing strategies, toolpath editing, collision and gouge checking, machine simulation and NC postprocessing.
 suggested_names: [ToolpathCraft]
+summary: "Wanted: PowerMill-style CAM programming for machining complex parts."

@@ -1,3 +1,4 @@
 original: siemens-solid-edge
 reason: Reproduce Solid Edge's direct and parametric mechanical modeling, synchronous editing, assemblies, sheet-metal design, 2D drafting and manufacturing workflows. Could extend SolidCraft (https://github.com/tangency-labs/solidcraft), or share one 3D engine with the other requested mechanical CAD implementations.
 suggested_names: [MechanicCraft]
+summary: "Wanted: Direct and parametric CAD with synchronous editing, assemblies and sheet-metal design."

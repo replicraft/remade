@@ -14,3 +14,4 @@ description: Independent offline-first download manager with segmented multi-con
 license: MIT
 docs: https://github.com/hungry-detective/downloadcraft#readme
 limitations: Early Windows application. Full IDM behavior, settings and browser-integration compatibility are not established. Browser support uses its own unpacked extension and native-messaging host, which must be installed separately. Segmented resume depends on server support for HTTP Range requests.
+summary: "An offline-first download manager with segmented transfers, resume, queues, scheduling and browser integration."

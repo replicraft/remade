@@ -1,0 +1,23 @@
+slug: datacraft
+name: DataCraft
+authors:
+- javy-fernandez
+repository: https://github.com/javy-fernandez/datacraft
+originals:
+- datagrip
+category: developer-tools
+languages:
+- Rust
+platforms:
+- macOS
+status: experimental
+compatibility: partial
+description: A DataGrip-style native database client with schema browsing, highlighted SQL consoles,
+  completion and transactional table-data editing. Connects to PostgreSQL, SQL Server and SQLite,
+  exports query results to common text formats and stores credentials in the macOS Keychain.
+license: MIT OR Apache-2.0
+docs: https://github.com/javy-fernandez/datacraft#readme
+limitations: Early implementation; full DataGrip feature, project and plugin compatibility is not
+  documented. The README documents macOS builds only. Packages are ad-hoc signed rather than notarized.
+  Other database engines and cross-platform behavior are not established.
+summary: "Browse databases, write SQL and edit table data in a native DataGrip-style client."

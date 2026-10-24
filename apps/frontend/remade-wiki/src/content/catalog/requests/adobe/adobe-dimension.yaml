@@ -1,3 +1,4 @@
 original: adobe-dimension
 reason: Reproduce Dimension's approachable 3D scene staging and product visualization workflows, including model placement, materials, lighting, artwork and decals, background matching and photorealistic rendering, with compatible scene interchange. Could be part of a Substance 3D Stager reimplementation, retaining Dimension's familiar interface and workflows.
 suggested_names: [StageCraft]
+summary: "Wanted: Dimension's approachable 3D scene staging and product visualization workflows."

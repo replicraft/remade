@@ -1,0 +1,26 @@
+slug: ledger-reborn
+name: Ledger Reborn
+authors:
+- lxistired
+repository: https://github.com/lxistired/ledger-reborn
+originals:
+- quickbooks
+category: productivity
+languages:
+- Python
+platforms:
+- macOS
+- Windows
+- Web
+status: experimental
+compatibility: partial
+description: An independent implementation of QuickBooks Desktop for Mac-style bookkeeping workflows.
+  Provides a local SQLite ledger, invoices, bills, payments, inventory, bank reconciliation and financial
+  reports, with desktop packages and a browser interface.
+license: MIT
+docs: https://github.com/lxistired/ledger-reborn#readme
+limitations: Preview for one user, one machine and USD. Payroll, tax filing, live banking, payments,
+  multicurrency and complete QuickBooks migration are absent. Report comparisons do not establish
+  complete accounting compatibility. Cash-basis output has limited validation. Desktop packages are
+  unsigned.
+summary: "QuickBooks-style desktop bookkeeping with a local ledger, invoices, bills, inventory and reconciliation."

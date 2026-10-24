@@ -1,0 +1,17 @@
+# Scope and rendering dependencies are maintainer-reported in the upstream README.
+slug: tequila
+name: Tequila
+authors: [ifpintac]
+repository: https://github.com/ifpintac/tequila
+originals: [keyshot]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS]
+status: experimental
+compatibility: partial
+description: An independent KeyShot-style product renderer with CAD and mesh import, procedural materials, labels, HDRI lighting, cameras and a live rendering viewport. Uses Cycles and its own path tracer, with render queues, layers, batch and network rendering, Python scripting and MCP automation.
+license: Apache-2.0
+docs: https://github.com/ifpintac/tequila#readme
+discord_server: https://discord.gg/Na5T2qgQBX
+limitations: Features are maintainer-reported. Animation is not implemented, and KeyShot scene, material and plugin compatibility is not documented. Distributed builds are unsigned. macOS downloads require Apple Silicon; Windows GPU rendering requires supported NVIDIA hardware, with CPU rendering otherwise.
+summary: "KeyShot-style product rendering with CAD import, materials, labels, HDRI lighting and live previews."

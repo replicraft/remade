@@ -12,3 +12,4 @@ description: A fork of Spacebar's Discord backend reimplementation, primarily wr
 license: AGPL-3.0-only
 docs: https://github.com/erkinalp/anticensor#readme
 limitations: In development; compatibility is maintainer-reported. The README still identifies the server as Spacebar and notes client incompatibilities. This is a server implementation, not a standalone Discord desktop client.
+summary: "A Spacebar-derived messaging server targeting Discord client, bot and API compatibility."

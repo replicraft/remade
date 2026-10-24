@@ -1,0 +1,21 @@
+slug: ribbon-file-manager
+name: Ribbon File Manager
+repository: https://github.com/ysnx64523/Ribbon-File-Manager
+originals:
+- windows-file-explorer
+category: productivity
+languages:
+- Python
+platforms:
+- Linux
+status: experimental
+compatibility: partial
+description: A GTK3 file manager recreating Windows Explorer-style ribbon and properties workflows.
+  Provides configurable ribbon tabs, file browsing and operations, quick-access controls and a Windows-like
+  properties dialog on Linux.
+license: Apache-2.0
+docs: https://github.com/ysnx64523/Ribbon-File-Manager#readme
+limitations: Linux is the documented native platform; macOS and Windows portability is a goal, with
+  packaging work separate from verified behavior. Full Windows shell, namespace-extension and Explorer
+  API compatibility are not documented. Requires GTK3 and PyGObject.
+summary: "A Linux file manager with Windows Explorer-style ribbon tabs, file operations and properties dialogs."

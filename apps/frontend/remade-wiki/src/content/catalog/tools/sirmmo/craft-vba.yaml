@@ -10,3 +10,4 @@ description: An out-of-process VBA add-in for GridCraft, DeckCraft and WordCraft
 docs: https://github.com/sirmmo/craft-vba#readme
 limitations: Implements a VBA subset. Class modules, UserForms, events, COM creation, Windows API declarations, shell commands and file I/O are unsupported. Word and PowerPoint object coverage is incomplete. Module variables reset per run, execution has statement and call-depth limits, and some recorded actions become comments.
 projects: [gridcraft, deckcraft, wordcraft]
+summary: "Run VBA macros in GridCraft, DeckCraft and WordCraft through an out-of-process add-in."

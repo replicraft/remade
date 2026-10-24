@@ -1,11 +1,13 @@
 import type { ReactNode } from "react";
 import remadeMark from "../../assets/logos/remade-mark.svg?url";
-import { repositoryUrl } from "../../lib/presentation";
+import { formatStars, repositoryUrl } from "../../lib/presentation";
 export default function Header({
 	pathname,
+	stars,
 	children,
 }: {
 	pathname: string;
+	stars?: number;
 	children?: ReactNode;
 }) {
 	const links = [
@@ -24,7 +26,7 @@ export default function Header({
 				</a>
 				<nav
 					aria-label="Main navigation"
-					className="hidden items-center gap-6 text-sm min-[850px]:flex"
+					className="hidden items-center gap-6 text-sm lg:flex"
 				>
 					{links.map((link) => (
 						<a
@@ -35,16 +37,16 @@ export default function Header({
 							{link.name}
 						</a>
 					))}
-					<a href={repositoryUrl}>GitHub ↗</a>
+					<RepositoryLink stars={stars} />
 				</nav>
 				<div className="ml-auto flex items-center gap-2 sm:gap-5">
 					<a
-						className="action-primary hidden min-[850px]:inline-flex"
+						className="action-primary hidden lg:inline-flex"
 						href="/requests/new/"
 					>
 						Request a project
 					</a>
-					<details className="mobile-navigation min-[850px]:hidden">
+					<details className="mobile-navigation lg:hidden">
 						<summary aria-label="Menu" className="action-secondary !px-3">
 							<svg
 								aria-hidden="true"
@@ -71,12 +73,28 @@ export default function Header({
 								</a>
 							))}
 							<a href="/requests/new/">Request a project</a>
-							<a href={repositoryUrl}>GitHub ↗</a>
+							<RepositoryLink stars={stars} />
 						</nav>
 					</details>
 					{children}
 				</div>
 			</div>
 		</header>
+	);
+}
+
+function RepositoryLink({ stars }: { stars?: number }) {
+	return (
+		<a className="inline-flex items-center gap-2" href={repositoryUrl}>
+			GitHub ↗
+			{stars !== undefined && (
+				<span className="whitespace-nowrap rounded border border-line px-2 py-1 text-xs">
+					<span aria-hidden="true">★ {formatStars(stars)}</span>
+					<span className="sr-only">
+						{stars.toLocaleString("en")} GitHub stars
+					</span>
+				</span>
+			)}
+		</a>
 	);
 }

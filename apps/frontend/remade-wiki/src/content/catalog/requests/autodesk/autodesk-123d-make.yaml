@@ -2,3 +2,4 @@ original: autodesk-123d-make
 reason: Reproduce 123D Make's conversion of 3D models into stacked or interlocking slices, with material-thickness controls, assembly previews and printable cutting plans for physical fabrication.
 suggested_names:
 - SliceCraft
+summary: "Wanted: Turn 3D models into stacked or interlocking slices for fabrication."

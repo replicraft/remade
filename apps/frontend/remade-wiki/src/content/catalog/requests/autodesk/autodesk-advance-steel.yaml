@@ -1,3 +1,4 @@
 original: autodesk-advance-steel
 reason: Reproduce Advance Steel's structural steel modeling, connections, fabrication drawings and bills of materials, with compatible model interchange. BIMCraft could combine Revit, Advance Steel and Tekla Structures workflows with MCP automation, extending SolidCraft (https://github.com/tangency-labs/solidcraft) or sharing a 3D engine between applications.
 suggested_names: [BIMCraft]
+summary: "Wanted: Advance Steel's structural steel modeling, connections, fabrication drawings and bills of materials."

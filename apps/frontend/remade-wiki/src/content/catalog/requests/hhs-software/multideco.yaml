@@ -1,3 +1,4 @@
 original: multideco
 reason: Reproduce MultiDeco's technical-diving decompression planning workflows, including VPM-B and Bühlmann ZHL-16 models with gradient factors, multilevel profiles, breathing-gas planning and decompression schedules. Require transparent calculations and independent validation before supporting real-world dive planning.
 suggested_names: [DecoCraft]
+summary: "Wanted: Technical-diving decompression planning with MultiDeco-style controls."

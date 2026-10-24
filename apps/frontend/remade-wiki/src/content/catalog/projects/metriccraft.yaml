@@ -1,0 +1,24 @@
+slug: metriccraft
+name: MetricCraft
+repository: https://github.com/UCS-Care-Group/metriccraft
+originals:
+- microsoft-power-bi
+category: productivity
+languages:
+- Rust
+platforms:
+- Linux
+- Windows
+- macOS
+- Web
+status: experimental
+compatibility: partial
+description: An independent Power BI Desktop-style reporting application with CSV, XLSX and Parquet
+  input, a Power Query-style editor, table relationships and a DAX evaluator. Provides report canvases
+  with six visual types and open text-based project storage, plus CLI and a reduced browser build.
+license: MIT OR Apache-2.0
+docs: https://github.com/UCS-Care-Group/metriccraft#readme
+limitations: Pre-alpha; build from source. Does not open PBIX or PBIP files. File sources, DAX/M
+  language coverage and visual types are limited; Power BI Service publishing and sharing are absent.
+  Parity results are maintainer-reported for the cases in this repository.
+summary: "Build Power BI-style reports with data imports, query editing, table relationships and DAX measures."

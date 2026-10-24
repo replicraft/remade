@@ -1,0 +1,78 @@
+{
+	"audit_date": "2026-10-18",
+	"checked_at_utc": "2026-10-18T14:27:52+00:00",
+	"scope": "Re-evaluate the outstanding findings from 2026-10-17 and apply the maintainer-requested removals. This is not a second catalog-wide audit.",
+	"previous_report": "2026-10-17-catalog.json",
+	"decisions": [
+		{
+			"slug": "inventcraft",
+			"result": "removed",
+			"evidence": "GitHub repository GraphQL lookup again returned NOT_FOUND. Removed the project record at the maintainer request; no replacement or deletion/private cause inferred.",
+			"sources": ["https://github.com/Fressmeigasu/InventCraft"],
+			"path_removed": "apps/frontend/remade-wiki/src/content/catalog/projects/fressmeigasu/inventcraft.yaml"
+		},
+		{
+			"slug": "craftcrew",
+			"result": "removed",
+			"evidence": "GitHub repository GraphQL lookup again returned NOT_FOUND. Removed the supporting-tool record at the maintainer request; no replacement or deletion/private cause inferred.",
+			"sources": ["https://github.com/mmuminovic/craftcrew"],
+			"path_removed": "apps/frontend/remade-wiki/src/content/catalog/tools/mmuminovic/craftcrew.yaml"
+		},
+		{
+			"slug": "beamcraft",
+			"result": "accepted_no_action",
+			"evidence": "Maintainer explicitly accepts that the upstream website is listed but down. Keep the project and its website; do not treat the outage as Remade remediation work. No website retry or catalog change performed.",
+			"website_retained": "https://beamcraft.cl/"
+		},
+		{
+			"slug": "itamiiru",
+			"result": "resolved_catalog_corrected",
+			"evidence": "Current Cargo.toml declares GPL-3.0 and the LICENSE contains GPL version 3, so the previous MIT/Apache metadata conflict no longer exists. Removed the obsolete limitation and retained the catalog GPL-3.0 license.",
+			"sources": [
+				"https://github.com/Minnowo/itamiiru/blob/5fd091a184282f5ebe9ddb7b60f95e9bfb464a39/Cargo.toml",
+				"https://github.com/Minnowo/itamiiru/blob/5fd091a184282f5ebe9ddb7b60f95e9bfb464a39/LICENSE"
+			]
+		},
+		{
+			"slug": "corinzia",
+			"result": "license_resolved_saving_still_conflicting",
+			"evidence": "LICENSE contains AGPL version 3 while rust/Cargo.toml declares MIT. Per the maintainer-approved policy, the repository license file controls the catalog license; set AGPL-3.0-only and remove the obsolete license-clarification warning. README still both documents Save/autosave and says saving is disabled; retain that separate caveat.",
+			"sources": [
+				"https://github.com/GitHuhl/Corinzia/blob/8c4c231947b6de18d5e47b07e36cc7040b03f291/rust/Cargo.toml",
+				"https://github.com/GitHuhl/Corinzia/blob/8c4c231947b6de18d5e47b07e36cc7040b03f291/LICENSE",
+				"https://github.com/GitHuhl/Corinzia/blob/8c4c231947b6de18d5e47b07e36cc7040b03f291/README.md"
+			]
+		},
+		{
+			"slug": "extrudo",
+			"result": "catalog_corrected",
+			"evidence": "Entry is now tracked and was re-evaluated. Release v0.8.0 documents desktop MCP, OpenSCAD export and partial F3D import improvements; README documents OpenSCAD import and scripts. Updated features and removed the obsolete blanket native-Fusion limitation. Retained beta because stable/edge distribution wording alone does not establish project-wide stable maturity.",
+			"sources": [
+				"https://github.com/zoltanf/extrudo/blob/7793602ecadec52d1e5435928be8e54b4700f357/README.md",
+				"https://github.com/zoltanf/extrudo/releases/tag/v0.8.0"
+			]
+		},
+		{
+			"slug": "fuzix",
+			"result": "still_inconclusive_no_change",
+			"evidence": "Codeberg README HTML URL again timed out after 25 seconds, with no HTTP response. No change to the repository or documentation URL.",
+			"sources": [
+				"https://codeberg.org/EtchedPixels/FUZIX/src/branch/master/README.md"
+			]
+		},
+		{
+			"slug": "armada",
+			"result": "mirror_verified_no_change",
+			"evidence": "Primary repository URL returns HTTP 200; repository archive/disabled metadata is still checked through the explicitly documented GitHub mirror, which resolves and reports both flags false. Retained canonical repository and mirror.",
+			"sources": [
+				"https://gitworkshop.dev/soapbox.pub/armada",
+				"https://github.com/soapbox-pub/armada/blob/8cdaa2e81a23d8a447be762e0847f8f4e6770bc6/README.md"
+			]
+		}
+	],
+	"reference_review": "No active catalog, suite, featured or configuration references to InventCraft/CraftCrew remain. Original-software records retained; no new requests created. Historical audit evidence and replaceable metadata-cache entries retained.",
+	"validation": {
+		"catalog_schema": "passed: 270 originals, 104 projects, 175 requests, 5 featured",
+		"tests": "Left to CI per AGENTS.md; no local tests run."
+	}
+}

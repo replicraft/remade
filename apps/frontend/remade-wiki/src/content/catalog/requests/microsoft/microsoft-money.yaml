@@ -2,3 +2,4 @@ original: microsoft-money
 reason: >-
   Reproduce Microsoft Money's personal-finance workflow: account registers, transaction categories, budgets, bill reminders, reconciliation, investment tracking and reports. Prioritize offline use and compatible migration of existing Money data, with transparent calculations and documented import limitations.
 suggested_names: [LedgerCraft]
+summary: "Wanted: Microsoft Money's personal-finance workflow: account registers, transaction categories, budgets, bill reminders, reconciliation."

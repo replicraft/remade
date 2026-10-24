@@ -1,0 +1,27 @@
+slug: mitcad
+name: Mitcad
+repository: https://github.com/mitcad/Mitcad
+originals:
+- autodesk-fusion
+- autodesk-inventor
+category: engineering
+languages:
+- Rust
+- C++
+platforms:
+- Windows
+- Linux
+- macOS
+status: experimental
+compatibility: partial
+description: An independent parametric CAD application with constrained sketches, feature history,
+  parameters and assemblies. Imports Fusion F3D/F3Z designs with supported history and Inventor IPT
+  part bodies, alongside other CAD formats. Uses Qt and Open CASCADE with a Rust model, solver and
+  import layer.
+license: MIT
+docs: https://github.com/mitcad/Mitcad#readme
+limitations: Early active development; format support is maintainer-reported. Inventor IPT import
+  currently brings bodies without design history. Native Fusion/Inventor export and full behavioral
+  parity are not claimed. Direct modeling and some loft combinations remain incomplete. macOS targets
+  Apple Silicon.
+summary: "Parametric CAD with constrained sketches, feature history, assemblies and partial Fusion design import."

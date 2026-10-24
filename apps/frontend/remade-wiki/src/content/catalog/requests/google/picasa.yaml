@@ -2,3 +2,4 @@ original: picasa
 reason: >-
   Reproduce Picasa's fast local photo-library browsing, folder indexing, albums, tags, face organization, simple non-destructive edits, collages and export. Preserve existing folders and metadata without requiring cloud uploads, with migration of available Picasa album and edit data.
 suggested_names: [AlbumCraft]
+summary: "Wanted: Fast local photo browsing, albums, tags, face organization and simple non-destructive edits."

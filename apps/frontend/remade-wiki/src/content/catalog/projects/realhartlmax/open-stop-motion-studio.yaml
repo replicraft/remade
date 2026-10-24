@@ -13,3 +13,4 @@ description: A broader Dragonframe alternative for stop-motion capture, built wi
 license: GPL-3.0
 docs: https://github.com/RealHartlMax/Open-Stop-Motion-Studio#readme
 limitations: Early MVP; Dragonframe project compatibility is not documented. EXR master output, complete tethered DSLR workflows, motion control and DMX authoring remain unfinished. Some camera and RAW workflows require separately obtained vendor SDKs; integrations vary by vendor and platform.
+summary: "An early Dragonframe-style stop-motion tool with camera preview, capture, onion skins and timeline playback."

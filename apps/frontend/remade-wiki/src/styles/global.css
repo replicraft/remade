@@ -133,7 +133,7 @@
 		.featured-grid > .directory-card:first-child h3 {
 			@apply text-[2rem];
 		}
-		.featured-grid > .directory-card:first-child [data-card-description] {
+		.featured-grid > .directory-card:first-child [data-card-summary] {
 			@apply text-base;
 		}
 	}

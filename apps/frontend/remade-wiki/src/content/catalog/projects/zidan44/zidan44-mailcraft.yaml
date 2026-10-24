@@ -13,3 +13,4 @@ description: An independent Outlook-style mail client with local caching, offlin
 license: MIT OR Apache-2.0
 docs: https://github.com/ZIDAN44/mailcraft/blob/main/docs/gaps.md
 limitations: Browser accounts require JMAP and server CORS support. PST export writes mail only, omitting some item types and metadata. Kerberos-only Exchange and ActiveSync are unsupported. HTML positioning and background images differ; mixed-direction editing and native Wayland attachment dragging have gaps. Full Outlook compatibility is not claimed.
+summary: "Outlook-style email with offline search, local caching, threaded messages, rules and account management."

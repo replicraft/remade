@@ -107,7 +107,9 @@ def test_vendor_request_files_are_discovered_in_both_modes(
 ) -> None:
     path = tmp_path / "apps/frontend/remade-wiki/src/content/catalog/requests/adobe/product.yaml"
     path.parent.mkdir(parents=True)
-    path.write_text("original: product\nreason: Reproduce the original workflows.\n")
+    path.write_text(
+        "original: product\nsummary: Requested compatible workflows.\nreason: Reproduce the original workflows.\n"
+    )
     monkeypatch.setattr("catalog_links.ROOT", tmp_path)
     assert path in paths_for_mode(all_files=True, changed_from=None)
     run = Mock(

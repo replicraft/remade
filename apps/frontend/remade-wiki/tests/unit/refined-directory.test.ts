@@ -30,10 +30,10 @@ it("matches target names and aliases with deterministic project/request classifi
 			(record) => record.id === "photocraft" && record.kind === "project",
 		),
 	).toBe(true);
-	expect(searchDirectory(records, "Obsidian")[0]).toMatchObject({
+	expect(searchDirectory(records, "Nomad Sculpt")[0]).toMatchObject({
 		kind: "request",
-		id: "obsidian",
-		href: "/software/obsidian/",
+		id: "nomad-sculpt",
+		href: "/software/nomad-sculpt/",
 	});
 	expect(normalizeQuery("  Ａ  B  ")).toBe("a b");
 	expect(searchDirectory(records, "  ")).toEqual([]);
@@ -164,9 +164,19 @@ it("keeps complete card information and matches suggested request names", async 
 		"pixelsoftwarestudios",
 	]);
 	expect(earthcraft?.summary).toBe(
+		catalog.projects.find((project) => project.slug === "earthcraft")?.summary,
+	);
+	expect(earthcraft?.description).toBe(
 		catalog.projects.find((project) => project.slug === "earthcraft")
 			?.description,
 	);
+	const sourceRequest = catalog.requests[0];
+	const requestRecord = records.find(
+		(record) =>
+			record.kind === "request" && record.id === sourceRequest.original,
+	);
+	expect(requestRecord?.summary).toBe(sourceRequest.summary);
+	expect(requestRecord?.description).toBe(sourceRequest.reason);
 	expect(
 		records.find((record) => record.id === "photocraft")?.originals,
 	).toContainEqual({
@@ -185,4 +195,21 @@ it("keeps complete card information and matches suggested request names", async 
 			"request",
 		).map((record) => record.id),
 	).toContain(request.id);
+});
+
+it("searches full request details while cards retain their short summaries", () => {
+	const request = records.find((record) => record.kind === "request");
+	if (!request) throw new Error("Missing request fixture");
+	const record = {
+		...request,
+		summary: "A short card summary.",
+		description: "Needs precise kerning-metrics compatibility.",
+	};
+	expect(
+		directoryResults(
+			[record],
+			{ q: "kerning-metrics", sort: "name" },
+			"request",
+		),
+	).toEqual([record]);
 });

@@ -2,3 +2,4 @@ original: synopsys-eda
 reason: >-
   Reproduce Synopsys chip-design workflows: HDL simulation and debugging, formal verification, synthesis, place and route, timing and power analysis, analog/mixed-signal simulation and physical verification. Support design constraints, netlists, layout interchange and scripting. Could share engines and formats with Cadence EDA while offering familiar frontends.
 suggested_names: [SiliconCraft]
+summary: "Wanted: Synopsys chip-design workflows: HDL simulation and debugging, formal verification, synthesis, place and route."

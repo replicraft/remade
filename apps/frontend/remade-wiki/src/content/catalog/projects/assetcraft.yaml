@@ -1,0 +1,23 @@
+slug: assetcraft
+name: AssetCraft
+repository: https://github.com/cmspeedau/AssetCraft
+originals:
+- quixel-bridge
+category: creative
+languages:
+- Rust
+platforms:
+- Linux
+- macOS
+- Windows
+status: experimental
+compatibility: partial
+description: An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its current
+  Rust CLI searches the Fab catalog and signs in to user accounts. The planned desktop application
+  covers browsing, downloads and export to content-creation tools.
+license: MIT OR Apache-2.0
+docs: https://github.com/cmspeedau/AssetCraft#readme
+limitations: Pre-alpha; no desktop interface yet, and the full browser/download/export surface remains
+  planned. Current scope is the CLI foundation. Fab account access and asset use depend on the service
+  and each asset license; software licensing does not grant rights to downloaded content.
+summary: "Search Fab assets from a Rust CLI, with a Quixel Bridge-style desktop asset manager planned."
