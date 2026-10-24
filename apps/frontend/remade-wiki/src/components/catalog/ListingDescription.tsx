@@ -12,7 +12,7 @@ export default function ListingDescription({
 	const Heading = headingLevel === 3 ? "h3" : "h2";
 
 	return (
-		<div className="mb-8 overflow-hidden rounded-xl border border-line">
+		<div className="mb-8 overflow-hidden rounded-xl">
 			<div className="bg-surface p-5 sm:p-7">
 				<Heading className="mb-3 text-sm font-semibold tracking-normal text-muted">
 					Summary
@@ -23,7 +23,7 @@ export default function ListingDescription({
 				</p>
 			</div>
 
-			<div className="grid gap-3 border-t border-line p-5 sm:grid-cols-[120px_minmax(0,1fr)] sm:gap-6 sm:p-7">
+			<div className="grid gap-3 p-5 sm:grid-cols-[120px_minmax(0,1fr)] sm:gap-6 sm:p-7">
 				<Heading className="mb-0 text-sm font-semibold leading-7 tracking-normal text-muted">
 					Description
 				</Heading>
