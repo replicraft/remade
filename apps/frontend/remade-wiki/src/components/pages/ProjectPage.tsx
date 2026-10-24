@@ -39,12 +39,12 @@ export default function ProjectPage({
 		<>
 			<div className="max-w-[860px] pt-12 sm:pt-16">
 				<a
-					className="mb-6 inline-flex h-[72px] max-w-full items-center justify-center gap-[18px] rounded-[18px] border-2 border-[#29292c] bg-[#171719] px-7 font-[Arial,sans-serif] text-[30px] leading-9 font-normal tracking-normal text-[#e8e8e8] transition-colors hover:border-[#454548] hover:bg-[#202023] hover:text-[#e8e8e8] motion-reduce:transition-none max-[360px]:gap-3 max-[360px]:px-5 max-[360px]:text-[26px]"
+					className="mb-6 inline-flex h-9 max-w-full items-center justify-center gap-2 rounded-[9px] border border-[#29292c] bg-[#171719] px-3.5 font-[Arial,sans-serif] text-[15px] leading-5 font-normal tracking-normal text-[#e8e8e8] transition-colors hover:border-[#454548] hover:bg-[#202023] hover:text-[#e8e8e8] motion-reduce:transition-none"
 					href="/explore/"
 				>
 					<svg
 						aria-hidden="true"
-						className="h-6 w-6 shrink-0"
+						className="h-3.5 w-3.5 shrink-0"
 						fill="none"
 						stroke="currentColor"
 						strokeLinecap="round"

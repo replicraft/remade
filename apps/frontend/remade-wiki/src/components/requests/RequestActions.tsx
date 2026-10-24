@@ -81,8 +81,8 @@ export default function RequestActions({ original }: { original: string }) {
 									id={tooltipId}
 									role="tooltip"
 								>
-									Self-reported interest, not a verified project or a
-									reservation.
+									Upvotes express interest. Builder indications are
+									self-reported, not verified work or a reservation.
 								</div>
 							</div>
 						)}

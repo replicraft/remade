@@ -44,16 +44,7 @@ export default function SoftwarePage({
 					<p>Also known as {original.aliases.join(", ")}</p>
 				)}
 
-				{request && (
-					<div className="mb-6">
-						{children}
-
-						<p className="mb-0 mt-3 max-w-[65ch] text-xs leading-5">
-							Upvotes express interest. Builder indications are self-reported,
-							not verified work or a reservation.
-						</p>
-					</div>
-				)}
+				{request && <div className="mb-6">{children}</div>}
 
 				<p>
 					{request
