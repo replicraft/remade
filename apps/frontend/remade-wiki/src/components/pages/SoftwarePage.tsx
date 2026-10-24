@@ -45,7 +45,7 @@ export default function SoftwarePage({
 					>
 						<path d="M19 12H5m7 7-7-7 7-7" />
 					</svg>
-					{request ? "Project Requests" : "Back to catalog"}
+					{request ? "Project Requests" : "Back to Catalog"}
 				</a>
 				<p className="eyebrow">
 					{request ? "Project Request" : "Original software"} ·{" "}

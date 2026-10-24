@@ -54,7 +54,7 @@ export default function ProjectPage({
 					>
 						<path d="M19 12H5m7 7-7-7 7-7" />
 					</svg>
-					Back to catalog
+					Back to Catalog
 				</a>
 				<p className="mb-5 text-xs font-bold uppercase tracking-[0.16em] text-lime">
 					Reimplementation · {label(project.category)}
