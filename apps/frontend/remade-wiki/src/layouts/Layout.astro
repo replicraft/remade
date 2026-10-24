@@ -56,15 +56,6 @@ const remadeMetadata = (await loadMetadata())["replicraft/remade"];
 		>
 			Skip to content
 		</a>
-		{import.meta.env.DEV && (
-			<div
-				class="border-b border-line bg-deep px-4 py-2 text-center text-xs text-muted"
-				data-pagefind-ignore
-			>
-				Local design preview. Login, counters and request delivery are
-				simulated. No public writes.
-			</div>
-		)}
 		<Header pathname={Astro.url.pathname} stars={remadeMetadata?.stars}>
 			<div class="h-[46px] w-[104px] shrink-0" data-auth-host>
 				<AuthMenu client:load />
