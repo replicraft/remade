@@ -30,10 +30,22 @@ export default function SoftwarePage({
 		<>
 			<div className="max-w-[860px] pt-12 sm:pt-16">
 				<a
-					className="mb-6 inline-block text-sm text-muted"
+					className="mb-6 inline-flex h-9 max-w-full items-center justify-center gap-2 rounded-[9px] border border-[#29292c] bg-[#171719] px-3.5 font-[Arial,sans-serif] text-[15px] leading-5 font-normal tracking-normal text-[#e8e8e8] transition-colors hover:border-[#454548] hover:bg-[#202023] hover:text-[#e8e8e8] motion-reduce:transition-none"
 					href={request ? "/requests/" : "/explore/"}
 				>
-					← {request ? "Project Requests" : "Explore projects"}
+					<svg
+						aria-hidden="true"
+						className="h-3.5 w-3.5 shrink-0"
+						fill="none"
+						stroke="currentColor"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						strokeWidth="1.8"
+						viewBox="0 0 24 24"
+					>
+						<path d="M19 12H5m7 7-7-7 7-7" />
+					</svg>
+					{request ? "Project Requests" : "Back to catalog"}
 				</a>
 				<p className="eyebrow">
 					{request ? "Project Request" : "Original software"} ·{" "}
