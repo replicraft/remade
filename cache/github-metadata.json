@@ -1008,6 +1008,15 @@
       "pushedAt": "2026-10-21T09:13:44Z",
       "stars": 19
     },
+    "occupysaas/salescompel": {
+      "fetchedAt": "2026-10-26T19:07:22Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-21T19:17:53Z",
+      "stars": 1
+    },
     "occupysaas/zeroauthy": {
       "fetchedAt": "2026-10-26T14:33:50Z",
       "forks": 0,
