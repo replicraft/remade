@@ -9,7 +9,7 @@ export default function RequestPreview({
 	records: DirectoryRecord[];
 }) {
 	return (
-		<RequestActivityProvider>
+		<RequestActivityProvider originals={records.map((record) => record.id)}>
 			<div className="directory-grid">
 				{records.map((record) => (
 					<DirectoryCard

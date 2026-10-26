@@ -30,6 +30,15 @@ beforeEach(() => {
 });
 
 describe("request activity", () => {
+	it("supplies the published page IDs so missing entries can refresh the backend snapshot", async () => {
+		const store = createRequestActivityStore(["example", "new-request"]);
+		await store.getState().load();
+		expect(readRequestActivity).toHaveBeenCalledWith(undefined, [
+			"example",
+			"new-request",
+		]);
+	});
+
 	it("refreshes authoritative counts after a saved action", async () => {
 		const store = createRequestActivityStore();
 		await store.getState().load();

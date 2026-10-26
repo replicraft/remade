@@ -1,6 +1,7 @@
 mod auth;
 mod config;
 mod db;
+mod request_catalog;
 mod requests;
 mod security;
 mod session;
