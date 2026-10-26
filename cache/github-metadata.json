@@ -981,6 +981,15 @@
       "pushedAt": "2026-10-22T16:26:06Z",
       "stars": 0
     },
+    "nibrasaz7/simcraft": {
+      "fetchedAt": "2026-10-26T19:04:23Z",
+      "forks": 1,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-10-20T06:53:39Z",
+      "stars": 2
+    },
     "nibrasaz7/warraqcraft": {
       "fetchedAt": "2026-10-26T14:33:50Z",
       "forks": 0,
