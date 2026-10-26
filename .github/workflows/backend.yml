@@ -69,9 +69,11 @@ jobs:
       - name: Build Wasm entrypoint
         if: steps.changes.outputs.backend == 'true'
         working-directory: apps/backend/remade-api
-        run: |
-          cargo install worker-build --version 0.8.7 --locked
-          worker-build --release
+        run: bash scripts/build.sh
+      - name: Check deployment script syntax
+        if: steps.changes.outputs.backend == 'true'
+        working-directory: apps/backend/remade-api
+        run: bash -n scripts/build.sh scripts/deploy.sh
       - name: Fresh local D1 migration
         if: steps.changes.outputs.backend == 'true'
         run: |
