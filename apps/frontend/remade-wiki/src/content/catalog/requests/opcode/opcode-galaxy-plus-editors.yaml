@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/137.
+original: opcode-galaxy-plus-editors
+reason: Reproduce Opcode Galaxy Plus Editors MIDI patch retrieval, storage, organization and graphical sound-editing workflows. Prioritize documented device-specific SysEx behavior and vintage synthesizer coverage, with compatible library and patch interchange where established.
+summary: "Wanted: Galaxy Plus Editors-style MIDI patch libraries and graphical editors for vintage synthesizers."

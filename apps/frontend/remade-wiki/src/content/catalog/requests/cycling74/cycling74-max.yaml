@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/122.
+original: cycling74-max
+reason: Reproduce Max/MSP/Jitter patch loading and execution, targeting existing .maxpat/.maxhelp files, object semantics, message ordering, MSP audio, timing and Jitter matrix/video/graphics workflows. Existing patches working without modification is the compatibility goal, not an established implementation claim.
+summary: "Wanted: Run existing Max/MSP/Jitter patches with matching objects, message scheduling, audio and graphics behavior."

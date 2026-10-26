@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/123.
+original: tonelib-jam
+reason: Reproduce ToneLib Jam tablature editing, song playback, integrated guitar effects, backing-track practice, recording and 3D note views, with documented song-format interchange. An open-source implementation is wanted; the original already documents Ubuntu support.
+summary: "Wanted: ToneLib Jam-style tablature editing, guitar effects, backing tracks, recording and 3D practice views."

@@ -1,0 +1,20 @@
+# Maintainer-approved work-in-progress replacement; broader compatibility remains a goal.
+# Suggested in https://github.com/replicraft/remade/issues/85.
+slug: rsedit
+name: RSEdit
+repository: https://github.com/goodappsstore/rsedit
+originals:
+  - sublime-text
+category: developer-tools
+languages:
+  - TypeScript
+  - Rust
+platforms:
+  - macOS
+status: experimental
+compatibility: partial
+summary: A Sublime Text-style editor with multiple cursors, split panes, quick-open, a command palette and large-file editing.
+description: A work-in-progress Sublime Text replacement built with a Rust file engine, Tauri and CodeMirror. Provides multiple cursors, rectangular selections, split panes, fuzzy quick-open, a command palette, syntax highlighting, regex search and bounded large-file editing.
+license: MIT
+docs: https://github.com/goodappsstore/rsedit#readme
+limitations: Built and locally checked on macOS Apple Silicon. Windows and Linux builds and native interactions remain unverified. Sublime package, settings and plugin API compatibility is not established; extensions and language servers are outside the current feature set.

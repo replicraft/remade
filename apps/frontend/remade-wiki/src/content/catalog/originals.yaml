@@ -2285,3 +2285,75 @@
   aliases:
     - Crimsonland 2014
     - Crimsonland Remastered
+- slug: sublime-text
+  name: Sublime Text
+  url: https://www.sublimetext.com/
+  category: developer-tools
+- slug: loom
+  name: Loom
+  url: https://www.loom.com/
+  category: productivity
+- slug: trello
+  name: Trello
+  url: https://trello.com/
+  category: productivity
+- slug: dreamtonics-vocoflex
+  name: Vocoflex
+  url: https://dreamtonics.com/vocoflex/
+  category: creative
+- slug: pano2vr
+  name: Pano2VR
+  url: https://ggnome.com/pano2vr/
+  category: creative
+- slug: aveva-edge
+  name: AVEVA Edge
+  url: https://www.aveva.com/en/products/edge/
+  category: engineering
+- slug: whatsapp
+  name: WhatsApp
+  url: https://www.whatsapp.com/
+  category: productivity
+- slug: veracross
+  name: Veracross
+  url: https://www.veracross.com/schools/k-12/
+  category: productivity
+- slug: hubspot-crm
+  name: HubSpot CRM
+  url: https://www.hubspot.com/products/crm
+  category: productivity
+- slug: graphpad-prism
+  name: GraphPad Prism
+  url: https://www.graphpad.com/features
+  category: engineering
+- slug: cycling74-max
+  name: Max/MSP/Jitter
+  url: https://cycling74.com/products/max
+  category: creative
+- slug: tonelib-jam
+  name: ToneLib Jam
+  url: https://www.tonelib.net/jam-overview.html
+  category: creative
+- slug: rogue-amoeba-fission
+  name: Fission
+  url: https://rogueamoeba.com/fission/
+  category: creative
+- slug: little-snitch
+  name: Little Snitch
+  url: https://www.obdev.at/products/littlesnitch/index.html
+  category: other
+- slug: autodesk-moldflow-adviser
+  name: Autodesk Moldflow Adviser
+  url: https://www.autodesk.com/products/moldflow/overview
+  category: engineering
+- slug: radan-radnest
+  name: RADAN Radnest
+  url: https://hexagon.com/products/radan
+  category: engineering
+- slug: visual-basic-classic
+  name: Visual Basic (classic)
+  url: https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation
+  category: developer-tools
+- slug: opcode-galaxy-plus-editors
+  name: Opcode Galaxy Plus Editors
+  url: https://oldschooldaw.com/opcode/uploads/PDF/Tech_Primer.pdf
+  category: creative

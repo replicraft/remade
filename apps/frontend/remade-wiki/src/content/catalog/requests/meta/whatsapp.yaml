@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/101.
+original: whatsapp
+reason: Reimplement the WhatsApp desktop client experience for existing accounts, including messaging, voice and video calls and status viewing. The target is client behavior and interoperability with the existing service, not a replacement network or a promise of service-provider authorization.
+summary: "Wanted: An independent WhatsApp desktop client for messaging, voice/video calls and status viewing."

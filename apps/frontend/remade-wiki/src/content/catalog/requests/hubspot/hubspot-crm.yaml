@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/107.
+original: hubspot-crm
+reason: Reproduce HubSpot CRM core workflows for contact and company records, deals and sales pipelines, tasks and customer activity history. Support useful record import/export and familiar navigation without implying coverage of every HubSpot marketing, service or content product.
+summary: "Wanted: HubSpot CRM-style contacts, companies, deals, pipelines, tasks and customer activity history."

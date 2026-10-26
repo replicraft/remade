@@ -1,4 +1,4 @@
+# Additional request details in https://github.com/replicraft/remade/issues/69.
 original: aseprite
-reason: Pixel-art drawing, layers, frame animation, palettes, onion skinning and sprite-sheet export,
-  with ASE and ASEPRITE file interchange.
+reason: Reproduce Aseprite pixel-art drawing, layers, palettes, frame animation, onion skinning and sprite-sheet export, with ASE/ASEPRITE interchange and convenient sequential frame saving and export.
 summary: "Wanted: Pixel-art drawing, layers, frame animation, palettes, onion skinning and sprite-sheet export."

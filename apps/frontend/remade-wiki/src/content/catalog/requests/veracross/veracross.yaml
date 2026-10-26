@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/104.
+original: veracross
+reason: "Reproduce Veracross-style school administration: student records, academics, attendance, parent portals and tuition/billing workflows. The MIT-licensed School ERP project could provide an implementation foundation; it is not an existing Veracross replacement, and compatibility would need to be developed."
+summary: "Wanted: Veracross-style student records, academics, attendance, parent portals and tuition/billing workflows."

@@ -1,4 +1,4 @@
+# Additional request details in https://github.com/replicraft/remade/issues/96.
 original: autodesk-3ds-max
-reason: Reproduce 3ds Max's modifier-based modeling and precision product and architectural visualization workflows, beyond generic 3D modeling.
-suggested_names: [ModelCraft]
+reason: Reproduce 3ds Max's modifier-based modeling and precision product and architectural visualization workflows. Extending the existing ModelCraft with editable Scale/Array stacks, ordering, disabling, persistence and undo/redo is a possible starting point, not an implemented replacement or a commitment by its maintainers.
 summary: "Wanted: 3ds Max's modifier-based modeling and precision product and architectural visualization workflows, beyond generic 3D modeling."

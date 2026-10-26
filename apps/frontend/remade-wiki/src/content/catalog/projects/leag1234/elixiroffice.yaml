@@ -1,0 +1,24 @@
+# Suggested in https://github.com/replicraft/remade/issues/93.
+slug: elixiroffice
+name: ElixirOffice
+repository: https://github.com/leag1234/elixiroffice
+originals:
+  - microsoft-word
+  - microsoft-excel
+  - microsoft-powerpoint
+category: productivity
+languages:
+  - JavaScript
+  - C++
+platforms:
+  - Windows
+  - macOS
+  - Linux
+  - Web
+status: beta
+compatibility: partial
+summary: An Office-style document, spreadsheet and presentation suite with local desktop editing and a self-hosted web edition.
+description: An Office-style suite derived from Euro-Office and ONLYOFFICE Docs. Edits Word, Excel and PowerPoint documents and OpenDocument formats with familiar ribbons, dialogs and shortcuts. Provides an offline desktop edition and a self-hosted browser edition with collaboration features.
+license: AGPL-3.0-only
+docs: https://github.com/leag1234/elixiroffice#readme
+limitations: Beta; document rendering, round trips and Microsoft Office behavior are not fully compatible. Desktop macOS releases target Apple Silicon. Desktop installers are unsigned. Inherited components and bundled assets retain their documented licenses.

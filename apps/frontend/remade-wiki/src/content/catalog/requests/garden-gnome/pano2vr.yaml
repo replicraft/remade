@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/99.
+original: pano2vr
+reason: "Reproduce Pano2VR virtual-tour authoring: link panoramas through hotspots and floor plans, embed media and directional audio, customize navigation and skins, patch panoramic images and export interactive HTML5 tours for self-hosting."
+summary: "Wanted: Build interactive 360-degree tours with linked panoramas, hotspots, floor plans and self-hostable web export."

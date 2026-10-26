@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/125.
+original: little-snitch
+reason: Reproduce Little Snitch macOS workflows with per-application connection monitoring, interactive allow/block prompts, persistent rules, destination details, searchable traffic history and bandwidth visualizations. Include rule import/export and local operation without mandatory cloud accounts.
+summary: "Wanted: A macOS application firewall with connection prompts, per-app rules, traffic history and network visualizations."

@@ -1,0 +1,21 @@
+# Maintainer-approved client scope; the original browser-session dependency is disclosed below.
+# Suggested in https://github.com/replicraft/remade/issues/80.
+slug: rusty-teams
+name: Rusty Teams
+repository: https://github.com/danieldaeschle/rusty-teams
+originals:
+  - microsoft-teams
+category: productivity
+languages:
+  - Rust
+  - JavaScript
+platforms:
+  - Windows
+  - Linux
+status: experimental
+compatibility: partial
+summary: A native Teams client with chats, channels, local search and calling, using an authenticated Teams browser session.
+description: A native Rust and GPUI Microsoft Teams client with chats, channels, messaging, local SQLite search and calling features. Implements its own interface and sync logic while routing Microsoft API requests through a hidden, authenticated Teams web page.
+license: MIT
+docs: https://github.com/danieldaeschle/rusty-teams#readme
+limitations: Requires a Teams account and the original Teams web page for token refresh and API transport. Windows uses WebView2; Linux currently uses Chrome with remote debugging. It replaces the client experience, not the Teams service. Full feature parity and compliance with service terms are not established.

@@ -1,0 +1,23 @@
+# Suggested in https://github.com/replicraft/remade/issues/110.
+slug: libernt
+name: LiberNT
+repository: https://github.com/LiberNT/LiberNT
+originals:
+  - microsoft-windows
+category: operating-systems
+languages:
+  - C
+  - C++
+  - Assembly
+platforms:
+  - amd64
+  - arm64
+  - riscv64
+status: experimental
+compatibility: targeting
+summary: A ReactOS-derived operating system targeting modern Windows compatibility, UEFI boot and 64-bit hardware.
+description: A ReactOS-derived NT operating system targeting Windows 11 application and driver compatibility. Develops 64-bit platform support, UEFI boot, storage and device drivers, setup and optional graphics and emulation components. Its modern Windows compatibility is a development goal.
+license: GPL-3.0; inherited components retain their licenses
+website: https://libernt.com
+docs: https://github.com/LiberNT/LiberNT#readme
+limitations: Debug prereleases for testing; full Windows 11 application, driver and hardware compatibility is not established. Architecture and optional subsystem coverage vary. Inherited ReactOS and other components retain GPL, LGPL, BSD and other file-specific terms.

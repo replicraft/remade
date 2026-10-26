@@ -1,0 +1,20 @@
+# Maintainer-approved broader alternative for Goodnotes only.
+# Suggested in https://github.com/replicraft/remade/issues/119.
+slug: xnotes
+name: Xnotes
+repository: https://github.com/shardulvs/xnotes-android
+originals:
+  - goodnotes
+category: productivity
+languages:
+  - Kotlin
+  - C++
+platforms:
+  - Android
+status: experimental
+compatibility: partial
+summary: Android handwritten notebooks with stylus input, PDF annotation, page templates and audio-linked notes.
+description: An Android handwriting and sketching app covering Goodnotes-style notebooks and PDF annotation. Supports pressure-sensitive stylus input, paged and infinite canvases, templates, typed and Markdown notes, split views, audio-linked ink playback and vector PDF export, with local note files.
+license: MIT
+docs: https://github.com/shardulvs/xnotes-android#readme
+limitations: A broader alternative for handwritten notes and PDF workflows. Goodnotes document-format, synchronization and plugin compatibility are not established. Android 8 or later is required; bundled native libraries retain their own licenses.
