@@ -32,6 +32,8 @@ Remade does not accept the following as reimplementation listings:
 
 **Emulators, compatibility layers, and protocol implementations** are reviewed case by case. They qualify only when they genuinely implement a defined target and meet the independent-development requirements above.
 
+**Client reimplementations** may target an application's client experience without replacing its hosted service. An independently implemented interface and client behavior may be reviewed case by case even when an original browser session supplies authentication or API transport. Disclose that dependency and any known interoperability limits; do not present the project as a replacement for the hosted service or infer authorization from the service provider. Merely embedding or reskinning the original interface remains outside scope.
+
 ### Supporting tools
 
 Remade also accepts tools that add functionality to one or more indexed projects, including browser launchers, integrations, extensions and workflow helpers. Publish these separately under `apps/frontend/remade-wiki/src/content/catalog/tools/`, with links to the source repository and tool, a factual description, and references to the indexed projects they extend, directly or through a documented suite. A suite groups explicitly listed indexed projects; referencing it asserts support for every member. Suite membership does not change individual eligibility, count as another reimplementation, or fulfill a Project Request. A tool does not need to reimplement an original itself. It must have substantive, publicly accessible source and accurately describe its dependencies and licensing; do not infer an open-source license when none is stated.
