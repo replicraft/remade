@@ -1,3 +1,4 @@
 original: gamemaker-studio
 reason: Reproduce GameMaker Studio's 2D game-development workflows, including GML, drag-and-drop actions, sprites, objects, events, rooms and compatible project loading and runtime behavior. Provide an alternative GameMaker 8-style frontend over the same engine, preserving its familiar resource tree, editors and interaction model.
 suggested_names: [GameCraft]
+summary: "Wanted: GameMaker-style 2D game development workflows."

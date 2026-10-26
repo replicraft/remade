@@ -17,11 +17,13 @@ export function badgeLanguages(languages: readonly string[]): string[] {
 		["typescript", "ts"].includes(language.trim().toLowerCase()),
 	);
 
-	return languages.filter(
-		(language) =>
-			!hasTypeScript ||
-			!["javascript", "js"].includes(language.trim().toLowerCase()),
-	);
+	return languages
+		.filter(
+			(language) =>
+				!hasTypeScript ||
+				!["javascript", "js"].includes(language.trim().toLowerCase()),
+		)
+		.slice(0, 2);
 }
 
 export function shortDate(timestamp: string) {

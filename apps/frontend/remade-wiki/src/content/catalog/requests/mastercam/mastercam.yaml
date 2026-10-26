@@ -1,3 +1,4 @@
 original: mastercam
 reason: Reproduce Mastercam's CAD/CAM programming workflows, including milling, turning, multi-axis toolpaths, stock simulation, collision checking and machine-specific postprocessing. Support model interchange and toolpath verification before machining.
 suggested_names: [MillCraft]
+summary: "Wanted: Mastercam-style CAD/CAM programming and machining workflows."

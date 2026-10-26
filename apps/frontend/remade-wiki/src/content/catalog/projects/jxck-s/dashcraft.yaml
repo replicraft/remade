@@ -1,0 +1,21 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: dashcraft
+name: DashCraft
+repository: https://github.com/Jxck-S/dashcraft
+originals:
+- microsoft-power-bi
+category: productivity
+languages:
+- Rust
+- TypeScript
+platforms:
+- macOS
+- Windows
+- Linux
+status: experimental
+compatibility: partial
+license: MIT
+summary: Read-only Power BI report viewing and rendering for PBIX, PBIP, PBIT, TMDL and model.bim files.
+description: A Rust implementation targeting Microsoft Power BI file inspection and report rendering. Opens PBIX, PBIP and PBIT reports and explores TMDL/model.bim models through desktop and CLI interfaces. Includes independently implemented DAX and Power Query M processing and interactive report-page rendering without Power BI Desktop or a cloud account.
+limitations: 'Currently a read-only viewer: report editing and saving are not implemented. File, visual and expression support is incomplete and maintainer-reported; full Power BI rendering, engine and service compatibility is not claimed.'
+docs: https://github.com/Jxck-S/dashcraft#readme

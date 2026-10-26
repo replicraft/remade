@@ -1,3 +1,4 @@
 original: siemens-nx
 reason: Reproduce Siemens NX's integrated CAD/CAM workflows, including parametric parts and assemblies, precision surfacing, engineering drawings, CNC toolpaths and machining simulation, with compatible model interchange. Could extend SolidCraft (https://github.com/tangency-labs/solidcraft), or be a separate application sharing a 3D engine with other CAD projects.
 suggested_names: [EngineerCraft]
+summary: "Wanted: Integrated Siemens NX-style CAD/CAM workflows."

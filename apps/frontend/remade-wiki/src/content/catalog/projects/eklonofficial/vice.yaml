@@ -14,3 +14,4 @@ license: GPL-3.0-or-later
 docs: https://github.com/splitshotz/Vice#readme
 website: https://splitshotz.github.io/Vice-Website/
 limitations: Linux only; Bazzite and Fedora Atomic are not supported yet. Recording depends on gpu-screen-recorder and platform permissions. Full Medal.tv behavior or service compatibility is not claimed. Public share links depend on the project's sharing infrastructure.
+summary: "Capture instant replays on Linux, edit game clips and share them with playable links."

@@ -12,3 +12,4 @@ description: A Rust desktop prototype targeting Maya's interface and behavior. O
 license: MIT OR Apache-2.0
 docs: https://github.com/cristim/AztecCraft#current-capabilities
 limitations: Provisional Unix Maya binary Save/Save As needs native QA; Maya ASCII, structural rewriting and Windows writing are unsupported. GUI export and extrusion remain unfinished. Animation, rigging, UVs, rendering, scripting and plug-in compatibility are planned. Overall Maya coverage is unmeasured; cross-platform launch verification remains incomplete.
+summary: "An early Maya-style 3D editor with primitives, transforms, undo/redo and perspective navigation."

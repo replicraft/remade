@@ -1,0 +1,21 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: dotcraft
+name: DotCraft
+authors:
+- javy-fernandez
+repository: https://github.com/javy-fernandez/dotcraft
+originals:
+- jetbrains-rider
+category: developer-tools
+languages:
+- Rust
+platforms:
+- macOS
+- Windows
+status: experimental
+compatibility: partial
+license: MIT OR Apache-2.0
+summary: Rider-inspired C# and .NET IDE with Roslyn intelligence, build/run/test actions, debugging and Git.
+description: A native Rust and egui IDE targeting JetBrains Rider-style .NET and C# development workflows. Works with solutions and projects, using Roslyn for code intelligence, the .NET CLI for builds, running and tests, netcoredbg for debugging, and Git integration. Includes Rider-style keymaps and tool-window layouts.
+limitations: Requires the .NET SDK and external tooling for language services, debugging and version control. Does not claim Rider plugin compatibility or complete Rider feature parity. Documented desktop targets are macOS and Windows.
+docs: https://github.com/javy-fernandez/dotcraft#readme

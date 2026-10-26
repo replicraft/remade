@@ -1,227 +1,176 @@
 import type { ReactNode } from "react";
 import type { CatalogData, Metadata } from "../../lib/catalog";
 import { categories } from "../../lib/constants";
-import {
-	contributeUrl,
-	findBySlug,
-	label,
-	metadataFor,
-	recent,
-	repositoryUrl,
-} from "../../lib/presentation";
-import EntryCard from "../catalog/EntryCard";
-import RequestCard from "../catalog/RequestCard";
-import Search from "../search/Search";
-
-interface Props {
+import { directoryRecords } from "../../lib/directory";
+import { label, recent, repositoryUrl } from "../../lib/presentation";
+import DirectoryCard from "../catalog/DirectoryCard";
+export default function HomePage({
+	catalog,
+	metadata,
+	children,
+	requestPreview,
+}: {
 	catalog: CatalogData;
 	metadata: Record<string, Metadata>;
 	children?: ReactNode;
-}
-
-export default function HomePage({ catalog, metadata, children }: Props) {
-	const featured = catalog.featured.map((slug) =>
-		findBySlug(catalog.entries, slug),
-	);
-	const requests = catalog.requests.map((request) => ({
-		request,
-		original: findBySlug(catalog.originals, request.original),
-	}));
-
+	requestPreview?: ReactNode;
+}) {
+	const records = directoryRecords(catalog, metadata);
+	const featured = catalog.featured
+		.map((slug) =>
+			records.find((record) => record.kind !== "request" && record.id === slug),
+		)
+		.filter((record) => record !== undefined);
+	const requests = records
+		.filter((record) => record.kind === "request")
+		.sort(
+			(a, b) =>
+				b.addedAt.localeCompare(a.addedAt) || a.name.localeCompare(b.name),
+		)
+		.slice(0, 6);
 	return (
 		<>
-			<div className="max-w-[780px] pb-10 pt-14 sm:pt-[90px] [&_h1]:text-[clamp(2.4rem,6vw,4.8rem)] [&_p]:text-lg">
-				<p className="mb-5 text-xs font-bold uppercase tracking-wide text-lime">
-					A community-maintained software directory
-				</p>
-
+			<div className="home-hero">
+				<p className="eyebrow">The independent software directory</p>
 				<h1>
-					Everything can
-					<br />
-					be remade<span className="text-lime">.</span>
+					Everything can be remade<span className="text-lime">.</span>
 				</h1>
-
-				<p>Discover independently developed software reimplementations</p>
-			</div>
-
-			<Search />
-
-			<section aria-labelledby="featured-heading">
-				<div className="mb-6 flex flex-wrap items-baseline justify-between gap-4 [&_h2]:mb-0">
-					<h2 id="featured-heading">Featured</h2>
-
-					<span className="text-sm text-[#B2BEC9]">Selected by Remade</span>
-				</div>
-
-				{featured.length ? (
-					<div className="grid grid-cols-1 gap-[18px] max-[599px]:auto-rows-fr min-[900px]:grid-cols-[1.1fr_1fr] min-[900px]:[&>article]:h-full min-[900px]:[&>article]:border-t-3 min-[900px]:[&>article]:border-t-lime min-[900px]:[&>article]:bg-panel min-[900px]:[&>article]:p-9 min-[900px]:[&>article_h3]:text-[2rem]">
-						<EntryCard
-							entry={featured[0]}
-							key={featured[0].slug}
-							metadata={metadataFor(featured[0], metadata)}
-							originals={catalog.originals}
-							projects={catalog.projects}
-							suites={catalog.suites}
-						/>
-
-						<div className="contents auto-rows-fr gap-[18px] min-[600px]:grid min-[600px]:grid-cols-2">
-							{featured.slice(1).map((entry) => (
-								<EntryCard
-									entry={entry}
-									key={entry.slug}
-									metadata={metadataFor(entry, metadata)}
-									originals={catalog.originals}
-									projects={catalog.projects}
-									suites={catalog.suites}
-								/>
-							))}
-						</div>
-					</div>
-				) : (
-					<p className="rounded-xl border border-dashed border-line p-8">
-						Featured selections are coming soon.{" "}
-						<a href="/explore/">Explore the directory.</a>
-					</p>
-				)}
-			</section>
-
-			<section>
-				<div className="mb-6 flex flex-wrap items-baseline justify-between gap-4 [&_h2]:mb-0">
-					<h2>Browse by category</h2>
-
-					<a className="text-sm text-lime hover:underline" href="/explore/">
-						Explore all →
+				<p className="hero-intro">
+					Discover independent software reimplementations.
+					<br className="hidden sm:block" /> Request the software you want to
+					see remade next.
+				</p>
+				<div className="flex flex-wrap items-center gap-4">
+					<a className="action-primary" href="/requests/new/">
+						Request a project <span aria-hidden="true">→</span>
+					</a>
+					<a className="action-secondary" href="/explore/">
+						Explore projects
 					</a>
 				</div>
-
-				<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+				{children}
+			</div>
+			<section aria-labelledby="featured-heading">
+				<div className="section-heading">
+					<div>
+						<h2 id="featured-heading">Featured</h2>
+					</div>
+				</div>
+				<div className="mb-6 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 text-sm text-muted">
+					<p className="mb-0">
+						Check each project's status to see what is available.
+					</p>
+					<span>Selected by Remade</span>
+				</div>
+				<div className="directory-grid featured-grid">
+					{featured.slice(0, 5).map((record) => (
+						<DirectoryCard key={record.id} record={record} />
+					))}
+				</div>
+			</section>
+			<section aria-labelledby="requests-heading">
+				<div className="section-heading">
+					<div>
+						<p className="eyebrow">What’s missing?</p>
+						<h2 id="requests-heading">Project Requests</h2>
+					</div>
+					<a href="/requests/">View all requests →</a>
+				</div>
+				<p className="section-intro">
+					Software the community wants to see remade. A request is a wish, not a
+					promise that it will be built.
+				</p>
+				{requestPreview ?? (
+					<div className="directory-grid">
+						{requests.map((record) => (
+							<DirectoryCard key={record.id} record={record} />
+						))}
+					</div>
+				)}
+				<div className="section-note">
+					<p>
+						Search first. Support an existing request or tell us what is
+						missing.
+					</p>
+					<a href="/requests/new/">Request a project →</a>
+				</div>
+			</section>
+			<section>
+				<div className="section-heading">
+					<h2>Browse by category</h2>
+					<a href="/explore/">Explore all →</a>
+				</div>
+				<div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
 					{categories.map((category) => (
 						<a
-							className="flex justify-between gap-3 rounded-lg border border-line p-5 hover:border-lime/50"
+							className="flex items-center justify-between border-b border-line py-4 text-sm"
 							href={`/explore/?category=${category}`}
 							key={category}
 						>
 							<span>{label(category)}</span>
-
-							<span className="text-lime">
-								{catalog.projects.filter((p) => p.category === category).length}{" "}
+							<span className="text-muted">
+								{
+									catalog.projects.filter(
+										(project) => project.category === category,
+									).length
+								}{" "}
 								→
 							</span>
 						</a>
 					))}
-
 					<a
-						className="flex justify-between gap-3 rounded-lg border border-line p-5 hover:border-lime/50"
+						className="border-b border-line py-4 text-sm"
 						href="/explore/?category=tools"
 					>
-						<span>Supporting tools</span>
-
-						<span className="text-lime">{catalog.tools.length} →</span>
+						Supporting tools →
 					</a>
 				</div>
 			</section>
-
 			<section>
-				<div className="mb-6 flex flex-wrap items-baseline justify-between gap-4 [&_h2]:mb-0">
+				<div className="section-heading">
 					<h2>Recently added</h2>
-
-					<a className="text-sm text-lime hover:underline" href="/explore/">
-						View all →
-					</a>
+					<a href="/explore/">View all projects →</a>
 				</div>
-
-				<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+				<div className="directory-grid">
 					{recent(catalog.entries)
-						.slice(0, 6)
-						.map((entry) => (
-							<EntryCard
-								entry={entry}
-								key={entry.slug}
-								metadata={metadataFor(entry, metadata)}
-								originals={catalog.originals}
-								projects={catalog.projects}
-								suites={catalog.suites}
-							/>
-						))}
-				</div>
-
-				<div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-					<p className="mb-0 text-xs text-muted">
-						Ordered by catalog additions recorded in Git; tools are labeled
-						separately.
-					</p>
-
-					<a
-						className="inline-flex items-center rounded-lg border border-line px-3 py-2 text-xs font-semibold hover:border-lime hover:text-lime"
-						href={contributeUrl}
-					>
-						Add a project
-					</a>
+						.slice(0, 3)
+						.map((entry) => {
+							const record = records.find(
+								(record) =>
+									record.id === entry.slug && record.kind !== "request",
+							);
+							return (
+								record && <DirectoryCard key={entry.slug} record={record} />
+							);
+						})}
 				</div>
 			</section>
-
-			<section>
-				<div className="mb-6 flex flex-wrap items-baseline justify-between gap-4 [&_h2]:mb-0">
-					<h2>Project Requests</h2>
-
-					<a className="text-sm text-lime hover:underline" href="/requests/">
-						View all requests →
-					</a>
-				</div>
-
-				{requests.length ? (
-					(children ?? (
-						<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
-							{requests.slice(0, 3).map(({ request, original }) => (
-								<RequestCard
-									key={request.original}
-									original={original}
-									request={request}
-								/>
-							))}
-						</div>
-					))
-				) : (
-					<p className="rounded-xl border border-dashed border-line p-8">
-						No open requests.{" "}
-						<a href="/requests/">Suggest a software target.</a>
+			<section className="resource-section">
+				<div>
+					<p className="eyebrow">Open to everyone</p>
+					<h2>Use Remade's data</h2>
+					<p>
+						Download the catalog and project requests for your tools, research,
+						or agents.
 					</p>
-				)}
-
-				<div className="mt-6">
-					<p className="text-xs text-muted">
-						Software the community would like to see remade. These are wishes,
-						not existing implementations.
-					</p>
-
-					<div className="flex flex-wrap items-center gap-4">
-						<p className="mb-0 text-sm text-muted">Step up to the plate?</p>
-
-						<a
-							className="inline-flex items-center rounded-lg border border-line px-3 py-2 text-xs font-semibold hover:border-lime hover:text-lime"
-							href={`${repositoryUrl}/issues/new?template=project-request.yml`}
-						>
-							Submit Request
-						</a>
+					<div className="flex flex-wrap gap-5 text-sm">
+						<a href="/data/catalog.json">Catalog JSON ↗</a>
+						<a href="/data/requests.json">Requests JSON ↗</a>
 					</div>
 				</div>
-			</section>
-
-			<section className="border-t border-line pt-6">
-				<h2>Are you a robot?</h2>
-
-				<p className="mb-0 text-sm text-muted">
-					You might be interested in{" "}
-					<a className="text-lime hover:underline" href="/data/catalog.json">
-						data/catalog.json
-					</a>{" "}
-					and{" "}
-					<a className="text-lime hover:underline" href="/data/requests.json">
-						data/requests.json
-					</a>{" "}
-					for an easy, machine-readable way to read our entries. Save your
-					tokens for the big stuff!
-				</p>
+				<div className="border-t border-line pt-6 sm:border-l sm:border-t-0 sm:pl-8 sm:pt-0">
+					<h3>Found an existing project?</h3>
+					<p>
+						Help others discover it. Maintainers review every Catalog Suggestion
+						before listing.
+					</p>
+					<a
+						className="text-sm"
+						href={`${repositoryUrl}/issues/new?template=catalog-suggestion.yml`}
+					>
+						Suggest an existing project ↗
+					</a>
+				</div>
 			</section>
 		</>
 	);

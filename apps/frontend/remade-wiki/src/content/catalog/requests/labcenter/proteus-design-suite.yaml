@@ -1,2 +1,3 @@
 original: proteus-design-suite
 reason: Reproduce Proteus' integrated schematic capture, mixed-mode SPICE simulation, microcontroller firmware co-simulation, virtual instruments and debugging, plus PCB layout. Aim to open Proteus projects and run existing electronics course exercises across platforms, preserving the combined circuit-and-firmware workflow rather than only schematic editing.
+summary: "Wanted: Schematic capture, mixed-mode SPICE simulation and microcontroller firmware co-simulation."

@@ -1,0 +1,16 @@
+# Feature scope and early-alpha status are documented in the upstream README.
+slug: exomyth
+name: Exomyth
+repository: https://github.com/Exonerv-Pec/Exomyth
+website: https://exonerv-pec.github.io/Exomyth/
+originals: [world-anvil, campfire, legendkeeper]
+category: creative
+languages: [TypeScript]
+platforms: [Web]
+status: alpha
+compatibility: partial
+summary: Offline worldbuilding wiki with linked lore, maps, timelines, family trees and portable Markdown files.
+description: An offline worldbuilding alternative to World Anvil, Campfire and LegendKeeper. Stores lore as Markdown files with YAML metadata, linking characters, places and events through typed relationships. Includes stable relation graphs, interactive maps with pins, timelines, family trees, cards and local search. Writers can organize chapters and scenes without a hosted account or server.
+license: AGPL-3.0-only
+docs: https://github.com/Exonerv-Pec/Exomyth#readme
+limitations: Early alpha. Covers overlapping worldbuilding workflows, not full product parity or verified native project-format compatibility. Imports from World Anvil, Campfire and LegendKeeper and their hosted collaboration or publishing features are not established. Native desktop packaging is planned.

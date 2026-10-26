@@ -1,3 +1,4 @@
 original: foundry-mari
 reason: Reproduce Mari's projection painting, multi-channel 3D texturing, high-resolution UDIM workflows, layers, masks and node graphs, with texture export for VFX and animation pipelines.
 suggested_names: [TexelCraft]
+summary: "Wanted: Mari's projection painting, multi-channel 3D texturing, high-resolution UDIM workflows, layers, masks and node graphs."

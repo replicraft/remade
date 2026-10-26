@@ -1,21 +1,20 @@
 import { categories, compatibility, statuses } from "../../lib/constants";
 import { label } from "../../lib/presentation";
-import {
-	type ExploreFilters,
-	useExploreStore,
-} from "../../stores/explore-store.ts";
-import { SearchField } from "./Search";
+import type { ExploreFilters } from "../../stores/explore-store.ts";
 
 export default function ExploreFiltersPanel({
 	languages,
 	platforms,
+	filters,
+	onChange: change,
+	onClear: clear,
 }: {
 	languages: string[];
 	platforms: string[];
+	filters: ExploreFilters;
+	onChange: (key: keyof ExploreFilters, value: string) => void;
+	onClear: () => void;
 }) {
-	const filters = useExploreStore((state) => state.filters);
-	const change = useExploreStore((state) => state.change);
-	const clear = useExploreStore((state) => state.clear);
 	const select = (
 		key: Exclude<keyof ExploreFilters, "q" | "sort">,
 		title: string,
@@ -69,9 +68,15 @@ export default function ExploreFiltersPanel({
 	return (
 		<search className="my-8 border-b border-line pb-6">
 			<form onSubmit={(event) => event.preventDefault()}>
-				<div className="max-w-[640px]">
-					<SearchField
-						onChange={(value) => change("q", value)}
+				<div className="max-w-[740px]">
+					<label htmlFor="site-search">Search software and projects</label>
+					<input
+						className="mt-2 w-full"
+						id="site-search"
+						name="q"
+						onChange={(event) => change("q", event.target.value)}
+						placeholder="Original software or reimplementation project name"
+						type="search"
 						value={filters.q}
 					/>
 				</div>

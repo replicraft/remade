@@ -1,3 +1,4 @@
 original: microsoft-sql-server
 reason: Reproduce SQL Server's relational database behavior, T-SQL queries, stored procedures, transactions and client connectivity, with a database engine that runs locally on macOS. DBCraft could combine this engine with a SQL Server Management Studio-style interface for development and administration.
 suggested_names: [DBCraft]
+summary: "Wanted: SQL Server's relational database behavior, T-SQL queries, stored procedures, transactions and client connectivity."

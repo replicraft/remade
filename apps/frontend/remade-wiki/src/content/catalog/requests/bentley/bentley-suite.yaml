@@ -1,3 +1,4 @@
 original: bentley-suite
 reason: Reproduce Bentley's infrastructure engineering workflows, including MicroStation drafting and modeling, OpenRoads road design, STAAD.Pro structural analysis and ProjectWise coordination, with compatible drawings, models and project interchange. Could be several applications sharing a 3D engine and data formats with CADCraft or SolidCraft.
 suggested_names: [InfraCraft]
+summary: "Wanted: Bentley-style infrastructure design, engineering and project workflows."

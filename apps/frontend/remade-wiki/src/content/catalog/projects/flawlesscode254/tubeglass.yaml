@@ -1,0 +1,23 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: tubeglass
+name: TubeGlass
+authors:
+- flawlesscode254
+repository: https://github.com/flawlesscode254/TubeGlass
+originals:
+- youtube
+- youtube-music
+category: creative
+languages:
+- Rust
+platforms:
+- Linux
+- Windows
+- macOS
+status: experimental
+compatibility: partial
+license: MIT
+summary: Desktop YouTube, YouTube Music and podcast client with local subscriptions, downloads and clip exports.
+description: A Rust desktop client providing alternative YouTube and YouTube Music viewing and listening workflows, alongside podcasts. Offers local channel subscriptions, account-free browsing, offline downloads, synchronized lyrics, a mini player and MP4/GIF clip exports. Uses egui for the interface and FFmpeg for media playback.
+limitations: A client for existing media services, not a reimplementation of their hosting backends. Playback and extraction depend on upstream availability and behavior; full official-client feature and account compatibility is not claimed.
+docs: https://github.com/flawlesscode254/TubeGlass#readme

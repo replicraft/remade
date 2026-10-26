@@ -1,0 +1,17 @@
+# Scope and limitations: upstream README and docs/coming-from-rhino.md.
+slug: serpentine3d
+name: Serpentine3D
+authors: [chisomobanzi]
+repository: https://github.com/chisomobanzi/Serpentine3D
+website: https://chisomobanzi.github.io/Serpentine3D/
+originals: [rhino3d]
+category: engineering
+languages: [Python]
+platforms: [Linux, Windows, macOS]
+status: experimental
+compatibility: partial
+summary: Rhino-style NURBS modeling with familiar commands, 3DM exchange, drawing sheets, Python scripting and MCP automation.
+description: A Python and Qt modeller targeting Rhino-style NURBS and BREP workflows on the OpenCASCADE kernel. Provides familiar commands and aliases, object snaps, layers, surface and solid operations, drawing sheets and PDF output. Documents Rhino .3dm import/export and exchange with STEP, DXF and mesh formats. Includes Python scripting, headless batch processing and MCP integration.
+license: MIT
+docs: https://chisomobanzi.github.io/Serpentine3D/docs/
+limitations: Not a full Rhino replacement. Grasshopper, SubD, production rendering and Rhino plugin compatibility are not implemented; history covers loft, extrude and revolve only. File interchange is maintainer-reported. GUI use requires OpenGL 3.3; documented macOS packages require Apple Silicon and macOS 14 or newer.

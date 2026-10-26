@@ -40,6 +40,7 @@ export function clearLoginHint(): void {
 export async function resolveAccount(
 	signal?: AbortSignal,
 ): Promise<Account | null> {
+	if (import.meta.env.DEV) return null;
 	const response = await fetch(`${apiUrl}/auth/me`, {
 		credentials: "include",
 		cache: "no-store",
@@ -57,6 +58,10 @@ export async function resolveAccount(
 }
 
 export async function logout(): Promise<void> {
+	if (import.meta.env.DEV) {
+		clearLoginHint();
+		return;
+	}
 	const response = await fetch(`${apiUrl}/auth/logout`, {
 		method: "POST",
 		credentials: "include",

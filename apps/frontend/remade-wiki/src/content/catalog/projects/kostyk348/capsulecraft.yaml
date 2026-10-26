@@ -1,0 +1,20 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: capsulecraft
+name: CapsuleCraft
+repository: https://github.com/kostyk348/CapsuleCraft
+originals:
+- obsidian
+category: productivity
+languages:
+- Rust
+- TypeScript
+platforms:
+- Linux
+- Web
+status: experimental
+compatibility: partial
+license: MIT
+summary: Obsidian-style local knowledge storage with linked notes, search and planning, using portable .eml files.
+description: A local knowledge-storage alternative to Obsidian, limited to collecting, organizing and finding information. Stores notes, tasks and datasets as RFC 5322 .eml files rather than Markdown vaults, with linked pages, backlinks, search and planning tools. Offers a Rust/egui desktop shell and a browser application.
+limitations: Covers the knowledge-storage workflow, not full Obsidian compatibility. Does not claim Obsidian Markdown-vault or plugin-API compatibility. Native-shell code execution and audio playback remain unavailable; macOS native CI builds are planned.
+docs: https://github.com/kostyk348/CapsuleCraft#readme

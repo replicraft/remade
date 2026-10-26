@@ -14,3 +14,4 @@ license: AGPL-3.0; component-specific licenses
 website: https://stoat.chat/
 docs: https://developers.stoat.chat/
 limitations: Uses its own service and API rather than Discord's; Discord account, bot and client compatibility is not established. The linked repository contains the backend; web, desktop, Android and iOS clients live in separate repositories. Individual backend crates may use different licenses.
+summary: "A Discord alternative with servers, channels, voice chat, file sharing, roles and moderation."

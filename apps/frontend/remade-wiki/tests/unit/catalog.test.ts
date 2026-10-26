@@ -161,6 +161,7 @@ describe("catalog loading and validation", () => {
 			input.requests = [
 				{
 					original: catalog.projects[0].originals[0],
+					summary: "A short overview of the requested workflows.",
 					reason: "A compatible implementation would be useful.",
 				},
 			];
@@ -246,6 +247,15 @@ describe("language badges", () => {
 			["JavaScript", "Rust"],
 			["JavaScript", "Rust"],
 		],
+		[
+			["C++", "Rust", "Python"],
+			["C++", "Rust"],
+		],
+		[
+			["JavaScript", "TypeScript", "Rust", "Python"],
+			["TypeScript", "Rust"],
+		],
+		[[], []],
 		[["JS", "TS"], ["TS"]],
 		[["typescript", "javascript"], ["typescript"]],
 	])(

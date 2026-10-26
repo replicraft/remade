@@ -128,7 +128,7 @@ describe("request facets and dates", () => {
 	});
 
 	it.each([
-		{ original: "logic-pro", vendor: "apple" },
+		{ original: "garageband", vendor: "apple" },
 		{ original: "adobe-character-animator", vendor: "adobe" },
 	])(
 		"derives vendors from paths without changing identity: %j",
@@ -236,4 +236,12 @@ describe("request sorting", () => {
 			filterRequest(description, { ...defaultRequestFilters, q: "brush" }, now),
 		).toBe(true);
 	});
+});
+
+it("searches card summaries as well as full request reasons", () => {
+	const entry = { ...request, summary: "Specialist engraving workflows" };
+
+	expect(
+		filterRequest(entry, { ...defaultRequestFilters, q: "engraving" }, now),
+	).toBe(true);
 });

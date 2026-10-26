@@ -2,3 +2,4 @@
 original: vray
 reason: Reproduce V-Ray Next's photorealistic image and animation rendering, physically based materials, lighting, global illumination, shadows, reflections and global illumination for architecture, products and VFX. Aim for compatible scene workflows and integrations with 3ds Max, AutoCAD, Blender, Maya and Cinema 4D, with configurable rendering, modern hardware acceleration and AI-assisted denoising.
 suggested_names: [RayCraft]
+summary: "Wanted: V-Ray-style rendering with physically based materials, lighting, global illumination and shadows."

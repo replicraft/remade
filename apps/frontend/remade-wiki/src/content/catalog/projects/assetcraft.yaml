@@ -20,3 +20,4 @@ docs: https://github.com/cmspeedau/AssetCraft#readme
 limitations: Pre-alpha; no desktop interface yet, and the full browser/download/export surface remains
   planned. Current scope is the CLI foundation. Fab account access and asset use depend on the service
   and each asset license; software licensing does not grant rights to downloaded content.
+summary: "Search Fab assets from a Rust CLI, with a Quixel Bridge-style desktop asset manager planned."

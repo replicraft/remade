@@ -41,3 +41,28 @@ it("keeps limitations and request reasons capped at 400 characters", () => {
 	);
 	expect(v.safeParse(requestSchema.entries.reason, value).success).toBe(false);
 });
+
+describe.each([
+	["project", projectSchema.entries.summary],
+	["tool", toolSchema.entries.summary],
+	["request", requestSchema.entries.summary],
+] as const)("%s card summaries", (_kind, schema) => {
+	it.each([
+		["x", true],
+		["x".repeat(144), true],
+		["x".repeat(145), false],
+		["🎨".repeat(144), true],
+		["🎨".repeat(145), false],
+		["", false],
+		["   ", false],
+		[" leading", false],
+		["trailing ", false],
+		["two\nlines", false],
+		["two\rlines", false],
+		["<b>HTML</b>", false],
+		[undefined, false],
+		[null, false],
+	] as const)("validates summary %j", (value, valid) => {
+		expect(v.safeParse(schema, value).success).toBe(valid);
+	});
+});

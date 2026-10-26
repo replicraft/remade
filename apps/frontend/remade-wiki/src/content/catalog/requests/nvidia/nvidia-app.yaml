@@ -1,3 +1,4 @@
 original: nvidia-app
 reason: Graphics and game profiles, driver-management workflows and capture controls using documented
   interfaces, without reimplementing the graphics driver itself.
+summary: "Wanted: Graphics and game profiles, driver-management workflows and capture controls using documented interfaces."

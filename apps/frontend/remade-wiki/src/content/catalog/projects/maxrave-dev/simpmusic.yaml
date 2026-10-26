@@ -1,0 +1,24 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: simpmusic
+name: SimpMusic
+authors:
+- maxrave-dev
+repository: https://github.com/maxrave-dev/SimpMusic
+website: https://simpmusic.org/
+originals:
+- youtube-music
+category: creative
+languages:
+- Kotlin
+platforms:
+- Android
+- Windows
+- macOS
+- Linux
+status: beta
+compatibility: partial
+license: GPL-3.0-only
+summary: YouTube Music client with playlists, offline listening, synchronized lyrics and Android and desktop apps.
+description: An independently developed YouTube Music client for Android and desktop, built with Kotlin and Compose Multiplatform. Provides music discovery and playback, playlists, offline downloads, synchronized lyrics and optional service integrations. Adds Spotify-inspired interface features while using YouTube Music as its media backend.
+limitations: Beta software using upstream YouTube services, not a replacement for their backend. Service changes may affect playback or account features. The README notes desktop Linux stability issues and x64 builds for Windows/Linux ARM64 users.
+docs: https://github.com/maxrave-dev/SimpMusic#readme

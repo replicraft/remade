@@ -14,6 +14,17 @@ const text = (min = 1, max = 400) =>
 		),
 	);
 const slug = v.pipe(v.string(), v.regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/));
+const summary = v.pipe(
+	v.string(),
+	v.check(
+		(value) =>
+			value === value.trim() &&
+			value.length > 0 &&
+			Array.from(value).length <= 144 &&
+			!/[<>\r\n]/.test(value),
+		"Expected a single-line plain-text summary of 1–144 characters.",
+	),
+);
 
 export function publicHttps(value: string): boolean {
 	try {
@@ -135,6 +146,7 @@ export const projectSchema = v.strictObject({
 	authors,
 	status: v.picklist(statuses),
 	compatibility: v.picklist(compatibility),
+	summary,
 	description: text(20, 500),
 	license: text(2, 80),
 	docs: v.optional(https),
@@ -169,6 +181,7 @@ export const toolSchema = v.strictObject({
 	name: text(2, 100),
 	repository,
 	url: https,
+	summary,
 	description: projectSchema.entries.description,
 	authors,
 	platforms,
@@ -178,6 +191,7 @@ export const toolSchema = v.strictObject({
 export const requestSchema = v.strictObject({
 	...discordFields,
 	original: slug,
+	summary,
 	reason: text(20, 400),
 	suggested_names: v.optional(
 		v.pipe(

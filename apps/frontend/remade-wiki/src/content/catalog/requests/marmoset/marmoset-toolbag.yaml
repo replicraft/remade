@@ -1,3 +1,4 @@
 original: marmoset-toolbag
 reason: Reproduce Toolbag's integrated 3D asset baking, texturing and rendering workflows, including high-to-low mesh projection with editable cages, normal and ambient-occlusion map baking, layered material editing, lighting and interactive render previews, with compatible mesh and texture interchange.
 suggested_names: [BakeCraft]
+summary: "Wanted: Integrated 3D asset baking, texturing and rendering with Toolbag-style workflows."

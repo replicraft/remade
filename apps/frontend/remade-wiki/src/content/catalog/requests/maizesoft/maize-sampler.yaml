@@ -1,3 +1,4 @@
 original: maize-sampler
 reason: Reproduce Maize Sampler's sample-based instrument authoring workflow, including sample mapping, MIDI-controlled groups, round-robin triggering, loops, envelopes and effects, a visual player-interface editor, EXS24 import and VST3/Audio Unit instrument export.
 suggested_names: [InstrumentCraft]
+summary: "Wanted: Author sample-based instruments with Maize Sampler-style controls."

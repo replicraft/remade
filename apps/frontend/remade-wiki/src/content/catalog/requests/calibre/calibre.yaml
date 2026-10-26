@@ -4,3 +4,4 @@
 original: calibre
 reason: Calibre is already open source. This requests an independently authored, unified Calibre/Calibre-Web-style manager with compatible library import, metadata editing, conversion, reading, OPDS and e-reader transfers. Combine desktop and multi-user web access around one library, with offline use and a single-container Docker deployment.
 suggested_names: [BookCraft]
+summary: "Calibre is already open source. Wanted: a unified desktop/web library with metadata editing, conversion, reading and e-reader transfers."

@@ -1,3 +1,4 @@
 original: exocad-dentalcad
 reason: Reproduce exocad DentalCAD's dental restoration design workflows, including scan-based crowns and bridges, implant abutments, dentures and bite splints, with compatible model interchange for scanners, milling machines and 3D printers.
 suggested_names: [DentalCraft]
+summary: "Wanted: Dental restoration design with Exocad-style CAD workflows."

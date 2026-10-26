@@ -21,3 +21,4 @@ docs: https://github.com/UCS-Care-Group/metriccraft#readme
 limitations: Pre-alpha; build from source. Does not open PBIX or PBIP files. File sources, DAX/M
   language coverage and visual types are limited; Power BI Service publishing and sharing are absent.
   Parity results are maintainer-reported for the cases in this repository.
+summary: "Build Power BI-style reports with data imports, query editing, table relationships and DAX measures."

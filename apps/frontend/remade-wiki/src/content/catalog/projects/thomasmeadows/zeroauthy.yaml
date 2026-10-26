@@ -13,3 +13,4 @@ description: An independently developed identity server targeting Auth0's Authen
 license: Apache-2.0
 docs: https://github.com/occupysaas/zeroauthy/blob/main/docs/compat/matrix.md
 limitations: Management API coverage currently focuses on applications; remaining resources, social/enterprise connections, MFA, passwordless login, Actions and organizations remain incomplete. Some SDK cases differ or have only upstream test coverage. OpenID certification is pending; compatibility and platform support are maintainer-reported.
+summary: "An Auth0-style identity server targeting existing SDKs, authorization flows and token-based authentication."

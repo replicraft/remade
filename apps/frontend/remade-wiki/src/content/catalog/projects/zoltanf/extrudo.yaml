@@ -15,3 +15,4 @@ license: GPL-3.0-or-later
 website: https://extrudo.org
 docs: https://github.com/zoltanf/extrudo#readme
 limitations: Pre-1.0; upstream notes rough edges. Uses its own document format; Fusion F3D import is partial and maintainer-reported. Full Fusion file fidelity, extensions and behavioral compatibility are not claimed. CAM, FEA and real-time cloud collaboration are outside the documented scope. Desktop installers are unsigned or ad-hoc signed; macOS is not notarized.
+summary: "Parametric CAD for 3D printing, in your browser or on your Mac, Windows or Linux computer."

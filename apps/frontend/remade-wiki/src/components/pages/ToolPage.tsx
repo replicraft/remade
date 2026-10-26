@@ -11,6 +11,7 @@ import { toolTargets } from "../../lib/suites";
 import BadgeShareSection from "../badges/BadgeShareSection";
 import Authors from "../catalog/Authors";
 import EntryCard from "../catalog/EntryCard";
+import ListingDescription from "../catalog/ListingDescription";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
 import ToolTargets from "../catalog/ToolTargets";
@@ -35,7 +36,14 @@ export default function ToolPage({ tool, catalog, metadata, children }: Props) {
 
 				<h1 data-pagefind-meta="title">{tool.name}</h1>
 
-				<p>{tool.description}</p>
+				<div className="mb-6 [&>div]:pt-0">
+					<Authors authors={tool.authors} inline />
+				</div>
+
+				<ListingDescription
+					description={tool.description}
+					summary={tool.summary}
+				/>
 
 				<div className="flex flex-wrap items-center gap-6">
 					<a
@@ -77,8 +85,6 @@ export default function ToolPage({ tool, catalog, metadata, children }: Props) {
 
 				<div className="mt-6">
 					<RepositoryMirrors mirrors={tool.mirrors} />
-
-					<Authors authors={tool.authors} />
 				</div>
 			</div>
 

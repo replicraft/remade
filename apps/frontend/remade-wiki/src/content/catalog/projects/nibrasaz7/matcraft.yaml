@@ -24,3 +24,4 @@ limitations: >-
   real-world pre-2022 .m files across 8 domains, the maintainer reports ~87%
   parse cleanly; parsing does not establish execution compatibility.
   Methodology and ranked gaps are in docs/wild-corpus.md.
+summary: "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices and mathematical functions."

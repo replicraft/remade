@@ -177,7 +177,7 @@ describe("suite browsing", () => {
 
 			await expect
 				.element(
-					screen.getByRole("link", { name: `${project.name} ↗`, exact: true }),
+					screen.getByRole("link", { name: `${project.name}`, exact: true }),
 				)
 				.toHaveAttribute("href", `/projects/${slug}/`);
 		}

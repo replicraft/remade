@@ -1,3 +1,4 @@
 original: macrium-reflect
 reason: Reproduce Macrium Reflect's familiar disk imaging, cloning, full/incremental/differential backup, scheduling and recovery workflows, including bootable rescue media, image mounting and file-level restore. Aim for compatible backup formats, integrity verification and reliable restoration of bootable systems.
 suggested_names: [BackupCraft]
+summary: "Wanted: Macrium Reflect's disk imaging, cloning, full/incremental/differential backup, scheduling and recovery workflows."

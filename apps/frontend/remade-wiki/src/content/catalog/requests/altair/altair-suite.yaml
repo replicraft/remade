@@ -1,3 +1,4 @@
 original: altair-suite
 reason: Reproduce the closed-source Altair suite's familiar workflows across HyperWorks design, meshing, structural, fluid and electromagnetic simulation, optimization and visualization; RapidMiner data preparation, analytics and AI; and HPCWorks job scheduling and cloud computing, with compatible models, results and automation. Could be several applications sharing engines and data formats.
 suggested_names: [SimCraft]
+summary: "Wanted: Altair-style engineering tools for design, meshing and structural, fluid and electromagnetic simulation."

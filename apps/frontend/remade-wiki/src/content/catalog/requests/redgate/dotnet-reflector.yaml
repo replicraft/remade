@@ -1,3 +1,4 @@
 original: dotnet-reflector
 reason: Assembly browsing, C# reconstruction, dependency analysis and debugging workflows with reusable
   project export and command-line access.
+summary: "Wanted: Browse .NET assemblies and reconstruct readable C# code."

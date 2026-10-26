@@ -1,3 +1,4 @@
 original: maxon-autograph
 reason: Reproduce Autograph's layer-based motion design and compositing workflows, including 2D/3D animation, text and vector graphics, keyframes, cloning, tracking, rotoscoping and effects. Support data-driven graphics, responsive compositions and rendering multiple output formats from one project.
 suggested_names: [ComposeCraft]
+summary: "Wanted: Autograph-style layered motion design and compositing."

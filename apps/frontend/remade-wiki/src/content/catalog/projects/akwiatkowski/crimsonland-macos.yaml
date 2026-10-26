@@ -1,0 +1,19 @@
+slug: crimsonland-macos
+name: Crimsonland macOS Port
+authors:
+  - akwiatkowski
+repository: https://github.com/akwiatkowski/crimsonland
+originals:
+  - crimsonland
+category: games
+languages:
+  - Lua
+  - Python
+platforms:
+  - macOS
+status: beta
+compatibility: partial
+description: Unofficial native macOS runtime for Crimsonland (2014 remaster) built on LÖVE. It reimplements the engine's NX_* Lua API, PAK V11 archives, .mft fonts and particle scripts so the game's own Lua scripts and XML data run unmodified. Quest, survival and endless modes, perks, saves and achievements are playable.
+license: GPL-3.0-or-later with independent-module exception
+limitations: Requires assets extracted from a user-owned copy of the 2014 GOG release; no game data is distributed. Playable end to end but not finished, and some behaviour still differs from the original.
+summary: Native macOS runtime for Crimsonland, using the original scripts and assets from a user-owned copy.

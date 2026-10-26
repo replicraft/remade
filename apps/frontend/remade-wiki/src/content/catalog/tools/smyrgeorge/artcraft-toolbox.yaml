@@ -11,3 +11,4 @@ description: A native suite manager that installs, updates, launches and rolls b
 docs: https://github.com/smyrgeorge/artcraft-toolbox#readme
 limitations: Pre-alpha; toolbox releases are not signed. Available app packages vary by platform, and installation depends on upstream release assets and their naming or feed metadata. Platform package-manager installations use their respective update mechanisms.
 suites: [artcraft]
+summary: "Install, update, launch and roll back ArtCraft apps with per-app channels and version management."

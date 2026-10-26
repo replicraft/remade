@@ -13,3 +13,4 @@ license: MIT
 website: https://motionity.app/
 docs: https://github.com/alyssaxuu/motionity#readme
 limitations: Focuses on its own browser-based animation workflow. After Effects project and plug-in compatibility and Canva design import are not documented. Asset search uses an external Pixabay integration. Compatibility and feature parity are not independently verified.
+summary: "Create motion graphics in your browser with keyframes, masks, filters, video trimming and audio."

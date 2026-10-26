@@ -13,3 +13,4 @@ description: A broader Dorico, Sibelius and Finale alternative combining notatio
 license: AGPL-3.0-only
 docs: https://github.com/GitHuhl/Corinzia/blob/main/docs/ARCHITECTURE.md
 limitations: Pre-alpha; native Dorico/Sibelius/Finale compatibility is undocumented. Bus routing, plug-in delay compensation, automation playback and saving plug-in settings are unfinished. README sections conflict on project saving. Linux audio needs PipeWire.
+summary: "Combine score notation and DAW workflows with parts, lyrics, chords and CLAP/VST3 instruments."

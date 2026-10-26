@@ -2,3 +2,4 @@
 original: asprunner-net
 reason: Reproduce ASPRunner.NET's visual database-driven ASP.NET application builder, including forms, search, reports, charts, dashboards, authentication and permissions. Support page customization, custom business logic and self-hosted deployment of generated applications.
 suggested_names: [WebAppCraft]
+summary: "Wanted: Visually build database-driven ASP.NET applications."

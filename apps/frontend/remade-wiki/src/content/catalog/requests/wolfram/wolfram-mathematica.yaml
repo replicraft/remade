@@ -2,3 +2,4 @@ original: wolfram-mathematica
 reason: Reproduce Mathematica's notebook-based technical computing, including symbolic algebra, numerical computation, visualization and Wolfram Language behavior, with compatible notebook and expression handling.
 suggested_names:
 - SymbolCraft
+summary: "Wanted: Notebook-based symbolic and numerical computing with Mathematica-style workflows."

@@ -1,4 +1,0 @@
-# Requested in https://github.com/replicraft/remade/issues/51.
-original: obsidian
-reason: Reproduce Obsidian's local Markdown vaults, linked notes, backlinks, tags, graph navigation and search, with compatible plugin APIs so existing community plugins can extend an independently implemented core. The requester favors Rust and prioritizes private, offline, cross-platform workflows and preservation of existing vault data.
-suggested_names: [NoteCraft]

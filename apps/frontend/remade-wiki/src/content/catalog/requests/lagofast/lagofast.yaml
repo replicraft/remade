@@ -1,3 +1,4 @@
 original: lagofast
 reason: Game-network route optimization, ping and packet-loss monitoring and per-game connection
   profiles without implying access to the original routing network.
+summary: "Wanted: Game-network route optimization and connection diagnostics."

@@ -11,3 +11,4 @@ description: Reimplements Windows desktop-shell workflows with a C# core, Win32 
 license: Unlicensed
 docs: https://github.com/tecno14/shelled#readme
 limitations: Experimental Windows 11 shell replacement, requiring .NET 8 and WebView2. Does not replace the Windows operating system or establish complete Explorer file-manager, namespace-extension or shell API compatibility. Replacing the login shell may require restoring Explorer manually. No project-level license grant is documented.
+summary: "A customizable Windows desktop shell with a taskbar, launcher, workspaces and an HTML/CSS interface."

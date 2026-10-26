@@ -1,3 +1,4 @@
 original: autocad-map-3d
 reason: "Reproduce AutoCAD Map 3D workflows combining CAD drafting with GIS data, coordinate systems, spatial queries, thematic maps and connected geospatial sources. Could extend CADCraft or GISCraft with mapping tools rather than require a separate application."
 suggested_names: [MapCraft]
+summary: "Wanted: CAD drafting combined with GIS data, coordinate systems and spatial queries."

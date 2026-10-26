@@ -11,3 +11,4 @@ description: Reimplements ShadowPlay-style instant replay using Windows screen c
 license: Unlicensed
 docs: https://github.com/By183/ClipRecorder#readme
 limitations: Requires Windows 10 20H1 or later and a compatible hardware H.264 encoder. Targets replay capture, with no claim of complete ShadowPlay overlay, automatic highlights, HDR or AV1 parity. Performance and recording behavior are maintainer-reported. No application-wide license grant is documented; bundled dependencies have separate licenses.
+summary: "Save recent Windows screen recordings as MP4 with hardware encoding, system audio and a hotkey."

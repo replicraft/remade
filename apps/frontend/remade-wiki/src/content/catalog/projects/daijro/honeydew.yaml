@@ -14,3 +14,4 @@ license: GPL-3.0-or-later
 website: https://playground.daijro.dev/honeydew/
 docs: https://github.com/daijro/honeydew#readme
 limitations: Full FL Studio Mobile parity is not independently verified; native Android and iOS builds are not documented. Original samples and presets are not bundled; desktop users can import them from their own licensed copy. The browser version cannot import original content, and some shortcuts remain controlled by the browser.
+summary: "FL Studio Mobile-style music production with a piano roll, drum editor, mixer, instruments and automation."

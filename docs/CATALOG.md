@@ -45,7 +45,7 @@ Organize attributed files as `projects/<github-user>/<slug>.yaml` and `tools/<gi
 
 `entries_by_author` derives groups directly from validated project and tool YAML, sorts them deterministically, and keeps separate project/tool lists. Grouping includes every attributed indexed entry independently of Featured. The static `/authors/[github-user]` route uses the handle directly: ArtCraft entries with `authors: [storytold]` appear at `/authors/storytold`. This does not automatically import or publish other repositories. When a credited author changes, move its entry into the new author folder and preserve the old author route through the Astro redirect configuration and `public/_redirects`. SolidCraft’s former `/authors/bherbruck/` route redirects to `/authors/tangency-labs/`.
 
-Entry cards, detail pages and featured cards show a white **Author:** label for one author or **Authors:** for multiple authors, followed on the next line by lime GitHub handles linked to their author routes. Separate multiple handles with middle dots and allow the links to wrap. Omit the entire author block when no author is recorded. Author pages include every explicitly attributed entry, with separate reimplementation and supporting-tool sections.
+Entry cards, detail pages and featured cards show a white **Author:** label for one author or **Authors:** for multiple authors, followed by lime GitHub handles linked to their author routes. Cards keep the label and handles inline where space permits; detail pages place handles on the next line. Allow handles to wrap with spacing between them and no separator dots. Omit the entire author block when no author is recorded. Author pages include every explicitly attributed entry, with separate reimplementation and supporting-tool sections.
 
 ## Project record
 
@@ -61,6 +61,7 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows]
 status: experimental
 compatibility: partial
+summary: A concise explanation of the implementation's main purpose.
 description: Independent implementation targeting the original program's behavior.
 license: MIT
 # docs: https://example.org/docs       # optional
@@ -82,6 +83,7 @@ license: MIT
 | `platforms` | No | Optional list of platforms |
 | `status` | Yes | `planned`, `experimental`, `alpha`, `beta`, `stable`, `archived` (self-reported except GitHub archive flag) |
 | `compatibility` | Yes | `targeting`, `partial`, `high`, `claimed-complete` (self-reported) |
+| `summary` | Yes | Single-line plain text, 1–144 Unicode characters, shown in full on project and tool cards. |
 | `description` | Yes | 20–500 plain-text characters, factual, no user-supplied HTML |
 | `license` | Yes | SPDX-style identifier, e.g. `LicenseRef-custom` for review, or `Unlicensed` for a maintainer-approved project with no license grant. `Unlicensed` is not the SPDX `Unlicense` dedication. Follow the license-source precedence in `POLICY.md`. |
 | `docs` | No | HTTPS URL |
@@ -119,12 +121,14 @@ The remaining groups cover operating systems, games, developer tools, protocols,
 
 ```yaml
 original: example-software
+summary: "Wanted: compatible editing and file workflows."
 reason: A faithful and independently developed alternative implementation would be useful for study and compatibility.
 suggested_names: [ExampleCraft] # optional
 ```
 
 - Filename must match its `original` slug (which must exist in `apps/frontend/remade-wiki/src/content/catalog/originals.yaml`).
 - For entries or details sourced from a GitHub issue, add a YAML comment above the record linking to the source, such as `# Requested in https://github.com/replicraft/remade/issues/14.` Use `# Additional request details in ...` when an issue expands an existing request. Apply this convention to project and tool suggestions too; comments are contributor references, not schema fields or public UI content.
+- `summary` is required single-line plain text, 1–144 Unicode characters, shown on request cards. Describe wanted work without implying an implementation exists.
 - `reason` is plain text, 20–400 characters, factual and non-promotional.
 - For an explicitly approved exception to the closed-source-original scope in `POLICY.md`, the first YAML comment states that the original is already open source, and the next identifies the approved scope exception. Start the public `reason` with the same open-source disclosure so the distinction remains visible on the site, where YAML comments are not displayed. Keep issue-source comments below these notices. This documents maintainer approval; it does not grant approval automatically.
 - Optional `suggested_names` is a nonempty list of plain-text names, each 2–100 characters. Names must be unique after case folding and whitespace normalization. These are naming ideas, not existing implementations or reserved names.
@@ -144,16 +148,16 @@ Project and Project Request records accept optional `discord_server` and `discor
 - `discord_server`: a canonical HTTPS invite using `https://discord.gg/<code>` or `https://discord.com/invite/<code>`, or a reviewed public HTTPS `/discord` redirect on the project’s own website (for example, `https://solidcraft.io/discord`). A trailing slash is allowed; query strings and fragments are rejected. Review the redirect destination before accepting a project-owned invite.
 - `discord_thread`: a canonical `https://discord.com/channels/<server-id>/<thread-id>` link, optionally followed by `/<message-id>`; IDs must be numeric. A trailing slash is accepted. Query strings, fragments, alternate hosts, credentials and non-HTTPS URLs are rejected.
 
-These fields link to discussion, without implying affiliation or endorsement. Review that the destination is appropriate for the project or request. Discord may require membership or sign-in; invitations may expire. Links appear with the Discord logo and explicit server/thread labels on project cards and detail pages, request cards and the software page’s request section. They open in a new tab, use no embeds or Discord visitor API calls, and are included in the corresponding public JSON exports and catalog link checks. Records without either field show no Discord controls. Supporting tools and suites do not accept these fields.
+These fields link to discussion, without implying affiliation or endorsement. Review that the destination is appropriate for the project or request. Discord may require membership or sign-in; invitations may expire. Links appear with the Discord logo and explicit server/thread labels on project detail pages and the software page’s request section. Cards link through to those pages rather than displaying Discord links directly. They open in a new tab, use no embeds or Discord visitor API calls, and are included in catalog link checks. To reduce bulk harvesting, both Discord fields are omitted from the public JSON exports; they remain visible on website pages. Records without either field show no Discord controls. Supporting tools and suites do not accept these fields.
 
 ## Public machine-readable exports
 
-- `https://remade.wiki/data/catalog.json`: `{ schemaVersion, site, originals, projects, tools, suites, featured }`. Originals include `slug`, `name`, reference `url`, `category`, optional `aliases` and absolute `pageUrl`. Catalog exports use `schemaVersion: 1`. Projects expose the required `originals` array and the other documented public project fields plus optional Git-derived `addedAt` and absolute `pageUrl`. Tools expose their public fields, optional `addedAt` and absolute `pageUrl`. `featured` preserves the curated list of entry slugs. The additive `suites` array exposes `slug`, `name`, `description`, member `projects` and an absolute `pageUrl`. Tools include optional `suites` references; their exported `projects` always expands and deduplicates all suite members alongside explicit projects, preserving compatibility for existing consumers. Cached GitHub statistics are not part of this contract.
-- `https://remade.wiki/data/requests.json`: `{ schemaVersion, site, requests }`. Request exports retain `schemaVersion: 1`. Each open request includes `original`, `reason`, optional `suggested_names`, derived `vendor`, optional `addedAt` and a `software` object containing the original's public fields and absolute software `pageUrl`.
+- `https://remade.wiki/data/catalog.json`: `{ schemaVersion, site, originals, projects, tools, suites, featured }`. Originals include `slug`, `name`, reference `url`, `category`, optional `aliases` and absolute `pageUrl`. Catalog exports use `schemaVersion: 2`. Projects expose their required `summary` and `originals` array and the other documented public project fields plus optional Git-derived `addedAt` and absolute `pageUrl`. Tools expose their required `summary` and public fields, optional `addedAt` and absolute `pageUrl`. `featured` preserves the curated list of entry slugs. The additive `suites` array exposes `slug`, `name`, `description`, member `projects` and an absolute `pageUrl`. Tools include optional `suites` references; their exported `projects` always expands and deduplicates all suite members alongside explicit projects, preserving compatibility for existing consumers. Cached GitHub statistics are not part of this contract.
+- `https://remade.wiki/data/requests.json`: `{ schemaVersion, site, requests }`. Request exports use `schemaVersion: 2`. Each open request includes `original`, `summary`, `reason`, optional `suggested_names`, derived `vendor`, optional `addedAt` and a `software` object containing the original's public fields and absolute software `pageUrl`.
 
-Both files use ISO timestamps when addition dates are available and slug order independent of UI sorting. Optional fields are omitted when unavailable. Fields are explicitly allowlisted; source comments and internal editorial fields are not exported. Generate these files through Astro builds, not by editing or committing generated JSON. Anyone can read them cross-origin; see [Architecture](ARCHITECTURE.md#public-json-exports) for caching and serving headers.
+Both files use ISO timestamps when addition dates are available and slug order independent of UI sorting. Optional fields are omitted when unavailable. Fields are explicitly allowlisted; Discord server and thread links, source comments and internal editorial fields are not exported. Generate these files through Astro builds, not by editing or committing generated JSON. Anyone can read them cross-origin; see [Architecture](ARCHITECTURE.md#public-json-exports) for caching and serving headers.
 
-Only language badges hide JavaScript when TypeScript is also recorded, including the JS/TS abbreviations. Detail lists, comparisons, catalog data and public exports retain both languages; search and language filters still match both. Tools display language badges alongside their Tool label. Show a maturity badge only when `status` is recorded; omit the badge when status is undocumented.
+Language badges hide JavaScript when TypeScript is also recorded, including the JS/TS abbreviations, then show at most the first two remaining languages in recorded order. Detail lists, comparisons, catalog data and public exports retain both languages; search and language filters still match both. Tools display language badges alongside their Tool label. Show a maturity badge only when `status` is recorded; omit the badge when status is undocumented.
 
 ## Supporting tool record
 
@@ -171,7 +175,7 @@ description: A browser launcher that adds access to the indexed implementation.
 projects: [example-implementation]
 ```
 
-`slug`, `name`, `languages`, `repository`, `url` and `description` are required, along with at least one of `projects` or `suites`; unknown fields are rejected. `slug` must match the filename and share a unique namespace with project slugs. `name` is 2–100 plain-text characters and `description` is 20–500. `repository` follows the project repository URL rules and must be unique across projects and tools; `url` must be public HTTPS. When supplied, `projects` is a nonempty, duplicate-free list of existing project slugs; `suites` follows the suite reference rules below. This relationship identifies what a tool extends, without inventing an original or compatibility claim. A repository link does not imply an open-source license; tool licensing must be reviewed from its sources.
+`slug`, `name`, `languages`, `repository`, `url`, `summary` and `description` are required, along with at least one of `projects` or `suites`; unknown fields are rejected. `slug` must match the filename and share a unique namespace with project slugs. `name` is 2–100 plain-text characters and `description` is 20–500. `repository` follows the project repository URL rules and must be unique across projects and tools; `url` must be public HTTPS. When supplied, `projects` is a nonempty, duplicate-free list of existing project slugs; `suites` follows the suite reference rules below. This relationship identifies what a tool extends, without inventing an original or compatibility claim. A repository link does not imply an open-source license; tool licensing must be reviewed from its sources.
 
 Tools require `languages` (a nonempty list of 1–40 character names). They also accept optional `mirrors` (a nonempty list of unique canonical repository URLs, following the project mirror rules), `status` (the project maturity enum, maintainer-reported), `docs` and `website` (public HTTPS URLs), and `limitations` (2–400 plain-text characters). Tools inherit categories from the indexed projects they support, using every distinct category when they extend multiple projects. These derived categories appear on detail pages and match Explore category filters; the Supporting tools filter remains available. Tool card badges follow this order: Tool, documented Status, Language, and Stars when metadata is available. Categories are not card badges. No separate tool category field is needed.
 
@@ -231,3 +235,9 @@ Every featured slug must point to a valid project or supporting tool. Preserve m
 Values in the example are illustrative; a real snapshot only contains successfully fetched metadata. Cache fetch time is **not** the project's last push time. Failure to fetch one repository preserves its previous record.
 
 Repository statistics are collected for GitHub-hosted repositories only. Non-GitHub projects may be listed and will have no GitHub stars or forks. Do not fabricate missing metadata.
+
+### Writing card summaries
+
+Every project, supporting tool and Project Request requires a `summary` of 1–144 Unicode characters. Use one plain-text line without leading or trailing whitespace or HTML. Write a complete, concise statement of what the software does; favor familiar words and its main useful behavior. A repository's GitHub About text may be reused when accurate, neutral and within the limit. Edit marketing claims, unverified compatibility claims and vague taglines instead of copying them. Keep planned work clearly planned and request summaries clearly wanted. Retain policy-required disclosures, such as an already-open-source original. Longer feature details and limitations belong in `description`, `reason` and `limitations`.
+
+Cards display summaries in full. Detail pages show Summary and Description headings in a divided panel, with the summary first and the longer description or request reason below. Search indexes both. JSON exports add `summary` without removing existing fields or changing the schema version. Originals and suites are reference/group records, not card entries, and do not require summaries.

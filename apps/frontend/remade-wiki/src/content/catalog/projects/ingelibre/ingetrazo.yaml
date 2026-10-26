@@ -13,3 +13,4 @@ description: IngeTrazo reproduces SketchUp-style push/pull modeling with drawing
 license: GPL-3.0-or-later
 docs: https://ingetrazo-docs.pages.dev/
 limitations: Pre-1.0 software; document and plugin formats may change. SketchUp import compatibility is maintainer-reported; SKP export is not documented. macOS builds target Apple Silicon, and DWG import is currently Linux-only.
+summary: "SketchUp-style architectural modeling with push/pull tools, snapping, components and SKP import."

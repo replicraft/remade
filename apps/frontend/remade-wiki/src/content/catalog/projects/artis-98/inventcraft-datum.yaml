@@ -1,0 +1,20 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: inventcraft-datum
+name: InventCraft
+repository: https://github.com/Artis-98/inventcraft
+website: https://datum.iiteg.com
+originals:
+- autodesk-inventor
+category: engineering
+languages:
+- Python
+platforms:
+- Windows
+- Linux
+status: experimental
+compatibility: partial
+license: MIT
+summary: Inventor-style CAD with constrained sketches, history-based solids, assemblies, drawings and 2D CAM.
+description: InventCraft, formerly DATUM, is a parametric CAD application with an Autodesk Inventor-style interface. Built in Python on OpenCASCADE, it offers constrained sketching, history-based solid modeling, assemblies, drawings with hidden-line removal and 2D CAM. Existing DATUM documents and settings are retained across the project rename.
+limitations: Targets Inventor-style workflows rather than claiming complete compatibility. Native Inventor project round trips are not established. The README identifies drawing gaps including break/break-out views, revision tables and surface-finish annotations.
+docs: https://github.com/Artis-98/inventcraft#readme

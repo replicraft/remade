@@ -13,3 +13,4 @@ description: Kadar independently implements Picsart- and InShot-style mobile edi
 license: GPL-3.0-or-later
 docs: https://github.com/n-delic/kadar#readme
 limitations: Early alpha and a broader alternative, not a full clone. No Picsart or InShot project-file compatibility, generative effects, templates, sequential clip editing or transitions. Android only; background removal depends on Google Play services and proprietary ML Kit, covered by a documented GPL linking permission.
+summary: "Edit photos and videos offline on Android with stickers, captions, background removal, trimming and music."

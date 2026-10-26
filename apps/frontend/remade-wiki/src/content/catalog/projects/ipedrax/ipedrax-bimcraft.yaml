@@ -1,0 +1,22 @@
+# Scope and limitations are maintainer-reported in the repository documentation.
+slug: ipedrax-bimcraft
+name: BIMCraft
+authors:
+  - ipedrax
+repository: https://github.com/IPedrax/BIMCraft
+originals:
+  - autodesk-revit
+category: engineering
+languages:
+  - Rust
+platforms:
+  - Windows
+  - Linux
+  - macOS
+status: experimental
+compatibility: partial
+description: An independently developed Revit-style building information modeler in Rust. Models building elements, families and schedules, producing plans, sections, elevations, 3D views and printable sheets. Exchanges IFC models and includes limited read-only Revit file inspection and .rvt model import. Commands are available through a desktop app, CLI and MCP server.
+license: Apache-2.0 (default builds); MIT OR Apache-2.0 without Revit reader
+docs: https://github.com/IPedrax/BIMCraft#readme
+limitations: "Revit import is partial: undecoded elements are skipped or approximated; no native Revit saving or multi-user editing. Families use its own JSON format. macOS is untried by hand; installers are unsigned. The reader derives partly from Apache-2.0 rvt-rs; builds without it retain MIT OR Apache-2.0. A separate project from getcadcraft BimCraft."
+summary: Revit-style building modeling with plans, schedules, IFC exchange and limited read-only Revit imports.

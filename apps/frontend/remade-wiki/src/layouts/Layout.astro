@@ -9,12 +9,14 @@ interface Props {
 	title: string;
 	description?: string;
 	index?: boolean;
+	noindex?: boolean;
 }
 
 const {
 	title,
 	description = "Discover independently developed software reimplementations. Everything can be remade.",
 	index = false,
+	noindex = false,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const remadeMetadata = (await loadMetadata())["replicraft/remade"];
@@ -26,11 +28,14 @@ const remadeMetadata = (await loadMetadata())["replicraft/remade"];
 		<meta charset="utf-8">
 		<meta content="width=device-width" name="viewport">
 		<title>
-			{title === "Remade"
-				? "Remade — Everything can be remade."
-				: `${title} · Remade`}
+			{Astro.url.pathname === "/"
+				? title
+				: title === "Remade"
+					? "Remade — Everything can be remade."
+					: `${title} · Remade`}
 		</title>
 		<meta content={description} name="description">
+		{noindex && <meta content="noindex, follow" name="robots" />}
 		<link href={canonical} rel="canonical">
 		<link href="/llms.txt" rel="describedby" type="text/plain">
 		<link href="/favicon.svg" rel="icon" type="image/svg+xml">
@@ -59,7 +64,7 @@ const remadeMetadata = (await loadMetadata())["replicraft/remade"];
 			</div>
 		</Header>
 		<main
-			class="mx-auto min-h-[65vh] max-w-[1180px] px-[18px] pb-[72px] sm:px-6"
+			class="mx-auto min-h-[65vh] max-w-[1228px] px-[18px] pb-[72px] sm:px-6"
 			data-pagefind-body={index ? "" : undefined}
 			data-pagefind-ignore={!index ? "" : undefined}
 			id="main"
@@ -70,8 +75,6 @@ const remadeMetadata = (await loadMetadata())["replicraft/remade"];
 	</body>
 </html>
 <script>
-import "../scripts/card-descriptions";
-
 document.addEventListener("keydown", (event) => {
 	if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
 		const search = document.querySelector<HTMLInputElement>("#site-search");

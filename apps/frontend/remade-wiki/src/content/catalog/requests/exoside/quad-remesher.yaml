@@ -1,3 +1,4 @@
 original: quad-remesher
 reason: Reproduce Quad Remesher's automatic quad retopology with controls for density, edge flow and preservation of important shape features.
 suggested_names: [RetopoCraft]
+summary: "Wanted: Quad Remesher's automatic quad retopology with controls for density, edge flow and preservation of important shape features."

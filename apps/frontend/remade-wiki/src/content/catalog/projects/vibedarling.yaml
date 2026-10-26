@@ -21,3 +21,4 @@ limitations: Experimental compatibility depends on application version, architec
   and runtime revision. Installing an application or opening a window does not establish working
   workflows. It is a Linux compatibility layer, not a full macOS replacement; bundled components
   retain separate licenses.
+summary: "A Darling development fork working to run macOS applications on Linux without a virtual machine."

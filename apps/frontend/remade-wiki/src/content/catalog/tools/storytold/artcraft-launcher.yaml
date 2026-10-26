@@ -11,3 +11,4 @@ description: A native launcher for the Craft App Suite that discovers installed 
 docs: https://github.com/storytold/craft-launcher#readme
 limitations: Early alpha. App availability depends on upstream release assets and OS/CPU support. The web build browses downloads; native installation requires a desktop build. Sandboxed Linux installs have host-access limits. ArtCraft branding has separate terms from the source-code license.
 suites: [artcraft]
+summary: "Discover, download, verify and launch Craft Suite apps from a native desktop launcher."

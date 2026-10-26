@@ -2,3 +2,4 @@
 original: jobber
 reason: Reproduce Jobber's client database, job scheduling, dispatch and field-service workflows with compatible data migration. Support a self-hosted backend and phone app, with remote access over Tailscale or a similar private connection. Could integrate with MailCraft for client communication, calendars and contacts, with optional AI-assisted scheduling and administration.
 suggested_names: [JobCraft]
+summary: "Wanted: Field-service scheduling, dispatch and client management."

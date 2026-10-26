@@ -1,0 +1,21 @@
+# Maintainer-approved broader Wand alternative; does not reproduce Wand's curated trainers.
+slug: ferret
+name: Ferret
+authors:
+  - petru101
+repository: https://github.com/Petru101/ferret
+originals:
+  - wand
+category: games
+languages:
+  - Rust
+platforms:
+  - Linux
+  - Windows
+status: alpha
+compatibility: partial
+description: A single-player game memory editor covering some Wand-style workflows. Finds values selected in the game window, changes or constrains them, and locates them again in later runs. Supports named-value discovery for several game engines and sharing discovered values through a community library.
+license: GPL-3.0-or-later
+docs: https://github.com/Petru101/ferret#readme
+limitations: Broader alternative, without Wand's curated per-game trainers, overlay, remote app or account features. Players find values themselves or use the shared library. Refuses games with running anti-cheat and online-only games. Linux and 64-bit Windows 10/11; Windows is newer and less tested.
+summary: Find, change and freeze values such as health, gold and ammo in single-player games on Linux and Windows.

@@ -1,0 +1,22 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: easy-download-manager
+name: Easy Download Manager
+repository: https://github.com/pranavo72bex/Easy-Download-Manager
+originals:
+- internet-download-manager
+category: productivity
+languages:
+- Rust
+- Python
+- JavaScript
+platforms:
+- Windows
+- macOS
+- Linux
+status: experimental
+compatibility: partial
+license: MIT
+summary: IDM-style parallel downloads with resume, queues, speed limits and browser integration.
+description: An independently implemented desktop download manager targeting Internet Download Manager-style workflows. Downloads files using multiple connections, resumes interrupted transfers, manages queues and speed limits, and receives downloads from a companion browser extension. Also exposes command-line and MCP controls.
+limitations: Implements similar download workflows rather than full IDM compatibility. Browser capture requires the companion extension and integration setup; website-specific media handling depends on upstream services.
+docs: https://github.com/pranavo72bex/Easy-Download-Manager#readme

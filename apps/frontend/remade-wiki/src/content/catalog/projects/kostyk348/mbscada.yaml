@@ -1,0 +1,20 @@
+slug: mbscada
+name: mbSCADA
+authors:
+  - kostyk348
+repository: https://github.com/kostyk348/mbscada-rs
+originals:
+  - modbus-poll
+category: engineering
+languages:
+  - Rust
+  - JavaScript
+platforms:
+  - Windows
+status: experimental
+compatibility: partial
+description: An independently authored Modbus Poll-style master for Windows, written in Rust with a Tauri 2 UI. Polls Modbus TCP, RTU (serial), RTU-over-TCP and Modbus ASCII devices into live value tables with scan rates, display formats, alarms, per-row styling rules and a SCADA mimic-diagram mode; imports Modbus Poll .mbp/.mbw project files and reconstructs their polls and connections.
+license: MIT
+docs: https://github.com/kostyk348/mbscada-rs#readme
+limitations: Imports .mbp/.mbw; the engine has a byte-preserving .mbp round-trip layer, but the UI has no Save as Modbus Poll action yet. Real-file checks use a private Modbus Poll 10.5 corpus; public tests use synthetic files. ASCII transports have not been tried on real hardware. Published builds target Windows.
+summary: Modbus Poll-style device polling, live tables, alarms, diagrams and imports of existing Modbus Poll projects.

@@ -1,3 +1,4 @@
 original: archicad
 reason: Reproduce Archicad's architectural BIM workflows, including building elements, floor plans, sections, elevations, schedules and coordinated documentation, with compatible project interchange. Could extend CADCraft's architectural capabilities, or be a separate BIMCraft application sharing a 3D engine with other CAD projects.
 suggested_names: [BIMCraft]
+summary: "Wanted: Archicad-style architectural BIM modeling and documentation."

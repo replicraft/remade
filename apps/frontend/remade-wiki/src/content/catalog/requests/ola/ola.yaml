@@ -1,3 +1,4 @@
 original: ola
 reason: Ride booking, driver assignment, trip tracking and fare workflows for an independently operated
   service without depending on Ola accounts or dispatch infrastructure.
+summary: "Wanted: Ride booking, driver assignment and trip-management workflows."

@@ -1,3 +1,4 @@
 original: nomad-sculpt
 reason: Reproduce Nomad Sculpt's familiar sculpting and painting workflows, including brush behavior, masking, voxel remeshing, multiresolution sculpting and material painting, with touch and stylus controls and compatible project and mesh interchange.
 suggested_names: [SculptCraft]
+summary: "Wanted: Nomad-style 3D sculpting and painting workflows."

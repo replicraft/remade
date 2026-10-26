@@ -19,6 +19,7 @@ export interface BrowseRequest {
 	aliases?: string[];
 	suggestedNames?: string[];
 	reason?: string;
+	summary?: string;
 }
 
 export const defaultRequestFilters: RequestFilters = {
@@ -57,6 +58,7 @@ export function matchingImplementations(
 					...entry.languages,
 				],
 				reason: entry.description,
+				summary: entry.summary,
 			};
 		})
 		.filter((item) =>
@@ -81,6 +83,7 @@ export function filterRequest(
 		request.original,
 		request.vendor.replaceAll("-", " "),
 		request.reason ?? "",
+		request.summary ?? "",
 		...(request.aliases ?? []),
 		...(request.suggestedNames ?? []),
 	]

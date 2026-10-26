@@ -23,3 +23,4 @@ limitations: Early prerelease; Paper document compatibility, nested layouts, ima
   SVG import, arbitrary CSS, collaboration and MCP remain deferred. SVG export does not preserve
   automatic text wrapping. Windows native interaction is unverified; desktop packages are unsigned
   or ad-hoc signed.
+summary: "A local Paper-style design editor with artboards, text, shapes, color tokens, alignment and undo."

@@ -6,6 +6,7 @@ import BadgeShareSection from "../badges/BadgeShareSection";
 import Authors from "../catalog/Authors";
 import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
+import ListingDescription from "../catalog/ListingDescription";
 import OriginalLinks from "../catalog/OriginalLinks";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
@@ -36,15 +37,37 @@ export default function ProjectPage({
 
 	return (
 		<>
-			<div className="max-w-[860px] pt-16">
+			<div className="max-w-[860px] pt-12 sm:pt-16">
+				<a
+					className="mb-6 inline-flex h-9 max-w-full items-center justify-center gap-2 rounded-[9px] border border-[#29292c] bg-transparent px-3.5 font-[Arial,sans-serif] text-[15px] leading-5 font-normal tracking-normal text-[#e8e8e8] transition-colors hover:border-[#454548] hover:text-[#e8e8e8] motion-reduce:transition-none"
+					href="/explore/"
+				>
+					<svg
+						aria-hidden="true"
+						className="h-3.5 w-3.5 shrink-0"
+						fill="none"
+						stroke="currentColor"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						strokeWidth="1.8"
+						viewBox="0 0 24 24"
+					>
+						<path d="M19 12H5m7 7-7-7 7-7" />
+					</svg>
+					Back to Catalog
+				</a>
 				<p className="mb-5 text-xs font-bold uppercase tracking-[0.16em] text-lime">
 					Reimplementation · {label(project.category)}
 				</p>
 
 				<h1 data-pagefind-meta="title">{project.name}</h1>
 
+				<div className="mb-6 [&>div]:pt-0">
+					<Authors authors={project.authors} inline />
+				</div>
+
 				<p>
-					Reimplements{" "}
+					Replaces:{" "}
 					<OriginalLinks
 						className="text-sm text-lime hover:underline"
 						originals={catalog.originals}
@@ -52,7 +75,10 @@ export default function ProjectPage({
 					/>
 				</p>
 
-				<p>{project.description}</p>
+				<ListingDescription
+					description={project.description}
+					summary={project.summary}
+				/>
 
 				<div className="flex flex-wrap items-center gap-6">
 					<a
@@ -84,15 +110,14 @@ export default function ProjectPage({
 				</div>
 
 				{(project.discord_server || project.discord_thread) && (
-					<div className="mt-6">
+					<div className="mt-8 rounded-xl border border-line bg-surface p-5 [&>div]:mb-0">
+						<h2 className="!mb-3 text-lg">Community</h2>
 						<DiscordLinks {...project} />
 					</div>
 				)}
 
 				<div className="mt-6">
 					<RepositoryMirrors mirrors={project.mirrors} />
-
-					<Authors authors={project.authors} />
 				</div>
 			</div>
 

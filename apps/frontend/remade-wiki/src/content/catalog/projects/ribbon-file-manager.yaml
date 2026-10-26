@@ -18,3 +18,4 @@ docs: https://github.com/ysnx64523/Ribbon-File-Manager#readme
 limitations: Linux is the documented native platform; macOS and Windows portability is a goal, with
   packaging work separate from verified behavior. Full Windows shell, namespace-extension and Explorer
   API compatibility are not documented. Requires GTK3 and PyGObject.
+summary: "A Linux file manager with Windows Explorer-style ribbon tabs, file operations and properties dialogs."

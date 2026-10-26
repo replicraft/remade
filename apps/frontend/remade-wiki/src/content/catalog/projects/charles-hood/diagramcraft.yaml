@@ -13,3 +13,4 @@ license: MIT OR Apache-2.0
 docs: https://github.com/MisterDiagram/MisterDiagram#readme
 limitations: Pre-alpha; no GUI is provided or planned. Macro-enabled files discard VBA. File fidelity and Visio comparisons are maintainer-reported. Text wrapping, EMF+ images, compound line patterns, connector rendering and some save serialization remain incomplete.
 website: https://misterdiagram.com
+summary: "Read, render and edit Visio files through a headless Rust engine, command line and MCP server."

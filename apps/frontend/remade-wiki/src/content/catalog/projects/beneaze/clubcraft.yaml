@@ -13,3 +13,4 @@ description: A DJ.Studio-style mix-planning studio and VirtualDJ-style live deck
 license: MIT OR Apache-2.0
 docs: https://github.com/beneaze/ClubCraft#readme
 limitations: Early alpha; DJ.Studio project import is read-only, and full parity with either target is not claimed. Source builds require separate stem-model preparation. macOS releases are ad-hoc signed. Keep VirtualDJ closed during database writes. Model terms are separate; the COCOLA checkpoint was trained on datasets including noncommercial-research material.
+summary: "Plan DJ mixes and perform live with beat grids, stem separation, automatic cues and matched transitions."

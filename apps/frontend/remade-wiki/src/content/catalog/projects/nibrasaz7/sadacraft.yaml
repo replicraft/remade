@@ -1,0 +1,24 @@
+# Maintainer-approved broader alternative for meeting transcription, notes and virtual-camera workflows.
+slug: sadacraft
+name: SadaCraft
+authors:
+  - nibrasaz7
+repository: https://github.com/NibrasAz7/SadaCraft
+originals:
+  - tactiq
+  - read-ai
+  - granola
+  - xsplit-vcam
+category: productivity
+languages:
+  - Rust
+  - TypeScript
+platforms:
+  - Windows
+status: alpha
+compatibility: targeting
+description: A local-first meeting companion for Windows covering Tactiq/Read AI-class meeting capture, Granola-style on-device notes and an XSplit VCam-class virtual camera. Provides mic plus system-audio recording, local whisper.cpp transcription with Vulkan GPU acceleration (English, Arabic, Italian), speaker attribution with optional ONNX remote-speaker clustering, local or API AI summaries with a self-improving lessons loop, and Markdown/DOCX/PDF export.
+license: MIT OR Apache-2.0
+docs: https://github.com/NibrasAz7/SadaCraft#readme
+limitations: Alpha; compatibility is maintainer-reported. Windows only; built on the MIT-licensed Meetily base. Speaker labels use stream provenance plus optional session clustering rather than enrolment-grade diarization. ONNX background segmentation, teleprompter/subtitle overlays and per-client camera format routing remain planned. CUDA acceleration is staged but unverified.
+summary: Windows meeting recording, local transcription, AI notes and a virtual camera with webcam and name-card overlays.

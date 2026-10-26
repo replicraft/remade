@@ -449,6 +449,11 @@
   name: Paint.NET
   url: https://www.getpaint.net/
   category: creative
+- slug: microsoft-paint
+  name: Microsoft Paint
+  url: https://www.microsoft.com/en-us/windows/paint
+  category: creative
+  aliases: [MS Paint, Windows Paint, MSPaint]
 - slug: logic-pro
   name: Logic Pro
   url: https://www.apple.com/logic-pro/
@@ -2188,3 +2193,95 @@
   url: https://auth0.com/
   category: developer-tools
   aliases: [Auth0 by Okta, Okta Customer Identity Cloud]
+- slug: flipaclip
+  name: FlipaClip
+  url: https://www.flipaclip.com/
+  category: creative
+- slug: gemini-notebook
+  name: Gemini Notebook
+  url: https://notebook.google/
+  category: productivity
+  aliases: [NotebookLM, Notebook LM, Google NotebookLM, Google Gemini Notebook]
+- slug: dropbox
+  name: Dropbox
+  url: https://www.dropbox.com/
+  category: productivity
+- slug: youtube-music
+  name: YouTube Music
+  url: https://music.youtube.com/
+  category: creative
+- slug: youtube
+  name: YouTube
+  url: https://www.youtube.com/
+  category: creative
+- slug: jetbrains-rider
+  name: JetBrains Rider
+  url: https://www.jetbrains.com/rider/
+  category: developer-tools
+  aliases: [Rider]
+- slug: world-anvil
+  name: World Anvil
+  url: https://www.worldanvil.com/
+  category: creative
+  aliases: [WorldAnvil]
+- slug: campfire
+  name: Campfire
+  url: https://www.campfirewriting.com/
+  category: creative
+- slug: legendkeeper
+  name: LegendKeeper
+  url: https://www.legendkeeper.com/
+  category: creative
+  aliases: [Legend Keeper]
+- slug: wand
+  name: Wand
+  url: https://wand.com/
+  category: games
+  aliases:
+    - WeMod
+- slug: modbus-poll
+  name: Modbus Poll
+  url: https://modbuspoll.com/
+  category: engineering
+- slug: pureref
+  name: PureRef
+  url: https://www.pureref.com/
+  category: creative
+- slug: tactiq
+  name: Tactiq
+  url: https://tactiq.io/
+  category: productivity
+  aliases:
+    - Tactiq.io
+- slug: read-ai
+  name: Read AI
+  url: https://www.read.ai/
+  category: productivity
+  aliases:
+    - Read.ai
+- slug: granola
+  name: Granola
+  url: https://www.granola.ai/
+  category: productivity
+- slug: xsplit-vcam
+  name: XSplit VCam
+  url: https://www.xsplit.com/vcam
+  category: creative
+  aliases:
+    - VCam
+- slug: supreme-commander-forged-alliance
+  name: "Supreme Commander: Forged Alliance"
+  url: https://store.steampowered.com/app/9420/
+  category: games
+  aliases:
+    - Forged Alliance
+    - Supreme Commander
+    - SupCom
+    - SupCom FA
+- slug: crimsonland
+  name: Crimsonland
+  url: https://store.steampowered.com/app/262830/Crimsonland/
+  category: games
+  aliases:
+    - Crimsonland 2014
+    - Crimsonland Remastered

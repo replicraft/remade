@@ -11,3 +11,4 @@ license: MIT OR Apache-2.0
 description: An Android frontend for FilmCraft using its existing Rust engine with a Kotlin and Jetpack Compose interface. Adds touch-oriented timeline editing, clip transforms, effects and transitions, text, on-device captions and speech, and video export in portrait and landscape layouts.
 docs: https://github.com/artcraft-android/filmcraft-android#readme
 limitations: Beta; requires Android 10 or later. Reuses FilmCraft rather than providing a separate editing engine. Stock music and templates remain planned. Optional Whisper and Kokoro functionality downloads models. Cloud storage, accounts and generative AI are not planned.
+summary: "Edit videos on Android with a touch interface powered by FilmCraft's Rust engine."

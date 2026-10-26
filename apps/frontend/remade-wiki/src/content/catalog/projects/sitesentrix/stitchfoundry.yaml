@@ -13,3 +13,4 @@ license: MIT OR Apache-2.0
 description: A Wilcom EmbroideryStudio-style digitizing application built on VectorCraft, with running, satin and fill stitches, applique, automatic stitch sequencing, lettering, design checks and embroidery-file import/export. Includes stitch previews and headless automation.
 docs: https://github.com/Stitchwright/StitchFoundry#readme
 limitations: Pre-release; no binaries. A broader Wilcom alternative built on VectorCraft; native Wilcom project-file compatibility is not documented. Machine files have been checked in software but not sewn on real hardware. AI-assisted artwork generation requires a separate Anthropic API key.
+summary: "Wilcom-style embroidery digitizing with stitch generators, applique, lettering and machine-file exports."

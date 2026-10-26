@@ -13,3 +13,4 @@ description: An independent Animate-style editor that opens FLA files and XFL fo
 license: Unlicensed
 docs: https://github.com/mirvoxtm/minnamate#readme
 limitations: No project license grant is declared. Early implementation; bones, 3D, Asset Warp, input text, multiple open documents and custom workspaces remain unavailable. Basic frame scripts do not establish full ActionScript compatibility. Unsupported document features produce warnings. Desktop instructions document Windows only.
+summary: "Animate-style 2D animation with FLA/XFL files, drawing, symbols, tweens, masks, filters and sound."

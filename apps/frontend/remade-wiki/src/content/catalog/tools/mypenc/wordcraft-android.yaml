@@ -11,3 +11,4 @@ license: MIT OR Apache-2.0
 description: An Android port of WordCraft retaining its Rust engine and egui interface in a native GameActivity host. Adds touch gestures, an on-screen modifier and shortcut bar, Android file pickers, export mirroring, clipboard integration, and mouse and hardware-keyboard support.
 docs: https://github.com/mypenc/wordcraft/blob/main/docs/android.md
 limitations: Early Android port; the maintainer calls for device bring-up checks of soft-keyboard composition and touch sizing. Android omits the control and MCP server, native printing and drag-and-drop. Hardware Ctrl+V uses the in-app clipboard; the ribbon Paste button reads the system clipboard. No published release was available at review.
+summary: "Use WordCraft on Android with touch gestures, a shortcut bar, file access and the existing Rust engine."

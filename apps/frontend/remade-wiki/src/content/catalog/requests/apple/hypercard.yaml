@@ -2,3 +2,4 @@ original: hypercard
 reason: >-
   Reproduce HyperCard's card-and-stack authoring, editable fields and buttons, bitmap graphics, navigation and HyperTalk scripting. Preserve its approachable visual programming workflow and compatible handling of existing stacks, with local storage and reusable components.
 suggested_names: [StackCraft]
+summary: "Wanted: HyperCard's card-and-stack authoring, editable fields and buttons, bitmap graphics, navigation and HyperTalk scripting."

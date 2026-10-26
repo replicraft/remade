@@ -62,3 +62,165 @@
 		@apply mt-1.5 w-full;
 	}
 }
+
+/* Refined Directory: keep the existing palette, fonts and brand assets. */
+@layer components {
+	.site-header {
+		@apply mx-auto flex min-h-20 max-w-[1228px] items-center gap-3 px-4 py-3 sm:gap-8 sm:px-6;
+	}
+	.brand {
+		@apply flex shrink-0 items-center gap-2 text-lg font-bold tracking-tight;
+	}
+	.action-primary {
+		@apply inline-flex min-h-11 items-center justify-center gap-3 rounded-lg border border-lime bg-lime px-5 py-3 text-sm font-semibold text-canvas hover:bg-lime-light hover:text-canvas;
+	}
+	.action-secondary {
+		@apply inline-flex min-h-11 items-center justify-center rounded-lg border border-line px-4 py-3 text-sm font-semibold text-ink hover:border-muted;
+	}
+	.eyebrow {
+		@apply mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-muted;
+	}
+	.home-hero {
+		@apply max-w-[900px] pb-2 pt-12 sm:pt-16;
+	}
+	.home-hero h1 {
+		@apply mb-5 max-w-[820px] text-[clamp(2.4rem,5vw,4rem)] leading-[1.12];
+	}
+	.hero-intro {
+		@apply mb-7 max-w-[650px] text-base leading-relaxed sm:text-lg;
+	}
+	.hero-search {
+		@apply mt-9 max-w-[740px];
+	}
+	.section-heading {
+		@apply mb-3 flex flex-wrap items-end justify-between gap-4;
+	}
+	.section-heading h2 {
+		@apply mb-0;
+	}
+	.section-heading > a {
+		@apply py-2 text-sm text-muted;
+	}
+	.section-intro {
+		@apply mb-6 max-w-[720px] text-sm;
+	}
+	.directory-grid {
+		@apply grid grid-cols-1 gap-4 min-[640px]:grid-cols-2 min-[1000px]:grid-cols-3;
+	}
+	.directory-card {
+		@apply relative isolate flex min-h-[360px] min-w-0 flex-col rounded-xl border border-line bg-surface p-5 text-sm hover:border-lime/50 focus-within:border-lime sm:p-6;
+		overflow-wrap: anywhere;
+	}
+	.directory-card h3 {
+		@apply mb-2 mt-4 text-xl text-ink;
+	}
+	.directory-summary {
+		@apply mb-5 line-clamp-3 text-sm leading-6;
+	}
+	.directory-card a:not(.card-main-link) {
+		@apply relative z-10;
+	}
+	.directory-card a {
+		@apply hover:text-lime;
+	}
+	@media (min-width: 1000px) {
+		.featured-grid {
+			grid-template-columns: 2.2fr 1fr 1fr;
+		}
+		.featured-grid > .directory-card:first-child {
+			@apply row-span-2 p-9;
+		}
+		.featured-grid > .directory-card:first-child h3 {
+			@apply text-[2rem];
+		}
+		.featured-grid > .directory-card:first-child [data-card-summary] {
+			@apply text-base;
+		}
+	}
+	.section-note {
+		@apply mt-6 flex flex-wrap items-center justify-between gap-3 text-sm;
+	}
+	.section-note p {
+		@apply mb-0;
+	}
+	.resource-section {
+		@apply grid grid-cols-1 gap-8 border-t border-line pt-8 sm:grid-cols-2;
+	}
+	.mobile-navigation {
+		@apply relative;
+	}
+	.mobile-navigation summary {
+		@apply list-none;
+	}
+	.mobile-navigation summary::-webkit-details-marker {
+		display: none;
+	}
+	.mobile-navigation nav {
+		@apply absolute right-0 top-full z-40 mt-3 flex w-60 flex-col rounded-xl border border-line bg-surface p-3 shadow-xl;
+	}
+	.mobile-navigation nav a {
+		@apply rounded-lg px-4 py-3 text-sm;
+	}
+	.filter-dialog {
+		@apply fixed inset-0 m-auto max-h-[85dvh] w-[min(96vw,560px)] overflow-auto rounded-xl border border-line bg-surface p-6 text-ink;
+	}
+	.filter-dialog::backdrop {
+		background: rgb(0 0 0 / 0.7);
+	}
+	.field-error {
+		@apply mt-2 text-sm text-red-300;
+	}
+	.form-field {
+		@apply mb-6;
+	}
+	.form-field input:not([type="checkbox"]),
+	.form-field select,
+	.form-field textarea {
+		@apply mt-2 w-full rounded-lg border border-line bg-deep px-4 py-3 text-base text-ink;
+	}
+	.form-field textarea {
+		@apply min-h-32;
+		resize: vertical;
+	}
+}
+@media (max-width: 359px) {
+	.brand {
+		font-size: 1rem;
+	}
+	.brand img {
+		width: 24px;
+		height: 24px;
+	}
+	.site-header {
+		gap: 8px;
+	}
+	[data-auth-host] {
+		width: 88px;
+	}
+	[data-auth-slot] {
+		width: 88px;
+	}
+}
+
+@media (max-width: 639px) {
+	[data-auth-host],
+	[data-auth-slot] {
+		width: 88px;
+	}
+	.site-header .brand {
+		font-size: 1rem;
+		gap: 8px;
+	}
+	.site-header .brand img {
+		width: 26px;
+		height: 26px;
+	}
+	.site-header [data-auth-slot] a {
+		padding-inline: 10px;
+		font-size: 14px;
+	}
+}
+
+body:has(dialog[open]) {
+	overflow: hidden;
+}

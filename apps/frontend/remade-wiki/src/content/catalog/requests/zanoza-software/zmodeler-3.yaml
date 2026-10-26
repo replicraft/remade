@@ -1,2 +1,3 @@
 original: zmodeler-3
 reason: Reproduce ZModeler 3's vehicle-modeling workflows for GTA V and FiveM, including mesh editing, UV mapping, materials, model hierarchy, collision meshes and game-format import/export. Preserve editable ZModeler projects and provide a clearer interface for preparing and checking vehicle assets.
+summary: "Wanted: ZModeler-style vehicle modeling for GTA V and FiveM."

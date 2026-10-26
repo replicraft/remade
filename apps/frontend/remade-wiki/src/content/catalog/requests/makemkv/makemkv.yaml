@@ -1,3 +1,4 @@
 original: makemkv
 reason: Disc-title inspection and lossless remuxing into MKV for media the user is authorized to
   process, preserving tracks, chapters and metadata where supported.
+summary: "Wanted: Inspect authorized discs and remux titles to MKV while preserving their media tracks."

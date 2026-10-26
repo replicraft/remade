@@ -1,3 +1,4 @@
 original: materialise-magics
 reason: "Reproduce Magics workflows for preparing additive-manufacturing builds: mesh repair, part editing, orientation, nesting and support preparation, with reliable export and printer-specific build setup."
 suggested_names: [BuildCraft]
+summary: "Wanted: Prepare additive-manufacturing builds with mesh repair, part editing and orientation tools."

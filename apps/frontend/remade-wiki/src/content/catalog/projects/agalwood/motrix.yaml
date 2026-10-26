@@ -14,3 +14,4 @@ license: MIT
 website: https://motrix.app/
 docs: https://github.com/agalwood/Motrix#readme
 limitations: The current rewrite is in beta. IDM settings, queue files and integration compatibility are not documented; browser integration uses Motrix's own extension and protocol. Migration from older Motrix imports selected tasks paused and requires a separate resume action; legacy progress import is unavailable on Windows. Third-party components retain separate licenses.
+summary: "Manage HTTP, FTP, torrent and magnet downloads with queues, scheduling and browser integration."

@@ -13,3 +13,4 @@ description: An Everything-style file search application with cached drive index
 license: MIT
 docs: https://github.com/pierruno-labs/FileCraft/blob/main/docs/user-guide.md
 limitations: Windows only. Direct NTFS master-file-table indexing requires administrator privileges; otherwise it scans folders. Focuses on its own search and preview workflow; full Everything query, interface and SDK compatibility are not documented.
+summary: "Find Windows files with Everything-style filters, NTFS indexing, wildcards and cached drive searches."

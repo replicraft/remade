@@ -48,7 +48,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 - Max content width approximately 1100–1200px; reading sections narrower.
 - Responsive project cards: 1 column small screens, 2 on tablets, 3 on desktop.
 - Usable down to 320px width; cards should not truncate vital project names.
-- Keep card rows equal in height, allowing enough room for six description lines when needed even when headings or author links wrap. Bound the description preview to six lines plus room for its link so long text cannot expand automatically sized grid rows. Show descriptions in full when they fit the preview boundary; truncate overflowing descriptions and show a subtle “Read more…” link only when there is more text. Preserve full project names and keep author links or suggested names at the bottom.
+- Keep card rows equal in height. Cards show the entry's required `summary` (1–144 characters) in full, without clamping or a “Read more” link. Project and tool detail pages show a borderless panel with clearly labeled Summary and Description sections. Summary leads with larger text on an elevated surface. Description follows with its label beside the full text on wider screens and above it on mobile. Software request sections use the same treatment with their full `reason`, using nested headings. Preserve full project names and keep author links or suggested names at the bottom of cards. Detail pages place author links beneath the title.
 
 ## Home page sections (ordered)
 
@@ -88,7 +88,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 
 ## Explore page
 
-- Search across original software name, project name, description, languages.
+- Search across original software name, project name, summary, full description, and languages.
 - Compact category, language, and platform filters beneath the search field; expandable additional filters for compatibility and development status. Filters apply immediately. Keep sorting beside the result count.
 - Sorting: recent, alphabetical, stars. `stars: null` sorts after known counts.
 - Cards expose original → implementation relationship at a glance.
@@ -103,7 +103,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 - Neutral statement of compatibility aims; clearly mark *maintainer-reported* information.
 - Primary repository CTA and optional docs link, language/license/category/status tags.
 - Show an Official website button beside the repository CTA when a project supplies a documented website; open that link in a new tab.
-- Show a Repository Mirrors header below the primary links. When mirrors exist, show a collapsed View Mirrors accordion with bordered links identifying each mirror by host and repository path and opening in new tabs. When none are listed, display “No mirrors found” and a contribution link directly beneath the header, without an accordion. Metadata continues to come from the primary repository.
+- Show a Repository Mirrors card below the primary links and optional community card. When mirrors exist, show a collapsed View Mirrors accordion with links identifying each mirror by host and repository path and opening in new tabs. When none are listed, display “No mirrors found” and a contribution link inside the card, without an accordion. Metadata continues to come from the primary repository.
 - GitHub stats (stars, forks, last push and archive status when available).
 - Small note: **GitHub statistics are refreshed approximately every 24 hours.**
 - Focus/hover timestamp from `fetchedAt` when present; if absent, state `Statistics currently unavailable` instead of implying freshness.
@@ -112,6 +112,7 @@ The header GitHub link includes Remade's own star count from the daily metadata 
 ## Original-software page
 
 - Original name and official/reliable reference URL.
+- For unfulfilled requests, place upvote and building controls beneath the title. Keep the interest and self-reporting caveat in the controls' info tooltip. Follow with Summary and Description, then request details and optional community links in a responsive grid. Finish with a separate catalog suggestion action. Keep the original reference and any suggested names in the request details card.
 - Brief factual synopsis, original software category.
 - All approved reimplementations targeting that original.
 - When there are multiple reimplementations, show a prominent Compare button beside the listing heading. Expand a static side-by-side table of languages, platforms, maintainer-reported compatibility and maturity, license, scope, limitations and cached development activity. Show missing activity as unavailable, include cache freshness, and allow keyboard-accessible horizontal scrolling on small screens. Comparison works without JavaScript.
@@ -133,4 +134,10 @@ Tool cards and tool pages show a clickable suite name, such as ArtCraft Suite, i
 
 ## Discord community links
 
-Project and request cards show optional Discord server/thread links with the Discord logo and visible text labels. Project detail pages and request sections on software pages expose the same links. Use the existing lime link styling, keep icon shapes decorative for screen readers, and keep links above stretched card targets so pointer and keyboard navigation reach the intended destination. Omitted links render no controls. These are static links, with no Discord embeds or scripts.
+Project detail pages and request sections on software pages show optional Discord server/thread links with the Discord logo and visible text labels. Cards link to their detail pages and omit Discord links. Use the existing lime link styling, keep icon shapes decorative for screen readers, and keep links above stretched card targets so pointer and keyboard navigation reach the intended destination. Omitted links render no controls. These are static links, with no Discord embeds or scripts.
+
+## Refined Directory candidate
+
+The draft Refined Directory implementation prioritizes Request a project, compact previews and static paginated browsing. Project/request classification, full detail content, suite/community links, badges and existing support semantics remain intact. See [the candidate report](experiments/refined-directory/README.md) for route changes, local form simulation, verification and production limitations. The on-site submission flow is development-only until a shared verified submission service is ready; production links to the existing GitHub Project Request form.
+
+Card titles use a stretched link to make the card surface clickable. Author, original-software, suite and tool links, plus vote/builder controls, remain independently operable above that surface. Cards place original-software and suite/tool relationships above the description, show authors inline without separator dots, and omit a separate View project/request/tool footer action. Directory previews size from their content rather than stretched grid height; the leading featured card keeps its two-row desktop layout.

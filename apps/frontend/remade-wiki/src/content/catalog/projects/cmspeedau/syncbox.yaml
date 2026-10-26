@@ -1,0 +1,21 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: syncbox
+name: SyncBox
+authors:
+- cmspeedau
+repository: https://github.com/cmspeedau/SyncBox
+originals:
+- dropbox
+category: productivity
+languages:
+- Rust
+- Go
+platforms:
+- Linux
+status: experimental
+compatibility: partial
+license: MIT
+summary: Self-hosted Dropbox-style file sync with a Linux desktop client, CLI, FUSE mount and encrypted vaults.
+description: A self-hosted Dropbox-style file synchronization system with a Go server and Rust client core. A Linux desktop client, CLI and FUSE mount share files through ordinary sync spaces or optional vaults encrypted on the client before upload. Includes a content-addressed store, resumable synchronization and deployment tooling.
+limitations: Uses its own server and protocol rather than Dropbox accounts or APIs. Desktop packaging is documented for Linux; full Dropbox client, sharing and collaboration parity is not claimed. Encryption properties are maintainer-reported.
+docs: https://github.com/cmspeedau/SyncBox#readme

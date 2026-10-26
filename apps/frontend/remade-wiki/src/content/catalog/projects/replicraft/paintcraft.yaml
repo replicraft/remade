@@ -1,0 +1,17 @@
+# Sources: https://github.com/replicraft/PaintCraft#readme and docs/FORMAT_INTEROPERABILITY.md in that repository.
+slug: paintcraft
+name: PaintCraft
+authors: [replicraft]
+repository: https://github.com/replicraft/PaintCraft
+website: https://paint.replicraft.dev
+originals: [paint-net, microsoft-paint]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS, Linux, Web]
+status: experimental
+compatibility: partial
+summary: Paint.NET and MS Paint workflows in Rust, with layers, brushes, selections, Classic skins and a tabbed Studio workspace.
+description: A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs and floating panels. Desktop, browser and CLI interfaces provide brushes, shapes, text, selections, layers and undo/redo. Projects use the native PCND format, with PNG, JPEG and BMP image exchange, still GIF import and single-page TIFF import. MCP tools expose headless painting operations.
+license: MIT
+docs: https://github.com/replicraft/PaintCraft#readme
+limitations: Early preview; full feature parity is not claimed. PDN and PAINT support is limited to structural inspection, without layered project decoding or preserving saves. GIF import is still-image only and TIFF import is single-page; their frontend exports are disabled.

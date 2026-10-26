@@ -1,3 +1,4 @@
 original: chitubox
 reason: Reproduce CHITUBOX's familiar resin-printing preparation and slicing workflows, including model orientation, automatic and manual supports, hollowing, drainage holes, repair, printer and resin profiles and layer previews, with compatible project interchange and printer-ready output for SLA, DLP and LCD printers.
 suggested_names: [SliceCraft]
+summary: "Wanted: CHITUBOX-style preparation and slicing for resin 3D printing."

@@ -35,9 +35,6 @@ describe("request engagement controls", () => {
 
 		await screen.getByRole("button", { name: "I’m building this 2" }).click();
 		expect(change).toHaveBeenCalledWith("example", "unbuild");
-		await expect
-			.element(screen.getByRole("link", { name: "Add it to the catalog." }))
-			.toBeVisible();
 	});
 
 	it("shows unavailable counts instead of zeros while loading", async () => {
@@ -49,10 +46,12 @@ describe("request engagement controls", () => {
 		);
 
 		await expect
-			.element(screen.getByRole("button", { name: "Upvote —" }))
+			.element(screen.getByRole("button", { name: "Upvote Unavailable" }))
 			.toBeDisabled();
 		await expect
-			.element(screen.getByRole("button", { name: "I’m building this —" }))
+			.element(
+				screen.getByRole("button", { name: "I’m building this Unavailable" }),
+			)
 			.toBeDisabled();
 	});
 });

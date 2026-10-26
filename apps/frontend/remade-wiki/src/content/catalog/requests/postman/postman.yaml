@@ -1,3 +1,4 @@
 original: postman
 reason: HTTP API requests, environments, collections, tests and workflow automation with Postman
   collection interchange and useful local operation.
+summary: "Wanted: An HTTP API workbench with requests, environments and reusable collections."

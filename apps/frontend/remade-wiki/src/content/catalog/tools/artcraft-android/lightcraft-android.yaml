@@ -11,3 +11,4 @@ license: MIT OR Apache-2.0
 description: An Android frontend for LightCraft combining its existing Rust engine with a Kotlin and Jetpack Compose interface. Provides photo and raw-file import, a local library, tonal and color adjustments, curves, presets, crop and transform tools, manual masking, spot repair and export.
 docs: https://github.com/artcraft-android/lightcraft-android#readme
 limitations: Beta; requires Android 10 or later. Reuses LightCraft's engine. AI subject and sky masks and lens blur remain planned. Cloud synchronization and community features are not planned. Features and device coverage are maintainer-reported.
+summary: "Organize and develop photos on Android using LightCraft's Rust engine and a native touch interface."

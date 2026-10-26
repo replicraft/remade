@@ -62,6 +62,17 @@ def is_text(v, minlen=1, maxlen=400):
     )
 
 
+def is_summary(value: object) -> bool:
+    return (
+        isinstance(value, str)
+        and is_text(value, 1, 144)
+        and value == value.strip()
+        and len(value) <= 144
+        and "\n" not in value
+        and "\r" not in value
+    )
+
+
 def is_https(v):
     if not isinstance(v, str) or validators.url(v) is not True:
         return False
@@ -168,6 +179,7 @@ def collect(root=ROOT):
             "status",
             "compatibility",
             "description",
+            "summary",
             "license",
         }
         optional = {
@@ -182,6 +194,8 @@ def collect(root=ROOT):
         }
         if not fields(project, required, optional, loc, errors):
             continue
+        if not is_summary(project["summary"]):
+            errors.append(f"{loc}: summary must be 1–144 single-line plain-text characters")
         slug = project["slug"]
         if not is_slug(slug) or path.stem != slug:
             errors.append(f"{loc}: slug must match filename and be lowercase-kebab-case")
@@ -270,12 +284,14 @@ def collect(root=ROOT):
         req = checked_load(path, errors)
         if not fields(
             req,
-            {"original", "reason"},
+            {"original", "reason", "summary"},
             {"suggested_names", "discord_server", "discord_thread"},
             loc,
             errors,
         ):
             continue
+        if not is_summary(req["summary"]):
+            errors.append(f"{loc}: summary must be 1–144 single-line plain-text characters")
         validate_discord(req, loc, errors)
         original_slug = req["original"]
         if not is_slug(original_slug) or original_slug != path.stem:
@@ -441,7 +457,7 @@ def collect_tools(root: Path = ROOT) -> tuple[list[dict], list[str]]:
         tool = checked_load(path, errors)
         if not fields(
             tool,
-            {"slug", "name", "repository", "url", "description", "languages"},
+            {"slug", "name", "repository", "url", "description", "summary", "languages"},
             {
                 "authors",
                 "platforms",
@@ -459,6 +475,8 @@ def collect_tools(root: Path = ROOT) -> tuple[list[dict], list[str]]:
         ):
             continue
         before = len(errors)
+        if not is_summary(tool["summary"]):
+            errors.append(f"{loc}: summary must be 1–144 single-line plain-text characters")
         if "license" in tool and not is_text(tool["license"], 2, 80):
             errors.append(f"{loc}: license must be a short license identifier")
         if "languages" in tool and (

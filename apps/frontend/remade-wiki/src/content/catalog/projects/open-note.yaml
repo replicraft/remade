@@ -10,3 +10,4 @@ description: A Flutter notebook targeting Samsung Notes-style inking and OneNote
 license: Unlicensed
 docs: https://github.com/HasanMajid/open-note/blob/main/docs/ROADMAP.md
 limitations: Early implementation; rich text, full notebook/section hierarchy, media and PDF annotation, portable export and sync remain planned. Native OneNote and Samsung Notes document compatibility is not documented. Browser storage is an in-memory cache; platform behavior is unverified. No project-level license grant is documented.
+summary: "A Flutter notebook with Samsung Notes-style handwriting and OneNote-style organization."

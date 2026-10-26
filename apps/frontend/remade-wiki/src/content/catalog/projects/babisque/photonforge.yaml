@@ -1,0 +1,16 @@
+# Scope and limitations are maintainer-reported in the upstream README.
+slug: photonforge
+name: PhotonForge
+repository: https://github.com/babisque/PhotonForge
+originals:
+- lightburn
+category: engineering
+languages:
+- Rust
+status: planned
+compatibility: targeting
+license: GPL-3.0-or-later
+summary: Planned LightBurn-style laser engraving and cutting software, initially targeting GRBL controllers.
+description: An early Rust project planning a LightBurn-style laser engraving and cutting workflow, initially for GRBL controllers. The workspace separates geometry, file import/export, G-code generation, device communication and the GUI. Its README identifies the current stage as Phase 0 workspace bootstrap; these are planned capabilities, not a finished laser-control application.
+limitations: Workspace scaffolding only; end-to-end editing, toolpath generation, hardware streaming and LightBurn project-file compatibility are not established. Do not treat the planned workflow as implemented machine-control support.
+docs: https://github.com/babisque/PhotonForge#readme

@@ -1,3 +1,4 @@
 original: uber
 reason: Ride-request, driver-dispatch, trip-status and fare-estimation workflows for independently
   operated transport services, with no claim of access to Uber's network.
+summary: "Wanted: Ride-request, driver-dispatch, trip-status and fare-estimation workflows for independently operated transport services."

@@ -11,3 +11,4 @@ description: A OneNote-style notebook with an Office-style ribbon, nested notebo
 license: MIT OR Apache-2.0
 docs: https://github.com/AlienTechSoftware/notecraft/blob/main/docs/gaps.md
 limitations: Early development; the ONE reader cannot yet import into notebook folders and does not support ONETOC2, encrypted sections or ink. Cross-block selection and parts of the ribbon are missing. Built and run on Windows; macOS/Linux are untested. Koala artwork has unverified origins and is excluded from the code license.
+summary: "OneNote-style notebooks with a ribbon, nested pages, formatted editing, tags, attachments and search."

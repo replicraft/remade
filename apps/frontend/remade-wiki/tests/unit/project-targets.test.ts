@@ -44,6 +44,7 @@ describe("multi-target implementations", () => {
 				requests: [
 					{
 						original: slug,
+						summary: "A short overview of the requested workflows.",
 						reason: "Please faithfully recreate this software.",
 					},
 				],

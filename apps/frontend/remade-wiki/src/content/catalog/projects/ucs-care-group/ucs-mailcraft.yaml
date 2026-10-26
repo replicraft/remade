@@ -13,3 +13,4 @@ description: MailCraft reimplements classic Outlook's mail, calendar, contacts a
 license: MIT OR Apache-2.0
 docs: https://github.com/UCS-Care-Group/mailcraft#readme
 limitations: Early alpha; coverage is maintainer-reported, with real-server use on one Microsoft 365 mailbox. Builds are unsigned. Graph sending, calendar and contacts are documented; Graph mailbox sync and shared mailboxes remain under development/testing. No PST/OST/MSG/OLM import, printing or S/MIME. Browser builds cannot connect directly to mail servers.
+summary: "Outlook-style mail, calendars, contacts and tasks for Microsoft 365, Outlook.com and IMAP accounts."

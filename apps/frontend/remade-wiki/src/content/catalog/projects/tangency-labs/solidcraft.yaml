@@ -12,6 +12,7 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: SolidCraft by Tangency Labs independently implements Fusion-style parametric CAD, with constrained sketches, solid modeling and a rebuildable feature timeline.
+description: SolidCraft is a Rust parametric 3D CAD application targeting Fusion-style design workflows. Build constrained sketches and solids with extrude, revolve, sweep, loft, fillet, shell and pattern tools on an editable feature timeline. Parameter changes rebuild the model. It also offers assemblies, sheet metal, STEP/IGES and mesh exchange, plus desktop, browser, CLI and MCP interfaces. Early development focuses on simple parts; full Fusion compatibility is not claimed.
 license: MIT OR Apache-2.0
 limitations: Early development focused on simple parts and the Fusion Design workspace. Full Fusion compatibility is not claimed.
+summary: "Fusion-style parametric 3D CAD with constrained sketches, solid modeling and a rebuildable feature timeline."

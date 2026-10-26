@@ -1,3 +1,4 @@
 original: ysoft-safeq
 reason: Print queues, secure release, usage accounting and scan workflows with independently implemented
   device interfaces and exportable configuration.
+summary: "Wanted: Managed print queues, secure document release and workplace printing workflows."

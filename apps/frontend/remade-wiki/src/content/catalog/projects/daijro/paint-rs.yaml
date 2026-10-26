@@ -1,0 +1,16 @@
+# Scope and compatibility are maintainer-reported in the README; license terms are in LICENSE.md and NOTICE.md.
+slug: paint-rs
+name: paint.rs
+repository: https://github.com/daijro/paint.rs
+website: https://playground.daijro.dev/paint-rs
+originals: [paint-net]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS, Linux, Web]
+status: experimental
+compatibility: partial
+summary: Paint.NET-style image editing with layers, PDN files, effects, editable text and PhotoCraft-derived tools.
+description: A Rust reimplementation targeting Paint.NET editing workflows, with layered PDN open/save, selections, effects and editable text. Adds PhotoCraft-derived healing, content-aware fill and object selection. Includes code adapted from paint.js; inherited Paint.NET notices and third-party terms are documented in LICENSE.md and NOTICE.md.
+license: GPL-3.0-or-later
+docs: https://github.com/daijro/paint.rs#readme
+limitations: Full compatibility is not independently verified. ICO is unsupported; color profiles and EXIF metadata are not preserved. Bundled Paint.NET-derived interface text has separate resource terms documented in LICENSE.md.

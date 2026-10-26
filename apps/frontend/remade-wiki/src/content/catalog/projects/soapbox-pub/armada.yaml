@@ -16,3 +16,4 @@ license: AGPL-3.0 with additional app-store distribution permission
 website: https://soapbox.pub/armada
 docs: https://github.com/soapbox-pub/armada#readme
 limitations: Uses Nostr and Concord rather than Discord's service or API; imports and bridges do not establish full Discord compatibility. Relays and voice brokers remain infrastructure dependencies. Encryption properties vary by supported protocol and are upstream-reported. The iOS app is not yet released.
+summary: "A Nostr-based Discord alternative with communities, channels, threads, moderation and voice."

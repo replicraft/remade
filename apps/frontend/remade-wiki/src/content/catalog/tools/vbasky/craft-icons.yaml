@@ -9,3 +9,4 @@ description: A Lucide-compatible SVG icon set for Craft editing interfaces, cove
 docs: https://github.com/vbasky/craft-icons#readme
 limitations: A developer asset set, not an installed app extension. Integration into an app is manual; the Rust crate, egui helper and font build remain roadmap items. General interface symbols are supplied by Lucide separately.
 projects: [filmcraft, soundcraft, photocraft, vectorcraft]
+summary: "Lucide-compatible SVG icons for Craft editing apps, including timeline, keyframe and navigation controls."

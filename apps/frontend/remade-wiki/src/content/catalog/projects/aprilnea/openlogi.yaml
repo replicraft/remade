@@ -23,3 +23,4 @@ limitations: Under active development; device capabilities and platform behavior
   focus works through X11/XWayland and requires device-access rules. Unsupported controls may be
   no-ops; full Options+ behavior is not claimed. Branding has separate terms from the code.
 website: https://openlogi.org
+summary: "Remap supported Logitech mice locally: buttons, DPI, SmartShift and gestures, without an account."

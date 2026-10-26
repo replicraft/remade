@@ -1,3 +1,4 @@
 original: algodoo
 reason: Reproduce Algodoo's familiar interactive 2D physics sandbox, with drawing tools, rigid-body motion, collisions, gears, motors, fluids, lenses and lasers. Support educational experiments, force visualization and graphs, with compatible saved-scene workflows.
 suggested_names: [PhysicsCraft]
+summary: "Wanted: An interactive 2D physics sandbox for building and experimenting with simulated mechanisms."
