@@ -1,4 +1,4 @@
+# Additional request details in https://github.com/replicraft/remade/issues/98.
 original: originlab-origin
-reason: Scientific data analysis, publication plots, worksheets and automation with Origin project
-  and script compatibility where documented.
-summary: "Wanted: Scientific data analysis and publication-quality plotting."
+reason: Reproduce Origin/OriginPro scientific worksheets, curve fitting, statistical analysis and publication-quality 2D/3D plotting, with automation and Origin project/script compatibility where documented. Support Linux alongside other desktop platforms.
+summary: "Wanted: Origin-style scientific data analysis, curve fitting, statistics and publication-quality 2D/3D plots."

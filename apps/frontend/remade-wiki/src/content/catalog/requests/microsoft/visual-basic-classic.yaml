@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/134.
+original: visual-basic-classic
+reason: Reproduce classic Visual Basic language, visual form design, event handling and existing Windows VB1-6 project workflows. The DOS edition requires distinct compatibility work; do not conflate it with Windows VB or VB.NET. Preserve familiar editing, build and runtime behavior where documented.
+summary: "Wanted: Classic Visual Basic language, form-design and event-driven workflows, targeting existing project compatibility."
+suggested_names:
+  - RADCraft

@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/91.
+original: dreamtonics-vocoflex
+reason: Reproduce Vocoflex-style local, real-time voice transformation from short reference samples, continuous blending between voice profiles and DAW-automatable controls. Target speech and singing workflows with independently developed processing and appropriately licensed models.
+summary: "Wanted: Local real-time voice transformation, short reference samples and continuous blending of voice profiles."

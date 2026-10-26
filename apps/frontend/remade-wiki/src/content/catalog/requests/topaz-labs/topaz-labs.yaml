@@ -1,4 +1,6 @@
+# Additional request details in https://github.com/replicraft/remade/issues/130.
 original: topaz-labs
-reason: Reproduce Topaz's photo and video enhancement workflows for upscaling, denoising, sharpening and restoration, with transparent processing controls.
-suggested_names: [EnhanceCraft]
+reason: Reproduce Topaz's photo and video enhancement workflows for upscaling, denoising, sharpening and restoration, with adjustable video controls for detail recovery and artifact reduction. Independently developed processing should not imply access to or identical results from proprietary Topaz models.
+suggested_names:
+  - EnhanceCraft
 summary: "Wanted: Topaz's photo and video enhancement workflows for upscaling, denoising, sharpening and restoration."

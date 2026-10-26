@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/129.
+original: radan-radnest
+reason: Reproduce RADAN Radnest-style 2D true-shape nesting for sheet fabrication, importing DXF/DWG parts and arranging requested quantities to improve sheet utilization. Focus on nesting and CAD interchange rather than claiming the complete RADAN CAD/CAM suite.
+summary: "Wanted: RADAN Radnest-style 2D sheet nesting of DXF/DWG parts with quantities and reusable material settings."

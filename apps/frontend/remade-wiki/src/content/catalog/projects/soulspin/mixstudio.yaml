@@ -1,0 +1,20 @@
+# Suggested in https://github.com/replicraft/remade/issues/133.
+slug: mixstudio
+name: MixStudio
+authors:
+  - soulspin
+repository: https://github.com/soulspin/MixStudio
+originals:
+  - dj-studio
+category: creative
+languages:
+  - Rust
+platforms:
+  - Linux
+status: beta
+compatibility: partial
+summary: A timeline DJ mixing app with beatgrids, tempo matching, transitions, stems, automation and audio export.
+description: A Rust DJ.Studio-style mix-planning application with songs arranged as timeline clips. Provides beat and key analysis, tempo matching, editable transitions, stem separation, effects, automation, library imports and WAV, FLAC and MP3 export.
+license: MIT
+docs: https://github.com/soulspin/MixStudio#readme
+limitations: Beta, tested on Linux. Windows and macOS support remains unverified despite the cross-platform design. DJ.Studio project-file and full behavioral compatibility are not established. Stem separation requires a separately downloaded model and ONNX Runtime; MP3 export uses FFmpeg.

@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/113.
+original: graphpad-prism
+reason: Reproduce GraphPad Prism workflows with structured scientific data tables, no-code statistical tests, curve fitting and publication-quality graphing. Linked analyses and figures should update when input data changes, with clear analysis choices and export controls.
+summary: "Wanted: No-code scientific statistics, curve fitting and publication graphs that update with structured data tables."

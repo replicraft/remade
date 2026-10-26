@@ -1,0 +1,19 @@
+# Suggested in https://github.com/replicraft/remade/issues/81.
+slug: crafthub
+name: CraftHub
+repository: https://github.com/MegaTheLEGEND/CraftHub
+url: https://github.com/MegaTheLEGEND/CraftHub
+languages:
+  - Rust
+  - JavaScript
+platforms:
+  - Web
+license: MIT OR Apache-2.0
+suites:
+  - artcraft
+projects:
+  - solidcraft
+summary: Self-host ArtCraft web builds with downloads, updates, rollback and optional single sign-on.
+description: A self-hosted Docker-ready launcher that downloads, verifies and serves ArtCraft Suite web builds, with desktop download links, version rollback, automatic updates and optional OIDC sign-on. Reuses the ArtCraft launcher core and supports custom GitHub apps.
+docs: https://github.com/MegaTheLEGEND/CraftHub#readme
+limitations: Web app availability depends on upstream web builds. Without SSO or a protective reverse proxy, anyone who can reach the server is an administrator. Reused app icons and other third-party assets have separate terms.

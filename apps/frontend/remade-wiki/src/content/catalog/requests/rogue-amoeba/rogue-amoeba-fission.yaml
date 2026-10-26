@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/124.
+original: rogue-amoeba-fission
+reason: "Reproduce Fission quick audio editing: trim, split, join, fade and adjust recordings, convert formats and edit chapter metadata. Preserve supported encoded audio without unnecessary re-encoding where feasible. Automatic track and CD numbering is an additional requested feature."
+summary: "Wanted: Fission-style audio trimming, splitting, joining, fades, conversion and chapter metadata editing."

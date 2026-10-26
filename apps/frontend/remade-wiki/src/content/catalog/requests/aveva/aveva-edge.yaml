@@ -1,0 +1,4 @@
+# Requested in https://github.com/replicraft/remade/issues/100.
+original: aveva-edge
+reason: Reproduce AVEVA Edge SCADA/HMI workflows for designing operator screens, configuring device connections, tags and actions, and running interactive industrial interfaces. Aim for compatible project and configuration interchange where documented.
+summary: "Wanted: AVEVA Edge-style SCADA/HMI design, device connections and operator-interface runtime behavior."

@@ -1,0 +1,24 @@
+# Maintainer-approved broader alternative limited to Loom-style recording and editing.
+# Suggested in https://github.com/replicraft/remade/issues/116.
+slug: recordly
+name: Recordly
+repository: https://github.com/webadderallorg/recordly
+originals:
+  - loom
+category: productivity
+languages:
+  - TypeScript
+  - C++
+  - Swift
+platforms:
+  - macOS
+  - Windows
+  - Linux
+status: experimental
+compatibility: partial
+summary: Record and edit screen demos with automatic zooms, cursor effects, webcam overlays and timeline controls.
+description: A desktop screen recorder and editor derived from OpenScreen, covering Loom-style recording and editing workflows. Provides automatic zoom suggestions, cursor effects, webcam overlays, annotations and timeline editing, with local project files and video export.
+license: AGPL-3.0 with branding and attribution terms
+website: https://www.recordly.dev
+docs: https://github.com/webadderallorg/recordly#readme
+limitations: A broader alternative for local recording and editing; Loom hosted sharing and collaboration compatibility is not established. Capture and cursor behavior vary by OS; Wayland uses the system picker. LICENSE.md includes branding and user-facing attribution terms plus inherited MIT notices.

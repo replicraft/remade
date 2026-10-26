@@ -1,0 +1,19 @@
+# Suggested in https://github.com/replicraft/remade/issues/118.
+slug: royal-tasks
+name: Royal Tasks
+repository: https://github.com/RealRules/royal-tasks
+originals:
+  - trello
+category: productivity
+languages:
+  - PHP
+  - JavaScript
+platforms:
+  - Web
+status: experimental
+compatibility: partial
+summary: Self-hosted Trello-style boards with cards, checklists, comments, attachments and Trello JSON import/export.
+description: A self-hosted Trello-style Kanban application for PHP and MySQL or MariaDB hosting. Provides boards, drag-and-drop lists and cards, labels, checklists, assignments, comments, attachments, calendar subscriptions and Trello JSON import/export. Includes optional per-board end-to-end encryption.
+license: Apache-2.0
+docs: https://github.com/RealRules/royal-tasks#readme
+limitations: Targets Trello-style board workflows, not Trello service or API parity. Complete Trello JSON round-trip fidelity is not established. Encryption and privacy properties are maintainer-reported and have not been independently audited.
