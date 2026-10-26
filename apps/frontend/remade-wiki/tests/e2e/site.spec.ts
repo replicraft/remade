@@ -174,7 +174,17 @@ test("static catalog exports and discovery files are served by the production bu
 
 	expect(requestsResponse.ok()).toBe(true);
 
-	expect((await requestsResponse.json()).requests.length).toBeGreaterThan(0);
+	const requests = await requestsResponse.json();
+
+	expect(requests.schemaVersion).toBe(2);
+
+	expect(requests.requests.length).toBeGreaterThan(0);
+
+	for (const entry of [...catalog.projects, ...requests.requests]) {
+		expect(entry).not.toHaveProperty("discord_server");
+		expect(entry).not.toHaveProperty("discord_thread");
+		expect(entry.summary).toEqual(expect.any(String));
+	}
 
 	expect(await (await request.get("/robots.txt")).text()).toContain(
 		"Sitemap: https://remade.wiki/sitemap-index.xml",
