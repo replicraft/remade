@@ -1,13 +1,47 @@
-# Remade
+<p align="center">
+  <a href="https://remade.wiki">
+    <img src="apps/frontend/remade-wiki/public/web-app-manifest-192x192.png" width="80" height="80" alt="Remade logo" />
+  </a>
+</p>
 
-> **Everything can be remade.**
+<h1 align="center">Remade.wiki</h1>
 
-[remade.wiki](https://remade.wiki) is a community-maintained directory of independently developed, open-source software reimplementations.
+<p align="center"><strong>Everything can be remade.</strong></p>
 
-<img width="1727" height="611" alt="Remade.wiki website header" src="https://github.com/user-attachments/assets/a483cd7b-4912-451b-a2b7-ddfcc0dc5ccc" />
+<p align="center">
+  A community-maintained directory of independently developed,<br />
+  open-source software reimplementations.
+</p>
 
+<p align="center">
+  <a href="https://remade.wiki/explore/"><strong>Explore projects</strong></a> ·
+  <a href="https://remade.wiki/requests/">Project requests</a> ·
+  <a href="CONTRIBUTING.md">Contribute</a> ·
+  <a href="POLICY.md">Submission policy</a>
+</p>
 
-## Submit a project
+[![Remade.wiki homepage header and search bar](docs/images/homepage.png)](https://remade.wiki)
+
+## Find your next project
+
+- **Explore reimplementations** by the software they replace, category, platform, or language.
+- **Check compatibility and limitations** before trying a project. Each listing links to its source and documentation.
+- **Request what's missing** and discover the software people want to see remade next.
+
+Remade is a directory. Listed projects are developed and maintained by their own authors.
+
+## Help grow the catalog
+
+| Have something to share? | Start here |
+| --- | --- |
+| Found an existing reimplementation | [Suggest a project](https://github.com/replicraft/remade/issues/new?template=catalog-suggestion.yml) |
+| Want software that hasn't been remade yet | [Request a project](https://github.com/replicraft/remade/issues/new?template=project-request.yml) |
+| Ready to add or correct a listing | [Open a pull request](CONTRIBUTING.md) |
+
+Submissions are reviewed by maintainers. Merged catalog pull requests appear in the directory. Suggestions receive automated link, duplicate, and repository checks; maintainers decide what to publish.
+
+<details open>
+<summary><strong>Add a listing with a pull request</strong></summary>
 
 1. Read the [submission policy](POLICY.md) and [contribution guide](CONTRIBUTING.md).
 2. Check `apps/frontend/remade-wiki/src/content/catalog/projects/` to make sure the project isn't already listed.
@@ -15,11 +49,7 @@
 4. Reference the original software in `apps/frontend/remade-wiki/src/content/catalog/originals.yaml`, adding it there if necessary.
 5. Open a pull request and confirm you've read and agree to follow `POLICY.md` in the PR checklist.
 
-Submissions are reviewed by maintainers. Merged pull requests appear in the directory.
-
-**Found an existing reimplementation but don't want to open a PR?** [Open a Catalog Suggestion issue](../../issues/new?template=catalog-suggestion.yml). The automated reviewer checks links, duplicates, and repository metadata; maintainers still decide what to list.
-
-**No reimplementation exists yet?** [Open a Project Request issue](../../issues/new?template=project-request.yml) with the software name and why you want it remade. No links are required, or see [CONTRIBUTING.md](CONTRIBUTING.md) to submit one by PR.
+</details>
 
 ## Listed on Remade?
 
@@ -31,7 +61,21 @@ Help people discover your listing: add a **Listed on Remade** badge to your READ
 
 Agents and other tools can read the build-generated [catalog JSON](https://remade.wiki/data/catalog.json) and [open project requests JSON](https://remade.wiki/data/requests.json). Both allow cross-origin access from anywhere. See the [export format](docs/CATALOG.md#public-machine-readable-exports) for fields and versioning.
 
-**Special Thanks:**
+## Run locally
+
+Use Node.js 22.12 or newer and the pnpm version pinned in [`package.json`](package.json).
+
+```sh
+pnpm install
+pnpm dev
+```
+
+The Astro frontend lives in [`apps/frontend/remade-wiki/`](apps/frontend/remade-wiki/). Run `pnpm build` to generate the static site and its Pagefind search index.
+
+For catalog formats, development workflows, and product decisions, see the [catalog guide](docs/CATALOG.md), [architecture](docs/ARCHITECTURE.md), and [CI guide](docs/CI.md).
+
+## Special thanks
+
 - ArtCraft and its Discord server
 - @lumpypotato4764 for the idea of aggregating all of the various initiatives going on within the server
 - @naz888z for lots of help curating
