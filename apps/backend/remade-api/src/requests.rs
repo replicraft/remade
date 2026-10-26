@@ -1,16 +1,12 @@
-use crate::{config::Config, session};
+use crate::{config::Config, request_catalog, session};
 use serde::{Deserialize, Serialize};
 use worker::{Env, Request, Response, Result};
 
-const REQUESTS: &str = include_str!(concat!(env!("OUT_DIR"), "/request-slugs.txt"));
-
-pub fn known_request(slug: &str) -> bool {
-    REQUESTS.lines().any(|known| known == slug)
-}
-
 pub fn action_path(path: &str) -> Option<(&str, &str)> {
     let (slug, action) = path.strip_prefix("/api/v1/requests/")?.split_once('/')?;
-    if known_request(slug) && matches!(action, "upvote" | "unvote" | "build" | "unbuild") {
+    if request_catalog::valid_slug(slug)
+        && matches!(action, "upvote" | "unvote" | "build" | "unbuild")
+    {
         Some((slug, action))
     } else {
         None
@@ -36,6 +32,20 @@ struct Row {
 }
 
 pub async fn activity(req: &Request, env: &Env, config: &Config) -> Result<Response> {
+    let url = req.url()?;
+    let mut originals = url.query_pairs().filter(|(key, _)| key == "original");
+    if let Some((_, original)) = originals.next() {
+        if originals.next().is_some() || !request_catalog::valid_slug(&original) {
+            return Response::error("Invalid request ID", 400);
+        }
+        match request_catalog::contains(&original, config).await {
+            Ok(true) => {}
+            Ok(false) => return Response::error("Request not found", 404),
+            Err(_) => {
+                return Response::error("Request catalog unavailable. Please try again later.", 503)
+            }
+        }
+    }
     let user = session::user_id(req, env, config)
         .await?
         .unwrap_or_default();
@@ -43,7 +53,8 @@ pub async fn activity(req: &Request, env: &Env, config: &Config) -> Result<Respo
         .prepare("SELECT original, 'upvote' AS kind, COUNT(*) AS count, MAX(user_id = ?) AS selected FROM request_upvotes GROUP BY original UNION ALL SELECT original, 'build' AS kind, COUNT(*) AS count, MAX(user_id = ?) AS selected FROM request_builders GROUP BY original")
         .bind(&[user.clone().into(), user.into()])?
         .all().await?.results::<Row>()?;
-    let mut requests: Vec<Activity> = REQUESTS
+    let snapshot = request_catalog::snapshot(config).await;
+    let mut requests: Vec<Activity> = snapshot
         .lines()
         .map(|slug| Activity {
             original: slug.into(),
@@ -79,6 +90,13 @@ pub async fn change(req: &Request, env: &Env, config: &Config) -> Result<Respons
     let Some(user) = session::user_id(req, env, config).await? else {
         return Response::error("Unauthorized", 401);
     };
+    match request_catalog::contains(slug, config).await {
+        Ok(true) => {}
+        Ok(false) => return Response::error("Request not found", 404),
+        Err(_) => {
+            return Response::error("Request catalog unavailable. Please try again later.", 503)
+        }
+    }
     // Statements are fixed; clients cannot supply SQL, identities or counts.
     let sql = match action {
         "upvote" => {

@@ -7,10 +7,12 @@ import {
 
 export default function RequestActivityProvider({
 	children,
+	originals = [],
 }: {
 	children: ReactNode;
+	originals?: readonly string[];
 }) {
-	const [store] = useState(createRequestActivityStore);
+	const [store] = useState(() => createRequestActivityStore(originals));
 
 	useEffect(() => {
 		const controller = new AbortController();

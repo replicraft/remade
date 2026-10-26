@@ -13,6 +13,10 @@ let releaseRace: (() => void) | undefined;
 let barrier: Promise<void>;
 let username = "example";
 let requestOriginal: string;
+let catalogCalls = 0;
+let catalogStatus = 200;
+let catalogTruncated = false;
+let catalogIds = new Set<string>();
 
 beforeAll(async () => {
 	const requestFiles = await readdir(
@@ -74,6 +78,25 @@ beforeAll(async () => {
 					outboundService: {
 						type: "fetcher",
 						handler: async (request) => {
+							const url = new URL(request.url);
+							if (
+								url.hostname === "api.github.com" &&
+								url.pathname === "/repos/replicraft/remade/git/trees/main"
+							) {
+								catalogCalls++;
+								expect(url.searchParams.get("recursive")).toBe("1");
+								expect(request.headers.get("Authorization")).toBeNull();
+								if (catalogStatus !== 200)
+									return new Response("Unavailable", { status: catalogStatus });
+								return Response.json({
+									sha: "a".repeat(40),
+									truncated: catalogTruncated,
+									tree: [...catalogIds].map((id) => ({
+										path: `apps/frontend/remade-wiki/src/content/catalog/requests/mock-vendor/${id}.yaml`,
+										type: "blob",
+									})),
+								});
+							}
 							providerCalls++;
 							if (new URL(request.url).hostname === "github.com") {
 								const body = new URLSearchParams(await request.text());
@@ -168,10 +191,12 @@ describe("request upvotes and builders", () => {
 			building: false,
 		});
 		expect(providerCalls).toBe(0);
+		expect(catalogCalls).toBe(0);
 	});
 
 	it("rejects unauthenticated writes, cross-origin writes and unknown requests", async () => {
 		expect((await act("", "upvote")).status).toBe(401);
+		expect(catalogCalls).toBe(0);
 		const cookie = sessionCookie(await login());
 		expect((await act(cookie, "build", "https://evil.example")).status).toBe(
 			403,
@@ -222,6 +247,112 @@ describe("request upvotes and builders", () => {
 			upvoted: false,
 			building: false,
 		});
+		expect(catalogCalls).toBe(0);
+	});
+
+	it("refreshes a missing page ID before voting and reuses the text snapshot on hits", async () => {
+		const original = "new-request-after-build";
+		catalogIds.add(original);
+		const missing = await worker.dispatchFetch(
+			`${api}/api/v1/requests/activity?original=${original}`,
+		);
+		expect(missing.status).toBe(200);
+		const payload = (await missing.json()) as {
+			requests: { original: string; upvotes: number }[];
+		};
+		expect(
+			payload.requests.find((item) => item.original === original)?.upvotes,
+		).toBe(0);
+		const cookie = sessionCookie(await login());
+		for (const action of ["upvote", "build"]) {
+			const response = await worker.dispatchFetch(
+				`${api}/api/v1/requests/${original}/${action}`,
+				{ method: "POST", headers: { Origin: origin, Cookie: cookie } },
+			);
+			expect(response.status).toBe(204);
+		}
+		expect(
+			(await read(cookie)).requests.find((item) => item.original === original),
+		).toMatchObject({ upvotes: 1, builders: 1, upvoted: true, building: true });
+		expect(catalogCalls).toBe(1);
+	});
+
+	it("refreshes a missing write ID and replaces removed IDs instead of appending", async () => {
+		const cookie = sessionCookie(await login());
+		expect((await act(cookie, "upvote")).status).toBe(204);
+		const original = "replacement-request";
+		catalogIds = new Set([original]);
+		const response = await worker.dispatchFetch(
+			`${api}/api/v1/requests/${original}/upvote`,
+			{ method: "POST", headers: { Origin: origin, Cookie: cookie } },
+		);
+		expect(response.status).toBe(204);
+		expect(
+			(await read()).requests.some((item) => item.original === requestOriginal),
+		).toBe(false);
+		expect((await act(cookie, "build")).status).toBe(404);
+		expect(catalogCalls).toBe(1);
+	});
+
+	it("limits repeated unknown IDs to one refresh during the cooldown", async () => {
+		const cookie = sessionCookie(await login());
+		for (const original of ["missing-one", "missing-two"]) {
+			const response = await worker.dispatchFetch(
+				`${api}/api/v1/requests/${original}/upvote`,
+				{ method: "POST", headers: { Origin: origin, Cookie: cookie } },
+			);
+			expect(response.status).toBe(404);
+		}
+		expect(catalogCalls).toBe(1);
+	});
+
+	it("preserves the last good text snapshot when refresh fails", async () => {
+		catalogIds.add("new-request");
+		expect(
+			(
+				await worker.dispatchFetch(
+					`${api}/api/v1/requests/activity?original=new-request`,
+				)
+			).status,
+		).toBe(200);
+		const cache = await (await worker.getCaches()).open(
+			"remade-request-slugs-v1",
+		);
+		for (const key of await cache.keys())
+			if (key.url.endsWith("/refresh")) await cache.delete(key);
+		catalogStatus = 503;
+		expect(
+			(
+				await worker.dispatchFetch(
+					`${api}/api/v1/requests/activity?original=another-request`,
+				)
+			).status,
+		).toBe(503);
+		expect(
+			(await read()).requests.some((item) => item.original === "new-request"),
+		).toBe(true);
+		expect(
+			(
+				await worker.dispatchFetch(
+					`${api}/api/v1/requests/activity?original=missing-too`,
+				)
+			).status,
+		).toBe(503);
+		expect(catalogCalls).toBe(2);
+	});
+
+	it("rejects truncated upstream data without replacing the seed", async () => {
+		catalogTruncated = true;
+		expect(
+			(
+				await worker.dispatchFetch(
+					`${api}/api/v1/requests/activity?original=unknown-request`,
+				)
+			).status,
+		).toBe(503);
+		expect(
+			(await read()).requests.some((item) => item.original === requestOriginal),
+		).toBe(true);
 	});
 });
 
@@ -230,6 +361,14 @@ beforeEach(async () => {
 	providerCalls = 0;
 	userCalls = 0;
 	username = "example";
+	catalogCalls = 0;
+	catalogStatus = 200;
+	catalogTruncated = false;
+	catalogIds = new Set([requestOriginal]);
+	const cache = await (await worker.getCaches()).open(
+		"remade-request-slugs-v1",
+	);
+	for (const key of await cache.keys()) await cache.delete(key);
 	barrier = new Promise((resolve) => {
 		releaseRace = resolve;
 	});

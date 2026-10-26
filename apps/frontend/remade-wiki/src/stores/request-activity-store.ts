@@ -20,7 +20,7 @@ interface State {
 	change: (original: string, action: RequestAction) => Promise<void>;
 }
 
-export function createRequestActivityStore() {
+export function createRequestActivityStore(originals: readonly string[] = []) {
 	let revision = 0;
 
 	return createStore<State>()((set, get) => ({
@@ -34,7 +34,7 @@ export function createRequestActivityStore() {
 			const current = ++revision;
 
 			try {
-				const items = await readRequestActivity(signal);
+				const items = await readRequestActivity(signal, originals);
 				if (signal?.aborted || current !== revision) return;
 
 				set({

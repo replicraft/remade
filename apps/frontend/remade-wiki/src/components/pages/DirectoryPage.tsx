@@ -40,7 +40,11 @@ const keys = [
 ];
 export default function DirectoryPage(props: Props) {
 	return props.kind === "request" ? (
-		<RequestActivityProvider>
+		<RequestActivityProvider
+			originals={props.records
+				.filter((record) => record.kind === "request")
+				.map((record) => record.id)}
+		>
 			<RequestDirectory {...props} />
 		</RequestActivityProvider>
 	) : (

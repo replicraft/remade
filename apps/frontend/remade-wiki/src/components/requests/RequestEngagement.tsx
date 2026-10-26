@@ -3,7 +3,7 @@ import RequestActivityProvider from "./RequestActivityProvider";
 
 export default function RequestEngagement({ original }: { original: string }) {
 	return (
-		<RequestActivityProvider>
+		<RequestActivityProvider originals={[original]}>
 			<RequestActions original={original} />
 		</RequestActivityProvider>
 	);
