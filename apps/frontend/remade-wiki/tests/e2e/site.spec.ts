@@ -333,6 +333,109 @@ test("a returning account can log out from the mobile header", async ({
 	).toBe(false);
 });
 
+test("adjacent page links work across project and request directories", async ({
+	page,
+}) => {
+	for (const base of ["/explore/", "/requests/"]) {
+		await page.goto(base);
+		const pagination = page.getByRole("navigation", {
+			name: "Pagination",
+			exact: true,
+		});
+		await expect(
+			pagination.getByRole("link", { name: "← Prev" }),
+		).toHaveAttribute("aria-disabled", "true");
+		await pagination.getByRole("link", { name: "Next →" }).click();
+		await expect(page).toHaveURL(new RegExp(`${base}page/2/$`));
+		await pagination.getByRole("link", { name: "← Prev" }).click();
+		await expect(page).toHaveURL(new RegExp(`${base}$`));
+	}
+});
+
+test("vendor pagination supports deep links, history, filtering and mobile layout", async ({
+	page,
+}) => {
+	await page.setViewportSize({ width: 320, height: 800 });
+	await page.goto("/vendor/");
+	const items = page.locator("[data-vendor-search]:visible");
+	const pagination = page.getByRole("navigation", {
+		name: "Vendors pagination",
+	});
+	await expect(items).toHaveCount(24);
+	const first = await items.first().textContent();
+	await pagination.getByRole("link", { name: "Next →" }).click();
+	await expect(page).toHaveURL(/vendors-page=2/);
+	await expect(items).toHaveCount(24);
+	expect(await items.first().textContent()).not.toBe(first);
+	await page.reload();
+	await expect(
+		pagination.getByRole("link", { name: "2", exact: true }),
+	).toHaveAttribute("aria-current", "page");
+	await page.goBack();
+	await expect(items.first()).toHaveText(first ?? "");
+	await pagination.getByRole("link", { name: "Next →" }).click();
+	await page
+		.getByRole("searchbox", { name: "Find a vendor or software" })
+		.fill("Autodesk");
+	await expect(items).toHaveCount(1);
+	await expect(pagination).not.toBeVisible();
+	await expect(page).not.toHaveURL(/vendors-page=/);
+	await page.getByRole("searchbox").fill("");
+	await expect(items).toHaveCount(24);
+	await expect(pagination).toBeVisible();
+	expect(
+		await page.evaluate(
+			() => document.documentElement.scrollWidth <= innerWidth,
+		),
+	).toBe(true);
+});
+
+test("pagination ellipses jump to a typed page in both static and enhanced lists", async ({
+	page,
+}) => {
+	for (const path of ["/requests/", "/vendor/"]) {
+		await page.goto(path);
+		const pagination = page.locator("[data-pagination-nav]:visible").first();
+		const jump = pagination.locator('[data-pagination-gap="gap-end"]');
+		await jump.locator("summary").click();
+		const input = jump.getByRole("spinbutton", { name: "Page number" });
+		await expect(input).toBeFocused();
+		const maximum = Number(await input.getAttribute("max"));
+		await input.fill(String(maximum + 1));
+		await jump.getByRole("button", { name: "Go", exact: true }).click();
+		await expect(page).not.toHaveURL(/page\/\d|vendors-page=/);
+		await input.fill(String(maximum));
+		await input.press("Enter");
+		await expect(
+			pagination.getByRole("link", { name: String(maximum), exact: true }),
+		).toHaveAttribute("aria-current", "page");
+		await expect(
+			pagination.getByRole("link", { name: "Next →" }),
+		).toHaveAttribute("aria-disabled", "true");
+		const earlier = pagination.locator('[data-pagination-gap="gap-start"]');
+		await earlier.locator("summary").click();
+		await earlier.getByRole("spinbutton").press("Escape");
+		await expect(earlier).not.toHaveAttribute("open", "");
+		await expect(earlier.locator("summary")).toBeFocused();
+	}
+});
+
+test("vendor lists remain complete without JavaScript", async ({ browser }) => {
+	const context = await browser.newContext({ javaScriptEnabled: false });
+	try {
+		const page = await context.newPage();
+		await page.goto("http://127.0.0.1:4377/vendor/");
+		expect(
+			await page.locator("[data-vendor-search]:visible").count(),
+		).toBeGreaterThan(24);
+		await expect(
+			page.getByRole("navigation", { name: "Vendors pagination" }),
+		).not.toBeVisible();
+	} finally {
+		await context.close();
+	}
+});
+
 test("request pagination works without JavaScript and uses distinct canonical URLs", async ({
 	browser,
 }) => {

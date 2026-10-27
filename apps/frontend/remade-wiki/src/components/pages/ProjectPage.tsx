@@ -11,6 +11,7 @@ import OriginalLinks from "../catalog/OriginalLinks";
 import ProjectScreenshots from "../catalog/ProjectScreenshots";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
+import PaginatedList from "../navigation/PaginatedList";
 
 interface Props {
 	project: Project;
@@ -198,7 +199,11 @@ export default function ProjectPage({
 				<section>
 					<h2>Supporting tools</h2>
 
-					<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+					<PaginatedList
+						className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3"
+						id="project-tools"
+						label="Supporting tools"
+					>
 						{tools.map((entry) => (
 							<EntryCard
 								entry={entry}
@@ -209,7 +214,7 @@ export default function ProjectPage({
 								suites={catalog.suites}
 							/>
 						))}
-					</div>
+					</PaginatedList>
 				</section>
 			)}
 
@@ -224,7 +229,11 @@ export default function ProjectPage({
 									.join(", ")}`}
 					</h2>
 
-					<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+					<PaginatedList
+						className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3"
+						id="related-projects"
+						label="Related projects"
+					>
 						{related.map((entry) => (
 							<EntryCard
 								entry={entry}
@@ -235,7 +244,7 @@ export default function ProjectPage({
 								suites={catalog.suites}
 							/>
 						))}
-					</div>
+					</PaginatedList>
 				</section>
 			)}
 		</>

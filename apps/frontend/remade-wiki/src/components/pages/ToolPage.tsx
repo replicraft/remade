@@ -15,6 +15,7 @@ import ListingDescription from "../catalog/ListingDescription";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
 import SuiteCard from "../catalog/SuiteCard";
+import PaginatedList from "../navigation/PaginatedList";
 
 interface Props {
 	tool: Tool;
@@ -96,7 +97,11 @@ export default function ToolPage({ tool, catalog, metadata, children }: Props) {
 					reimplementations or fulfill requests.
 				</p>
 
-				<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+				<PaginatedList
+					className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3"
+					id="tool-targets"
+					label="Works with"
+				>
 					{targets.suites.map((suite) => (
 						<SuiteCard key={suite.slug} suite={suite} />
 					))}
@@ -114,7 +119,7 @@ export default function ToolPage({ tool, catalog, metadata, children }: Props) {
 								suites={catalog.suites}
 							/>
 						))}
-				</div>
+				</PaginatedList>
 			</section>
 
 			<section className="max-w-[780px]">

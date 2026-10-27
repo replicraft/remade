@@ -14,6 +14,7 @@ import { exactVendorMatch } from "../../lib/vendors";
 import { defaultFilters as exploreDefaults } from "../../stores/explore-store";
 import { useRequestActivity } from "../../stores/request-activity-store";
 import DirectoryCard from "../catalog/DirectoryCard";
+import PaginationControls from "../navigation/PaginationControls";
 import RequestActions from "../requests/RequestActions";
 import RequestActivityProvider from "../requests/RequestActivityProvider";
 import RequestPreview from "../requests/RequestPreview";
@@ -196,6 +197,20 @@ function DirectoryContent({
 	const pages = Math.max(1, Math.ceil(results.length / pageSize));
 	const current = Math.min(page, pages);
 	const visible = results.slice((current - 1) * pageSize, current * pageSize);
+	const paginationParams = new URLSearchParams();
+	if (ready) {
+		for (const key of keys) {
+			if (
+				filters[key] &&
+				filters[key] !== defaults[key as keyof typeof defaults]
+			) {
+				paginationParams.set(key, filters[key]);
+			}
+		}
+	}
+	const paginationHref = (number: number) =>
+		`${pageHref(kind, number)}${paginationParams.size ? `?${paginationParams}` : ""}`;
+
 	const alternatives = filters.q
 		? searchDirectory(records, filters.q)
 				.filter((record) =>
@@ -325,33 +340,11 @@ function DirectoryContent({
 					)}
 				</section>
 			)}
-			<nav
-				aria-label="Pagination"
-				className="my-8 flex flex-wrap items-center justify-center gap-2"
-			>
-				{Array.from({ length: pages }, (_, index) => index + 1).map(
-					(number) => {
-						const params = new URLSearchParams();
-						if (ready)
-							for (const key of keys)
-								if (
-									filters[key] &&
-									filters[key] !== defaults[key as keyof typeof defaults]
-								)
-									params.set(key, filters[key]);
-						return (
-							<a
-								aria-current={number === current ? "page" : undefined}
-								className={`inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border px-3 text-sm ${number === current ? "border-lime text-lime" : "border-line"}`}
-								href={`${pageHref(kind, number)}${params.size ? `?${params}` : ""}`}
-								key={number}
-							>
-								{number}
-							</a>
-						);
-					},
-				)}
-			</nav>
+			<PaginationControls
+				currentPage={current}
+				hrefForPage={paginationHref}
+				totalPages={pages}
+			/>
 			<div className="section-note">
 				<p>
 					{kind === "request"

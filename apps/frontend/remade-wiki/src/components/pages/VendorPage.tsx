@@ -1,5 +1,6 @@
 import { label } from "../../lib/presentation";
 import type { VendorGroup } from "../../lib/vendors";
+import PaginatedList from "../navigation/PaginatedList";
 
 type Row = VendorGroup["software"][number];
 
@@ -40,7 +41,11 @@ export default function VendorPage({ group }: { group: VendorGroup }) {
 						Software with listed projects{" "}
 						<span className="text-muted">{group.withProjects.length}</span>
 					</h2>
-					<div className="divide-y divide-line border-y border-line">
+					<PaginatedList
+						className="divide-y divide-line border-y border-line"
+						id="vendor-projects"
+						label="Software with listed projects"
+					>
 						{group.withProjects.map((row) => (
 							<article
 								className="grid gap-4 py-6 sm:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] sm:gap-8"
@@ -69,7 +74,7 @@ export default function VendorPage({ group }: { group: VendorGroup }) {
 								</ul>
 							</article>
 						))}
-					</div>
+					</PaginatedList>
 				</section>
 			)}
 
@@ -79,7 +84,11 @@ export default function VendorPage({ group }: { group: VendorGroup }) {
 						Project Requests{" "}
 						<span className="text-muted">{group.requested.length}</span>
 					</h2>
-					<div className="divide-y divide-line border-y border-line">
+					<PaginatedList
+						className="divide-y divide-line border-y border-line"
+						id="vendor-requests"
+						label="Project Requests"
+					>
 						{group.requested.map((row) => (
 							<article
 								className="grid gap-3 py-5 sm:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] sm:gap-8"
@@ -99,7 +108,7 @@ export default function VendorPage({ group }: { group: VendorGroup }) {
 								</div>
 							</article>
 						))}
-					</div>
+					</PaginatedList>
 				</section>
 			)}
 
@@ -110,13 +119,18 @@ export default function VendorPage({ group }: { group: VendorGroup }) {
 						No project or active request is currently listed for these
 						originals.
 					</p>
-					<ul className="grid gap-4">
+					<PaginatedList
+						as="ul"
+						className="grid gap-4"
+						id="vendor-other"
+						label="Other software"
+					>
 						{group.unrequested.map((row) => (
 							<li key={row.original.slug}>
 								<SoftwareTitle row={row} />
 							</li>
 						))}
-					</ul>
+					</PaginatedList>
 				</section>
 			)}
 		</>

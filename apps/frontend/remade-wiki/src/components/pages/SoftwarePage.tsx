@@ -8,6 +8,7 @@ import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
 import ListingDescription from "../catalog/ListingDescription";
 import ProjectComparison from "../catalog/ProjectComparison";
+import PaginatedList from "../navigation/PaginatedList";
 
 export default function SoftwarePage({
 	original,
@@ -157,7 +158,11 @@ export default function SoftwarePage({
 						originalName={original.name}
 						projects={entries}
 					/>
-					<div className="directory-grid">
+					<PaginatedList
+						className="directory-grid"
+						id="software-projects"
+						label="Reimplementations"
+					>
 						{entries.map((entry) => (
 							<EntryCard
 								entry={entry}
@@ -168,7 +173,7 @@ export default function SoftwarePage({
 								suites={catalog.suites}
 							/>
 						))}
-					</div>
+					</PaginatedList>
 				</section>
 			)}
 			{!request && !entries.length && (

@@ -39,9 +39,14 @@ if (directory && input && controls && count && empty) {
 		const query = normalizeVendorSearch(input.value);
 		let visible = 0;
 		for (const item of items) {
-			item.hidden = !item.dataset.vendorSearch?.includes(query);
-			if (!item.hidden) visible++;
+			const matches = item.dataset.vendorSearch?.includes(query) ?? false;
+			item.dataset.paginationFiltered = String(!matches);
+			item.hidden = !matches;
+			if (matches) visible++;
 		}
+		directory
+			.querySelector("[data-pagination-root]")
+			?.dispatchEvent(new Event("pagination-filter"));
 		count.textContent = `${visible} ${visible === 1 ? "vendor" : "vendors"}`;
 		empty.hidden = visible > 0;
 	});
