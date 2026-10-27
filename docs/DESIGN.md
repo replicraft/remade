@@ -159,3 +159,5 @@ Header and footer Vendors links open `/vendor/`. Render an alphabetic grid of co
 Home search suggestions and both directory searches show a small “See all by {vendor}” link when the complete query matches a registered vendor name, slug or alias. Matching ignores case, accents and surrounding whitespace; partial vendor queries do not show the shortcut. Vendor matching uses bundled catalog metadata and makes no visitor network requests.
 
 Tool cards show up to three supported projects inline. Longer lists use **Tool for: View List**, opening a scrollable hover card with links to every supported project, including suite members. The same control works with keyboard focus and tap; Escape and outside clicks dismiss it. Native disclosure remains available without JavaScript. Tool detail pages keep their full supported-project sections.
+
+On tool detail pages, suite support appears as a Suite card first in the Works with grid, linking to the suite and stating that all its projects are included. Individual supported projects outside those suites follow as project cards, without duplicating suite members.

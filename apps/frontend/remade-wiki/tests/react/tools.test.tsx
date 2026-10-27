@@ -139,7 +139,7 @@ describe("repository mirrors", () => {
 });
 
 describe("suite browsing", () => {
-	it("links a tool card to its suite without enumerating its members", async () => {
+	it("shows a tool card's complete suite support through View List", async () => {
 		const launcher = findBySlug(catalog.entries, "artcraft-launcher");
 		const screen = await render(
 			<EntryCard
@@ -149,12 +149,34 @@ describe("suite browsing", () => {
 				suites={catalog.suites}
 			/>,
 		);
+		await screen.getByText("View List", { exact: true }).click();
+		await expect
+			.element(screen.getByRole("link", { name: "PhotoCraft", exact: true }))
+			.toHaveAttribute("href", "/projects/photocraft/");
+	});
 
+	it("puts suite support first as its own card before additional projects", async () => {
+		const playground = findBySlug(catalog.tools, "openplayground");
+		const screen = await render(
+			<ToolPage catalog={catalog} metadata={{}} tool={playground} />,
+		);
+		const suite = screen.getByRole("link", {
+			name: "ArtCraft Suite",
+			exact: true,
+		});
+		await expect.element(suite).toHaveAttribute("href", "/suites/artcraft/");
 		await expect
 			.element(
-				screen.getByRole("link", { name: "ArtCraft Suite", exact: true }),
+				screen.getByText("Includes all 13 projects in this suite.", {
+					exact: true,
+				}),
 			)
-			.toHaveAttribute("href", "/suites/artcraft/");
+			.toBeVisible();
+		const card = suite.element().closest("article");
+		expect(card?.parentElement?.firstElementChild).toBe(card);
+		await expect
+			.element(screen.getByRole("link", { name: "EarthCraft", exact: true }))
+			.toBeVisible();
 		await expect
 			.element(screen.getByRole("link", { name: "PhotoCraft", exact: true }))
 			.not.toBeInTheDocument();

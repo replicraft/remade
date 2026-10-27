@@ -14,7 +14,7 @@ import EntryCard from "../catalog/EntryCard";
 import ListingDescription from "../catalog/ListingDescription";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
-import ToolTargets from "../catalog/ToolTargets";
+import SuiteCard from "../catalog/SuiteCard";
 
 interface Props {
 	tool: Tool;
@@ -96,19 +96,10 @@ export default function ToolPage({ tool, catalog, metadata, children }: Props) {
 					reimplementations or fulfill requests.
 				</p>
 
-				{targets.suites.length > 0 && (
-					<p>
-						Works with{" "}
-						<ToolTargets
-							projects={catalog.projects}
-							suites={catalog.suites}
-							tool={{ ...tool, projects: [] }}
-						/>
-						. Open a suite to browse its products.
-					</p>
-				)}
-
 				<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+					{targets.suites.map((suite) => (
+						<SuiteCard key={suite.slug} suite={suite} />
+					))}
 					{catalog.entries
 						.filter(
 							(e) => e.kind === "project" && targets.projects.includes(e.slug),
