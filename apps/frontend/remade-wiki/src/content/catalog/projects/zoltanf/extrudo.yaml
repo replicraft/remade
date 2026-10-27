@@ -13,6 +13,7 @@ compatibility: targeting
 description: A broader Fusion alternative for parametric CAD and 3D printing, with constrained sketches, solid modeling, feature history, parameters, components and joints. Provides STEP, STL and 3MF interchange, partial Fusion F3D import, OpenSCAD import/export, scripts and desktop MCP automation. Runs locally in a browser or Electron, using OpenCascade geometry and FreeCAD's sketch solver.
 license: GPL-3.0-or-later
 website: https://extrudo.org
+browser_url: https://app.extrudo.org/
 docs: https://github.com/zoltanf/extrudo#readme
 limitations: Pre-1.0; upstream notes rough edges. Uses its own document format; Fusion F3D import is partial and maintainer-reported. Full Fusion file fidelity, extensions and behavioral compatibility are not claimed. CAM, FEA and real-time cloud collaboration are outside the documented scope. Desktop installers are unsigned or ad-hoc signed; macOS is not notarized.
 summary: "Parametric CAD for 3D printing, in your browser or on your Mac, Windows or Linux computer."

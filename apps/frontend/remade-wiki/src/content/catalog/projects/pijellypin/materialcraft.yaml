@@ -3,6 +3,7 @@ slug: materialcraft
 name: MaterialCraft
 authors: [pijellypin]
 repository: https://github.com/PiJellyPin/MaterialCraft
+browser_url: https://playground.daijro.dev/head/materialcraft/
 originals: [adobe-substance-3d-designer]
 category: creative
 languages: [Rust]

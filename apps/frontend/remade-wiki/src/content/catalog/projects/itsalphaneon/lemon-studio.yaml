@@ -4,6 +4,7 @@ name: Lemon Studio
 authors: [itsalphaneon]
 repository: https://github.com/ItsAlphaNeon/Lemon-Studio
 website: https://playground.daijro.dev/lemon-studio/
+browser_url: https://playground.daijro.dev/lemon-studio/
 originals: [fl-studio]
 category: creative
 languages: [Rust]

@@ -3,6 +3,7 @@ slug: open-publisher
 name: Open Publisher
 repository: https://github.com/rmellis/open-publisher
 website: https://openpublisher.app
+browser_url: https://openpublisher.app/
 originals:
 - microsoft-publisher
 category: creative

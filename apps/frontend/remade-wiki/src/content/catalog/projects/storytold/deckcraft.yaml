@@ -4,6 +4,7 @@ name: DeckCraft
 authors: [storytold]
 repository: https://github.com/storytold/deckcraft
 website: https://getartcraft.com/apps/deckcraft
+browser_url: https://playground.daijro.dev/deckcraft/
 originals: [microsoft-powerpoint]
 category: productivity
 languages: [Rust]

@@ -3,6 +3,7 @@ slug: designcraft
 name: DesignCraft
 authors: [storytold]
 repository: https://github.com/storytold/designcraft
+browser_url: https://playground.daijro.dev/designcraft/
 originals: [adobe-indesign]
 category: creative
 languages: [Rust]

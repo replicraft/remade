@@ -4,6 +4,7 @@ name: PaintCraft
 authors: [replicraft]
 repository: https://github.com/replicraft/PaintCraft
 website: https://paint.replicraft.dev
+browser_url: https://paint.replicraft.dev/
 originals: [paint-net, microsoft-paint]
 category: creative
 languages: [Rust]

@@ -3,6 +3,7 @@ name: ProWave
 authors:
   - fabox-os
 repository: https://github.com/fabox-os/Pro-Wave
+browser_url: https://playground.daijro.dev/head/pro-wave/
 originals:
   - logic-pro
 category: creative

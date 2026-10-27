@@ -12,6 +12,7 @@ compatibility: partial
 description: An independent Rust CAE application targeting Abaqus/CAE-style simulation workflows. Imports SolidCraft parts, generates tetrahedral and hexahedral meshes, and provides structural, nonlinear, thermal and fluid analyses with result visualization. Its desktop, CLI and MCP interfaces share one command engine; it also writes Abaqus, Nastran and LS-DYNA decks.
 license: MIT OR Apache-2.0
 website: https://tangency-labs.github.io/fieldcraft/
+browser_url: https://tangency-labs.github.io/fieldcraft/
 docs: https://github.com/tangency-labs/fieldcraft/blob/develop/docs/parity.md
 limitations: Early development; coverage and benchmark results are maintainer-reported. Contact, buckling and broader material and multiphysics coverage remain planned. Deck writers reject unsupported features; full Abaqus project, scripting or solver compatibility is not claimed. The upstream oracle suite documents known failures.
 summary: "Abaqus-style simulation with mesh generation and structural, heat-transfer and fluid-analysis workflows."

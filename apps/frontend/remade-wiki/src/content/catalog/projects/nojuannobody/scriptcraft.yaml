@@ -3,6 +3,7 @@ slug: scriptcraft
 name: ScriptCraft
 authors: [nojuannobody]
 repository: https://github.com/NoJuanNobody/scriptcraft
+browser_url: https://nojuannobody.github.io/scriptcraft/app/
 originals: [final-draft]
 category: creative
 languages: [Rust]

@@ -12,6 +12,7 @@ compatibility: partial
 description: A native and browser GIS offering ArcGIS-style ribbon workflows for mapping, editing, spatial analysis, layouts and reporting. Reads common geospatial formats and ArcGIS REST services, with scriptable commands, CLI and Python interfaces, MCP automation and WebAssembly plugins.
 license: Apache-2.0
 website: https://rustgis.app/
+browser_url: https://web.rustgis.app/
 docs: https://rustgis.app/user-guide/
 limitations: A broader GIS alternative, not a full ArcGIS replacement. Many features are first implementations; full 3D scenes and enterprise portal sharing are unfinished. Native ArcGIS project and extension compatibility is not documented. Some data providers require GDAL or DuckDB; AI assistance sends selected data to the configured model.
 summary: "ArcGIS-style mapping, spatial analysis, editing, layouts and reports in a native and browser GIS."

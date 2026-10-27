@@ -3,6 +3,7 @@ name: Plane
 authors: [makeplane]
 repository: https://github.com/makeplane/plane
 website: https://plane.so/
+browser_url: https://app.plane.so/
 docs: https://docs.plane.so/
 originals: [jira, linear, monday, clickup]
 category: productivity

@@ -3,6 +3,7 @@ slug: subcraft
 name: SubCraft
 authors: [aalzard]
 repository: https://github.com/Aalzard/subcraft
+browser_url: https://playground.daijro.dev/head/subcraft/
 originals: [adobe-substance-3d-painter]
 category: creative
 languages: [Rust]

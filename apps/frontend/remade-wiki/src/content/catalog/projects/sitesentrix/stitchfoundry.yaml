@@ -3,6 +3,7 @@ slug: stitchfoundry
 name: StitchFoundry
 authors: [sitesentrix]
 repository: https://github.com/Stitchwright/StitchFoundry
+browser_url: https://stitchwright.github.io/StitchFoundry/
 originals: [wilcom-embroiderystudio]
 category: creative
 languages: [Rust]

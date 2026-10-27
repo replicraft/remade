@@ -4,6 +4,7 @@ name: SoundCraft
 authors: [storytold]
 repository: https://github.com/storytold/soundcraft
 website: https://getartcraft.com/apps/soundcraft
+browser_url: https://playground.daijro.dev/soundcraft/
 originals: [avid-pro-tools]
 category: creative
 languages: [Rust]

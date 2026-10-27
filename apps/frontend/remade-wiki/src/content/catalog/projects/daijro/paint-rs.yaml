@@ -3,6 +3,7 @@ slug: paint-rs
 name: paint.rs
 repository: https://github.com/daijro/paint.rs
 website: https://playground.daijro.dev/paint-rs
+browser_url: https://playground.daijro.dev/paint-rs/
 originals: [paint-net]
 category: creative
 languages: [Rust]

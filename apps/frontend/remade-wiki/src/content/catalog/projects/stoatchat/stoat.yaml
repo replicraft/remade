@@ -12,6 +12,7 @@ compatibility: partial
 description: A broader Discord alternative, formerly called Revolt, with servers, channels, voice chat, file sharing, role-based permissions and moderation tools. Combines a Rust backend with separately maintained web, desktop and mobile clients. Communities can use the hosted service or deploy their own infrastructure.
 license: AGPL-3.0; component-specific licenses
 website: https://stoat.chat/
+browser_url: https://stoat.chat/app
 docs: https://developers.stoat.chat/
 limitations: Uses its own service and API rather than Discord's; Discord account, bot and client compatibility is not established. The linked repository contains the backend; web, desktop, Android and iOS clients live in separate repositories. Individual backend crates may use different licenses.
 summary: "A Discord alternative with servers, channels, voice chat, file sharing, roles and moderation."

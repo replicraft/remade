@@ -4,6 +4,7 @@ name: VectorCraft
 authors: [storytold]
 repository: https://github.com/storytold/vectorcraft
 website: https://getartcraft.com/apps/vectorcraft
+browser_url: https://playground.daijro.dev/vectorcraft/
 originals: [adobe-illustrator]
 category: creative
 languages: [Rust]

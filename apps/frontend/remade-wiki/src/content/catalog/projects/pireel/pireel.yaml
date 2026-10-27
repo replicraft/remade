@@ -12,6 +12,7 @@ compatibility: partial
 description: An open-source CapCut-style video editor with a canvas, timeline, captions, graphics, audio and export workflows. Supports editing by hand or through connected AI agents; the open-source edition focuses on local editing.
 license: AGPL-3.0-only
 website: https://pireel.com/
+browser_url: https://pireel.com/en/login?next=/studio
 docs: https://github.com/pireel/pireel#readme
 limitations: A broader alternative; full CapCut behavior and native project-file compatibility are not documented. Built-in Chat and connected services belong to the complete hosted experience rather than the local open-source edition. The separate agent plugin has its own Apache-2.0 license.
 summary: "CapCut-style video editing with a timeline, captions, graphics and MCP control for AI agents."

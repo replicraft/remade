@@ -10,6 +10,7 @@ compatibility: partial
 description: Harper provides Grammarly-style spelling and grammar suggestions with processing entirely on the user's device. Its Rust engine supports English proofreading through browser and editor integrations, a language server, JavaScript and Rust libraries, and a native macOS application.
 license: Apache-2.0
 website: https://writewithharper.com/
+browser_url: https://writewithharper.com/editor
 docs: https://writewithharper.com/docs/about
 discord_server: https://discord.com/invite/JBqcAaKrzQ
 limitations: Supports English and its dialects only. Its scope is narrower than Grammarly's broader writing assistant; full feature parity and interface compatibility are not claimed. Available features vary by integration.

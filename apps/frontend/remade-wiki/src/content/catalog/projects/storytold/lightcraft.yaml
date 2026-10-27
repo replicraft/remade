@@ -4,6 +4,7 @@ name: LightCraft
 authors: [storytold]
 repository: https://github.com/storytold/lightcraft
 website: https://getartcraft.com/apps/lightcraft
+browser_url: https://playground.daijro.dev/lightcraft/
 originals: [adobe-lightroom]
 category: creative
 languages: [Rust]

@@ -3,6 +3,7 @@ slug: gridcraft
 name: GridCraft
 authors: [storytold]
 repository: https://github.com/storytold/gridcraft
+browser_url: https://playground.daijro.dev/gridcraft/
 originals: [microsoft-excel]
 category: productivity
 languages: [Rust]
