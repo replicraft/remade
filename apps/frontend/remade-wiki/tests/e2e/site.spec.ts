@@ -421,3 +421,57 @@ test("project browser links appear beside Website only when configured", async (
 		page.getByRole("link", { name: "Try it in your browser ↗", exact: true }),
 	).toHaveCount(0);
 });
+
+test("vendor pages show implemented originals as well as outstanding requests", async ({
+	page,
+}) => {
+	await page.goto("/vendor/autodesk/");
+	await expect(
+		page.getByRole("heading", { name: "Autodesk", exact: true }),
+	).toBeVisible();
+	await expect(
+		page.getByRole("link", { name: "Autodesk Fusion", exact: true }),
+	).toHaveAttribute("href", "/software/autodesk-fusion/");
+	await expect(
+		page.getByRole("link", { name: "SolidCraft →", exact: true }).first(),
+	).toHaveAttribute("href", "/projects/solidcraft/");
+	await expect(
+		page.getByRole("heading", { name: /Project Requests/ }),
+	).toBeVisible();
+	await page.goto("/software/autodesk-fusion/");
+	await expect(
+		page.getByRole("link", { name: "Autodesk", exact: true }),
+	).toHaveAttribute("href", "/vendor/autodesk/");
+});
+
+test("vendor index searches names and cataloged software locally", async ({
+	page,
+}) => {
+	await page.goto("/vendor/");
+	await page
+		.getByRole("searchbox", { name: "Find a vendor or software" })
+		.fill("Photoshop");
+	await expect(page.getByRole("status")).toHaveText("1 vendor");
+	await expect(
+		page.locator("li[data-vendor-search]:visible a"),
+	).toHaveAttribute("href", "/vendor/adobe/");
+	await page.getByRole("searchbox").fill("no-vendor-matches-this");
+	await expect(page.getByText("No vendors match your search.")).toBeVisible();
+});
+
+test("vendor browsing works without JavaScript", async ({ browser }) => {
+	const context = await browser.newContext({ javaScriptEnabled: false });
+	try {
+		const page = await context.newPage();
+		await page.goto("http://127.0.0.1:4377/vendor/");
+		await page.locator('main a[href="/vendor/autodesk/"]').click();
+		await expect(
+			page.getByRole("heading", { name: "Autodesk", exact: true }),
+		).toBeVisible();
+		await expect(
+			page.getByRole("link", { name: "Autodesk Fusion", exact: true }),
+		).toBeVisible();
+	} finally {
+		await context.close();
+	}
+});

@@ -1,0 +1,49 @@
+---
+import VendorsPage from "../../components/pages/VendorsPage";
+import Layout from "../../layouts/Layout.astro";
+import { loadCatalog } from "../../lib/catalog";
+import { vendorGroups } from "../../lib/vendors";
+
+const groups = vendorGroups(await loadCatalog());
+---
+
+<Layout
+	description="Browse cataloged software, independent reimplementations and Project Requests by vendor."
+	index
+	title="Software by vendor"
+>
+	<VendorsPage groups={groups} />
+</Layout>
+
+<script>
+import { normalizeVendorSearch } from "../../lib/vendors";
+
+const directory = document.querySelector<HTMLElement>(
+	"[data-vendor-directory]",
+);
+const input = directory?.querySelector<HTMLInputElement>("#vendor-search");
+const controls = directory?.querySelector<HTMLElement>(
+	"[data-vendor-search-controls]",
+);
+const count = directory?.querySelector<HTMLElement>(
+	"[data-vendor-result-count]",
+);
+const empty = directory?.querySelector<HTMLElement>("[data-vendor-no-results]");
+
+if (directory && input && controls && count && empty) {
+	const items = [
+		...directory.querySelectorAll<HTMLElement>("[data-vendor-search]"),
+	];
+	controls.hidden = false;
+	input.addEventListener("input", () => {
+		const query = normalizeVendorSearch(input.value);
+		let visible = 0;
+		for (const item of items) {
+			item.hidden = !item.dataset.vendorSearch?.includes(query);
+			if (!item.hidden) visible++;
+		}
+		count.textContent = `${visible} ${visible === 1 ? "vendor" : "vendors"}`;
+		empty.hidden = visible > 0;
+	});
+}
+</script>

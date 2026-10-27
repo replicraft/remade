@@ -1,0 +1,713 @@
+# Publishers and vendor brands represented by catalog originals, not an exhaustive product directory.
+# Corel grouping includes legacy Alludo request folders; see https://www.corel.com/en/all-products/
+- slug: 10tons
+  name: 10tons
+- slug: 180g
+  name: 180g
+- slug: ableton
+  name: Ableton
+- slug: abstract
+  name: Abstract
+- slug: accentize
+  name: Accentize
+- slug: acd-systems
+  name: ACD Systems
+- slug: adobe
+  name: Adobe
+- slug: airtable
+  name: Airtable
+- slug: algoryx
+  name: Algoryx
+- slug: alphatheta
+  name: Alphatheta
+- slug: altair
+  name: Altair
+- slug: altium
+  name: Altium
+- slug: amd
+  name: AMD
+- slug: ansys
+  name: Ansys
+- slug: antares
+  name: Antares
+- slug: anydesk
+  name: Anydesk
+- slug: apple
+  name: Apple
+- slug: arobas-music
+  name: Arobas Music
+- slug: articulate
+  name: Articulate
+- slug: arturia
+  name: Arturia
+- slug: asus
+  name: ASUS
+- slug: atlassian
+  name: Atlassian
+- slug: atomix
+  name: Atomix
+- slug: audio-modeling
+  name: Audio Modeling
+- slug: auth0
+  name: Auth0
+- slug: autodesk
+  name: Autodesk
+- slug: aveva
+  name: AVEVA
+- slug: avid
+  name: Avid
+- slug: bell-labs
+  name: Bell Labs
+- slug: bentley
+  name: Bentley
+- slug: blackmagic-design
+  name: Blackmagic Design
+- slug: blizzard
+  name: Blizzard
+- slug: bloomberg
+  name: Bloomberg
+- slug: bluebeam
+  name: Bluebeam
+- slug: bluestacks
+  name: BlueStacks
+- slug: bondware
+  name: Bondware
+- slug: boris-fx
+  name: Boris Fx
+- slug: broadcom
+  name: Broadcom
+- slug: buffer
+  name: Buffer
+- slug: bytedance
+  name: ByteDance
+- slug: cadence
+  name: Cadence
+- slug: calibre
+  name: Calibre
+- slug: camera-bits
+  name: Camera Bits
+- slug: campfire
+  name: Campfire
+- slug: canva
+  name: Canva
+- slug: capture-one
+  name: Capture One
+- slug: casio
+  name: Casio
+- slug: cedar-lake-ventures
+  name: Cedar Lake Ventures
+- slug: celaction
+  name: Celaction
+- slug: celemony
+  name: Celemony
+- slug: celsys
+  name: Celsys
+- slug: cgpal
+  name: CGPAL
+- slug: chamsys
+  name: Chamsys
+- slug: change-vision
+  name: Change Vision
+- slug: chaos
+  name: Chaos
+- slug: cheat-engine
+  name: Cheat Engine
+- slug: chief-architect
+  name: Chief Architect
+- slug: chitubox
+  name: Chitubox
+- slug: cisco
+  name: Cisco
+- slug: clickup
+  name: Clickup
+- slug: clo-virtual-fashion
+  name: CLO Virtual Fashion
+- slug: cobrowse
+  name: Cobrowse
+- slug: cockos
+  name: Cockos
+- slug: codeandweb
+  name: CodeAndWeb
+- slug: collectorz
+  name: Collectorz
+- slug: constructconnect
+  name: Constructconnect
+- slug: corel
+  name: Corel
+  aliases: [Alludo]
+- slug: corsair
+  name: Corsair
+- slug: craft-edge
+  name: Craft Edge
+- slug: cricut
+  name: Cricut
+- slug: csi
+  name: CSI
+- slug: cycling74
+  name: Cycling ’74
+- slug: cyncly
+  name: Cyncly
+- slug: dassault-systemes
+  name: Dassault Systèmes
+- slug: derivative
+  name: Derivative
+- slug: digiarty
+  name: Digiarty
+- slug: digital-essence
+  name: Digital Essence
+- slug: discord
+  name: Discord
+- slug: dj-studio
+  name: DJ.Studio
+- slug: djsoft
+  name: DJSoft
+- slug: dotmatics
+  name: Dotmatics
+- slug: dotpdn
+  name: dotPDN
+- slug: drd-systems
+  name: Drd Systems
+- slug: dreamtonics
+  name: Dreamtonics
+- slug: dropbox
+  name: Dropbox
+- slug: duolingo
+  name: Duolingo
+- slug: dzedsystems
+  name: DZED Systems
+- slug: efficient-elements
+  name: Efficient Elements
+- slug: eiji-nishidai
+  name: Eiji Nishidai
+- slug: electronic-arts
+  name: Electronic Arts
+- slug: elevenlabs
+  name: ElevenLabs
+- slug: elgato
+  name: Elgato
+- slug: enfocus
+  name: Enfocus
+- slug: epic-games
+  name: Epic Games
+- slug: eplan
+  name: Eplan
+- slug: esko
+  name: Esko
+- slug: esoteric-software
+  name: Esoteric Software
+- slug: esri
+  name: Esri
+- slug: essay
+  name: Essay
+- slug: evernote
+  name: Evernote
+- slug: evoto
+  name: Evoto
+- slug: exitlag
+  name: Exitlag
+- slug: exocad
+  name: Exocad
+- slug: exoside
+  name: Exoside
+- slug: extensis
+  name: Extensis
+- slug: figma
+  name: Figma
+- slug: filter-forge
+  name: Filter Forge
+- slug: final-draft
+  name: Final Draft
+- slug: finkit
+  name: Finkit
+- slug: fluid-touch
+  name: Fluid Touch
+- slug: fontbase
+  name: FontBase
+- slug: fontlab
+  name: FontLab
+- slug: fontself
+  name: Fontself
+- slug: foobar2000
+  name: Foobar2000
+- slug: foster-kent
+  name: Foster Kent
+- slug: foundry
+  name: Foundry
+- slug: framer
+  name: Framer
+- slug: garagecube
+  name: Garagecube
+- slug: garden-gnome
+  name: Garden Gnome
+- slug: gitkraken
+  name: Gitkraken
+- slug: gizmo
+  name: Gizmo
+- slug: glyphs
+  name: Glyphs
+- slug: goodnotes
+  name: Goodnotes
+- slug: google
+  name: Google
+- slug: grahl
+  name: Grahl
+- slug: grammarly
+  name: Grammarly
+- slug: granola
+  name: Granola
+- slug: graphisoft
+  name: Graphisoft
+- slug: graphpad
+  name: Graphpad
+- slug: harpercollins
+  name: Harpercollins
+- slug: helicon-soft
+  name: Helicon Soft
+- slug: hex-rays
+  name: Hex-Rays
+- slug: hexagon
+  name: Hexagon
+- slug: hexanomad
+  name: Hexanomad
+- slug: hhs-software
+  name: HHS Software
+- slug: high-logic
+  name: High Logic
+- slug: hootsuite
+  name: Hootsuite
+- slug: hubspot
+  name: Hubspot
+- slug: hypertherm
+  name: Hypertherm
+- slug: ibm
+  name: IBM
+- slug: icewhale
+  name: IceWhale
+- slug: idyllic-pixel
+  name: Idyllic Pixel
+- slug: igara
+  name: Igara
+- slug: igg-software
+  name: Igg Software
+- slug: image-line
+  name: Image-Line
+- slug: imagen
+  name: Imagen
+- slug: inshot
+  name: Inshot
+- slug: insydium
+  name: INSYDIUM
+- slug: intel
+  name: Intel
+- slug: intuit
+  name: Intuit
+- slug: izotope
+  name: iZotope
+- slug: jangafx
+  name: Jangafx
+- slug: jehovahs-witnesses
+  name: Jehovah’s Witnesses
+- slug: jetbrains
+  name: JetBrains
+- slug: jobber
+  name: Jobber
+- slug: kaleido
+  name: Kaleido
+- slug: keyshot
+  name: KeyShot
+- slug: kodak
+  name: Kodak
+- slug: kolor
+  name: Kolor
+- slug: labcenter
+  name: Labcenter
+- slug: lagofast
+  name: LagoFast
+- slug: lectra
+  name: Lectra
+- slug: legendkeeper
+  name: Legendkeeper
+- slug: lexicon
+  name: Lexicon
+- slug: lightburn-software
+  name: Lightburn Software
+- slug: linear
+  name: Linear
+- slug: liquidtext
+  name: Liquidtext
+- slug: literature-and-latte
+  name: Literature And Latte
+- slug: live2d
+  name: Live2D
+- slug: logitech
+  name: Logitech
+- slug: loomly
+  name: Loomly
+- slug: loopy-pro
+  name: Loopy Pro
+- slug: lotus
+  name: Lotus
+- slug: lucid
+  name: Lucid
+- slug: lumion
+  name: Lumion
+- slug: lunatask
+  name: Lunatask
+- slug: ma-lighting
+  name: MA Lighting
+- slug: macrium
+  name: Macrium
+- slug: magicpath
+  name: Magicpath
+- slug: maizesoft
+  name: Maizesoft
+- slug: makemkv
+  name: MakeMKV
+- slug: makemusic
+  name: MakeMusic
+- slug: mango3d
+  name: Mango3D
+- slug: marmoset
+  name: Marmoset
+- slug: mastercam
+  name: Mastercam
+- slug: materialise
+  name: Materialise
+- slug: mathworks
+  name: Mathworks
+- slug: maxon
+  name: Maxon
+- slug: mcneel
+  name: McNeel
+- slug: mecabricks
+  name: Mecabricks
+- slug: medal
+  name: Medal
+- slug: mestrelab
+  name: Mestrelab
+- slug: meta
+  name: Meta
+- slug: microsoft
+  name: Microsoft
+- slug: miro
+  name: Miro
+- slug: mixed-in-key
+  name: Mixed In Key
+- slug: mixmeister
+  name: Mixmeister
+- slug: mobatek
+  name: Mobatek
+- slug: mojang
+  name: Mojang Studios
+- slug: monday
+  name: monday.com
+- slug: monotype
+  name: Monotype
+- slug: mozaik
+  name: Mozaik
+- slug: musicbee
+  name: Musicbee
+- slug: myob
+  name: MYOB
+- slug: myq
+  name: Myq
+- slug: nanosoft
+  name: Nanosoft
+- slug: native-instruments
+  name: Native Instruments
+- slug: naturalmotion
+  name: Naturalmotion
+- slug: neevii
+  name: Neevii
+- slug: nekki
+  name: Nekki
+- slug: netease
+  name: NetEase
+- slug: ni
+  name: NI
+- slug: ninite
+  name: Ninite
+- slug: notion
+  name: Notion
+- slug: nuance
+  name: Nuance
+- slug: nukeygara
+  name: Nukeygara
+- slug: nvidia
+  name: NVIDIA
+- slug: objective-development
+  name: Objective Development
+- slug: obsidian
+  name: Obsidian
+- slug: odeon
+  name: Odeon
+- slug: ola
+  name: OLA
+- slug: olive-tree
+  name: Olive Tree
+- slug: on1
+  name: ON1
+- slug: opcode
+  name: Opcode
+- slug: optitex
+  name: Optitex
+- slug: originlab
+  name: Originlab
+- slug: otoy
+  name: Otoy
+- slug: paper
+  name: Paper
+- slug: pdf-xchange
+  name: PDF-XChange
+- slug: pegasys
+  name: Pegasys
+- slug: pelikan
+  name: Pelikan
+- slug: picsart
+  name: Picsart
+- slug: pilgway
+  name: Pilgway
+- slug: plasticity
+  name: Plasticity
+- slug: plaud
+  name: Plaud
+- slug: postman
+  name: Postman
+- slug: powerworld
+  name: Powerworld
+- slug: premiumsoft
+  name: Premiumsoft
+- slug: procad-systems
+  name: Procad Systems
+- slug: procreate
+  name: Procreate
+- slug: progesoft
+  name: Progesoft
+- slug: ptc
+  name: PTC
+- slug: quadspinner
+  name: Quadspinner
+- slug: quantrix
+  name: Quantrix
+- slug: quickbase
+  name: Quickbase
+- slug: quicken
+  name: Quicken
+- slug: ragtime
+  name: Ragtime
+- slug: rational-acoustics
+  name: Rational Acoustics
+- slug: razer
+  name: Razer
+- slug: rcloneview
+  name: RcloneView
+- slug: rcs
+  name: RCS
+- slug: read-ai
+  name: Read AI
+- slug: reallusion
+  name: Reallusion
+- slug: reason-studios
+  name: Reason Studios
+- slug: redgate
+  name: Redgate
+- slug: reincubate
+  name: Reincubate
+- slug: renewed-vision
+  name: Renewed Vision
+- slug: resolume
+  name: Resolume
+- slug: revvity
+  name: Revvity
+- slug: revvity-signals
+  name: Revvity Signals
+- slug: rive
+  name: Rive
+- slug: rizom-lab
+  name: Rizom Lab
+- slug: rogue-amoeba
+  name: Rogue Amoeba
+- slug: royal-apps
+  name: Royal Apps
+- slug: rpg-maker
+  name: RPG Maker
+- slug: rws
+  name: RWS
+- slug: sage
+  name: Sage
+- slug: sai
+  name: SAi
+- slug: salesforce
+  name: Salesforce
+- slug: samsung
+  name: Samsung
+- slug: sap
+  name: SAP
+- slug: screaming-frog
+  name: Screaming Frog
+- slug: screen-studio
+  name: Screen Studio
+- slug: serato
+  name: Serato
+- slug: serveboard
+  name: Serveboard
+- slug: shapr3d
+  name: Shapr3D
+- slug: siber-systems
+  name: Siber Systems
+- slug: sidefx
+  name: SideFX
+- slug: siemens
+  name: Siemens
+- slug: sigma
+  name: Sigma
+- slug: silhouette-america
+  name: Silhouette America
+- slug: siser
+  name: Siser
+- slug: sketchsoft
+  name: Sketchsoft
+- slug: sonible
+  name: Sonible
+- slug: sparklabs
+  name: SparkLabs
+- slug: splitmedia-labs
+  name: SplitmediaLabs
+- slug: spring-partners
+  name: Spring Partners
+- slug: sprout-social
+  name: Sprout Social
+- slug: square-enix
+  name: Square Enix
+- slug: steinberg
+  name: Steinberg
+- slug: studio-xid
+  name: Studio Xid
+- slug: studiobinder
+  name: Studiobinder
+- slug: studiocoast
+  name: Studiocoast
+- slug: style3d
+  name: Style3D
+- slug: sublime-hq
+  name: Sublime HQ
+- slug: submagic
+  name: Submagic
+- slug: svgator
+  name: Svgator
+- slug: symantec
+  name: Symantec
+- slug: synology
+  name: Synology
+- slug: synopsys
+  name: Synopsys
+- slug: synthesia
+  name: Synthesia
+- slug: systemax
+  name: SYSTEMAX
+- slug: tactiq
+  name: Tactiq
+- slug: tally-solutions
+  name: Tally Solutions
+- slug: talon
+  name: Talon
+- slug: tastier-adventures
+  name: Tastier Adventures
+- slug: teamviewer
+  name: TeamViewer
+- slug: teamwire
+  name: Teamwire
+- slug: techsmith
+  name: Techsmith
+- slug: tenorshare
+  name: Tenorshare
+- slug: think-cell
+  name: Think Cell
+- slug: ticktick
+  name: Ticktick
+- slug: tonec
+  name: Tonec
+- slug: tonelib
+  name: Tonelib
+- slug: toon-boom
+  name: Toon Boom
+- slug: topaz-labs
+  name: Topaz Labs
+- slug: topogun
+  name: TopoGun
+- slug: tradingview
+  name: TradingView
+- slug: trimble
+  name: Trimble
+- slug: uber
+  name: Uber
+- slug: ugreen
+  name: Ugreen
+- slug: unbroken-software
+  name: Unbroken Software
+- slug: unity
+  name: Unity
+- slug: unraid
+  name: Unraid
+- slug: uvi
+  name: UVI
+- slug: valletta-ventures
+  name: Valletta Ventures
+- slug: vectorworks
+  name: Vectorworks
+- slug: vectric
+  name: Vectric
+- slug: veracross
+  name: Veracross
+- slug: virtualhere
+  name: VirtualHere
+- slug: visual-blasters
+  name: Visual Blasters
+- slug: visual-paradigm
+  name: Visual Paradigm
+- slug: voicemod
+  name: Voicemod
+- slug: voidtools
+  name: Voidtools
+- slug: wallpaper-engine
+  name: Wallpaper Engine
+- slug: wand
+  name: Wand
+- slug: wilcom
+  name: Wilcom
+- slug: winedt
+  name: Winedt
+- slug: witte-software
+  name: Witte Software
+- slug: wolfram
+  name: Wolfram
+- slug: wondershare
+  name: Wondershare
+- slug: world-anvil
+  name: World Anvil
+- slug: xero
+  name: Xero
+- slug: xfer-records
+  name: Xfer Records
+- slug: xlinesoft
+  name: Xlinesoft
+- slug: xmind
+  name: XMind
+- slug: xtool
+  name: xTool
+- slug: yamaha
+  name: Yamaha
+- slug: ynab
+  name: YNAB
+- slug: youversion
+  name: YouVersion
+- slug: yoyo-games
+  name: YoYo Games
+- slug: ysoft
+  name: Y Soft
+- slug: zanoza-software
+  name: Zanoza Software
+- slug: zerene-systems
+  name: Zerene Systems
+- slug: zoom
+  name: Zoom

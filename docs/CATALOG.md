@@ -5,6 +5,7 @@
 ```text
 apps/frontend/remade-wiki/src/content/catalog/
   originals.yaml           Canonical original programs/interfaces
+  vendors.yaml             Stable publisher/vendor brand identities
   featured.yaml            Maintainer-selected project slugs in display order
   projects/<github-user>/<slug>.yaml     One community-submitted reimplementation each
   tools/<github-user>/<slug>.yaml        One supporting tool each; separate from reimplementations
@@ -29,11 +30,28 @@ The source files live under `apps/frontend/remade-wiki/src/content/catalog/`, ma
   name: Example Software
   url: https://example.org/software
   category: other
+  vendor: example-vendor # optional; references vendors.yaml
   aliases:
     - Example App
 ```
 
 An original record identifies the **target**, not a hosting or endorsement relationship.
+
+## Vendors and publisher grouping
+
+`vendors.yaml` is a list of strict `{slug, name}` records with optional `aliases` for former names or alternate spellings. Slugs use the same stable lowercase identifier syntax as originals; names are 2–100 characters of plain text. Vendor slugs and case-insensitive names/aliases must be unique. An original can set optional `vendor` to a registered slug. Unknown references and unknown vendor fields fail both TypeScript and Python validation. Omit the reference when the publisher is unknown; do not guess ownership from a hostname at runtime.
+
+```yaml
+# vendors.yaml
+- slug: example-vendor
+  name: Example Vendor
+```
+
+Vendor references belong to original software, not to the authors of its independent reimplementations. They survive request deletion when a project is accepted. Request filtering uses the original's canonical vendor when present and retains the existing folder-derived fallback for records without one. Request paths need not move when editorial vendor metadata changes.
+
+`/vendor/` lists only vendors with cataloged originals, with optional local search over vendor names, original names and aliases. `/vendor/<slug>/` groups those originals into software with listed projects, outstanding Project Requests, and any originals without either. A multi-target project counts once in a vendor's project total but appears under each relevant original. Supporting tools do not count as reimplementations or fulfill requests; planned projects keep their Planned label. These pages describe the catalog's coverage, not a vendor's complete portfolio or a corporate parent/subsidiary directory.
+
+The initial vendor data starts from existing request classifications, consolidates Corel/legacy Alludo under one identity, and adds explicit publisher/brand references for fulfilled targets. Display names and references are editorial metadata and can be corrected by PR; corporate ownership is not inferred automatically. Both static JSON exports include a public `vendors` list (`slug`, `name`, optional `aliases`, `pageUrl`), and public original records retain optional `vendor`. This is an additive schema-v2 extension. Private community fields remain excluded.
 
 ## Author grouping by GitHub user
 

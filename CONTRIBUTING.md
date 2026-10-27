@@ -57,3 +57,7 @@ See [Remade's disclaimer page](https://remade.wiki/disclaimer) for the legal con
 ## Automated checks
 
 GitHub automatically validates submissions, verifies policy acknowledgment, and checks links when a pull request is opened or updated. No manual setup is required.
+
+### Vendor references
+
+When adding an original, look for its publisher or vendor brand in `apps/frontend/remade-wiki/src/content/catalog/vendors.yaml`. Set the original's optional `vendor` to that canonical slug, adding a `{slug, name}` vendor record if needed and supported by the software's publisher information. This keeps `/vendor/<slug>/` accurate after a request is fulfilled. Leave unknown ownership unassigned rather than deriving it from the reimplementation's author.

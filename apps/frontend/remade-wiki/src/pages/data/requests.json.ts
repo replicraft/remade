@@ -18,6 +18,7 @@ export const GET: APIRoute = async ({ site }) => {
 		requestsExport(
 			{
 				originals: catalog.originals,
+				vendors: catalog.vendors,
 				requests: requests.map((r) => r.data),
 			},
 			site.href,
