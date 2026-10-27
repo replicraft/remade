@@ -15,3 +15,8 @@ summary: Scrivener-style novel writing with chapter outlines, storyboards, resea
 description: A novel-writing alternative targeting Scrivener-style organization and publishing workflows. Built with Tauri, Svelte and TypeScript, it combines chapter and scene organization, outlines, storyboarding, rich-text editing, character/place templates and research notes. Exports include PDF, DOCX, EPUB, Markdown, HTML and plain text.
 limitations: Scrivener project import/export and full compile compatibility are not established. Timeline, front/back matter and several writing modes remain planned. MIT is declared in package.json; no standalone license file was found.
 docs: https://github.com/jennraeross/ProseCraft#readme
+screenshots:
+  - src: https://raw.githubusercontent.com/jennraeross/ProseCraft/main/Screenshots/1.26.57%E2%80%AFPM.png
+    alt: "ProseCraft: manuscript editor and document inspector."
+  - src: https://raw.githubusercontent.com/jennraeross/ProseCraft/main/Screenshots/1.27.03%E2%80%AFPM.png
+    alt: "ProseCraft: outline view with chapter cards."

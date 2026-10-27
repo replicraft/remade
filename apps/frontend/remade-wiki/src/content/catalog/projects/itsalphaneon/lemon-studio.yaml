@@ -16,3 +16,8 @@ docs: https://github.com/ItsAlphaNeon/Lemon-Studio#readme
 discord_server: https://discord.gg/R9JQ9zdeH
 limitations: Pre-alpha and not yet a usable replacement DAW. FLP support is limited to newer FL Studio projects and remains unstable. Audio recording, MIDI file interchange, plugin delay compensation and many controls are missing. No macOS build or prebuilt binaries.
 summary: "FL Studio-style music production with patterns, a piano roll, mixer routing, plugins and FLP files."
+screenshots:
+  - src: https://raw.githubusercontent.com/ItsAlphaNeon/Lemon-Studio/main/docs/assets/screenshot.webp
+    alt: "Lemon Studio: music arrangement and instrument panels."
+  - src: https://raw.githubusercontent.com/ItsAlphaNeon/Lemon-Studio/main/docs/assets/screenshot-piano-roll.webp
+    alt: "Lemon Studio: piano roll with melody and chord notes."

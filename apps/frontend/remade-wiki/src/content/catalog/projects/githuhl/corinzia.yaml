@@ -14,3 +14,8 @@ license: AGPL-3.0-only
 docs: https://github.com/GitHuhl/Corinzia/blob/main/docs/ARCHITECTURE.md
 limitations: Pre-alpha; native Dorico/Sibelius/Finale compatibility is undocumented. Bus routing, plug-in delay compensation, automation playback and saving plug-in settings are unfinished. README sections conflict on project saving. Linux audio needs PipeWire.
 summary: "Combine score notation and DAW workflows with parts, lyrics, chords and CLAP/VST3 instruments."
+screenshots:
+  - src: https://github.com/user-attachments/assets/957cb598-5eaf-4b5c-ae24-09278e3d42c7
+    alt: "Corinzia: musical score in the notation editor."
+  - src: https://github.com/user-attachments/assets/5c9861a4-19e2-4038-85a9-016a5d3afff5
+    alt: "Corinzia: note lanes and expression controls."

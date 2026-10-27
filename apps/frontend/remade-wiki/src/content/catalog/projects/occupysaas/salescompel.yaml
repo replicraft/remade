@@ -16,3 +16,6 @@ license: Apache-2.0
 docs: https://github.com/occupysaas/salescompel/blob/main/docs/compat/plan-2-implementation.md
 limitations: Not production-ready or certified Salesforce-compatible. The implemented API is a limited subset; broader protocol, security and migration support remains pending.
 summary: Salesforce-style accounts, contacts and a limited compatibility API with a web record editor.
+screenshots:
+  - src: https://raw.githubusercontent.com/occupysaas/salescompel/main/docs/pics/ui-prototype.png
+    alt: "SalesCompel: contact list and CRM navigation."

@@ -15,3 +15,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Early alpha. The maintainers report gaps in AI and generative features, typography, professional workflows and Photoshop plug-in compatibility.
 summary: "Photoshop-style image editing with layers, adjustments, selections and layered PSD files."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/photocraft/main/docs/images/photocraft-demo.jpg
+    alt: "PhotoCraft: layered image in the photo-editing workspace."
+  - src: https://raw.githubusercontent.com/storytold/photocraft/main/docs/images/photocraft-adjustments.jpg
+    alt: "PhotoCraft: painting displayed with editing controls."

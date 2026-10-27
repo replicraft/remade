@@ -15,3 +15,8 @@ website: https://playground.daijro.dev/honeydew/
 docs: https://github.com/daijro/honeydew#readme
 limitations: Full FL Studio Mobile parity is not independently verified; native Android and iOS builds are not documented. Original samples and presets are not bundled; desktop users can import them from their own licensed copy. The browser version cannot import original content, and some shortcuts remain controlled by the browser.
 summary: "FL Studio Mobile-style music production with a piano roll, drum editor, mixer, instruments and automation."
+screenshots:
+  - src: https://raw.githubusercontent.com/daijro/honeydew/main/assets/screenshots/04-drum-editor.webp
+    alt: "Honeydew: drum pattern editor and song arrangement."
+  - src: https://raw.githubusercontent.com/daijro/honeydew/main/assets/screenshots/09-automation-editor.webp
+    alt: "Honeydew: automation curve editor."

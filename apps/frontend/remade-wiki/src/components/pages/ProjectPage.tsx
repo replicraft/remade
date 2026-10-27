@@ -8,6 +8,7 @@ import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
 import ListingDescription from "../catalog/ListingDescription";
 import OriginalLinks from "../catalog/OriginalLinks";
+import ProjectScreenshots from "../catalog/ProjectScreenshots";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
 
@@ -33,6 +34,13 @@ export default function ProjectPage({
 	);
 	const tools = catalog.entries.filter(
 		(e) => e.kind === "tool" && e.projects.includes(project.slug),
+	);
+	const gallery = (
+		<ProjectScreenshots
+			projectName={project.name}
+			projectSlug={project.slug}
+			screenshots={project.screenshots}
+		/>
 	);
 
 	return (
@@ -119,6 +127,8 @@ export default function ProjectPage({
 				<div className="mt-6">
 					<RepositoryMirrors mirrors={project.mirrors} />
 				</div>
+
+				{gallery}
 			</div>
 
 			<section className="max-w-[780px]">

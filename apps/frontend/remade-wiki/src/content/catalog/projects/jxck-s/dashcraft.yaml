@@ -19,3 +19,8 @@ summary: Read-only Power BI report viewing and rendering for PBIX, PBIP, PBIT, T
 description: A Rust implementation targeting Microsoft Power BI file inspection and report rendering. Opens PBIX, PBIP and PBIT reports and explores TMDL/model.bim models through desktop and CLI interfaces. Includes independently implemented DAX and Power Query M processing and interactive report-page rendering without Power BI Desktop or a cloud account.
 limitations: 'Currently a read-only viewer: report editing and saving are not implemented. File, visual and expression support is incomplete and maintainer-reported; full Power BI rendering, engine and service compatibility is not claimed.'
 docs: https://github.com/Jxck-S/dashcraft#readme
+screenshots:
+  - src: https://raw.githubusercontent.com/Jxck-S/dashcraft/main/docs/images/dashcraft-report.png
+    alt: "DashCraft: report dashboard with charts and summary metrics."
+  - src: https://raw.githubusercontent.com/Jxck-S/dashcraft/main/docs/images/dashcraft-interaction.png
+    alt: "DashCraft: filtered store-performance report."

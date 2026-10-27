@@ -15,3 +15,8 @@ website: https://graphite.art/
 docs: https://graphite.art/learn/
 limitations: Alpha; focuses on its own procedural workflow rather than Illustrator parity. Native AI project import is on the long-term roadmap. Raster editing is experimental; professional color management, advanced typography and other production workflows remain planned. Full Illustrator behavior and plugin compatibility are not claimed.
 summary: "Create vector art and graphic designs with canvas tools, layers and procedural node graphs."
+screenshots:
+  - src: https://github.com/user-attachments/assets/decb7011-18c2-4c68-82af-d1fa5064244a
+    alt: "Graphite: vector illustration and procedural editing panels."
+  - src: https://github.com/user-attachments/assets/9e023997-185b-4f43-a724-797d308d9e7b
+    alt: "Graphite: fractal artwork and node-based controls."

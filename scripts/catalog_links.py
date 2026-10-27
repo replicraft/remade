@@ -29,6 +29,12 @@ def urls_in_record(obj: object) -> Iterator[str]:
                     if is_https(value):
                         yield value
 
+            screenshots = record.get("screenshots", [])
+            if isinstance(screenshots, list):
+                for image in screenshots:
+                    if isinstance(image, dict) and is_https(image.get("src")):
+                        yield image["src"]
+
 
 def added_urls(paths: list[Path], revision: str) -> set[str]:
     current = {url for path in paths for url in url_values(path)}

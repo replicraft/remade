@@ -15,3 +15,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Development and fidelity work are ongoing. Full Word layout, behavior and document-format parity is not asserted by this listing.
 summary: "Word-style document editing with styles, tables, review tools, DOCX files and PDF export."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/wordcraft/main/docs/images/review.png
+    alt: "WordCraft: document review with tracked changes and comments."
+  - src: https://raw.githubusercontent.com/storytold/wordcraft/main/docs/images/references.png
+    alt: "WordCraft: document references and page-navigation controls."

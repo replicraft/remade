@@ -15,3 +15,8 @@ docs: https://github.com/PiJellyPin/MaterialCraft#readme
 discord_server: https://discord.gg/9KVCNatNvX
 limitations: Initial beta release. Third-party material and project formats are unsupported. Splines, AxF import, OCIO/ACE color management, scripting, SVG gradients, CFF fonts, path-traced rendering and custom preview meshes remain unimplemented. Compatibility is maintainer-reported.
 summary: "Substance Designer-style procedural materials with node graphs, previews, mesh baking and texture exports."
+screenshots:
+  - src: https://github.com/user-attachments/assets/aed97881-c091-4ef3-b2f4-065f99dd44fe
+    alt: "MaterialCraft: procedural material graph and previews."
+  - src: https://github.com/user-attachments/assets/90076571-4278-4cdf-bf47-b01343185785
+    alt: "MaterialCraft: material nodes and connections."

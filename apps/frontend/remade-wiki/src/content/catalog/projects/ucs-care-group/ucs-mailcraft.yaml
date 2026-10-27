@@ -14,3 +14,8 @@ license: MIT OR Apache-2.0
 docs: https://github.com/UCS-Care-Group/mailcraft#readme
 limitations: Early alpha; coverage is maintainer-reported, with real-server use on one Microsoft 365 mailbox. Builds are unsigned. Graph sending, calendar and contacts are documented; Graph mailbox sync and shared mailboxes remain under development/testing. No PST/OST/MSG/OLM import, printing or S/MIME. Browser builds cannot connect directly to mail servers.
 summary: "Outlook-style mail, calendars, contacts and tasks for Microsoft 365, Outlook.com and IMAP accounts."
+screenshots:
+  - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/mail-dark.png
+    alt: "MailCraft: dark-themed mailbox and reading pane."
+  - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/html-mail.png
+    alt: "MailCraft: formatted message in the composition window."

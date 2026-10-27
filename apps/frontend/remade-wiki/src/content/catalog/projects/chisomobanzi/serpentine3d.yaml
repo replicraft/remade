@@ -15,3 +15,8 @@ description: A Python and Qt modeller targeting Rhino-style NURBS and BREP workf
 license: MIT
 docs: https://chisomobanzi.github.io/Serpentine3D/docs/
 limitations: Not a full Rhino replacement. Grasshopper, SubD, production rendering and Rhino plugin compatibility are not implemented; history covers loft, extrude and revolve only. File interchange is maintainer-reported. GUI use requires OpenGL 3.3; documented macOS packages require Apple Silicon and macOS 14 or newer.
+screenshots:
+  - src: https://raw.githubusercontent.com/chisomobanzi/Serpentine3D/main/assets/made/archway.jpg
+    alt: "Serpentine3D: architectural arch model rendered by the application."
+  - src: https://raw.githubusercontent.com/chisomobanzi/Serpentine3D/main/assets/made/ring.jpg
+    alt: "Serpentine3D: solitaire ring model rendered by the application."

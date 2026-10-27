@@ -20,3 +20,6 @@ summary: IDM-style parallel downloads with resume, queues, speed limits and brow
 description: An independently implemented desktop download manager targeting Internet Download Manager-style workflows. Downloads files using multiple connections, resumes interrupted transfers, manages queues and speed limits, and receives downloads from a companion browser extension. Also exposes command-line and MCP controls.
 limitations: Implements similar download workflows rather than full IDM compatibility. Browser capture requires the companion extension and integration setup; website-specific media handling depends on upstream services.
 docs: https://github.com/pranavo72bex/Easy-Download-Manager#readme
+screenshots:
+  - src: https://raw.githubusercontent.com/pranavo72bex/Easy-Download-Manager/main/docs/screenshot.png
+    alt: "Easy Download Manager: download queue and transfer controls."

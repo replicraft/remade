@@ -241,3 +241,26 @@ Repository statistics are collected for GitHub-hosted repositories only. Non-Git
 Every project, supporting tool and Project Request requires a `summary` of 1–144 Unicode characters. Use one plain-text line without leading or trailing whitespace or HTML. Write a complete, concise statement of what the software does; favor familiar words and its main useful behavior. A repository's GitHub About text may be reused when accurate, neutral and within the limit. Edit marketing claims, unverified compatibility claims and vague taglines instead of copying them. Keep planned work clearly planned and request summaries clearly wanted. Retain policy-required disclosures, such as an already-open-source original. Longer feature details and limitations belong in `description`, `reason` and `limitations`.
 
 Cards display summaries in full. Detail pages show Summary and Description headings in a divided panel, with the summary first and the longer description or request reason below. Search indexes both. JSON exports add `summary` without removing existing fields or changing the schema version. Originals and suites are reference/group records, not card entries, and do not require summaries.
+
+## Project screenshots
+
+Projects may include an optional `screenshots` list of 1–12 images, in display order:
+
+```yaml
+screenshots:
+  - src: https://raw.githubusercontent.com/owner/repo/main/docs/editor.png
+    alt: The editor showing a document and its layers panel.
+    caption: Editing a layered document.
+  - src: ./screenshots/export.webp
+    alt: The export dialog with format and resolution controls.
+```
+
+Each object requires `src` and a descriptive plain-text `alt` (1–200 characters). An optional `caption` (1–240 characters) appears below the image. Unknown fields and duplicate sources are rejected. Omit `screenshots` entirely when none are available; an empty list is invalid. Tools, requests and originals do not accept this field.
+
+Use direct public HTTPS image URLs, including raw images in the project's repository or images on its official website. A repository's HTML file-view page is not an image. Remote images remain at their source: the build does not download or proxy them, and visitors load them directly without a referrer. External image URLs participate in the existing catalog link checks. Images can disappear or change upstream; prefer a stable release or commit URL when appropriate.
+
+Alternatively, commit PNG, JPEG, WebP or AVIF files beside the project YAML or under one of its subdirectories and use an explicit `./` path. Local images must exist, be at most 10 MiB each, and cannot traverse symlinks, parent directories or encoded paths. SVG, animation formats, absolute paths and arbitrary public-directory paths are not accepted for local screenshots. These colocated files are served by the static site under `/media/screenshots/<project-slug>/<image-number>.<extension>`; they are not an external image-hosting service. Do not add private data or unrelated images. Only publish screenshots the contributor is permitted to share.
+
+Project detail pages show the gallery only when images exist. Images preserve their full aspect ratio, with optional captions, full-size links and native horizontal scrolling. Multiple images gain previous/next controls and thumbnail navigation with progressive enhancement. There is no autoplay. Keyboard navigation, reduced motion, mobile touch scrolling and a JavaScript-free fallback remain supported. Listing cards do not load screenshots.
+
+The optional field is included in `/data/catalog.json` without changing schema version 2. Exported local image paths become absolute public image URLs; remote URLs, alt text, captions and ordering are preserved. Source YAML paths are not exported as unusable relative URLs. Discord fields remain excluded.

@@ -28,3 +28,10 @@ limitations: Many features are not yet implemented.
 
 # Required card text: one line, 1–144 characters. Keep full details above.
 summary: A short, factual overview of the software or requested workflows.
+
+# Optional screenshots in display order. Use direct HTTPS image URLs or raster
+# files beside this YAML (./editor.png) or in a subfolder (./images/editor.webp).
+# screenshots:
+#   - src: https://example.org/screenshots/editor.png
+#     alt: The editor showing a document and its layers panel.
+#     caption: Editing a layered document.

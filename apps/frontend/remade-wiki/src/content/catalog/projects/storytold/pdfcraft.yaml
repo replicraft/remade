@@ -15,3 +15,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Young project. Existing-text editing, OCR, Office conversion, signature validation and PDF preflight remain incomplete.
 summary: "Acrobat-style PDF viewing, page organization, annotation, forms and document protection."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-viewer.png
+    alt: "PdfCraft: pDF document with annotation panels."
+  - src: https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-scripts.png
+    alt: "PdfCraft: multilingual document displayed in the PDF viewer."

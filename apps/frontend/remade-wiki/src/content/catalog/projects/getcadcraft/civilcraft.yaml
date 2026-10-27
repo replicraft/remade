@@ -16,3 +16,6 @@ website: https://getcadcraft.com/apps/civilcraft
 discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. LandXML interchange does not establish complete Civil 3D behavior or native project-object fidelity. Some website content describes planned workflows. macOS and mobile editions are planned.
 summary: "Civil 3D-style site design with terrain surfaces, alignments, corridors, grading and pipe networks."
+screenshots:
+  - src: https://raw.githubusercontent.com/getcadcraft/civilcraft/main/screenshots/paper.png
+    alt: "CivilCraft: terrain contours and civil design tools."

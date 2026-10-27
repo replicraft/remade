@@ -15,3 +15,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Under active development. Full Premiere behavioral, project-format and plug-in compatibility is not asserted by this listing.
 summary: "Premiere-style video editing with multitrack timelines, color adjustments, audio, titles and exports."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-assembly.png
+    alt: "FilmCraft: video assembly workspace with clips and monitors."
+  - src: https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-color.png
+    alt: "FilmCraft: color workspace with video scopes."

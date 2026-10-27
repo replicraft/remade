@@ -15,3 +15,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Under active development with incomplete Illustrator parity. AI support targets PDF-compatible files; full compatibility is not claimed.
 summary: "Illustrator-style vector art with paths, artboards, typography and SVG, PDF and compatible AI files."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-1-neon.png
+    alt: "VectorCraft: poster artwork and live appearance effects."
+  - src: https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-2-ribbons.png
+    alt: "VectorCraft: blended vector shapes and layer controls."

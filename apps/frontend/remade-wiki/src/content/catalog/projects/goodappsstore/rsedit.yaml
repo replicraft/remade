@@ -18,3 +18,6 @@ description: A work-in-progress Sublime Text replacement built with a Rust file 
 license: MIT
 docs: https://github.com/goodappsstore/rsedit#readme
 limitations: Built and locally checked on macOS Apple Silicon. Windows and Linux builds and native interactions remain unverified. Sublime package, settings and plugin API compatibility is not established; extensions and language servers are outside the current feature set.
+screenshots:
+  - src: https://raw.githubusercontent.com/goodappsstore/rsedit/main/screenshots/homepage.jpg
+    alt: "RSEdit: source-code editor and file sidebar."

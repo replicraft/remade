@@ -16,3 +16,6 @@ website: https://getcadcraft.com/apps/takeoffcraft
 discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. Full PlanSwift or Revu project-file and plugin compatibility is not documented. Some website content describes planned workflows. macOS and mobile editions are planned.
 summary: "Measure PDF plans, build quantity takeoffs and export estimates using PlanSwift- and Revu-style workflows."
+screenshots:
+  - src: https://raw.githubusercontent.com/getcadcraft/takeoffcraft/main/screenshots/paper.png
+    alt: "TakeoffCraft: plan measurements and quantity takeoff tools."

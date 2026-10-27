@@ -24,3 +24,6 @@ limitations: Preview for one user, one machine and USD. Payroll, tax filing, liv
   complete accounting compatibility. Cash-basis output has limited validation. Desktop packages are
   unsigned.
 summary: "QuickBooks-style desktop bookkeeping with a local ledger, invoices, bills, inventory and reconciliation."
+screenshots:
+  - src: https://raw.githubusercontent.com/lxistired/ledger-reborn/main/docs/screenshots/accounting.png
+    alt: "Ledger Reborn: financial report and report settings."

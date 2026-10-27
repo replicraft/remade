@@ -15,3 +15,8 @@ license: AGPL-3.0-only
 discord_server: https://discord.com/invite/A92xrEGCge
 limitations: Exact UI, API and data-format parity with the listed targets is not documented. Features vary by edition; documented importers are available in Plane Cloud and the commercial self-hosted edition, so migration coverage should not be assumed for the open-source Community Edition.
 summary: "Manage tasks, boards, sprints and documentation with Jira-, Linear- and ClickUp-style workflows."
+screenshots:
+  - src: https://media.docs.plane.so/GitHub-readme/github-top.webp
+    alt: "Plane: project board with issue cards."
+  - src: https://media.docs.plane.so/GitHub-readme/github-work-items.webp
+    alt: "Plane: timeline and grouped issue views."

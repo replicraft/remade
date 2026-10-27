@@ -21,3 +21,8 @@ limitations: Early implementation; full DataGrip feature, project and plugin com
   documented. The README documents macOS builds only. Packages are ad-hoc signed rather than notarized.
   Other database engines and cross-platform behavior are not established.
 summary: "Browse databases, write SQL and edit table data in a native DataGrip-style client."
+screenshots:
+  - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/main/docs/screenshots/readme/workspace-dark.png
+    alt: "DataCraft: database table and object browser."
+  - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/main/docs/screenshots/readme/objects-list.png
+    alt: "DataCraft: table properties beside database records."

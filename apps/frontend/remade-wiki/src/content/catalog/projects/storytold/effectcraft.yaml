@@ -14,3 +14,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Cannot open AEP or AEPX projects or run After Effects plug-ins. Render behavior has not yet been systematically compared with After Effects.
 summary: "After Effects-style compositing with layered animation, keyframes, expressions, effects and rendering."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/effectcraft/main/docs/images/effectcraft-graph-editor.png
+    alt: "EffectCraft: animation preview and value-curve editor."
+  - src: https://raw.githubusercontent.com/storytold/effectcraft/main/docs/images/effectcraft-effects.png
+    alt: "EffectCraft: particle composition and effect controls."

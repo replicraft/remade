@@ -16,3 +16,6 @@ docs: https://github.com/Psychronic-Games/RPGReactor/blob/main/docs/IMPORTING-LE
 discord_server: https://discord.gg/kc2pTMb
 limitations: XP support is a conversion workflow rather than a drop-in RGSS runtime or identical XP editor. Plugin and Ruby-script compatibility is maintainer-reported and incomplete; imported projects require appropriate rights to their assets. Bundled third-party components have separate licenses.
 summary: "RPG Maker-style map, event and database editing with MV/MZ compatibility layers and a modern runtime."
+screenshots:
+  - src: https://raw.githubusercontent.com/Psychronic-Games/RPGReactor/main/docs/media/releases/0.99.2/08-editor.jpg
+    alt: "RPG Reactor: game-world editor and resource search."

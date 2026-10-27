@@ -6,6 +6,7 @@ import {
 	suiteSchema,
 	toolSchema,
 } from "./schemas";
+import { screenshotUrl } from "./screenshots";
 import { supportedProjectSlugs } from "./suites";
 
 // Explicit public allowlists: future source fields are not automatically exported.
@@ -35,6 +36,7 @@ const publicProject = v.object({
 	description: projectSchema.entries.description,
 	license: projectSchema.entries.license,
 	limitations: projectSchema.entries.limitations,
+	screenshots: projectSchema.entries.screenshots,
 	addedAt,
 });
 const publicTool = v.object({
@@ -107,6 +109,13 @@ export function catalogExport(
 			.sort((a, b) => a.slug.localeCompare(b.slug))
 			.map((project) => ({
 				...project,
+				...(project.screenshots && {
+					screenshots: project.screenshots.map((screenshot, index) => ({
+						...screenshot,
+						src: new URL(screenshotUrl(project.slug, screenshot, index), site)
+							.href,
+					})),
+				}),
 				pageUrl: new URL(`/projects/${project.slug}/`, site).href,
 			})),
 		tools: tools

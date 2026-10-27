@@ -21,3 +21,8 @@ license: AGPL-3.0-only with Hew Plugin API Exception
 website: https://hew3d.com
 docs: https://github.com/hew3d/hew#readme
 limitations: Solid objects and explicit merging deliberately differ from SketchUp behavior. SKP import/export coverage is maintainer-reported; full file, extension and behavioral compatibility is not established. The plugin exception is an additional permission documented separately from AGPL.
+screenshots:
+  - src: https://raw.githubusercontent.com/hew3d/hew/main/site/public/screenshots/guest-house-light.webp
+    alt: Hew modeling a guest house.
+  - src: https://raw.githubusercontent.com/hew3d/hew/main/site/public/screenshots/trestle-table-measure.webp
+    alt: Hew measuring a trestle table model.

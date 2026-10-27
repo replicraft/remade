@@ -141,3 +141,11 @@ Project detail pages and request sections on software pages show optional Discor
 The draft Refined Directory implementation prioritizes Request a project, compact previews and static paginated browsing. Project/request classification, full detail content, suite/community links, badges and existing support semantics remain intact. See [the candidate report](experiments/refined-directory/README.md) for route changes, local form simulation, verification and production limitations. The on-site submission flow is development-only until a shared verified submission service is ready; production links to the existing GitHub Project Request form.
 
 Card titles use a stretched link to make the card surface clickable. Author, original-software, suite and tool links, plus vote/builder controls, remain independently operable above that surface. Cards place original-software and suite/tool relationships above the description, show authors inline without separator dots, and omit a separate View project/request/tool footer action. Directory previews size from their content rather than stretched grid height; the leading featured card keeps its two-row desktop layout.
+
+## Optional project screenshots
+
+Keep galleries on project detail pages, not directory cards. The filmstrip follows the repository/website/documentation actions, optional community section and Repository Mirrors card. Use one large, contained image with a quiet dark backing, captions below, compact previous/next arrows and a horizontally scrollable thumbnail row. Lime marks only the current thumbnail and interactive focus; avoid a heavy enclosing border. Images must not crop application interfaces.
+
+Use a slightly larger Screenshots heading than the metadata labels. Give every thumbnail an equal-width transparent border, changing it to lime for the selected image. Keep the border inside the thumbnail box and pad the scrolling row so selection and keyboard focus are not clipped at either edge.
+
+Gallery controls enhance static links and native scrolling with a small browser module; no React hydration is required. Do not autoplay or move focus when switching images. Respect reduced motion and preserve full-size image links. Hide an unavailable external image behind a short descriptive fallback when enhancement is available. Pages without screenshots retain their current layout.

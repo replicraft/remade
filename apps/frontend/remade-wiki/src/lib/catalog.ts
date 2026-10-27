@@ -16,6 +16,7 @@ import {
 	toolSchema,
 	validateRelationships,
 } from "./schemas";
+import { projectScreenshotAssets } from "./screenshot-files";
 import { supportedProjectSlugs } from "./suites";
 
 export type Entry =
@@ -44,6 +45,7 @@ async function records<S extends v.GenericSchema>(
 	folder: string,
 	schema: S,
 	key: "slug" | "original",
+	validateFiles?: (record: v.InferOutput<S>, path: string) => Promise<unknown>,
 ): Promise<v.InferOutput<S>[]> {
 	return Promise.all(
 		(await files(new URL(`src/content/catalog/${folder}/`, root).pathname)).map(
@@ -56,6 +58,8 @@ async function records<S extends v.GenericSchema>(
 					(record as Record<string, unknown>)[key] !== basename(path, ".yaml")
 				)
 					throw new Error(`Filename must match ${key}: ${path}`);
+
+				await validateFiles?.(record, path);
 
 				return record;
 			},
@@ -76,7 +80,7 @@ export async function loadCatalog() {
 		readFile(new URL("src/content/catalog/originals.yaml", root), "utf8").then(
 			(s) => v.parse(v.array(originalSchema), parseYaml(s)),
 		),
-		records("projects", projectSchema, "slug"),
+		records("projects", projectSchema, "slug", projectScreenshotAssets),
 		records("tools", toolSchema, "slug"),
 		records("requests", requestSchema, "original"),
 		readFile(new URL("src/content/catalog/featured.yaml", root), "utf8").then(
@@ -199,6 +203,24 @@ export async function loadMetadata(): Promise<Record<string, Metadata>> {
 }
 
 export type CatalogData = Awaited<ReturnType<typeof loadCatalog>>;
+
+export async function loadScreenshotAssets() {
+	const paths = await files(
+		new URL("src/content/catalog/projects/", root).pathname,
+	);
+	const assets = await Promise.all(
+		paths.map(async (path) => {
+			const project = v.parse(
+				projectSchema,
+				parseYaml(await readFile(path, "utf8")),
+			);
+
+			return projectScreenshotAssets(project, path);
+		}),
+	);
+
+	return assets.flat();
+}
 
 export {
 	contributeUrl,

@@ -490,3 +490,47 @@ def test_tool_mirrors(
     assert (not errors) == valid
     if valid:
         assert tools[0]["mirrors"] == ["https://codeberg.org/example/tool"]
+
+
+@pytest.mark.parametrize(
+    "images, valid",
+    [
+        ([{"src": "https://example.org/editor.png", "alt": "An editor."}], True),
+        ([], False),
+        ([{"src": "http://example.org/editor.png", "alt": "An editor."}], False),
+        ([{"src": "https://example.org/editor.png", "alt": " "}], False),
+        ([{"src": "https://example.org/editor.png", "alt": "An editor.", "unknown": True}], False),
+        ([{"src": "../editor.png", "alt": "An editor."}], False),
+        ([{"src": "./sub/../editor.png", "alt": "An editor."}], False),
+        ([{"src": "./editor.svg", "alt": "An editor."}], False),
+        ([{"src": "data:image/png;base64,test", "alt": "An editor."}], False),
+        ([{"src": "https://localhost/editor.png", "alt": "An editor."}], False),
+        ([{"src": "https://example.org/editor.png", "alt": "An editor."}] * 2, False),
+        ([{"src": f"https://example.org/{i}.png", "alt": "An editor."} for i in range(13)], False),
+    ],
+)
+def test_project_screenshot_records(project_catalog: Path, images: list, valid: bool) -> None:
+    path = project_catalog / "apps/frontend/remade-wiki/src/content/catalog/projects/impl-a.yaml"
+    project = yaml.safe_load(path.read_text())
+    project["screenshots"] = images
+    path.write_text(yaml.safe_dump(project))
+
+    assert (not collect(project_catalog)[-1]) == valid
+
+
+def test_local_project_screenshots_require_files_and_reject_symlinks(project_catalog: Path) -> None:
+    path = project_catalog / "apps/frontend/remade-wiki/src/content/catalog/projects/impl-a.yaml"
+    project = yaml.safe_load(path.read_text())
+    project["screenshots"] = [{"src": "./editor.png", "alt": "An editor."}]
+    path.write_text(yaml.safe_dump(project))
+    assert any("missing" in error for error in collect(project_catalog)[-1])
+
+    image = path.parent / "editor.png"
+    image.write_bytes(b"fixture")
+    assert not collect(project_catalog)[-1]
+
+    image.unlink()
+    external = project_catalog / "external.png"
+    external.write_bytes(b"fixture")
+    image.symlink_to(external)
+    assert any("symlinks" in error for error in collect(project_catalog)[-1])
