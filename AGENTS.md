@@ -46,7 +46,7 @@ When requirements conflict, make the inconsistency explicit and update the relev
 - Add focused automated tests when changing parsing, request fulfillment, schema rules, metadata ingestion, or other nontrivial logic; keep CI green before merging.
 - Leave test execution to CI unless the user explicitly asks for local test runs. Do not run tests after each change. Keep the configured commit hooks enabled; their linting, formatting and type checks still run on commit.
 - Legal explanations stay qualified. Do not promise that all clean-room implementations are lawful or imply Remade can certify their provenance. Don't replace the carefully scoped disclaimer with blanket non-liability language.
-- Auth production database creation, remote migrations, secret provisioning and deployment require explicit operator approval. Local auth migrations and verification are allowed; keep production steps manual. Mail-provider setup remains out of scope.
+- Auth production database creation, secret provisioning and direct production operations require explicit operator approval. The approved Cloudflare Workers Builds deployment runs `apps/backend/remade-api/scripts/deploy.sh`, which applies pending D1 migrations before deploying and stops on migration failure. Review migrations before merging; automatic deployment migrations must remain compatible with the currently deployed Worker. Destructive changes require a separately reviewed rollout. Local auth migrations and verification are allowed. Mail-provider setup remains out of scope.
 
 ## Add a reimplementation entry (pull request)
 
