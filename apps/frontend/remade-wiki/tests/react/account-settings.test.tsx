@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { render } from "vitest-browser-react";
 import AccountSettings from "../../src/components/auth/AccountSettings";
+import AuthMenu from "../../src/components/auth/AuthMenu";
 import * as auth from "../../src/lib/auth";
 
 vi.mock("../../src/lib/auth", { spy: true });
@@ -16,6 +17,7 @@ beforeEach(() => {
 	vi.clearAllMocks();
 	vi.mocked(auth.hasLoginHint).mockReturnValue(true);
 	vi.mocked(auth.resolveAccount).mockResolvedValue(account);
+	vi.mocked(auth.logout).mockResolvedValue();
 	sessionStorage.clear();
 	localStorage.clear();
 	window.history.replaceState(null, "", "/");
@@ -94,4 +96,63 @@ describe("account sign-in methods", () => {
 			.element(screen.getByText("Connected as @example"))
 			.toBeVisible();
 	});
+});
+
+it("clears account settings when the separate header island signs out", async () => {
+	const screen = await render(
+		<>
+			<AuthMenu />
+			<AccountSettings />
+		</>,
+	);
+	await expect.element(screen.getByText("Connected as @example")).toBeVisible();
+	await screen
+		.getByRole("combobox", { name: "Account menu for Example" })
+		.click();
+	await screen.getByRole("option", { name: "Logout", exact: true }).click();
+	await expect
+		.element(
+			screen.getByRole("link", { name: "Sign in to manage your account" }),
+		)
+		.toBeVisible();
+	await expect
+		.element(screen.getByRole("button", { name: "Connect Discord" }))
+		.not.toBeInTheDocument();
+	await expect
+		.element(screen.getByText("Connected as @example"))
+		.not.toBeInTheDocument();
+});
+
+it("does not restore account settings from a lookup that completes after logout", async () => {
+	let completeLateLookup: (value: auth.Account) => void = () => {};
+	vi.mocked(auth.resolveAccount)
+		.mockResolvedValueOnce(account)
+		.mockReturnValueOnce(
+			new Promise((resolve) => {
+				completeLateLookup = resolve;
+			}),
+		);
+	const screen = await render(
+		<>
+			<AuthMenu />
+			<AccountSettings />
+		</>,
+	);
+	await screen
+		.getByRole("combobox", { name: "Account menu for Example" })
+		.click();
+	await screen.getByRole("option", { name: "Logout", exact: true }).click();
+	await expect
+		.element(
+			screen.getByRole("link", { name: "Sign in to manage your account" }),
+		)
+		.toBeVisible();
+	completeLateLookup(account);
+	await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+	await expect
+		.element(screen.getByRole("button", { name: "Connect Discord" }))
+		.not.toBeInTheDocument();
+	await expect
+		.element(screen.getByRole("button", { name: "Login", exact: true }))
+		.toBeVisible();
 });

@@ -10,7 +10,7 @@ export function usesActivityPreview(): boolean {
 	return import.meta.env.DEV && !import.meta.env.PUBLIC_REMADE_API_BASE_URL;
 }
 
-const accountSchema = v.object({
+export const accountSchema = v.object({
 	id: v.pipe(v.string(), v.uuid()),
 	displayName: v.nullable(v.string()),
 	avatarUrl: v.nullable(v.pipe(v.string(), v.url())),
