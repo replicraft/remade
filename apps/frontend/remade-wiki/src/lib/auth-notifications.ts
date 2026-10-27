@@ -1,11 +1,7 @@
 import { toast } from "sonner";
 import { type Account, loginUrl } from "./auth";
 
-import {
-	type LoginProvider,
-	lastLoginProvider,
-	rememberLoginProvider,
-} from "./login-provider";
+import { type LoginProvider, rememberLoginProvider } from "./login-provider";
 
 const loginToastKey = "remade-pending-login-toast";
 
@@ -31,7 +27,7 @@ export function rememberLogin(provider?: LoginProvider) {
 	}
 }
 
-export function announceLogin(account: Account | null) {
+export function announceLogin(account: Account | null, search = "") {
 	let pending: string | null = null;
 	let pendingProvider: string | null = null;
 	try {
@@ -40,14 +36,24 @@ export function announceLogin(account: Account | null) {
 		sessionStorage.removeItem(loginToastKey);
 		sessionStorage.removeItem("remade-pending-login-provider");
 	} catch {
-		// Successful sessions still remember their provider if session storage is blocked.
+		// Notifications and preferences are optional when storage is unavailable.
 	}
 	const elapsed = Date.now() - Number(pending);
 	const recent = Boolean(pending) && elapsed >= 0 && elapsed < 10 * 60 * 1000;
-	const preferred = (recent && pendingProvider) || lastLoginProvider();
-	const identity =
-		account?.identities.find((identity) => identity.provider === preferred) ||
-		account?.identities[0];
-	if (identity) rememberLoginProvider(identity.provider);
-	if (recent && identity) toast.success(`Logged in as ${identity.username}`);
+	const result = new URLSearchParams(search);
+	const successes = result.getAll("auth_success");
+	if (
+		!recent ||
+		result.has("auth_error") ||
+		successes.length !== 1 ||
+		successes[0] !== pendingProvider
+	)
+		return;
+
+	const identity = account?.identities.find(
+		(identity) => identity.provider === pendingProvider,
+	);
+	if (!identity) return;
+	rememberLoginProvider(identity.provider);
+	toast.success(`Logged in as ${identity.username}`);
 }

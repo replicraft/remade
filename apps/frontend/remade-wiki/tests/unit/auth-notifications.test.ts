@@ -29,6 +29,7 @@ describe("sign-in notifications", () => {
 	it("announces a confirmed Discord return only once", () => {
 		const storage = new Map([
 			["remade-pending-login-toast", String(Date.now())],
+			["remade-pending-login-provider", "discord"],
 		]);
 		vi.stubGlobal("sessionStorage", {
 			getItem: (key: string) => storage.get(key) ?? null,
@@ -40,8 +41,8 @@ describe("sign-in notifications", () => {
 			avatarUrl: null,
 			identities: [{ provider: "discord" as const, username: "example.user" }],
 		};
-		announceLogin(account);
-		announceLogin(account);
+		announceLogin(account, "?auth_success=discord");
+		announceLogin(account, "?auth_success=discord");
 		expect(toast.success).toHaveBeenCalledExactlyOnceWith(
 			"Logged in as example.user",
 		);
@@ -71,9 +72,59 @@ it("remembers the provider actually used when an account has multiple identities
 			{ provider: "discord" as const, username: "discord.user" },
 		],
 	};
-	announceLogin(account);
+	announceLogin(account, "?auth_success=discord");
 	expect(saved.get("remade-last-login-provider")).toBe("discord");
 	expect(toast.success).toHaveBeenCalledWith("Logged in as discord.user");
-	announceLogin(account);
+	announceLogin(account, "?auth_success=discord");
 	expect(saved.get("remade-last-login-provider")).toBe("discord");
 });
+
+it.each([
+	"?auth_error=email_in_use&provider=discord",
+	"?auth_success=discord&auth_error=email_in_use",
+	"",
+	"?auth_success=github",
+	"?auth_success=discord&auth_success=discord",
+])(
+	"keeps a previous session from confirming a failed or unrelated attempt: %s",
+	(search) => {
+		const pending = new Map([
+			["remade-pending-login-toast", String(Date.now())],
+			["remade-pending-login-provider", "discord"],
+		]);
+		const saved = new Map([["remade-last-login-provider", "github"]]);
+		vi.stubGlobal("sessionStorage", {
+			getItem: (key: string) => pending.get(key) ?? null,
+			removeItem: (key: string) => pending.delete(key),
+		});
+		vi.stubGlobal("localStorage", {
+			getItem: (key: string) => saved.get(key) ?? null,
+			setItem: (key: string, value: string) => saved.set(key, value),
+		});
+		announceLogin(
+			{
+				id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+				displayName: null,
+				avatarUrl: null,
+				identities: [
+					{ provider: "github", username: "existing-gh" },
+					{ provider: "discord", username: "existing-discord" },
+				],
+			},
+			search,
+		);
+		expect(toast.success).not.toHaveBeenCalled();
+		expect(saved.get("remade-last-login-provider")).toBe("github");
+		expect(pending.size).toBe(0);
+		announceLogin(
+			{
+				id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+				displayName: null,
+				avatarUrl: null,
+				identities: [{ provider: "discord", username: "existing-discord" }],
+			},
+			"?auth_success=discord",
+		);
+		expect(toast.success).not.toHaveBeenCalled();
+	},
+);

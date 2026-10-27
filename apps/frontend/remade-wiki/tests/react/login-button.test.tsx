@@ -4,7 +4,7 @@ import { render } from "vitest-browser-react";
 import LoginButton from "../../src/components/auth/LoginButton";
 import LoginOptions from "../../src/components/auth/LoginOptions";
 import { apiUrl } from "../../src/lib/auth";
-import { announceLogin } from "../../src/lib/auth-notifications";
+import { announceLogin, rememberLogin } from "../../src/lib/auth-notifications";
 
 beforeEach(() => {
 	localStorage.removeItem("remade-last-login-provider");
@@ -52,12 +52,16 @@ describe("login dropdown", () => {
 	});
 
 	it("remembers a confirmed provider across logout and page visits", async () => {
-		announceLogin({
-			id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
-			displayName: null,
-			avatarUrl: null,
-			identities: [{ provider: "discord", username: "example" }],
-		});
+		rememberLogin("discord");
+		announceLogin(
+			{
+				id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+				displayName: null,
+				avatarUrl: null,
+				identities: [{ provider: "discord", username: "example" }],
+			},
+			"?auth_success=discord",
+		);
 		const screen = await render(<LoginButton />);
 		await screen.getByRole("button", { name: "Login", exact: true }).click();
 		await expect

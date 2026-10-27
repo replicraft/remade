@@ -52,7 +52,7 @@ export function createAuthStore() {
 				document.dispatchEvent(
 					new CustomEvent("remade-auth-changed", { detail: account }),
 				);
-				announceLogin(account);
+				announceLogin(account, location.search);
 			} catch {
 				// An unavailable API does not confirm the user is signed out.
 				if (!signal.aborted && version === lookupVersion)

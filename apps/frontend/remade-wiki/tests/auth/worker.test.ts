@@ -777,7 +777,9 @@ describe("Worker OAuth and sessions", () => {
 		const response = await login();
 		expect(providerCalls).toBe(3);
 		expect(response.status).toBe(302);
-		expect(response.headers.get("Location")).toBe(`${origin}/`);
+		expect(response.headers.get("Location")).toBe(
+			`${origin}/?auth_success=github`,
+		);
 		const cookie = sessionCookie(response);
 		const token = cookie.split("=")[1];
 		const db = await worker.getD1Database("DB");
@@ -1039,17 +1041,23 @@ describe("verified email and explicit account linking", () => {
 			).searchParams.get("auth_error"),
 		).toBe("email_in_use");
 		discordEmail = "unverified@example.com";
-		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+		expect((await login("discord")).headers.get("Location")).toBe(
+			`${origin}/?auth_success=discord`,
+		);
 	});
 
 	it("does not block accounts on an unverified or missing Discord email", async () => {
 		await login();
 		discordEmail = "github@example.com";
 		discordVerified = false;
-		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+		expect((await login("discord")).headers.get("Location")).toBe(
+			`${origin}/?auth_success=discord`,
+		);
 		discordId = "999";
 		discordEmail = null;
-		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+		expect((await login("discord")).headers.get("Location")).toBe(
+			`${origin}/?auth_success=discord`,
+		);
 	});
 
 	it("keeps legacy account sign-ins working when verified emails subsequently overlap", async () => {
@@ -1059,7 +1067,9 @@ describe("verified email and explicit account linking", () => {
 		const initial = await accountFor(sessionCookie(await login("discord")));
 		discordVerified = true;
 		const returning = await login("discord");
-		expect(returning.headers.get("Location")).toBe(`${origin}/`);
+		expect(returning.headers.get("Location")).toBe(
+			`${origin}/?auth_success=discord`,
+		);
 		expect((await accountFor(sessionCookie(returning))).id).toBe(initial.id);
 	});
 
@@ -1068,7 +1078,9 @@ describe("verified email and explicit account linking", () => {
 		githubEmails = [{ email: "new@example.com", verified: true }];
 		await login();
 		discordEmail = "github@example.com";
-		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+		expect((await login("discord")).headers.get("Location")).toBe(
+			`${origin}/?auth_success=discord`,
+		);
 	});
 
 	it("arbitrates concurrent signups sharing a verified email without orphaned accounts", async () => {
@@ -1076,8 +1088,10 @@ describe("verified email and explicit account linking", () => {
 		mode = "race";
 		const responses = await Promise.all([login(), login("discord")]);
 		expect(
-			responses.filter(
-				(response) => response.headers.get("Location") === `${origin}/`,
+			responses.filter((response) =>
+				response.headers
+					.get("Location")
+					?.startsWith(`${origin}/?auth_success=`),
 			),
 		).toHaveLength(1);
 		expect(
@@ -1363,7 +1377,9 @@ it.each(["github", "discord"] as const)(
 			const winner = await login(provider);
 			await worker.dispatchFetch(`${api}/__test/identity-read?release=1`);
 			const returning = await delayed;
-			expect(returning.headers.get("Location")).toBe(origin);
+			expect(returning.headers.get("Location")).toBe(
+				`${origin}/?auth_success=${provider}`,
+			);
 			expect((await accountFor(sessionCookie(returning))).id).toBe(
 				(await accountFor(sessionCookie(winner))).id,
 			);

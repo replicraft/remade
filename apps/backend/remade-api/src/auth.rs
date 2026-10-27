@@ -287,7 +287,10 @@ async fn complete(
             .append_pair("connected", provider.name());
         redirect(url.as_str())?
     } else {
-        redirect(&config.frontend)?
+        let mut url = Url::parse(&config.frontend)?;
+        url.query_pairs_mut()
+            .append_pair("auth_success", provider.name());
+        redirect(url.as_str())?
     };
     response.headers_mut().append(
         "Set-Cookie",

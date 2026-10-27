@@ -19,6 +19,8 @@ beforeEach(() => {
 	vi.clearAllMocks();
 	localStorage.removeItem("remade-last-login-provider");
 	sessionStorage.removeItem("remade-pending-login-toast");
+	sessionStorage.removeItem("remade-pending-login-provider");
+	window.history.replaceState(null, "", "/");
 	toast.dismiss();
 	vi.mocked(auth.hasLoginHint).mockReturnValue(false);
 	vi.mocked(auth.resolveAccount).mockResolvedValue(account);
@@ -56,6 +58,8 @@ describe("header authentication", () => {
 	it("announces a confirmed OAuth return using the GitHub username only once", async () => {
 		vi.mocked(auth.hasLoginHint).mockReturnValue(true);
 		sessionStorage.setItem("remade-pending-login-toast", String(Date.now()));
+		sessionStorage.setItem("remade-pending-login-provider", "github");
+		window.history.replaceState(null, "", "/?auth_success=github");
 
 		const screen = await render(<AuthMenu />);
 		await expect
@@ -77,6 +81,8 @@ describe("header authentication", () => {
 			identities: [{ provider: "discord", username: "discord.user" }],
 		});
 		sessionStorage.setItem("remade-pending-login-toast", String(Date.now()));
+		sessionStorage.setItem("remade-pending-login-provider", "discord");
+		window.history.replaceState(null, "", "/?auth_success=discord");
 		const screen = await render(<AuthMenu />);
 		await expect
 			.element(
