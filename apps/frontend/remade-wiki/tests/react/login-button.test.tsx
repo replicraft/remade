@@ -13,7 +13,7 @@ beforeEach(() => {
 
 describe("login dropdown", () => {
 	it("opens the ordered provider links with logos and dismisses with Escape", async () => {
-		const screen = await render(<LoginButton discordEnabled />);
+		const screen = await render(<LoginButton />);
 		const trigger = screen.getByRole("button", { name: "Login", exact: true });
 		await expect
 			.element(screen.getByRole("link", { name: "Continue with GitHub" }))
@@ -41,7 +41,7 @@ describe("login dropdown", () => {
 		const screen = await render(
 			<>
 				<button type="button">Outside</button>
-				<LoginButton discordEnabled />
+				<LoginButton />
 			</>,
 		);
 		await screen.getByRole("button", { name: "Login", exact: true }).click();
@@ -58,7 +58,7 @@ describe("login dropdown", () => {
 			avatarUrl: null,
 			identities: [{ provider: "discord", username: "example" }],
 		});
-		const screen = await render(<LoginButton discordEnabled />);
+		const screen = await render(<LoginButton />);
 		await screen.getByRole("button", { name: "Login", exact: true }).click();
 		await expect
 			.element(
@@ -71,7 +71,7 @@ describe("login dropdown", () => {
 			)
 			.toBeVisible();
 		await screen.unmount();
-		const page = await render(<LoginOptions discordEnabled />);
+		const page = await render(<LoginOptions />);
 		await expect
 			.element(
 				page.getByRole("link", { name: "Continue with Discord Last used" }),
@@ -79,12 +79,12 @@ describe("login dropdown", () => {
 			.toBeVisible();
 	});
 
-	it("does not offer Discord before it is enabled", async () => {
-		const screen = await render(<LoginButton discordEnabled={false} />);
+	it("shows both providers without a last-used label for a new visitor", async () => {
+		const screen = await render(<LoginButton />);
 		await screen.getByRole("button", { name: "Login", exact: true }).click();
 		await expect
 			.element(screen.getByRole("link", { name: "Continue with Discord" }))
-			.not.toBeInTheDocument();
+			.toBeVisible();
 		await expect.element(screen.getByText("Last used")).not.toBeInTheDocument();
 	});
 });

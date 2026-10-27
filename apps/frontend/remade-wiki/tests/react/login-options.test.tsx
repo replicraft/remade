@@ -9,8 +9,8 @@ beforeEach(() => {
 });
 
 describe("login providers", () => {
-	it("offers both providers when Discord is enabled", async () => {
-		const screen = await render(<LoginOptions discordEnabled />);
+	it("offers both providers without feature configuration", async () => {
+		const screen = await render(<LoginOptions />);
 		await expect
 			.element(screen.getByRole("link", { name: "Continue with GitHub" }))
 			.toHaveAttribute("href", `${apiUrl}/auth/github`);
@@ -20,13 +20,10 @@ describe("login providers", () => {
 		expect(sessionStorage.getItem("remade-pending-login-toast")).toBeNull();
 	});
 
-	it("keeps GitHub available before Discord is configured", async () => {
-		const screen = await render(<LoginOptions discordEnabled={false} />);
+	it("explains that provider accounts stay separate", async () => {
+		const screen = await render(<LoginOptions />);
 		await expect
-			.element(screen.getByRole("link", { name: "Continue with GitHub" }))
+			.element(screen.getByText(/GitHub and Discord accounts are separate/))
 			.toBeVisible();
-		await expect
-			.element(screen.getByRole("link", { name: "Continue with Discord" }))
-			.not.toBeInTheDocument();
 	});
 });

@@ -212,15 +212,9 @@ test("anonymous browsing offers sign-in without contacting the authentication AP
 	await expect(
 		page.getByRole("link", { name: "Continue with GitHub" }),
 	).toHaveAttribute("href", /\/auth\/github$/);
-	if (process.env.PUBLIC_REMADE_DISCORD_AUTH_ENABLED === "true") {
-		await expect(
-			page.getByRole("link", { name: "Continue with Discord" }),
-		).toHaveAttribute("href", /\/auth\/discord$/);
-	} else {
-		await expect(
-			page.getByRole("link", { name: "Continue with Discord" }),
-		).toHaveCount(0);
-	}
+	await expect(
+		page.getByRole("link", { name: "Continue with Discord" }),
+	).toHaveAttribute("href", /\/auth\/discord$/);
 	expect(authRequests).toEqual([]);
 });
 

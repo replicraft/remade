@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { apiUrl, discordLoginEnabled } from "../../lib/auth";
+import { apiUrl } from "../../lib/auth";
 import { rememberLogin } from "../../lib/auth-notifications";
 import {
 	type LoginProvider,
@@ -7,17 +7,13 @@ import {
 } from "../../lib/login-provider";
 
 export default function ProviderLinks({
-	discordEnabled = discordLoginEnabled,
 	variant = "menu",
 }: {
-	discordEnabled?: boolean;
 	variant?: "menu" | "buttons";
 }) {
 	const [lastUsed, setLastUsed] = useState<LoginProvider | null>(null);
 	useEffect(() => setLastUsed(lastLoginProvider()), []);
-	const providers: LoginProvider[] = discordEnabled
-		? ["github", "discord"]
-		: ["github"];
+	const providers: LoginProvider[] = ["github", "discord"];
 
 	return (
 		<div className={variant === "buttons" ? "grid gap-3" : "grid gap-1"}>

@@ -1,15 +1,8 @@
 import { ArrowLeft } from "lucide-react";
 import remadeMark from "../../assets/logos/remade-mark.svg?url";
-import { discordLoginEnabled } from "../../lib/auth";
 import ProviderLinks from "./ProviderLinks";
 
-interface Props {
-	discordEnabled?: boolean;
-}
-
-export default function LoginOptions({
-	discordEnabled = discordLoginEnabled,
-}: Props) {
+export default function LoginOptions() {
 	return (
 		<section
 			aria-labelledby="sign-in-heading"
@@ -34,16 +27,14 @@ export default function LoginOptions({
 			</div>
 
 			<div className="mt-7">
-				<ProviderLinks discordEnabled={discordEnabled} variant="buttons" />
+				<ProviderLinks variant="buttons" />
 			</div>
 
-			{discordEnabled && (
-				<p className="mt-5 text-center text-xs leading-5 text-muted">
-					Use the same sign-in option each time.
-					<br />
-					GitHub and Discord accounts are separate.
-				</p>
-			)}
+			<p className="mt-5 text-center text-xs leading-5 text-muted">
+				Use the same sign-in option each time.
+				<br />
+				GitHub and Discord accounts are separate.
+			</p>
 
 			<div className="mt-7 border-t border-line pt-5 text-center">
 				<a

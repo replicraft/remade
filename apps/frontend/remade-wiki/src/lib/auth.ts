@@ -5,8 +5,6 @@ export const apiUrl = (
 ).replace(/\/$/, "");
 
 export const loginUrl = "/login/";
-export const discordLoginEnabled =
-	import.meta.env.PUBLIC_REMADE_DISCORD_AUTH_ENABLED === "true";
 
 export function usesActivityPreview(): boolean {
 	return import.meta.env.DEV && !import.meta.env.PUBLIC_REMADE_API_BASE_URL;

@@ -2,11 +2,7 @@ import { ChevronDown, LogIn } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 import ProviderLinks from "./ProviderLinks";
 
-export default function LoginButton({
-	discordEnabled,
-}: {
-	discordEnabled?: boolean;
-}) {
+export default function LoginButton() {
 	const dropdown = useRef<HTMLDivElement>(null);
 	const trigger = useRef<HTMLButtonElement>(null);
 	const [open, setOpen] = useState(false);
@@ -62,7 +58,7 @@ export default function LoginButton({
 				hidden={!open}
 				id={panelId}
 			>
-				<ProviderLinks discordEnabled={discordEnabled} />
+				<ProviderLinks />
 			</div>
 		</div>
 	);
