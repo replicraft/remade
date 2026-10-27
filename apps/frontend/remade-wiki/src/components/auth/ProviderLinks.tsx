@@ -19,13 +19,15 @@ export default function ProviderLinks({
 		<div className={variant === "buttons" ? "grid gap-3" : "grid gap-1"}>
 			{providers.map((provider) => (
 				<a
-					className={`flex min-h-12 items-center gap-3 rounded-lg px-4 py-3 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime ${variant === "buttons" ? "border border-line bg-surface hover:border-lime hover:bg-panel" : "hover:bg-panel hover:text-lime"}`}
+					className={`flex min-h-12 items-center gap-3 rounded-lg px-4 py-3 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime ${variant === "buttons" ? "justify-center border border-line bg-surface hover:border-lime hover:bg-panel" : "hover:bg-panel hover:text-lime"}`}
 					href={`${apiUrl}/auth/${provider}`}
 					key={provider}
 					onClick={() => rememberLogin(provider)}
 				>
 					<ProviderLogo provider={provider} />
-					<span className="flex flex-1 flex-wrap items-center gap-x-3 gap-y-1">
+					<span
+						className={`flex flex-wrap items-center gap-x-3 gap-y-1 ${variant === "buttons" ? "justify-center" : "flex-1"}`}
+					>
 						<span>
 							Continue with {provider === "github" ? "GitHub" : "Discord"}
 						</span>
