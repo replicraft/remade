@@ -1,6 +1,7 @@
 # Scope and limitations are maintainer-reported in the upstream README.
 slug: prosecraft
 name: ProseCraft
+authors: [jennraeross]
 repository: https://github.com/jennraeross/ProseCraft
 originals:
 - scrivener

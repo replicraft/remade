@@ -1,5 +1,6 @@
 slug: cliprecorder
 name: ClipRecorder
+authors: [by183]
 repository: https://github.com/By183/ClipRecorder
 originals: [nvidia-shadowplay]
 category: creative

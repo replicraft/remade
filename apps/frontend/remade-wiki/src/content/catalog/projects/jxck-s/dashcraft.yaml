@@ -1,6 +1,7 @@
 # Scope and limitations are maintainer-reported in the upstream README.
 slug: dashcraft
 name: DashCraft
+authors: [jxck-s]
 repository: https://github.com/Jxck-S/dashcraft
 originals:
 - microsoft-power-bi

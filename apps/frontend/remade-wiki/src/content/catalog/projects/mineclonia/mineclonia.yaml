@@ -2,6 +2,7 @@
 # Scope, beta status and licensing are documented in the repository README and LEGAL.md.
 slug: mineclonia
 name: Mineclonia
+authors: [mineclonia]
 repository: https://codeberg.org/mineclonia/mineclonia
 originals: [minecraft]
 category: games

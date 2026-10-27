@@ -1,3 +1,4 @@
+import { authorProfile } from "../../lib/author-profile";
 import type { CatalogData, Metadata } from "../../lib/catalog";
 
 import { metadataFor } from "../../lib/presentation";
@@ -14,25 +15,30 @@ export default function AuthorPage({ user, catalog, metadata }: Props) {
 		.filter((e) => e.authors?.includes(user))
 		.sort((a, b) => a.name.localeCompare(b.name));
 
+	const profile = authorProfile(
+		user,
+		entries.map((entry) => entry.repository),
+	);
+
 	return (
 		<>
 			<div className="max-w-[860px] pt-16">
 				<p className="mb-5 text-xs font-bold uppercase tracking-[0.16em] text-lime">
-					By GitHub author
+					By author
 				</p>
 
 				<h1 data-pagefind-meta="title">@{user}</h1>
 
 				<p>
-					All indexed projects and tools credited to this GitHub user or
-					organization, including entries outside Featured.
+					All indexed projects and tools credited to this user or organization,
+					including entries outside Featured.
 				</p>
 
 				<a
 					className="inline-flex cursor-pointer items-center justify-center rounded-lg border border-line px-4 py-3 text-sm font-semibold text-ink hover:border-lime hover:text-lime"
-					href={`https://github.com/${user}`}
+					href={profile.href}
 				>
-					GitHub profile ↗
+					{profile.name} profile ↗
 				</a>
 			</div>
 

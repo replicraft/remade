@@ -2,6 +2,7 @@
 # Accepted with maintainer approval; ancestry and component licensing are disclosed below.
 slug: fuzix
 name: FUZIX
+authors: [etchedpixels]
 repository: https://codeberg.org/EtchedPixels/FUZIX
 originals: [unix-v7]
 category: operating-systems

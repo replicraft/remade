@@ -1,6 +1,7 @@
 # Feature scope and early-alpha status are documented in the upstream README.
 slug: exomyth
 name: Exomyth
+authors: [exonerv-pec]
 repository: https://github.com/Exonerv-Pec/Exomyth
 website: https://exonerv-pec.github.io/Exomyth/
 originals: [world-anvil, campfire, legendkeeper]

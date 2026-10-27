@@ -2,6 +2,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/119.
 slug: xnotes
 name: Xnotes
+authors: [shardulvs]
 repository: https://github.com/shardulvs/xnotes-android
 originals:
   - goodnotes

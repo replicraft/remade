@@ -2,6 +2,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/116.
 slug: recordly
 name: Recordly
+authors: [webadderallorg]
 repository: https://github.com/webadderallorg/recordly
 originals:
   - loom
