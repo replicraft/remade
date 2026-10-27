@@ -475,3 +475,32 @@ test("vendor browsing works without JavaScript", async ({ browser }) => {
 		await context.close();
 	}
 });
+
+test("exact vendor searches offer a shortcut from home and both directories", async ({
+	page,
+}) => {
+	await page.goto("/");
+	await page.getByRole("searchbox").fill(" Autodesk ");
+	await expect(
+		page.getByRole("link", { name: "See all by Autodesk →", exact: true }),
+	).toHaveAttribute("href", "/vendor/autodesk/");
+	await page.getByRole("searchbox").fill("Autodes");
+	await expect(
+		page.getByRole("link", { name: /See all by Autodesk/ }),
+	).toHaveCount(0);
+	for (const path of [
+		"/explore/?q=autodesk",
+		"/requests/?q=AUTODESK",
+		"/explore/page/2/?q=autodesk",
+		"/requests/page/2/?q=autodesk",
+	]) {
+		await page.goto(path);
+		await expect(
+			page.getByRole("link", { name: "See all by Autodesk →", exact: true }),
+		).toHaveAttribute("href", "/vendor/autodesk/");
+	}
+	await page.goto("/explore/?q=Alludo");
+	await expect(
+		page.getByRole("link", { name: "See all by Corel →", exact: true }),
+	).toHaveAttribute("href", "/vendor/corel/");
+});

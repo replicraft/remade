@@ -76,3 +76,16 @@ export function vendorForOriginal(
 ): Vendor | undefined {
 	return vendors.find((record) => record.slug === vendor);
 }
+
+export function exactVendorMatch(
+	vendors: Vendor[],
+	query: string,
+): Vendor | undefined {
+	const normalized = normalizeVendorSearch(query);
+	if (!normalized) return undefined;
+	return vendors.find((vendor) =>
+		[vendor.slug, vendor.name, ...(vendor.aliases ?? [])].some(
+			(name) => normalizeVendorSearch(name) === normalized,
+		),
+	);
+}

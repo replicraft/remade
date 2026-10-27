@@ -9,6 +9,8 @@ import {
 } from "../../lib/directory";
 import { label, repositoryUrl } from "../../lib/presentation";
 import type { RequestActivity } from "../../lib/request-activity";
+import type { Vendor } from "../../lib/schemas";
+import { exactVendorMatch } from "../../lib/vendors";
 import { defaultFilters as exploreDefaults } from "../../stores/explore-store";
 import { useRequestActivity } from "../../stores/request-activity-store";
 import DirectoryCard from "../catalog/DirectoryCard";
@@ -19,8 +21,10 @@ import type { FilterOption } from "../search/DirectoryFilters";
 import ExploreFiltersPanel from "../search/ExploreFilters";
 import ExploreResultsToolbar from "../search/ExploreResultsToolbar";
 import RequestFilters from "../search/RequestFilters";
+import VendorSearchLink from "../search/VendorSearchLink";
 
 type Props = {
+	vendors?: Vendor[];
 	records: DirectoryRecord[];
 	kind: "project" | "request";
 	initialPage?: number;
@@ -57,6 +61,7 @@ function RequestDirectory(props: Props) {
 }
 function DirectoryContent({
 	records,
+	vendors = [],
 	kind,
 	initialPage = 1,
 	featured,
@@ -200,6 +205,7 @@ function DirectoryContent({
 				)
 				.slice(0, 3)
 		: [];
+	const matchedVendor = exactVendorMatch(vendors, filters.q ?? "");
 	const title = kind === "request" ? "Project Requests" : "Explore projects";
 	return (
 		<>
@@ -251,6 +257,11 @@ function DirectoryContent({
 						onClear={() => change(defaults)}
 						options={options}
 					/>
+				</div>
+			)}
+			{matchedVendor && (
+				<div className="mb-5">
+					<VendorSearchLink vendor={matchedVendor} />
 				</div>
 			)}
 			<noscript>

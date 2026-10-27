@@ -7,6 +7,7 @@ import {
 	vendorSchema,
 } from "../../src/lib/schemas";
 import {
+	exactVendorMatch,
 	normalizeVendorSearch,
 	vendorGroups,
 	vendorHref,
@@ -163,4 +164,30 @@ it("rejects vendor aliases that collide with another vendor name", () => {
 	const catalog = fixture();
 	catalog.vendors?.push({ slug: "former", name: "Former Publisher" });
 	expect(() => validateRelationships(catalog)).toThrow("Duplicate vendor name");
+});
+
+it("matches complete vendor names, slugs and aliases without matching partial queries", () => {
+	const vendors = [
+		{
+			slug: "dassault-systemes",
+			name: "Dassault Systèmes",
+			aliases: ["Dassault Systems"],
+		},
+	];
+	for (const query of [
+		" DASSAULT SYSTÈMES ",
+		"dassault-systemes",
+		"Dassault Systems",
+	]) {
+		expect(exactVendorMatch(vendors, query)?.slug).toBe("dassault-systemes");
+	}
+	for (const query of [
+		"",
+		"  ",
+		"Dassault",
+		"Dassault Systèmes CAD",
+		"Autodesk",
+	]) {
+		expect(exactVendorMatch(vendors, query)).toBeUndefined();
+	}
 });
