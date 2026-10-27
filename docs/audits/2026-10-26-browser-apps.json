@@ -4,7 +4,7 @@
 	"baseline": "66d4772d31e4d03440af10f415cadbeefd6bfb58",
 	"baseline_worktree": "Clean before feature implementation; source code edits present while collecting evidence.",
 	"projects_reviewed": 163,
-	"links_added": 57,
+	"links_added": 58,
 	"known_limitations": [
 		"Mineclonia has no GitHub metadata or catalog website; upstream Codeberg review remains inconclusive.",
 		"Several projects use client-rendered or Wasm app shells; a reachable app shell does not independently verify complete functionality."
@@ -2652,15 +2652,23 @@
 				"final": "https://psychronic.itch.io/rpg-reactor",
 				"title": "RPG Reactor by Psychronic"
 			},
-			"result": "no_documented_hosted_build_found",
-			"browser_url": null,
-			"hosting": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://psychronic.itch.io/rpg-reactor",
+			"hosting": {
+				"url": "https://psychronic.itch.io/rpg-reactor",
+				"kind": "official",
+				"status": 200,
+				"final": "https://psychronic.itch.io/rpg-reactor",
+				"source": "https://psychronic.itch.io/rpg-reactor",
+				"title": "RPG Reactor by Psychronic",
+				"note": "Official itch.io listing includes an embedded HTML build with a Run game-engine control, alongside downloads."
+			},
 			"sources": [
 				"https://github.com/Psychronic-Games/RPGReactor",
 				"https://github.com/Psychronic-Games/RPGReactor/blob/9ced256be99ecd97525a0b8702f47f69717afced/README.md",
 				"https://psychronic.itch.io/rpg-reactor"
 			],
-			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+			"verification": "Official listing and embedded browser build reviewed; editor functionality was not independently tested."
 		},
 		{
 			"slug": "reviera",
