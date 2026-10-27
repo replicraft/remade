@@ -4,12 +4,18 @@ import {
 	type SearchRecord,
 	searchDirectory,
 } from "../../lib/directory";
+import type { Vendor } from "../../lib/schemas";
+import { exactVendorMatch } from "../../lib/vendors";
+import VendorSearchLink from "./VendorSearchLink";
 export default function DirectorySearch({
 	records,
+	vendors = [],
 }: {
 	records: SearchRecord[];
+	vendors?: Vendor[];
 }) {
 	const [query, setQuery] = useState("");
+	const matchedVendor = exactVendorMatch(vendors, query);
 	const matches = searchDirectory(records, query).slice(0, 5);
 	return (
 		<search className="hero-search">
@@ -37,6 +43,11 @@ export default function DirectorySearch({
 					aria-live="polite"
 					className="mt-3 rounded-lg border border-line bg-surface p-2"
 				>
+					{matchedVendor && (
+						<div className="px-3 py-2">
+							<VendorSearchLink vendor={matchedVendor} />
+						</div>
+					)}
 					{matches.length ? (
 						matches.map((record) => (
 							<a
@@ -54,14 +65,14 @@ export default function DirectorySearch({
 								</span>
 							</a>
 						))
-					) : (
+					) : !matchedVendor ? (
 						<div className="p-3 text-sm">
 							<p>No matching project is listed yet.</p>
 							<a className="text-lime" href={requestHref(query)}>
 								Request this software →
 							</a>
 						</div>
-					)}
+					) : null}
 				</div>
 			)}
 		</search>

@@ -135,12 +135,46 @@ def collect(root=ROOT):
     featured = checked_load(featured_file, errors)
     originals = originals if isinstance(originals, list) else []
     featured = featured if isinstance(featured, list) else []
+    vendors_file = root / "apps/frontend/remade-wiki/src/content/catalog/vendors.yaml"
+    vendor_by_slug = {}
+    vendor_names = set()
+    if vendors_file.exists():
+        vendors = checked_load(vendors_file, errors)
+        if not isinstance(vendors, list):
+            errors.append("vendors.yaml: expected a list")
+            vendors = []
+        for vendor in vendors:
+            if not fields(vendor, {"slug", "name"}, {"aliases"}, "vendors.yaml", errors):
+                continue
+            if not is_slug(vendor["slug"]):
+                errors.append("vendors.yaml: invalid vendor slug")
+            elif vendor["slug"] in vendor_by_slug:
+                errors.append(f"vendors.yaml: duplicate vendor slug: {vendor['slug']}")
+            else:
+                vendor_by_slug[vendor["slug"]] = vendor
+            aliases = vendor.get("aliases", [])
+            if not isinstance(aliases, list) or any(not is_text(name, 2, 100) for name in aliases):
+                errors.append("vendors.yaml: aliases must be plain-text names")
+                aliases = []
+            for name in [vendor["name"], *aliases]:
+                if not is_text(name, 2, 100):
+                    errors.append("vendors.yaml: invalid vendor name")
+                elif name.strip().lower() in vendor_names:
+                    errors.append(f"vendors.yaml: duplicate vendor name: {name}")
+                else:
+                    vendor_names.add(name.strip().lower())
     original_by_slug = {}
     names = set()
     for i, original in enumerate(originals):
         loc = f"apps/frontend/remade-wiki/src/content/catalog/originals.yaml entry #{i + 1}"
-        if not fields(original, {"slug", "name", "url", "category"}, {"aliases"}, loc, errors):
+        if not fields(
+            original, {"slug", "name", "url", "category"}, {"aliases", "vendor"}, loc, errors
+        ):
             continue
+        if "vendor" in original and (
+            not is_slug(original["vendor"]) or original["vendor"] not in vendor_by_slug
+        ):
+            errors.append(f"{loc}: unknown or invalid vendor")
         slug = original["slug"]
         if not is_slug(slug):
             errors.append(f"{loc}: invalid slug")

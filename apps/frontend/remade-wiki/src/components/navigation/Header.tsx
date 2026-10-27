@@ -13,6 +13,7 @@ export default function Header({
 	const links = [
 		{ href: "/explore/", name: "Explore" },
 		{ href: "/requests/", name: "Requests" },
+		{ href: "/vendor/", name: "Vendors" },
 		{ href: "/about/", name: "About" },
 	];
 	return (

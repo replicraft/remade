@@ -2,6 +2,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/85.
 slug: rsedit
 name: RSEdit
+authors: [goodappsstore]
 repository: https://github.com/goodappsstore/rsedit
 originals:
   - sublime-text

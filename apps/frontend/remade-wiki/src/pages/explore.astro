@@ -13,6 +13,7 @@ const metadata = await loadMetadata();
 		featured={catalog.featured}
 		kind="project"
 		records={directoryRecords(catalog, metadata)}
+		vendors={catalog.vendors}
 		client:load
 	/>
 </Layout>

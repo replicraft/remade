@@ -1,6 +1,7 @@
 # Scope and limitations are maintainer-reported in the upstream README.
 slug: inventcraft-datum
 name: InventCraft
+authors: [artis-98]
 repository: https://github.com/Artis-98/inventcraft
 website: https://datum.iiteg.com
 originals:

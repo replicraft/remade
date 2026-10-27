@@ -1,6 +1,7 @@
 # Scope and compatibility are maintainer-reported in the README; license terms are in LICENSE.md and NOTICE.md.
 slug: paint-rs
 name: paint.rs
+authors: [daijro]
 repository: https://github.com/daijro/paint.rs
 website: https://playground.daijro.dev/paint-rs
 browser_url: https://playground.daijro.dev/paint-rs/

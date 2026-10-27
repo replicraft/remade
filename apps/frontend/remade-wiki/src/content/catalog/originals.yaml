@@ -1,422 +1,521 @@
 - slug: adobe-photoshop
+  vendor: adobe
   name: Adobe Photoshop
   url: https://www.adobe.com/products/photoshop.html
   category: creative
   aliases: [Photoshop]
 - slug: adobe-illustrator
+  vendor: adobe
   name: Adobe Illustrator
   url: https://www.adobe.com/products/illustrator.html
   category: creative
   aliases: [Illustrator]
 # Requested in https://github.com/replicraft/remade/issues/5; fulfilled by SolidCraft.
 - slug: autodesk-fusion
+  vendor: autodesk
   name: Autodesk Fusion
   url: https://www.autodesk.com/products/fusion-360/overview
   category: engineering
   aliases: [Fusion 360, Autodesk Fusion 360]
 - slug: adobe-animate
+  vendor: adobe
   name: Adobe Animate
   url: https://www.adobe.com/products/animate.html
   category: creative
   aliases: [Adobe Flash Professional, Flash Professional]
 - slug: fl-studio
+  vendor: image-line
   name: FL Studio
   url: https://www.image-line.com/fl-studio
   category: creative
   aliases: [FruityLoops]
 - slug: voicemod
+  vendor: voicemod
   name: Voicemod
   url: https://www.voicemod.net/
   category: creative
 - slug: arcgis
+  vendor: esri
   name: ArcGIS
   url: https://www.esri.com/en-us/arcgis/geospatial-platform/overview
   category: engineering
 - slug: wilcom-embroiderystudio
+  vendor: wilcom
   name: Wilcom EmbroideryStudio
   url: https://wilcom.com/embroiderystudio/designing
   category: creative
   aliases: [EmbroideryStudio, Wilcom Embroidery Studio]
 - slug: resolume-suite
+  vendor: resolume
   name: Resolume Suite
   url: https://resolume.com/software
   category: creative
   aliases: [Resolume Arena, Resolume Avenue]
 - slug: clip-studio-paint
+  vendor: celsys
   name: Clip Studio Paint
   url: https://www.clipstudio.net/en/
   category: creative
 - slug: procreate
+  vendor: procreate
   name: Procreate
   url: https://procreate.com/procreate
   category: creative
 - slug: traktor-pro
+  vendor: native-instruments
   name: Traktor Pro
   url: https://www.native-instruments.com/products/traktor-pro
   category: creative
 - slug: adobe-acrobat
+  vendor: adobe
   name: Adobe Acrobat
   url: https://www.adobe.com/acrobat.html
   category: productivity
   aliases: [Acrobat]
 - slug: avid-pro-tools
+  vendor: avid
   name: Avid Pro Tools
   url: https://www.avid.com/pro-tools
   category: creative
   aliases: [Pro Tools]
 - slug: adobe-after-effects
+  vendor: adobe
   name: Adobe After Effects
   url: https://www.adobe.com/products/aftereffects.html
   category: creative
   aliases: [After Effects]
 - slug: adobe-lightroom
+  vendor: adobe
   name: Adobe Lightroom
   url: https://www.adobe.com/products/photoshop-lightroom.html
   category: creative
   aliases: [Lightroom, Lightroom Classic, Adobe Lightroom Classic]
 - slug: adobe-premiere-pro
+  vendor: adobe
   name: Adobe Premiere Pro
   url: https://www.adobe.com/products/premiere.html
   category: creative
   aliases: [Premiere Pro]
 - slug: microsoft-powerpoint
+  vendor: microsoft
   name: Microsoft PowerPoint
   url: https://www.microsoft.com/en-us/microsoft-365/powerpoint
   category: productivity
   aliases: [PowerPoint]
 - slug: microsoft-word
+  vendor: microsoft
   name: Microsoft Word
   url: https://www.microsoft.com/en-us/microsoft-365/word
   category: productivity
   aliases: [Word]
 - slug: autodesk-autocad
+  vendor: autodesk
   name: Autodesk AutoCAD
   url: https://www.autodesk.com/products/autocad/overview
   category: engineering
   aliases: [AutoCAD]
 - slug: microsoft-excel
+  vendor: microsoft
   name: Microsoft Excel
   url: https://www.microsoft.com/en-us/microsoft-365/excel
   category: productivity
   aliases: [Excel]
 - slug: adobe-indesign
+  vendor: adobe
   name: Adobe InDesign
   url: https://www.adobe.com/products/indesign.html
   category: creative
   aliases: [InDesign]
 - slug: minecraft
+  vendor: mojang
   name: Minecraft
   url: https://www.minecraft.net/en-us
   category: games
 - slug: capcut
+  vendor: bytedance
   name: CapCut
   url: https://www.capcut.com/
   category: creative
 - slug: rhino3d
+  vendor: mcneel
   name: Rhinoceros 3D
   url: https://www.rhino3d.com/en/
   category: engineering
 - slug: autodesk-revit
+  vendor: autodesk
   name: Autodesk Revit
   url: https://www.autodesk.com/products/revit/overview
   category: engineering
 - slug: autodesk-civil-3d
+  vendor: autodesk
   name: Autodesk Civil 3D
   url: https://www.autodesk.com/products/civil-3d/overview
   category: engineering
 - slug: autodesk-inventor
+  vendor: autodesk
   name: Autodesk Inventor
   url: https://www.autodesk.com/products/inventor/overview
   category: engineering
   aliases: [Inventor, Inventor Professional, Autodesk Inventor Professional]
 - slug: autodesk-maya
+  vendor: autodesk
   name: Autodesk Maya
   url: https://www.autodesk.com/products/maya/overview
   category: creative
 - slug: solidworks
+  vendor: dassault-systemes
   name: SOLIDWORKS
   url: https://www.solidworks.com/
   category: engineering
 - slug: foobar2000
+  vendor: foobar2000
   name: foobar2000
   url: https://www.foobar2000.org/
   category: creative
 - slug: adobe-substance-3d-painter
+  vendor: adobe
   name: Adobe Substance 3D Painter
   url: https://www.adobe.com/products/substance3d/apps/painter.html
   category: creative
 - slug: adobe-substance-3d-designer
+  vendor: adobe
   name: Adobe Substance 3D Designer
   url: https://www.adobe.com/products/substance3d/apps/designer.html
   category: creative
 - slug: adobe-audition
+  vendor: adobe
   name: Adobe Audition
   url: https://www.adobe.com/products/audition.html
   category: creative
 - slug: nuke
+  vendor: foundry
   name: Nuke / NukeX
   url: https://www.foundry.com/products/nuke-family/nuke
   category: creative
 - slug: windows-notepad
+  vendor: microsoft
   name: Windows Notepad
   url: https://apps.microsoft.com/detail/9msmlrh6lzf3
   category: productivity
 - slug: zbrush
+  vendor: maxon
   name: ZBrush
   url: https://www.maxon.net/en/zbrush
   category: creative
 - slug: adobe-fireworks
+  vendor: adobe
   name: Adobe Fireworks
   url: https://helpx.adobe.com/fireworks.html
   category: creative
 - slug: adobe-xd
+  vendor: adobe
   name: Adobe XD
   url: https://helpx.adobe.com/xd/desktop/introduction/faq.html
   category: creative
 - slug: autodesk-3ds-max
+  vendor: autodesk
   name: Autodesk 3ds Max
   url: https://www.autodesk.com/products/3ds-max/overview
   category: creative
 - slug: cinema-4d
+  vendor: maxon
   name: Cinema 4D
   url: https://www.maxon.net/en/cinema-4d
   category: creative
 - slug: plasticity
+  vendor: plasticity
   name: Plasticity
   url: https://www.plasticity.xyz/
   category: creative
 - slug: quad-remesher
+  vendor: exoside
   name: Quad Remesher
   url: https://exoside.com/quadremesher/
   category: creative
 - slug: vray
+  vendor: chaos
   name: V-Ray
   url: https://www.chaos.com/vray
   category: creative
 - slug: redshift
+  vendor: maxon
   name: Redshift
   url: https://www.maxon.net/en/redshift
   category: creative
 - slug: unreal-lumen
+  vendor: epic-games
   name: Unreal Engine Lumen
   url: https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine
   category: creative
 - slug: unreal-nanite
+  vendor: epic-games
   name: Unreal Engine Nanite
   url: https://dev.epicgames.com/documentation/en-us/unreal-engine/nanite-virtualized-geometry-in-unreal-engine
   category: creative
 - slug: chamsys-magicq
+  vendor: chamsys
   name: ChamSys MagicQ
   url: https://uk.chamsyslighting.com/product/magicq-software/
   category: creative
 - slug: style3d
+  vendor: style3d
   name: Style3D
   url: https://www.style3d.com/
   category: creative
 - slug: clo3d
+  vendor: clo-virtual-fashion
   name: CLO 3D
   url: https://www.clo3d.com/
   category: creative
 - slug: marvelous-designer
+  vendor: clo-virtual-fashion
   name: Marvelous Designer
   url: https://www.marvelousdesigner.com/
   category: creative
 - slug: sketchup
+  vendor: trimble
   name: SketchUp
   url: https://sketchup.trimble.com/en
   category: engineering
 - slug: ni-multisim
+  vendor: ni
   name: NI Multisim
   url: https://www.ni.com/en/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-multisim.html
   category: engineering
 - slug: davinci-resolve
+  vendor: blackmagic-design
   name: DaVinci Resolve
   url: https://www.blackmagicdesign.com/products/davinciresolve
   category: creative
 - slug: toon-boom-harmony
+  vendor: toon-boom
   name: Toon Boom Harmony
   url: https://www.toonboom.com/products/harmony
   category: creative
 - slug: toon-boom-storyboard-pro
+  vendor: toon-boom
   name: Toon Boom Storyboard Pro
   url: https://www.toonboom.com/products/storyboard-pro
   category: creative
   aliases: [Storyboard Pro]
 - slug: toon-boom-producer
+  vendor: toon-boom
   name: Toon Boom Producer
   url: https://www.toonboom.com/products/producer
   category: productivity
 - slug: sidefx-houdini
+  vendor: sidefx
   name: SideFX Houdini
   url: https://www.sidefx.com/products/houdini/
   category: creative
 - slug: evernote
+  vendor: evernote
   name: Evernote
   url: https://evernote.com/
   category: productivity
 - slug: microsoft-onenote
+  vendor: microsoft
   name: Microsoft OneNote
   url: https://www.onenote.com/
   category: productivity
 - slug: goodnotes
+  vendor: goodnotes
   name: Goodnotes
   url: https://www.goodnotes.com/
   category: productivity
 - slug: softimage-3d
+  vendor: autodesk
   name: Softimage 3D / Autodesk Softimage
   url: https://download.autodesk.com/global/docs/softimage2014/en_us/
   category: creative
 - slug: guitar-pro
+  vendor: arobas-music
   name: Guitar Pro
   url: https://www.guitar-pro.com/
   category: creative
 - slug: loopy-pro
+  vendor: loopy-pro
   name: Loopy Pro
   url: https://loopypro.com/
   category: creative
 - slug: topaz-labs
+  vendor: topaz-labs
   name: Topaz Labs photo and video tools
   url: https://www.topazlabs.com/
   category: creative
 - slug: altium-designer
+  vendor: altium
   name: Altium Designer
   url: https://www.altium.com/altium-designer
   category: engineering
 - slug: figma
+  vendor: figma
   name: Figma
   url: https://www.figma.com/
   category: creative
 - slug: matlab
+  vendor: mathworks
   name: MATLAB / Simulink
   url: https://www.mathworks.com/products/matlab.html
   category: engineering
   aliases: [MATLAB, Simulink]
 - slug: fontbase
+  vendor: fontbase
   name: FontBase
   url: https://fontba.se/
   category: creative
 - slug: adobe-dreamweaver
+  vendor: adobe
   name: Adobe Dreamweaver
   url: https://www.adobe.com/products/dreamweaver.html
   category: developer-tools
 - slug: quadspinner-gaea
+  vendor: quadspinner
   name: QuadSpinner Gaea
   url: https://quadspinner.com/
   category: creative
 - slug: ableton-live
+  vendor: ableton
   name: Ableton Live
   url: https://www.ableton.com/en/live/
   category: creative
 - slug: microsoft-power-bi
+  vendor: microsoft
   name: Microsoft Power BI
   url: https://www.microsoft.com/en-us/power-platform/products/power-bi
   category: productivity
 - slug: microsoft-access
+  vendor: microsoft
   name: Microsoft Access
   url: https://www.microsoft.com/en-us/microsoft-365/access
   category: productivity
 - slug: microsoft-outlook
+  vendor: microsoft
   name: Microsoft Outlook
   url: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook
   category: productivity
 - slug: shapr3d
+  vendor: shapr3d
   name: Shapr3D
   url: https://www.shapr3d.com/
   category: engineering
 - slug: final-cut-pro
+  vendor: apple
   name: Final Cut Pro
   url: https://www.apple.com/final-cut-pro/
   category: creative
 - slug: poser
+  vendor: bondware
   name: Poser
   url: https://www.posersoftware.com/
   category: creative
 - slug: adobe-substance-3d-sampler
+  vendor: adobe
   name: Adobe Substance 3D Sampler
   url: https://www.adobe.com/products/substance3d/apps/sampler.html
   category: creative
 - slug: adobe-substance-3d-stager
+  vendor: adobe
   name: Adobe Substance 3D Stager
   url: https://www.adobe.com/products/substance3d/apps/stager.html
   category: creative
 - slug: adobe-substance-3d-modeler
+  vendor: adobe
   name: Adobe Substance 3D Modeler
   url: https://www.adobe.com/products/substance3d/apps/modeler.html
   category: creative
 - slug: adobe-bridge
+  vendor: adobe
   name: Adobe Bridge
   url: https://www.adobe.com/products/bridge.html
   category: creative
   aliases: [Bridge]
 - slug: quixel-bridge
+  vendor: epic-games
   name: Quixel Bridge
   url: https://dev.epicgames.com/documentation/en-us/unreal-engine/quixel-bridge-plugin-for-unreal-engine
   category: creative
 - slug: rcs-gselector
+  vendor: rcs
   name: RCS GSelector
   url: https://www.rcsworks.com/gselector/
   category: creative
   aliases: [GSelector, G Selector]
 - slug: rcs-zetta
+  vendor: rcs
   name: RCS Zetta
   url: https://www.rcsworks.com/zetta/
   category: creative
   aliases: [Zetta]
 - slug: kontakt
+  vendor: native-instruments
   name: Kontakt
   url: https://www.native-instruments.com/products/kontakt
   category: creative
 - slug: massive-x
+  vendor: native-instruments
   name: Massive X
   url: https://www.native-instruments.com/products/massive-x
   category: creative
 - slug: character-creator
+  vendor: reallusion
   name: Reallusion Character Creator
   url: https://www.reallusion.com/character-creator/
   category: creative
   aliases: [Character Creator]
 - slug: spine-pro
+  vendor: esoteric-software
   name: Spine Pro
   url: https://esotericsoftware.com/spine-purchase
   category: creative
   aliases: [Spine Professional]
 - slug: microsoft-project
+  vendor: microsoft
   name: Microsoft Project
   url: https://www.microsoft.com/en-us/microsoft-365/planner/project-plan-3
   category: productivity
 - slug: microsoft-publisher
+  vendor: microsoft
   name: Microsoft Publisher
   url: https://support.microsoft.com/en-us/publisher/publisher-help
   category: creative
 - slug: helicon-focus
+  vendor: helicon-soft
   name: Helicon Focus
   url: https://www.heliconsoft.com/heliconsoft-products/helicon-focus/
   category: creative
 - slug: zerene-stacker
+  vendor: zerene-systems
   name: Zerene Stacker
   url: https://zerenesystems.com/cms/stacker
   category: creative
 - slug: bluebeam-revu
+  vendor: bluebeam
   name: Bluebeam Revu
   url: https://www.bluebeam.com/us/products/revu/
   category: engineering
 - slug: pdf-xchange-editor
+  vendor: pdf-xchange
   name: PDF-XChange Editor
   url: https://www.pdf-xchange.com/product/pdf-xchange-editor
   category: productivity
 - slug: autodesk-alias-autostudio
+  vendor: autodesk
   name: Autodesk Alias AutoStudio
   url: https://www.autodesk.com/products/alias-products/overview
   category: engineering
 - slug: wolfram-mathematica
+  vendor: wolfram
   name: Wolfram Mathematica
   url: https://www.wolfram.com/mathematica/
   category: engineering
 - slug: cascadeur
+  vendor: nekki
   name: Cascadeur
   url: https://cascadeur.com/
   category: creative
 - slug: 3dcoat
+  vendor: pilgway
   name: 3DCoat
   url: https://3dcoat.com/features/home-page-3dcoat/
   category: creative
@@ -424,649 +523,775 @@
   - 3D Coat
   - 3D-Coat
 - slug: acdsee
+  vendor: acd-systems
   name: ACDSee Photo Studio
   url: https://www.acdsee.com/en/photo-editing-software/
   category: creative
   aliases:
   - ACDSee
 - slug: autodesk-meshmixer
+  vendor: autodesk
   name: Autodesk Meshmixer
   url: https://www.research.autodesk.com/projects/meshmixer/
   category: engineering
 - slug: autodesk-123d-make
+  vendor: autodesk
   name: Autodesk 123D Make
   url: https://www.autodesk.com/solutions/123d-apps
   category: engineering
 - slug: cheat-engine
+  vendor: cheat-engine
   name: Cheat Engine
   url: https://cheatengine.org/aboutce.php
   category: developer-tools
 - slug: autopano-giga
+  vendor: kolor
   name: Autopano Giga
   url: https://www.dl-c.com/Documents/AutoPano.pdf
   category: creative
 - slug: paint-net
+  vendor: dotpdn
   name: Paint.NET
   url: https://www.getpaint.net/
   category: creative
 - slug: microsoft-paint
+  vendor: microsoft
   name: Microsoft Paint
   url: https://www.microsoft.com/en-us/windows/paint
   category: creative
   aliases: [MS Paint, Windows Paint, MSPaint]
 - slug: logic-pro
+  vendor: apple
   name: Logic Pro
   url: https://www.apple.com/logic-pro/
   category: creative
   aliases: [Logic Pro X, Apple Logic Pro]
 - slug: adobe-character-animator
+  vendor: adobe
   name: Adobe Character Animator
   url: https://helpx.adobe.com/adobe-character-animator/desktop.html
   category: creative
   aliases: [Character Animator]
 - slug: microsoft-visio
+  vendor: microsoft
   name: Microsoft Visio
   url: https://www.microsoft.com/en-us/microsoft-365/visio
   category: productivity
   aliases: [Visio]
 - slug: adobe-fresco
+  vendor: adobe
   name: Adobe Fresco
   url: https://www.adobe.com/products/fresco.html
   category: creative
   aliases: [Fresco]
 - slug: microsoft-visual-studio
+  vendor: microsoft
   name: Microsoft Visual Studio
   url: https://visualstudio.microsoft.com/vs/
   category: developer-tools
   aliases: [Visual Studio]
 - slug: smaart
+  vendor: rational-acoustics
   name: Smaart
   url: https://www.rationalacoustics.com/collections/smaart
   category: engineering
   aliases: [Rational Acoustics Smaart]
 - slug: vectorworks
+  vendor: vectorworks
   name: Vectorworks
   url: https://www.vectorworks.net/en-GB/products
   category: engineering
 - slug: windows-movie-maker
+  vendor: microsoft
   name: Windows Movie Maker
   url: https://support.microsoft.com/en-us/windows/apps/support-for-windows-essentials-apps
   category: creative
   aliases: [Movie Maker]
 - slug: quickbooks
+  vendor: intuit
   name: QuickBooks
   url: https://quickbooks.intuit.com/accounting/
   category: productivity
   aliases: [Intuit QuickBooks]
 - slug: turbotax
+  vendor: intuit
   name: TurboTax
   url: https://turbotax.intuit.com/
   category: productivity
   aliases: [Intuit TurboTax]
 - slug: xero
+  vendor: xero
   name: Xero
   url: https://www.xero.com/
   category: productivity
 - slug: ninite
+  vendor: ninite
   name: Ninite
   url: https://ninite.com/
   category: other
 - slug: jobber
+  vendor: jobber
   name: Jobber
   url: https://www.getjobber.com/features/
   category: productivity
 - slug: rekordbox
+  vendor: alphatheta
   name: Rekordbox
   url: https://rekordbox.com/en/
   category: creative
 - slug: serato-dj-pro
+  vendor: serato
   name: Serato DJ Pro
   url: https://serato.com/dj/pro
   category: creative
   aliases: [Serato DJ]
 - slug: algodoo
+  vendor: algoryx
   name: Algodoo
   url: https://www.algodoo.com/
   category: engineering
 - slug: ptc-creo
+  vendor: ptc
   name: PTC Creo
   url: https://www.ptc.com/en/products/creo
   category: engineering
   aliases: [Creo, Creo Parametric, Creo 3D]
 - slug: gamemaker-studio
+  vendor: yoyo-games
   name: GameMaker Studio
   url: https://gamemaker.io/en
   category: developer-tools
   aliases: [GameMaker, GameMaker Studio 2, GameMaker 8, GM8]
 - slug: synthesizer-v-studio-2-pro
+  vendor: dreamtonics
   name: Synthesizer V Studio 2 Pro
   url: https://www.dreamtonics.com/synthesizerv/
   category: creative
   aliases: [Synthesizer V Pro 2, Synth V Studio 2 Pro]
 - slug: cricut-design-space
+  vendor: cricut
   name: Cricut Design Space
   url: https://cricut.com/en/our-software
   category: creative
 - slug: silhouette-studio
+  vendor: silhouette-america
   name: Silhouette Studio
   url: https://www.silhouetteamerica.com/software
   category: creative
 - slug: xtool-studio
+  vendor: xtool
   name: xTool Studio
   url: https://www.xtool.com/pages/software
   category: creative
   aliases: [xTool Creative Space, XCS]
 - slug: macrium-reflect
+  vendor: macrium
   name: Macrium Reflect
   url: https://www.macrium.com/cloning-software
   category: other
 - slug: autodesk-advance-steel
+  vendor: autodesk
   name: Autodesk Advance Steel
   url: https://www.autodesk.com/products/advance-steel/overview
   category: engineering
   aliases: [Advance Steel]
 - slug: tekla-structures
+  vendor: trimble
   name: Tekla Structures
   url: https://www.tekla.com/products/tekla-structures
   category: engineering
 - slug: ptc-mathcad
+  vendor: ptc
   name: PTC Mathcad
   url: https://www.ptc.com/en/products/mathcad/
   category: engineering
   aliases: [Mathcad, Mathcad Prime]
 - slug: ida-pro
+  vendor: hex-rays
   name: IDA Pro
   url: https://hex-rays.com/ida-pro
   category: developer-tools
   aliases: [Interactive Disassembler]
 - slug: archicad
+  vendor: graphisoft
   name: Archicad
   url: https://www.graphisoft.com/en-us/plans-and-products/archicad/
   category: engineering
   aliases: [Graphisoft Archicad]
 - slug: nomad-sculpt
+  vendor: hexanomad
   name: Nomad Sculpt
   url: https://nomadsculpt.com/
   category: creative
 - slug: windows-file-explorer
+  vendor: microsoft
   name: Windows File Explorer
   url: https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows
   category: productivity
   aliases: [Windows Explorer, File Explorer]
 
 - slug: internet-explorer
+  vendor: microsoft
   name: Internet Explorer
   url: https://support.microsoft.com/en-us/internet-explorer/internet-explorer-help
   category: other
   aliases: [Microsoft Internet Explorer, Windows Internet Explorer, IE]
 - slug: elprocad
+  vendor: procad-systems
   name: ELPROCAD
   url: https://www.elprocad.com/en/
   category: engineering
   aliases: [ELPROCAD ic, ELPROCAD xt]
 - slug: ansys
+  vendor: ansys
   name: Ansys
   url: https://www.ansys.com/products/ansys-workbench
   category: engineering
   aliases: [Ansys Workbench]
 - slug: altair-suite
+  vendor: altair
   name: Altair Software Suite
   url: https://altair.com/altair-one
   category: engineering
   aliases: [Altair One, Altair HyperWorks, Altair RapidMiner, Altair HPCWorks]
 - slug: casio-fx-991cw
+  vendor: casio
   name: Casio fx-991CW ClassWiz
   url: https://edu.casio.com/intl/calculators/scientific/fx991cw/
   category: engineering
   aliases: [Casio scientific calculator, fx-991CW]
 - slug: tiermaker
+  vendor: tastier-adventures
   name: TierMaker
   url: https://tiermaker.com/
   category: productivity
   aliases: [Tier Maker]
 - slug: octanerender
+  vendor: otoy
   name: OctaneRender
   url: https://home.otoy.com/render/octane-render/overview/
   category: creative
   aliases: [Octane Renderer, Octane Render]
 - slug: autodesk-arnold
+  vendor: autodesk
   name: Autodesk Arnold
   url: https://www.autodesk.com/products/arnold/overview
   category: creative
   aliases: [Arnold, Arnold Renderer]
 - slug: catia
+  vendor: dassault-systemes
   name: CATIA
   url: https://www.3ds.com/products/catia
   category: engineering
   aliases: [Dassault Systemes CATIA, CATIA V5, 3DEXPERIENCE CATIA]
 - slug: bentley-suite
+  vendor: bentley
   name: Bentley Engineering Software Suite
   url: https://www.bentley.com/products/
   category: engineering
   aliases: [Bentley Systems, Bentley MicroStation, Bentley OpenRoads Designer, Bentley STAAD.Pro, Bentley ProjectWise]
 - slug: intergraph-smart-3d
+  vendor: hexagon
   name: Intergraph Smart 3D
   url: https://aliresources.hexagon.com/design-visualization/smart-3d-product-sheet
   category: engineering
   aliases: [Smart 3D, SmartPlant 3D, Hexagon Smart 3D]
 - slug: mocha-pro
+  vendor: boris-fx
   name: Mocha Pro
   url: https://borisfx.com/products/mocha-pro/
   category: creative
   aliases: [Mocha, Boris FX Mocha Pro]
 - slug: siemens-nx
+  vendor: siemens
   name: Siemens NX
   url: https://www.siemens.com/en-us/products/cad-cam-software/offerings/
   category: engineering
   aliases: [NX, Unigraphics, NX CAD, NX CAM, Designcenter NX]
 - slug: chitubox
+  vendor: chitubox
   name: CHITUBOX
   url: https://www.chitubox.com/
   category: engineering
   aliases: [CHITUBOX Basic, CHITUBOX Pro]
 - slug: microsoft-power-apps
+  vendor: microsoft
   name: Microsoft Power Apps
   url: https://www.microsoft.com/en-us/power-platform/products/power-apps
   category: productivity
   aliases: [Power Apps, PowerApps]
 - slug: microsoft-power-automate
+  vendor: microsoft
   name: Microsoft Power Automate
   url: https://www.microsoft.com/en-us/power-platform/products/power-automate
   category: productivity
   aliases: [Power Automate, Microsoft Flow]
 - slug: microsoft-power-pages
+  vendor: microsoft
   name: Microsoft Power Pages
   url: https://www.microsoft.com/en-us/power-platform/products/power-pages
   category: productivity
   aliases: [Power Pages]
 - slug: adobe-dimension
+  vendor: adobe
   name: Adobe Dimension
   url: https://www.adobe.com/products/dimension.html
   category: creative
 - slug: jira
+  vendor: atlassian
   name: Jira
   url: https://www.atlassian.com/software/jira
   category: productivity
   aliases: [Atlassian Jira, Jira Software]
 - slug: linear
+  vendor: linear
   name: Linear
   url: https://linear.app/
   category: productivity
 - slug: monday
+  vendor: monday
   name: monday.com
   url: https://monday.com/
   category: productivity
   aliases: [Monday]
 - slug: clickup
+  vendor: clickup
   name: ClickUp
   url: https://clickup.com/
   category: productivity
 - slug: microsoft-snipping-tool
+  vendor: microsoft
   name: Microsoft Snipping Tool
   url: https://www.microsoft.com/en-us/windows/tips/snipping-tool
   category: productivity
   aliases: [Snipping Tool]
 - slug: microsoft-sticky-notes
+  vendor: microsoft
   name: Microsoft Sticky Notes
   url: https://support.microsoft.com/en-us/windows/apps/stickynotes/get-started-with-sticky-notes
   category: productivity
   aliases: [Sticky Notes]
 - slug: adobe-media-encoder
+  vendor: adobe
   name: Adobe Media Encoder
   url: https://www.adobe.com/products/media-encoder.html
   category: creative
   aliases: [Media Encoder]
 - slug: instamat
+  vendor: abstract
   name: Abstract InstaMAT
   url: https://instamaterial.com/
   category: creative
   aliases: [InstaMAT, InstaMAT Studio]
 - slug: foundry-mari
+  vendor: foundry
   name: Foundry Mari
   url: https://www.foundry.com/products/mari
   category: creative
   aliases: [Mari, The Foundry Mari]
 - slug: rizomuv-virtual-spaces
+  vendor: rizom-lab
   name: RizomUV Virtual Spaces
   url: https://www.rizomuv.com/virtual-spaces/
   category: creative
   aliases: [RizomUV VS]
 - slug: rizomuv-real-space
+  vendor: rizom-lab
   name: RizomUV Real Space
   url: https://www.rizomuv.com/real-space/
   category: engineering
   aliases: [RizomUV RS, RizomUV Real Spaces]
 - slug: siemens-solid-edge
+  vendor: siemens
   name: Siemens Solid Edge
   url: https://solidedge.siemens.com/en/
   category: engineering
   aliases: [Solid Edge, Designcenter Solid Edge]
 - slug: powerworld-simulator
+  vendor: powerworld
   name: PowerWorld Simulator
   url: https://www.powerworld.com/products/simulator/overview
   category: engineering
   aliases: [PowerWorld]
 
 - slug: materialise-magics
+  vendor: materialise
   name: Materialise Magics
   url: https://www.materialise.com/en/industrial/software/magics-data-build-preparation
   category: engineering
   aliases: [Magics]
 
 - slug: notion
+  vendor: notion
   name: Notion
   url: https://www.notion.com
   category: productivity
 
 - slug: autocad-map-3d
+  vendor: autodesk
   name: Autodesk AutoCAD Map 3D
   url: https://www.autodesk.com/products/autocad/included-toolsets/autocad-map-3d
   category: engineering
   aliases: [AutoCAD Map 3D]
 
 - slug: cubase
+  vendor: steinberg
   name: Steinberg Cubase
   url: https://www.steinberg.net/cubase/
   category: creative
   aliases: [Cubase]
 
 - slug: exocad-dentalcad
+  vendor: exocad
   name: exocad DentalCAD
   url: https://exocad.com/our-products/dentalcad
   category: engineering
   aliases: [exocad, DentalCAD, Dental Exocad]
 
 - slug: maize-sampler
+  vendor: maizesoft
   name: Maize Sampler
   url: https://www.maizesoft.com/cms/?page_id=48
   category: creative
   aliases: [Maize Sampler 2]
 
 - slug: lightburn
+  vendor: lightburn-software
   name: LightBurn
   url: https://lightburnsoftware.com/collections/lightburn
   category: engineering
   aliases: [LightBurn Software]
 
 - slug: tmpgenc-mpeg-smart-renderer
+  vendor: pegasys
   name: TMPGEnc MPEG Smart Renderer
   url: https://tmpgenc.pegasys-inc.com/en/product/tmsr6.html
   category: creative
   aliases: [TMPGEnc MPEG Smart Renderer 6]
 
 - slug: videoredo
+  vendor: drd-systems
   name: VideoReDo
   url: https://www.videoredo.com/
   category: creative
   aliases: [VideoReDo TVSuite, VideoReDo Plus]
 
 - slug: ibm-spss-statistics
+  vendor: ibm
   name: IBM SPSS Statistics
   url: https://www.ibm.com/products/spss-statistics
   category: engineering
   aliases: [SPSS, SPSS Statistics]
 
 - slug: microsoft-sql-server
+  vendor: microsoft
   name: Microsoft SQL Server
   url: https://www.microsoft.com/en-us/sql-server
   category: developer-tools
   aliases: [SQL Server, MSSQL]
 
 - slug: sql-server-management-studio
+  vendor: microsoft
   name: SQL Server Management Studio
   url: https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms
   category: developer-tools
   aliases: [SSMS, Microsoft SQL Server Management Studio]
 
 - slug: eplan-electric-p8
+  vendor: eplan
   name: EPLAN Electric P8
   url: https://www.eplan.com/us-en/products/eplan-electric-p8/
   category: engineering
   aliases: [EPLAN P8]
 
 - slug: grandma3
+  vendor: ma-lighting
   name: grandMA3
   url: https://www.malighting.com/special/grandma3-software/
   category: creative
   aliases: [Grand MA3, grandMA3 onPC]
 
 - slug: vmix
+  vendor: studiocoast
   name: vMix
   url: https://www.vmix.com/software/
   category: creative
 
 - slug: discord
+  vendor: discord
   name: Discord
   url: https://discord.com/
   category: productivity
 
 - slug: windows-recall
+  vendor: microsoft
   name: Windows Recall
   url: https://support.microsoft.com/en-us/windows/ai/ai-features/retrace-your-steps-with-recall
   category: productivity
   aliases: [Microsoft Recall, Recall]
 
 - slug: marmoset-toolbag
+  vendor: marmoset
   name: Marmoset Toolbag
   url: https://marmoset.co/toolbag/
   category: creative
   aliases: [Toolbag]
 
 - slug: topogun
+  vendor: topogun
   name: TopoGun
   url: https://www.topogun.com/
   category: creative
 
 - slug: autodesk-mudbox
+  vendor: autodesk
   name: Autodesk Mudbox
   url: https://www.autodesk.com/products/mudbox/overview/
   category: creative
   aliases: [Mudbox]
 
 - slug: naturalmotion-euphoria
+  vendor: naturalmotion
   name: NaturalMotion Euphoria
   url: https://en.wikipedia.org/wiki/Euphoria_(software)
   category: games
   aliases: [Euphoria]
 
 - slug: microsoft-windows
+  vendor: microsoft
   name: Microsoft Windows
   url: https://www.microsoft.com/windows
   category: operating-systems
   aliases: [Windows]
 
 - slug: phprunner
+  vendor: xlinesoft
   name: PHPRunner
   url: https://xlinesoft.com/phprunner/index.htm
   category: developer-tools
 
 - slug: asprunner-net
+  vendor: xlinesoft
   name: ASPRunner.NET
   url: https://xlinesoft.com/asprunnernet/index.htm
   category: developer-tools
 
 - slug: rpg-maker-xp
+  vendor: rpg-maker
   name: RPG Maker XP
   url: https://www.rpgmakerweb.com/products/rpg-maker-xp
   category: developer-tools
 
 - slug: rpg-maker-mv
+  vendor: rpg-maker
   name: RPG Maker MV
   url: https://www.rpgmakerweb.com/products/rpg-maker-mv
   category: developer-tools
 
 - slug: rpg-maker-mz
+  vendor: rpg-maker
   name: RPG Maker MZ
   url: https://www.rpgmakerweb.com/products/rpg-maker-mz
   category: developer-tools
 
 - slug: fibershop
+  vendor: cgpal
   name: FiberShop
   url: https://cgpal.com/fibershop/
   category: creative
 
 - slug: odeon
+  vendor: odeon
   name: ODEON Room Acoustics Software
   url: https://odeon.dk/product/
   category: engineering
 
 - slug: radioboss
+  vendor: djsoft
   name: RadioBOSS
   url: https://www.djsoft.net/enu/radioboss.htm
   category: creative
 
 - slug: abaqus
+  vendor: dassault-systemes
   name: Abaqus
   url: https://www.3ds.com/products/simulia/abaqus
   category: engineering
 
 - slug: mastercam
+  vendor: mastercam
   name: Mastercam
   url: https://www.mastercam.com/
   category: engineering
 
 - slug: autodesk-powermill
+  vendor: autodesk
   name: Autodesk PowerMill
   url: https://www.autodesk.com/products/powermill/overview
   category: engineering
   aliases: [PowerMill]
 
 - slug: vegas-pro
+  vendor: boris-fx
   name: VEGAS Pro
   url: https://www.vegascreativesoftware.com/vegas-pro/
   category: creative
   aliases: [Sony Vegas]
 
 - slug: multideco
+  vendor: hhs-software
   name: MultiDeco
   url: https://www.hhssoftware.com/multideco/
   category: other
 
 - slug: microsoft-frontpage
+  vendor: microsoft
   name: Microsoft Office FrontPage
   url: https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-frontpage-2003
   category: developer-tools
   aliases: [Microsoft FrontPage, FrontPage]
 
 - slug: chemdraw
+  vendor: revvity
   name: ChemDraw
   url: https://revvitysignals.com/products/research/signals-chemdraw
   category: engineering
   aliases: [Signals ChemDraw]
 
 - slug: maxon-autograph
+  vendor: maxon
   name: Maxon Autograph
   url: https://www.maxon.net/en/autograph
   category: creative
   aliases: [Autograph, Left Angle Autograph]
 
 - slug: neevii-ink
+  vendor: neevii
   name: Neevii Ink
   url: https://www.neevii.com/ink
   category: creative
 
 - slug: apple-motion
+  vendor: apple
   name: Apple Motion
   url: https://www.apple.com/final-cut-pro/motion/
   category: creative
 
 - slug: grammarly
+  vendor: grammarly
   name: Grammarly
   url: https://www.grammarly.com/
   category: productivity
 - slug: synopsys-eda
+  vendor: synopsys
   name: Synopsys EDA
   url: https://www.synopsys.com/silicon-design.html
   category: engineering
   aliases: [Synopsys electronic design automation]
 - slug: cadence-eda
+  vendor: cadence
   name: Cadence EDA
   url: https://www.cadence.com/en_US/home/tools.html
   category: engineering
   aliases: [Cadence Design Systems, Cadence electronic design automation]
 
 - slug: hypercard
+  vendor: apple
   name: HyperCard
   url: https://hypercard.org/
   category: developer-tools
   aliases: ["Apple HyperCard"]
 
 - slug: deluxe-paint
+  vendor: electronic-arts
   name: Deluxe Paint
   url: https://computerhistory.org/blog/electronic-arts-deluxepaint-early-source-code/
   category: creative
   aliases: ["DeluxePaint", "DPaint"]
 
 - slug: freehand-mx
+  vendor: adobe
   name: FreeHand MX
   url: https://en.wikipedia.org/wiki/Adobe_FreeHand
   category: creative
   aliases: ["Macromedia FreeHand", "Adobe FreeHand", "FreeHand"]
 
 - slug: windows-live-writer
+  vendor: microsoft
   name: Windows Live Writer
   url: https://en.wikipedia.org/wiki/Windows_Live_Writer
   category: productivity
   aliases: ["Live Writer"]
 
 - slug: norton-commander
+  vendor: symantec
   name: Norton Commander
   url: https://en.wikipedia.org/wiki/Norton_Commander
   category: productivity
 
 - slug: paint-shop-pro
+  vendor: corel
   name: Paint Shop Pro
   url: https://www.paintshoppro.com/en/
   category: creative
   aliases: ["PaintShop Pro", "Corel PaintShop Pro", "Jasc Paint Shop Pro"]
 
 - slug: microsoft-money
+  vendor: microsoft
   name: Microsoft Money
   url: https://en.wikipedia.org/wiki/Microsoft_Money
   category: productivity
   aliases: ["Money Plus Sunset"]
 
 - slug: picasa
+  vendor: google
   name: Picasa
   url: https://picasa.google.com/
   category: creative
   aliases: ["Google Picasa"]
 
 - slug: lotus-organizer
+  vendor: ibm
   name: Lotus Organizer
   url: https://en.wikipedia.org/wiki/Lotus_Organizer
   category: productivity
   aliases: ["IBM Lotus Organizer"]
 
 - slug: adobe-muse
+  vendor: adobe
   name: Adobe Muse
   url: https://www.adobe.com/products/muse.html
   category: developer-tools
   aliases: ["Muse"]
 
 - slug: adobe-fuse
+  vendor: adobe
   name: Adobe Fuse
   url: https://en.wikipedia.org/wiki/Adobe_Fuse
   category: creative
   aliases: ["Fuse CC", "Mixamo Fuse"]
 
 - slug: wunderlist
+  vendor: microsoft
   name: Wunderlist
   url: https://learn.microsoft.com/en-us/lifecycle/products/wunderlist
   category: productivity
 
 - slug: springpad
+  vendor: spring-partners
   name: Springpad
   url: https://en.wikipedia.org/wiki/Springpad
   category: productivity
 
 - slug: motionmixes
+  vendor: foster-kent
   name: MotionMixes
   url: https://fosterkent.com/motionmixes/
   category: creative
   aliases: ["Foster Kent MotionMixes"]
 
 - slug: google-earth
+  vendor: google
   name: Google Earth
   url: https://earth.google.com/
   category: engineering
@@ -1075,29 +1300,34 @@
 # Requested in https://github.com/replicraft/remade/issues/34.
 # Microsoft's public repository covers MS-DOS 1.25, 2.0 and 4.0; this target is later DOS compatibility.
 - slug: microsoft-ms-dos
+  vendor: microsoft
   name: Microsoft MS-DOS (5.x and 6.x)
   url: https://github.com/microsoft/MS-DOS
   category: operating-systems
   aliases: [MS-DOS, MS-DOS 5, MS-DOS 6, MS-DOS 6.22]
 
 - slug: gmail
+  vendor: google
   name: Gmail
   url: https://workspace.google.com/products/gmail/
   category: productivity
   aliases: [Google Mail]
 
 - slug: picsart
+  vendor: picsart
   name: Picsart
   url: https://picsart.com/
   category: creative
   aliases: [Picsart Photo Editor]
 - slug: inshot
+  vendor: inshot
   name: InShot
   url: https://inshot.com/
   category: creative
   aliases: [InShot Video Editor]
 
 - slug: final-draft
+  vendor: final-draft
   name: Final Draft
   url: https://www.finaldraft.com/
   category: creative
@@ -1105,38 +1335,45 @@
 
 # Requested in https://github.com/replicraft/remade/issues/31.
 - slug: articulate-storyline-360
+  vendor: articulate
   name: Articulate Storyline 360
   url: https://www.articulate.com/360/storyline/
   category: productivity
   aliases: [Storyline 360, Articulate Storyline]
 
 - slug: mixmeister-studio
+  vendor: mixmeister
   name: MixMeister Studio
   url: https://www.numark.com/product/mixmeisterstudio
   category: creative
 
 - slug: zmodeler-3
+  vendor: zanoza-software
   name: ZModeler 3
   url: https://www.zmodeler3.com/
   category: creative
   aliases: [ZModeler3, Zanoza Modeler 3]
 
 - slug: medal-tv
+  vendor: medal
   name: Medal.tv
   url: https://medal.tv/
   category: creative
 
 - slug: planswift
+  vendor: constructconnect
   name: PlanSwift
   url: https://www.planswift.com/
   category: engineering
 
 - slug: screen-studio
+  vendor: screen-studio
   name: Screen Studio
   url: https://screen.studio/
   category: creative
 
 - slug: apple-itunes
+  vendor: apple
   name: Apple iTunes
   url: https://www.apple.com/itunes/
   category: creative
@@ -1144,1132 +1381,1402 @@
 
 # Requested in https://github.com/replicraft/remade/issues/40.
 - slug: lumion
+  vendor: lumion
   name: Lumion
   url: https://lumion.com/
   category: creative
 
 - slug: zoom
+  vendor: zoom
   name: Zoom Meetings
   url: https://www.zoom.com/en/products/virtual-meetings/
   category: productivity
   aliases: [Zoom]
 
 - slug: myob-acumatica
+  vendor: myob
   name: MYOB Acumatica
   url: https://www.myob.com/au/erp-software/products/myob-acumatica
   category: productivity
   aliases: [MYOB Advanced]
 
 - slug: sage-accounting
+  vendor: sage
   name: Sage Accounting
   url: https://www.sage.com/en-gb/sage-business-cloud/sage-accounting/
   category: productivity
 
 - slug: fl-studio-mobile
+  vendor: image-line
   name: FL Studio Mobile
   url: https://www.image-line.com/fl-studio-mobile
   category: creative
 
 - slug: everything
+  vendor: voidtools
   name: Everything
   url: https://www.voidtools.com/
   category: productivity
 
 - slug: dragonframe
+  vendor: dzedsystems
   name: Dragonframe
   url: https://www.dragonframe.com/
   category: creative
 
 - slug: canva
+  vendor: canva
   name: Canva
   url: https://www.canva.com/
   category: creative
 
 - slug: elevenlabs
+  vendor: elevenlabs
   name: ElevenLabs
   url: https://elevenlabs.io/
   category: creative
 
 - slug: internet-download-manager
+  vendor: tonec
   name: Internet Download Manager
   url: https://www.internetdownloadmanager.com/
   category: productivity
   aliases: [IDM]
 
 - slug: unix-v7
+  vendor: bell-labs
   name: UNIX Seventh Edition
   url: https://www.tuhs.org/Archive/Documentation/Books/Life_with_Unix.pdf
   category: operating-systems
   aliases: [Version 7 Unix, UNIX V7, Research Unix V7]
 
 - slug: chaos-corona
+  vendor: chaos
   name: Chaos Corona
   url: https://www.chaos.com/corona
   category: creative
   aliases: [Corona Renderer]
 
 - slug: rcloneview
+  vendor: rcloneview
   name: RcloneView
   url: https://rcloneview.com/
   category: productivity
 
 - slug: goodsync
+  vendor: siber-systems
   name: GoodSync
   url: https://www.goodsync.com/
   category: productivity
 
 - slug: dj-studio
+  vendor: dj-studio
   name: DJ.Studio
   url: https://dj.studio/
   category: creative
 
 - slug: virtualdj
+  vendor: atomix
   name: VirtualDJ
   url: https://virtualdj.com/
   category: creative
 
 - slug: obsidian
+  vendor: obsidian
   name: Obsidian
   url: https://obsidian.md/
   category: productivity
 
 - slug: capture-one
+  vendor: capture-one
   name: Capture One
   url: https://www.captureone.com/en
   category: creative
 
 - slug: steinberg-dorico
+  vendor: steinberg
   name: Steinberg Dorico
   url: https://www.steinberg.net/dorico/
   category: creative
   aliases: [Dorico]
 
 - slug: avid-sibelius
+  vendor: avid
   name: Avid Sibelius
   url: https://www.avid.com/sibelius
   category: creative
   aliases: [Sibelius]
 
 - slug: finale
+  vendor: makemusic
   name: Finale
   url: https://www.finalemusic.com/
   category: creative
 
 - slug: plaud-desktop
+  vendor: plaud
   name: Plaud Desktop
   url: https://www.plaud.ai/pages/plaud-desktop
   category: productivity
   aliases: [Plaud]
 
 - slug: manictime
+  vendor: finkit
   name: ManicTime
   url: https://www.manictime.com/
   category: productivity
 - slug: viscosity
+  vendor: sparklabs
   name: Viscosity
   url: https://www.sparklabs.com/viscosity/
   category: other
 - slug: proteus-design-suite
+  vendor: labcenter
   name: Proteus Design Suite
   url: https://www.labcenter.com/
   category: engineering
   aliases: [Proteus, Labcenter Proteus, Proteus VSM]
 - slug: cabinet-vision
+  vendor: hexagon
   name: CABINET VISION
   url: https://hexagon.com/products/cabinet-vision
   category: engineering
 - slug: adobe-encore
+  vendor: adobe
   name: Adobe Encore
   url: https://helpx.adobe.com/pdf/cs6/encore_reference.pdf
   category: creative
   aliases: [Encore CS6]
 - slug: touchdesigner
+  vendor: derivative
   name: TouchDesigner
   url: https://derivative.ca/
   category: creative
 - slug: apple-finder
+  vendor: apple
   name: Finder
   url: https://support.apple.com/guide/mac-help/organize-your-files-in-the-finder-mchlp2605/mac
   category: productivity
   aliases: [Apple Finder, macOS Finder, Mac Finder]
 - slug: essay
+  vendor: essay
   name: Essay
   url: https://essay.app/
   category: productivity
   aliases: [essay.app]
 - slug: keyshot
+  vendor: keyshot
   name: KeyShot
   url: https://www.keyshot.com/
   category: creative
   aliases: [KeyShot Studio]
 - slug: calibre
+  vendor: calibre
   name: Calibre
   url: https://calibre-ebook.com/
   category: productivity
 - slug: texpad
+  vendor: valletta-ventures
   name: Texifier
   url: https://www.texifier.com/
   category: productivity
   aliases: [Texpad, Texpad TeX editor]
 - slug: winedt
+  vendor: winedt
   name: WinEdt
   url: https://www.winedt.com/
   category: productivity
 - slug: coreldraw
+  vendor: corel
   name: CorelDRAW
   url: https://www.coreldraw.com/
   category: creative
 - slug: datagrip
+  vendor: jetbrains
   name: DataGrip
   url: https://www.jetbrains.com/datagrip/
   category: developer-tools
 - slug: paper
+  vendor: paper
   name: Paper
   url: https://paper.design/
   category: creative
 - slug: logitech-options-plus
+  vendor: logitech
   name: Logi Options+
   url: https://www.logitech.com/software/logi-options-plus.html
   category: other
 - slug: macos
+  vendor: apple
   name: macOS application interfaces
   url: https://developer.apple.com/macos/
   category: operating-systems
 - slug: microsoft-journal
+  vendor: microsoft
   name: Microsoft Journal
   url: https://www.microsoft.com/en-us/garage/profiles/journal/
   category: productivity
 - slug: uvi-falcon
+  vendor: uvi
   name: UVI Falcon
   url: https://www.uvi.net/falcon.html
   category: creative
 - slug: akeytsu
+  vendor: nukeygara
   name: Akeytsu
   url: https://www.nukeygara.com/
   category: creative
 - slug: adobe-photoshop-elements
+  vendor: adobe
   name: Adobe Photoshop Elements
   url: https://www.adobe.com/products/photoshop-elements.html
   category: creative
 - slug: adobe-premiere-elements
+  vendor: adobe
   name: Adobe Premiere Elements
   url: https://www.adobe.com/products/premiere-elements.html
   category: creative
 - slug: adobe-podcast
+  vendor: adobe
   name: Adobe Podcast
   url: https://podcast.adobe.com/
   category: creative
 - slug: accentize-dxrevive
+  vendor: accentize
   name: Accentize dxRevive
   url: https://www.accentize.com/dxrevive/
   category: creative
 - slug: affinity
+  vendor: canva
   name: Affinity
   url: https://www.affinity.studio/
   category: creative
 - slug: imagen
+  vendor: imagen
   name: Imagen
   url: https://imagen-ai.com/
   category: creative
 - slug: arturia-v-collection
+  vendor: arturia
   name: Arturia V Collection
   url: https://www.arturia.com/products/software-instruments/v-collection/overview
   category: creative
 - slug: arturia-fx-collection
+  vendor: arturia
   name: Arturia FX Collection
   url: https://www.arturia.com/products/software-effects/fx-collection/overview
   category: creative
 - slug: arturia-pigments
+  vendor: arturia
   name: Arturia Pigments
   url: https://www.arturia.com/products/software-instruments/pigments/overview
   category: creative
 - slug: aseprite
+  vendor: igara
   name: Aseprite
   url: https://www.aseprite.org/
   category: creative
 - slug: on1-resize-ai
+  vendor: on1
   name: ON1 Resize AI
   url: https://www.on1.com/products/resize-ai/
   category: creative
 - slug: aiarty-image-enhancer
+  vendor: digiarty
   name: Aiarty Image Enhancer
   url: https://www.aiarty.com/ai-image-enhancer/
   category: creative
 - slug: autodesk-flame
+  vendor: autodesk
   name: Autodesk Flame
   url: https://www.autodesk.com/products/flame/overview
   category: creative
 - slug: remove-bg
+  vendor: kaleido
   name: remove.bg
   url: https://www.remove.bg/
   category: creative
 - slug: adobe-firefly
+  vendor: adobe
   name: Adobe Firefly
   url: https://www.adobe.com/products/firefly.html
   category: creative
 - slug: camo-studio
+  vendor: reincubate
   name: Camo Studio
   url: https://camo.com/studio
   category: creative
 - slug: celaction-2d
+  vendor: celaction
   name: CelAction2D
   url: https://answers.celaction.com/
   category: creative
 - slug: reaper
+  vendor: cockos
   name: REAPER
   url: https://www.reaper.fm/
   category: creative
 - slug: corel-photo-paint
+  vendor: corel
   name: Corel PHOTO-PAINT
   url: https://www.coreldraw.com/en/product/coreldraw/
   category: creative
 - slug: microsoft-creative-writer
+  vendor: microsoft
   name: Microsoft Creative Writer
   url: https://ftp.zx.net.nz/pub/archive/ftp.microsoft.com/MISC/KB/en-us/147/850.HTM
   category: creative
 - slug: microsoft-fine-artist
+  vendor: microsoft
   name: Microsoft Fine Artist
   url: https://ftp.zx.net.nz/pub/archive/ftp.microsoft.com/MISC/KB/en-us/147/850.HTM
   category: creative
 - slug: sure-cuts-a-lot
+  vendor: craft-edge
   name: Sure Cuts A Lot
   url: https://www.craftedge.com/products/products_scal.html
   category: creative
 - slug: antares-auto-tune
+  vendor: antares
   name: Auto-Tune
   url: https://www.antarestech.com/
   category: creative
 - slug: feather
+  vendor: sketchsoft
   name: Feather
   url: https://www.feather.art/
   category: creative
 - slug: evoto
+  vendor: evoto
   name: Evoto
   url: https://www.evoto.ai/
   category: creative
 - slug: filter-forge
+  vendor: filter-forge
   name: Filter Forge
   url: https://www.filterforge.com/
   category: creative
 - slug: sai-flexi
+  vendor: sai
   name: SAi Flexi
   url: https://www.thinksai.com/products/flexi
   category: creative
 - slug: fontlab
+  vendor: fontlab
   name: FontLab
   url: https://www.fontlab.com/
   category: creative
 - slug: fontcreator
+  vendor: high-logic
   name: FontCreator
   url: https://www.high-logic.com/font-editor/fontcreator
   category: creative
 - slug: glyphs
+  vendor: glyphs
   name: Glyphs
   url: https://glyphsapp.com/
   category: creative
 - slug: fontself-maker
+  vendor: fontself
   name: Fontself Maker
   url: https://www.fontself.com/
   category: creative
 - slug: ifontmaker
+  vendor: eiji-nishidai
   name: iFontMaker
   url: https://2ttf.com/
   category: creative
 - slug: connect-fonts
+  vendor: extensis
   name: Connect Fonts
   url: https://www.extensis.com/connect/fonts
   category: creative
 - slug: fontexplorer-x
+  vendor: monotype
   name: FontExplorer X Pro
   url: https://www.fontexplorerx.com/
   category: creative
 - slug: garageband
+  vendor: apple
   name: GarageBand
   url: https://www.apple.com/mac/garageband/
   category: creative
 - slug: heavym
+  vendor: digital-essence
   name: HeavyM
   url: https://www.heavym.net/
   category: creative
 - slug: serum-2
+  vendor: xfer-records
   name: Serum 2
   url: https://xferrecords.com/products/serum-2
   category: creative
 - slug: jangafx-geogen
+  vendor: jangafx
   name: GeoGen
   url: https://jangafx.com/software/geogen
   category: creative
 - slug: jangafx-liquigen
+  vendor: jangafx
   name: LiquiGen
   url: https://jangafx.com/software/liquigen
   category: creative
 - slug: jangafx-embergen
+  vendor: jangafx
   name: EmberGen
   url: https://jangafx.com/software/embergen
   category: creative
 - slug: kodak-preps
+  vendor: kodak
   name: KODAK PREPS
   url: https://www.kodak.com/content/pdfs/print/KODAK-PRINERGY-PREPS-Imposition-Software-datasheet-EN.pdf
   category: creative
 - slug: komplete-ultimate
+  vendor: native-instruments
   name: Komplete Ultimate
   url: https://support.native-instruments.com/support/solutions/articles/69000879171-which-products-are-included-in-komplete-15-
   category: creative
 - slug: lexicon-dj
+  vendor: lexicon
   name: Lexicon DJ
   url: https://www.lexicondj.com/
   category: creative
 - slug: lexicon-pcm-total-bundle
+  vendor: lexicon
   name: Lexicon PCM Total Bundle
   url: https://lexiconpro.com/en/products/pcm-total-bundle
   category: creative
 - slug: live2d-cubism
+  vendor: live2d
   name: Live2D Cubism
   url: https://www.live2d.com/en/
   category: creative
 - slug: madmapper
+  vendor: garagecube
   name: MadMapper
   url: https://madmapper.com/
   category: creative
 - slug: makemkv
+  vendor: makemkv
   name: MakeMKV
   url: https://www.makemkv.com/
   category: creative
 - slug: mixed-in-key
+  vendor: mixed-in-key
   name: Mixed In Key
   url: https://mixedinkey.com/
   category: creative
 - slug: mixed-in-key-wingman
+  vendor: mixed-in-key
   name: Wingman
   url: https://mixedinkey.com/wingman/
   category: creative
 - slug: musicbee
+  vendor: musicbee
   name: MusicBee
   url: https://www.getmusicbee.com/
   category: creative
 - slug: painttool-sai
+  vendor: systemax
   name: PaintTool SAI
   url: https://www.systemax.jp/en/sai/
   category: creative
 - slug: magicpath
+  vendor: magicpath
   name: MagicPath
   url: https://www.magicpath.ai/
   category: creative
 - slug: framer
+  vendor: framer
   name: Framer
   url: https://www.framer.com/
   category: creative
 - slug: photo-mechanic
+  vendor: camera-bits
   name: Photo Mechanic
   url: https://home.camerabits.com/
   category: creative
 - slug: enfocus-pitstop
+  vendor: enfocus
   name: Enfocus PitStop Pro
   url: https://www.enfocus.com/en/products/pitstop-pro
   category: creative
 - slug: propresenter
+  vendor: renewed-vision
   name: ProPresenter
   url: https://www.renewedvision.com/propresenter
   category: creative
 - slug: protopie
+  vendor: studio-xid
   name: ProtoPie
   url: https://www.protopie.io/
   category: creative
 - slug: reason
+  vendor: reason-studios
   name: Reason
   url: https://www.reasonstudios.com/
   category: creative
 - slug: rive
+  vendor: rive
   name: Rive Editor
   url: https://rive.app/editor
   category: creative
 - slug: swam-orchestra
+  vendor: audio-modeling
   name: SWAM Orchestra Bundle
   url: https://www.audiomodeling.com/products?kind=bundle
   category: creative
 - slug: microsoft-photos
+  vendor: microsoft
   name: Microsoft Photos
   url: https://apps.microsoft.com/detail/9wzdncrfjbh4
   category: creative
 - slug: studiobinder
+  vendor: studiobinder
   name: StudioBinder
   url: https://www.studiobinder.com/
   category: creative
 - slug: apple-mainstage
+  vendor: apple
   name: MainStage
   url: https://apps.apple.com/us/app/mainstage/id634159523
   category: creative
 - slug: steinberg-absolute
+  vendor: steinberg
   name: Steinberg Absolute
   url: https://www.steinberg.net/vst-instruments/absolute/
   category: creative
 - slug: submagic
+  vendor: submagic
   name: Submagic
   url: https://www.submagic.co/
   category: creative
 - slug: svgator
+  vendor: svgator
   name: SVGator
   url: https://www.svgator.com/
   category: creative
 - slug: synthesia
+  vendor: synthesia
   name: Synthesia
   url: https://www.synthesia.io/
   category: creative
 - slug: texturepacker
+  vendor: codeandweb
   name: TexturePacker
   url: https://www.codeandweb.com/texturepacker
   category: creative
 - slug: vectorizer-ai
+  vendor: cedar-lake-ventures
   name: Vectorizer.AI
   url: https://vectorizer.ai/
   category: creative
 - slug: vocaloid
+  vendor: yamaha
   name: VOCALOID
   url: https://www.vocaloid.com/en/
   category: creative
 - slug: melodyne
+  vendor: celemony
   name: Melodyne
   url: https://www.celemony.com/en/melodyne/what-is-melodyne
   category: creative
 - slug: chaos-vantage
+  vendor: chaos
   name: Chaos Vantage
   url: https://www.chaos.com/vantage
   category: creative
 - slug: wallpaper-engine
+  vendor: wallpaper-engine
   name: Wallpaper Engine
   url: https://www.wallpaperengine.io/
   category: creative
 - slug: steinberg-wavelab
+  vendor: steinberg
   name: WaveLab
   url: https://www.steinberg.net/wavelab/
   category: creative
 - slug: wondershare-filmora
+  vendor: wondershare
   name: Wondershare Filmora
   url: https://filmora.wondershare.com/
   category: creative
 - slug: izotope-rx
+  vendor: izotope
   name: iZotope RX
   url: https://docs.izotope.com/rx11/en/index.html
   category: creative
 - slug: mecabricks
+  vendor: mecabricks
   name: Mecabricks
   url: https://www.mecabricks.com/
   category: creative
 - slug: camtasia
+  vendor: techsmith
   name: Camtasia
   url: https://www.techsmith.com/camtasia/
   category: creative
 - slug: sonible-plugins
+  vendor: sonible
   name: sonible audio plug-ins
   url: https://www.sonible.com/
   category: creative
 - slug: insydium-x-particles
+  vendor: insydium
   name: INSYDIUM X-Particles
   url: https://insydium.ltd/products/x-particles/
   category: creative
 - slug: insydium-nexus
+  vendor: insydium
   name: INSYDIUM Nexus
   url: https://insydium.ltd/products/nexus/
   category: creative
 - slug: 3cad
+  vendor: cyncly
   name: 3CAD
   url: https://www.cyncly.com/products/3cad
   category: engineering
 - slug: amd-vivado
+  vendor: amd
   name: AMD Vivado
   url: https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html
   category: engineering
 - slug: autodesk-recap
+  vendor: autodesk
   name: Autodesk ReCap
   url: https://www.autodesk.com/products/recap/overview
   category: engineering
 - slug: autodesk-robot-structural-analysis
+  vendor: autodesk
   name: Autodesk Robot Structural Analysis Professional
   url: https://www.autodesk.com/products/robot-structural-analysis/overview
   category: engineering
 - slug: chem3d
+  vendor: revvity-signals
   name: Chem3D
   url: https://revvitysignals.com/products/research/chemdraw
   category: engineering
 - slug: mnova
+  vendor: mestrelab
   name: Mnova
   url: https://mestrelab.com/software/mnova/
   category: engineering
 - slug: chief-architect
+  vendor: chief-architect
   name: Chief Architect
   url: https://www.chiefarchitect.com/
   category: engineering
 - slug: lychee-slicer
+  vendor: mango3d
   name: Lychee Slicer
   url: https://lychee.co/
   category: engineering
 - slug: ansys-spaceclaim
+  vendor: ansys
   name: Ansys SpaceClaim
   url: https://www.ansys.com/products/3d-design/ansys-spaceclaim
   category: engineering
 - slug: cisco-packet-tracer
+  vendor: cisco
   name: Cisco Packet Tracer
   url: https://www.netacad.com/cisco-packet-tracer
   category: engineering
 - slug: siser-leonardo-design-studio
+  vendor: siser
   name: Siser Leonardo Design Studio
   url: https://www.siser.com/leonardo-design-studio/
   category: engineering
 - slug: csi-etabs
+  vendor: csi
   name: ETABS
   url: https://www.csiamerica.com/products/etabs
   category: engineering
 - slug: csi-sap2000
+  vendor: csi
   name: SAP2000
   url: https://www.csiamerica.com/products/sap2000
   category: engineering
 - slug: sai-enroute
+  vendor: sai
   name: SAi EnRoute
   url: https://www.thinksai.com/products/enroute
   category: engineering
 - slug: autodesk-cfd
+  vendor: autodesk
   name: Autodesk CFD
   url: https://www.autodesk.com/products/cfd/overview
   category: engineering
 - slug: artioscad
+  vendor: esko
   name: ArtiosCAD
   url: https://www.esko.com/en/products/artioscad
   category: engineering
 - slug: originlab-origin
+  vendor: originlab
   name: Origin
   url: https://www.originlab.com/
   category: engineering
 - slug: mozaik
+  vendor: mozaik
   name: Mozaik
   url: https://www.mozaiksoftware.com/
   category: engineering
 - slug: optitex-pds
+  vendor: optitex
   name: Optitex PDS
   url: https://optitex.com/
   category: engineering
 - slug: lectra-modaris
+  vendor: lectra
   name: Lectra Modaris
   url: https://www.lectra.com/en/fashion/products/modaris
   category: engineering
 - slug: progecad
+  vendor: progesoft
   name: progeCAD Professional
   url: https://www.progesoft.com/products/progecad-professional
   category: engineering
 - slug: sigmanest
+  vendor: sigma
   name: SigmaNEST
   url: https://www.sigmanest.com/
   category: engineering
 - slug: pronest
+  vendor: hypertherm
   name: ProNest
   url: https://www.hypertherm.com/hypertherm/pronest/pronest-cadcam-nesting-software/
   category: engineering
 - slug: snapgene
+  vendor: dotmatics
   name: SnapGene
   url: https://www.snapgene.com/
   category: engineering
 - slug: autodesk-vault
+  vendor: autodesk
   name: Autodesk Vault
   url: https://www.autodesk.com/products/vault/overview
   category: engineering
 - slug: siemens-step-7
+  vendor: siemens
   name: SIMATIC STEP 7
   url: https://www.siemens.com/global/en/products/automation/industry-software/automation-software/tia-portal/software/step7-tia-portal.html
   category: engineering
 - slug: siemens-wincc-unified
+  vendor: siemens
   name: SIMATIC WinCC Unified
   url: https://www.siemens.com/en-us/products/simatic-wincc/unified/
   category: engineering
 - slug: vcarve-pro
+  vendor: vectric
   name: VCarve Pro
   url: https://www.vectric.com/products/vcarve-pro
   category: engineering
 - slug: vectric-aspire
+  vendor: vectric
   name: Vectric Aspire
   url: https://www.vectric.com/products/aspire
   category: engineering
 - slug: nanocad
+  vendor: nanosoft
   name: nanoCAD
   url: https://nanocad.com/
   category: engineering
 - slug: ansys-ls-dyna
+  vendor: ansys
   name: Ansys LS-DYNA
   url: https://www.ansys.com/products/structures/ansys-ls-dyna
   category: engineering
 - slug: duolingo
+  vendor: duolingo
   name: Duolingo
   url: https://www.duolingo.com/
   category: productivity
 - slug: gizmo
+  vendor: gizmo
   name: Gizmo
   url: https://gizmo.ai/
   category: productivity
 - slug: anydesk
+  vendor: anydesk
   name: AnyDesk
   url: https://anydesk.com/
   category: productivity
 - slug: teamviewer
+  vendor: teamviewer
   name: TeamViewer Remote
   url: https://www.teamviewer.com/en/products/remote/
   category: productivity
 - slug: adobe-captivate
+  vendor: adobe
   name: Adobe Captivate
   url: https://www.adobe.com/products/captivate.html
   category: productivity
 - slug: adobe-framemaker
+  vendor: adobe
   name: Adobe FrameMaker
   url: https://www.adobe.com/products/framemaker.html
   category: productivity
 - slug: adobe-livecycle-designer
+  vendor: adobe
   name: Adobe LiveCycle Designer
   url: https://helpx.adobe.com/livecycle/topics/livecycle-designer.html
   category: productivity
 - slug: buffer
+  vendor: buffer
   name: Buffer
   url: https://buffer.com/
   category: productivity
 - slug: hootsuite
+  vendor: hootsuite
   name: Hootsuite
   url: https://www.hootsuite.com/
   category: productivity
 - slug: sprout-social
+  vendor: sprout-social
   name: Sprout Social
   url: https://sproutsocial.com/
   category: productivity
 - slug: loomly
+  vendor: loomly
   name: Loomly
   url: https://www.loomly.com/
   category: productivity
 - slug: bloomberg-terminal
+  vendor: bloomberg
   name: Bloomberg Terminal
   url: https://www.bloomberg.com/professional/products/bloomberg-terminal/
   category: productivity
 - slug: tradingview
+  vendor: tradingview
   name: TradingView
   url: https://www.tradingview.com/
   category: productivity
 - slug: cobrowse
+  vendor: cobrowse
   name: Cobrowse.io
   url: https://cobrowse.io/
   category: productivity
 - slug: collectorz-movie-collector
+  vendor: collectorz
   name: Movie Collector
   url: https://clz.com/movies/desktop
   category: productivity
 - slug: think-cell
+  vendor: think-cell
   name: think-cell
   url: https://www.think-cell.com/
   category: productivity
 - slug: efficient-elements
+  vendor: efficient-elements
   name: Efficient Elements for presentations
   url: https://www.efficient-elements.com/
   category: productivity
 - slug: uber
+  vendor: uber
   name: Uber
   url: https://play.google.com/store/apps/details?id=com.ubercab
   category: productivity
 - slug: ola
+  vendor: ola
   name: Ola
   url: https://www.olacabs.com/
   category: productivity
 - slug: elgato-stream-deck
+  vendor: elgato
   name: Elgato Stream Deck
   url: https://www.elgato.com/stream-deck
   category: productivity
 - slug: miro
+  vendor: miro
   name: Miro
   url: https://miro.com/
   category: productivity
 - slug: lucidchart
+  vendor: lucid
   name: Lucidchart
   url: https://www.lucidchart.com/
   category: productivity
 - slug: dragon-professional
+  vendor: nuance
   name: Dragon Professional
   url: https://dragon.nuance.com/en-us/dragon-professional
   category: productivity
 - slug: talon-voice
+  vendor: talon
   name: Talon Voice
   url: https://talonvoice.com/
   category: productivity
 - slug: noteshelf
+  vendor: fluid-touch
   name: Noteshelf
   url: https://www.noteshelf.net/
   category: productivity
 - slug: samsung-notes
+  vendor: samsung
   name: Samsung Notes
   url: https://play.google.com/store/apps/details?id=com.samsung.android.app.notes
   category: productivity
 - slug: jw-library
+  vendor: jehovahs-witnesses
   name: JW Library
   url: https://www.jw.org/en/online-help/jw-library/
   category: productivity
 - slug: launchbox
+  vendor: unbroken-software
   name: LaunchBox
   url: https://www.launchbox-app.com/
   category: productivity
 - slug: lotus-improv
+  vendor: lotus
   name: Lotus Improv
   url: https://archive.computerhistory.org/resources/access/text/2024/03/102805753-05-01-acc.pdf
   category: productivity
 - slug: quantrix
+  vendor: quantrix
   name: Quantrix Modeler
   url: https://quantrix.com/
   category: productivity
 - slug: tableau
+  vendor: salesforce
   name: Tableau
   url: https://www.tableau.com/
   category: productivity
 - slug: microsoft-teams
+  vendor: microsoft
   name: Microsoft Teams
   url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
   category: productivity
 - slug: microsoft-whiteboard
+  vendor: microsoft
   name: Microsoft Whiteboard
   url: https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app
   category: productivity
 - slug: mindmanager
+  vendor: corel
   name: MindManager
   url: https://www.mindmanager.com/
   category: productivity
 - slug: figjam
+  vendor: figma
   name: FigJam
   url: https://www.figma.com/figjam/
   category: productivity
 - slug: scrivener
+  vendor: literature-and-latte
   name: Scrivener
   url: https://www.literatureandlatte.com/scrivener/overview
   category: productivity
 - slug: vellum
+  vendor: 180g
   name: Vellum
   url: https://vellum.pub/
   category: productivity
 - slug: pdf-annotator
+  vendor: grahl
   name: PDF Annotator
   url: https://www.pdfannotator.com/
   category: productivity
 - slug: quicken
+  vendor: quicken
   name: Quicken
   url: https://www.quicken.com/
   category: productivity
 - slug: banktivity
+  vendor: igg-software
   name: Banktivity
   url: https://www.banktivity.com/
   category: productivity
 - slug: ynab
+  vendor: ynab
   name: YNAB
   url: https://www.ynab.com/
   category: productivity
 - slug: sap-businessobjects-bi
+  vendor: sap
   name: SAP BusinessObjects BI
   url: https://www.sap.com/products/technology-platform/bi-platform.html
   category: productivity
 - slug: quickbase
+  vendor: quickbase
   name: Quickbase
   url: https://www.quickbase.com/
   category: productivity
 - slug: airtable
+  vendor: airtable
   name: Airtable
   url: https://www.airtable.com/
   category: productivity
 - slug: ragtime
+  vendor: ragtime
   name: RagTime
   url: https://www.ragtime.de/
   category: productivity
 - slug: liquidtext
+  vendor: liquidtext
   name: LiquidText
   url: https://www.liquidtext.net/
   category: productivity
 - slug: sage-50
+  vendor: sage
   name: Sage 50
   url: https://www.sage.com/en-us/products/sage-50/
   category: productivity
 - slug: salesforce-sales-cloud
+  vendor: salesforce
   name: Salesforce Sales Cloud
   url: https://www.salesforce.com/sales/cloud/
   category: productivity
 - slug: serveboard
+  vendor: serveboard
   name: ServeBoard
   url: https://serveboard.app/
   category: productivity
 - slug: tallyprime
+  vendor: tally-solutions
   name: TallyPrime
   url: https://tallysolutions.com/tally-prime/
   category: productivity
 - slug: teamwire
+  vendor: teamwire
   name: Teamwire
   url: https://teamwire.eu/
   category: productivity
 - slug: tenorshare-icarefone
+  vendor: tenorshare
   name: Tenorshare iCareFone
   url: https://www.tenorshare.com/products/icarefone.html
   category: productivity
 - slug: ticktick
+  vendor: ticktick
   name: TickTick
   url: https://ticktick.com/
   category: productivity
 - slug: lunatask
+  vendor: lunatask
   name: Lunatask
   url: https://lunatask.app/
   category: productivity
 - slug: trados-studio
+  vendor: rws
   name: Trados Studio
   url: https://www.trados.com/products/trados-studio/
   category: productivity
 - slug: wondershare-recoverit
+  vendor: wondershare
   name: Wondershare Recoverit
   url: https://recoverit.wondershare.com/
   category: productivity
 - slug: xmind
+  vendor: xmind
   name: Xmind
   url: https://xmind.com/
   category: productivity
 - slug: youversion-bible
+  vendor: youversion
   name: YouVersion Bible App
   url: https://www.youversion.com/bible-app/
   category: productivity
 - slug: bible-gateway
+  vendor: harpercollins
   name: Bible Gateway
   url: https://www.biblegateway.com/
   category: productivity
 - slug: olive-tree-bible
+  vendor: olive-tree
   name: Olive Tree Bible App
   url: https://www.olivetree.com/
   category: productivity
 - slug: myq-x
+  vendor: myq
   name: MyQ X
   url: https://www.myq-solution.com/myq-x
   category: productivity
 - slug: ysoft-safeq
+  vendor: ysoft
   name: YSoft SAFEQ
   url: https://www.ysoft.com/safeq
   category: productivity
 - slug: priprinter
+  vendor: pelikan
   name: priPrinter
   url: https://www.priprinter.com/
   category: productivity
 - slug: unity
+  vendor: unity
   name: Unity
   url: https://unity.com/products/unity-engine
   category: developer-tools
 - slug: xcode
+  vendor: apple
   name: Xcode
   url: https://developer.apple.com/xcode/
   category: developer-tools
 - slug: astah-professional
+  vendor: change-vision
   name: Astah Professional
   url: https://astah.net/products/astah-professional/
   category: developer-tools
 - slug: gitkraken
+  vendor: gitkraken
   name: GitKraken Desktop
   url: https://www.gitkraken.com/git-client
   category: developer-tools
 - slug: intellij-idea-ultimate
+  vendor: jetbrains
   name: IntelliJ IDEA Ultimate
   url: https://www.jetbrains.com/idea/
   category: developer-tools
 - slug: mobaxterm
+  vendor: mobatek
   name: MobaXterm
   url: https://mobaxterm.mobatek.net/
   category: developer-tools
 - slug: postman
+  vendor: postman
   name: Postman
   url: https://www.postman.com/
   category: developer-tools
 - slug: dotnet-reflector
+  vendor: redgate
   name: .NET Reflector
   url: https://www.red-gate.com/products/reflector/
   category: developer-tools
 - slug: royal-ts
+  vendor: royal-apps
   name: Royal TS
   url: https://www.royalapps.com/ts/
   category: developer-tools
 - slug: screaming-frog-seo-spider
+  vendor: screaming-frog
   name: Screaming Frog SEO Spider
   url: https://www.screamingfrog.co.uk/seo-spider/
   category: developer-tools
 - slug: ibm-rational-rose
+  vendor: ibm
   name: IBM Rational Rose
   url: https://www.ibm.com/products/rational-rose
   category: developer-tools
 - slug: ibm-rational-application-developer
+  vendor: ibm
   name: IBM Rational Application Developer
   url: https://www.ibm.com/products/rational-application-developer
   category: developer-tools
 - slug: visual-paradigm
+  vendor: visual-paradigm
   name: Visual Paradigm
   url: https://www.visual-paradigm.com/
   category: developer-tools
 - slug: navicat-premium
+  vendor: premiumsoft
   name: Navicat Premium
   url: https://www.navicat.com/en/products/navicat-premium
   category: developer-tools
 - slug: bluestacks
+  vendor: bluestacks
   name: BlueStacks
   url: https://www.bluestacks.com/
   category: operating-systems
 - slug: vmware-esxi
+  vendor: broadcom
   name: VMware ESXi
   url: https://www.vmware.com/products/cloud-infrastructure/vsphere
   category: operating-systems
 - slug: unraid
+  vendor: unraid
   name: Unraid
   url: https://unraid.net/
   category: operating-systems
 - slug: zimaos
+  vendor: icewhale
   name: ZimaOS
   url: https://www.zimaspace.com/zimaos
   category: operating-systems
 - slug: ugos-pro
+  vendor: ugreen
   name: UGOS Pro
   url: https://ai.ugreen.com/pages/operating-system
   category: operating-systems
 - slug: synology-dsm
+  vendor: synology
   name: Synology DiskStation Manager
   url: https://www.synology.com/en-global/dsm
   category: operating-systems
 - slug: exitlag
+  vendor: exitlag
   name: ExitLag
   url: https://www.exitlag.com/
   category: other
 - slug: lagofast
+  vendor: lagofast
   name: LagoFast
   url: https://www.lagofast.com/
   category: other
 - slug: razer-synapse
+  vendor: razer
   name: Razer Synapse
   url: https://www.razer.com/synapse-4
   category: other
 - slug: asus-armoury-crate
+  vendor: asus
   name: ASUS Armoury Crate
   url: https://www.asus.com/supportonly/armoury%20crate/helpdesk_download/
   category: other
 - slug: xbox-accessories
+  vendor: microsoft
   name: Xbox Accessories
   url: https://apps.microsoft.com/detail/9nblggh30xj3
   category: other
 - slug: corsair-icue
+  vendor: corsair
   name: CORSAIR iCUE
   url: https://www.corsair.com/us/en/s/icue
   category: other
 - slug: nvidia-app
+  vendor: nvidia
   name: NVIDIA App
   url: https://www.nvidia.com/en-us/software/nvidia-app/
   category: other
 - slug: intel-graphics-command-center
+  vendor: intel
   name: Intel Graphics Command Center
   url: https://www.intel.com/content/www/us/en/products/docs/graphics/graphics-command-center.html
   category: other
 - slug: intel-arc-control
+  vendor: intel
   name: Intel Arc Control
   url: https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/software/arc-control.html
   category: other
 - slug: microsoft-exchange
+  vendor: microsoft
   name: Microsoft Exchange Server
   url: https://www.microsoft.com/en-us/microsoft-365/exchange/email
   category: protocols
 - slug: virtualhere
+  vendor: virtualhere
   name: VirtualHere
   url: https://www.virtualhere.com/
   category: protocols
 - slug: rules-of-survival
+  vendor: netease
   name: Rules of Survival
   url: https://steamcommunity.com/app/788260/allnews/
   category: games
 - slug: starcraft
+  vendor: blizzard
   name: StarCraft
   url: https://starcraft.com/
   category: games
 - slug: windows-desktop-shell
+  vendor: microsoft
   name: Windows desktop shell
   url: https://learn.microsoft.com/en-us/windows/win32/shell/shell-entry
   category: operating-systems
 - slug: nvidia-shadowplay
+  vendor: nvidia
   name: NVIDIA ShadowPlay
   url: https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/
   category: creative
   aliases: [ShadowPlay]
 - slug: auth0
+  vendor: auth0
   name: Auth0
   url: https://auth0.com/
   category: developer-tools
   aliases: [Auth0 by Okta, Okta Customer Identity Cloud]
 - slug: flipaclip
+  vendor: visual-blasters
   name: FlipaClip
   url: https://www.flipaclip.com/
   category: creative
 - slug: gemini-notebook
+  vendor: google
   name: Gemini Notebook
   url: https://notebook.google/
   category: productivity
   aliases: [NotebookLM, Notebook LM, Google NotebookLM, Google Gemini Notebook]
 - slug: dropbox
+  vendor: dropbox
   name: Dropbox
   url: https://www.dropbox.com/
   category: productivity
 - slug: youtube-music
+  vendor: google
   name: YouTube Music
   url: https://music.youtube.com/
   category: creative
 - slug: youtube
+  vendor: google
   name: YouTube
   url: https://www.youtube.com/
   category: creative
 - slug: jetbrains-rider
+  vendor: jetbrains
   name: JetBrains Rider
   url: https://www.jetbrains.com/rider/
   category: developer-tools
   aliases: [Rider]
 - slug: world-anvil
+  vendor: world-anvil
   name: World Anvil
   url: https://www.worldanvil.com/
   category: creative
   aliases: [WorldAnvil]
 - slug: campfire
+  vendor: campfire
   name: Campfire
   url: https://www.campfirewriting.com/
   category: creative
 - slug: legendkeeper
+  vendor: legendkeeper
   name: LegendKeeper
   url: https://www.legendkeeper.com/
   category: creative
   aliases: [Legend Keeper]
 - slug: wand
+  vendor: wand
   name: Wand
   url: https://wand.com/
   category: games
   aliases:
     - WeMod
 - slug: modbus-poll
+  vendor: witte-software
   name: Modbus Poll
   url: https://modbuspoll.com/
   category: engineering
 - slug: pureref
+  vendor: idyllic-pixel
   name: PureRef
   url: https://www.pureref.com/
   category: creative
 - slug: tactiq
+  vendor: tactiq
   name: Tactiq
   url: https://tactiq.io/
   category: productivity
   aliases:
     - Tactiq.io
 - slug: read-ai
+  vendor: read-ai
   name: Read AI
   url: https://www.read.ai/
   category: productivity
   aliases:
     - Read.ai
 - slug: granola
+  vendor: granola
   name: Granola
   url: https://www.granola.ai/
   category: productivity
 - slug: xsplit-vcam
+  vendor: splitmedia-labs
   name: XSplit VCam
   url: https://www.xsplit.com/vcam
   category: creative
   aliases:
     - VCam
 - slug: supreme-commander-forged-alliance
+  vendor: square-enix
   name: "Supreme Commander: Forged Alliance"
   url: https://store.steampowered.com/app/9420/
   category: games
@@ -2279,6 +2786,7 @@
     - SupCom
     - SupCom FA
 - slug: crimsonland
+  vendor: 10tons
   name: Crimsonland
   url: https://store.steampowered.com/app/262830/Crimsonland/
   category: games
@@ -2286,74 +2794,92 @@
     - Crimsonland 2014
     - Crimsonland Remastered
 - slug: sublime-text
+  vendor: sublime-hq
   name: Sublime Text
   url: https://www.sublimetext.com/
   category: developer-tools
 - slug: loom
+  vendor: atlassian
   name: Loom
   url: https://www.loom.com/
   category: productivity
 - slug: trello
+  vendor: atlassian
   name: Trello
   url: https://trello.com/
   category: productivity
 - slug: dreamtonics-vocoflex
+  vendor: dreamtonics
   name: Vocoflex
   url: https://dreamtonics.com/vocoflex/
   category: creative
 - slug: pano2vr
+  vendor: garden-gnome
   name: Pano2VR
   url: https://ggnome.com/pano2vr/
   category: creative
 - slug: aveva-edge
+  vendor: aveva
   name: AVEVA Edge
   url: https://www.aveva.com/en/products/edge/
   category: engineering
 - slug: whatsapp
+  vendor: meta
   name: WhatsApp
   url: https://www.whatsapp.com/
   category: productivity
 - slug: veracross
+  vendor: veracross
   name: Veracross
   url: https://www.veracross.com/schools/k-12/
   category: productivity
 - slug: hubspot-crm
+  vendor: hubspot
   name: HubSpot CRM
   url: https://www.hubspot.com/products/crm
   category: productivity
 - slug: graphpad-prism
+  vendor: graphpad
   name: GraphPad Prism
   url: https://www.graphpad.com/features
   category: engineering
 - slug: cycling74-max
+  vendor: cycling74
   name: Max/MSP/Jitter
   url: https://cycling74.com/products/max
   category: creative
 - slug: tonelib-jam
+  vendor: tonelib
   name: ToneLib Jam
   url: https://www.tonelib.net/jam-overview.html
   category: creative
 - slug: rogue-amoeba-fission
+  vendor: rogue-amoeba
   name: Fission
   url: https://rogueamoeba.com/fission/
   category: creative
 - slug: little-snitch
+  vendor: objective-development
   name: Little Snitch
   url: https://www.obdev.at/products/littlesnitch/index.html
   category: other
 - slug: autodesk-moldflow-adviser
+  vendor: autodesk
   name: Autodesk Moldflow Adviser
   url: https://www.autodesk.com/products/moldflow/overview
   category: engineering
 - slug: radan-radnest
+  vendor: hexagon
   name: RADAN Radnest
   url: https://hexagon.com/products/radan
   category: engineering
 - slug: visual-basic-classic
+  vendor: microsoft
   name: Visual Basic (classic)
   url: https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation
   category: developer-tools
 - slug: opcode-galaxy-plus-editors
+  vendor: opcode
   name: Opcode Galaxy Plus Editors
   url: https://oldschooldaw.com/opcode/uploads/PDF/Tech_Primer.pdf
   category: creative

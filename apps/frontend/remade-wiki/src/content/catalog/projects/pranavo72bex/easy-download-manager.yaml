@@ -1,6 +1,7 @@
 # Scope and limitations are maintainer-reported in the upstream README.
 slug: easy-download-manager
 name: Easy Download Manager
+authors: [pranavo72bex]
 repository: https://github.com/pranavo72bex/Easy-Download-Manager
 originals:
 - internet-download-manager

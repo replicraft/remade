@@ -20,11 +20,16 @@ export async function getStaticPaths() {
 		{ length: Math.max(0, Math.ceil(count / pageSize) - 1) },
 		(_, index) => ({
 			params: { page: String(index + 2) },
-			props: { records, featured: catalog.featured, page: index + 2 },
+			props: {
+				records,
+				vendors: catalog.vendors,
+				featured: catalog.featured,
+				page: index + 2,
+			},
 		}),
 	);
 }
-const { records, featured, page } = Astro.props;
+const { records, vendors, featured, page } = Astro.props;
 ---
 
 <Layout title={`Explore projects: page ${page}`}>
@@ -33,6 +38,7 @@ const { records, featured, page } = Astro.props;
 		initialPage={page}
 		kind="project"
 		records={records}
+		vendors={vendors}
 		client:load
 	/>
 </Layout>

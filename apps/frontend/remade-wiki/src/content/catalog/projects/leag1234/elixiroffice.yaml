@@ -1,6 +1,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/93.
 slug: elixiroffice
 name: ElixirOffice
+authors: [leag1234]
 repository: https://github.com/leag1234/elixiroffice
 originals:
   - microsoft-word

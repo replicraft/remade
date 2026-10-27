@@ -15,6 +15,7 @@ import {
 	type Tool,
 	toolSchema,
 	validateRelationships,
+	vendorSchema,
 } from "./schemas";
 import { projectScreenshotAssets } from "./screenshot-files";
 import { supportedProjectSlugs } from "./suites";
@@ -76,6 +77,7 @@ export async function loadCatalog() {
 		featured,
 		additionDates,
 		suites,
+		vendors,
 	] = await Promise.all([
 		readFile(new URL("src/content/catalog/originals.yaml", root), "utf8").then(
 			(s) => v.parse(v.array(originalSchema), parseYaml(s)),
@@ -88,8 +90,12 @@ export async function loadCatalog() {
 		),
 		loadAdditionDates(repositoryRoot),
 		records("suites", suiteSchema, "slug"),
+		readFile(new URL("src/content/catalog/vendors.yaml", root), "utf8").then(
+			(source) => v.parse(v.array(vendorSchema), parseYaml(source)),
+		),
 	]);
 	const source: Catalog = {
+		vendors,
 		originals,
 		projects,
 		tools: sourceTools,
@@ -152,7 +158,11 @@ export async function loadCatalog() {
 		.map((request) => ({
 			...request,
 			addedAt: catalogAddedAt(additionDates, "requests", request.original),
-			vendor: requestVendors.get(request.original) ?? "unassigned",
+			vendor:
+				originals.find((original) => original.slug === request.original)
+					?.vendor ??
+				requestVendors.get(request.original) ??
+				"unassigned",
 		}))
 		.sort(
 			(a, b) =>
@@ -160,7 +170,7 @@ export async function loadCatalog() {
 				a.original.localeCompare(b.original),
 		);
 
-	return { ...catalog, entries, requests: recentRequests };
+	return { ...catalog, vendors, entries, requests: recentRequests };
 }
 
 const metadataSchema = v.object({
