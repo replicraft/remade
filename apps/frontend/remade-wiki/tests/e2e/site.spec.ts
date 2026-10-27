@@ -504,3 +504,64 @@ test("exact vendor searches offer a shortcut from home and both directories", as
 		page.getByRole("link", { name: "See all by Corel →", exact: true }),
 	).toHaveAttribute("href", "/vendor/corel/");
 });
+
+test("tool target hover lists include every project and dismiss with Escape", async ({
+	page,
+}) => {
+	await page.goto("/explore/?q=OpenPlayground");
+	const card = page.getByRole("article").filter({
+		has: page.getByRole("heading", { name: "OpenPlayground", exact: true }),
+	});
+	const list = card.locator("[data-tool-targets]");
+	const trigger = list.locator("summary");
+	await expect(list).not.toHaveAttribute("open", "");
+	await trigger.hover();
+	await expect(list).toHaveAttribute("open", "");
+	await expect(list.getByRole("link")).toHaveCount(32);
+	await expect(
+		list.getByRole("link", { name: "PhotoCraft", exact: true }),
+	).toHaveAttribute("href", "/projects/photocraft/");
+	await expect(
+		list.getByRole("link", { name: "MailCraft", exact: true }),
+	).toHaveAttribute("href", "/projects/ucs-mailcraft/");
+	await page.keyboard.press("Escape");
+	await expect(list).not.toHaveAttribute("open", "");
+	await page.mouse.move(0, 0);
+	await trigger.focus();
+	await page.keyboard.press("Shift+Tab");
+	await page.keyboard.press("Tab");
+	await expect(list).toHaveAttribute("open", "");
+	await page.keyboard.press("Tab");
+	await expect(list.getByRole("link").first()).toBeFocused();
+	await page.keyboard.press("Escape");
+	await expect(trigger).toBeFocused();
+	await expect(list).not.toHaveAttribute("open", "");
+});
+
+test("tool target lists open by tap on mobile", async ({
+	browser,
+	baseURL,
+}) => {
+	const context = await browser.newContext({
+		baseURL,
+		viewport: { width: 320, height: 760 },
+		hasTouch: true,
+		isMobile: true,
+	});
+	try {
+		const page = await context.newPage();
+		await page.goto("/explore/?q=OpenPlayground");
+		const list = page
+			.getByRole("article")
+			.filter({
+				has: page.getByRole("heading", { name: "OpenPlayground", exact: true }),
+			})
+			.locator("[data-tool-targets]");
+		await list.locator("summary").tap();
+		await expect(list.getByRole("link").first()).toBeVisible();
+		await list.getByRole("link", { name: "EarthCraft", exact: true }).click();
+		await expect(page).toHaveURL(/\/projects\/earthcraft\/$/);
+	} finally {
+		await context.close();
+	}
+});

@@ -224,3 +224,9 @@
 body:has(dialog[open]) {
 	overflow: hidden;
 }
+
+/* Keep an expanded tool list above adjacent cards and their stretched links. */
+[data-entry-card]:has([data-tool-targets][open]) {
+	position: relative;
+	z-index: 20;
+}

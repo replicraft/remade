@@ -9,6 +9,7 @@ import {
 } from "../../lib/presentation";
 import Authors from "./Authors";
 import CardDescription from "./CardDescription";
+import ToolTargetLinks from "./ToolTargetLinks";
 
 export default function DirectoryCard({
 	record,
@@ -18,7 +19,7 @@ export default function DirectoryCard({
 	actions?: ReactNode;
 }) {
 	return (
-		<article className="directory-card">
+		<article className="directory-card" data-entry-card>
 			<div className="flex flex-wrap gap-2 text-xs text-muted">
 				<span className="rounded border border-line bg-panel px-2 py-0.5">
 					{record.kind === "request"
@@ -69,9 +70,9 @@ export default function DirectoryCard({
 				</p>
 			)}
 
-			{record.suites.length > 0 && (
+			{record.kind !== "tool" && record.suites.length > 0 && (
 				<p className="!mb-3 text-xs">
-					{record.kind === "tool" ? "Tool for" : "Part of"}{" "}
+					Part of{" "}
 					{record.suites.map((suite, index) => (
 						<span key={suite.href}>
 							{index > 0 && ", "}
@@ -81,15 +82,14 @@ export default function DirectoryCard({
 				</p>
 			)}
 			{record.kind === "tool" && record.targets.length > 0 && (
-				<p className="!mb-3 text-xs">
-					{record.suites.length ? "Also supports" : "Tool for"}{" "}
-					{record.targets.map((target, index) => (
-						<span key={target.href}>
-							{index > 0 && ", "}
-							<a href={target.href}>{target.name}</a>
-						</span>
-					))}
-				</p>
+				<div className="relative !mb-3 text-xs">
+					Tool for:{" "}
+					<ToolTargetLinks
+						links={[...record.targets].sort((a, b) =>
+							a.name.localeCompare(b.name),
+						)}
+					/>
+				</div>
 			)}
 			<CardDescription fillSpace={false} text={record.summary} />
 

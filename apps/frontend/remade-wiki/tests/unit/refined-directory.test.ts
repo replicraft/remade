@@ -38,6 +38,19 @@ it("matches target names and aliases with deterministic project/request classifi
 	expect(normalizeQuery("  Ａ  B  ")).toBe("a b");
 	expect(searchDirectory(records, "  ")).toEqual([]);
 });
+it("includes every suite member in a tool card's complete target list", () => {
+	const tool = records.find((record) => record.id === "openplayground");
+	expect(tool?.targets).toHaveLength(32);
+	expect(tool?.targets).toEqual(
+		expect.arrayContaining([
+			{ name: "PhotoCraft", href: "/projects/photocraft/" },
+			{ name: "EarthCraft", href: "/projects/earthcraft/" },
+			{ name: "MailCraft", href: "/projects/ucs-mailcraft/" },
+		]),
+	);
+	expect(new Set(tool?.targets.map((target) => target.href)).size).toBe(32);
+});
+
 it("preserves both community links and keeps tools distinct", () => {
 	expect(records.find((record) => record.id === "earthcraft")).toMatchObject({
 		discord_server: "https://discord.gg/artcraft",
