@@ -188,6 +188,7 @@ def collect(root=ROOT):
         }
         optional = {
             "screenshots",
+            "browser_url",
             "platforms",
             "docs",
             "website",
@@ -280,6 +281,8 @@ def collect(root=ROOT):
         validate_discord(project, loc, errors)
         validate_authors(project, loc, errors)
         validate_mirrors(project, loc, errors)
+        if "browser_url" in project and not is_https(project["browser_url"]):
+            errors.append(f"{loc}: browser_url must be a public HTTPS URL")
         validate_screenshots(project, path, loc, errors)
 
     request_by_original = {}

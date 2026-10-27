@@ -21,7 +21,12 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 			originals,
 			projects: catalog.entries
 				.filter((e) => e.kind === "project")
-				.map((p) => ({ ...p, ...internal, ...discord })),
+				.map((p) => ({
+					...p,
+					browser_url: "https://example.org/app/",
+					...internal,
+					...discord,
+				})),
 			tools: catalog.entries
 				.filter((e) => e.kind === "tool")
 				.map((t) => ({
@@ -77,6 +82,7 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	expect(output.featured).toEqual(catalog.featured);
 
 	for (const project of output.projects) {
+		expect(project.browser_url).toBe("https://example.org/app/");
 		expect(project.summary).toBe(
 			catalog.projects.find((item) => item.slug === project.slug)?.summary,
 		);

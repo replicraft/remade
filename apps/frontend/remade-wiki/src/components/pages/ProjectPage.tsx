@@ -107,6 +107,17 @@ export default function ProjectPage({
 						</a>
 					)}
 
+					{project.browser_url && (
+						<a
+							className="inline-flex cursor-pointer items-center justify-center rounded-lg border border-line px-4 py-3 text-sm font-semibold text-ink hover:border-lime hover:text-lime"
+							href={project.browser_url}
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							Try it in your browser ↗
+						</a>
+					)}
+
 					{project.docs && (
 						<a
 							className="inline-flex cursor-pointer items-center justify-center rounded-lg border border-line px-4 py-3 text-sm font-semibold text-ink hover:border-lime hover:text-lime"

@@ -7,6 +7,7 @@ name: Example Implementation
 # authors: [example]
 repository: https://github.com/example/example-implementation
 # website: https://example.org        # optional official project website
+# browser_url: https://example.org/app # optional hosted browser app
 # mirrors: [https://codeberg.org/example/example-implementation] # optional
 originals: [example-software] # one or more distinct reviewed target slugs
 category: other

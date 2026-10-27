@@ -56,10 +56,23 @@ describe("catalog loading and validation", () => {
 		},
 	);
 
+	it("accepts an optional hosted browser app independently of the website", () => {
+		const { website: _website, ...project } = catalog.projects[0];
+		expect(
+			v.parse(projectSchema, {
+				...project,
+				browser_url: "https://example.org/app/",
+			}).browser_url,
+		).toBe("https://example.org/app/");
+	});
+
 	it.each([
 		{ unknown: true },
 		{ description: "<script>alert(1)</script>" },
 		{ repository: "https://localhost/x/y" },
+		{ browser_url: "http://example.org/app" },
+		{ browser_url: "https://localhost/app" },
+		{ browser_url: "javascript:alert(1)" },
 		{ website: "http://example.org" },
 		{ website: "https://localhost/" },
 		{ mirrors: [] },

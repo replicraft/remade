@@ -130,3 +130,9 @@ def test_screenshots_check_external_images_but_not_local_paths(tmp_path: Path) -
     )
 
     assert list(url_values(path)) == ["https://example.org/editor.png"]
+
+
+def test_browser_app_is_checked(tmp_path: Path) -> None:
+    path = tmp_path / "project.yaml"
+    path.write_text("browser_url: https://example.org/app/\n")
+    assert "https://example.org/app/" in set(url_values(path))

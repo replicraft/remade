@@ -179,6 +179,7 @@ export const projectSchema = v.strictObject({
 	license: text(2, 80),
 	docs: v.optional(https),
 	website: v.optional(https),
+	browser_url: v.optional(https),
 	limitations: v.optional(text(2, 400)),
 	screenshots,
 });

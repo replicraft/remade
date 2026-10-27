@@ -19,7 +19,15 @@ def url_values(path: Path) -> Iterator[str]:
 def urls_in_record(obj: object) -> Iterator[str]:
     for record in obj if isinstance(obj, list) else [obj]:
         if isinstance(record, dict):
-            for key in ("url", "repository", "docs", "website", "discord_server", "discord_thread"):
+            for key in (
+                "url",
+                "repository",
+                "docs",
+                "website",
+                "browser_url",
+                "discord_server",
+                "discord_thread",
+            ):
                 value = record.get(key)
                 if is_https(value):
                     yield value

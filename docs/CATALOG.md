@@ -66,6 +66,7 @@ description: Independent implementation targeting the original program's behavio
 license: MIT
 # docs: https://example.org/docs       # optional
 # website: https://example.org         # optional official project website
+# browser_url: https://example.org/app # optional hosted browser app
 # mirrors: [https://codeberg.org/example/example-implementation] # optional
 # limitations: Not all formats are currently supported. # optional
 ```
@@ -87,6 +88,7 @@ license: MIT
 | `description` | Yes | 20–500 plain-text characters, factual, no user-supplied HTML |
 | `license` | Yes | SPDX-style identifier, e.g. `LicenseRef-custom` for review, or `Unlicensed` for a maintainer-approved project with no license grant. `Unlicensed` is not the SPDX `Unlicense` dedication. Follow the license-source precedence in `POLICY.md`. |
 | `docs` | No | HTTPS URL |
+| `browser_url` | No | Public HTTPS URL to an interactive hosted build, preferably official hosting or Daijro’s playground. Displays Try it in your browser beside Website. |
 | `website` | No | Public HTTPS URL for the implementation's official website. Displays an Official website button on its implementation page, opening in a new tab. Omit when no official website is documented. |
 | `mirrors` | No | Nonempty list of distinct public HTTPS repository root URLs, following the `repository` URL rules. Supply documented mirrors of the same implementation, not forks or competing projects. Shown on the implementation page as Repository mirrors, opening in new tabs. |
 | `limitations` | No | Short plain text |
@@ -264,3 +266,7 @@ Alternatively, commit PNG, JPEG, WebP or AVIF files beside the project YAML or u
 Project detail pages show the gallery only when images exist. Images preserve their full aspect ratio, with optional captions, full-size links and native horizontal scrolling. Multiple images gain previous/next controls and thumbnail navigation with progressive enhancement. There is no autoplay. Keyboard navigation, reduced motion, mobile touch scrolling and a JavaScript-free fallback remain supported. Listing cards do not load screenshots.
 
 The optional field is included in `/data/catalog.json` without changing schema version 2. Exported local image paths become absolute public image URLs; remote URLs, alt text, captions and ordering are preserved. Source YAML paths are not exported as unusable relative URLs. Discord fields remain excluded.
+
+### Hosted browser apps
+
+Projects may set `browser_url` to a public HTTPS URL for an interactive hosted build. The listing shows **Try it in your browser** immediately after Website (or independently when no website is recorded). Prefer official project hosting; Daijro’s OpenPlayground builds are also accepted. Link to the app itself, not a marketing, download, source-code or self-hosting instructions page. Omit the field when a hosted build cannot be established. Browser availability does not establish feature parity with desktop builds. The field is included in the public catalog export and checked by the existing link checker.
