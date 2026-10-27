@@ -67,12 +67,24 @@ it("keeps suite membership in tool categories and project backlinks while compac
 	expect(launcher.projects).toEqual(suite.projects);
 	expect(entryCategories(launcher, catalog.projects)).toContain("creative");
 	expect(toolTargets(launcher, catalog.suites).projects).toEqual([]);
-	expect(toolTargets(playground, catalog.suites).projects).toEqual([
-		"lightcraft-classic",
-		"solidcraft",
-		"mailcraft",
-	]);
-	expect(playground.projects).toHaveLength(16);
+	const extraTargets = toolTargets(playground, catalog.suites).projects;
+	expect(extraTargets).toEqual(
+		expect.arrayContaining([
+			"lightcraft-classic",
+			"solidcraft",
+			"ucs-mailcraft",
+			"earthcraft",
+			"oxiguitar",
+			"mixstudio",
+			"procraft",
+			"matcraft",
+			"notecraft-onenote",
+			"lemon-studio",
+		]),
+	);
+	expect(extraTargets).not.toContain("mailcraft");
+	expect(playground.projects).toHaveLength(32);
+	expect(new Set(playground.projects).size).toBe(32);
 
 	for (const slug of suite.projects)
 		expect(

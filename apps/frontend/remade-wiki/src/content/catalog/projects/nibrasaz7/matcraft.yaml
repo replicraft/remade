@@ -2,6 +2,7 @@ slug: matcraft
 name: MatCraft
 authors: [nibrasaz7]
 repository: https://github.com/NibrasAz7/matcraft
+browser_url: https://playground.daijro.dev/head/matcraft/
 originals: [matlab]
 category: engineering
 languages:

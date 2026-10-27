@@ -3,6 +3,7 @@ slug: procraft
 name: ProCraft
 authors: [surfrpt1]
 repository: https://github.com/surfrpt1/procraft
+browser_url: https://playground.daijro.dev/head/procraft/
 originals: [procreate]
 category: creative
 languages: [Rust]
