@@ -1,5 +1,6 @@
 slug: salescompel
 name: SalesCompel
+authors: [occupysaas]
 repository: https://github.com/occupysaas/salescompel
 originals:
   - salesforce-sales-cloud

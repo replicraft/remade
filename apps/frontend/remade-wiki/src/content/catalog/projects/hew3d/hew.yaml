@@ -1,6 +1,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/132.
 slug: hew
 name: Hew
+authors: [hew3d]
 repository: https://github.com/hew3d/hew
 originals:
   - sketchup

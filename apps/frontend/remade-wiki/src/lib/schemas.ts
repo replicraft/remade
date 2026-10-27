@@ -136,8 +136,15 @@ const screenshots = v.optional(
 	),
 );
 
+export const vendorSchema = v.strictObject({
+	slug,
+	name: text(2, 100),
+	aliases: v.optional(v.array(text(2, 100))),
+});
+
 export const originalSchema = v.strictObject({
 	slug,
+	vendor: v.optional(slug),
 	name: text(2, 100),
 	url: https,
 	category: v.picklist(categories),
@@ -237,6 +244,8 @@ export const requestSchema = v.strictObject({
 });
 export const featuredSchema = v.array(slug);
 
+export type Vendor = v.InferOutput<typeof vendorSchema>;
+
 export type Original = v.InferOutput<typeof originalSchema>;
 
 export type Project = v.InferOutput<typeof projectSchema>;
@@ -250,6 +259,7 @@ export type Suite = v.InferOutput<typeof suiteSchema>;
 export type Request = v.InferOutput<typeof requestSchema>;
 
 export type Catalog = {
+	vendors?: Vendor[];
 	originals: Original[];
 	projects: Project[];
 	tools: ToolSource[];
@@ -276,6 +286,27 @@ export function validateRelationships(catalog: Catalog): void {
 		if (new Set(values).size !== values.length)
 			throw new Error(`Duplicate ${kind}`);
 	};
+
+	const vendors = catalog.vendors ?? [];
+	unique(
+		vendors.map((vendor) => vendor.slug),
+		"vendor slug",
+	);
+	unique(
+		vendors.flatMap((vendor) =>
+			[vendor.name, ...(vendor.aliases ?? [])].map((name) =>
+				name.trim().toLowerCase(),
+			),
+		),
+		"vendor name",
+	);
+	for (const original of catalog.originals) {
+		if (
+			original.vendor &&
+			!vendors.some((vendor) => vendor.slug === original.vendor)
+		)
+			throw new Error(`Unknown vendor: ${original.vendor}`);
+	}
 
 	unique(
 		catalog.originals.map((o) => o.slug),

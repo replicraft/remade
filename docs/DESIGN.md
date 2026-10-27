@@ -149,3 +149,15 @@ Keep galleries on project detail pages, not directory cards. The filmstrip follo
 Use a slightly larger Screenshots heading than the metadata labels. Give every thumbnail an equal-width transparent border, changing it to lime for the selected image. Keep the border inside the thumbnail box and pad the scrolling row so selection and keyboard focus are not clipped at either edge.
 
 Gallery controls enhance static links and native scrolling with a small browser module; no React hydration is required. Do not autoplay or move focus when switching images. Respect reduced motion and preserve full-size image links. Hide an unavailable external image behind a short descriptive fallback when enhancement is available. Pages without screenshots retain their current layout.
+
+## Vendor pages
+
+Header and footer Vendors links open `/vendor/`. Render an alphabetic grid of compact publisher names with counts for cataloged originals, originals with listed projects, and requests. Enhance with a labeled local search input only when JavaScript is available; keep every vendor link usable without it. Search also matches cataloged software names and aliases, with an accessible result count and empty state.
+
+`/vendor/<slug>/` shows the vendor name and catalog coverage totals, followed by compact original-software rows grouped by listed projects and Project Requests. Each project link includes its existing maturity label and summary. Use divided rows and responsive columns rather than embedding a full-size catalog card for every relationship. Original names link to `/software/<slug>/`; request rows link to their detail page. Do not label catalog inclusion as complete compatibility, and keep originals without projects or requests distinct from active requests. Software detail pages link back to their vendor. All page content and routes are static; search makes no network requests.
+
+Home search suggestions and both directory searches show a small “See all by {vendor}” link when the complete query matches a registered vendor name, slug or alias. Matching ignores case, accents and surrounding whitespace; partial vendor queries do not show the shortcut. Vendor matching uses bundled catalog metadata and makes no visitor network requests.
+
+Tool cards show up to three supported projects inline. Longer lists use **Tool for: View List**, opening a scrollable hover card with links to every supported project, including suite members. The same control works with keyboard focus and tap; Escape and outside clicks dismiss it. Native disclosure remains available without JavaScript. Tool detail pages keep their full supported-project sections.
+
+On tool detail pages, suite support appears as a Suite card first in the Works with grid, linking to the suite and stating that all its projects are included. Individual supported projects outside those suites follow as project cards, without duplicating suite members.

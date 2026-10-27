@@ -1,5 +1,6 @@
 slug: metriccraft
 name: MetricCraft
+authors: [ucs-care-group]
 repository: https://github.com/UCS-Care-Group/metriccraft
 originals:
 - microsoft-power-bi

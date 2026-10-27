@@ -3,6 +3,7 @@ import type { CatalogData, Metadata } from "../../lib/catalog";
 import { requestHref } from "../../lib/directory";
 import { label, metadataFor, repositoryUrl } from "../../lib/presentation";
 import type { Original } from "../../lib/schemas";
+import { vendorForOriginal, vendorHref } from "../../lib/vendors";
 import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
 import ListingDescription from "../catalog/ListingDescription";
@@ -25,6 +26,8 @@ export default function SoftwarePage({
 	const request = catalog.requests.find(
 		(request) => request.original === original.slug,
 	);
+
+	const vendor = vendorForOriginal(catalog.vendors, original.vendor);
 
 	return (
 		<>
@@ -52,6 +55,17 @@ export default function SoftwarePage({
 					{label(original.category)}
 				</p>
 				<h1 data-pagefind-meta="title">{original.name}</h1>
+				{vendor && (
+					<p className="text-sm">
+						Vendor:{" "}
+						<a
+							className="text-lime hover:underline"
+							href={vendorHref(vendor.slug)}
+						>
+							{vendor.name}
+						</a>
+					</p>
+				)}
 				{original.aliases?.length && (
 					<p>Also known as {original.aliases.join(", ")}</p>
 				)}

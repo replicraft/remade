@@ -1,6 +1,7 @@
 # Scope and limitations are maintainer-reported in the upstream README.
 slug: open-publisher
 name: Open Publisher
+authors: [rmellis]
 repository: https://github.com/rmellis/open-publisher
 website: https://openpublisher.app
 browser_url: https://openpublisher.app/

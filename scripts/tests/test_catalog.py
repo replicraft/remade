@@ -537,3 +537,32 @@ def test_local_project_screenshots_require_files_and_reject_symlinks(project_cat
     external.write_bytes(b"fixture")
     image.symlink_to(external)
     assert any("symlinks" in error for error in collect(project_catalog)[-1])
+
+
+def test_original_vendor_references_survive_request_removal(project_catalog: Path) -> None:
+    base = project_catalog / "apps/frontend/remade-wiki/src/content/catalog"
+    (base / "vendors.yaml").write_text("- slug: publisher\n  name: Publisher\n")
+    path = base / "originals.yaml"
+    path.write_text(path.read_text() + "  vendor: publisher\n")
+    assert not collect(project_catalog)[-1]
+    path.write_text(path.read_text().replace("vendor: publisher", "vendor: missing"))
+    assert any("vendor" in error for error in collect(project_catalog)[-1])
+
+
+@pytest.mark.parametrize(
+    "vendors",
+    [
+        "- slug: same\n  name: First\n- slug: same\n  name: Second\n",
+        "- slug: first\n  name: Publisher\n- slug: second\n  name: publisher\n",
+        "- slug: first\n  name: Publisher\n  aliases: [Former]\n- slug: second\n  name: former\n",
+        "- slug: valid\n  name: Publisher\n  aliases: invalid\n",
+        "- slug: invalid/slug\n  name: Publisher\n",
+        "- slug: valid\n  name: Publisher\n  unexpected: true\n",
+    ],
+)
+def test_vendor_registry_rejects_invalid_and_duplicate_records(
+    project_catalog: Path, vendors: str
+) -> None:
+    path = project_catalog / "apps/frontend/remade-wiki/src/content/catalog/vendors.yaml"
+    path.write_text(vendors)
+    assert collect(project_catalog)[-1]

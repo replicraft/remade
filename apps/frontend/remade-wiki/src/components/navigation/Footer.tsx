@@ -18,7 +18,11 @@ export default function Footer() {
 				>
 					<a href="/about/">About</a>
 
+					<a href="/vendor/">Vendors</a>
+
 					<a href={repositoryUrl}>GitHub</a>
+
+					<a href="https://discord.gg/xNASvxSx6j">Discord</a>
 
 					<a href={contributeUrl}>Submit</a>
 

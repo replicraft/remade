@@ -1,6 +1,7 @@
 # Included with maintainer approval for its Grammarly-style grammar checking scope.
 slug: harper
 name: Harper
+authors: [automattic]
 repository: https://github.com/Automattic/harper
 originals: [grammarly]
 category: productivity

@@ -1,6 +1,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/81.
 slug: crafthub
 name: CraftHub
+authors: [megathelegend]
 repository: https://github.com/MegaTheLEGEND/CraftHub
 url: https://github.com/MegaTheLEGEND/CraftHub
 languages:

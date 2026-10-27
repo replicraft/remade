@@ -1,6 +1,7 @@
 # Scope and limitations are maintainer-reported in the upstream README.
 slug: capsulecraft
 name: CapsuleCraft
+authors: [kostyk348, kobaltgit]
 repository: https://github.com/kostyk348/CapsuleCraft
 originals:
 - obsidian

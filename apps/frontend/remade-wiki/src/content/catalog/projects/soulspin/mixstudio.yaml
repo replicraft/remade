@@ -4,6 +4,7 @@ name: MixStudio
 authors:
   - soulspin
 repository: https://github.com/soulspin/MixStudio
+browser_url: https://playground.daijro.dev/head/mixstudio/
 originals:
   - dj-studio
 category: creative

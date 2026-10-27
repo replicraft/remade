@@ -21,6 +21,7 @@ const requests = directoryRecords(catalog, metadata)
 	<HomePage catalog={catalog} metadata={metadata}>
 		<DirectorySearch
 			records={searchIndex(directoryRecords(catalog, metadata))}
+			vendors={catalog.vendors}
 			client:load
 		/>
 		<RequestPreview records={requests} slot="request-preview" client:load />

@@ -1,0 +1,23 @@
+---
+import VendorPage from "../../components/pages/VendorPage";
+import Layout from "../../layouts/Layout.astro";
+import { loadCatalog } from "../../lib/catalog";
+import { vendorGroups } from "../../lib/vendors";
+
+export async function getStaticPaths() {
+	return vendorGroups(await loadCatalog()).map((group) => ({
+		params: { slug: group.vendor.slug },
+		props: { group },
+	}));
+}
+
+const { group } = Astro.props;
+---
+
+<Layout
+	description={`Cataloged ${group.vendor.name} software, listed reimplementations and outstanding Project Requests.`}
+	index
+	title={`${group.vendor.name} software`}
+>
+	<VendorPage group={group} />
+</Layout>

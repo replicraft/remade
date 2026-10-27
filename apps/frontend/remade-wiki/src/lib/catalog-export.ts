@@ -5,13 +5,21 @@ import {
 	requestSchema,
 	suiteSchema,
 	toolSchema,
+	vendorSchema,
 } from "./schemas";
 import { screenshotUrl } from "./screenshots";
 import { supportedProjectSlugs } from "./suites";
 
 // Explicit public allowlists: future source fields are not automatically exported.
+const publicVendor = v.object({
+	slug: vendorSchema.entries.slug,
+	name: vendorSchema.entries.name,
+	aliases: vendorSchema.entries.aliases,
+});
+
 const publicOriginal = v.object({
 	slug: originalSchema.entries.slug,
+	vendor: originalSchema.entries.vendor,
 	name: originalSchema.entries.name,
 	url: originalSchema.entries.url,
 	category: originalSchema.entries.category,
@@ -75,6 +83,16 @@ const publicRequest = v.object({
 	addedAt,
 });
 
+function vendorsWithPages(vendors: unknown[], site: string) {
+	return v
+		.parse(v.array(publicVendor), vendors)
+		.sort((a, b) => a.slug.localeCompare(b.slug))
+		.map((vendor) => ({
+			...vendor,
+			pageUrl: new URL(`/vendor/${vendor.slug}/`, site).href,
+		}));
+}
+
 function originalsWithPages(originals: unknown[], site: string) {
 	return v
 		.parse(v.array(publicOriginal), originals)
@@ -87,6 +105,7 @@ function originalsWithPages(originals: unknown[], site: string) {
 
 export function catalogExport(
 	input: {
+		vendors?: unknown[];
 		originals: unknown[];
 		projects: unknown[];
 		tools: unknown[];
@@ -104,6 +123,7 @@ export function catalogExport(
 	return {
 		schemaVersion: 2,
 		site,
+		vendors: vendorsWithPages(input.vendors ?? [], site),
 		originals: originalsWithPages(input.originals, site),
 		projects: v
 			.parse(v.array(publicProject), input.projects)
@@ -136,7 +156,7 @@ export function catalogExport(
 }
 
 export function requestsExport(
-	input: { originals: unknown[]; requests: unknown[] },
+	input: { vendors?: unknown[]; originals: unknown[]; requests: unknown[] },
 	site: string,
 ) {
 	const originals = new Map(
@@ -146,6 +166,7 @@ export function requestsExport(
 	return {
 		schemaVersion: 2,
 		site,
+		vendors: vendorsWithPages(input.vendors ?? [], site),
 		requests: v
 			.parse(v.array(publicRequest), input.requests)
 			.sort((a, b) => a.original.localeCompare(b.original))

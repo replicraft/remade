@@ -517,3 +517,147 @@ test("duplicate-email sign-in shows guidance without reflecting arbitrary messag
 	await page.goto("/login/?auth_error=untrusted-message");
 	await expect(page.getByText("untrusted-message")).toHaveCount(0);
 });
+
+test("vendor pages show implemented originals as well as outstanding requests", async ({
+	page,
+}) => {
+	await page.goto("/vendor/autodesk/");
+	await expect(
+		page.getByRole("heading", { name: "Autodesk", exact: true }),
+	).toBeVisible();
+	await expect(
+		page.getByRole("link", { name: "Autodesk Fusion", exact: true }),
+	).toHaveAttribute("href", "/software/autodesk-fusion/");
+	await expect(
+		page.getByRole("link", { name: "SolidCraft →", exact: true }).first(),
+	).toHaveAttribute("href", "/projects/solidcraft/");
+	await expect(
+		page.getByRole("heading", { name: /Project Requests/ }),
+	).toBeVisible();
+	await page.goto("/software/autodesk-fusion/");
+	await expect(
+		page.getByRole("link", { name: "Autodesk", exact: true }),
+	).toHaveAttribute("href", "/vendor/autodesk/");
+});
+
+test("vendor index searches names and cataloged software locally", async ({
+	page,
+}) => {
+	await page.goto("/vendor/");
+	await page
+		.getByRole("searchbox", { name: "Find a vendor or software" })
+		.fill("Photoshop");
+	await expect(page.getByRole("status")).toHaveText("1 vendor");
+	await expect(
+		page.locator("li[data-vendor-search]:visible a"),
+	).toHaveAttribute("href", "/vendor/adobe/");
+	await page.getByRole("searchbox").fill("no-vendor-matches-this");
+	await expect(page.getByText("No vendors match your search.")).toBeVisible();
+});
+
+test("vendor browsing works without JavaScript", async ({ browser }) => {
+	const context = await browser.newContext({ javaScriptEnabled: false });
+	try {
+		const page = await context.newPage();
+		await page.goto("http://127.0.0.1:4377/vendor/");
+		await page.locator('main a[href="/vendor/autodesk/"]').click();
+		await expect(
+			page.getByRole("heading", { name: "Autodesk", exact: true }),
+		).toBeVisible();
+		await expect(
+			page.getByRole("link", { name: "Autodesk Fusion", exact: true }),
+		).toBeVisible();
+	} finally {
+		await context.close();
+	}
+});
+
+test("exact vendor searches offer a shortcut from home and both directories", async ({
+	page,
+}) => {
+	await page.goto("/");
+	await page.getByRole("searchbox").fill(" Autodesk ");
+	await expect(
+		page.getByRole("link", { name: "See all by Autodesk →", exact: true }),
+	).toHaveAttribute("href", "/vendor/autodesk/");
+	await page.getByRole("searchbox").fill("Autodes");
+	await expect(
+		page.getByRole("link", { name: /See all by Autodesk/ }),
+	).toHaveCount(0);
+	for (const path of [
+		"/explore/?q=autodesk",
+		"/requests/?q=AUTODESK",
+		"/explore/page/2/?q=autodesk",
+		"/requests/page/2/?q=autodesk",
+	]) {
+		await page.goto(path);
+		await expect(
+			page.getByRole("link", { name: "See all by Autodesk →", exact: true }),
+		).toHaveAttribute("href", "/vendor/autodesk/");
+	}
+	await page.goto("/explore/?q=Alludo");
+	await expect(
+		page.getByRole("link", { name: "See all by Corel →", exact: true }),
+	).toHaveAttribute("href", "/vendor/corel/");
+});
+
+test("tool target hover lists include every project and dismiss with Escape", async ({
+	page,
+}) => {
+	await page.goto("/explore/?q=OpenPlayground");
+	const card = page.getByRole("article").filter({
+		has: page.getByRole("heading", { name: "OpenPlayground", exact: true }),
+	});
+	const list = card.locator("[data-tool-targets]");
+	const trigger = list.locator("summary");
+	await expect(list).not.toHaveAttribute("open", "");
+	await trigger.hover();
+	await expect(list).toHaveAttribute("open", "");
+	await expect(list.getByRole("link")).toHaveCount(32);
+	await expect(
+		list.getByRole("link", { name: "PhotoCraft", exact: true }),
+	).toHaveAttribute("href", "/projects/photocraft/");
+	await expect(
+		list.getByRole("link", { name: "MailCraft", exact: true }),
+	).toHaveAttribute("href", "/projects/ucs-mailcraft/");
+	await page.keyboard.press("Escape");
+	await expect(list).not.toHaveAttribute("open", "");
+	await page.mouse.move(0, 0);
+	await trigger.focus();
+	await page.keyboard.press("Shift+Tab");
+	await page.keyboard.press("Tab");
+	await expect(list).toHaveAttribute("open", "");
+	await page.keyboard.press("Tab");
+	await expect(list.getByRole("link").first()).toBeFocused();
+	await page.keyboard.press("Escape");
+	await expect(trigger).toBeFocused();
+	await expect(list).not.toHaveAttribute("open", "");
+});
+
+test("tool target lists open by tap on mobile", async ({
+	browser,
+	baseURL,
+}) => {
+	const context = await browser.newContext({
+		baseURL,
+		viewport: { width: 320, height: 760 },
+		hasTouch: true,
+		isMobile: true,
+	});
+	try {
+		const page = await context.newPage();
+		await page.goto("/explore/?q=OpenPlayground");
+		const list = page
+			.getByRole("article")
+			.filter({
+				has: page.getByRole("heading", { name: "OpenPlayground", exact: true }),
+			})
+			.locator("[data-tool-targets]");
+		await list.locator("summary").tap();
+		await expect(list.getByRole("link").first()).toBeVisible();
+		await list.getByRole("link", { name: "EarthCraft", exact: true }).click();
+		await expect(page).toHaveURL(/\/projects\/earthcraft\/$/);
+	} finally {
+		await context.close();
+	}
+});

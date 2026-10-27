@@ -20,6 +20,7 @@ export const GET: APIRoute = async ({ site }) => {
 		catalogExport(
 			{
 				originals: catalog.originals,
+				vendors: catalog.vendors,
 				projects: projects.map((p) => ({
 					...p.data,
 					addedAt: dates.get(p.id),

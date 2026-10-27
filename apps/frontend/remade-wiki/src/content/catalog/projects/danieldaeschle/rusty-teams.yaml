@@ -2,6 +2,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/80.
 slug: rusty-teams
 name: Rusty Teams
+authors: [danieldaeschle]
 repository: https://github.com/danieldaeschle/rusty-teams
 originals:
   - microsoft-teams

@@ -1,5 +1,6 @@
 slug: mitcad
 name: Mitcad
+authors: [mitcad]
 repository: https://github.com/mitcad/Mitcad
 originals:
 - autodesk-fusion

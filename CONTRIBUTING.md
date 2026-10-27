@@ -40,7 +40,7 @@ Requests may also include optional `suggested_names`, such as `[MusicCraft]`. Th
 
 ## Credit authors
 
-Projects and tools may include `authors: [github-handle]` directly in their YAML. Use lowercase GitHub user or organization handles; no separate author file is needed. Credit documented authors explicitly; repository ownership or dependency relationships do not establish authorship. Multiple authors are supported. These handles drive the static `/authors/<github-handle>` pages and **View More by Author** links without changing featured selections.
+Projects and tools may include `authors: [github-handle]` directly in their YAML. Use lowercase GitHub or Codeberg user or organization handles; no separate author file is needed. Prefer documented author credits; when none are recorded, use the repository user or organization. Do not credit dependencies automatically. Multiple authors are supported. These handles drive the static `/authors/<github-handle>` pages and **View More by Author** links without changing featured selections.
 
 ## Correct an entry
 
@@ -57,3 +57,7 @@ See [Remade's disclaimer page](https://remade.wiki/disclaimer) for the legal con
 ## Automated checks
 
 GitHub automatically validates submissions, verifies policy acknowledgment, and checks links when a pull request is opened or updated. No manual setup is required.
+
+### Vendor references
+
+When adding an original, look for its publisher or vendor brand in `apps/frontend/remade-wiki/src/content/catalog/vendors.yaml`. Set the original's optional `vendor` to that canonical slug, adding a `{slug, name}` vendor record if needed and supported by the software's publisher information. This keeps `/vendor/<slug>/` accurate after a request is fulfilled. Leave unknown ownership unassigned rather than deriving it from the reimplementation's author.

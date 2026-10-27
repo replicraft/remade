@@ -1,5 +1,6 @@
 slug: plancraft
 name: PlanCraft
+authors: [rallegretti]
 repository: https://github.com/rallegretti/PlanCraft
 originals:
 - microsoft-project

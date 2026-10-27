@@ -19,6 +19,7 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	const output = catalogExport(
 		{
 			originals,
+			vendors: catalog.vendors.map((vendor) => ({ ...vendor, ...internal })),
 			projects: catalog.entries
 				.filter((e) => e.kind === "project")
 				.map((p) => ({
@@ -47,6 +48,7 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	const requests = requestsExport(
 		{
 			originals,
+			vendors: catalog.vendors.map((vendor) => ({ ...vendor, ...internal })),
 			requests: catalog.requests.map((r) => ({
 				...r,
 				...internal,
@@ -69,9 +71,19 @@ it("exports preserve public relationships and strip unlisted fields at every lev
 	expect(serialized).not.toContain(discord.discord_server);
 	expect(serialized).not.toContain(discord.discord_thread);
 
+	expect(output.vendors.find((vendor) => vendor.slug === "autodesk")).toEqual({
+		slug: "autodesk",
+		name: "Autodesk",
+		pageUrl: "https://remade.wiki/vendor/autodesk/",
+	});
+	expect(
+		output.originals.find((original) => original.slug === "autodesk-fusion")
+			?.vendor,
+	).toBe("autodesk");
 	expect(output.schemaVersion).toBe(2);
 
 	expect(requests.schemaVersion).toBe(2);
+	expect(requests.vendors).toEqual(output.vendors);
 
 	expect(output.projects.length).toBe(catalog.projects.length);
 
