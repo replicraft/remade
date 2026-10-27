@@ -2,6 +2,7 @@ import type { CatalogData, Metadata } from "../../lib/catalog";
 import { findBySlug, metadataFor } from "../../lib/presentation";
 import type { Suite } from "../../lib/schemas";
 import EntryCard from "../catalog/EntryCard";
+import PaginatedList from "../navigation/PaginatedList";
 
 interface Props {
 	suite: Suite;
@@ -31,7 +32,11 @@ export default function SuitePage({ suite, catalog, metadata }: Props) {
 				<h2 id="suite-products">
 					Products <span className="text-lime">{products.length}</span>
 				</h2>
-				<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+				<PaginatedList
+					className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3"
+					id="suite-products-list"
+					label="Products"
+				>
 					{products.map((entry) => (
 						<EntryCard
 							entry={entry}
@@ -42,13 +47,17 @@ export default function SuitePage({ suite, catalog, metadata }: Props) {
 							suites={catalog.suites}
 						/>
 					))}
-				</div>
+				</PaginatedList>
 			</section>
 
 			{tools.length > 0 && (
 				<section aria-labelledby="suite-tools">
 					<h2 id="suite-tools">Supporting tools</h2>
-					<div className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3">
+					<PaginatedList
+						className="grid auto-rows-fr grid-cols-1 gap-[18px] min-[600px]:grid-cols-2 min-[900px]:grid-cols-3"
+						id="suite-tools-list"
+						label="Supporting tools"
+					>
 						{tools.map((entry) => (
 							<EntryCard
 								entry={entry}
@@ -59,7 +68,7 @@ export default function SuitePage({ suite, catalog, metadata }: Props) {
 								suites={catalog.suites}
 							/>
 						))}
-					</div>
+					</PaginatedList>
 				</section>
 			)}
 		</>

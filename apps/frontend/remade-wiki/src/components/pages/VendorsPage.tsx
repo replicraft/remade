@@ -1,4 +1,5 @@
 import { type VendorGroup, vendorHref } from "../../lib/vendors";
+import PaginatedList from "../navigation/PaginatedList";
 
 export default function VendorsPage({ groups }: { groups: VendorGroup[] }) {
 	return (
@@ -30,7 +31,12 @@ export default function VendorsPage({ groups }: { groups: VendorGroup[] }) {
 				>
 					{groups.length} vendors
 				</p>
-				<ul className="grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+				<PaginatedList
+					as="ul"
+					className="grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3"
+					id="vendors-page"
+					label="Vendors"
+				>
 					{groups.map((group) => (
 						<li data-vendor-search={group.search} key={group.vendor.slug}>
 							<a
@@ -50,7 +56,7 @@ export default function VendorsPage({ groups }: { groups: VendorGroup[] }) {
 							</a>
 						</li>
 					))}
-				</ul>
+				</PaginatedList>
 				<p className="mt-5" data-vendor-no-results hidden>
 					No vendors match your search.
 				</p>
