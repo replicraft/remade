@@ -3,6 +3,8 @@ import { readdir, readFile } from "node:fs/promises";
 import { Miniflare, Response } from "miniflare";
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from "vitest";
 
+import { identityRaceWorker } from "./identity-race-worker";
+
 const origin = "https://remade.wiki";
 const api = "https://api.remade.wiki";
 let worker: Miniflare;
@@ -63,8 +65,9 @@ beforeAll(async () => {
 					name: "remade-api-test",
 					compatibilityDate: "2026-10-06",
 					manifest: {
-						mainModule: "index.js",
+						mainModule: "test-entry.js",
 						modules: {
+							"test-entry.js": { type: "esm", contents: identityRaceWorker },
 							"index.js": {
 								type: "esm",
 								contents: await readFile(
@@ -1335,3 +1338,52 @@ it("allows reauthorizing an already connected identity without creating duplicat
 			.first("count(*)"),
 	).toBe(1);
 });
+
+it.each(["github", "discord"] as const)(
+	"reuses a concurrent %s winner when its email claim appears after the identity lookup",
+	async (provider) => {
+		await worker.dispatchFetch(`${api}/__test/identity-read?reset=1`);
+		const flow = await begin(provider);
+		const delayed = worker.dispatchFetch(
+			`${api}/api/v1/auth/${provider}/callback?code=delayed&state=${flow.state}${provider === "discord" ? "&iss=https%3A%2F%2Fdiscord.com" : ""}`,
+			{
+				headers: { Cookie: flow.cookie, "X-Test-Hold-Identity-Read": "1" },
+				redirect: "manual",
+			},
+		);
+		try {
+			await expect
+				.poll(async () => {
+					const response = await worker.dispatchFetch(
+						`${api}/__test/identity-read`,
+					);
+					return ((await response.json()) as { held: boolean }).held;
+				})
+				.toBe(true);
+			const winner = await login(provider);
+			await worker.dispatchFetch(`${api}/__test/identity-read?release=1`);
+			const returning = await delayed;
+			expect(returning.headers.get("Location")).toBe(origin);
+			expect((await accountFor(sessionCookie(returning))).id).toBe(
+				(await accountFor(sessionCookie(winner))).id,
+			);
+			const db = await worker.getD1Database("DB");
+			expect(
+				await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+			).toBe(1);
+			expect(
+				await db
+					.prepare("SELECT count(*) FROM user_identities")
+					.first("count(*)"),
+			).toBe(1);
+			expect(
+				await db
+					.prepare("SELECT count(*) FROM user_sessions")
+					.first("count(*)"),
+			).toBe(2);
+		} finally {
+			await worker.dispatchFetch(`${api}/__test/identity-read?release=1`);
+			await delayed;
+		}
+	},
+);

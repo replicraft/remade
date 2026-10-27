@@ -66,6 +66,17 @@ pub enum IdentityResolution {
     IdentityInUse,
 }
 
+fn identity_resolution(
+    identity: ExistingIdentity,
+    link: Option<&LinkSession>,
+) -> IdentityResolution {
+    if link.is_some_and(|session| session.user_id != identity.user_id) {
+        IdentityResolution::IdentityInUse
+    } else {
+        IdentityResolution::User(identity.user_id)
+    }
+}
+
 async fn find_identity(
     db: &D1Database,
     provider: Provider,
@@ -123,6 +134,11 @@ pub async fn resolve_identity(
         None => record_id()?,
     };
     if email_in_use(db, &profile.email_hashes, &user_id).await? {
+        // A competing callback may have created this same identity after our first
+        // lookup. Its provider key is authoritative; this is not a second account.
+        if let Some(identity) = find_identity(db, profile.provider, &profile.provider_id).await? {
+            return Ok(identity_resolution(identity, link));
+        }
         return Ok(IdentityResolution::EmailInUse);
     }
     let identity_id = record_id()?;
@@ -154,13 +170,7 @@ pub async fn resolve_identity(
         return Ok(IdentityResolution::User(user_id));
     }
     if let Some(identity) = find_identity(db, profile.provider, &profile.provider_id).await? {
-        return Ok(
-            if link.is_some_and(|session| session.user_id != identity.user_id) {
-                IdentityResolution::IdentityInUse
-            } else {
-                IdentityResolution::User(identity.user_id)
-            },
-        );
+        return Ok(identity_resolution(identity, link));
     }
     if email_in_use(db, &profile.email_hashes, &user_id).await? {
         return Ok(IdentityResolution::EmailInUse);
