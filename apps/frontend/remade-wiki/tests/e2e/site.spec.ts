@@ -193,7 +193,7 @@ test("static catalog exports and discovery files are served by the production bu
 	expect((await request.get("/sitemap-index.xml")).ok()).toBe(true);
 });
 
-test("anonymous browsing keeps account access reachable without an authentication lookup", async ({
+test("anonymous browsing offers sign-in without contacting the authentication API", async ({
 	page,
 }) => {
 	const authRequests: string[] = [];
@@ -202,17 +202,55 @@ test("anonymous browsing keeps account access reachable without an authenticatio
 			authRequests.push(request.url());
 	});
 	await page.goto("/");
-	const login = page.getByRole("link", { name: "Login", exact: true });
+	const login = page.getByRole("button", { name: "Login", exact: true });
 	await expect(login).toBeVisible();
 	await page.getByRole("link", { name: "Explore", exact: true }).click();
 	await expect(
-		page.getByRole("link", { name: "Login", exact: true }),
+		page.getByRole("button", { name: "Login", exact: true }),
 	).toBeVisible();
+	await page.getByRole("button", { name: "Login", exact: true }).click();
+	await expect(
+		page.getByRole("link", { name: "Continue with GitHub" }),
+	).toHaveAttribute("href", /\/auth\/github$/);
+	await expect(
+		page.getByRole("link", { name: "Continue with Discord" }),
+	).toHaveAttribute("href", /\/auth\/discord$/);
 	expect(authRequests).toEqual([]);
 });
 
-// Restore production account flows when authentication is enabled in the header.
-test.fixme("invalid returning sessions clear the login hint", async ({
+test("mobile login dropdown fits the viewport and retains its provider preference", async ({
+	page,
+}) => {
+	await page.setViewportSize({ width: 320, height: 720 });
+	await page.goto("/");
+	const menuBounds = await page
+		.getByLabel("Menu", { exact: true })
+		.boundingBox();
+	const loginBounds = await page
+		.getByRole("button", { name: "Login", exact: true })
+		.boundingBox();
+	expect(menuBounds).not.toBeNull();
+	expect(loginBounds).not.toBeNull();
+	expect((menuBounds?.x || 0) + (menuBounds?.width || 0)).toBeLessThanOrEqual(
+		loginBounds?.x || 0,
+	);
+	await page.evaluate(() =>
+		localStorage.setItem("remade-last-login-provider", "github"),
+	);
+	await page.reload();
+	await page.getByRole("button", { name: "Login", exact: true }).click();
+	const provider = page.getByRole("link", {
+		name: "Continue with GitHub Last used",
+	});
+	await expect(provider).toBeVisible();
+	const bounds = await provider.boundingBox();
+	expect(bounds?.x).toBeGreaterThanOrEqual(0);
+	expect((bounds?.x || 0) + (bounds?.width || 0)).toBeLessThanOrEqual(320);
+	await page.keyboard.press("Escape");
+	await expect(provider).not.toBeVisible();
+});
+
+test("invalid returning sessions clear the login hint", async ({
 	page,
 	context,
 }) => {
@@ -240,11 +278,11 @@ test.fixme("invalid returning sessions clear the login hint", async ({
 		)
 		.toBe(false);
 	await expect(
-		page.getByRole("link", { name: "Login", exact: true }),
+		page.getByRole("button", { name: "Login", exact: true }),
 	).toBeVisible();
 });
 
-test.fixme("a returning account can log out from the mobile header", async ({
+test("a returning account can log out from the mobile header", async ({
 	page,
 	context,
 }) => {
@@ -285,7 +323,7 @@ test.fixme("a returning account can log out from the mobile header", async ({
 	expect((bounds?.x || 0) + (bounds?.width || 0)).toBeLessThanOrEqual(320);
 	await logout.click();
 	await expect(
-		page.getByRole("link", { name: "Login", exact: true }),
+		page.getByRole("button", { name: "Login", exact: true }),
 	).toBeVisible();
 	expect(lookups).toBe(1);
 	expect(
@@ -420,6 +458,64 @@ test("project browser links appear beside Website only when configured", async (
 	await expect(
 		page.getByRole("link", { name: "Try it in your browser ↗", exact: true }),
 	).toHaveCount(0);
+});
+
+test("account settings starts connecting another provider with an empty POST", async ({
+	page,
+	context,
+}) => {
+	await context.addCookies([
+		{ name: "remade_login_hint", value: "1", url: "http://127.0.0.1:4377" },
+	]);
+	await page.route("**/api/v1/auth/me", async (route) => {
+		await route.fulfill({
+			status: 200,
+			headers: {
+				"Access-Control-Allow-Origin": "http://127.0.0.1:4377",
+				"Access-Control-Allow-Credentials": "true",
+			},
+			json: {
+				id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+				displayName: "Example User",
+				avatarUrl: null,
+				identities: [{ provider: "github", username: "example" }],
+			},
+		});
+	});
+	await page.route("**/api/v1/auth/discord/link", async (route) => {
+		expect(route.request().method()).toBe("POST");
+		expect(route.request().postData() || "").toBe("");
+		expect(route.request().headers().origin).toBe("http://127.0.0.1:4377");
+		await route.fulfill({
+			status: 200,
+			contentType: "text/plain",
+			body: "OAuth connection started",
+		});
+	});
+	await page.goto("/");
+	await page
+		.getByRole("combobox", { name: "Account menu for Example User" })
+		.click();
+	await page
+		.getByRole("option", { name: "Account settings", exact: true })
+		.click();
+	await expect(page).toHaveURL(/\/account\/$/);
+	await expect(page.getByText("Connected as @example")).toBeVisible();
+	const request = page.waitForRequest("**/api/v1/auth/discord/link");
+	await page.getByRole("button", { name: "Connect Discord" }).click();
+	await request;
+	await expect(page.getByText("OAuth connection started")).toBeVisible();
+});
+
+test("duplicate-email sign-in shows guidance without reflecting arbitrary messages", async ({
+	page,
+}) => {
+	await page.goto("/login/?auth_error=email_in_use");
+	await expect(page.getByRole("status")).toContainText(
+		"Sign in with your existing method",
+	);
+	await page.goto("/login/?auth_error=untrusted-message");
+	await expect(page.getByText("untrusted-message")).toHaveCount(0);
 });
 
 test("vendor pages show implemented originals as well as outstanding requests", async ({
@@ -564,4 +660,106 @@ test("tool target lists open by tap on mobile", async ({
 	} finally {
 		await context.close();
 	}
+});
+
+test("signing out in the header clears the separate account settings island", async ({
+	page,
+	context,
+}) => {
+	await context.addCookies([
+		{ name: "remade_login_hint", value: "1", url: "http://127.0.0.1:4377" },
+	]);
+	await page.route("**/api/v1/auth/me", (route) =>
+		route.fulfill({
+			status: 200,
+			headers: {
+				"Access-Control-Allow-Origin": "http://127.0.0.1:4377",
+				"Access-Control-Allow-Credentials": "true",
+			},
+			json: {
+				id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+				displayName: "Example User",
+				avatarUrl: null,
+				identities: [{ provider: "github", username: "example" }],
+			},
+		}),
+	);
+	await page.route("**/api/v1/auth/logout", (route) =>
+		route.fulfill({
+			status: 204,
+			headers: {
+				"Access-Control-Allow-Origin": "http://127.0.0.1:4377",
+				"Access-Control-Allow-Credentials": "true",
+			},
+		}),
+	);
+	await page.goto("/account/");
+	await expect(page.getByText("Connected as @example")).toBeVisible();
+	await page
+		.getByRole("combobox", { name: "Account menu for Example User" })
+		.click();
+	await page.getByRole("option", { name: "Logout", exact: true }).click();
+	await expect(
+		page.getByRole("button", { name: "Login", exact: true }),
+	).toBeVisible();
+	await expect(
+		page.getByRole("link", { name: "Sign in to manage your account" }),
+	).toBeVisible();
+	await expect(
+		page.getByRole("button", { name: "Connect Discord" }),
+	).toHaveCount(0);
+	await expect(page.getByText("Connected as @example")).toHaveCount(0);
+});
+
+test("a rejected provider attempt preserves Last used and does not announce an older session", async ({
+	page,
+	context,
+}) => {
+	await context.addCookies([
+		{ name: "remade_login_hint", value: "1", url: "http://127.0.0.1:4377" },
+	]);
+	await page.addInitScript(() => {
+		sessionStorage.setItem("remade-pending-login-toast", String(Date.now()));
+		sessionStorage.setItem("remade-pending-login-provider", "discord");
+		localStorage.setItem("remade-last-login-provider", "github");
+	});
+	await page.route("**/api/v1/auth/me", (route) =>
+		route.fulfill({
+			status: 200,
+			headers: {
+				"Access-Control-Allow-Origin": "http://127.0.0.1:4377",
+				"Access-Control-Allow-Credentials": "true",
+			},
+			json: {
+				id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+				displayName: "Existing User",
+				avatarUrl: null,
+				identities: [
+					{ provider: "github", username: "old-gh" },
+					{ provider: "discord", username: "old-discord" },
+				],
+			},
+		}),
+	);
+	await page.goto("/login/?auth_error=email_in_use&provider=discord");
+	await expect(
+		page.getByRole("combobox", { name: "Account menu for Existing User" }),
+	).toBeVisible();
+	await expect(page.getByRole("status")).toContainText("already registered");
+	await expect
+		.poll(() =>
+			page.evaluate(() => sessionStorage.getItem("remade-pending-login-toast")),
+		)
+		.toBeNull();
+	expect(
+		await page.evaluate(() =>
+			localStorage.getItem("remade-last-login-provider"),
+		),
+	).toBe("github");
+	await expect(
+		page.getByText("Logged in as old-discord", { exact: true }),
+	).toHaveCount(0);
+	await expect(
+		page.getByText("Logged in as old-gh", { exact: true }),
+	).toHaveCount(0);
 });

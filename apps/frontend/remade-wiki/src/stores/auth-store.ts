@@ -17,15 +17,26 @@ interface AuthState {
 	message: string;
 	initialize: (signal: AbortSignal) => Promise<void>;
 	signOut: () => Promise<void>;
+	synchronize: (account: Account | null) => void;
 }
 
 export function createAuthStore() {
+	let lookupVersion = 0;
 	return createStore<AuthState>()((set, get) => ({
 		account: null,
 		status: "checking",
 		busy: false,
 		message: "",
+		synchronize: (account) => {
+			lookupVersion++;
+			set({
+				account,
+				status: account ? "signed-in" : "signed-out",
+				message: "",
+			});
+		},
 		initialize: async (signal) => {
+			const version = ++lookupVersion;
 			if (!hasLoginHint(document.cookie)) {
 				set({ account: null, status: "signed-out" });
 				return;
@@ -35,14 +46,17 @@ export function createAuthStore() {
 
 			try {
 				const account = await resolveAccount(signal);
-				if (signal.aborted) return;
+				if (signal.aborted || version !== lookupVersion) return;
 
 				set({ account, status: account ? "signed-in" : "signed-out" });
-				document.dispatchEvent(new Event("remade-auth-changed"));
-				announceLogin(account);
+				document.dispatchEvent(
+					new CustomEvent("remade-auth-changed", { detail: account }),
+				);
+				announceLogin(account, location.search);
 			} catch {
 				// An unavailable API does not confirm the user is signed out.
-				if (!signal.aborted) set({ status: "unavailable" });
+				if (!signal.aborted && version === lookupVersion)
+					set({ status: "unavailable" });
 			}
 		},
 		signOut: async () => {
@@ -52,8 +66,10 @@ export function createAuthStore() {
 
 			try {
 				await logout();
-				set({ account: null, status: "signed-out" });
-				document.dispatchEvent(new Event("remade-auth-changed"));
+				get().synchronize(null);
+				document.dispatchEvent(
+					new CustomEvent("remade-auth-changed", { detail: null }),
+				);
 				toast.success("Logged out");
 			} catch {
 				set({ message: "Couldn’t log out. Please try again." });

@@ -8,4 +8,6 @@ cd "$worker_dir"
 export PATH="${CARGO_HOME:-$HOME/.cargo}/bin:$PATH"
 
 node --env-file-if-exists=.env configure-wrangler.mjs
+# A failed migration must stop deployment. Wrangler skips confirmation in CI.
+pnpm exec wrangler d1 migrations apply DB --remote --config wrangler.generated.toml
 exec pnpm exec wrangler deploy --config wrangler.generated.toml

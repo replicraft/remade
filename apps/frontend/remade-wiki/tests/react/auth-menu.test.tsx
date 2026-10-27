@@ -17,7 +17,10 @@ const account: auth.Account = {
 
 beforeEach(() => {
 	vi.clearAllMocks();
+	localStorage.removeItem("remade-last-login-provider");
 	sessionStorage.removeItem("remade-pending-login-toast");
+	sessionStorage.removeItem("remade-pending-login-provider");
+	window.history.replaceState(null, "", "/");
 	toast.dismiss();
 	vi.mocked(auth.hasLoginHint).mockReturnValue(false);
 	vi.mocked(auth.resolveAccount).mockResolvedValue(account);
@@ -28,8 +31,8 @@ describe("header authentication", () => {
 	it("shows Login without making an anonymous session request", async () => {
 		const screen = await render(<AuthMenu />);
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
-			.toHaveAttribute("href", `${auth.apiUrl}/auth/github`);
+			.element(screen.getByRole("button", { name: "Login" }))
+			.toBeVisible();
 		expect(auth.resolveAccount).not.toHaveBeenCalled();
 	});
 
@@ -44,7 +47,7 @@ describe("header authentication", () => {
 			.toBeVisible();
 		await screen.getByText("Logout", { exact: true }).click();
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.toBeVisible();
 		expect(toast.success).toHaveBeenCalledWith("Logged out");
 		expect(toast.success).not.toHaveBeenCalledWith("Logged in as example");
@@ -55,6 +58,8 @@ describe("header authentication", () => {
 	it("announces a confirmed OAuth return using the GitHub username only once", async () => {
 		vi.mocked(auth.hasLoginHint).mockReturnValue(true);
 		sessionStorage.setItem("remade-pending-login-toast", String(Date.now()));
+		sessionStorage.setItem("remade-pending-login-provider", "github");
+		window.history.replaceState(null, "", "/?auth_success=github");
 
 		const screen = await render(<AuthMenu />);
 		await expect
@@ -66,6 +71,29 @@ describe("header authentication", () => {
 		await render(<AuthMenu />);
 		await expect.poll(() => auth.resolveAccount).toHaveBeenCalledTimes(2);
 		expect(toast.success).toHaveBeenCalledOnce();
+	});
+
+	it("shows a Discord username and announces a confirmed Discord sign-in", async () => {
+		vi.mocked(auth.hasLoginHint).mockReturnValue(true);
+		vi.mocked(auth.resolveAccount).mockResolvedValue({
+			...account,
+			displayName: null,
+			identities: [{ provider: "discord", username: "discord.user" }],
+		});
+		sessionStorage.setItem("remade-pending-login-toast", String(Date.now()));
+		sessionStorage.setItem("remade-pending-login-provider", "discord");
+		window.history.replaceState(null, "", "/?auth_success=discord");
+		const screen = await render(<AuthMenu />);
+		await expect
+			.element(
+				screen.getByRole("combobox", { name: "Account menu for discord.user" }),
+			)
+			.toBeVisible();
+		expect(toast.success).toHaveBeenCalledWith("Logged in as discord.user");
+		await screen
+			.getByRole("combobox", { name: "Account menu for discord.user" })
+			.click();
+		await expect.element(screen.getByText("@discord.user")).toBeVisible();
 	});
 
 	it("does not announce an unsuccessful OAuth return", async () => {
@@ -91,7 +119,7 @@ describe("header authentication", () => {
 
 		const screen = await render(<AuthMenu />);
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.not.toBeInTheDocument();
 
 		confirmAccount(account);
@@ -102,7 +130,7 @@ describe("header authentication", () => {
 			)
 			.toBeVisible();
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.not.toBeInTheDocument();
 	});
 
@@ -113,7 +141,7 @@ describe("header authentication", () => {
 
 		await expect.poll(() => auth.resolveAccount).toHaveBeenCalledOnce();
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.not.toBeInTheDocument();
 	});
 

@@ -11,11 +11,16 @@ function required(name) {
 }
 
 const clientId = required("GITHUB_CLIENT_ID");
+const discordClientId = process.env.DISCORD_CLIENT_ID?.trim();
 const databaseName = required("D1_DATABASE_NAME");
 const databaseId = required("D1_DATABASE_ID");
 
 if (!/^[A-Za-z0-9_-]+$/.test(clientId)) {
 	throw new Error("GITHUB_CLIENT_ID must be a GitHub OAuth client ID.");
+}
+
+if (discordClientId && !/^[1-9][0-9]{0,19}$/.test(discordClientId)) {
+	throw new Error("DISCORD_CLIENT_ID must be a Discord application ID.");
 }
 
 if (!/^[A-Za-z0-9_-]+$/.test(databaseName)) {
@@ -36,7 +41,10 @@ const template = await readFile(
 	"utf8",
 );
 const config = template
-	.replace("[vars]", `[vars]\nGITHUB_CLIENT_ID = ${JSON.stringify(clientId)}`)
+	.replace(
+		"[vars]",
+		`[vars]\nGITHUB_CLIENT_ID = ${JSON.stringify(clientId)}${discordClientId ? `\nDISCORD_CLIENT_ID = ${JSON.stringify(discordClientId)}` : ""}`,
+	)
 	.replace(
 		/^database_name = .*$/m,
 		`database_name = ${JSON.stringify(databaseName)}`,

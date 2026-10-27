@@ -1,43 +1,59 @@
 import { toast } from "sonner";
-import { type Account, apiUrl } from "./auth";
+import { type Account, loginUrl } from "./auth";
+
+import { type LoginProvider, rememberLoginProvider } from "./login-provider";
 
 const loginToastKey = "remade-pending-login-toast";
 
 export function promptLoginToVote() {
-	toast.info("Login with github to vote", {
+	toast.info("Login to vote", {
 		id: "request-login-required",
 		action: {
 			label: "Login",
 			onClick: () => {
-				rememberLogin();
-				window.location.assign(`${apiUrl}/auth/github`);
+				window.location.assign(loginUrl);
 			},
 		},
 	});
 }
 
-export function rememberLogin() {
+export function rememberLogin(provider?: LoginProvider) {
 	try {
 		sessionStorage.setItem(loginToastKey, String(Date.now()));
+		if (provider)
+			sessionStorage.setItem("remade-pending-login-provider", provider);
 	} catch {
 		// Login still works when browser storage is unavailable.
 	}
 }
 
-export function announceLogin(account: Account | null) {
+export function announceLogin(account: Account | null, search = "") {
+	let pending: string | null = null;
+	let pendingProvider: string | null = null;
 	try {
-		const pending = sessionStorage.getItem(loginToastKey);
+		pending = sessionStorage.getItem(loginToastKey);
+		pendingProvider = sessionStorage.getItem("remade-pending-login-provider");
 		sessionStorage.removeItem(loginToastKey);
-
-		const username = account?.identities.find(
-			(identity) => identity.provider === "github",
-		)?.username;
-		const elapsed = Date.now() - Number(pending);
-
-		if (pending && username && elapsed >= 0 && elapsed < 10 * 60 * 1000) {
-			toast.success(`Logged in as ${username}`);
-		}
+		sessionStorage.removeItem("remade-pending-login-provider");
 	} catch {
-		// Storage is only used to avoid announcing login on every page load.
+		// Notifications and preferences are optional when storage is unavailable.
 	}
+	const elapsed = Date.now() - Number(pending);
+	const recent = Boolean(pending) && elapsed >= 0 && elapsed < 10 * 60 * 1000;
+	const result = new URLSearchParams(search);
+	const successes = result.getAll("auth_success");
+	if (
+		!recent ||
+		result.has("auth_error") ||
+		successes.length !== 1 ||
+		successes[0] !== pendingProvider
+	)
+		return;
+
+	const identity = account?.identities.find(
+		(identity) => identity.provider === pendingProvider,
+	);
+	if (!identity) return;
+	rememberLoginProvider(identity.provider);
+	toast.success(`Logged in as ${identity.username}`);
 }

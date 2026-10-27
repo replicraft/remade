@@ -4,16 +4,29 @@ export const apiUrl = (
 	import.meta.env.PUBLIC_REMADE_API_BASE_URL || "https://api.remade.wiki/api/v1"
 ).replace(/\/$/, "");
 
-const accountSchema = v.object({
+export const loginUrl = "/login/";
+
+export function usesActivityPreview(): boolean {
+	return import.meta.env.DEV && !import.meta.env.PUBLIC_REMADE_API_BASE_URL;
+}
+
+export const accountSchema = v.object({
 	id: v.pipe(v.string(), v.uuid()),
 	displayName: v.nullable(v.string()),
 	avatarUrl: v.nullable(v.pipe(v.string(), v.url())),
 	identities: v.array(
-		v.object({ provider: v.literal("github"), username: v.string() }),
+		v.object({
+			provider: v.picklist(["github", "discord"]),
+			username: v.string(),
+		}),
 	),
 });
 
 export type Account = v.InferOutput<typeof accountSchema>;
+
+export function accountUsername(account: Account | null): string | undefined {
+	return account?.identities[0]?.username;
+}
 
 export function hasLoginHint(cookies: string): boolean {
 	return cookies
@@ -40,7 +53,7 @@ export function clearLoginHint(): void {
 export async function resolveAccount(
 	signal?: AbortSignal,
 ): Promise<Account | null> {
-	if (import.meta.env.DEV) return null;
+	if (usesActivityPreview()) return null;
 	const response = await fetch(`${apiUrl}/auth/me`, {
 		credentials: "include",
 		cache: "no-store",
@@ -58,7 +71,7 @@ export async function resolveAccount(
 }
 
 export async function logout(): Promise<void> {
-	if (import.meta.env.DEV) {
+	if (usesActivityPreview()) {
 		clearLoginHint();
 		return;
 	}

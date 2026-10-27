@@ -83,6 +83,54 @@ pub fn validate_flow(value: &str, state: &str, time: u64, secret: &str) -> Optio
     Some(parts[1].to_owned())
 }
 
+// A linking authorization is bound to the exact initiating session, not just a browser.
+pub fn link_flow_cookie(
+    state: &str,
+    verifier: &str,
+    expires: u64,
+    session_hash: &str,
+    secret: &str,
+) -> String {
+    let payload = format!("link.{session_hash}.{state}.{verifier}.{expires}");
+    let mut mac =
+        Hmac::<Sha256>::new_from_slice(secret.as_bytes()).expect("HMAC accepts any key length");
+    mac.update(payload.as_bytes());
+    format!(
+        "{payload}.{}",
+        URL_SAFE_NO_PAD.encode(mac.finalize().into_bytes())
+    )
+}
+
+pub fn validate_link_flow(
+    value: &str,
+    state: &str,
+    time: u64,
+    session_hash: &str,
+    secret: &str,
+) -> Option<String> {
+    if value.len() > 300 || !valid_token(state) {
+        return None;
+    }
+    let parts: Vec<_> = value.split('.').collect();
+    if parts.len() != 6
+        || parts[0] != "link"
+        || parts[1] != session_hash
+        || parts[2] != state
+        || !valid_token(parts[3])
+    {
+        return None;
+    }
+    let expires: u64 = parts[4].parse().ok()?;
+    if expires <= time || expires > time.checked_add(FLOW_SECONDS)? {
+        return None;
+    }
+    let signature = URL_SAFE_NO_PAD.decode(parts[5]).ok()?;
+    let mut mac = Hmac::<Sha256>::new_from_slice(secret.as_bytes()).ok()?;
+    mac.update(parts[..5].join(".").as_bytes());
+    mac.verify_slice(&signature).ok()?;
+    Some(parts[3].to_owned())
+}
+
 pub fn cookie_value<'a>(header: &'a str, name: &str) -> Option<&'a str> {
     if header.len() > 8192 {
         return None;
@@ -129,6 +177,40 @@ mod tests {
         assert_eq!(validate_flow(&cookie, &state, 1, "wrong key"), None);
         assert_eq!(
             validate_flow(&cookie.replace(".600.", ".601."), &state, 1, "secret"),
+            None
+        );
+    }
+
+    #[test]
+    fn linking_state_cannot_be_reused_as_login_or_with_another_session() {
+        let state = URL_SAFE_NO_PAD.encode([1; 32]);
+        let verifier = URL_SAFE_NO_PAD.encode([2; 32]);
+        let value = link_flow_cookie(&state, &verifier, 600, "session-one", "secret");
+        assert_eq!(
+            validate_link_flow(&value, &state, 1, "session-one", "secret"),
+            Some(verifier)
+        );
+        assert_eq!(
+            validate_link_flow(&value, &state, 1, "session-two", "secret"),
+            None
+        );
+        assert_eq!(
+            validate_link_flow(&value, &state, 600, "session-one", "secret"),
+            None
+        );
+        assert_eq!(
+            validate_link_flow(&value, &state, 1, "session-one", "wrong"),
+            None
+        );
+        assert_eq!(validate_flow(&value, &state, 1, "secret"), None);
+        assert_eq!(
+            validate_link_flow(
+                &flow_cookie(&state, &state, 600, "secret"),
+                &state,
+                1,
+                "session-one",
+                "secret"
+            ),
             None
         );
     }
