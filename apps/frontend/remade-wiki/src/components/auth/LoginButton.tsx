@@ -49,7 +49,7 @@ export default function LoginButton({
 				ref={trigger}
 				type="button"
 			>
-				<LogIn aria-hidden="true" size={16} />
+				<LogIn aria-hidden="true" className="hidden sm:block" size={16} />
 				Login
 				<ChevronDown
 					aria-hidden="true"

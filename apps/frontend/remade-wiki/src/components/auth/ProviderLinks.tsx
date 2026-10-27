@@ -8,8 +8,10 @@ import {
 
 export default function ProviderLinks({
 	discordEnabled = discordLoginEnabled,
+	variant = "menu",
 }: {
 	discordEnabled?: boolean;
+	variant?: "menu" | "buttons";
 }) {
 	const [lastUsed, setLastUsed] = useState<LoginProvider | null>(null);
 	useEffect(() => setLastUsed(lastLoginProvider()), []);
@@ -18,10 +20,10 @@ export default function ProviderLinks({
 		: ["github"];
 
 	return (
-		<div className="grid gap-1">
+		<div className={variant === "buttons" ? "grid gap-3" : "grid gap-1"}>
 			{providers.map((provider) => (
 				<a
-					className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-semibold hover:bg-panel hover:text-lime focus-visible:outline-2 focus-visible:outline-lime"
+					className={`flex min-h-12 items-center gap-3 rounded-lg px-4 py-3 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime ${variant === "buttons" ? "border border-line bg-surface hover:border-lime hover:bg-panel" : "hover:bg-panel hover:text-lime"}`}
 					href={`${apiUrl}/auth/${provider}`}
 					key={provider}
 					onClick={rememberLogin}
@@ -32,7 +34,10 @@ export default function ProviderLinks({
 							Continue with {provider === "github" ? "GitHub" : "Discord"}
 						</span>
 						{lastUsed === provider && (
-							<span className="text-xs font-normal text-muted"> Last used</span>
+							<span className="rounded bg-panel px-2 py-1 text-[11px] font-medium text-lime">
+								{" "}
+								Last used
+							</span>
 						)}
 					</span>
 				</a>

@@ -229,6 +229,17 @@ test("mobile login dropdown fits the viewport and retains its provider preferenc
 }) => {
 	await page.setViewportSize({ width: 320, height: 720 });
 	await page.goto("/");
+	const menuBounds = await page
+		.getByLabel("Menu", { exact: true })
+		.boundingBox();
+	const loginBounds = await page
+		.getByRole("button", { name: "Login", exact: true })
+		.boundingBox();
+	expect(menuBounds).not.toBeNull();
+	expect(loginBounds).not.toBeNull();
+	expect((menuBounds?.x || 0) + (menuBounds?.width || 0)).toBeLessThanOrEqual(
+		loginBounds?.x || 0,
+	);
 	await page.evaluate(() =>
 		localStorage.setItem("remade-last-login-provider", "github"),
 	);
