@@ -12,6 +12,10 @@ fn session_token(req: &Request, config: &Config) -> Result<Option<String>> {
         .map(str::to_owned))
 }
 
+pub fn fingerprint(req: &Request, config: &Config) -> Result<Option<String>> {
+    Ok(session_token(req, config)?.map(|token| token_hash(&token)))
+}
+
 pub async fn user_id(req: &Request, env: &worker::Env, config: &Config) -> Result<Option<String>> {
     let Some(raw_token) = session_token(req, config)? else {
         return Ok(None);

@@ -1,0 +1,11 @@
+---
+import AccountSettings from "../components/auth/AccountSettings";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+	description="Manage the sign-in methods connected to your Remade account."
+	title="Account settings"
+>
+	<AccountSettings client:load />
+</Layout>

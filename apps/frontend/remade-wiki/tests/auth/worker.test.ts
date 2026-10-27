@@ -13,6 +13,10 @@ let releaseRace: (() => void) | undefined;
 let barrier: Promise<void>;
 let username = "example";
 let discordId = "123456789012345678";
+let githubId = 123;
+let githubEmails = [{ email: "github@example.com", verified: true }];
+let discordEmail: string | null = "discord@example.com";
+let discordVerified = true;
 let requestOriginal: string;
 let snapshotKey: string;
 let catalogCalls = 0;
@@ -121,6 +125,19 @@ beforeAll(async () => {
 								});
 							}
 							providerCalls++;
+							if (
+								url.hostname === "api.github.com" &&
+								url.pathname === "/user/emails"
+							) {
+								expect(request.headers.get("Authorization")).toBe(
+									"Bearer test-provider-token",
+								);
+								if (mode === "email-failure")
+									return new Response("Unavailable", { status: 503 });
+								return Response.json(
+									url.searchParams.get("page") === "2" ? [] : githubEmails,
+								);
+							}
 							const discord = url.hostname === "discord.com";
 							if (
 								url.pathname.endsWith("/oauth2/token") ||
@@ -147,7 +164,7 @@ beforeAll(async () => {
 														: discord
 															? "Bearer"
 															: "bearer",
-												scope: mode === "missing-scope" ? "" : "identify",
+												scope: mode === "missing-scope" ? "" : "identify email",
 											},
 								);
 							}
@@ -171,15 +188,22 @@ beforeAll(async () => {
 									? "https://discord.com/api/v10/users/@me"
 									: "https://api.github.com/user",
 							);
+							if (mode === "logout-during-provider") {
+								await (await worker.getD1Database("DB"))
+									.prepare("UPDATE user_sessions SET expires_at = 1")
+									.run();
+							}
 							if (discord)
 								return Response.json({
+									email: discordEmail,
+									verified: discordVerified,
 									id: mode === "invalid-id" ? 123 : discordId,
 									username,
 									global_name: null,
 									avatar: "0123456789abcdef0123456789abcdef",
 								});
 							return Response.json({
-								id: mode === "invalid-id" ? "123" : 123,
+								id: mode === "invalid-id" ? "123" : githubId,
 								login: username,
 								name: "Example",
 								avatar_url: "https://avatars.githubusercontent.com/u/123",
@@ -420,6 +444,10 @@ beforeEach(async () => {
 	await cache.delete(snapshotKey);
 	await cache.delete(`${snapshotKey}/refresh`);
 	discordId = "123456789012345678";
+	githubId = 123;
+	githubEmails = [{ email: "github@example.com", verified: true }];
+	discordEmail = "discord@example.com";
+	discordVerified = true;
 	barrier = new Promise((resolve) => {
 		releaseRace = resolve;
 	});
@@ -471,11 +499,11 @@ function sessionCookie(response: Awaited<ReturnType<typeof login>>) {
 }
 
 describe("Discord OAuth", () => {
-	it("requests only identity access with PKCE and a separate browser cookie", async () => {
+	it("requests identity and verified email access with PKCE and a separate browser cookie", async () => {
 		const discord = await begin("discord");
 		const github = await begin();
 		expect(discord.location.origin).toBe("https://discord.com");
-		expect(discord.location.searchParams.get("scope")).toBe("identify");
+		expect(discord.location.searchParams.get("scope")).toBe("identify email");
 		expect(discord.location.searchParams.get("response_type")).toBe("code");
 		expect(discord.location.searchParams.get("code_challenge_method")).toBe(
 			"S256",
@@ -663,7 +691,7 @@ describe("Worker OAuth and sessions", () => {
 			createHash("sha256").update(verifier).digest("base64url"),
 		);
 		expect(a.location.searchParams.get("code_challenge_method")).toBe("S256");
-		expect(a.location.searchParams.get("scope")).toBe("");
+		expect(a.location.searchParams.get("scope")).toBe("user:email");
 		expect(a.response.headers.getSetCookie()[0]).toContain("Secure");
 		expect(a.response.headers.getSetCookie()[0]).toContain("HttpOnly");
 		expect(a.response.headers.getSetCookie()[0]).not.toContain("Domain=");
@@ -744,7 +772,7 @@ describe("Worker OAuth and sessions", () => {
 
 	it("creates UUIDv7 IDs, stores only hashes and reuses identity after username changes", async () => {
 		const response = await login();
-		expect(providerCalls).toBe(2);
+		expect(providerCalls).toBe(3);
 		expect(response.status).toBe(302);
 		expect(response.headers.get("Location")).toBe(`${origin}/`);
 		const cookie = sessionCookie(response);
@@ -918,4 +946,392 @@ describe("Worker OAuth and sessions", () => {
 		expect(oversized.headers.getSetCookie()[0]).toContain("Max-Age=0");
 		expect(providerCalls).toBe(0);
 	});
+});
+
+async function startLink(provider: "github" | "discord", cookie: string) {
+	const response = await worker.dispatchFetch(
+		`${api}/api/v1/auth/${provider}/link`,
+		{
+			method: "POST",
+			headers: { Origin: origin, Cookie: cookie },
+			redirect: "manual",
+		},
+	);
+	expect(response.status).toBe(302);
+	const location = new URL(response.headers.get("Location") || "");
+	expect(location.searchParams.get("prompt")).toBe(
+		provider === "github" ? "select_account" : "consent",
+	);
+	return {
+		cookie: response.headers.getSetCookie()[0].split(";")[0],
+		state: location.searchParams.get("state") || "",
+	};
+}
+
+async function finishLink(
+	provider: "github" | "discord",
+	flow: { cookie: string; state: string },
+	cookie: string,
+) {
+	return worker.dispatchFetch(
+		`${api}/api/v1/auth/${provider}/callback?code=valid&state=${flow.state}${provider === "discord" ? "&iss=https%3A%2F%2Fdiscord.com" : ""}`,
+		{
+			headers: { Cookie: `${flow.cookie}; ${cookie}` },
+			redirect: "manual",
+		},
+	);
+}
+
+async function accountFor(cookie: string) {
+	const response = await worker.dispatchFetch(`${api}/api/v1/auth/me`, {
+		headers: { Cookie: cookie },
+	});
+	expect(response.status).toBe(200);
+	return response.json() as Promise<{
+		id: string;
+		identities: { provider: string; username: string }[];
+	}>;
+}
+
+describe("verified email and explicit account linking", () => {
+	it("blocks a new identity with a matching verified email without exposing emails in account payloads", async () => {
+		githubEmails = [{ email: "Shared@Example.com", verified: true }];
+		const github = sessionCookie(await login());
+		discordEmail = "shared@example.com";
+		const response = await login("discord");
+		expect(
+			new URL(response.headers.get("Location") || "").searchParams.get(
+				"auth_error",
+			),
+		).toBe("email_in_use");
+		expect(sessionCookie(response)).toBe("");
+		const db = await worker.getD1Database("DB");
+		expect(
+			await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+		).toBe(1);
+		expect(
+			await db
+				.prepare("SELECT count(*) FROM user_identities")
+				.first("count(*)"),
+		).toBe(1);
+		expect(
+			await db
+				.prepare("SELECT email_hash FROM identity_emails")
+				.first("email_hash"),
+		).toBe(createHash("sha256").update("shared@example.com").digest("hex"));
+		expect(JSON.stringify(await accountFor(github))).not.toContain("email");
+	});
+
+	it("checks secondary verified GitHub emails, ignoring unverified addresses", async () => {
+		githubEmails = [
+			{ email: "private@example.com", verified: true },
+			{ email: "secondary@example.com", verified: true },
+			{ email: "unverified@example.com", verified: false },
+		];
+		await login();
+		discordEmail = "secondary@example.com";
+		expect(
+			new URL(
+				(await login("discord")).headers.get("Location") || "",
+			).searchParams.get("auth_error"),
+		).toBe("email_in_use");
+		discordEmail = "unverified@example.com";
+		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+	});
+
+	it("does not block accounts on an unverified or missing Discord email", async () => {
+		await login();
+		discordEmail = "github@example.com";
+		discordVerified = false;
+		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+		discordId = "999";
+		discordEmail = null;
+		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+	});
+
+	it("keeps legacy account sign-ins working when verified emails subsequently overlap", async () => {
+		await login();
+		discordEmail = "github@example.com";
+		discordVerified = false;
+		const initial = await accountFor(sessionCookie(await login("discord")));
+		discordVerified = true;
+		const returning = await login("discord");
+		expect(returning.headers.get("Location")).toBe(`${origin}/`);
+		expect((await accountFor(sessionCookie(returning))).id).toBe(initial.id);
+	});
+
+	it("releases an address when its observing identity changes email", async () => {
+		await login();
+		githubEmails = [{ email: "new@example.com", verified: true }];
+		await login();
+		discordEmail = "github@example.com";
+		expect((await login("discord")).headers.get("Location")).toBe(`${origin}/`);
+	});
+
+	it("arbitrates concurrent signups sharing a verified email without orphaned accounts", async () => {
+		discordEmail = "github@example.com";
+		mode = "race";
+		const responses = await Promise.all([login(), login("discord")]);
+		expect(
+			responses.filter(
+				(response) => response.headers.get("Location") === `${origin}/`,
+			),
+		).toHaveLength(1);
+		expect(
+			responses.filter((response) =>
+				response.headers.get("Location")?.includes("auth_error=email_in_use"),
+			),
+		).toHaveLength(1);
+		const db = await worker.getD1Database("DB");
+		expect(
+			await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+		).toBe(1);
+		expect(
+			await db
+				.prepare("SELECT count(*) FROM user_identities")
+				.first("count(*)"),
+		).toBe(1);
+	});
+
+	it("connects Discord to the signed-in user and shares votes through either provider", async () => {
+		const github = sessionCookie(await login());
+		const initial = await accountFor(github);
+		await worker.dispatchFetch(
+			`${api}/api/v1/requests/${requestOriginal}/upvote`,
+			{ method: "POST", headers: { Cookie: github, Origin: origin } },
+		);
+		discordEmail = "github@example.com";
+		const linked = await finishLink(
+			"discord",
+			await startLink("discord", github),
+			github,
+		);
+		expect(linked.headers.get("Location")).toBe(
+			`${origin}/account/?connected=discord`,
+		);
+		const linkedCookie = sessionCookie(linked);
+		const account = await accountFor(linkedCookie);
+		expect(account.id).toBe(initial.id);
+		expect(
+			account.identities.map((identity) => identity.provider).sort(),
+		).toEqual(["discord", "github"]);
+		expect(
+			(
+				await worker.dispatchFetch(`${api}/api/v1/auth/me`, {
+					headers: { Cookie: github },
+				})
+			).status,
+		).toBe(401);
+		const discord = sessionCookie(await login("discord"));
+		expect((await accountFor(discord)).id).toBe(initial.id);
+		const totals = await worker.dispatchFetch(
+			`${api}/api/v1/requests/activity`,
+			{ headers: { Cookie: discord } },
+		);
+		expect(
+			(
+				(await totals.json()) as {
+					requests: { original: string; upvoted: boolean; upvotes: number }[];
+				}
+			).requests.find((request) => request.original === requestOriginal),
+		).toMatchObject({ upvotes: 1, upvoted: true });
+		const db = await worker.getD1Database("DB");
+		expect(
+			await db.prepare("SELECT count(*) FROM users").first("count(*)"),
+		).toBe(1);
+		expect(
+			await db
+				.prepare("SELECT count(*) FROM identity_emails")
+				.first("count(*)"),
+		).toBe(2);
+	});
+
+	it("connects GitHub to a Discord account in the other direction", async () => {
+		const discord = sessionCookie(await login("discord"));
+		const initial = await accountFor(discord);
+		githubEmails = [{ email: "discord@example.com", verified: true }];
+		const linked = await finishLink(
+			"github",
+			await startLink("github", discord),
+			discord,
+		);
+		expect((await accountFor(sessionCookie(linked))).id).toBe(initial.id);
+		expect((await accountFor(sessionCookie(await login()))).id).toBe(
+			initial.id,
+		);
+	});
+
+	it("rejects linking an identity attached to another account", async () => {
+		const github = sessionCookie(await login());
+		const other = await accountFor(sessionCookie(await login("discord")));
+		const response = await finishLink(
+			"discord",
+			await startLink("discord", github),
+			github,
+		);
+		expect(response.headers.get("Location")).toContain(
+			"auth_error=identity_in_use",
+		);
+		expect((await accountFor(github)).identities).toHaveLength(1);
+		expect(await accountFor(sessionCookie(await login("discord")))).toEqual(
+			other,
+		);
+	});
+
+	it("requires a signed-in same-origin POST to start linking", async () => {
+		const cookie = sessionCookie(await login());
+		const baseline = providerCalls;
+		for (const [method, headers, status] of [
+			["POST", { Origin: origin }, 401],
+			["POST", { Origin: "https://evil.example", Cookie: cookie }, 403],
+			["GET", { Cookie: cookie }, 405],
+		] as const) {
+			expect(
+				(
+					await worker.dispatchFetch(`${api}/api/v1/auth/discord/link`, {
+						method,
+						headers,
+					})
+				).status,
+			).toBe(status);
+		}
+		expect(providerCalls).toBe(baseline);
+	});
+
+	it.each(["missing", "changed", "expired", "tampered"])(
+		"rejects a %s initiating session or linking intent",
+		async (failure) => {
+			const cookie = sessionCookie(await login());
+			const flow = await startLink("discord", cookie);
+			let returning = cookie;
+			if (failure === "missing") returning = "";
+			if (failure === "changed") returning = sessionCookie(await login());
+			if (failure === "expired")
+				await (await worker.getD1Database("DB"))
+					.prepare("UPDATE user_sessions SET expires_at = 1")
+					.run();
+			if (failure === "tampered")
+				flow.cookie = flow.cookie.replace("link.", "");
+			const baseline = providerCalls;
+			expect((await finishLink("discord", flow, returning)).status).toBe(400);
+			expect(providerCalls).toBe(baseline);
+		},
+	);
+
+	it("does not connect an identity if logout occurs during the provider exchange", async () => {
+		const cookie = sessionCookie(await login());
+		const flow = await startLink("discord", cookie);
+		mode = "logout-during-provider";
+		expect((await finishLink("discord", flow, cookie)).status).toBe(400);
+		expect(
+			await (await worker.getD1Database("DB"))
+				.prepare("SELECT count(*) FROM user_identities")
+				.first("count(*)"),
+		).toBe(1);
+	});
+
+	it("does not interpret a normal login callback as a request to link", async () => {
+		const github = sessionCookie(await login());
+		const flow = await begin("discord");
+		const response = await finishLink("discord", flow, github);
+		expect((await accountFor(sessionCookie(response))).id).not.toBe(
+			(await accountFor(github)).id,
+		);
+	});
+
+	it("fails closed when GitHub email verification cannot be checked", async () => {
+		mode = "email-failure";
+		expect((await login()).status).toBe(400);
+		expect(
+			await (await worker.getD1Database("DB"))
+				.prepare("SELECT count(*) FROM users")
+				.first("count(*)"),
+		).toBe(0);
+	});
+});
+
+it("arbitrates concurrent attempts to connect the same identity to different accounts", async () => {
+	const first = sessionCookie(await login());
+	githubId = 456;
+	githubEmails = [{ email: "second@example.com", verified: true }];
+	const second = sessionCookie(await login());
+	const flowA = await startLink("discord", first);
+	const flowB = await startLink("discord", second);
+	mode = "race";
+	const results = await Promise.all([
+		finishLink("discord", flowA, first),
+		finishLink("discord", flowB, second),
+	]);
+	expect(
+		results.filter((result) =>
+			result.headers.get("Location")?.includes("connected=discord"),
+		),
+	).toHaveLength(1);
+	expect(
+		results.filter((result) =>
+			result.headers.get("Location")?.includes("auth_error=identity_in_use"),
+		),
+	).toHaveLength(1);
+	const db = await worker.getD1Database("DB");
+	expect(await db.prepare("SELECT count(*) FROM users").first("count(*)")).toBe(
+		2,
+	);
+	expect(
+		await db.prepare("SELECT count(*) FROM user_identities").first("count(*)"),
+	).toBe(3);
+});
+
+it("retains a shared email claim while another connected identity still reports it", async () => {
+	const github = sessionCookie(await login());
+	discordEmail = "github@example.com";
+	await finishLink("discord", await startLink("discord", github), github);
+	githubEmails = [{ email: "changed@example.com", verified: true }];
+	await login();
+	discordId = "98765";
+	const duplicate = await login("discord");
+	expect(duplicate.headers.get("Location")).toContain(
+		"auth_error=email_in_use",
+	);
+});
+
+it("rejects connecting an unclaimed identity whose verified email belongs to another account", async () => {
+	const first = sessionCookie(await login());
+	githubId = 456;
+	githubEmails = [{ email: "second@example.com", verified: true }];
+	await login();
+	discordEmail = "second@example.com";
+	const result = await finishLink(
+		"discord",
+		await startLink("discord", first),
+		first,
+	);
+	expect(result.headers.get("Location")).toContain(
+		"/account/?auth_error=email_in_use",
+	);
+	expect((await accountFor(first)).identities).toHaveLength(1);
+	expect(
+		await (await worker.getD1Database("DB"))
+			.prepare(
+				"SELECT count(*) FROM user_identities WHERE provider = 'discord'",
+			)
+			.first("count(*)"),
+	).toBe(0);
+});
+
+it("allows reauthorizing an already connected identity without creating duplicates", async () => {
+	const initial = sessionCookie(await login());
+	const result = await finishLink(
+		"github",
+		await startLink("github", initial),
+		initial,
+	);
+	expect(result.headers.get("Location")).toBe(
+		`${origin}/account/?connected=github`,
+	);
+	expect((await accountFor(sessionCookie(result))).identities).toHaveLength(1);
+	expect(
+		await (await worker.getD1Database("DB"))
+			.prepare("SELECT count(*) FROM users")
+			.first("count(*)"),
+	).toBe(1);
 });

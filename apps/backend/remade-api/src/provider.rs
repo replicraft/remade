@@ -52,8 +52,8 @@ impl Provider {
 
     pub fn scope(self) -> &'static str {
         match self {
-            Self::Github => "",
-            Self::Discord => "identify",
+            Self::Github => "user:email",
+            Self::Discord => "identify email",
         }
     }
 

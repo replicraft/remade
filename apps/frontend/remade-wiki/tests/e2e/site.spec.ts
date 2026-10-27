@@ -459,3 +459,61 @@ test("project browser links appear beside Website only when configured", async (
 		page.getByRole("link", { name: "Try it in your browser ↗", exact: true }),
 	).toHaveCount(0);
 });
+
+test("account settings starts connecting another provider with an empty POST", async ({
+	page,
+	context,
+}) => {
+	await context.addCookies([
+		{ name: "remade_login_hint", value: "1", url: "http://127.0.0.1:4377" },
+	]);
+	await page.route("**/api/v1/auth/me", async (route) => {
+		await route.fulfill({
+			status: 200,
+			headers: {
+				"Access-Control-Allow-Origin": "http://127.0.0.1:4377",
+				"Access-Control-Allow-Credentials": "true",
+			},
+			json: {
+				id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+				displayName: "Example User",
+				avatarUrl: null,
+				identities: [{ provider: "github", username: "example" }],
+			},
+		});
+	});
+	await page.route("**/api/v1/auth/discord/link", async (route) => {
+		expect(route.request().method()).toBe("POST");
+		expect(route.request().postData() || "").toBe("");
+		expect(route.request().headers().origin).toBe("http://127.0.0.1:4377");
+		await route.fulfill({
+			status: 200,
+			contentType: "text/plain",
+			body: "OAuth connection started",
+		});
+	});
+	await page.goto("/");
+	await page
+		.getByRole("combobox", { name: "Account menu for Example User" })
+		.click();
+	await page
+		.getByRole("option", { name: "Account settings", exact: true })
+		.click();
+	await expect(page).toHaveURL(/\/account\/$/);
+	await expect(page.getByText("Connected as @example")).toBeVisible();
+	const request = page.waitForRequest("**/api/v1/auth/discord/link");
+	await page.getByRole("button", { name: "Connect Discord" }).click();
+	await request;
+	await expect(page.getByText("OAuth connection started")).toBeVisible();
+});
+
+test("duplicate-email sign-in shows guidance without reflecting arbitrary messages", async ({
+	page,
+}) => {
+	await page.goto("/login/?auth_error=email_in_use");
+	await expect(page.getByRole("status")).toContainText(
+		"Sign in with your existing method",
+	);
+	await page.goto("/login/?auth_error=untrusted-message");
+	await expect(page.getByText("untrusted-message")).toHaveCount(0);
+});

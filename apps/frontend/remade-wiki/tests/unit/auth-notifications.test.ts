@@ -47,3 +47,33 @@ describe("sign-in notifications", () => {
 		);
 	});
 });
+
+it("remembers the provider actually used when an account has multiple identities", () => {
+	const values = new Map([
+		["remade-pending-login-toast", String(Date.now())],
+		["remade-pending-login-provider", "discord"],
+	]);
+	const saved = new Map([["remade-last-login-provider", "github"]]);
+	vi.stubGlobal("sessionStorage", {
+		getItem: (key: string) => values.get(key) ?? null,
+		removeItem: (key: string) => values.delete(key),
+	});
+	vi.stubGlobal("localStorage", {
+		getItem: (key: string) => saved.get(key) ?? null,
+		setItem: (key: string, value: string) => saved.set(key, value),
+	});
+	const account = {
+		id: "0199c128-5d8f-7a26-b1e8-40c906f33871",
+		displayName: null,
+		avatarUrl: null,
+		identities: [
+			{ provider: "github" as const, username: "gh.user" },
+			{ provider: "discord" as const, username: "discord.user" },
+		],
+	};
+	announceLogin(account);
+	expect(saved.get("remade-last-login-provider")).toBe("discord");
+	expect(toast.success).toHaveBeenCalledWith("Logged in as discord.user");
+	announceLogin(account);
+	expect(saved.get("remade-last-login-provider")).toBe("discord");
+});

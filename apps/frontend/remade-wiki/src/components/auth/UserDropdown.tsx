@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp, LogOut } from "lucide-react";
+import { ChevronDown, ChevronUp, LogOut, Settings } from "lucide-react";
 import Dropdown from "react-dropdown";
 import { accountUsername } from "../../lib/auth";
 import { useAuthStore } from "../../stores/auth-store.ts";
@@ -23,7 +23,10 @@ export default function UserDropdown() {
 				baseClassName="AuthDropdown"
 				controlClassName="inline-flex items-center gap-2 rounded-full border border-line p-1.5 pr-3 hover:border-lime focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime"
 				menuClassName="absolute right-0 top-full z-30 mt-3 w-64 max-w-[calc(100vw-36px)] overflow-hidden rounded-xl border border-line bg-panel p-2 shadow-xl"
-				onChange={() => void signOut()}
+				onChange={(option) => {
+					if (option.value === "account") window.location.assign("/account/");
+					else if (option.value === "logout") void signOut();
+				}}
 				optionClassName={(_option, { active }) =>
 					`mt-2 flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors ${busy ? "cursor-wait opacity-60" : "cursor-pointer hover:bg-surface hover:text-lime"} ${active && !busy ? "group-has-[:focus-visible]/auth-dropdown:bg-surface group-has-[:focus-visible]/auth-dropdown:text-lime" : ""}`
 				}
@@ -42,6 +45,16 @@ export default function UserDropdown() {
 							</div>
 						),
 						items: [
+							{
+								value: "account",
+								disabled: busy,
+								label: (
+									<>
+										<Settings aria-hidden="true" size={16} />
+										Account settings
+									</>
+								),
+							},
 							{
 								value: "logout",
 								disabled: busy,

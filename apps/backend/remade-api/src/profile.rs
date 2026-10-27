@@ -3,6 +3,7 @@ use serde::Deserialize;
 use worker::Result;
 
 pub struct Profile {
+    pub email_hashes: Vec<String>,
     pub provider: Provider,
     pub provider_id: String,
     pub username: String,
@@ -43,6 +44,7 @@ impl GithubUser {
             }
         }
         Ok(Profile {
+            email_hashes: Vec::new(),
             provider: Provider::Github,
             provider_id: self.id.to_string(),
             username: self.login,
@@ -54,6 +56,8 @@ impl GithubUser {
 
 #[derive(Deserialize)]
 pub struct DiscordUser {
+    pub email: Option<String>,
+    pub verified: Option<bool>,
     pub id: String,
     pub username: String,
     pub global_name: Option<String>,
@@ -92,6 +96,13 @@ impl DiscordUser {
             })
             .transpose()?;
         Ok(Profile {
+            email_hashes: self
+                .email
+                .as_deref()
+                .filter(|_| self.verified == Some(true))
+                .and_then(crate::email::fingerprint)
+                .into_iter()
+                .collect(),
             provider: Provider::Discord,
             provider_id: self.id,
             username: self.username,
@@ -107,6 +118,8 @@ mod tests {
 
     fn discord(id: &str, avatar: Option<&str>) -> DiscordUser {
         DiscordUser {
+            email: None,
+            verified: None,
             id: id.into(),
             username: "example.user".into(),
             global_name: None,

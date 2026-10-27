@@ -1,7 +1,11 @@
 import { toast } from "sonner";
-import { type Account, accountUsername, loginUrl } from "./auth";
+import { type Account, loginUrl } from "./auth";
 
-import { rememberLoginProvider } from "./login-provider";
+import {
+	type LoginProvider,
+	lastLoginProvider,
+	rememberLoginProvider,
+} from "./login-provider";
 
 const loginToastKey = "remade-pending-login-toast";
 
@@ -17,29 +21,33 @@ export function promptLoginToVote() {
 	});
 }
 
-export function rememberLogin() {
+export function rememberLogin(provider?: LoginProvider) {
 	try {
 		sessionStorage.setItem(loginToastKey, String(Date.now()));
+		if (provider)
+			sessionStorage.setItem("remade-pending-login-provider", provider);
 	} catch {
 		// Login still works when browser storage is unavailable.
 	}
 }
 
 export function announceLogin(account: Account | null) {
-	const provider = account?.identities[0]?.provider;
-	if (provider) rememberLoginProvider(provider);
-
+	let pending: string | null = null;
+	let pendingProvider: string | null = null;
 	try {
-		const pending = sessionStorage.getItem(loginToastKey);
+		pending = sessionStorage.getItem(loginToastKey);
+		pendingProvider = sessionStorage.getItem("remade-pending-login-provider");
 		sessionStorage.removeItem(loginToastKey);
-
-		const username = accountUsername(account);
-		const elapsed = Date.now() - Number(pending);
-
-		if (pending && username && elapsed >= 0 && elapsed < 10 * 60 * 1000) {
-			toast.success(`Logged in as ${username}`);
-		}
+		sessionStorage.removeItem("remade-pending-login-provider");
 	} catch {
-		// Storage is only used to avoid announcing login on every page load.
+		// Successful sessions still remember their provider if session storage is blocked.
 	}
+	const elapsed = Date.now() - Number(pending);
+	const recent = Boolean(pending) && elapsed >= 0 && elapsed < 10 * 60 * 1000;
+	const preferred = (recent && pendingProvider) || lastLoginProvider();
+	const identity =
+		account?.identities.find((identity) => identity.provider === preferred) ||
+		account?.identities[0];
+	if (identity) rememberLoginProvider(identity.provider);
+	if (recent && identity) toast.success(`Logged in as ${identity.username}`);
 }

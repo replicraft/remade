@@ -30,6 +30,12 @@ Listed projects are developed and maintained by their respective authors, who ar
 
 All third-party product names, trademarks, logos, and images referenced or displayed on Remade remain the property of their respective rights holders. Remade uses these materials for identification and informational comparison only. Their use does not imply affiliation, sponsorship, approval, or endorsement of Remade or any listed project by those rights holders. All rights in these materials remain with their respective holders.
 
+## Account Data
+
+Signing in shares your provider account ID, username, optional display name and avatar, and verified email addresses when available. Remade uses verified email to help detect duplicate accounts. Raw email addresses are not saved; private email fingerprints are retained for matching and are not published. Fingerprints are not anonymous data. Session tokens are stored as hashes, and request votes and builder indications are associated with your Remade account. Signing in is optional for browsing the directory.
+
+Connecting another sign-in method requires you to be signed in to Remade and authorize that provider. Matching names or email addresses do not automatically connect accounts.
+
 ## Reporting Concerns
 
 If you believe a listing infringes your intellectual property rights, contains unauthorized material, or violates Remade's directory guidelines, please contact **[admin@remade.wiki](mailto:admin@remade.wiki)**. Include the relevant listing URL, a description of the concern, and sufficient information for review. Reports will be reviewed, and listings may be corrected or removed where appropriate. Remade reserves the right to remove listings at its discretion.

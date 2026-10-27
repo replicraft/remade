@@ -20,10 +20,10 @@ describe("login providers", () => {
 		expect(sessionStorage.getItem("remade-pending-login-toast")).toBeNull();
 	});
 
-	it("explains that provider accounts stay separate", async () => {
+	it("explains how to connect another provider", async () => {
 		const screen = await render(<LoginOptions />);
 		await expect
-			.element(screen.getByText(/GitHub and Discord accounts are separate/))
+			.element(screen.getByText(/Connect another provider in Account settings/))
 			.toBeVisible();
 	});
 });

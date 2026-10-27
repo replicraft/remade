@@ -1,6 +1,7 @@
 mod auth;
 mod config;
 mod db;
+mod email;
 mod profile;
 mod provider;
 mod request_catalog;
@@ -70,7 +71,7 @@ async fn route(req: &Request, env: &Env, config: &Config) -> Result<Response> {
         | "/api/v1/auth/discord"
         | "/api/v1/auth/discord/callback"
         | "/api/v1/auth/me" => "GET",
-        "/api/v1/auth/logout" => "POST",
+        "/api/v1/auth/logout" | "/api/v1/auth/github/link" | "/api/v1/auth/discord/link" => "POST",
         "/api/v1/requests/activity" => "GET",
         _ if requests::action_path(&path).is_some() => "POST",
         _ => return Response::error("Not found", 404),
@@ -139,6 +140,8 @@ async fn route(req: &Request, env: &Env, config: &Config) -> Result<Response> {
     match path.as_str() {
         "/api/v1/auth/github" => auth::begin(env, config, Provider::Github),
         "/api/v1/auth/discord" => auth::begin(env, config, Provider::Discord),
+        "/api/v1/auth/github/link" => auth::begin_link(req, env, config, Provider::Github).await,
+        "/api/v1/auth/discord/link" => auth::begin_link(req, env, config, Provider::Discord).await,
         "/api/v1/auth/github/callback" => auth::callback(req, env, config, Provider::Github).await,
         "/api/v1/auth/discord/callback" => {
             auth::callback(req, env, config, Provider::Discord).await

@@ -1,5 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import remadeMark from "../../assets/logos/remade-mark.svg?url";
+import AuthFeedback from "./AuthFeedback";
 import ProviderLinks from "./ProviderLinks";
 
 export default function LoginOptions() {
@@ -26,14 +27,23 @@ export default function LoginOptions() {
 				</p>
 			</div>
 
+			<AuthFeedback />
+
 			<div className="mt-7">
 				<ProviderLinks variant="buttons" />
 			</div>
 
 			<p className="mt-5 text-center text-xs leading-5 text-muted">
-				Use the same sign-in option each time.
+				Already have an account? Use your usual sign-in.
 				<br />
-				GitHub and Discord accounts are separate.
+				Connect another provider in Account settings.
+			</p>
+
+			<p className="mt-4 text-center text-xs leading-5 text-muted">
+				Verified email helps prevent duplicate accounts.{" "}
+				<a className="underline hover:text-lime" href="/disclaimer/">
+					Account data
+				</a>
 			</p>
 
 			<div className="mt-7 border-t border-line pt-5 text-center">
