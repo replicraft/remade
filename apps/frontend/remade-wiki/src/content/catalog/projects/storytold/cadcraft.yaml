@@ -3,6 +3,7 @@ slug: cadcraft
 name: CADCraft
 authors: [storytold]
 repository: https://github.com/storytold/cadcraft
+browser_url: https://playground.daijro.dev/cadcraft/
 originals: [autodesk-autocad]
 category: engineering
 languages: [Rust]

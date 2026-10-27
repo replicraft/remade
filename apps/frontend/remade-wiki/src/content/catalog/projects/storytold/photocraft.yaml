@@ -4,6 +4,7 @@ name: PhotoCraft
 authors: [storytold]
 repository: https://github.com/storytold/photocraft
 website: https://getartcraft.com/apps/photocraft
+browser_url: https://playground.daijro.dev/photocraft/
 originals: [adobe-photoshop]
 category: creative
 languages: [Rust]

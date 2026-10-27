@@ -4,6 +4,7 @@ name: FilmCraft
 authors: [storytold]
 repository: https://github.com/storytold/filmcraft
 website: https://getartcraft.com/apps/filmcraft
+browser_url: https://playground.daijro.dev/filmcraft/
 originals: [adobe-premiere-pro]
 category: creative
 languages: [Rust]

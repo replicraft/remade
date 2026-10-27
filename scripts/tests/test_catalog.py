@@ -98,6 +98,7 @@ def test_project_mirrors_validation(project_catalog: Path, mirrors: str, valid: 
     assert (not collect(project_catalog)[-1]) == valid
 
 
+@pytest.mark.parametrize("field", ["website", "browser_url"])
 @pytest.mark.parametrize(
     "website, valid",
     [
@@ -106,9 +107,11 @@ def test_project_mirrors_validation(project_catalog: Path, mirrors: str, valid: 
         ("https://localhost/project/", False),
     ],
 )
-def test_project_website_validation(project_catalog: Path, website: str, valid: bool) -> None:
+def test_project_website_validation(
+    project_catalog: Path, field: str, website: str, valid: bool
+) -> None:
     path = project_catalog / "apps/frontend/remade-wiki/src/content/catalog/projects/impl-a.yaml"
-    path.write_text(path.read_text() + f"website: {website}\n")
+    path.write_text(path.read_text() + f"{field}: {website}\n")
     assert (not collect(project_catalog)[-1]) == valid
 
 

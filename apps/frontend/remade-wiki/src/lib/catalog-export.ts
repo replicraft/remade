@@ -24,6 +24,7 @@ const publicProject = v.object({
 	originals: projectSchema.entries.originals,
 	repository: projectSchema.entries.repository,
 	website: projectSchema.entries.website,
+	browser_url: projectSchema.entries.browser_url,
 	docs: projectSchema.entries.docs,
 	mirrors: projectSchema.entries.mirrors,
 	category: projectSchema.entries.category,

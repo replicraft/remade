@@ -19,6 +19,7 @@ summary: SketchUp-style drawing, push/pull and snapping on watertight solids, wi
 description: A SketchUp-style modeler with on-face drawing, push/pull, inference snapping, familiar shortcuts, materials, tags and scenes. Uses a Rust solid-modeling kernel with explicit object merges. Documents SketchUp 2017 and 2026 SKP import/export alongside its own open HEW format.
 license: AGPL-3.0-only with Hew Plugin API Exception
 website: https://hew3d.com
+browser_url: https://app.hew3d.com/
 docs: https://github.com/hew3d/hew#readme
 limitations: Solid objects and explicit merging deliberately differ from SketchUp behavior. SKP import/export coverage is maintainer-reported; full file, extension and behavioral compatibility is not established. The plugin exception is an additional permission documented separately from AGPL.
 screenshots:

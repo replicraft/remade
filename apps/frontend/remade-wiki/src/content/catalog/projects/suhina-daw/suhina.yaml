@@ -3,6 +3,7 @@ slug: suhina
 name: Suhina
 authors: [suhina-daw]
 repository: https://github.com/suhina-daw/suhina-daw
+browser_url: https://playground.daijro.dev/head/suhina/
 originals: [ableton-live]
 category: creative
 languages: [Rust]

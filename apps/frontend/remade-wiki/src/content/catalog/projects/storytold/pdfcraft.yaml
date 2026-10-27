@@ -4,6 +4,7 @@ name: PdfCraft
 authors: [storytold]
 repository: https://github.com/storytold/pdfcraft
 website: https://getartcraft.com/apps/pdfcraft
+browser_url: https://playground.daijro.dev/pdfcraft/
 originals: [adobe-acrobat]
 category: productivity
 languages: [Rust]

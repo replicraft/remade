@@ -3,6 +3,7 @@ slug: lightfoundry
 name: LightFoundry
 authors: [sitesentrix]
 repository: https://github.com/Stitchwright/lightfoundry
+browser_url: https://stitchwright.github.io/laserfoundry/
 originals: [lightburn]
 category: creative
 languages: [Rust]

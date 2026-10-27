@@ -4,6 +4,7 @@ name: WordCraft
 authors: [storytold]
 repository: https://github.com/storytold/wordcraft
 website: https://getartcraft.com/apps/wordcraft
+browser_url: https://playground.daijro.dev/wordcraft/
 originals: [microsoft-word]
 category: productivity
 languages: [Rust]

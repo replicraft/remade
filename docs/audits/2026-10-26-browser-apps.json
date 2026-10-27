@@ -1,0 +1,3927 @@
+{
+	"scope": "Hosted browser app links for all indexed projects only. Repository identity, features, license, maturity, platforms and supporting tools were not comprehensively audited.",
+	"checked_at": "2026-10-26T18:26:54.104373-07:00",
+	"baseline": "66d4772d31e4d03440af10f415cadbeefd6bfb58",
+	"baseline_worktree": "Clean before feature implementation; source code edits present while collecting evidence.",
+	"projects_reviewed": 163,
+	"links_added": 58,
+	"known_limitations": [
+		"Mineclonia has no GitHub metadata or catalog website; upstream Codeberg review remains inconclusive.",
+		"Several projects use client-rendered or Wasm app shells; a reachable app shell does not independently verify complete functionality."
+	],
+	"entries": [
+		{
+			"slug": "subcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/aalzard/subcraft.yaml",
+			"repository": "https://github.com/Aalzard/subcraft",
+			"canonical_repository": "https://github.com/Aalzard/subcraft",
+			"reviewed_revision": "56a23a7e88077fbb5d11bd15865d73750964ae78",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/head/subcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/head/subcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/head/subcraft/",
+				"title": "SubCraft",
+				"assets": ["https://playground.daijro.dev/shell/app.js"]
+			},
+			"sources": [
+				"https://github.com/Aalzard/subcraft",
+				"https://github.com/Aalzard/subcraft/blob/56a23a7e88077fbb5d11bd15865d73750964ae78/README.md",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "openmailclient",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/adriaanboshoff/openmailclient.yaml",
+			"repository": "https://github.com/AdriaanBoshoff/OpenMailClient",
+			"canonical_repository": "https://github.com/AdriaanBoshoff/OpenMailClient",
+			"reviewed_revision": "60a7312317babda14d858ee0504f302e5889d1e4",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://adriaanboshoff.github.io/OpenMailClient/",
+				"status": 200,
+				"final": "https://adriaanboshoff.github.io/OpenMailClient/",
+				"title": "OpenMailClient"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/AdriaanBoshoff/OpenMailClient",
+				"https://github.com/AdriaanBoshoff/OpenMailClient/blob/60a7312317babda14d858ee0504f302e5889d1e4/README.md",
+				"https://adriaanboshoff.github.io/OpenMailClient/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "motrix",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/agalwood/motrix.yaml",
+			"repository": "https://github.com/agalwood/Motrix",
+			"canonical_repository": "https://github.com/agalwood/Motrix",
+			"reviewed_revision": "7eecee9a6138cb3610d3dc88f9c5223e540476f4",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://motrix.app/",
+				"status": 200,
+				"final": "https://motrix.app/",
+				"title": "Motrix \u00e2\u0080\u0094 A full-featured download manager"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/agalwood/Motrix",
+				"https://github.com/agalwood/Motrix/blob/7eecee9a6138cb3610d3dc88f9c5223e540476f4/README.md",
+				"https://motrix.app/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "ageskeleton",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/agechaos/ageskeleton.yaml",
+			"repository": "https://github.com/AgeChaos/AgeSkeleton",
+			"canonical_repository": "https://github.com/AgeChaos/AgeSkeleton",
+			"reviewed_revision": "67291ae9e81902283083772de90174254da34c9d",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/AgeChaos/AgeSkeleton",
+				"https://github.com/AgeChaos/AgeSkeleton/blob/67291ae9e81902283083772de90174254da34c9d/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "crimsonland-macos",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/akwiatkowski/crimsonland-macos.yaml",
+			"repository": "https://github.com/akwiatkowski/crimsonland",
+			"canonical_repository": "https://github.com/akwiatkowski/crimsonland",
+			"reviewed_revision": "f6323c1793c6210bed6724aabebdf0a55ed23bc7",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/akwiatkowski/crimsonland",
+				"https://github.com/akwiatkowski/crimsonland/blob/f6323c1793c6210bed6724aabebdf0a55ed23bc7/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "recoil-metal",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/akwiatkowski/recoil-metal.yaml",
+			"repository": "https://github.com/akwiatkowski/recoil-metal",
+			"canonical_repository": "https://github.com/akwiatkowski/recoil-metal",
+			"reviewed_revision": "5689a37cab7aa431d567caa583be9dded6fb96cb",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/akwiatkowski/recoil-metal",
+				"https://github.com/akwiatkowski/recoil-metal/blob/5689a37cab7aa431d567caa583be9dded6fb96cb/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "firecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/aliasfoxkde/firecraft.yaml",
+			"repository": "https://github.com/aliasfoxkde/FireCraft",
+			"canonical_repository": "https://github.com/aliasfoxkde/FireCraft",
+			"reviewed_revision": "8d860f231014f9ad166c1079714ea3cf0bdc22b0",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://firecraft-web.pages.dev",
+				"status": 200,
+				"final": "https://firecraft-web.pages.dev/",
+				"title": "FireCraftFireCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://firecraft-web.pages.dev/",
+			"hosting": {
+				"url": "https://firecraft-web.pages.dev/",
+				"source": "https://firecraft-web.pages.dev",
+				"kind": "official",
+				"status": 200,
+				"final": "https://firecraft-web.pages.dev/",
+				"title": "FireCraftFireCraft",
+				"assets": [
+					"https://firecraft-web.pages.dev/firecraft-web-d13f1a83e8a1a76f.js",
+					"https://firecraft-web.pages.dev/firecraft-web-d13f1a83e8a1a76f_bg.wasm"
+				]
+			},
+			"sources": [
+				"https://github.com/aliasfoxkde/FireCraft",
+				"https://github.com/aliasfoxkde/FireCraft/blob/8d860f231014f9ad166c1079714ea3cf0bdc22b0/README.md",
+				"https://firecraft-web.pages.dev"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "motionity",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/alyssaxuu/motionity.yaml",
+			"repository": "https://github.com/alyssaxuu/motionity",
+			"canonical_repository": "https://github.com/alyssaxuu/motionity",
+			"reviewed_revision": "5843fa14c2fabc72d1bcabf442acf6062ce71387",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://motionity.app/",
+				"status": 200,
+				"final": "https://www.motionity.app/",
+				"title": "Motionity - The web-based motion graphics editor for everyone"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://www.motionity.app/",
+			"hosting": {
+				"url": "https://www.motionity.app/",
+				"source": "https://motionity.app/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://www.motionity.app/",
+				"title": "Motionity - The web-based motion graphics editor for everyone",
+				"assets": [
+					"https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css",
+					"https://www.motionity.app/js/libraries/localbase.js",
+					"https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
+				]
+			},
+			"sources": [
+				"https://github.com/alyssaxuu/motionity",
+				"https://github.com/alyssaxuu/motionity/blob/5843fa14c2fabc72d1bcabf442acf6062ce71387/README.md",
+				"https://motionity.app/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "beamcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/apibim-com/beamcraft.yaml",
+			"repository": "https://github.com/Apibim-com/BeamCraft",
+			"canonical_repository": "https://github.com/Apibim-com/BeamCraft",
+			"reviewed_revision": "112be7b1a428500a62676bad14741d3eadd21590",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://beamcraft.cl/",
+				"error": "HTTPSConnectionPool(host='beamcraft.cl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='beamcraft.cl', port=4"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Apibim-com/BeamCraft",
+				"https://github.com/Apibim-com/BeamCraft/blob/112be7b1a428500a62676bad14741d3eadd21590/README.md",
+				"https://beamcraft.cl/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "openlogi",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/aprilnea/openlogi.yaml",
+			"repository": "https://github.com/AprilNEA/OpenLogi",
+			"canonical_repository": "https://github.com/AprilNEA/OpenLogi",
+			"reviewed_revision": "5f0435b5c73a1e43ef63707af7867bbc074113eb",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://openlogi.org",
+				"status": 200,
+				"final": "https://openlogi.org/",
+				"title": "OpenLogiFive local transaction stages sealed inside a processing chamber"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/AprilNEA/OpenLogi",
+				"https://github.com/AprilNEA/OpenLogi/blob/5f0435b5c73a1e43ef63707af7867bbc074113eb/README.md",
+				"https://openlogi.org"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "inventcraft-datum",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/artis-98/inventcraft-datum.yaml",
+			"repository": "https://github.com/Artis-98/inventcraft",
+			"canonical_repository": "https://github.com/Artis-98/inventcraft",
+			"reviewed_revision": "c7739828cc3161c9fefa1c295574ca5bce2c66d4",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://datum.iiteg.com",
+				"status": 200,
+				"final": "https://datum.iiteg.com/",
+				"title": "InventCraft: free, open source parametric CAD for Windows and Linux"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Artis-98/inventcraft",
+				"https://github.com/Artis-98/inventcraft/blob/c7739828cc3161c9fefa1c295574ca5bce2c66d4/README.md",
+				"https://datum.iiteg.com"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "assetcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/assetcraft.yaml",
+			"repository": "https://github.com/cmspeedau/AssetCraft",
+			"canonical_repository": "https://github.com/cmspeedau/AssetCraft",
+			"reviewed_revision": "4aed9a4a34a4be4aa0b566c1ce58850d89f637c2",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/cmspeedau/AssetCraft",
+				"https://github.com/cmspeedau/AssetCraft/blob/4aed9a4a34a4be4aa0b566c1ce58850d89f637c2/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "harper",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/automattic/harper.yaml",
+			"repository": "https://github.com/Automattic/harper",
+			"canonical_repository": "https://github.com/Automattic/harper",
+			"reviewed_revision": "dd536c3009d8f4f8e8e28841fe3115dc944d67bb",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://writewithharper.com/",
+				"status": 200,
+				"final": "https://writewithharper.com/",
+				"title": "Harper | Privacy-First Offline Grammar Checker for Developers & WritersHarper: Free, Open Source Grammar CheckerHarper: The Private Grammar Checker"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://writewithharper.com/editor",
+			"hosting": {
+				"url": "https://writewithharper.com/editor",
+				"source": "https://writewithharper.com/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://writewithharper.com/editor",
+				"title": "Harper | Privacy-First Offline Grammar Checker for Developers & WritersHarper: Free, Open Source Grammar Checker",
+				"assets": []
+			},
+			"sources": [
+				"https://github.com/Automattic/harper",
+				"https://github.com/Automattic/harper/blob/dd536c3009d8f4f8e8e28841fe3115dc944d67bb/README.md",
+				"https://writewithharper.com/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "photonforge",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/babisque/photonforge.yaml",
+			"repository": "https://github.com/babisque/PhotonForge",
+			"canonical_repository": "https://github.com/babisque/PhotonForge",
+			"reviewed_revision": "c18e909dcff60c8cf622d7021c98e16df7a6a7c5",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/babisque/PhotonForge",
+				"https://github.com/babisque/PhotonForge/blob/c18e909dcff60c8cf622d7021c98e16df7a6a7c5/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "projectcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/benandez/projectcraft.yaml",
+			"repository": "https://github.com/UCS-Care-Group/projectcraft",
+			"canonical_repository": "https://github.com/UCS-Care-Group/projectcraft",
+			"reviewed_revision": "1757247b53a5641d645bfcd0b4612504c5150785",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/UCS-Care-Group/projectcraft",
+				"https://github.com/UCS-Care-Group/projectcraft/blob/1757247b53a5641d645bfcd0b4612504c5150785/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "clubcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/beneaze/clubcraft.yaml",
+			"repository": "https://github.com/beneaze/ClubCraft",
+			"canonical_repository": "https://github.com/beneaze/ClubCraft",
+			"reviewed_revision": "b1f61cf359775474b9cf3fc6665465ce3bd293a7",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/beneaze/ClubCraft",
+				"https://github.com/beneaze/ClubCraft/blob/b1f61cf359775474b9cf3fc6665465ce3bd293a7/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "materialcreator",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/calla-ji/materialcreator.yaml",
+			"repository": "https://github.com/Calla-Ji/materialcreator",
+			"canonical_repository": "https://github.com/Calla-Ji/materialcreator",
+			"reviewed_revision": "1b1236d6ac5e942d8037dc4ba8ee5c1755765d10",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://discord.gg/fJHS44mQ5E",
+				"status": 200,
+				"final": "https://discord.com/invite/fJHS44mQ5E",
+				"title": "MaterialCraft"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Calla-Ji/materialcreator",
+				"https://github.com/Calla-Ji/materialcreator/blob/1b1236d6ac5e942d8037dc4ba8ee5c1755765d10/README.md",
+				"https://discord.gg/fJHS44mQ5E"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "diagramcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/charles-hood/diagramcraft.yaml",
+			"repository": "https://github.com/MisterDiagram/MisterDiagram",
+			"canonical_repository": "https://github.com/MisterDiagram/MisterDiagram",
+			"reviewed_revision": "32570dcd4711be4fae1da6d99e5a7568bdfb71b8",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://misterdiagram.com",
+				"status": 200,
+				"final": "https://github.com/MisterDiagram/MisterDiagram",
+				"title": "GitHub - MisterDiagram/MisterDiagram: Your diagrams, as requested. A clean-room, headless Rust core for Visio's .vsdx files and ShapeSheet, with a CLI and an MCP server. \u00b7 GitHub"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/MisterDiagram/MisterDiagram",
+				"https://github.com/MisterDiagram/MisterDiagram/blob/32570dcd4711be4fae1da6d99e5a7568bdfb71b8/README.md",
+				"https://misterdiagram.com"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "serpentine3d",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/chisomobanzi/serpentine3d.yaml",
+			"repository": "https://github.com/chisomobanzi/Serpentine3D",
+			"canonical_repository": "https://github.com/chisomobanzi/Serpentine3D",
+			"reviewed_revision": "eb02726eba44e55a958a1946fbc1823a51219efb",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://chisomobanzi.github.io/Serpentine3D/",
+				"status": 200,
+				"final": "https://chisomobanzi.github.io/Serpentine3D/",
+				"title": "Serpentine3D \u00b7 Every surface starts with a curve"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/chisomobanzi/Serpentine3D",
+				"https://github.com/chisomobanzi/Serpentine3D/blob/eb02726eba44e55a958a1946fbc1823a51219efb/README.md",
+				"https://chisomobanzi.github.io/Serpentine3D/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "cliprecorder",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cliprecorder.yaml",
+			"repository": "https://github.com/By183/ClipRecorder",
+			"canonical_repository": "https://github.com/By183/ClipRecorder",
+			"reviewed_revision": "153025b4c88ed42a23a97e030ce140c2fc54949d",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/By183/ClipRecorder",
+				"https://github.com/By183/ClipRecorder/blob/153025b4c88ed42a23a97e030ce140c2fc54949d/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "icraftmusic",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/icraftmusic.yaml",
+			"repository": "https://github.com/cmspeedau/iCraftMusic",
+			"canonical_repository": "https://github.com/cmspeedau/iCraftMusic",
+			"reviewed_revision": "6307c2c99e078405b34b0c35db4316e36aff3a63",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/cmspeedau/iCraftMusic",
+				"https://github.com/cmspeedau/iCraftMusic/blob/6307c2c99e078405b34b0c35db4316e36aff3a63/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "notecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/notecraft.yaml",
+			"repository": "https://github.com/cmspeedau/NoteCraft",
+			"canonical_repository": "https://github.com/cmspeedau/NoteCraft",
+			"reviewed_revision": "d604d9982077cc58b25f4c8fc7362f8ad79baed9",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/cmspeedau/NoteCraft",
+				"https://github.com/cmspeedau/NoteCraft/blob/d604d9982077cc58b25f4c8fc7362f8ad79baed9/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "syncbox",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/syncbox.yaml",
+			"repository": "https://github.com/cmspeedau/SyncBox",
+			"canonical_repository": "https://github.com/cmspeedau/SyncBox",
+			"reviewed_revision": "36a8c4d531342791f9113d06063eb41684ae2744",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/cmspeedau/SyncBox",
+				"https://github.com/cmspeedau/SyncBox/blob/36a8c4d531342791f9113d06063eb41684ae2744/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "narwhal-3d",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/contributionrich/narwhal-3d.yaml",
+			"repository": "https://github.com/ContributionRich/Narwhal3D",
+			"canonical_repository": "https://github.com/ContributionRich/Narwhal3D",
+			"reviewed_revision": "5a40d6d1eee16b26f4e6b5714862c711cafad797",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://github.com/ContributionRich/Narwhal3D/releases/latest",
+				"status": 200,
+				"final": "https://github.com/ContributionRich/Narwhal3D/releases",
+				"title": "Releases \u00b7 ContributionRich/Narwhal3D \u00b7 GitHub"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/ContributionRich/Narwhal3D",
+				"https://github.com/ContributionRich/Narwhal3D/blob/5a40d6d1eee16b26f4e6b5714862c711cafad797/README.md",
+				"https://github.com/ContributionRich/Narwhal3D/releases/latest"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "azteccraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cristim/azteccraft.yaml",
+			"repository": "https://github.com/cristim/AztecCraft",
+			"canonical_repository": "https://github.com/cristim/AztecCraft",
+			"reviewed_revision": "c75c250f33c485418b9023706cfba84cd24be1f5",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/cristim/AztecCraft",
+				"https://github.com/cristim/AztecCraft/blob/c75c250f33c485418b9023706cfba84cd24be1f5/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "drift",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cutwire-studios/drift.yaml",
+			"repository": "https://github.com/CutWire-Studios/Drift",
+			"canonical_repository": "https://github.com/CutWire-Studios/Drift",
+			"reviewed_revision": "bd36355496511c21fab9a17a7f1c066d264694ba",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://cutwire.org/drift/",
+				"status": 200,
+				"final": "https://cutwire.org/drift/",
+				"title": "CutWire Drift \u00e2\u0080\u0094 Free CapCut AlternativeGitHubFlathub"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/CutWire-Studios/Drift",
+				"https://github.com/CutWire-Studios/Drift/blob/bd36355496511c21fab9a17a7f1c066d264694ba/README.md",
+				"https://cutwire.org/drift/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "honeydew",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/daijro/honeydew.yaml",
+			"repository": "https://github.com/daijro/honeydew",
+			"canonical_repository": "https://github.com/daijro/honeydew",
+			"reviewed_revision": "8c7bddf9959002bd65d0f6345c07c3508c490836",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://playground.daijro.dev/honeydew/",
+				"status": 200,
+				"final": "https://playground.daijro.dev/honeydew/",
+				"title": "Honeydew"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/honeydew/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/honeydew/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/honeydew/",
+				"title": "Honeydew",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/honeydew/content/index.json",
+					"https://playground.daijro.dev/honeydew/honeydew-15e36ef1822b523.js"
+				]
+			},
+			"sources": [
+				"https://github.com/daijro/honeydew",
+				"https://github.com/daijro/honeydew/blob/8c7bddf9959002bd65d0f6345c07c3508c490836/README.md",
+				"https://playground.daijro.dev/honeydew/",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "paint-rs",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/daijro/paint-rs.yaml",
+			"repository": "https://github.com/daijro/paint.rs",
+			"canonical_repository": "https://github.com/daijro/paint.rs",
+			"reviewed_revision": "efcbd074050c43ea68931309ec188fc6ff9e040f",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://playground.daijro.dev/paint-rs",
+				"status": 200,
+				"final": "https://playground.daijro.dev/paint-rs/",
+				"title": "Paint.RS"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/paint-rs/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/paint-rs/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/paint-rs/",
+				"title": "Paint.RS",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/paint-rs/paintrs-7eb0bc106f165b02.js",
+					"https://playground.daijro.dev/paint-rs/paintrs-7eb0bc106f165b02_bg.wasm.gz"
+				]
+			},
+			"sources": [
+				"https://github.com/daijro/paint.rs",
+				"https://github.com/daijro/paint.rs/blob/efcbd074050c43ea68931309ec188fc6ff9e040f/README.md",
+				"https://playground.daijro.dev/paint-rs",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "nerthus",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/danemadsen/nerthus.yaml",
+			"repository": "https://github.com/danemadsen/nerthus",
+			"canonical_repository": "https://github.com/danemadsen/nerthus",
+			"reviewed_revision": "b80c3e5e792d45832b517674a054df7d50928afa",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://nerthus.app/",
+				"status": 200,
+				"final": "https://nerthus.app/",
+				"title": "Nerthus"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://nerthus.app/",
+			"hosting": {
+				"url": "https://nerthus.app/",
+				"source": "https://nerthus.app/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://nerthus.app/",
+				"title": "Nerthus",
+				"assets": []
+			},
+			"sources": [
+				"https://github.com/danemadsen/nerthus",
+				"https://github.com/danemadsen/nerthus/blob/b80c3e5e792d45832b517674a054df7d50928afa/README.md",
+				"https://nerthus.app/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "rusty-teams",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/danieldaeschle/rusty-teams.yaml",
+			"repository": "https://github.com/danieldaeschle/rusty-teams",
+			"canonical_repository": "https://github.com/danieldaeschle/rusty-teams",
+			"reviewed_revision": "1f1eeb0ee8285ff193ff07ef73d8b5a7f161f2f1",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/danieldaeschle/rusty-teams",
+				"https://github.com/danieldaeschle/rusty-teams/blob/1f1eeb0ee8285ff193ff07ef73d8b5a7f161f2f1/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "voicestudio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/debpalash/voicestudio.yaml",
+			"repository": "https://github.com/debpalash/VoiceStudio",
+			"canonical_repository": "https://github.com/debpalash/VoiceStudio",
+			"reviewed_revision": "58f6960aff5c459932b29565090e0aefaa2b5515",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://voicestudio.sh/",
+				"status": 200,
+				"final": "https://voicestudio.sh/",
+				"title": "Free Open-Source AI Voice Cloning & Dubbing | VoiceStudio"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/debpalash/VoiceStudio",
+				"https://github.com/debpalash/VoiceStudio/blob/58f6960aff5c459932b29565090e0aefaa2b5515/README.md",
+				"https://voicestudio.sh/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "e-journal",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/e-journal.yaml",
+			"repository": "https://github.com/EkarinLB/e-journal",
+			"canonical_repository": "https://github.com/EkarinLB/e-journal",
+			"reviewed_revision": "6d9fea9bf10813c570d02311fb9f0ed1dd388503",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/EkarinLB/e-journal",
+				"https://github.com/EkarinLB/e-journal/blob/6d9fea9bf10813c570d02311fb9f0ed1dd388503/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "vice",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/eklonofficial/vice.yaml",
+			"repository": "https://github.com/splitshotz/Vice",
+			"canonical_repository": "https://github.com/splitshotz/Vice",
+			"reviewed_revision": "7e4b2a3bccc6e43285d095afe95d0d7fe3d0c84c",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://splitshotz.github.io/Vice-Website/",
+				"status": 200,
+				"final": "https://splitshotz.github.io/Vice-Website/",
+				"title": "Vice: instant replay for Linux"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/splitshotz/Vice",
+				"https://github.com/splitshotz/Vice/blob/7e4b2a3bccc6e43285d095afe95d0d7fe3d0c84c/README.md",
+				"https://splitshotz.github.io/Vice-Website/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "lightcraft-classic",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/emmertex/lightcraft-classic.yaml",
+			"repository": "https://github.com/emmertex/lightcraft-classic",
+			"canonical_repository": "https://github.com/emmertex/lightcraft-classic",
+			"reviewed_revision": "aeb680015d7e37cfc744c2fb01fcea81b34f3f32",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/lightcraft-classic/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/lightcraft-classic/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/lightcraft-classic/",
+				"title": "LightCraft Classic",
+				"assets": ["https://playground.daijro.dev/shell/app.js"]
+			},
+			"sources": [
+				"https://github.com/emmertex/lightcraft-classic",
+				"https://github.com/emmertex/lightcraft-classic/blob/aeb680015d7e37cfc744c2fb01fcea81b34f3f32/README.md",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "radiomaster",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/epell-development/radiomaster.yaml",
+			"repository": "https://github.com/epell-development/RadioMaster",
+			"canonical_repository": "https://github.com/epell-development/RadioMaster",
+			"reviewed_revision": "8353f5df701fb1a0e0df3fa6a960de9e932d535c",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://radiomaster.dovafm.com/",
+				"status": 200,
+				"final": "https://radiomaster.dovafm.com/",
+				"title": "RadioMaster \u2014 Free, Open-Source Radio Automation Software for Windows, macOS & Linux"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/epell-development/RadioMaster",
+				"https://github.com/epell-development/RadioMaster/blob/8353f5df701fb1a0e0df3fa6a960de9e932d535c/README.md",
+				"https://radiomaster.dovafm.com/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "anticensor",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/erkinalp/anticensor.yaml",
+			"repository": "https://github.com/erkinalp/anticensor",
+			"canonical_repository": "https://github.com/erkinalp/anticensor",
+			"reviewed_revision": "c458236883d2502eb46a719897f2cffd348febd4",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/erkinalp/anticensor",
+				"https://github.com/erkinalp/anticensor/blob/c458236883d2502eb46a719897f2cffd348febd4/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "precall",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/erkinalp/precall.yaml",
+			"repository": "https://github.com/erkinalp/PreCall",
+			"canonical_repository": "https://github.com/erkinalp/PreCall",
+			"reviewed_revision": "6e1a1793e0f520231984549695b34e62185f6b38",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/erkinalp/PreCall",
+				"https://github.com/erkinalp/PreCall/blob/6e1a1793e0f520231984549695b34e62185f6b38/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "clothcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/erythrofr/clothcraft.yaml",
+			"repository": "https://github.com/erythrofr/ClothCraft",
+			"canonical_repository": "https://github.com/erythrofr/ClothCraft",
+			"reviewed_revision": "fb85421f613c6705d0d1612f6ec74e843ce76930",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/erythrofr/ClothCraft",
+				"https://github.com/erythrofr/ClothCraft/blob/fb85421f613c6705d0d1612f6ec74e843ce76930/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "fuzix",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/etchedpixels/fuzix.yaml",
+			"repository": "https://codeberg.org/EtchedPixels/FUZIX",
+			"canonical_repository": null,
+			"reviewed_revision": null,
+			"readme_reviewed": false,
+			"website_check": {
+				"source": "https://www.fuzix.org/",
+				"status": 200,
+				"final": "https://www.fuzix.org/",
+				"title": "Fuzix: Because Small Is Beautiful"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://codeberg.org/EtchedPixels/FUZIX",
+				"https://www.fuzix.org/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "exomyth",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/exonerv-pec/exomyth.yaml",
+			"repository": "https://github.com/Exonerv-Pec/Exomyth",
+			"canonical_repository": "https://github.com/Exonerv-Pec/ExoMyth",
+			"reviewed_revision": "a797d04b353c8627b81f7930bdb654eaec2c0d57",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://exonerv-pec.github.io/Exomyth/",
+				"status": 404,
+				"final": "https://exonerv-pec.github.io/Exomyth/",
+				"title": "Site not found \u00b7 GitHub Pages"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Exonerv-Pec/Exomyth",
+				"https://github.com/Exonerv-Pec/ExoMyth/blob/a797d04b353c8627b81f7930bdb654eaec2c0d57/README.md",
+				"https://exonerv-pec.github.io/Exomyth/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "prowave",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/fabox-os/prowave.yaml",
+			"repository": "https://github.com/fabox-os/Pro-Wave",
+			"canonical_repository": "https://github.com/fabox-os/Pro-Wave",
+			"reviewed_revision": "34afc761123c7ec487f372da429b325066378750",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://discord.gg/V5m5nnP9uB",
+				"status": 200,
+				"final": "https://discord.com/invite/V5m5nnP9uB",
+				"title": "Pro Wave"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/head/pro-wave/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/head/pro-wave/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/head/pro-wave/",
+				"title": "Pro Wave",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/head/pro-wave/prowave-db1cd67ca10cf498.js"
+				]
+			},
+			"sources": [
+				"https://github.com/fabox-os/Pro-Wave",
+				"https://github.com/fabox-os/Pro-Wave/blob/34afc761123c7ec487f372da429b325066378750/README.md",
+				"https://discord.gg/V5m5nnP9uB",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "freedos",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/fdos/freedos.yaml",
+			"repository": "https://github.com/FDOS/kernel",
+			"canonical_repository": "https://github.com/FDOS/kernel",
+			"reviewed_revision": "d6791add2043c9d7b584d840a8ffaf8829fd2bdc",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://www.freedos.org/",
+				"status": 200,
+				"final": "https://www.freedos.org/",
+				"title": "The FreeDOS Project"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/FDOS/kernel",
+				"https://github.com/FDOS/kernel/blob/d6791add2043c9d7b584d840a8ffaf8829fd2bdc/README.md",
+				"https://www.freedos.org/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "flare-animate",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/flare-animate/flare-animate.yaml",
+			"repository": "https://github.com/Flare-Animate/Flare",
+			"canonical_repository": "https://github.com/Flare-Animate/Flare",
+			"reviewed_revision": "b08e943711c2ea2bff95ebaf8952b0b9a89ba554",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://flare-animate.github.io/website/",
+				"status": 200,
+				"final": "https://flare-animate.github.io/website/",
+				"title": "Flare"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Flare-Animate/Flare",
+				"https://github.com/Flare-Animate/Flare/blob/b08e943711c2ea2bff95ebaf8952b0b9a89ba554/README.md",
+				"https://flare-animate.github.io/website/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "tubeglass",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/flawlesscode254/tubeglass.yaml",
+			"repository": "https://github.com/flawlesscode254/TubeGlass",
+			"canonical_repository": "https://github.com/flawlesscode254/TubeGlass",
+			"reviewed_revision": "df13e2635401eb30a10746aa2d8cde1065369a8f",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/flawlesscode254/TubeGlass",
+				"https://github.com/flawlesscode254/TubeGlass/blob/df13e2635401eb30a10746aa2d8cde1065369a8f/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "lookout",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/gavindi/lookout.yaml",
+			"repository": "https://github.com/gavindi/lookout",
+			"canonical_repository": "https://github.com/gavindi/lookout",
+			"reviewed_revision": "f9c0616f4cb6f753aeab0d3c3899d439c3286a6a",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://lookout-mail.com/",
+				"status": 200,
+				"final": "https://lookout-mail.com/",
+				"title": "Lookout \u00e2\u0080\u0094 a modern, familiar email client for GNOME"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/gavindi/lookout",
+				"https://github.com/gavindi/lookout/blob/f9c0616f4cb6f753aeab0d3c3899d439c3286a6a/README.md",
+				"https://lookout-mail.com/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "mt-sync",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/gavindi/mt-sync.yaml",
+			"repository": "https://github.com/gavindi/MtSync",
+			"canonical_repository": "https://github.com/gavindi/MtSync",
+			"reviewed_revision": "958da9551d448efbeb1b8262dae938a40dd0de60",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://gavingraham.com/mt-sync-mount-sync-your-storage-in-comfort/",
+				"status": 200,
+				"final": "https://gavingraham.com/mt-sync-mount-sync-your-storage-in-comfort/",
+				"title": "Mt. Sync \u2013 Mount & Sync your storage in comfort \u2013 Gavin Graham"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/gavindi/MtSync",
+				"https://github.com/gavindi/MtSync/blob/958da9551d448efbeb1b8262dae938a40dd0de60/README.md",
+				"https://gavingraham.com/mt-sync-mount-sync-your-storage-in-comfort/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "bimcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/bimcraft.yaml",
+			"repository": "https://github.com/getcadcraft/bimcraft",
+			"canonical_repository": "https://github.com/getcadcraft/bimcraft",
+			"reviewed_revision": "c778c7ca3f83eeecc3e815078417f152b2ca7a94",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/bimcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/bimcraft",
+				"title": "BimCraft \u2014 BIM review & editing | CadCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/bimcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/bimcraft",
+				"source": "https://getcadcraft.com/apps/bimcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/bimcraft",
+				"title": "BimCraft 0.7.1 \u2014 Use in your browser | CadCraft",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/bimcraft/0.7.1/bimcraft.js?v=1793041546",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/bimcraft",
+				"https://github.com/getcadcraft/bimcraft/blob/c778c7ca3f83eeecc3e815078417f152b2ca7a94/README.md",
+				"https://getcadcraft.com/apps/bimcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "civilcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/civilcraft.yaml",
+			"repository": "https://github.com/getcadcraft/civilcraft",
+			"canonical_repository": "https://github.com/getcadcraft/civilcraft",
+			"reviewed_revision": "98d42c16f9880f2ef9d23a07fd85c7d949c407e7",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/civilcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/civilcraft",
+				"title": "CivilCraft \u2014 Civil & site design | CadCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/civilcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/civilcraft",
+				"source": "https://getcadcraft.com/apps/civilcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/civilcraft",
+				"title": "CivilCraft 0.7.1 \u2014 Use in your browser | CadCraft",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/civilcraft/0.7.1/civilcraft.js?v=1793041488",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/civilcraft",
+				"https://github.com/getcadcraft/civilcraft/blob/98d42c16f9880f2ef9d23a07fd85c7d949c407e7/README.md",
+				"https://getcadcraft.com/apps/civilcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "detailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/detailcraft.yaml",
+			"repository": "https://github.com/getcadcraft/detailcraft",
+			"canonical_repository": "https://github.com/getcadcraft/detailcraft",
+			"reviewed_revision": "4d7ec7059ec585f88b5cf8ff8df3eb5e872507bf",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/detailcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/detailcraft",
+				"title": "DetailCraft \u2014 Steel & rebar detailing | CadCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/detailcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/detailcraft",
+				"source": "https://getcadcraft.com/apps/detailcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/detailcraft",
+				"title": "DetailCraft 0.7.1 \u2014 Use in your browser | CadCraft",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/detailcraft/0.7.1/detailcraft.js?v=1793041468",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/detailcraft",
+				"https://github.com/getcadcraft/detailcraft/blob/4d7ec7059ec585f88b5cf8ff8df3eb5e872507bf/README.md",
+				"https://getcadcraft.com/apps/detailcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "getcadcraft-cadcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/getcadcraft-cadcraft.yaml",
+			"repository": "https://github.com/getcadcraft/cadcraft",
+			"canonical_repository": "https://github.com/getcadcraft/cadcraft",
+			"reviewed_revision": "80b7225198e97fea75519dda16f5587b6fdfd803",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/cadcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/cadcraft",
+				"title": "CadCraft \u2014 2D drafting & 3D modeling"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/cadcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/cadcraft",
+				"source": "https://getcadcraft.com/apps/cadcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/cadcraft",
+				"title": "CadCraft 0.7.1 \u2014 Use in your browser",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/cadcraft/0.7.1/cadcraft.js?v=1792824216",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/cadcraft",
+				"https://github.com/getcadcraft/cadcraft/blob/80b7225198e97fea75519dda16f5587b6fdfd803/README.md",
+				"https://getcadcraft.com/apps/cadcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "getcadcraft-markupcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/getcadcraft-markupcraft.yaml",
+			"repository": "https://github.com/getcadcraft/markupcraft",
+			"canonical_repository": "https://github.com/getcadcraft/markupcraft",
+			"reviewed_revision": "70967b4125431d6ad9402825faa1627f234fd643",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/markupcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/markupcraft",
+				"title": "MarkupCraft \u2014 Drawing review & markup | CadCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/markupcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/markupcraft",
+				"source": "https://getcadcraft.com/apps/markupcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/markupcraft",
+				"title": "MarkupCraft 0.7.1 \u2014 Use in your browser | CadCraft",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/markupcraft/0.7.1/markupcraft.js?v=1793037405",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/markupcraft",
+				"https://github.com/getcadcraft/markupcraft/blob/70967b4125431d6ad9402825faa1627f234fd643/README.md",
+				"https://getcadcraft.com/apps/markupcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "modelcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/modelcraft.yaml",
+			"repository": "https://github.com/getcadcraft/modelcraft",
+			"canonical_repository": "https://github.com/getcadcraft/modelcraft",
+			"reviewed_revision": "1ad753fb22f027abd381bda996b4c956f4cc20ce",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/modelcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/modelcraft",
+				"title": "ModelCraft \u2014 3D modeling for design | CadCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/modelcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/modelcraft",
+				"source": "https://getcadcraft.com/apps/modelcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/modelcraft",
+				"title": "ModelCraft 0.7.1 \u2014 Use in your browser | CadCraft",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/modelcraft/0.7.1/modelcraft.js?v=1793029668",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/modelcraft",
+				"https://github.com/getcadcraft/modelcraft/blob/1ad753fb22f027abd381bda996b4c956f4cc20ce/README.md",
+				"https://getcadcraft.com/apps/modelcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "partcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/partcraft.yaml",
+			"repository": "https://github.com/getcadcraft/partcraft",
+			"canonical_repository": "https://github.com/getcadcraft/partcraft",
+			"reviewed_revision": "8dae0fc92484fd3f28f0afcbd7c1dfb96de3f33e",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/partcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/partcraft",
+				"title": "PartCraft \u2014 Parametric parts & assemblies | CadCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/partcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/partcraft",
+				"source": "https://getcadcraft.com/apps/partcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/partcraft",
+				"title": "PartCraft 0.7 \u2014 Use in your browser | CadCraft",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/partcraft/0.7/partcraft.js?v=1792824342",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/partcraft",
+				"https://github.com/getcadcraft/partcraft/blob/8dae0fc92484fd3f28f0afcbd7c1dfb96de3f33e/README.md",
+				"https://getcadcraft.com/apps/partcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "takeoffcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/takeoffcraft.yaml",
+			"repository": "https://github.com/getcadcraft/takeoffcraft",
+			"canonical_repository": "https://github.com/getcadcraft/takeoffcraft",
+			"reviewed_revision": "9f504b6ae88acf86f53f5a8681efbd54113fe00a",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getcadcraft.com/apps/takeoffcraft",
+				"status": 200,
+				"final": "https://getcadcraft.com/apps/takeoffcraft",
+				"title": "TakeoffCraft \u2014 Quantity takeoff & estimating | CadCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://getcadcraft.com/use/takeoffcraft",
+			"hosting": {
+				"url": "https://getcadcraft.com/use/takeoffcraft",
+				"source": "https://getcadcraft.com/apps/takeoffcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://getcadcraft.com/use/takeoffcraft",
+				"title": "TakeoffCraft 0.7 \u2014 Use in your browser | CadCraft",
+				"assets": [
+					"https://getcadcraft.com/assets/apps/takeoffcraft/0.7/takeoffcraft.js?v=1792824317",
+					"https://getcadcraft.com/assets/js/bootstrap/current/bootstrap.bundle.min.js",
+					"https://getcadcraft.com/assets/js/site.js?v=1792689798"
+				]
+			},
+			"sources": [
+				"https://github.com/getcadcraft/takeoffcraft",
+				"https://github.com/getcadcraft/takeoffcraft/blob/9f504b6ae88acf86f53f5a8681efbd54113fe00a/README.md",
+				"https://getcadcraft.com/apps/takeoffcraft"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "corinzia",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/githuhl/corinzia.yaml",
+			"repository": "https://github.com/GitHuhl/Corinzia",
+			"canonical_repository": "https://github.com/GitHuhl/Corinzia",
+			"reviewed_revision": "3b0886e0ee675d279c1ddaaa5438eb1427171170",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/GitHuhl/Corinzia",
+				"https://github.com/GitHuhl/Corinzia/blob/3b0886e0ee675d279c1ddaaa5438eb1427171170/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "rsedit",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/goodappsstore/rsedit.yaml",
+			"repository": "https://github.com/goodappsstore/rsedit",
+			"canonical_repository": "https://github.com/goodappsstore/rsedit",
+			"reviewed_revision": "63a9ee4966d3fe1cfcd7d4af70e963e10aa297ff",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://goodapps.store",
+				"status": 200,
+				"final": "https://goodapps.store/",
+				"title": "GoodApps \u00e2\u0080\u0094 Free and open-source desktop apps"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/goodappsstore/rsedit",
+				"https://github.com/goodappsstore/rsedit/blob/63a9ee4966d3fe1cfcd7d4af70e963e10aa297ff/README.md",
+				"https://goodapps.store"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "rolltop",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/grahamsz/rolltop.yaml",
+			"repository": "https://github.com/grahamsz/rolltop",
+			"canonical_repository": "https://github.com/grahamsz/rolltop",
+			"reviewed_revision": "c16dccd315dabb0490e3ad4f5f8cd643a82ed6e4",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://rolltop.app/",
+				"status": 200,
+				"final": "https://rolltop.app/",
+				"title": "rolltop - self-hosted email"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/grahamsz/rolltop",
+				"https://github.com/grahamsz/rolltop/blob/c16dccd315dabb0490e3ad4f5f8cd643a82ed6e4/README.md",
+				"https://rolltop.app/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "graphite",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/graphiteeditor/graphite.yaml",
+			"repository": "https://github.com/GraphiteEditor/Graphite",
+			"canonical_repository": "https://github.com/GraphiteEditor/Graphite",
+			"reviewed_revision": "f970cb167e7467716976f089daac502dd9de6678",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://graphite.art/",
+				"status": 200,
+				"final": "https://graphite.art/",
+				"title": "Graphite | Free online vector editor & procedural design tool"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://editor.graphite.art/",
+			"hosting": {
+				"url": "https://editor.graphite.art/",
+				"source": "https://graphite.art/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://editor.graphite.art/",
+				"title": "Graphite",
+				"assets": [
+					"https://graphite.art/visit/script.hash.js",
+					"https://editor.graphite.art/assets/index-m1lViLdB.js"
+				]
+			},
+			"sources": [
+				"https://github.com/GraphiteEditor/Graphite",
+				"https://github.com/GraphiteEditor/Graphite/blob/f970cb167e7467716976f089daac502dd9de6678/README.md",
+				"https://graphite.art/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "trazo",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hazielcampos/trazo.yaml",
+			"repository": "https://github.com/hazielcampos/trazo",
+			"canonical_repository": "https://github.com/hazielcampos/trazo",
+			"reviewed_revision": "9fac6280b22f4726580354665c8168d8e22c30fe",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/hazielcampos/trazo",
+				"https://github.com/hazielcampos/trazo/blob/9fac6280b22f4726580354665c8168d8e22c30fe/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "hew",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hew3d/hew.yaml",
+			"repository": "https://github.com/hew3d/hew",
+			"canonical_repository": "https://github.com/hew3d/hew",
+			"reviewed_revision": "f7734a5dfa262c03822d0eae918206705223e6b3",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://hew3d.com",
+				"status": 200,
+				"final": "https://hew3d.com/",
+				"title": "Hew \u2014 free, open-source, solids-first 3D modeling the SketchUp way"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://app.hew3d.com/",
+			"hosting": {
+				"url": "https://app.hew3d.com/",
+				"source": "https://hew3d.com",
+				"kind": "official",
+				"status": 200,
+				"final": "https://app.hew3d.com/",
+				"title": "Hew",
+				"assets": [
+					"https://app.hew3d.com/assets/index-q2nrbuOH.js",
+					"https://app.hew3d.com/assets/rolldown-runtime-XKyaHtl9.js",
+					"https://app.hew3d.com/assets/dist-HKRP2u1O.js"
+				]
+			},
+			"sources": [
+				"https://github.com/hew3d/hew",
+				"https://github.com/hew3d/hew/blob/f7734a5dfa262c03822d0eae918206705223e6b3/README.md",
+				"https://hew3d.com"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "hexe",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hexe.yaml",
+			"repository": "https://github.com/pascaldisse/hexe",
+			"canonical_repository": "https://github.com/pascaldisse/hexe",
+			"reviewed_revision": "bdbd03104c8f9d3c2854655ccd4ea842d96c3549",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/pascaldisse/hexe",
+				"https://github.com/pascaldisse/hexe/blob/bdbd03104c8f9d3c2854655ccd4ea842d96c3549/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "draugr-time",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hlophlopgaming/draugr-time.yaml",
+			"repository": "https://github.com/hlophlopgaming/DraugrTime",
+			"canonical_repository": "https://github.com/hlophlopgaming/DraugrTime",
+			"reviewed_revision": "440d08c8b151351d43a1c714395cc45cdfc274f9",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/hlophlopgaming/DraugrTime",
+				"https://github.com/hlophlopgaming/DraugrTime/blob/440d08c8b151351d43a1c714395cc45cdfc274f9/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "mothref",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hlophlopgaming/mothref.yaml",
+			"repository": "https://github.com/hlophlopgaming/mothRef",
+			"canonical_repository": "https://github.com/hlophlopgaming/mothRef",
+			"reviewed_revision": "6b39d2dc0d07724246b45fa4b5f3e3c85d239e52",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/hlophlopgaming/mothRef",
+				"https://github.com/hlophlopgaming/mothRef/blob/6b39d2dc0d07724246b45fa4b5f3e3c85d239e52/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "downloadcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hungry-detective/downloadcraft.yaml",
+			"repository": "https://github.com/hungry-detective/downloadcraft",
+			"canonical_repository": "https://github.com/hungry-detective/downloadcraft",
+			"reviewed_revision": "75dccabb4d7fd89d62547b985bc209949fecd3a9",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/hungry-detective/downloadcraft",
+				"https://github.com/hungry-detective/downloadcraft/blob/75dccabb4d7fd89d62547b985bc209949fecd3a9/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "tequila",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ifpintac/tequila.yaml",
+			"repository": "https://github.com/ifpintac/tequila",
+			"canonical_repository": "https://github.com/ifpintac/tequila",
+			"reviewed_revision": "95d15aeaf6ecb01a71217be28c1cafb3be1d005f",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://discord.gg/Na5T2qgQBX",
+				"status": 200,
+				"final": "https://discord.com/invite/Na5T2qgQBX",
+				"title": "Tequila: Product Rendering"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/ifpintac/tequila",
+				"https://github.com/ifpintac/tequila/blob/95d15aeaf6ecb01a71217be28c1cafb3be1d005f/README.md",
+				"https://discord.gg/Na5T2qgQBX"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "ingetrazo",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ingelibre/ingetrazo.yaml",
+			"repository": "https://github.com/ingelibre/ingetrazo",
+			"canonical_repository": "https://github.com/ingelibre/ingetrazo",
+			"reviewed_revision": "1200cc474fae5a1cad37ac72b7434d30997029f3",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://ingetrazo.com/en",
+				"status": 200,
+				"final": "https://ingetrazo.com/en/",
+				"title": "IngeTrazo \u00c2\u00b7 Open-source 3D modeler for architecture and engineering"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/ingelibre/ingetrazo",
+				"https://github.com/ingelibre/ingetrazo/blob/1200cc474fae5a1cad37ac72b7434d30997029f3/README.md",
+				"https://ingetrazo.com/en"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "ipedrax-bimcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ipedrax/ipedrax-bimcraft.yaml",
+			"repository": "https://github.com/IPedrax/BIMCraft",
+			"canonical_repository": "https://github.com/IPedrax/BIMCraft",
+			"reviewed_revision": "b36160b5bae0fcb9a2978ec07d655cc64b500956",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/IPedrax/BIMCraft",
+				"https://github.com/IPedrax/BIMCraft/blob/b36160b5bae0fcb9a2978ec07d655cc64b500956/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "lemon-studio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/itsalphaneon/lemon-studio.yaml",
+			"repository": "https://github.com/ItsAlphaNeon/Lemon-Studio",
+			"canonical_repository": "https://github.com/ItsAlphaNeon/Lemon-Studio",
+			"reviewed_revision": "aea03d472b5303376e205edb56a4403f16c0ef24",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://playground.daijro.dev/lemon-studio/",
+				"status": 200,
+				"final": "https://playground.daijro.dev/lemon-studio/",
+				"title": "Lemon Studio"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/lemon-studio/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/lemon-studio/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/lemon-studio/",
+				"title": "Lemon Studio",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/lemon-studio/bootstrap.mjs"
+				]
+			},
+			"sources": [
+				"https://github.com/ItsAlphaNeon/Lemon-Studio",
+				"https://github.com/ItsAlphaNeon/Lemon-Studio/blob/aea03d472b5303376e205edb56a4403f16c0ef24/README.md",
+				"https://playground.daijro.dev/lemon-studio/",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "blok",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jackuait/blok.yaml",
+			"repository": "https://github.com/JackUait/blok",
+			"canonical_repository": "https://github.com/JackUait/blok",
+			"reviewed_revision": "39903000ee64915bf05daa2473d5ba6eff2545b3",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://blokeditor.com",
+				"status": 200,
+				"final": "https://blokeditor.com/",
+				"title": "Blok \u2014 Headless Block-Based Rich Text Editor"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://blokeditor.com/demo/",
+			"hosting": {
+				"url": "https://blokeditor.com/demo/",
+				"source": "https://blokeditor.com",
+				"kind": "official",
+				"status": 200,
+				"final": "https://blokeditor.com/demo/",
+				"title": "Blok Playground \u2014 Try the Block Editor",
+				"assets": [
+					"https://www.googletagmanager.com/gtag/js?id=G-P4F8SK0C03",
+					"https://blokeditor.com/assets/manifest-4d70ba7c.js",
+					"https://blokeditor.com/assets/entry.client-DKDO7Xmd.js"
+				]
+			},
+			"sources": [
+				"https://github.com/JackUait/blok",
+				"https://github.com/JackUait/blok/blob/39903000ee64915bf05daa2473d5ba6eff2545b3/README.md",
+				"https://blokeditor.com"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "datacraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/javy-fernandez/datacraft.yaml",
+			"repository": "https://github.com/javy-fernandez/datacraft",
+			"canonical_repository": "https://github.com/javy-fernandez/datacraft",
+			"reviewed_revision": "d94113ed948495e0941e490a16a90a3af174f5f3",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/javy-fernandez/datacraft",
+				"https://github.com/javy-fernandez/datacraft/blob/d94113ed948495e0941e490a16a90a3af174f5f3/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "dotcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/javy-fernandez/dotcraft.yaml",
+			"repository": "https://github.com/javy-fernandez/dotcraft",
+			"canonical_repository": "https://github.com/javy-fernandez/dotcraft",
+			"reviewed_revision": "59ebe3904e9785251f1d9b61ba31bc088c4515de",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/javy-fernandez/dotcraft",
+				"https://github.com/javy-fernandez/dotcraft/blob/59ebe3904e9785251f1d9b61ba31bc088c4515de/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "prosecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jennraeross/prosecraft.yaml",
+			"repository": "https://github.com/jennraeross/ProseCraft",
+			"canonical_repository": "https://github.com/jennraeross/ProseCraft",
+			"reviewed_revision": "2b6e72db2b2ffa37505f0635676314ff9d3b2759",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/jennraeross/ProseCraft",
+				"https://github.com/jennraeross/ProseCraft/blob/2b6e72db2b2ffa37505f0635676314ff9d3b2759/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "opensidian",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jpzk/opensidian.yaml",
+			"repository": "https://github.com/jpzk/opensidian",
+			"canonical_repository": "https://github.com/jpzk/opensidian",
+			"reviewed_revision": "ff35e5aaf5fd3d325d3b297b672fe56800d8247e",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://opensidian.org",
+				"status": 200,
+				"final": "https://opensidian.org/",
+				"title": "Opensidian - open-source, vault-compatible markdown notes app"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://opensidian.org/webversion/",
+			"hosting": {
+				"url": "https://opensidian.org/webversion/",
+				"source": "https://opensidian.org",
+				"kind": "official",
+				"status": 200,
+				"final": "https://opensidian.org/webversion/",
+				"title": "opensidian",
+				"assets": [
+					"https://opensidian.org/webversion/web-static/wasi.js",
+					"https://opensidian.org/webversion/web-static/opfs.js",
+					"https://opensidian.org/webversion/web-static/shim.js"
+				]
+			},
+			"sources": [
+				"https://github.com/jpzk/opensidian",
+				"https://github.com/jpzk/opensidian/blob/ff35e5aaf5fd3d325d3b297b672fe56800d8247e/README.md",
+				"https://opensidian.org"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "concat",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jub0t/concat.yaml",
+			"repository": "https://github.com/jub0t/concat",
+			"canonical_repository": "https://github.com/jub0t/Concat",
+			"reviewed_revision": "9e20c56269f61102ae361adfc310891240edaccf",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://concatenate.pages.dev",
+				"status": 200,
+				"final": "https://concatenate.pages.dev/",
+				"title": "Concat: the free, open-source CapCut replacement"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/jub0t/concat",
+				"https://github.com/jub0t/Concat/blob/9e20c56269f61102ae361adfc310891240edaccf/README.md",
+				"https://concatenate.pages.dev"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "dashcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jxck-s/dashcraft.yaml",
+			"repository": "https://github.com/Jxck-S/dashcraft",
+			"canonical_repository": "https://github.com/Jxck-S/dashcraft",
+			"reviewed_revision": "72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Jxck-S/dashcraft",
+				"https://github.com/Jxck-S/dashcraft/blob/72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "kontra",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/kontra.yaml",
+			"repository": "https://github.com/DerpcatMusic/KONTRA",
+			"canonical_repository": "https://github.com/DerpcatMusic/KONTRA",
+			"reviewed_revision": "7a8e2829801ef01ea7375ef8df67814e3cbb5eb8",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://derpcatmusic.github.io/KONTRA/",
+				"status": 200,
+				"final": "https://derpcatmusic.github.io/KONTRA/",
+				"title": "KONTRA \u2014 A free, open-source sample player"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/DerpcatMusic/KONTRA",
+				"https://github.com/DerpcatMusic/KONTRA/blob/7a8e2829801ef01ea7375ef8df67814e3cbb5eb8/README.md",
+				"https://derpcatmusic.github.io/KONTRA/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "capsulecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/kostyk348/capsulecraft.yaml",
+			"repository": "https://github.com/kostyk348/CapsuleCraft",
+			"canonical_repository": "https://github.com/kostyk348/CapsuleCraft",
+			"reviewed_revision": "f21484aea7faef5fd6e58b523893ca3872c8e30c",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/kostyk348/CapsuleCraft",
+				"https://github.com/kostyk348/CapsuleCraft/blob/f21484aea7faef5fd6e58b523893ca3872c8e30c/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "mbscada",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/kostyk348/mbscada.yaml",
+			"repository": "https://github.com/kostyk348/mbscada-rs",
+			"canonical_repository": "https://github.com/kostyk348/mbscada-rs",
+			"reviewed_revision": "b068d91c87122252a4416b6153b5e0b708d445ae",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/kostyk348/mbscada-rs",
+				"https://github.com/kostyk348/mbscada-rs/blob/b068d91c87122252a4416b6153b5e0b708d445ae/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "elixiroffice",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/leag1234/elixiroffice.yaml",
+			"repository": "https://github.com/leag1234/elixiroffice",
+			"canonical_repository": "https://github.com/leag1234/ElixirOffice",
+			"reviewed_revision": "6560e6e84dc2fb3dc0e09312f1635625d5ef4e65",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/leag1234/elixiroffice",
+				"https://github.com/leag1234/ElixirOffice/blob/6560e6e84dc2fb3dc0e09312f1635625d5ef4e65/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "open-notebook",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lfnovo/open-notebook.yaml",
+			"repository": "https://github.com/lfnovo/open-notebook",
+			"canonical_repository": "https://github.com/lfnovo/open-notebook",
+			"reviewed_revision": "a0f6f3081ae06328f0a451b3a3ef2959ca25721d",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://www.open-notebook.ai",
+				"status": 200,
+				"final": "https://www.open-notebook.ai/",
+				"title": "What is Open Notebook? | Open Notebook"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/lfnovo/open-notebook",
+				"https://github.com/lfnovo/open-notebook/blob/a0f6f3081ae06328f0a451b3a3ef2959ca25721d/README.md",
+				"https://www.open-notebook.ai"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "libernt",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/libernt/libernt.yaml",
+			"repository": "https://github.com/LiberNT/LiberNT",
+			"canonical_repository": "https://github.com/LiberNT/LiberNT",
+			"reviewed_revision": "538f1b384f2a5a0fd5ee56fe490ee33a6363231a",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://libernt.com",
+				"status": 200,
+				"final": "https://libernt.com/",
+				"title": "LiberNT \u00b7 A free NT operating system."
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/LiberNT/LiberNT",
+				"https://github.com/LiberNT/LiberNT/blob/538f1b384f2a5a0fd5ee56fe490ee33a6363231a/README.md",
+				"https://libernt.com"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "roidery",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lork-fork/roidery.yaml",
+			"repository": "https://github.com/lork-fork/Roidery",
+			"canonical_repository": "https://github.com/lork-fork/Roidery",
+			"reviewed_revision": "0187f73daf2b5b05ff9e88cacc8c972c6abb9687",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/lork-fork/Roidery",
+				"https://github.com/lork-fork/Roidery/blob/0187f73daf2b5b05ff9e88cacc8c972c6abb9687/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "ledger-reborn",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lxistired/ledger-reborn.yaml",
+			"repository": "https://github.com/lxistired/ledger-reborn",
+			"canonical_repository": "https://github.com/lxistired/ledger-reborn",
+			"reviewed_revision": "d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://github.com/lxistired",
+				"status": 200,
+				"final": "https://github.com/lxistired",
+				"title": "lxistired \u00b7 GitHub"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/lxistired/ledger-reborn",
+				"https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md",
+				"https://github.com/lxistired"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "substancecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lyraedan/substancecraft.yaml",
+			"repository": "https://github.com/Lyraedan/SubstanceCraft",
+			"canonical_repository": "https://github.com/Lyraedan/SubstanceCraft",
+			"reviewed_revision": "8292b2f02d1a1f73bf6c2801f8468c9083656482",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Lyraedan/SubstanceCraft",
+				"https://github.com/Lyraedan/SubstanceCraft/blob/8292b2f02d1a1f73bf6c2801f8468c9083656482/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "plane",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/makeplane/plane.yaml",
+			"repository": "https://github.com/makeplane/plane",
+			"canonical_repository": "https://github.com/makeplane/plane",
+			"reviewed_revision": "a9e70360c5bc5b1beb5f70fe4c2fa765743147ec",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://plane.so/",
+				"status": 200,
+				"final": "https://plane.so/",
+				"title": "AI-native project management | Plane"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://app.plane.so/",
+			"hosting": {
+				"url": "https://app.plane.so/",
+				"source": "https://plane.so/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://app.plane.so/",
+				"title": "Plane",
+				"assets": [
+					"https://app.plane.so/site.webmanifest.json",
+					"https://app.plane.so/manifest.json",
+					"https://app.plane.so/assets/manifest-0d062420.js?dpl=dpl_49H9iuCjgkrxjHzkuHEax5CeqqTb"
+				]
+			},
+			"sources": [
+				"https://github.com/makeplane/plane",
+				"https://github.com/makeplane/plane/blob/a9e70360c5bc5b1beb5f70fe4c2fa765743147ec/README.md",
+				"https://plane.so/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "screencraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/marshallnickolauson/screencraft.yaml",
+			"repository": "https://github.com/MarshallNickolauson/ScreenCraft",
+			"canonical_repository": "https://github.com/MarshallNickolauson/ScreenCraft",
+			"reviewed_revision": "cd5236282a66e4873b199ffbbba15ef524814974",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://screencraft.mdnlabs.dev/",
+				"status": 200,
+				"final": "https://screencraft.mdnlabs.dev/",
+				"title": "ScreenCraft | Free, open-source screen recorder and editor"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/MarshallNickolauson/ScreenCraft",
+				"https://github.com/MarshallNickolauson/ScreenCraft/blob/cd5236282a66e4873b199ffbbba15ef524814974/README.md",
+				"https://screencraft.mdnlabs.dev/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "oxiguitar",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mateusrdp/oxiguitar.yaml",
+			"repository": "https://github.com/mateusrdp/oxiguitar",
+			"canonical_repository": "https://github.com/mateusrdp/oxiguitar",
+			"reviewed_revision": "520ed911d547fe42021fe8a5475378aaf4da76a7",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/mateusrdp/oxiguitar",
+				"https://github.com/mateusrdp/oxiguitar/blob/520ed911d547fe42021fe8a5475378aaf4da76a7/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "simpmusic",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/maxrave-dev/simpmusic.yaml",
+			"repository": "https://github.com/maxrave-dev/SimpMusic",
+			"canonical_repository": "https://github.com/maxrave-dev/SimpMusic",
+			"reviewed_revision": "d354de3d0388dcc5a81ae9e31d543d7c2d29244d",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://simpmusic.org/",
+				"status": 200,
+				"final": "https://www.simpmusic.org/",
+				"title": "SimpMusic"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/maxrave-dev/SimpMusic",
+				"https://github.com/maxrave-dev/SimpMusic/blob/d354de3d0388dcc5a81ae9e31d543d7c2d29244d/README.md",
+				"https://simpmusic.org/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "metriccraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/metriccraft.yaml",
+			"repository": "https://github.com/UCS-Care-Group/metriccraft",
+			"canonical_repository": "https://github.com/UCS-Care-Group/metriccraft",
+			"reviewed_revision": "765eec66b7556dad7e21922875733cca4cef4a5b",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/UCS-Care-Group/metriccraft",
+				"https://github.com/UCS-Care-Group/metriccraft/blob/765eec66b7556dad7e21922875733cca4cef4a5b/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "breezecad",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mikeverx/breezecad.yaml",
+			"repository": "https://github.com/MikeVerx/breezecad",
+			"canonical_repository": "https://github.com/MikeVerx/breezecad",
+			"reviewed_revision": "cfd6a6faa2d46709fb203fb586c7914cabc0c976",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/MikeVerx/breezecad",
+				"https://github.com/MikeVerx/breezecad/blob/cfd6a6faa2d46709fb203fb586c7914cabc0c976/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "mineclonia",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mineclonia.yaml",
+			"repository": "https://codeberg.org/mineclonia/mineclonia",
+			"canonical_repository": null,
+			"reviewed_revision": null,
+			"readme_reviewed": false,
+			"website_check": null,
+			"result": "inconclusive_upstream_access",
+			"browser_url": null,
+			"hosting": null,
+			"sources": ["https://codeberg.org/mineclonia/mineclonia"],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "itamiiru",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/minnowo/itamiiru.yaml",
+			"repository": "https://github.com/Minnowo/itamiiru",
+			"canonical_repository": "https://github.com/Minnowo/itamiiru",
+			"reviewed_revision": "5fd091a184282f5ebe9ddb7b60f95e9bfb464a39",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Minnowo/itamiiru",
+				"https://github.com/Minnowo/itamiiru/blob/5fd091a184282f5ebe9ddb7b60f95e9bfb464a39/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "minnamate",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mirvoxtm/minnamate.yaml",
+			"repository": "https://github.com/mirvoxtm/minnamate",
+			"canonical_repository": "https://github.com/mirvoxtm/minnamate",
+			"reviewed_revision": "cd2afd95b5b235ec9b1b7b70b0c5b9503d6068c1",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/mirvoxtm/minnamate",
+				"https://github.com/mirvoxtm/minnamate/blob/cd2afd95b5b235ec9b1b7b70b0c5b9503d6068c1/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "mitcad",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mitcad.yaml",
+			"repository": "https://github.com/mitcad/Mitcad",
+			"canonical_repository": "https://github.com/mitcad/Mitcad",
+			"reviewed_revision": "6c2efd8087d4862efd6eb958b0800f726707e195",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://mitcad.org",
+				"status": 200,
+				"final": "https://mitcad.org/",
+				"title": "Mitcad \u2013 open-source parametric CAD"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/mitcad/Mitcad",
+				"https://github.com/mitcad/Mitcad/blob/6c2efd8087d4862efd6eb958b0800f726707e195/README.md",
+				"https://mitcad.org"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "mailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/monkeysaint/mailcraft.yaml",
+			"repository": "https://github.com/MonkeySaint/mailcraft",
+			"canonical_repository": "https://github.com/MonkeySaint/mailcraft",
+			"reviewed_revision": "e3ee1af44c3f0ad938adaa9ae5259b7241e8f4c6",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/mailcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/mailcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/mailcraft/",
+				"title": "MailCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/mailcraft/mailcraft-web-841e05ae451e580e.js"
+				]
+			},
+			"sources": [
+				"https://github.com/MonkeySaint/mailcraft",
+				"https://github.com/MonkeySaint/mailcraft/blob/e3ee1af44c3f0ad938adaa9ae5259b7241e8f4c6/README.md",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "kadar",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/n-delic/kadar.yaml",
+			"repository": "https://github.com/n-delic/kadar",
+			"canonical_repository": "https://github.com/n-delic/kadar",
+			"reviewed_revision": "269a1d7da36412a4fcbf1736fdbf3da671f87e8c",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/n-delic/kadar",
+				"https://github.com/n-delic/kadar/blob/269a1d7da36412a4fcbf1736fdbf3da671f87e8c/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "next2d-animation-tool",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/next2d/next2d-animation-tool.yaml",
+			"repository": "https://github.com/Next2D/tool.next2d.app",
+			"canonical_repository": "https://github.com/Next2D/tool.next2d.app",
+			"reviewed_revision": "6a2ff02bfe58c43171459aa50cb88a53f6e4c514",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://next2d.app/en/",
+				"status": 200,
+				"final": "https://next2d.app/en/",
+				"title": "Rendering Engine, Animation Tool, Underlying Framework. | Next2D"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://tool.next2d.app/",
+			"hosting": {
+				"url": "https://tool.next2d.app/",
+				"source": "https://next2d.app/en/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://tool.next2d.app/",
+				"title": "Animation Tool | Next2D",
+				"assets": [
+					"https://tool.next2d.app/assets/js/next2d.js",
+					"https://tool.next2d.app/assets/js/ace.js",
+					"https://tool.next2d.app/assets/js/ext-language_tools.js"
+				]
+			},
+			"sources": [
+				"https://github.com/Next2D/tool.next2d.app",
+				"https://github.com/Next2D/tool.next2d.app/blob/6a2ff02bfe58c43171459aa50cb88a53f6e4c514/README.md",
+				"https://next2d.app/en/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "matcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/matcraft.yaml",
+			"repository": "https://github.com/NibrasAz7/matcraft",
+			"canonical_repository": "https://github.com/NibrasAz7/matcraft",
+			"reviewed_revision": "effb4218bd7c5c82eefb157378d6561d5b0f2cb3",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/NibrasAz7/matcraft",
+				"https://github.com/NibrasAz7/matcraft/blob/effb4218bd7c5c82eefb157378d6561d5b0f2cb3/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "reportcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/reportcraft.yaml",
+			"repository": "https://github.com/NibrasAz7/ReportCraft",
+			"canonical_repository": "https://github.com/NibrasAz7/ReportCraft",
+			"reviewed_revision": "cb603c83f046bca4b4184d1c831791fb17165596",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/NibrasAz7/ReportCraft",
+				"https://github.com/NibrasAz7/ReportCraft/blob/cb603c83f046bca4b4184d1c831791fb17165596/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "sadacraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/sadacraft.yaml",
+			"repository": "https://github.com/NibrasAz7/SadaCraft",
+			"canonical_repository": "https://github.com/NibrasAz7/SadaCraft",
+			"reviewed_revision": "07dd5af7f02984045169bd834abf88150565759d",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/NibrasAz7/SadaCraft",
+				"https://github.com/NibrasAz7/SadaCraft/blob/07dd5af7f02984045169bd834abf88150565759d/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "simcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/simcraft.yaml",
+			"repository": "https://github.com/NibrasAz7/simcraft",
+			"canonical_repository": "https://github.com/NibrasAz7/simcraft",
+			"reviewed_revision": "d2e57eba0773daca61c094e2860941a0d04bbcff",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/NibrasAz7/simcraft",
+				"https://github.com/NibrasAz7/simcraft/blob/d2e57eba0773daca61c094e2860941a0d04bbcff/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "warraqcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/warraqcraft.yaml",
+			"repository": "https://github.com/NibrasAz7/warraqcraft",
+			"canonical_repository": "https://github.com/NibrasAz7/warraqcraft",
+			"reviewed_revision": "75e3a3d0c8a7de5886feebb359a708b42fdd7a68",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/NibrasAz7/warraqcraft",
+				"https://github.com/NibrasAz7/warraqcraft/blob/75e3a3d0c8a7de5886feebb359a708b42fdd7a68/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "scriptcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nojuannobody/scriptcraft.yaml",
+			"repository": "https://github.com/NoJuanNobody/scriptcraft",
+			"canonical_repository": "https://github.com/NoJuanNobody/scriptcraft",
+			"reviewed_revision": "fce1d3c57a1964742d989d6488df638fc97f089d",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://nojuannobody.github.io/scriptcraft/app/",
+			"hosting": {
+				"url": "https://nojuannobody.github.io/scriptcraft/app/",
+				"source": "https://github.com/NoJuanNobody/scriptcraft",
+				"kind": "official",
+				"status": 200,
+				"final": "https://nojuannobody.github.io/scriptcraft/app/",
+				"title": "ScriptCraft",
+				"assets": []
+			},
+			"sources": [
+				"https://github.com/NoJuanNobody/scriptcraft",
+				"https://github.com/NoJuanNobody/scriptcraft/blob/fce1d3c57a1964742d989d6488df638fc97f089d/README.md"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "notecraft-onenote",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/notecraft-onenote.yaml",
+			"repository": "https://github.com/AlienTechSoftware/notecraft",
+			"canonical_repository": "https://github.com/AlienTechSoftware/notecraft",
+			"reviewed_revision": "23d1909502a1e01f199364cc1b959cfe7e95d3c4",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://playground.daijro.dev/head/notecraft/",
+				"status": 200,
+				"final": "https://playground.daijro.dev/head/notecraft/",
+				"title": "NoteCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/head/notecraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/head/notecraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/head/notecraft/",
+				"title": "NoteCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/head/notecraft/notecraft-web-3cc9713efe21a243.js"
+				]
+			},
+			"sources": [
+				"https://github.com/AlienTechSoftware/notecraft",
+				"https://github.com/AlienTechSoftware/notecraft/blob/23d1909502a1e01f199364cc1b959cfe7e95d3c4/README.md",
+				"https://playground.daijro.dev/head/notecraft/",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "salescompel",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/occupysaas/salescompel.yaml",
+			"repository": "https://github.com/occupysaas/salescompel",
+			"canonical_repository": "https://github.com/occupysaas/salescompel",
+			"reviewed_revision": "2aa326536f38768c24744079398966d325bb6589",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/occupysaas/salescompel",
+				"https://github.com/occupysaas/salescompel/blob/2aa326536f38768c24744079398966d325bb6589/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "open-note",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/open-note.yaml",
+			"repository": "https://github.com/HasanMajid/open-note",
+			"canonical_repository": "https://github.com/HasanMajid/open-note",
+			"reviewed_revision": "6d212602a3fbad138383dc68630bcc6dc34a24fd",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/HasanMajid/open-note",
+				"https://github.com/HasanMajid/open-note/blob/6d212602a3fbad138383dc68630bcc6dc34a24fd/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "opencut",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/opencut-app/opencut.yaml",
+			"repository": "https://github.com/OpenCut-app/OpenCut",
+			"canonical_repository": "https://github.com/OpenCut-app/OpenCut",
+			"reviewed_revision": "e668010778568641babef2cc40be4703ae6916d6",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://opencut.app",
+				"status": 200,
+				"final": "https://opencut.app/",
+				"title": "OpenCut"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://opencut.app/projects",
+			"hosting": {
+				"url": "https://opencut.app/projects",
+				"source": "https://opencut.app",
+				"kind": "official",
+				"status": 200,
+				"final": "https://opencut.app/projects",
+				"title": "OpenCut",
+				"assets": [
+					"https://opencut.app/_next/static/chunks/43s_me35p6ls9.js",
+					"https://opencut.app/_next/static/chunks/3hj5u1iz9gzr9.js",
+					"https://opencut.app/_next/static/chunks/1msez329ehwn7.js"
+				],
+				"note": "Official home page Projects button opens the working local-project dashboard."
+			},
+			"sources": [
+				"https://github.com/OpenCut-app/OpenCut",
+				"https://github.com/OpenCut-app/OpenCut/blob/e668010778568641babef2cc40be4703ae6916d6/README.md",
+				"https://opencut.app"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "rustgis",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/opengeos/rustgis.yaml",
+			"repository": "https://github.com/opengeos/RustGIS",
+			"canonical_repository": "https://github.com/opengeos/RustGIS",
+			"reviewed_revision": "249c61a91c1d7a5382103edbc1552c849ec94518",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://rustgis.app/",
+				"status": 200,
+				"final": "https://rustgis.app/",
+				"title": "Home - RustGIS"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://web.rustgis.app/",
+			"hosting": {
+				"url": "https://web.rustgis.app/",
+				"source": "https://rustgis.app/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://web.rustgis.app/",
+				"title": "RustGIS",
+				"assets": [
+					"https://web.rustgis.app/rustgis-web-bafbb012ce32c643.js",
+					"https://web.rustgis.app/snippets/rustgis-web-16bb2518e3b497a1/inline0.js",
+					"https://web.rustgis.app/rustgis-web-bafbb012ce32c643_bg.wasm"
+				]
+			},
+			"sources": [
+				"https://github.com/opengeos/RustGIS",
+				"https://github.com/opengeos/RustGIS/blob/249c61a91c1d7a5382103edbc1552c849ec94518/README.md",
+				"https://rustgis.app/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "ferret",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/petru101/ferret.yaml",
+			"repository": "https://github.com/Petru101/ferret",
+			"canonical_repository": "https://github.com/Petru101/ferret",
+			"reviewed_revision": "dba92e2d93e8cf79f5fc212ad52373656f955ead",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Petru101/ferret",
+				"https://github.com/Petru101/ferret/blob/dba92e2d93e8cf79f5fc212ad52373656f955ead/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "filecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pierruno-labs/filecraft.yaml",
+			"repository": "https://github.com/pierruno-labs/FileCraft",
+			"canonical_repository": "https://github.com/freewright-dev/FileCraft",
+			"reviewed_revision": "f20d5f45151a1f67e0cdab717a2b221b560fbe1c",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/pierruno-labs/FileCraft",
+				"https://github.com/freewright-dev/FileCraft/blob/f20d5f45151a1f67e0cdab717a2b221b560fbe1c/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "materialcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pijellypin/materialcraft.yaml",
+			"repository": "https://github.com/PiJellyPin/MaterialCraft",
+			"canonical_repository": "https://github.com/PiJellyPin/MaterialCraft",
+			"reviewed_revision": "34cbfff7cf7341dd50298f89a4026131a2acda03",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/head/materialcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/head/materialcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/head/materialcraft/",
+				"title": "MaterialCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/head/materialcraft/materialcraft-web-544b36f856913a2c.js"
+				]
+			},
+			"sources": [
+				"https://github.com/PiJellyPin/MaterialCraft",
+				"https://github.com/PiJellyPin/MaterialCraft/blob/34cbfff7cf7341dd50298f89a4026131a2acda03/README.md",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "pireel",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pireel/pireel.yaml",
+			"repository": "https://github.com/pireel/pireel",
+			"canonical_repository": "https://github.com/pireel/pireel",
+			"reviewed_revision": "b824ee23ff1667c45232930366cf1ef5c85318c4",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://pireel.com/",
+				"status": 200,
+				"final": "https://pireel.com/en",
+				"title": "AI Video Editor for Talking Heads & Shorts | Pireel"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://pireel.com/en/login?next=/studio",
+			"hosting": {
+				"url": "https://pireel.com/en/login?next=/studio",
+				"source": "https://pireel.com/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://pireel.com/en/login?next=/studio",
+				"title": "Pireel",
+				"assets": [
+					"https://www.googletagmanager.com/gtag/js?id=G-MY36SHN2F0",
+					"https://pireel.com/assets/index-Bhj4KmQY.js",
+					"https://pireel.com/assets/chunk-CJJwijRH.js"
+				]
+			},
+			"sources": [
+				"https://github.com/pireel/pireel",
+				"https://github.com/pireel/pireel/blob/b824ee23ff1667c45232930366cf1ef5c85318c4/README.md",
+				"https://pireel.com/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "plancraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/plancraft.yaml",
+			"repository": "https://github.com/rallegretti/PlanCraft",
+			"canonical_repository": "https://github.com/rallegretti/PlanCraft",
+			"reviewed_revision": "7cf3e28d3de99e9767afeed79cf1b96448e57058",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/rallegretti/PlanCraft",
+				"https://github.com/rallegretti/PlanCraft/blob/7cf3e28d3de99e9767afeed79cf1b96448e57058/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "easy-download-manager",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pranavo72bex/easy-download-manager.yaml",
+			"repository": "https://github.com/pranavo72bex/Easy-Download-Manager",
+			"canonical_repository": "https://github.com/pranavo72bex/Easy-Download-Manager",
+			"reviewed_revision": "7ee9ec7621127769488b3e2b9320293e0cddb44c",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/pranavo72bex/Easy-Download-Manager",
+				"https://github.com/pranavo72bex/Easy-Download-Manager/blob/7ee9ec7621127769488b3e2b9320293e0cddb44c/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "rpg-reactor",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/psychronic-games/rpg-reactor.yaml",
+			"repository": "https://github.com/Psychronic-Games/RPGReactor",
+			"canonical_repository": "https://github.com/Psychronic-Games/RPGReactor",
+			"reviewed_revision": "9ced256be99ecd97525a0b8702f47f69717afced",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://psychronic.itch.io/rpg-reactor",
+				"status": 200,
+				"final": "https://psychronic.itch.io/rpg-reactor",
+				"title": "RPG Reactor by Psychronic"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://psychronic.itch.io/rpg-reactor",
+			"hosting": {
+				"url": "https://psychronic.itch.io/rpg-reactor",
+				"kind": "official",
+				"status": 200,
+				"final": "https://psychronic.itch.io/rpg-reactor",
+				"source": "https://psychronic.itch.io/rpg-reactor",
+				"title": "RPG Reactor by Psychronic",
+				"note": "Official itch.io listing includes an embedded HTML build with a Run game-engine control, alongside downloads."
+			},
+			"sources": [
+				"https://github.com/Psychronic-Games/RPGReactor",
+				"https://github.com/Psychronic-Games/RPGReactor/blob/9ced256be99ecd97525a0b8702f47f69717afced/README.md",
+				"https://psychronic.itch.io/rpg-reactor"
+			],
+			"verification": "Official listing and embedded browser build reviewed; editor functionality was not independently tested."
+		},
+		{
+			"slug": "reviera",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/rational-boxes/reviera.yaml",
+			"repository": "https://github.com/Rational-Boxes/NoDesk_Reviera",
+			"canonical_repository": "https://github.com/Rational-Boxes/NoDesk_Reviera",
+			"reviewed_revision": "654579607ce65faa5e498a57bf6634ea155d4159",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Rational-Boxes/NoDesk_Reviera",
+				"https://github.com/Rational-Boxes/NoDesk_Reviera/blob/654579607ce65faa5e498a57bf6634ea155d4159/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "sotto",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/rbr48/sotto.yaml",
+			"repository": "https://github.com/rbr48/sotto",
+			"canonical_repository": "https://github.com/rbr48/sotto",
+			"reviewed_revision": "93bbea08e4adab157dce05c40679bc46bf30968c",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://sottocall.com/",
+				"status": 200,
+				"final": "https://sottocall.com/",
+				"title": "Sotto \u00b7 Private calls, nothing kept"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://call.sottocall.com/",
+			"hosting": {
+				"url": "https://call.sottocall.com/",
+				"source": "https://sottocall.com/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://call.sottocall.com/",
+				"title": "Sotto",
+				"assets": [
+					"https://call.sottocall.com/manifest.json",
+					"https://call.sottocall.com/sodium.js",
+					"https://call.sottocall.com/flutter_bootstrap.js"
+				]
+			},
+			"sources": [
+				"https://github.com/rbr48/sotto",
+				"https://github.com/rbr48/sotto/blob/93bbea08e4adab157dce05c40679bc46bf30968c/README.md",
+				"https://sottocall.com/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "reactos",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/reactos/reactos.yaml",
+			"repository": "https://github.com/reactos/reactos",
+			"canonical_repository": "https://github.com/reactos/reactos",
+			"reviewed_revision": "e46f4bb1a1ea7c722f941231565144fe0c286d3e",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://reactos.org/",
+				"status": 200,
+				"final": "https://reactos.org/",
+				"title": "Front Page | ReactOS Project"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/reactos/reactos",
+				"https://github.com/reactos/reactos/blob/e46f4bb1a1ea7c722f941231565144fe0c286d3e/README.md",
+				"https://reactos.org/"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "open-stop-motion-studio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/realhartlmax/open-stop-motion-studio.yaml",
+			"repository": "https://github.com/RealHartlMax/Open-Stop-Motion-Studio",
+			"canonical_repository": "https://github.com/RealHartlMax/Open-Stop-Motion-Studio",
+			"reviewed_revision": "ce80d842bd0dece391edfc1a44a7cb0333bab87d",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/RealHartlMax/Open-Stop-Motion-Studio",
+				"https://github.com/RealHartlMax/Open-Stop-Motion-Studio/blob/ce80d842bd0dece391edfc1a44a7cb0333bab87d/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "royal-tasks",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/realrules/royal-tasks.yaml",
+			"repository": "https://github.com/RealRules/royal-tasks",
+			"canonical_repository": "https://github.com/RealRules/royal-tasks",
+			"reviewed_revision": "36d5a43e2bc65756c501c43f960dd080a993a10d",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/RealRules/royal-tasks",
+				"https://github.com/RealRules/royal-tasks/blob/36d5a43e2bc65756c501c43f960dd080a993a10d/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "paintcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/replicraft/paintcraft.yaml",
+			"repository": "https://github.com/replicraft/PaintCraft",
+			"canonical_repository": "https://github.com/replicraft/PaintCraft",
+			"reviewed_revision": "cf9944bf91e9f2a64c82b8b8ba428bc1b93ec984",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://paint.replicraft.dev",
+				"status": 200,
+				"final": "https://paint.replicraft.dev/",
+				"title": "Untitled - PaintCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://paint.replicraft.dev/",
+			"hosting": {
+				"url": "https://paint.replicraft.dev/",
+				"source": "https://paint.replicraft.dev",
+				"kind": "official",
+				"status": 200,
+				"final": "https://paint.replicraft.dev/",
+				"title": "Untitled - PaintCraft",
+				"assets": [
+					"https://paint.replicraft.dev/_astro/index.astro_astro_type_script_index_0_lang.B3pxKZec.js"
+				]
+			},
+			"sources": [
+				"https://github.com/replicraft/PaintCraft",
+				"https://github.com/replicraft/PaintCraft/blob/cf9944bf91e9f2a64c82b8b8ba428bc1b93ec984/README.md",
+				"https://paint.replicraft.dev"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "ribbon-file-manager",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ribbon-file-manager.yaml",
+			"repository": "https://github.com/ysnx64523/Ribbon-File-Manager",
+			"canonical_repository": "https://github.com/ysnx64523/Ribbon-File-Manager",
+			"reviewed_revision": "feeec7c433dc0a1028d730f228a1d50aba861de6",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/ysnx64523/Ribbon-File-Manager",
+				"https://github.com/ysnx64523/Ribbon-File-Manager/blob/feeec7c433dc0a1028d730f228a1d50aba861de6/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "open-publisher",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/rmellis/open-publisher.yaml",
+			"repository": "https://github.com/rmellis/open-publisher",
+			"canonical_repository": "https://github.com/rmellis/open-publisher",
+			"reviewed_revision": "4c07eee45bd1035d1e3a024a76ce717c27994fab",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://openpublisher.app",
+				"status": 200,
+				"final": "https://openpublisher.app/",
+				"title": "Open Publisher | Free Online Desktop Publishing Tool"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://openpublisher.app/",
+			"hosting": {
+				"url": "https://openpublisher.app/",
+				"source": "https://openpublisher.app",
+				"kind": "official",
+				"status": 200,
+				"final": "https://openpublisher.app/",
+				"title": "Open Publisher | Free Online Desktop Publishing Tool",
+				"assets": [
+					"https://openpublisher.app/extensions/geo-defense.js?v=5.12.0",
+					"https://openpublisher.app/manifest.json",
+					"https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js?v=5.12.0"
+				]
+			},
+			"sources": [
+				"https://github.com/rmellis/open-publisher",
+				"https://github.com/rmellis/open-publisher/blob/4c07eee45bd1035d1e3a024a76ce717c27994fab/README.md",
+				"https://openpublisher.app"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "doory",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/shaongitbd/doory.yaml",
+			"repository": "https://github.com/shaongitbd/doory",
+			"canonical_repository": "https://github.com/shaongitbd/doory",
+			"reviewed_revision": "2fb4d0297ec4c6e417b5225215502f8217c2a4dc",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://doory.art/",
+				"status": 200,
+				"final": "https://doory.art/",
+				"title": "Doory \u00e2\u0080\u0094 Design anything. Free. No sign-up to start."
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://doory.art/",
+			"hosting": {
+				"url": "https://doory.art/",
+				"source": "https://doory.art/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://doory.art/",
+				"title": "Doory \u00e2\u0080\u0094 Design anything. Free. No sign-up to start.",
+				"assets": [
+					"https://doory.art/assets/main-CKdKKBiT.js",
+					"https://doory.art/assets/modulepreload-polyfill-DHZR_UKa.js",
+					"https://doory.art/assets/react-R8TFQQWi.js"
+				]
+			},
+			"sources": [
+				"https://github.com/shaongitbd/doory",
+				"https://github.com/shaongitbd/doory/blob/2fb4d0297ec4c6e417b5225215502f8217c2a4dc/README.md",
+				"https://doory.art/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "xnotes",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/shardulvs/xnotes.yaml",
+			"repository": "https://github.com/shardulvs/xnotes-android",
+			"canonical_repository": "https://github.com/shardulvs/xnotes-android",
+			"reviewed_revision": "8afc635235960b20d4d9c66c5332707c2ce8f563",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://f-droid.org/en/packages/com.xnotes",
+				"status": 200,
+				"final": "https://f-droid.org/en/packages/com.xnotes/",
+				"title": "xnotes | F-Droid - Free and Open Source Android App Repository"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/shardulvs/xnotes-android",
+				"https://github.com/shardulvs/xnotes-android/blob/8afc635235960b20d4d9c66c5332707c2ce8f563/README.md",
+				"https://f-droid.org/en/packages/com.xnotes"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "shelled",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/shelled.yaml",
+			"repository": "https://github.com/tecno14/shelled",
+			"canonical_repository": "https://github.com/tecno14/shelled",
+			"reviewed_revision": "097784024fbd48498302b7b995a494b71ae1a5e2",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/tecno14/shelled",
+				"https://github.com/tecno14/shelled/blob/097784024fbd48498302b7b995a494b71ae1a5e2/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "lightfoundry",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/sitesentrix/lightfoundry.yaml",
+			"repository": "https://github.com/Stitchwright/lightfoundry",
+			"canonical_repository": "https://github.com/Stitchwright/laserfoundry",
+			"reviewed_revision": "bb7abf06f076551573d610c5d67f8e3c635624cf",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://stitchwright.github.io/laserfoundry/",
+				"status": 200,
+				"final": "https://stitchwright.github.io/laserfoundry/",
+				"title": "LaserFoundry"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://stitchwright.github.io/laserfoundry/",
+			"hosting": {
+				"url": "https://stitchwright.github.io/laserfoundry/",
+				"source": "https://github.com/Stitchwright/lightfoundry",
+				"kind": "official",
+				"status": 200,
+				"final": "https://stitchwright.github.io/laserfoundry/",
+				"title": "LaserFoundry",
+				"assets": []
+			},
+			"sources": [
+				"https://github.com/Stitchwright/lightfoundry",
+				"https://github.com/Stitchwright/laserfoundry/blob/bb7abf06f076551573d610c5d67f8e3c635624cf/README.md",
+				"https://stitchwright.github.io/laserfoundry/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "stitchfoundry",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/sitesentrix/stitchfoundry.yaml",
+			"repository": "https://github.com/Stitchwright/StitchFoundry",
+			"canonical_repository": "https://github.com/Stitchwright/StitchFoundry",
+			"reviewed_revision": "cade0561ae91811b746cabe6035c41cc2d58fdd4",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://stitchwright.github.io/StitchFoundry/",
+			"hosting": {
+				"url": "https://stitchwright.github.io/StitchFoundry/",
+				"source": "https://github.com/Stitchwright/StitchFoundry",
+				"kind": "official",
+				"status": 200,
+				"final": "https://stitchwright.github.io/StitchFoundry/",
+				"title": "StitchFoundry",
+				"assets": [
+					"https://stitchwright.github.io/StitchFoundry/vectorcraft-web-b25b9437e432f207.js",
+					"https://stitchwright.github.io/StitchFoundry/vectorcraft-web-b25b9437e432f207_bg.wasm"
+				]
+			},
+			"sources": [
+				"https://github.com/Stitchwright/StitchFoundry",
+				"https://github.com/Stitchwright/StitchFoundry/blob/cade0561ae91811b746cabe6035c41cc2d58fdd4/README.md"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "papercraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/slyim/papercraft.yaml",
+			"repository": "https://github.com/slyim/papercraft",
+			"canonical_repository": "https://github.com/slyim/papercraft",
+			"reviewed_revision": "c735a37997a89f05ed3540e3c020c7f1e37f70dd",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/slyim/papercraft",
+				"https://github.com/slyim/papercraft/blob/c735a37997a89f05ed3540e3c020c7f1e37f70dd/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "armada",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/soapbox-pub/armada.yaml",
+			"repository": "https://gitworkshop.dev/soapbox.pub/armada",
+			"canonical_repository": null,
+			"reviewed_revision": null,
+			"readme_reviewed": false,
+			"website_check": {
+				"source": "https://soapbox.pub/armada",
+				"status": 200,
+				"final": "https://soapbox.pub/armada",
+				"title": "Armada: The Open Source, Encrypted Discord Alternative | Soapbox"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://armada.buzz/",
+			"hosting": {
+				"url": "https://armada.buzz/",
+				"source": "https://soapbox.pub/armada",
+				"kind": "official",
+				"status": 200,
+				"final": "https://armada.buzz/",
+				"title": "Armada",
+				"assets": [
+					"https://armada.buzz/_npanel/env.js?v=1050d6a5843f706e",
+					"https://armada.buzz/standalone.js",
+					"https://armada.buzz/theme.js"
+				]
+			},
+			"sources": [
+				"https://gitworkshop.dev/soapbox.pub/armada",
+				"https://soapbox.pub/armada"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "anicraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/soof-golan/anicraft.yaml",
+			"repository": "https://github.com/soof-golan/anicraft",
+			"canonical_repository": "https://github.com/soof-golan/anicraft",
+			"reviewed_revision": "9d7172d9f9c0ffcf0cf6a1ae28cbb3f6b533ad4a",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/soof-golan/anicraft",
+				"https://github.com/soof-golan/anicraft/blob/9d7172d9f9c0ffcf0cf6a1ae28cbb3f6b533ad4a/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "mixstudio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/soulspin/mixstudio.yaml",
+			"repository": "https://github.com/soulspin/MixStudio",
+			"canonical_repository": "https://github.com/soulspin/MixStudio",
+			"reviewed_revision": "5c2f049f430fff1a82e92557d661df07fba5798c",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/soulspin/MixStudio",
+				"https://github.com/soulspin/MixStudio/blob/5c2f049f430fff1a82e92557d661df07fba5798c/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "stoat",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/stoatchat/stoat.yaml",
+			"repository": "https://github.com/stoatchat/stoatchat",
+			"canonical_repository": "https://github.com/stoatchat/stoatchat",
+			"reviewed_revision": "6e4fc998df19845137864021404f57ec4964b77b",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://stoat.chat/",
+				"status": 200,
+				"final": "https://stoat.chat/",
+				"title": "Stoat - Find your community"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://stoat.chat/app",
+			"hosting": {
+				"url": "https://stoat.chat/app",
+				"source": "https://stoat.chat/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://stoat.chat/app",
+				"title": "Stoat",
+				"assets": [
+					"https://stoat.chat/app/assets/polyfills-DUc9ZrN4.js",
+					"https://stoat.chat/app/assets/index-ySOV9D9I.js",
+					"https://stoat.chat/app/assets/markdown-DUlgTttb.js"
+				]
+			},
+			"sources": [
+				"https://github.com/stoatchat/stoatchat",
+				"https://github.com/stoatchat/stoatchat/blob/6e4fc998df19845137864021404f57ec4964b77b/README.md",
+				"https://stoat.chat/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "cadcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/cadcraft.yaml",
+			"repository": "https://github.com/storytold/cadcraft",
+			"canonical_repository": "https://github.com/storytold/cadcraft",
+			"reviewed_revision": "c3b8e7b7fe3f8cec4f1353d680e6cdd27fe10979",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/cadcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/cadcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/cadcraft/",
+				"title": "CADCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/cadcraft/cadcraft-web-f3a39e8000a5d567.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/cadcraft",
+				"https://github.com/storytold/cadcraft/blob/c3b8e7b7fe3f8cec4f1353d680e6cdd27fe10979/README.md",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "deckcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/deckcraft.yaml",
+			"repository": "https://github.com/storytold/deckcraft",
+			"canonical_repository": "https://github.com/storytold/deckcraft",
+			"reviewed_revision": "020e53e7a078b750d8ca9f9683ef053cb1b2c163",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/deckcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/deckcraft",
+				"title": "DeckCraft: Fast, dynamic slide presentations, in pure Rust. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/deckcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/deckcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/deckcraft/",
+				"title": "DeckCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/deckcraft/deckcraft-web-3167f8227f154df4.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/deckcraft",
+				"https://github.com/storytold/deckcraft/blob/020e53e7a078b750d8ca9f9683ef053cb1b2c163/README.md",
+				"https://getartcraft.com/apps/deckcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "designcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/designcraft.yaml",
+			"repository": "https://github.com/storytold/designcraft",
+			"canonical_repository": "https://github.com/storytold/designcraft",
+			"reviewed_revision": "446a36d08b93dfd5f188280b4f05592395c06906",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/designcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/designcraft",
+				"title": "DesignCraft: Page layout and publishing, rebuilt in pure Rust. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/designcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/designcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/designcraft/",
+				"title": "DesignCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/designcraft/designcraft-web-3060c2930f7fa269.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/designcraft",
+				"https://github.com/storytold/designcraft/blob/446a36d08b93dfd5f188280b4f05592395c06906/README.md",
+				"https://getartcraft.com/apps/designcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "effectcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/effectcraft.yaml",
+			"repository": "https://github.com/storytold/effectcraft",
+			"canonical_repository": "https://github.com/storytold/effectcraft",
+			"reviewed_revision": "cca8ce06f3945ea9ec950c9837f73550279a7698",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/effectcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/effectcraft",
+				"title": "EffectCraft: Motion graphics and visual effects, in pure Rust. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/effectcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/effectcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/effectcraft/",
+				"title": "EffectCraft",
+				"assets": ["https://playground.daijro.dev/shell/app.js"]
+			},
+			"sources": [
+				"https://github.com/storytold/effectcraft",
+				"https://github.com/storytold/effectcraft/blob/cca8ce06f3945ea9ec950c9837f73550279a7698/README.md",
+				"https://getartcraft.com/apps/effectcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "figcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/figcraft.yaml",
+			"repository": "https://github.com/storytold/figcraft",
+			"canonical_repository": "https://github.com/storytold/figcraft",
+			"reviewed_revision": "695054520c3ea4714265db49a0bea27e62cc7feb",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/figcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/figcraft",
+				"title": "FigCraft: Interface design, rebuilt in pure Rust. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/figcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/figcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/figcraft/",
+				"title": "FigCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/figcraft/figcraft-web-687ba123aa7f3c71.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/figcraft",
+				"https://github.com/storytold/figcraft/blob/695054520c3ea4714265db49a0bea27e62cc7feb/README.md",
+				"https://getartcraft.com/apps/figcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "filmcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/filmcraft.yaml",
+			"repository": "https://github.com/storytold/filmcraft",
+			"canonical_repository": "https://github.com/storytold/filmcraft",
+			"reviewed_revision": "4764b1a481be6aed25e2e64aa09e18c04c5f6baf",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/filmcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/filmcraft",
+				"title": "FilmCraft: Professional video editing, rebuilt from scratch. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/filmcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/filmcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/filmcraft/",
+				"title": "FilmCraft",
+				"assets": ["https://playground.daijro.dev/shell/app.js"]
+			},
+			"sources": [
+				"https://github.com/storytold/filmcraft",
+				"https://github.com/storytold/filmcraft/blob/4764b1a481be6aed25e2e64aa09e18c04c5f6baf/README.md",
+				"https://getartcraft.com/apps/filmcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "gridcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/gridcraft.yaml",
+			"repository": "https://github.com/storytold/gridcraft",
+			"canonical_repository": "https://github.com/storytold/gridcraft",
+			"reviewed_revision": "8117b66635e79d0fa6bb61661768e8a82fd62454",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/gridcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/gridcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/gridcraft/",
+				"title": "GridCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/gridcraft/gridcraft-web-28a41ed4892f889c.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/gridcraft",
+				"https://github.com/storytold/gridcraft/blob/8117b66635e79d0fa6bb61661768e8a82fd62454/README.md",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "lightcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/lightcraft.yaml",
+			"repository": "https://github.com/storytold/lightcraft",
+			"canonical_repository": "https://github.com/storytold/lightcraft",
+			"reviewed_revision": "bb08a697a41b2561a54f1b740245119503b24758",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/lightcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/lightcraft",
+				"title": "LightCraft: Your photos. Your pixels. Your machine. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/lightcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/lightcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/lightcraft/",
+				"title": "LightCraft",
+				"assets": ["https://playground.daijro.dev/shell/app.js"]
+			},
+			"sources": [
+				"https://github.com/storytold/lightcraft",
+				"https://github.com/storytold/lightcraft/blob/bb08a697a41b2561a54f1b740245119503b24758/README.md",
+				"https://getartcraft.com/apps/lightcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "pdfcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/pdfcraft.yaml",
+			"repository": "https://github.com/storytold/pdfcraft",
+			"canonical_repository": "https://github.com/storytold/pdfcraft",
+			"reviewed_revision": "9a9813bf7d97b6786471a4158dcef8fc709d6cbb",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/pdfcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/pdfcraft",
+				"title": "PdfCraft: The open-source PDF workbench. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/pdfcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/pdfcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/pdfcraft/",
+				"title": "PdfCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/pdfcraft/pdfcraft-web-b4318047dee56316.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/pdfcraft",
+				"https://github.com/storytold/pdfcraft/blob/9a9813bf7d97b6786471a4158dcef8fc709d6cbb/README.md",
+				"https://getartcraft.com/apps/pdfcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "photocraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/photocraft.yaml",
+			"repository": "https://github.com/storytold/photocraft",
+			"canonical_repository": "https://github.com/storytold/photocraft",
+			"reviewed_revision": "5c25299b61ff056e300fdd6286d3f43b18519fcf",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/photocraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/photocraft",
+				"title": "PhotoCraft: The image editor you already know how to use. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/photocraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/photocraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/photocraft/",
+				"title": "PhotoCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/photocraft/photocraft-web-f7a5d03bd6d7b218.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/photocraft",
+				"https://github.com/storytold/photocraft/blob/5c25299b61ff056e300fdd6286d3f43b18519fcf/README.md",
+				"https://getartcraft.com/apps/photocraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "soundcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/soundcraft.yaml",
+			"repository": "https://github.com/storytold/soundcraft",
+			"canonical_repository": "https://github.com/storytold/soundcraft",
+			"reviewed_revision": "6dcac572823c75968d2b5a22c39a33bcf6c432ff",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/soundcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/soundcraft",
+				"title": "SoundCraft: Professional audio recording and mixing, rebuilt in pure Rust. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/soundcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/soundcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/soundcraft/",
+				"title": "SoundCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/soundcraft/soundcraft-web-4fe825654610c0f0.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/soundcraft",
+				"https://github.com/storytold/soundcraft/blob/6dcac572823c75968d2b5a22c39a33bcf6c432ff/README.md",
+				"https://getartcraft.com/apps/soundcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "vectorcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/vectorcraft.yaml",
+			"repository": "https://github.com/storytold/vectorcraft",
+			"canonical_repository": "https://github.com/storytold/vectorcraft",
+			"reviewed_revision": "5815205324eaf7873265348e33a3513db181e5cf",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/vectorcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/vectorcraft",
+				"title": "VectorCraft: Vector illustration, reimagined in pure Rust. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/vectorcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/vectorcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/vectorcraft/",
+				"title": "VectorCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/vectorcraft/vectorcraft-web-c71f8306665cf16b.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/vectorcraft",
+				"https://github.com/storytold/vectorcraft/blob/5815205324eaf7873265348e33a3513db181e5cf/README.md",
+				"https://getartcraft.com/apps/vectorcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "wordcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/wordcraft.yaml",
+			"repository": "https://github.com/storytold/wordcraft",
+			"canonical_repository": "https://github.com/storytold/wordcraft",
+			"reviewed_revision": "f54ea731cc584002786498b603383c85f2e7ee89",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://getartcraft.com/apps/wordcraft",
+				"status": 200,
+				"final": "https://getartcraft.com/apps/wordcraft",
+				"title": "WordCraft: A fast, open-source word processor, rebuilt in pure Rust. \u2014 ArtCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/wordcraft/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/wordcraft/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/wordcraft/",
+				"title": "WordCraft",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/wordcraft/wordcraft-web-2b35e8fc6deb85c8.js"
+				]
+			},
+			"sources": [
+				"https://github.com/storytold/wordcraft",
+				"https://github.com/storytold/wordcraft/blob/f54ea731cc584002786498b603383c85f2e7ee89/README.md",
+				"https://getartcraft.com/apps/wordcraft",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "suhina",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/suhina-daw/suhina.yaml",
+			"repository": "https://github.com/suhina-daw/suhina-daw",
+			"canonical_repository": "https://github.com/suhina-daw/suhina-daw",
+			"reviewed_revision": "65fdd2ce072bca3f4690ba16efca7a9e09bd1d20",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://playground.daijro.dev/head/suhina/",
+			"hosting": {
+				"url": "https://playground.daijro.dev/head/suhina/",
+				"source": "https://playground.daijro.dev/",
+				"kind": "daijro",
+				"status": 200,
+				"final": "https://playground.daijro.dev/head/suhina/",
+				"title": "Suhina",
+				"assets": [
+					"https://playground.daijro.dev/shell/app.js",
+					"https://playground.daijro.dev/head/suhina/suhina-web-d2e60964f9b830a.js"
+				]
+			},
+			"sources": [
+				"https://github.com/suhina-daw/suhina-daw",
+				"https://github.com/suhina-daw/suhina-daw/blob/65fdd2ce072bca3f4690ba16efca7a9e09bd1d20/README.md",
+				"https://playground.daijro.dev/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "procraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/surfrpt1/procraft.yaml",
+			"repository": "https://github.com/surfrpt1/procraft",
+			"canonical_repository": "https://github.com/surfrpt1/procraft",
+			"reviewed_revision": "621407465d0da0d4f66db2cd7aea5b3ca182c4cb",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/surfrpt1/procraft",
+				"https://github.com/surfrpt1/procraft/blob/621407465d0da0d4f66db2cd7aea5b3ca182c4cb/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "fieldcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tangency-labs/fieldcraft.yaml",
+			"repository": "https://github.com/tangency-labs/fieldcraft",
+			"canonical_repository": "https://github.com/tangency-labs/fieldcraft",
+			"reviewed_revision": "088ccd44cc95daeac71c48d2306f9a8ef99978c9",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://tangency-labs.github.io/fieldcraft/",
+				"status": 200,
+				"final": "https://tangency-labs.github.io/fieldcraft/",
+				"title": "FieldCraft"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://tangency-labs.github.io/fieldcraft/",
+			"hosting": {
+				"url": "https://tangency-labs.github.io/fieldcraft/",
+				"source": "https://tangency-labs.github.io/fieldcraft/",
+				"kind": "official",
+				"status": 200,
+				"final": "https://tangency-labs.github.io/fieldcraft/",
+				"title": "Page not found \u00b7 GitHub Pages",
+				"assets": [],
+				"note": "README /app/ link returns 404; the website root serves the FieldCraft Wasm app."
+			},
+			"sources": [
+				"https://github.com/tangency-labs/fieldcraft",
+				"https://github.com/tangency-labs/fieldcraft/blob/088ccd44cc95daeac71c48d2306f9a8ef99978c9/README.md",
+				"https://tangency-labs.github.io/fieldcraft/"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "pcbcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tangency-labs/pcbcraft.yaml",
+			"repository": "https://github.com/tangency-labs/pcbcraft",
+			"canonical_repository": "https://github.com/tangency-labs/pcbcraft",
+			"reviewed_revision": "31138579e5ce1c9d9ba4ee1f83f9253581c1c689",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/tangency-labs/pcbcraft",
+				"https://github.com/tangency-labs/pcbcraft/blob/31138579e5ce1c9d9ba4ee1f83f9253581c1c689/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "solidcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tangency-labs/solidcraft.yaml",
+			"repository": "https://github.com/tangency-labs/solidcraft",
+			"canonical_repository": "https://github.com/tangency-labs/solidcraft",
+			"reviewed_revision": "e8eb7ee11a172f8ba9d6b8c7054fddc5a0a75af5",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://solidcraft.io",
+				"status": 200,
+				"final": "https://solidcraft.io/",
+				"title": "SolidCraft: free, open-source parametric 3D CADThe parts of a boundary representation"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://solidcraft.io/app",
+			"hosting": {
+				"url": "https://solidcraft.io/app",
+				"source": "https://solidcraft.io",
+				"kind": "official",
+				"status": 200,
+				"final": "https://docs.solidcraft.io/app/",
+				"title": "SolidCraft",
+				"assets": [
+					"https://docs.solidcraft.io/app/solidcraft-web-8e42302424a5aaa7.js",
+					"https://docs.solidcraft.io/app/solidcraft-web-8e42302424a5aaa7_bg.wasm"
+				]
+			},
+			"sources": [
+				"https://github.com/tangency-labs/solidcraft",
+				"https://github.com/tangency-labs/solidcraft/blob/e8eb7ee11a172f8ba9d6b8c7054fddc5a0a75af5/README.md",
+				"https://solidcraft.io"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "earthcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/therichronicles/earthcraft.yaml",
+			"repository": "https://github.com/therichronicles/EarthCraft",
+			"canonical_repository": "https://github.com/therichronicles/EarthCraft",
+			"reviewed_revision": "559438c89db7fda0f84f55e05bec2e7eb673ff88",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/therichronicles/EarthCraft",
+				"https://github.com/therichronicles/EarthCraft/blob/559438c89db7fda0f84f55e05bec2e7eb673ff88/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "zeroauthy",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/thomasmeadows/zeroauthy.yaml",
+			"repository": "https://github.com/occupysaas/zeroauthy",
+			"canonical_repository": "https://github.com/occupysaas/zeroauthy",
+			"reviewed_revision": "b54388f8dae2d66c08be93f13914cbb37b32834f",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/occupysaas/zeroauthy",
+				"https://github.com/occupysaas/zeroauthy/blob/b54388f8dae2d66c08be93f13914cbb37b32834f/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "tracedraw",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tracedraw.yaml",
+			"repository": "https://github.com/igtoth/tracedraw",
+			"canonical_repository": "https://github.com/igtoth/tracedraw",
+			"reviewed_revision": "d12a25d9e6009a263e14692311849422335991ad",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "hosted_app_link_added",
+			"browser_url": "https://igtoth.github.io/tracedraw/",
+			"hosting": {
+				"url": "https://igtoth.github.io/tracedraw/",
+				"source": "https://github.com/igtoth/tracedraw",
+				"kind": "official",
+				"status": 200,
+				"final": "https://igtoth.github.io/tracedraw/",
+				"title": "TraceDraw: open-source vector editor",
+				"assets": []
+			},
+			"sources": [
+				"https://github.com/igtoth/tracedraw",
+				"https://github.com/igtoth/tracedraw/blob/d12a25d9e6009a263e14692311849422335991ad/README.md"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		},
+		{
+			"slug": "ucs-mailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ucs-care-group/ucs-mailcraft.yaml",
+			"repository": "https://github.com/UCS-Care-Group/mailcraft",
+			"canonical_repository": "https://github.com/UCS-Care-Group/mailcraft",
+			"reviewed_revision": "ca42ec8bc363d1f89d8d9e2d835edf6339de1537",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/UCS-Care-Group/mailcraft",
+				"https://github.com/UCS-Care-Group/mailcraft/blob/ca42ec8bc363d1f89d8d9e2d835edf6339de1537/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "vibedarling",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/vibedarling.yaml",
+			"repository": "https://github.com/VibeDarling/darling",
+			"canonical_repository": "https://github.com/VibeDarling/darling",
+			"reviewed_revision": "086c399bbd0d6e3ee48aa79385b8b92ce3648cfb",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/VibeDarling/darling",
+				"https://github.com/VibeDarling/darling/blob/086c399bbd0d6e3ee48aa79385b8b92ce3648cfb/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "openrevu",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/vineetpadia/openrevu.yaml",
+			"repository": "https://github.com/vineetpadia/openrevu",
+			"canonical_repository": "https://github.com/vineetpadia/openrevu",
+			"reviewed_revision": "d7c52caa3e8c208ba2220eae95e60a82ce154518",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/vineetpadia/openrevu",
+				"https://github.com/vineetpadia/openrevu/blob/d7c52caa3e8c208ba2220eae95e60a82ce154518/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "lasercraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/wdunn001/lasercraft.yaml",
+			"repository": "https://github.com/wdunn001/lasercraft",
+			"canonical_repository": "https://github.com/wdunn001/lasercraft",
+			"reviewed_revision": "0bbbbce9012c0a105e735d996f45094f0e47ff0b",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/wdunn001/lasercraft",
+				"https://github.com/wdunn001/lasercraft/blob/0bbbbce9012c0a105e735d996f45094f0e47ff0b/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "recordly",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/webadderallorg/recordly.yaml",
+			"repository": "https://github.com/webadderallorg/recordly",
+			"canonical_repository": "https://github.com/webadderallorg/Recordly",
+			"reviewed_revision": "109ca3a13c362e969d9add25d1f93406c36dba2a",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://www.recordly.dev",
+				"status": 200,
+				"final": "https://recordly.dev/",
+				"title": "Recordly - Open-source app for incredible screen recordings.Recordly - Open-source app for incredible screen recordings."
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/webadderallorg/recordly",
+				"https://github.com/webadderallorg/Recordly/blob/109ca3a13c362e969d9add25d1f93406c36dba2a/README.md",
+				"https://www.recordly.dev"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "ledgercraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/wr3nch98dev/ledgercraft.yaml",
+			"repository": "https://github.com/Wr3nch98DEV/LedgerCraft",
+			"canonical_repository": "https://github.com/Wr3nch98DEV/LedgerCraft",
+			"reviewed_revision": "e2fe64dc9111d3effcc4b3d232927ec519092fa7",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/Wr3nch98DEV/LedgerCraft",
+				"https://github.com/Wr3nch98DEV/LedgerCraft/blob/e2fe64dc9111d3effcc4b3d232927ec519092fa7/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "zidan44-mailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zidan44/zidan44-mailcraft.yaml",
+			"repository": "https://github.com/ZIDAN44/mailcraft",
+			"canonical_repository": "https://github.com/ZIDAN44/mailcraft",
+			"reviewed_revision": "e46504c0e1749d4e6fbf4bce46e5f43a416b967c",
+			"readme_reviewed": true,
+			"website_check": null,
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/ZIDAN44/mailcraft",
+				"https://github.com/ZIDAN44/mailcraft/blob/e46504c0e1749d4e6fbf4bce46e5f43a416b967c/README.md"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "fluidity",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zlotny/fluidity.yaml",
+			"repository": "https://github.com/zlotny/fluidity-vpn",
+			"canonical_repository": "https://github.com/zlotny/fluidity-vpn",
+			"reviewed_revision": "65c7b3dda4b933e7d23db7773f3d1644b7aba040",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://fluidity.ndrs.es",
+				"status": 200,
+				"final": "https://fluidity.ndrs.es/",
+				"title": "Fluidity \u00b7 Free OpenVPN client for Mac, Windows and Linux"
+			},
+			"result": "no_documented_hosted_build_found",
+			"browser_url": null,
+			"hosting": null,
+			"sources": [
+				"https://github.com/zlotny/fluidity-vpn",
+				"https://github.com/zlotny/fluidity-vpn/blob/65c7b3dda4b933e7d23db7773f3d1644b7aba040/README.md",
+				"https://fluidity.ndrs.es"
+			],
+			"verification": "README and published homepage checked for hosted-build links where available; absence of a link is not proof no build exists."
+		},
+		{
+			"slug": "extrudo",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zoltanf/extrudo.yaml",
+			"repository": "https://github.com/zoltanf/extrudo",
+			"canonical_repository": "https://github.com/zoltanf/extrudo",
+			"reviewed_revision": "7347895b609ac96978aef4cc4c2649d549c18455",
+			"readme_reviewed": true,
+			"website_check": {
+				"source": "https://extrudo.org",
+				"status": 200,
+				"final": "https://extrudo.org/",
+				"title": "Extrudo: parametric CAD for 3D printing, in your browser"
+			},
+			"result": "hosted_app_link_added",
+			"browser_url": "https://app.extrudo.org/",
+			"hosting": {
+				"url": "https://app.extrudo.org/",
+				"source": "https://extrudo.org",
+				"kind": "official",
+				"status": 200,
+				"final": "https://app.extrudo.org/",
+				"title": "Extrudo",
+				"assets": [
+					"https://app.extrudo.org/assets/index-Cp93YnvC.js",
+					"https://app.extrudo.org/assets/rolldown-runtime-XKyaHtl9.js",
+					"https://app.extrudo.org/assets/src--TOXsV6E.js"
+				]
+			},
+			"sources": [
+				"https://github.com/zoltanf/extrudo",
+				"https://github.com/zoltanf/extrudo/blob/7347895b609ac96978aef4cc4c2649d549c18455/README.md",
+				"https://extrudo.org"
+			],
+			"verification": "Documented link and HTTP app-shell identity reviewed; editing, rendering, sign-in and feature parity were not tested."
+		}
+	]
+}

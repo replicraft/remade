@@ -2,6 +2,7 @@ slug: mailcraft
 name: MailCraft
 authors: [monkeysaint]
 repository: https://github.com/MonkeySaint/mailcraft
+browser_url: https://playground.daijro.dev/mailcraft/
 originals: [microsoft-outlook]
 category: productivity
 languages: [Rust]

@@ -1,6 +1,7 @@
 slug: notecraft-onenote
 name: NoteCraft
 repository: https://github.com/AlienTechSoftware/notecraft
+browser_url: https://playground.daijro.dev/head/notecraft/
 originals: [microsoft-onenote]
 category: productivity
 languages: [Rust]

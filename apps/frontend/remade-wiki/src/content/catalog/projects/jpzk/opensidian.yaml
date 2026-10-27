@@ -6,6 +6,7 @@ authors:
   - jpzk
 repository: https://github.com/jpzk/opensidian
 website: https://opensidian.org
+browser_url: https://opensidian.org/webversion/
 originals:
   - obsidian
 category: productivity

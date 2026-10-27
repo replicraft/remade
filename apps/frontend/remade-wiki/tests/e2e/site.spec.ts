@@ -399,3 +399,25 @@ test("screenshots remain browsable with JavaScript disabled", async ({
 		await context.close();
 	}
 });
+
+test("project browser links appear beside Website only when configured", async ({
+	page,
+}) => {
+	await page.goto("/projects/solidcraft/");
+	const website = page.getByRole("link", { name: "Website ↗", exact: true });
+	const browserApp = page.getByRole("link", {
+		name: "Try it in your browser ↗",
+		exact: true,
+	});
+	await expect(browserApp).toHaveAttribute("href", "https://solidcraft.io/app");
+	await expect(browserApp).toHaveAttribute("rel", "noopener noreferrer");
+	expect(
+		await website.evaluate((link) =>
+			link.nextElementSibling?.textContent?.trim(),
+		),
+	).toBe("Try it in your browser ↗");
+	await page.goto("/projects/notecraft/");
+	await expect(
+		page.getByRole("link", { name: "Try it in your browser ↗", exact: true }),
+	).toHaveCount(0);
+});

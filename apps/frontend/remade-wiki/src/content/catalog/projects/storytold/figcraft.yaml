@@ -4,6 +4,7 @@ name: FigCraft
 authors: [storytold]
 repository: https://github.com/storytold/figcraft
 website: https://getartcraft.com/apps/figcraft
+browser_url: https://playground.daijro.dev/figcraft/
 originals: [figma]
 category: creative
 languages: [Rust]

@@ -4,6 +4,7 @@ name: SolidCraft
 authors: [tangency-labs]
 repository: https://github.com/tangency-labs/solidcraft
 website: https://solidcraft.io
+browser_url: https://solidcraft.io/app
 docs: https://docs.solidcraft.io
 discord_server: https://solidcraft.io/discord
 originals: [autodesk-fusion]

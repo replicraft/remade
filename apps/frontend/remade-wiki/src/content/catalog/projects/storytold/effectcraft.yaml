@@ -3,6 +3,7 @@ slug: effectcraft
 name: EffectCraft
 authors: [storytold]
 repository: https://github.com/storytold/effectcraft
+browser_url: https://playground.daijro.dev/effectcraft/
 originals: [adobe-after-effects]
 category: creative
 languages: [Rust]

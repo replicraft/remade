@@ -12,6 +12,7 @@ compatibility: partial
 description: A broader Illustrator alternative for vector art and graphic design, combining interactive canvas tools and layers with a procedural node graph. Uses a Rust graphics engine for nondestructive vector workflows and experimental raster editing.
 license: MIT OR Apache-2.0
 website: https://graphite.art/
+browser_url: https://editor.graphite.art/
 docs: https://graphite.art/learn/
 limitations: Alpha; focuses on its own procedural workflow rather than Illustrator parity. Native AI project import is on the long-term roadmap. Raster editing is experimental; professional color management, advanced typography and other production workflows remain planned. Full Illustrator behavior and plugin compatibility are not claimed.
 summary: "Create vector art and graphic designs with canvas tools, layers and procedural node graphs."

@@ -3,6 +3,7 @@ name: OpenCut
 authors: [opencut-app]
 repository: https://github.com/OpenCut-app/OpenCut
 website: https://opencut.app
+browser_url: https://opencut.app/projects
 originals: [capcut]
 category: creative
 languages: [TypeScript, Rust]
