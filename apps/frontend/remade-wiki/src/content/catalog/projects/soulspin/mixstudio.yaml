@@ -18,3 +18,13 @@ description: A Rust DJ.Studio-style mix-planning application with songs arranged
 license: MIT
 docs: https://github.com/soulspin/MixStudio#readme
 limitations: Beta, tested on Linux. Windows and macOS support remains unverified despite the cross-platform design. DJ.Studio project-file and full behavioral compatibility are not established. Stem separation requires a separately downloaded model and ONNX Runtime; MP3 export uses FFmpeg.
+screenshots:
+  - src: https://raw.githubusercontent.com/soulspin/MixStudio/main/docs/screenshots/beatmatch.png
+    alt: MixStudio timeline with the Transition tab and beat-alignment controls.
+    caption: Beat alignment and transition editing.
+  - src: https://raw.githubusercontent.com/soulspin/MixStudio/main/docs/screenshots/library-preview.png
+    alt: MixStudio music library with a track preview playing.
+    caption: Music library and track preview.
+  - src: https://raw.githubusercontent.com/soulspin/MixStudio/main/docs/screenshots/wide.png
+    alt: MixStudio overview of a mix with four songs and two sample lanes.
+    caption: A complete mix on the timeline.

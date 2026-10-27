@@ -2,6 +2,7 @@ import * as v from "valibot";
 import { parseDocument } from "yaml";
 
 import { categories, compatibility, statuses } from "./constants";
+import { isLocalScreenshot } from "./screenshots";
 
 export { categories, compatibility, statuses } from "./constants";
 
@@ -108,6 +109,33 @@ const authors = v.optional(
 	),
 );
 const platforms = v.optional(v.array(text(1, 40)));
+export const screenshotSchema = v.strictObject({
+	src: v.pipe(
+		v.string(),
+		v.maxLength(2048),
+		v.check(
+			(value) => publicHttps(value) || isLocalScreenshot(value),
+			"Expected a public HTTPS image URL or a local raster image path starting with ./.",
+		),
+	),
+	alt: text(1, 200),
+	caption: v.optional(text(1, 240)),
+});
+export type Screenshot = v.InferOutput<typeof screenshotSchema>;
+
+const screenshots = v.optional(
+	v.pipe(
+		v.array(screenshotSchema),
+		v.minLength(1),
+		v.maxLength(12),
+		v.check(
+			(images) =>
+				new Set(images.map((image) => image.src)).size === images.length,
+			"Screenshot sources must be unique.",
+		),
+	),
+);
+
 export const originalSchema = v.strictObject({
 	slug,
 	name: text(2, 100),
@@ -152,6 +180,7 @@ export const projectSchema = v.strictObject({
 	docs: v.optional(https),
 	website: v.optional(https),
 	limitations: v.optional(text(2, 400)),
+	screenshots,
 });
 const references = v.pipe(
 	v.array(slug),

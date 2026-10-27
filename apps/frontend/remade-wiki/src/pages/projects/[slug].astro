@@ -23,3 +23,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 		<CopyBadgeDropdown projectUrl={canonical} client:load />
 	</ProjectPage>
 </Layout>
+
+<script>
+import { initializeScreenshotGalleries } from "../../lib/screenshot-gallery-client";
+
+initializeScreenshotGalleries();
+</script>

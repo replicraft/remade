@@ -1,0 +1,70 @@
+---
+import type { ScreenshotVariant } from "../../components/catalog/ProjectScreenshots";
+import ProjectPage from "../../components/pages/ProjectPage";
+import Layout from "../../layouts/Layout.astro";
+import { loadCatalog, loadMetadata } from "../../lib/catalog";
+
+export function getStaticPaths() {
+	return import.meta.env.DEV
+		? ["filmstrip", "peek", "compact"].map((design) => ({ params: { design } }))
+		: [];
+}
+
+const catalog = await loadCatalog();
+const project = catalog.projects.find((entry) => entry.slug === "mixstudio");
+if (!project) throw new Error("Screenshot design sample is missing.");
+const metadata = await loadMetadata();
+const design = Astro.params.design as ScreenshotVariant;
+const designs = [
+	{
+		slug: "filmstrip",
+		name: "Filmstrip",
+		description: "Large image and thumbnails below the project links.",
+	},
+	{
+		slug: "peek",
+		name: "Image first",
+		description:
+			"A horizontal rail above the summary, with the next image peeking in.",
+	},
+	{
+		slug: "compact",
+		name: "Compact",
+		description: "A smaller gallery between the description and project links.",
+	},
+];
+---
+
+<Layout title="Screenshot layout studies">
+	<aside class="mt-8 border-b border-line pb-6" data-pagefind-ignore>
+		<p class="mb-3 text-sm text-muted">
+			Screenshot layout studies · development only
+		</p>
+		<nav aria-label="Screenshot layout" class="flex flex-wrap gap-2">
+			{designs.map((item) => (
+				<a
+					aria-current={design === item.slug ? "page" : undefined}
+					class="rounded-lg px-4 py-2 text-sm text-muted hover:text-ink aria-[current=page]:bg-surface aria-[current=page]:text-lime"
+					href={`/dev/${item.slug}/`}
+				>
+					{item.name}
+				</a>
+			))}
+		</nav>
+		<p class="mt-3 mb-0 text-sm text-muted">
+			{designs.find((item) => item.slug === design)?.description}
+		</p>
+	</aside>
+	<ProjectPage
+		catalog={catalog}
+		metadata={metadata}
+		project={project}
+		screenshotVariant={design}
+	/>
+</Layout>
+
+<script>
+import { initializeScreenshotGalleries } from "../../lib/screenshot-gallery-client";
+
+initializeScreenshotGalleries();
+</script>

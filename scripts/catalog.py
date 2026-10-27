@@ -27,6 +27,10 @@ COMPATIBILITY = {"targeting", "partial", "high", "claimed-complete"}
 SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
 GH_REPO = re.compile(r"https://github\.com/([A-Za-z0-9-]+)/([A-Za-z0-9_.-]+)\Z")
 AUTHOR_SLUG = re.compile(r"[a-z0-9](?:[a-z0-9]|-(?=[a-z0-9])){0,38}\Z")
+LOCAL_SCREENSHOT = re.compile(
+    r"\./(?:[A-Za-z0-9][A-Za-z0-9_-]*/)*[A-Za-z0-9][A-Za-z0-9._-]*\.(?:png|jpe?g|webp|avif)\Z",
+    re.IGNORECASE,
+)
 
 
 class DuplicateKeySafeLoader(yaml.SafeLoader):
@@ -183,6 +187,7 @@ def collect(root=ROOT):
             "license",
         }
         optional = {
+            "screenshots",
             "platforms",
             "docs",
             "website",
@@ -275,6 +280,7 @@ def collect(root=ROOT):
         validate_discord(project, loc, errors)
         validate_authors(project, loc, errors)
         validate_mirrors(project, loc, errors)
+        validate_screenshots(project, path, loc, errors)
 
     request_by_original = {}
     for path in sorted(
@@ -377,6 +383,49 @@ def collect(root=ROOT):
         featured,
         errors,
     )
+
+
+def validate_screenshots(record: dict, path: Path, loc: str, errors: list[str]) -> None:
+    if "screenshots" not in record:
+        return
+
+    images = record["screenshots"]
+    if not isinstance(images, list) or not 1 <= len(images) <= 12:
+        errors.append(f"{loc}: screenshots must contain 1–12 images")
+        return
+
+    seen: set[str] = set()
+    for index, image in enumerate(images):
+        image_loc = f"{loc}: screenshot #{index + 1}"
+        if not fields(image, {"src", "alt"}, {"caption"}, image_loc, errors):
+            continue
+
+        src = image["src"]
+        local = isinstance(src, str) and bool(LOCAL_SCREENSHOT.fullmatch(src))
+        if not isinstance(src, str) or len(src) > 2048 or not (is_https(src) or local):
+            errors.append(f"{image_loc}: expected a public HTTPS image URL or local raster path")
+        elif src in seen:
+            errors.append(f"{image_loc}: duplicate screenshot source")
+        else:
+            seen.add(src)
+
+        if not is_text(image["alt"], 1, 200):
+            errors.append(f"{image_loc}: alt must be 1–200 plain-text characters")
+        if "caption" in image and not is_text(image["caption"], 1, 240):
+            errors.append(f"{image_loc}: caption must be 1–240 plain-text characters")
+
+        if not local:
+            continue
+
+        expected = path.parent.resolve() / src.removeprefix("./")
+        try:
+            resolved = expected.resolve(strict=True)
+            if resolved != expected or not resolved.is_relative_to(path.parent.resolve()):
+                errors.append(f"{image_loc}: screenshot must not traverse symlinks")
+            elif not resolved.is_file() or resolved.stat().st_size > 10 * 1024 * 1024:
+                errors.append(f"{image_loc}: screenshot must be a file of at most 10 MiB")
+        except OSError, RuntimeError:
+            errors.append(f"{image_loc}: local screenshot is missing or unreadable")
 
 
 def validate_mirrors(record: dict, loc: str, errors: list[str]) -> None:

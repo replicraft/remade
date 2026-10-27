@@ -119,3 +119,14 @@ def test_vendor_request_files_are_discovered_in_both_modes(
     )
     monkeypatch.setattr("catalog_links.subprocess.run", run)
     assert paths_for_mode(all_files=False, changed_from="base") == [path]
+
+
+def test_screenshots_check_external_images_but_not_local_paths(tmp_path: Path) -> None:
+    path = tmp_path / "project.yaml"
+    path.write_text(
+        "screenshots:\n"
+        "  - src: https://example.org/editor.png\n    alt: Editor\n"
+        "  - src: ./editor.png\n    alt: Editor\n"
+    )
+
+    assert list(url_values(path)) == ["https://example.org/editor.png"]

@@ -340,3 +340,62 @@ test("production request intake offers the real GitHub fallback and excludes loc
 		"noindex, follow",
 	);
 });
+
+test("project screenshots support thumbnails and keyboard navigation without changing page focus", async ({
+	page,
+}) => {
+	await page.emulateMedia({ reducedMotion: "reduce" });
+	await page.goto("/projects/mixstudio/");
+	const gallery = page.getByRole("region", {
+		name: "MixStudio screenshots",
+		exact: true,
+	});
+	const track = gallery.getByRole("region", { name: "Scrollable screenshots" });
+
+	await expect(gallery.locator("[data-gallery-count]")).toHaveText("1 / 3");
+	await expect(
+		gallery.getByRole("button", { name: "Previous screenshot" }),
+	).toBeDisabled();
+	await gallery.getByRole("button", { name: "Next screenshot" }).click();
+	await expect(gallery.locator("[data-gallery-count]")).toHaveText("2 / 3");
+
+	await gallery.getByRole("link", { name: /^Screenshot 3:/ }).click();
+	await expect(gallery.locator("[data-gallery-count]")).toHaveText("3 / 3");
+	await expect(
+		gallery.getByRole("button", { name: "Next screenshot" }),
+	).toBeDisabled();
+
+	await track.focus();
+	await page.keyboard.press("Home");
+	await expect(gallery.locator("[data-gallery-count]")).toHaveText("1 / 3");
+	await expect(track).toBeFocused();
+});
+
+test("screenshots remain browsable with JavaScript disabled", async ({
+	browser,
+}) => {
+	const context = await browser.newContext({ javaScriptEnabled: false });
+	const page = await context.newPage();
+
+	try {
+		await page.goto("/projects/mixstudio/");
+		const gallery = page.getByRole("region", {
+			name: "MixStudio screenshots",
+			exact: true,
+		});
+
+		await expect(
+			gallery.getByRole("link", { name: /^Open full-size screenshot:/ }),
+		).toHaveCount(3);
+		await expect(
+			gallery.getByRole("button", { name: "Next screenshot" }),
+		).not.toBeVisible();
+		await gallery.getByRole("link", { name: /^Screenshot 3:/ }).click();
+		const position = await gallery
+			.locator("[data-gallery-track]")
+			.evaluate((element) => element.scrollLeft);
+		expect(position).toBeGreaterThan(0);
+	} finally {
+		await context.close();
+	}
+});
