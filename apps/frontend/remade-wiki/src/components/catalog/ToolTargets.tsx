@@ -1,14 +1,33 @@
 import { findBySlug } from "../../lib/presentation";
 import type { Project, Suite, Tool } from "../../lib/schemas";
-import { toolTargets } from "../../lib/suites";
+import { supportedProjectSlugs, toolTargets } from "../../lib/suites";
+import ToolTargetLinks from "./ToolTargetLinks";
 
 interface Props {
 	tool: Tool;
 	projects: Project[];
 	suites: Suite[];
+	compact?: boolean;
 }
 
-export default function ToolTargets({ tool, projects, suites }: Props) {
+export default function ToolTargets({
+	tool,
+	projects,
+	suites,
+	compact = false,
+}: Props) {
+	if (compact) {
+		return (
+			<ToolTargetLinks
+				links={supportedProjectSlugs(tool, suites)
+					.map((slug) => ({
+						name: findBySlug(projects, slug).name,
+						href: `/projects/${slug}/`,
+					}))
+					.sort((a, b) => a.name.localeCompare(b.name))}
+			/>
+		);
+	}
 	const targets = toolTargets(tool, suites);
 	const links = [
 		...targets.suites.map((suite) => ({

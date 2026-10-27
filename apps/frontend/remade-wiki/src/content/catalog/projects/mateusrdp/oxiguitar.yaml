@@ -3,6 +3,7 @@ slug: oxiguitar
 name: OxiGuitar
 authors: [mateusrdp]
 repository: https://github.com/mateusrdp/oxiguitar
+browser_url: https://playground.daijro.dev/head/oxiguitar/
 originals: [guitar-pro]
 category: creative
 languages: [Rust]

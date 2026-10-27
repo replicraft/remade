@@ -3,6 +3,7 @@ slug: earthcraft
 name: EarthCraft
 authors: [therichronicles, pixelsoftwarestudios]
 repository: https://github.com/therichronicles/EarthCraft
+browser_url: https://playground.daijro.dev/head/earthcraft/
 originals: [google-earth]
 category: engineering
 languages: [Rust]

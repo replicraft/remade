@@ -3,6 +3,7 @@ slug: ucs-mailcraft
 name: MailCraft
 authors: [billsecond, benandez]
 repository: https://github.com/UCS-Care-Group/mailcraft
+browser_url: https://playground.daijro.dev/mailcraft/
 originals: [microsoft-outlook]
 category: productivity
 languages: [Rust]

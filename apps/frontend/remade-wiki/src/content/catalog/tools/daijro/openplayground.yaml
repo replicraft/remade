@@ -5,8 +5,8 @@ repository: https://github.com/daijro/openplayground
 url: https://playground.daijro.dev
 languages: [JavaScript]
 platforms: [Web]
-description: OpenPlayground by Daijro runs ArtCraft implementations in the browser, adding optimized WebAssembly builds, compression, themes and clipboard workarounds.
+description: OpenPlayground hosts browser builds of creative, office, CAD, audio and other applications, including the ArtCraft suite. It provides optimized WebAssembly builds, shared file browsing, community plugins, system-font access, themes, clipboard integration and real-time collaboration. Browser builds can differ in features and stability from their desktop counterparts.
 suites: [artcraft]
 # Additional supported apps from the upstream tools.yaml manifest.
-projects: [lightcraft-classic, solidcraft, mailcraft]
-summary: "Run ArtCraft apps in your browser with optimized WebAssembly builds, themes and clipboard integration."
+projects: [earthcraft, firecraft, honeydew, lemon-studio, lightcraft-classic, matcraft, materialcraft, mixstudio, notecraft-onenote, oxiguitar, paint-rs, paintcraft, procraft, prowave, solidcraft, subcraft, suhina, tracedraw, ucs-mailcraft]
+summary: "Run creative, office, audio and CAD apps in your browser with WebAssembly builds, shared files and live collaboration."

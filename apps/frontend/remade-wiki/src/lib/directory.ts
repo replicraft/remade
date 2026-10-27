@@ -7,7 +7,7 @@ import {
 	defaultRequestFilters,
 	filterRequest,
 } from "./request-browse";
-import { toolTargets } from "./suites";
+import { supportedProjectSlugs, toolTargets } from "./suites";
 
 export const pageSize = 24;
 export interface DirectoryRecord extends BrowseEntry {
@@ -94,7 +94,7 @@ export function directoryRecords(
 				vendor: "",
 				targets:
 					entry.kind === "tool"
-						? toolTargets(entry, catalog.suites).projects.map((slug) => ({
+						? supportedProjectSlugs(entry, catalog.suites).map((slug) => ({
 								name:
 									catalog.projects.find((project) => project.slug === slug)
 										?.name ?? slug,
