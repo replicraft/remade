@@ -144,7 +144,7 @@ Card titles use a stretched link to make the card surface clickable. Author, ori
 
 ## Optional project screenshots
 
-Keep galleries on project detail pages, not directory cards. The default filmstrip follows the repository/website/documentation actions and precedes community and mirrors. Use one large, contained image with a quiet dark backing, captions below, compact previous/next arrows and a horizontally scrollable thumbnail row. Lime marks only the current thumbnail and interactive focus; avoid a heavy enclosing border. Images must not crop application interfaces.
+Keep galleries on project detail pages, not directory cards. The filmstrip follows the repository/website/documentation actions, optional community section and Repository Mirrors card. Use one large, contained image with a quiet dark backing, captions below, compact previous/next arrows and a horizontally scrollable thumbnail row. Lime marks only the current thumbnail and interactive focus; avoid a heavy enclosing border. Images must not crop application interfaces.
 
 Use a slightly larger Screenshots heading than the metadata labels. Give every thumbnail an equal-width transparent border, changing it to lime for the selected image. Keep the border inside the thumbnail box and pad the scrolling row so selection and keyboard focus are not clipped at either edge.
 

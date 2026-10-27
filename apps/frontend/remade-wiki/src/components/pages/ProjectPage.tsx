@@ -117,8 +117,6 @@ export default function ProjectPage({
 					)}
 				</div>
 
-				{gallery}
-
 				{(project.discord_server || project.discord_thread) && (
 					<div className="mt-8 rounded-xl border border-line bg-surface p-5 [&>div]:mb-0">
 						<h2 className="!mb-3 text-lg">Community</h2>
@@ -129,6 +127,8 @@ export default function ProjectPage({
 				<div className="mt-6">
 					<RepositoryMirrors mirrors={project.mirrors} />
 				</div>
+
+				{gallery}
 			</div>
 
 			<section className="max-w-[780px]">
