@@ -106,7 +106,7 @@ describe("static pagination", () => {
 			),
 		);
 		expect(html.match(/<article>/g)).toHaveLength(25);
-		expect(html).toContain('data-pagination-controls="" hidden=""');
+		expect(html).toContain('data-pagination-controls="true" hidden=""');
 		expect(html).toContain('aria-label="Examples pagination"');
 	});
 });
