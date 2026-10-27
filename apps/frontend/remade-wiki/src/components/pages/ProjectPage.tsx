@@ -8,9 +8,7 @@ import DiscordLinks from "../catalog/DiscordLinks";
 import EntryCard from "../catalog/EntryCard";
 import ListingDescription from "../catalog/ListingDescription";
 import OriginalLinks from "../catalog/OriginalLinks";
-import ProjectScreenshots, {
-	type ScreenshotVariant,
-} from "../catalog/ProjectScreenshots";
+import ProjectScreenshots from "../catalog/ProjectScreenshots";
 import RepositoryMirrors from "../catalog/RepositoryMirrors";
 import Stats from "../catalog/Stats";
 
@@ -19,7 +17,6 @@ interface Props {
 	catalog: CatalogData;
 	metadata: Record<string, Metadata>;
 	children?: ReactNode;
-	screenshotVariant?: ScreenshotVariant;
 }
 
 export default function ProjectPage({
@@ -27,7 +24,6 @@ export default function ProjectPage({
 	catalog,
 	metadata,
 	children,
-	screenshotVariant = "filmstrip",
 }: Props) {
 	const entry = findBySlug(catalog.entries, project.slug);
 	const related = catalog.entries.filter(
@@ -44,7 +40,6 @@ export default function ProjectPage({
 			projectName={project.name}
 			projectSlug={project.slug}
 			screenshots={project.screenshots}
-			variant={screenshotVariant}
 		/>
 	);
 
@@ -88,14 +83,10 @@ export default function ProjectPage({
 					/>
 				</p>
 
-				{screenshotVariant === "peek" && gallery}
-
 				<ListingDescription
 					description={project.description}
 					summary={project.summary}
 				/>
-
-				{screenshotVariant === "compact" && gallery}
 
 				<div className="flex flex-wrap items-center gap-6">
 					<a
@@ -126,7 +117,7 @@ export default function ProjectPage({
 					)}
 				</div>
 
-				{screenshotVariant === "filmstrip" && gallery}
+				{gallery}
 
 				{(project.discord_server || project.discord_thread) && (
 					<div className="mt-8 rounded-xl border border-line bg-surface p-5 [&>div]:mb-0">

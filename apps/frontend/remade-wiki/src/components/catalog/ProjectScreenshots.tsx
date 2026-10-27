@@ -2,35 +2,29 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import type { Screenshot } from "../../lib/schemas";
 import { screenshotUrl } from "../../lib/screenshots";
 
-export type ScreenshotVariant = "filmstrip" | "peek" | "compact";
-
 interface Props {
 	projectSlug: string;
 	projectName: string;
 	screenshots?: Screenshot[];
-	variant?: ScreenshotVariant;
 }
 
 export default function ProjectScreenshots({
 	projectSlug,
 	projectName,
 	screenshots,
-	variant = "filmstrip",
 }: Props) {
 	if (!screenshots?.length) return null;
 
 	const multiple = screenshots.length > 1;
-	const compact = variant === "compact";
-	const peek = variant === "peek";
 
 	return (
 		<section
 			aria-label={`${projectName} screenshots`}
-			className={`my-10 min-w-0 ${compact ? "max-w-[620px]" : ""}`}
+			className="my-10 min-w-0"
 			data-screenshot-gallery
 		>
 			<div className="mb-4 flex items-center justify-between gap-4">
-				<h2 className="!m-0 text-sm font-semibold tracking-normal text-muted">
+				<h2 className="!m-0 text-base font-semibold tracking-normal text-ink">
 					Screenshots
 				</h2>
 
@@ -80,14 +74,14 @@ export default function ProjectScreenshots({
 
 					return (
 						<figure
-							className={`!m-0 min-w-0 shrink-0 snap-start ${peek && multiple ? "basis-[88%] sm:basis-[84%]" : "basis-full"}`}
+							className="!m-0 min-w-0 basis-full shrink-0 snap-start"
 							data-gallery-slide
 							id={`${projectSlug}-screenshot-${index + 1}`}
 							key={src}
 						>
 							<a
 								aria-label={`Open full-size screenshot: ${screenshot.alt}`}
-								className={`group relative flex items-center justify-center overflow-hidden rounded-xl bg-black/20 ${compact ? "aspect-[16/9]" : "aspect-[16/10]"}`}
+								className="group relative flex aspect-[16/10] items-center justify-center overflow-hidden rounded-xl bg-black/20"
 								href={src}
 								rel="noopener noreferrer"
 								target="_blank"
@@ -126,16 +120,16 @@ export default function ProjectScreenshots({
 				})}
 			</section>
 
-			{multiple && variant === "filmstrip" && (
+			{multiple && (
 				<nav
 					aria-label="Choose a screenshot"
-					className="mt-3 flex gap-2 overflow-x-auto py-1"
+					className="mt-3 flex gap-2 overflow-x-auto p-1.5"
 				>
 					{screenshots.map((screenshot, index) => (
 						<a
 							aria-current={index === 0 ? "true" : undefined}
 							aria-label={`Screenshot ${index + 1}: ${screenshot.alt}`}
-							className="block w-24 shrink-0 overflow-hidden rounded-md opacity-55 outline-offset-2 transition-opacity hover:opacity-100 aria-[current=true]:opacity-100 aria-[current=true]:outline-2 aria-[current=true]:outline-lime motion-reduce:transition-none"
+							className="block w-24 shrink-0 overflow-hidden rounded-md border-2 border-transparent opacity-55 transition-opacity hover:opacity-100 aria-[current=true]:border-lime aria-[current=true]:opacity-100 motion-reduce:transition-none"
 							data-gallery-thumbnail={index}
 							href={`#${projectSlug}-screenshot-${index + 1}`}
 							key={screenshot.src}
