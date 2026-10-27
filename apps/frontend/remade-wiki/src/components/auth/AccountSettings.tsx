@@ -85,8 +85,10 @@ function Settings() {
 						})}
 					</div>
 					<p className="mt-5 text-xs leading-5 text-muted">
-						Connecting a provider asks you to authorize it. Accounts that
-						already exist separately cannot be merged here.
+						Connecting a provider asks you to authorize it. If it belongs to
+						another account with a matching verified email, the accounts are
+						merged, combining votes and builder activity. You’ll be signed out
+						on other devices.
 					</p>
 				</>
 			)}

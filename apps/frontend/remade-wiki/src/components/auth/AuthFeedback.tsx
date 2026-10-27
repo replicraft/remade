@@ -17,7 +17,7 @@ export default function AuthFeedback({
 			);
 		} else if (error === "identity_in_use") {
 			setMessage(
-				"This sign-in method belongs to another Remade account. It cannot be connected to this account.",
+				"This sign-in method belongs to another Remade account without a matching verified email. It cannot be connected to this account.",
 			);
 		} else {
 			const provider = query.get("connected");

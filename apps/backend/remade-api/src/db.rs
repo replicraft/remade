@@ -66,15 +66,72 @@ pub enum IdentityResolution {
     IdentityInUse,
 }
 
-fn identity_resolution(
+async fn identity_resolution(
+    db: &D1Database,
+    profile: &Profile,
     identity: ExistingIdentity,
     link: Option<&LinkSession>,
-) -> IdentityResolution {
-    if link.is_some_and(|session| session.user_id != identity.user_id) {
-        IdentityResolution::IdentityInUse
-    } else {
-        IdentityResolution::User(identity.user_id)
+) -> Result<IdentityResolution> {
+    if let Some(session) = link.filter(|session| session.user_id != identity.user_id) {
+        return merge_accounts(db, profile, &identity, session).await;
     }
+    Ok(IdentityResolution::User(identity.user_id))
+}
+
+// Only explicit linking proves control of both accounts. A fresh verified provider
+// address must also match an address already observed on the signed-in account.
+async fn merge_accounts(
+    db: &D1Database,
+    profile: &Profile,
+    identity: &ExistingIdentity,
+    session: &LinkSession,
+) -> Result<IdentityResolution> {
+    let mut matching_hash = None;
+    for hash in &profile.email_hashes {
+        if db.prepare("SELECT e.identity_id FROM identity_emails e JOIN user_identities i ON i.id = e.identity_id WHERE e.email_hash = ? AND i.user_id = ? LIMIT 1")
+            .bind(&[hash.clone().into(), session.user_id.clone().into()])?
+            .first::<serde_json::Value>(None).await?.is_some() {
+            matching_hash = Some(hash);
+            break;
+        }
+    }
+    let Some(hash) = matching_hash else {
+        return Ok(IdentityResolution::IdentityInUse);
+    };
+
+    // This NOT NULL update guards the whole atomic batch. Recheck the exact live
+    // session, source ownership and matching observation inside the transaction.
+    // A concurrent logout, merge or email change must roll back all transfers.
+    let mut statements = vec![db.prepare("UPDATE user_identities SET user_id = (SELECT s.user_id FROM user_sessions s WHERE s.token_hash = ? AND s.user_id = ? AND s.expires_at > ? AND EXISTS (SELECT 1 FROM identity_emails e JOIN user_identities i ON i.id = e.identity_id WHERE e.email_hash = ? AND i.user_id = s.user_id) AND user_identities.user_id = ?), username = ? WHERE id = ?")
+        .bind(&[session.session_hash.clone().into(), session.user_id.clone().into(), (crate::security::now() as f64).into(), hash.clone().into(), identity.user_id.clone().into(), profile.username.clone().into(), identity.identity_id.clone().into()])?];
+
+    // Keep the signed-in account ID. Preserve the earliest activity timestamp
+    // when both accounts voted for or indicated building the same request.
+    for table in ["request_upvotes", "request_builders"] {
+        statements.push(db.prepare(format!("INSERT INTO {table} (original, user_id, created_at) SELECT original, ?, created_at FROM {table} WHERE user_id = ? ON CONFLICT (original, user_id) DO UPDATE SET created_at = MIN(created_at, excluded.created_at)"))
+            .bind(&[session.user_id.clone().into(), identity.user_id.clone().into()])?);
+    }
+    statements.push(
+        db.prepare("UPDATE user_identities SET user_id = ? WHERE user_id = ?")
+            .bind(&[
+                session.user_id.clone().into(),
+                identity.user_id.clone().into(),
+            ])?,
+    );
+    // Revoke all old sessions for both accounts; the callback issues a fresh one.
+    statements.push(
+        db.prepare("DELETE FROM user_sessions WHERE user_id IN (?, ?)")
+            .bind(&[
+                session.user_id.clone().into(),
+                identity.user_id.clone().into(),
+            ])?,
+    );
+    statements.push(
+        db.prepare("DELETE FROM users WHERE id = ?")
+            .bind(&[identity.user_id.clone().into()])?,
+    );
+    db.batch(statements).await?;
+    Ok(IdentityResolution::User(session.user_id.clone()))
 }
 
 async fn find_identity(
@@ -112,7 +169,7 @@ pub async fn resolve_identity(
 ) -> Result<IdentityResolution> {
     if let Some(identity) = find_identity(db, profile.provider, &profile.provider_id).await? {
         if link.is_some_and(|session| session.user_id != identity.user_id) {
-            return Ok(IdentityResolution::IdentityInUse);
+            return identity_resolution(db, profile, identity, link).await;
         }
         // Existing accounts retain access even if a legacy account shares their email.
         // Refresh observations so changed addresses do not remain permanently reserved.
@@ -137,7 +194,7 @@ pub async fn resolve_identity(
         // A competing callback may have created this same identity after our first
         // lookup. Its provider key is authoritative; this is not a second account.
         if let Some(identity) = find_identity(db, profile.provider, &profile.provider_id).await? {
-            return Ok(identity_resolution(identity, link));
+            return identity_resolution(db, profile, identity, link).await;
         }
         return Ok(IdentityResolution::EmailInUse);
     }
@@ -170,7 +227,7 @@ pub async fn resolve_identity(
         return Ok(IdentityResolution::User(user_id));
     }
     if let Some(identity) = find_identity(db, profile.provider, &profile.provider_id).await? {
-        return Ok(identity_resolution(identity, link));
+        return identity_resolution(db, profile, identity, link).await;
     }
     if email_in_use(db, &profile.email_hashes, &user_id).await? {
         return Ok(IdentityResolution::EmailInUse);

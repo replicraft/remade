@@ -59,7 +59,7 @@ impl Provider {
 
     pub fn accepts_issuer(self, issuer: Option<&str>) -> bool {
         match self {
-            Self::Github => issuer.is_none() || issuer == Some("https://github.com"),
+            Self::Github => issuer.is_none() || issuer == Some("https://github.com/login/oauth"),
             Self::Discord => issuer == Some("https://discord.com"),
         }
     }
@@ -72,6 +72,15 @@ mod tests {
     #[test]
     fn discord_requires_its_exact_issuer_and_github_keeps_its_existing_flow() {
         assert!(Provider::Github.accepts_issuer(None));
+        assert!(Provider::Github.accepts_issuer(Some("https://github.com/login/oauth")));
+        for issuer in [
+            "https://github.com",
+            "https://github.com/login/oauth/",
+            "https://github.com.evil.example/login/oauth",
+            "http://github.com/login/oauth",
+        ] {
+            assert!(!Provider::Github.accepts_issuer(Some(issuer)));
+        }
         assert!(Provider::Discord.accepts_issuer(Some("https://discord.com")));
         for issuer in [
             None,

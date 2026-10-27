@@ -14,7 +14,9 @@ export default {
    return Response.json({held});
   }
   const invoke = bindings => Main.prototype.fetch.call({env: bindings, ctx}, request);
-  if (request.headers.get('X-Test-Hold-Identity-Read') !== '1') return invoke(env);
+  const holdIdentity = request.headers.get('X-Test-Hold-Identity-Read') === '1';
+  const holdMerge = request.headers.get('X-Test-Hold-Merge-Match') === '1';
+  if (!holdIdentity && !holdMerge) return invoke(env);
 
   const statements = new WeakMap();
   const wrap = (statement, sql) => {
@@ -23,7 +25,7 @@ export default {
     if (key === 'bind') return (...args) => wrap(target.bind(...args), sql);
     if (key === 'first') return async (...args) => {
      const result = await target.first(...args);
-     if (!held && sql.startsWith('SELECT id AS identity_id') && result === null) {
+     if (!held && ((holdIdentity && sql.startsWith('SELECT id AS identity_id') && result === null) || (holdMerge && sql.startsWith('SELECT e.identity_id') && result !== null))) {
       held = true;
       while (!released) await new Promise(resolve => setTimeout(resolve, 5));
      }

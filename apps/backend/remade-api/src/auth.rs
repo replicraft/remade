@@ -102,10 +102,19 @@ pub async fn callback(
     provider: Provider,
 ) -> Result<Response> {
     // Clear transient credentials even on rejected state, provider errors, or D1 failures.
-    let result = complete(req, env, config, provider).await;
+    let mut stage = "credentials";
+    let result = complete(req, env, config, provider, &mut stage).await;
     let mut response = match result {
         Ok(response) => response,
-        Err(_) => Response::error("Unable to sign in. Please start login again.", 400)?,
+        Err(_) => {
+            // Log only fixed stage labels, never provider responses, URLs or credentials.
+            console_error!(
+                "OAuth callback rejected: provider={} stage={}",
+                provider.name(),
+                stage
+            );
+            Response::error("Unable to sign in. Please start login again.", 400)?
+        }
     };
     response.headers_mut().append(
         "Set-Cookie",
@@ -119,8 +128,10 @@ async fn complete(
     env: &Env,
     config: &Config,
     provider: Provider,
+    stage: &mut &'static str,
 ) -> Result<Response> {
     let (client_id, secret) = credentials(env, provider)?;
+    *stage = "callback_parameters";
     let url = req.url()?;
     let query: Vec<_> = url.query_pairs().collect();
     let parameter = |name: &str| -> Option<String> {
@@ -130,11 +141,13 @@ async fn complete(
         }
         Some(values[0].1.to_string())
     };
+    *stage = "issuer";
     if query.iter().filter(|(key, _)| key == "iss").count() > 1
         || !provider.accepts_issuer(parameter("iss").as_deref())
     {
         return Err(security::unavailable());
     }
+    *stage = "callback_parameters";
     let state = parameter("state").ok_or_else(security::unavailable)?;
     let code = parameter("code")
         .filter(|v| !v.is_empty() && v.len() <= 512 && !v.chars().any(char::is_control))
@@ -142,10 +155,12 @@ async fn complete(
     if query.iter().any(|(key, _)| key == "error") {
         return Err(security::unavailable());
     }
+    *stage = "flow_cookie";
     let cookies = req.headers().get("Cookie")?.unwrap_or_default();
     let flow = security::cookie_value(&cookies, config.flow_name(provider))
         .ok_or_else(security::unavailable)?;
     let link = if flow.starts_with("link.") {
+        *stage = "link_session";
         Some(db::LinkSession {
             user_id: session::user_id(req, env, config)
                 .await?
@@ -155,6 +170,7 @@ async fn complete(
     } else {
         None
     };
+    *stage = "flow_validation";
     let verifier = match &link {
         Some(session) => security::validate_link_flow(
             flow,
@@ -166,6 +182,7 @@ async fn complete(
         None => security::validate_flow(flow, &state, security::now(), &secret),
     }
     .ok_or_else(security::unavailable)?;
+    *stage = "token_exchange";
     let mut form = url::form_urlencoded::Serializer::new(String::new());
     form.extend_pairs([
         ("client_id", client_id.as_str()),
@@ -209,6 +226,7 @@ async fn complete(
                     }))
         })
         .ok_or_else(security::unavailable)?;
+    *stage = "provider_profile";
     let headers = Headers::new();
     headers.set("Accept", "application/json")?;
     headers.set("Authorization", &format!("Bearer {access_token}"))?;
@@ -231,6 +249,7 @@ async fn complete(
             .into_profile()?,
     };
     if provider == Provider::Github {
+        *stage = "verified_emails";
         let emails: Vec<crate::email::GithubEmail> = bounded_json(Request::new_with_init(
             "https://api.github.com/user/emails?per_page=100",
             RequestInit::new()
@@ -261,11 +280,13 @@ async fn complete(
             .into_iter()
             .collect();
     }
+    *stage = "link_session_recheck";
     if let Some(link) = &link {
         if session::user_id(req, env, config).await?.as_deref() != Some(link.user_id.as_str()) {
             return Err(security::unavailable());
         }
     }
+    *stage = "identity_resolution";
     let db = env.d1("DB")?;
     let user_id = match db::resolve_identity(&db, &profile, link.as_ref()).await? {
         db::IdentityResolution::User(id) => id,
@@ -276,6 +297,7 @@ async fn complete(
             return outcome(config, true, "identity_in_use", provider)
         }
     };
+    *stage = "session_creation";
     let raw_token = session::create(&db, &user_id).await?;
     let mut response = if let Some(link) = &link {
         db.prepare("DELETE FROM user_sessions WHERE token_hash = ?")

@@ -90,7 +90,7 @@ describe("account sign-in methods", () => {
 		await expect
 			.element(screen.getByRole("status"))
 			.toHaveTextContent(
-				"This sign-in method belongs to another Remade account. It cannot be connected to this account.",
+				"This sign-in method belongs to another Remade account without a matching verified email. It cannot be connected to this account.",
 			);
 		await expect
 			.element(screen.getByText("Connected as @example"))
