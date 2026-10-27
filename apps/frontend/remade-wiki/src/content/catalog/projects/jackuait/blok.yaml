@@ -20,3 +20,6 @@ description: Blok is an embeddable block-based rich text editor modeled on Notio
 license: Apache-2.0
 limitations: Blok is an editor library, not a Notion workspace app. It has no Notion API or export-format compatibility beyond pasting copied content. It is a fork of the Apache-2.0 Editor.js project, not of Notion code.
 summary: Embeddable Notion-style block editing with nested content, tables, framework adapters and collaboration support.
+screenshots:
+  - src: https://raw.githubusercontent.com/JackUait/blok/main/static/editor-screenshot.png
+    alt: "Blok: document with headings, lists and block controls."

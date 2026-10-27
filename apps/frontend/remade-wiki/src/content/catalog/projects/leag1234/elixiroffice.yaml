@@ -22,3 +22,8 @@ description: An Office-style suite derived from Euro-Office and ONLYOFFICE Docs.
 license: AGPL-3.0-only
 docs: https://github.com/leag1234/elixiroffice#readme
 limitations: Beta; document rendering, round trips and Microsoft Office behavior are not fully compatible. Desktop macOS releases target Apple Silicon. Desktop installers are unsigned. Inherited components and bundled assets retain their documented licenses.
+screenshots:
+  - src: https://raw.githubusercontent.com/leag1234/ElixirOffice/main/docs/screenshots/readme/word-en.png
+    alt: "ElixirOffice: document editor with a formatted page."
+  - src: https://raw.githubusercontent.com/leag1234/ElixirOffice/main/docs/screenshots/readme/excel-en.png
+    alt: "ElixirOffice: spreadsheet editor with cells and a chart."

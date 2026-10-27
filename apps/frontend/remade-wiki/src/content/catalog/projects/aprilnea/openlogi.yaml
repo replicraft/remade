@@ -24,3 +24,8 @@ limitations: Under active development; device capabilities and platform behavior
   no-ops; full Options+ behavior is not claimed. Branding has separate terms from the code.
 website: https://openlogi.org
 summary: "Remap supported Logitech mice locally: buttons, DPI, SmartShift and gestures, without an account."
+screenshots:
+  - src: https://assets.openlogi.org/screenshots/macos/light/cards/actions-ring.png
+    alt: "OpenLogi: radial action-menu configuration."
+  - src: https://assets.openlogi.org/screenshots/macos/light/cards/keys.png
+    alt: "OpenLogi: keyboard layout and key assignments."

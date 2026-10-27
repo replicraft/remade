@@ -14,3 +14,8 @@ license: GPL-3.0-or-later
 docs: https://github.com/Rational-Boxes/NoDesk_Reviera#readme
 limitations: Early development; features are maintainer-reported. Explicitly does not target Revit's proprietary RVT or RFA formats. MEP, families, collaboration and CAD import are not built yet; structural and analysis tools remain incomplete. Linux and Windows prerelease packages are available; macOS packaging is untested.
 summary: "Revit-style BIM with native IFC storage, parametric building elements, rooms and clash checks."
+screenshots:
+  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/main/design_documents/application_screenshots/3D-view.png
+    alt: "BIM Reviera: building model and contextual editing tools."
+  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/main/design_documents/application_screenshots/plan-view.png
+    alt: "BIM Reviera: architectural floor plan and properties."

@@ -18,3 +18,8 @@ description: An Android handwriting and sketching app covering Goodnotes-style n
 license: MIT
 docs: https://github.com/shardulvs/xnotes-android#readme
 limitations: A broader alternative for handwritten notes and PDF workflows. Goodnotes document-format, synchronization and plugin compatibility are not established. Android 8 or later is required; bundled native libraries retain their own licenses.
+screenshots:
+  - src: https://raw.githubusercontent.com/shardulvs/xnotes-android/master/docs/screenshots/editor.png
+    alt: "Xnotes: handwritten PDF annotations in the dark theme."
+  - src: https://raw.githubusercontent.com/shardulvs/xnotes-android/master/docs/screenshots/explorer.png
+    alt: "Xnotes: notebook library and file explorer."

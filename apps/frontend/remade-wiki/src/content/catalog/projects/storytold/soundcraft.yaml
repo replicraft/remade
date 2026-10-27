@@ -15,3 +15,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Maintainers describe it as pre-alpha. Menu coverage does not establish complete behavioral or session-format compatibility.
 summary: "Pro Tools-style audio and MIDI editing, mixing, automation and offline processing."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/soundcraft/main/docs/images/mix.png
+    alt: "SoundCraft: audio mixer with channel strips."
+  - src: https://raw.githubusercontent.com/storytold/soundcraft/main/docs/images/midi.png
+    alt: "SoundCraft: mIDI notes and track arrangement."

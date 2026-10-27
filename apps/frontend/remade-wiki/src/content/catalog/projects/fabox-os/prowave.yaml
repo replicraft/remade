@@ -20,3 +20,8 @@ docs: https://github.com/fabox-os/Pro-Wave#readme
 discord_server: https://discord.gg/V5m5nnP9uB
 limitations: Early development. Recording, undo/redo, effects processing and most Logic instruments remain planned. Mixer controls do not establish complete effects or routing support. Logic Pro .logicx project compatibility is not established. Upstream reports Windows use; Linux and macOS packages have not been tested on real hardware. Builds are unsigned or ad-hoc signed and not notarized.
 summary: Logic Pro-style audio and MIDI arrangement, piano-roll editing, mixing and synthesis in a Rust desktop app.
+screenshots:
+  - src: https://raw.githubusercontent.com/fabox-os/Pro-Wave/main/docs/screenshots/tracks-and-mixer.webp
+    alt: "ProWave: music arrangement and mixer."
+  - src: https://raw.githubusercontent.com/fabox-os/Pro-Wave/main/docs/screenshots/piano-roll.webp
+    alt: "ProWave: piano-roll editor beneath the arrangement."

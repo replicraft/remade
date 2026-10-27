@@ -17,3 +17,8 @@ description: A self-hosted Trello-style Kanban application for PHP and MySQL or 
 license: Apache-2.0
 docs: https://github.com/RealRules/royal-tasks#readme
 limitations: Targets Trello-style board workflows, not Trello service or API parity. Complete Trello JSON round-trip fidelity is not established. Encryption and privacy properties are maintainer-reported and have not been independently audited.
+screenshots:
+  - src: https://raw.githubusercontent.com/RealRules/royal-tasks/main/docs/screenshots/board.png
+    alt: Royal Tasks board with task lists and cards.
+  - src: https://raw.githubusercontent.com/RealRules/royal-tasks/main/docs/screenshots/card.png
+    alt: "Royal Tasks: task-card details, checklists and comments."

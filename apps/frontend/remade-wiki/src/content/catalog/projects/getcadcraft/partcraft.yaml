@@ -16,3 +16,6 @@ website: https://getcadcraft.com/apps/partcraft
 discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. SOLIDWORKS feature migration requires an export macro running in SOLIDWORKS; unsupported features are reported rather than reproduced. Full native project compatibility is not claimed. macOS and mobile builds are planned.
 summary: "SOLIDWORKS-style parametric CAD with constrained sketches, feature history, assemblies and STEP exchange."
+screenshots:
+  - src: https://raw.githubusercontent.com/getcadcraft/partcraft/main/screenshots/paper.png
+    alt: "PartCraft: mechanical frame model and editing tools."

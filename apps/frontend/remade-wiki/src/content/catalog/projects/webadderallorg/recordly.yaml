@@ -22,3 +22,8 @@ license: AGPL-3.0 with branding and attribution terms
 website: https://www.recordly.dev
 docs: https://github.com/webadderallorg/recordly#readme
 limitations: A broader alternative for local recording and editing; Loom hosted sharing and collaboration compatibility is not established. Capture and cursor behavior vary by OS; Wayland uses the system picker. LICENSE.md includes branding and user-facing attribution terms plus inherited MIT notices.
+screenshots:
+  - src: https://i.postimg.cc/8CrQtGJf/Screenshot-2026-04-30-at-5-11-52-pm.png
+    alt: "Recordly: screen-recording edit and export workspace."
+  - src: https://i.postimg.cc/pLSMfrTM/Screenshot-2026-04-30-at-5-11-45-pm.png
+    alt: "Recordly: recording editor in the dark theme."

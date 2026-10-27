@@ -22,3 +22,8 @@ limitations: Alpha; CDR fidelity is maintainer-reported and needs testing on rea
   and writing support different format-version ranges; older output may require older CorelDRAW versions.
   Complete behavior or plugin parity is not claimed. Desktop builds are unsigned.
 summary: "CorelDRAW-style vector and page layout with curves, text, layers, symbols, effects and CDR file support."
+screenshots:
+  - src: https://raw.githubusercontent.com/igtoth/tracedraw/main/docs/images/tracedraw-languages.jpg
+    alt: "TraceDraw: document editor with Japanese menus."
+  - src: https://raw.githubusercontent.com/igtoth/tracedraw/main/docs/images/tracedraw-perspective.jpg
+    alt: "TraceDraw: perspective drawing and editing tools."

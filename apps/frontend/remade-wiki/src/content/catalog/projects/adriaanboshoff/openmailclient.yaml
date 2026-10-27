@@ -14,3 +14,8 @@ website: https://adriaanboshoff.github.io/OpenMailClient/
 docs: https://github.com/AdriaanBoshoff/OpenMailClient/blob/main/docs/gaps.md
 limitations: Early development; compatibility is maintainer-reported. IMAP synchronizes folders and message states; calendar views and appointment editing exist, while recurrence, CalDAV, People and Tasks remain unfinished. MCP and browser builds are planned. OST is read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs.
 summary: "Outlook-style email with a ribbon interface, PST/OST files, IMAP, POP3, SMTP and command-line tools."
+screenshots:
+  - src: https://raw.githubusercontent.com/AdriaanBoshoff/OpenMailClient/main/docs/images/openmailclient-reading-pane.png
+    alt: "OpenMailClient: mailbox and formatted message reader."
+  - src: https://raw.githubusercontent.com/AdriaanBoshoff/OpenMailClient/main/docs/images/openmailclient-recurrence.png
+    alt: "OpenMailClient: recurring-appointment editor."

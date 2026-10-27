@@ -16,3 +16,6 @@ website: https://getcadcraft.com/apps/modelcraft
 discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. Full SketchUp behavior, extension support and native SKP project fidelity are not claimed. Some website illustrations describe planned workflows. macOS and mobile editions are planned.
 summary: "SketchUp-style 3D design with push/pull modeling, groups, components, guides and inference snapping."
+screenshots:
+  - src: https://raw.githubusercontent.com/getcadcraft/modelcraft/main/screenshots/paper.png
+    alt: "ModelCraft: house model and modeling properties."

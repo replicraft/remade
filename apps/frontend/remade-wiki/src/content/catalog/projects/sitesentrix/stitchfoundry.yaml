@@ -14,3 +14,8 @@ description: A Wilcom EmbroideryStudio-style digitizing application built on Vec
 docs: https://github.com/Stitchwright/StitchFoundry#readme
 limitations: Pre-release; no binaries. A broader Wilcom alternative built on VectorCraft; native Wilcom project-file compatibility is not documented. Machine files have been checked in software but not sewn on real hardware. AI-assisted artwork generation requires a separate Anthropic API key.
 summary: "Wilcom-style embroidery digitizing with stitch generators, applique, lettering and machine-file exports."
+screenshots:
+  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/main/docs/images/stitchfoundry-make-a-design.png
+    alt: "StitchFoundry: embroidery design-creation dialog."
+  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/main/docs/images/stitchfoundry-online-orders.png
+    alt: "StitchFoundry: online order setup and embroidery rules."

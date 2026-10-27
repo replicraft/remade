@@ -14,3 +14,8 @@ license: GPL-3.0-only
 docs: https://github.com/hlophlopgaming/DraugrTime#readme
 limitations: Early development; installers are not yet available and it must be built from source. Browser URL tracking is planned but not implemented. GNOME and KDE on Wayland require a local compositor bridge. It does not read or write ManicTime databases or synchronize with ManicTime Server.
 summary: "Track applications, window titles and idle time locally on a ManicTime-style day timeline."
+screenshots:
+  - src: https://raw.githubusercontent.com/hlophlopgaming/DraugrTime/main/docs/screenshots/draugr-time-light.png
+    alt: "Draugr Time: time-tracking dashboard in the light theme."
+  - src: https://raw.githubusercontent.com/hlophlopgaming/DraugrTime/main/docs/screenshots/draugr-time-dark.png
+    alt: "Draugr Time: time-tracking dashboard in the dark theme."

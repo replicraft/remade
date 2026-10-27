@@ -14,3 +14,8 @@ license: GPL-3.0-or-later
 docs: https://github.com/n-delic/kadar#readme
 limitations: Early alpha and a broader alternative, not a full clone. No Picsart or InShot project-file compatibility, generative effects, templates, sequential clip editing or transitions. Android only; background removal depends on Google Play services and proprietary ML Kit, covered by a documented GPL linking permission.
 summary: "Edit photos and videos offline on Android with stickers, captions, background removal, trimming and music."
+screenshots:
+  - src: https://raw.githubusercontent.com/n-delic/kadar/main/docs/screenshots/photo-editor.jpg
+    alt: "Kadar: photo-editing canvas with a text overlay."
+  - src: https://raw.githubusercontent.com/n-delic/kadar/main/docs/screenshots/video-editor.jpg
+    alt: "Kadar: vertical video preview and caption timeline."

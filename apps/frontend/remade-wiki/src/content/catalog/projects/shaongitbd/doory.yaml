@@ -15,3 +15,6 @@ website: https://doory.art/
 docs: https://github.com/shaongitbd/doory#self-host-it
 limitations: Young project with a small starter template library; Canva project import and full feature compatibility are not documented. Guest designs stay in that browser; accounts and sharing require a server. Server-side PDF export needs Chromium. The Attribution Assurance License requires prominent author credit in the running application.
 summary: "Design posters, social graphics and slides in your browser with Canva-style templates, layers and exports."
+screenshots:
+  - src: https://raw.githubusercontent.com/shaongitbd/doory/main/.github/readme/editor.webp
+    alt: "Doory: poster design with text-editing controls."

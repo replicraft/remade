@@ -15,3 +15,8 @@ license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Alpha; compatibility is maintainer-reported. Feature breadth does not establish complete PowerPoint fidelity; full behavioral and presentation-format compatibility is not claimed.
 summary: "PowerPoint-style presentations with themes, slide layouts, shapes, transitions, animations and file support."
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/deckcraft/main/docs/images/shape-format.png
+    alt: "DeckCraft: presentation editor with a selected shape."
+  - src: https://raw.githubusercontent.com/storytold/deckcraft/main/docs/images/format-pane.png
+    alt: "DeckCraft: gradient controls beside an editable slide."

@@ -18,3 +18,6 @@ license: MIT
 docs: https://github.com/kostyk348/mbscada-rs#readme
 limitations: Imports .mbp/.mbw; the engine has a byte-preserving .mbp round-trip layer, but the UI has no Save as Modbus Poll action yet. Real-file checks use a private Modbus Poll 10.5 corpus; public tests use synthetic files. ASCII transports have not been tried on real hardware. Published builds target Windows.
 summary: Modbus Poll-style device polling, live tables, alarms, diagrams and imports of existing Modbus Poll projects.
+screenshots:
+  - src: https://raw.githubusercontent.com/kostyk348/mbscada-rs/master/docs/img/app.png
+    alt: "mbSCADA: device polling and live Modbus values."

@@ -20,3 +20,6 @@ license: Apache-2.0 (default builds); MIT OR Apache-2.0 without Revit reader
 docs: https://github.com/IPedrax/BIMCraft#readme
 limitations: "Revit import is partial: undecoded elements are skipped or approximated; no native Revit saving or multi-user editing. Families use its own JSON format. macOS is untried by hand; installers are unsigned. The reader derives partly from Apache-2.0 rvt-rs; builds without it retain MIT OR Apache-2.0. A separate project from getcadcraft BimCraft."
 summary: Revit-style building modeling with plans, schedules, IFC exchange and limited read-only Revit imports.
+screenshots:
+  - src: https://raw.githubusercontent.com/IPedrax/BIMCraft/main/docs/images/family-editor.png
+    alt: "BIMCraft: window-family editor and parameter controls."

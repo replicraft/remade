@@ -15,3 +15,8 @@ description: A Rust drawing and animation alternative to FlipaClip with layered 
 license: GPL-3.0-or-later
 docs: https://github.com/hazielcampos/trazo#readme
 limitations: FlipaClip project-file compatibility is not claimed. Prebuilt releases cover Android and Windows; macOS and Linux require building from source, and MP4 export on those platforms remains planned.
+screenshots:
+  - src: https://raw.githubusercontent.com/hazielcampos/trazo/main/docs/capturas/telefono_dibujar.png
+    alt: "Trazo: mobile animation editor and layered timeline."
+  - src: https://raw.githubusercontent.com/hazielcampos/trazo/main/docs/capturas/escritorio_editor.png
+    alt: "Trazo: desktop animation editor and drawing canvas."

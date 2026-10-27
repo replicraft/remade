@@ -19,3 +19,8 @@ description: A native reference-image board for artists with an infinite canvas,
 license: GPL-3.0-or-later
 limitations: Early alpha; long-term reliability qualification is pending. PureRef .pur import is read-only and limited to verified files and supported content, using a fork of LazyRef's MIT-licensed purcore; .pur writing is out of scope. Full PureRef 2 feature parity remains a roadmap goal.
 summary: PureRef-style reference-image boards with an infinite canvas, image transforms, notes and limited .pur import.
+screenshots:
+  - src: https://raw.githubusercontent.com/hlophlopgaming/mothRef/main/docs/screenshots/board.png
+    alt: "MothRef: reference board containing several illustrations."
+  - src: https://raw.githubusercontent.com/hlophlopgaming/mothRef/main/docs/screenshots/library.png
+    alt: "MothRef: reference-board library."

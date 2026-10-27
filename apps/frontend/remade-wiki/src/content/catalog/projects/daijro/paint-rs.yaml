@@ -14,3 +14,8 @@ description: A Rust reimplementation targeting Paint.NET editing workflows, with
 license: GPL-3.0-or-later
 docs: https://github.com/daijro/paint.rs#readme
 limitations: Full compatibility is not independently verified. ICO is unsupported; color profiles and EXIF metadata are not preserved. Bundled Paint.NET-derived interface text has separate resource terms documented in LICENSE.md.
+screenshots:
+  - src: https://raw.githubusercontent.com/daijro/paint.rs/main/assets/screenshots/01-main.png
+    alt: "paint.rs: painting canvas and color controls."
+  - src: https://raw.githubusercontent.com/daijro/paint.rs/main/assets/screenshots/02-effects-menu.png
+    alt: "paint.rs: effects menu beside an open image."

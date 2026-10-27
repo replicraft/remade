@@ -16,3 +16,8 @@ description: SolidCraft is a Rust parametric 3D CAD application targeting Fusion
 license: MIT OR Apache-2.0
 limitations: Early development focused on simple parts and the Fusion Design workspace. Full Fusion compatibility is not claimed.
 summary: "Fusion-style parametric 3D CAD with constrained sketches, solid modeling and a rebuildable feature timeline."
+screenshots:
+  - src: https://raw.githubusercontent.com/tangency-labs/solidcraft/main/docs/screenshots/sample-plate.png
+    alt: SolidCraft modeling workspace with a sample plate.
+  - src: https://raw.githubusercontent.com/tangency-labs/solidcraft/main/docs/screenshots/class-a-blend.png
+    alt: SolidCraft surface blending example.

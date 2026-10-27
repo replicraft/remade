@@ -15,3 +15,8 @@ description: A Rust reimplementation targeting Paint.NET and MS Paint drawing an
 license: MIT
 docs: https://github.com/replicraft/PaintCraft#readme
 limitations: Early preview; full feature parity is not claimed. PDN and PAINT support is limited to structural inspection, without layered project decoding or preserving saves. GIF import is still-image only and TIFF import is single-page; their frontend exports are disabled.
+screenshots:
+  - src: https://raw.githubusercontent.com/replicraft/PaintCraft/main/assets/repo/classic-windows-11.png
+    alt: "PaintCraft: drawing canvas in the Windows 11 theme."
+  - src: https://raw.githubusercontent.com/replicraft/PaintCraft/main/assets/repo/classic-windows-10.png
+    alt: "PaintCraft: drawing canvas in the Windows 10 theme."

@@ -19,3 +19,6 @@ description: A native Rust and GPUI Microsoft Teams client with chats, channels,
 license: MIT
 docs: https://github.com/danieldaeschle/rusty-teams#readme
 limitations: Requires a Teams account and the original Teams web page for token refresh and API transport. Windows uses WebView2; Linux currently uses Chrome with remote debugging. It replaces the client experience, not the Teams service. Full feature parity and compliance with service terms are not established.
+screenshots:
+  - src: https://raw.githubusercontent.com/danieldaeschle/rusty-teams/main/.github/app-demo.png
+    alt: "Rusty Teams: chat list and conversation using demo data."

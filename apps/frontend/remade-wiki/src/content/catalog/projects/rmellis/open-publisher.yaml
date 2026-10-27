@@ -21,3 +21,6 @@ summary: Publisher-style page layouts with text frames, templates, graphics, PUB
 description: A desktop and browser publishing alternative to Microsoft Publisher for flyers, brochures, documents and page layouts. Combines text frames, images, shapes, templates and print/export workflows. Uses its own .opub document format and documents import of Publisher .pub files in editable-text or flattened-image modes.
 limitations: Publisher import is maintainer-reported; complete PUB fidelity and native Publisher round-trip compatibility are not established. Projects use .opub rather than the Publisher format.
 docs: https://github.com/rmellis/open-publisher#readme
+screenshots:
+  - src: https://raw.githubusercontent.com/rmellis/open-publisher/main/docs/screenshots/batch_image_swap.png
+    alt: "Open Publisher: page-layout workspace with image placeholders."

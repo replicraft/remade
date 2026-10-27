@@ -19,3 +19,8 @@ description: A C++23 RTS engine for macOS with a native Metal renderer. Loads Fo
 license: GPL-3.0-or-later; GPL-2.0-or-later components
 limitations: Work in progress; no multiplayer or full gameplay parity. Needs a retail Forged Alliance install and pinned FAF AI scripts. Upstream documents a golden replay check diverging from its saved baseline; deterministic replay is not independently verified. The separate BAR launcher uses upstream Recoil and is not a reimplementation.
 summary: Native macOS engine for Forged Alliance skirmishes, using game data from an existing installation.
+screenshots:
+  - src: https://raw.githubusercontent.com/akwiatkowski/recoil-metal/main/docs/images/ui-commander.jpg
+    alt: "recoil-metal: commander selection and game interface."
+  - src: https://raw.githubusercontent.com/akwiatkowski/recoil-metal/main/docs/images/m20-5-battle.jpg
+    alt: "recoil-metal: units approaching an opposing base."

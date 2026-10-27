@@ -21,3 +21,6 @@ license: GPL-3.0; inherited components retain their licenses
 website: https://libernt.com
 docs: https://github.com/LiberNT/LiberNT#readme
 limitations: Debug prereleases for testing; full Windows 11 application, driver and hardware compatibility is not established. Architecture and optional subsystem coverage vary. Inherited ReactOS and other components retain GPL, LGPL, BSD and other file-specific terms.
+screenshots:
+  - src: https://raw.githubusercontent.com/LiberNT/LiberNT/main-nt10/media/graphics/screenshots/libernt-desktop-arm64.png
+    alt: "LiberNT: operating-system desktop running on ARM64."

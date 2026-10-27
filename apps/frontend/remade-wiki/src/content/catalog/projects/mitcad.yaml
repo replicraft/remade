@@ -25,3 +25,8 @@ limitations: Early active development; format support is maintainer-reported. In
   parity are not claimed. Direct modeling and some loft combinations remain incomplete. macOS targets
   Apple Silicon.
 summary: "Parametric CAD with constrained sketches, feature history, assemblies and partial Fusion design import."
+screenshots:
+  - src: https://mitcad.org/assets/video/mitcad-demo-poster.webp
+    alt: "Mitcad: mechanical part in the modeling workspace."
+  - src: https://mitcad.org/assets/shots/sketch-constraints.webp
+    alt: "Mitcad: dimensioned sketch and constraint controls."
