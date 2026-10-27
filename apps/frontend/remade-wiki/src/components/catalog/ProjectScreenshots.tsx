@@ -23,7 +23,7 @@ export default function ProjectScreenshots({
 			className="my-10 min-w-0"
 			data-screenshot-gallery
 		>
-			<div className="mb-4 flex items-center justify-between gap-4">
+			<div className="mb-3 flex items-center justify-between gap-4">
 				<h2 className="!m-0 text-base font-semibold tracking-normal text-ink">
 					Screenshots
 				</h2>
@@ -65,7 +65,7 @@ export default function ProjectScreenshots({
 
 			<section
 				aria-label="Scrollable screenshots"
-				className="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain rounded-xl pb-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime"
+				className="mt-0 flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain rounded-xl pb-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime"
 				data-gallery-track
 				tabIndex={multiple ? 0 : undefined}
 			>
