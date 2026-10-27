@@ -17,6 +17,7 @@ const account: auth.Account = {
 
 beforeEach(() => {
 	vi.clearAllMocks();
+	localStorage.removeItem("remade-last-login-provider");
 	sessionStorage.removeItem("remade-pending-login-toast");
 	toast.dismiss();
 	vi.mocked(auth.hasLoginHint).mockReturnValue(false);
@@ -28,8 +29,8 @@ describe("header authentication", () => {
 	it("shows Login without making an anonymous session request", async () => {
 		const screen = await render(<AuthMenu />);
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
-			.toHaveAttribute("href", auth.loginUrl);
+			.element(screen.getByRole("button", { name: "Login" }))
+			.toBeVisible();
 		expect(auth.resolveAccount).not.toHaveBeenCalled();
 	});
 
@@ -44,7 +45,7 @@ describe("header authentication", () => {
 			.toBeVisible();
 		await screen.getByText("Logout", { exact: true }).click();
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.toBeVisible();
 		expect(toast.success).toHaveBeenCalledWith("Logged out");
 		expect(toast.success).not.toHaveBeenCalledWith("Logged in as example");
@@ -112,7 +113,7 @@ describe("header authentication", () => {
 
 		const screen = await render(<AuthMenu />);
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.not.toBeInTheDocument();
 
 		confirmAccount(account);
@@ -123,7 +124,7 @@ describe("header authentication", () => {
 			)
 			.toBeVisible();
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.not.toBeInTheDocument();
 	});
 
@@ -134,7 +135,7 @@ describe("header authentication", () => {
 
 		await expect.poll(() => auth.resolveAccount).toHaveBeenCalledOnce();
 		await expect
-			.element(screen.getByRole("link", { name: "Login" }))
+			.element(screen.getByRole("button", { name: "Login" }))
 			.not.toBeInTheDocument();
 	});
 

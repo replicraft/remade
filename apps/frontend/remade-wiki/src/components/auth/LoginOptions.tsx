@@ -1,6 +1,5 @@
-import { LogIn } from "lucide-react";
-import { apiUrl, discordLoginEnabled } from "../../lib/auth";
-import { rememberLogin } from "../../lib/auth-notifications";
+import { discordLoginEnabled } from "../../lib/auth";
+import ProviderLinks from "./ProviderLinks";
 
 interface Props {
 	discordEnabled?: boolean;
@@ -9,8 +8,6 @@ interface Props {
 export default function LoginOptions({
 	discordEnabled = discordLoginEnabled,
 }: Props) {
-	const providers = discordEnabled ? ["GitHub", "Discord"] : ["GitHub"];
-
 	return (
 		<div className="mx-auto mt-14 max-w-md rounded-2xl border border-line bg-panel p-6 sm:mt-20 sm:p-8">
 			<h1 className="text-3xl font-bold tracking-tight">Sign in to Remade</h1>
@@ -19,17 +16,7 @@ export default function LoginOptions({
 			</p>
 
 			<div className="mt-7 grid gap-3">
-				{providers.map((provider) => (
-					<a
-						className="inline-flex items-center justify-center gap-3 rounded-lg border border-line px-4 py-3 font-semibold hover:border-lime hover:text-lime"
-						href={`${apiUrl}/auth/${provider.toLowerCase()}`}
-						key={provider}
-						onClick={rememberLogin}
-					>
-						<LogIn aria-hidden="true" size={18} />
-						Continue with {provider}
-					</a>
-				))}
+				<ProviderLinks discordEnabled={discordEnabled} />
 			</div>
 
 			{discordEnabled && (

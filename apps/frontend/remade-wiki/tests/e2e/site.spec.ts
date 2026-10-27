@@ -202,17 +202,13 @@ test("anonymous browsing offers sign-in without contacting the authentication AP
 			authRequests.push(request.url());
 	});
 	await page.goto("/");
-	const login = page.getByRole("link", { name: "Login", exact: true });
+	const login = page.getByRole("button", { name: "Login", exact: true });
 	await expect(login).toBeVisible();
-	await expect(login).toHaveAttribute("href", "/login/");
 	await page.getByRole("link", { name: "Explore", exact: true }).click();
 	await expect(
-		page.getByRole("link", { name: "Login", exact: true }),
+		page.getByRole("button", { name: "Login", exact: true }),
 	).toBeVisible();
-	await page.getByRole("link", { name: "Login", exact: true }).click();
-	await expect(
-		page.getByRole("heading", { name: "Sign in to Remade" }),
-	).toBeVisible();
+	await page.getByRole("button", { name: "Login", exact: true }).click();
 	await expect(
 		page.getByRole("link", { name: "Continue with GitHub" }),
 	).toHaveAttribute("href", /\/auth\/github$/);
@@ -226,6 +222,27 @@ test("anonymous browsing offers sign-in without contacting the authentication AP
 		).toHaveCount(0);
 	}
 	expect(authRequests).toEqual([]);
+});
+
+test("mobile login dropdown fits the viewport and retains its provider preference", async ({
+	page,
+}) => {
+	await page.setViewportSize({ width: 320, height: 720 });
+	await page.goto("/");
+	await page.evaluate(() =>
+		localStorage.setItem("remade-last-login-provider", "github"),
+	);
+	await page.reload();
+	await page.getByRole("button", { name: "Login", exact: true }).click();
+	const provider = page.getByRole("link", {
+		name: "Continue with GitHub Last used",
+	});
+	await expect(provider).toBeVisible();
+	const bounds = await provider.boundingBox();
+	expect(bounds?.x).toBeGreaterThanOrEqual(0);
+	expect((bounds?.x || 0) + (bounds?.width || 0)).toBeLessThanOrEqual(320);
+	await page.keyboard.press("Escape");
+	await expect(provider).not.toBeVisible();
 });
 
 test("invalid returning sessions clear the login hint", async ({
@@ -256,7 +273,7 @@ test("invalid returning sessions clear the login hint", async ({
 		)
 		.toBe(false);
 	await expect(
-		page.getByRole("link", { name: "Login", exact: true }),
+		page.getByRole("button", { name: "Login", exact: true }),
 	).toBeVisible();
 });
 
@@ -301,7 +318,7 @@ test("a returning account can log out from the mobile header", async ({
 	expect((bounds?.x || 0) + (bounds?.width || 0)).toBeLessThanOrEqual(320);
 	await logout.click();
 	await expect(
-		page.getByRole("link", { name: "Login", exact: true }),
+		page.getByRole("button", { name: "Login", exact: true }),
 	).toBeVisible();
 	expect(lookups).toBe(1);
 	expect(

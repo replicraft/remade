@@ -25,7 +25,7 @@ function AccountControls() {
 	}, [initialize]);
 
 	return (
-		<div className="relative h-[46px] w-[104px]" data-auth-slot>
+		<div className="relative h-[46px] w-[112px]" data-auth-slot>
 			<AuthToaster />
 
 			<div className="flex h-full w-full items-center justify-end">

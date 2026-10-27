@@ -1,6 +1,8 @@
 import { toast } from "sonner";
 import { type Account, accountUsername, loginUrl } from "./auth";
 
+import { rememberLoginProvider } from "./login-provider";
+
 const loginToastKey = "remade-pending-login-toast";
 
 export function promptLoginToVote() {
@@ -24,6 +26,9 @@ export function rememberLogin() {
 }
 
 export function announceLogin(account: Account | null) {
+	const provider = account?.identities[0]?.provider;
+	if (provider) rememberLoginProvider(provider);
+
 	try {
 		const pending = sessionStorage.getItem(loginToastKey);
 		sessionStorage.removeItem(loginToastKey);

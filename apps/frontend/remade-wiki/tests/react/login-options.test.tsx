@@ -3,7 +3,10 @@ import { render } from "vitest-browser-react";
 import LoginOptions from "../../src/components/auth/LoginOptions";
 import { apiUrl } from "../../src/lib/auth";
 
-beforeEach(() => sessionStorage.removeItem("remade-pending-login-toast"));
+beforeEach(() => {
+	sessionStorage.removeItem("remade-pending-login-toast");
+	localStorage.removeItem("remade-last-login-provider");
+});
 
 describe("login providers", () => {
 	it("offers both providers when Discord is enabled", async () => {
