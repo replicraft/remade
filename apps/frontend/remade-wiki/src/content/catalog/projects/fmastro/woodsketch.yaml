@@ -1,0 +1,22 @@
+slug: woodsketch
+name: WoodSketch
+authors: [fmastro]
+repository: https://github.com/FMastro/woodsketch
+website: https://woodsketch.net/
+originals: [sketchup]
+category: engineering
+languages: [Rust]
+platforms: [Windows, macOS, Linux]
+status: experimental
+compatibility: partial
+summary: SketchUp-style woodworking design with joinery, cut lists, cutting diagrams and printable build sheets.
+description: A woodworking modeler recreating SketchUp-style drawing, push/pull, inference snapping, groups, components and shortcuts. Adds real lumber sizes, grain direction, furniture templates, editable joinery, wood-movement checks, cutting diagrams and shopping lists. Imports SketchUp 2021 and later SKP files, saves its own drawings and exports OBJ, STL and CNC DXF/SVG. Includes a CLI and MCP server.
+# LICENSE contains Apache-2.0; README, website and Cargo metadata claim MIT OR Apache-2.0.
+license: Apache-2.0
+docs: https://github.com/FMastro/woodsketch#readme
+limitations: Early software with rough edges. SketchUp behavior and SKP import coverage are maintainer-reported; full file fidelity and extension compatibility are not established. SketchUp 2020 and older files are not supported.
+screenshots:
+  - src: https://woodsketch.net/images/cutting-diagrams-shopping-list.webp
+    alt: WoodSketch cutting diagrams showing lumber layouts and a shopping list.
+  - src: https://woodsketch.net/images/part-grain-direction.webp
+    alt: WoodSketch editing a wooden part's material, grain direction and edge profile.
