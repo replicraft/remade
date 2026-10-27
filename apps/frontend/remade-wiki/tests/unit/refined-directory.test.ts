@@ -51,11 +51,10 @@ it("includes every suite member in a tool card's complete target list", () => {
 	expect(new Set(tool?.targets.map((target) => target.href)).size).toBe(32);
 });
 
-it("preserves both community links and keeps tools distinct", () => {
+it("preserves reviewed community links and keeps tools distinct", () => {
 	expect(records.find((record) => record.id === "earthcraft")).toMatchObject({
-		discord_server: "https://discord.gg/artcraft",
-		discord_thread:
-			"https://discord.com/channels/1359579021108842617/1559160946625224715",
+		discord_server: "https://discord.gg/xNASvxSx6j",
+		discord_thread: undefined,
 	});
 	expect(
 		records.find((record) => record.id === "openplayground"),

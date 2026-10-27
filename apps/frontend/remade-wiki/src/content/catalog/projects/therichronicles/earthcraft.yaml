@@ -3,6 +3,7 @@ slug: earthcraft
 name: EarthCraft
 authors: [therichronicles, pixelsoftwarestudios]
 repository: https://github.com/therichronicles/EarthCraft
+discord_server: https://discord.gg/xNASvxSx6j
 browser_url: https://playground.daijro.dev/head/earthcraft/
 originals: [google-earth]
 category: engineering
@@ -13,8 +14,6 @@ compatibility: partial
 description: A 3D globe explorer built in Rust targeting Google Earth-style navigation, with satellite/street/topographic imagery, place search, and animated fly-to. Offers support for more advanced workflows with full KML support, a geodesic ruler with precise coordinates and multiple units, sunlight simulation and PNG screenshots. Explorer tools add narrated tours and custom planet previews.
 license: MIT
 docs: https://github.com/therichronicles/EarthCraft#readme
-discord_server: https://discord.gg/artcraft
-discord_thread: https://discord.com/channels/1359579021108842617/1559160946625224715
 limitations: Experimental; features are maintainer-reported. CPU rendering is the default; GPU acceleration is experimental. No detailed 3D terrain, buildings, Street View or Earth Studio workflows. Imagery, search and live-data links depend on third-party services and their terms.
 summary: "Explore a 3D globe with satellite imagery, place search, animated flights and live data layers."
 screenshots:
