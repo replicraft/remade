@@ -14,6 +14,18 @@
 </p>
 
 <p align="center">
+  <a href="https://remade.wiki">
+    <img src="https://img.shields.io/badge/Website-remade.wiki-C4F477" alt="Website: remade.wiki" />
+  </a>
+  <a href="https://discord.gg/xNASvxSx6j">
+    <img src="https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&amp;logoColor=white" alt="Join the Discord community" />
+  </a>
+  <a href="apps/backend/remade-api/">
+    <img src="https://img.shields.io/badge/Backend-Rust-000000?logo=rust&amp;logoColor=white" alt="Backend built with Rust" />
+  </a>
+</p>
+
+<p align="center">
   <a href="https://remade.wiki/explore/"><strong>Explore projects</strong></a> ·
   <a href="https://remade.wiki/requests/">Project requests</a> ·
   <a href="CONTRIBUTING.md">Contribute</a> ·
