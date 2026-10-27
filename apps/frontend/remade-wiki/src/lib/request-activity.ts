@@ -1,5 +1,5 @@
 import * as v from "valibot";
-import { apiUrl } from "./auth";
+import { apiUrl, usesActivityPreview } from "./auth";
 
 const count = v.pipe(v.number(), v.integer(), v.minValue(0));
 const activitySchema = v.object({
@@ -18,7 +18,7 @@ export async function readRequestActivity(
 	signal?: AbortSignal,
 	originals: readonly string[] = [],
 ) {
-	if (import.meta.env.DEV)
+	if (usesActivityPreview())
 		return (await import("./request-activity-preview")).readPreviewActivity();
 	const read = async (original?: string) => {
 		const query = original ? `?original=${encodeURIComponent(original)}` : "";
@@ -47,7 +47,7 @@ export async function changeRequestActivity(
 	original: string,
 	action: RequestAction,
 ) {
-	if (import.meta.env.DEV)
+	if (usesActivityPreview())
 		return (await import("./request-activity-preview")).changePreviewActivity(
 			original,
 			action,

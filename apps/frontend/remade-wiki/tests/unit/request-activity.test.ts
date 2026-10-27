@@ -3,6 +3,7 @@ import { readRequestActivity } from "../../src/lib/request-activity";
 
 vi.mock("../../src/lib/auth", () => ({
 	apiUrl: "https://api.remade.wiki/api/v1",
+	usesActivityPreview: () => false,
 }));
 
 const fetchActivity = vi.fn<typeof fetch>();

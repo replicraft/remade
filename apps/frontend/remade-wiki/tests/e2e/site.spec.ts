@@ -228,8 +228,7 @@ test("anonymous browsing offers sign-in without contacting the authentication AP
 	expect(authRequests).toEqual([]);
 });
 
-// Restore production account flows when authentication is enabled in the header.
-test.fixme("invalid returning sessions clear the login hint", async ({
+test("invalid returning sessions clear the login hint", async ({
 	page,
 	context,
 }) => {
@@ -261,7 +260,7 @@ test.fixme("invalid returning sessions clear the login hint", async ({
 	).toBeVisible();
 });
 
-test.fixme("a returning account can log out from the mobile header", async ({
+test("a returning account can log out from the mobile header", async ({
 	page,
 	context,
 }) => {

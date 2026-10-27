@@ -8,6 +8,10 @@ export const loginUrl = "/login/";
 export const discordLoginEnabled =
 	import.meta.env.PUBLIC_REMADE_DISCORD_AUTH_ENABLED === "true";
 
+export function usesActivityPreview(): boolean {
+	return import.meta.env.DEV && !import.meta.env.PUBLIC_REMADE_API_BASE_URL;
+}
+
 const accountSchema = v.object({
 	id: v.pipe(v.string(), v.uuid()),
 	displayName: v.nullable(v.string()),
@@ -51,7 +55,7 @@ export function clearLoginHint(): void {
 export async function resolveAccount(
 	signal?: AbortSignal,
 ): Promise<Account | null> {
-	if (import.meta.env.DEV) return null;
+	if (usesActivityPreview()) return null;
 	const response = await fetch(`${apiUrl}/auth/me`, {
 		credentials: "include",
 		cache: "no-store",
@@ -69,7 +73,7 @@ export async function resolveAccount(
 }
 
 export async function logout(): Promise<void> {
-	if (import.meta.env.DEV) {
+	if (usesActivityPreview()) {
 		clearLoginHint();
 		return;
 	}

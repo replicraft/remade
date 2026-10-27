@@ -14,6 +14,7 @@ let barrier: Promise<void>;
 let username = "example";
 let discordId = "123456789012345678";
 let requestOriginal: string;
+let snapshotKey: string;
 let catalogCalls = 0;
 let catalogStatus = 200;
 let catalogTruncated = false;
@@ -34,6 +35,22 @@ beforeAll(async () => {
 			.split("/")
 			.at(-1)
 			?.replace(/\.yaml$/, "") ?? "";
+	const seed = [
+		...new Set(
+			requestFiles
+				.filter((file) => file.endsWith(".yaml"))
+				.map(
+					(file) =>
+						file
+							.split("/")
+							.at(-1)
+							?.replace(/\.yaml$/, "") ?? "",
+				),
+		),
+	]
+		.sort()
+		.join("\n");
+	snapshotKey = `${api}/__internal/request-slugs/v1/${createHash("sha256").update(seed).digest("hex")}.txt`;
 	worker = new Miniflare({
 		cf: false,
 		workers: [
@@ -104,7 +121,6 @@ beforeAll(async () => {
 								});
 							}
 							providerCalls++;
-							const url = new URL(request.url);
 							const discord = url.hostname === "discord.com";
 							if (
 								url.pathname.endsWith("/oauth2/token") ||
@@ -352,8 +368,7 @@ describe("request upvotes and builders", () => {
 		const cache = await (await worker.getCaches()).open(
 			"remade-request-slugs-v1",
 		);
-		for (const key of await cache.keys())
-			if (key.url.endsWith("/refresh")) await cache.delete(key);
+		await cache.delete(`${snapshotKey}/refresh`);
 		catalogStatus = 503;
 		expect(
 			(
@@ -402,7 +417,8 @@ beforeEach(async () => {
 	const cache = await (await worker.getCaches()).open(
 		"remade-request-slugs-v1",
 	);
-	for (const key of await cache.keys()) await cache.delete(key);
+	await cache.delete(snapshotKey);
+	await cache.delete(`${snapshotKey}/refresh`);
 	discordId = "123456789012345678";
 	barrier = new Promise((resolve) => {
 		releaseRace = resolve;
