@@ -1,6 +1,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/110.
 slug: libernt
 name: LiberNT
+authors: [ahmedarif193]
 repository: https://github.com/LiberNT/LiberNT
 originals:
   - microsoft-windows

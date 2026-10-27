@@ -1,5 +1,6 @@
 slug: open-note
 name: OpenNote
+authors: [hasanmajid]
 repository: https://github.com/HasanMajid/open-note
 originals: [microsoft-onenote, samsung-notes]
 category: productivity

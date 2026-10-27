@@ -1,5 +1,6 @@
 slug: notecraft-onenote
 name: NoteCraft
+authors: [alientechsoftware]
 repository: https://github.com/AlienTechSoftware/notecraft
 browser_url: https://playground.daijro.dev/head/notecraft/
 originals: [microsoft-onenote]

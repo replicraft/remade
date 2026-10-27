@@ -1,6 +1,7 @@
 # Suggested in https://github.com/replicraft/remade/issues/118.
 slug: royal-tasks
 name: Royal Tasks
+authors: [realrules]
 repository: https://github.com/RealRules/royal-tasks
 originals:
   - trello

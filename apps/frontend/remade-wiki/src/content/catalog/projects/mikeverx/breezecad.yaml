@@ -1,6 +1,7 @@
 # Scope and limitations are maintainer-reported in the upstream README.
 slug: breezecad
 name: BreezeCAD
+authors: [mikeverx]
 repository: https://github.com/MikeVerx/breezecad
 originals:
 - autodesk-inventor
