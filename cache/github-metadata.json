@@ -468,6 +468,15 @@
       "pushedAt": "2026-10-21T20:03:45Z",
       "stars": 10634
     },
+    "fmastro/woodsketch": {
+      "fetchedAt": "2026-10-27T02:02:47Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-10-27T01:52:52Z",
+      "stars": 1
+    },
     "fressmeigasu/inventcraft": {
       "fetchedAt": "2026-10-16T12:43:46Z",
       "forks": 0,
