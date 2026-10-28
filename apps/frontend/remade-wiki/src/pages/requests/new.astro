@@ -40,6 +40,14 @@ const policyVersion = createHash("sha256")
 				The on-site form is being prepared. You can submit through GitHub now.
 				Maintainers review requests before they appear in the directory.
 			</p>
+			<p class="text-sm">
+				Your submission will be a public issue in{" "}
+				<a class="text-lime underline" href={repositoryUrl}>
+					replicraft/remade
+				</a>
+				, associated with your GitHub account. Its text, links and your GitHub
+				handle will be visible to others. Do not include private information.
+			</p>
 			<a
 				class="action-primary"
 				href={`${repositoryUrl}/issues/new?template=project-request.yml`}

@@ -1,0 +1,46 @@
+---
+import AgreementPreview from "../../components/legal/AgreementPreview";
+import Layout from "../../layouts/Layout.astro";
+import { formatLegalDate, legalDocuments } from "../../lib/legal";
+
+export function getStaticPaths() {
+	return import.meta.env.DEV ? [{ params: { preview: undefined } }] : [];
+}
+---
+
+<Layout noindex title="Legal integration preview">
+	<div class="max-w-3xl pt-12 sm:pt-16">
+		<p class="eyebrow">Development only</p>
+		<h1>Legal integration preview</h1>
+		<p>
+			These documents are drafts, not effective policies. Their routes and this
+			preview are omitted from production builds.
+		</p>
+		<ul class="mt-6 grid gap-4">
+			{legalDocuments.map((document) => (
+				<li class="rounded-xl border border-line bg-surface p-5">
+					<a class="font-semibold text-lime" href={`/${document.slug}/`}>
+						{document.title} →
+					</a>
+					<p class="mb-0 mt-2 text-sm">
+						Draft · Awaiting publication review · Last Updated:{" "}
+						{document.lastUpdated
+							? formatLegalDate(document.lastUpdated)
+							: "Not set"}
+					</p>
+				</li>
+			))}
+		</ul>
+		<p class="mt-6 text-sm">
+			The live account flow is unchanged. This preview does not record
+			acceptance or enable analytics, updates or other optional processing.
+		</p>
+		<AgreementPreview client:load />
+		<noscript>
+			<p>
+				The documents and navigation work without JavaScript. JavaScript is
+				needed only for the agreement interaction preview.
+			</p>
+		</noscript>
+	</div>
+</Layout>
