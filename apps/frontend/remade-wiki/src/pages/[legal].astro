@@ -21,6 +21,7 @@ const draft = document.status === "draft";
 
 <Layout
 	description={`${document.title} for Remade.`}
+	index={!draft}
 	noindex={draft}
 	title={`${document.title}${draft ? " (draft)" : ""}`}
 >

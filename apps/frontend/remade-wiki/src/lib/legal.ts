@@ -13,16 +13,16 @@ export const legalDocuments: LegalDocument[] = [
 	{
 		slug: "terms",
 		title: "Terms of Service",
-		status: "draft",
+		status: "published",
 		lastUpdated: "2026-10-27",
-		operatorApproved: false,
+		operatorApproved: true,
 	},
 	{
 		slug: "privacy",
 		title: "Privacy Policy",
-		status: "draft",
+		status: "published",
 		lastUpdated: "2026-10-27",
-		operatorApproved: false,
+		operatorApproved: true,
 	},
 ];
 
@@ -86,8 +86,11 @@ export function legalRoutes(
 	});
 }
 
-export function legalNavigation(development: boolean) {
-	return legalDocuments.filter(
+export function legalNavigation(
+	development: boolean,
+	documents = legalDocuments,
+) {
+	return documents.filter(
 		(document) => development || document.status === "published",
 	);
 }

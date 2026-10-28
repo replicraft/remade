@@ -71,8 +71,8 @@ export default function AgreementPreview() {
 			</p>
 			{continued && (
 				<p className="mt-4 text-sm text-lime" role="status">
-					Preview complete. Production agreement remains inactive until approved
-					legal text and server-side recording are implemented.
+					Preview complete. No agreement was recorded. Account-agreement
+					enforcement has not been enabled.
 				</p>
 			)}
 		</section>
