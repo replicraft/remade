@@ -1,0 +1,85 @@
+---
+import LegalDocumentPage from "../components/legal/LegalDocumentPage";
+import * as privacy from "../content/legal/privacy.md";
+import * as terms from "../content/legal/terms.md";
+import Layout from "../layouts/Layout.astro";
+import { legalRoutes, unresolvedLegalFields } from "../lib/legal";
+
+export function getStaticPaths() {
+	const sources = { terms: terms.rawContent(), privacy: privacy.rawContent() };
+	return legalRoutes(import.meta.env.DEV, sources).map((document) => ({
+		params: { legal: document.slug },
+		props: { document },
+	}));
+}
+
+const { document } = Astro.props;
+const markdown = document.slug === "terms" ? terms : privacy;
+const { Content } = markdown;
+const draft = document.status === "draft";
+---
+
+<Layout
+	description={`${document.title} for Remade.`}
+	noindex={draft}
+	title={`${document.title}${draft ? " (draft)" : ""}`}
+>
+	<LegalDocumentPage
+		document={document}
+		headings={markdown.getHeadings()}
+		unresolved={unresolvedLegalFields(markdown.rawContent())}
+	>
+		<Content />
+	</LegalDocumentPage>
+</Layout>
+
+<style is:global>
+@media print {
+	@page {
+		margin: 18mm;
+	}
+	body:has(.legal-document) {
+		background: white;
+		color: black;
+	}
+	.legal-document p,
+	.legal-document li,
+	.legal-document td,
+	.legal-document th {
+		color: black;
+	}
+	body:has(.legal-document) > header,
+	body:has(.legal-document) > footer,
+	body:has(.legal-document) [data-auth-host],
+	.legal-contents {
+		display: none;
+	}
+	.legal-document,
+	.legal-document article {
+		max-width: none;
+		color: black;
+	}
+	.legal-document > div {
+		display: block;
+	}
+	.legal-document table {
+		display: table;
+		overflow: visible;
+		width: 100%;
+	}
+	.legal-document tr {
+		break-inside: avoid;
+	}
+	.legal-document h2,
+	.legal-document h3 {
+		break-after: avoid;
+	}
+	.legal-document a {
+		color: black;
+	}
+	/* Draft warnings stay visible on printed copies. */
+	.legal-draft-notice {
+		border: 2px solid black;
+	}
+}
+</style>

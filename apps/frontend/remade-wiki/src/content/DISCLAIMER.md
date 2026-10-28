@@ -38,6 +38,8 @@ Connecting another sign-in method requires you to be signed in to Remade and aut
 
 ## Reporting Concerns
 
+<span id="contact"></span>
+
 If you believe a listing infringes your intellectual property rights, contains unauthorized material, or violates Remade's directory guidelines, please contact **[admin@remade.wiki](mailto:admin@remade.wiki)**. Include the relevant listing URL, a description of the concern, and sufficient information for review. Reports will be reviewed, and listings may be corrected or removed where appropriate. Remade reserves the right to remove listings at its discretion.
 
 ---

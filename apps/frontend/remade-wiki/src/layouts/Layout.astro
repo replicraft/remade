@@ -4,6 +4,7 @@ import AuthMenu from "../components/auth/AuthMenu";
 import Footer from "../components/navigation/Footer";
 import Header from "../components/navigation/Header";
 import { loadMetadata } from "../lib/catalog";
+import { legalNavigation } from "../lib/legal";
 
 interface Props {
 	title: string;
@@ -71,7 +72,7 @@ const remadeMetadata = (await loadMetadata())["replicraft/remade"];
 		>
 			<slot />
 		</main>
-		<Footer />
+		<Footer legal={legalNavigation(import.meta.env.DEV)} />
 	</body>
 </html>
 <script>
