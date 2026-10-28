@@ -21,7 +21,7 @@ describe("unpublished account agreement preview", () => {
 		await continueButton.click();
 		await expect
 			.element(screen.getByRole("status"))
-			.toHaveTextContent("Production agreement remains inactive");
+			.toHaveTextContent("No agreement was recorded");
 		await checkbox.click();
 		await expect.element(continueButton).toBeDisabled();
 		await expect.element(screen.getByRole("status")).not.toBeInTheDocument();

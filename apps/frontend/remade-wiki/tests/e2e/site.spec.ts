@@ -333,27 +333,52 @@ test("a returning account can log out from the mobile header", async ({
 	).toBe(false);
 });
 
-test("unpublished legal drafts are absent from the production site", async ({
-	page,
+test("approved legal pages and footer links work without JavaScript", async ({
+	browser,
 }) => {
-	await page.goto("/");
-	const footer = page.getByRole("navigation", { name: "Footer", exact: true });
-	await expect(
-		footer.getByRole("link", { name: "Terms", exact: true }),
-	).toHaveCount(0);
-	await expect(
-		footer.getByRole("link", { name: "Privacy", exact: true }),
-	).toHaveCount(0);
-	await expect(footer).not.toContainText("admin@remade.wiki");
-	for (const path of ["/terms/", "/privacy/", "/legal-preview/"]) {
-		const response = await page.goto(path);
-		expect(response?.status()).toBe(404);
-		await expect(page.locator("body")).not.toContainText(
-			"[[OPERATOR_LEGAL_NAME]]",
-		);
+	const context = await browser.newContext({ javaScriptEnabled: false });
+	try {
+		const page = await context.newPage();
+		await page.goto("http://127.0.0.1:4377/");
+		const footer = page.getByRole("navigation", {
+			name: "Footer",
+			exact: true,
+		});
+		await expect(
+			footer.getByRole("link", { name: "Terms", exact: true }),
+		).toHaveAttribute("href", "/terms/");
+		await expect(
+			footer.getByRole("link", { name: "Privacy", exact: true }),
+		).toHaveAttribute("href", "/privacy/");
+		await expect(footer).not.toContainText("admin@remade.wiki");
+		for (const [path, title] of [
+			["/terms/", "Terms of Service"],
+			["/privacy/", "Privacy Policy"],
+		]) {
+			const response = await page.goto(`http://127.0.0.1:4377${path}`);
+			expect(response?.status()).toBe(200);
+			await expect(
+				page.getByRole("heading", { level: 1, name: title, exact: true }),
+			).toBeVisible();
+			await expect(page.locator("body")).not.toContainText("Draft preview");
+			await expect(page.locator("body")).not.toContainText(
+				"[[OPERATOR_LEGAL_NAME]]",
+			);
+			await expect(
+				page.locator('meta[name="robots"][content*="noindex"]'),
+			).toHaveCount(0);
+			await page
+				.getByRole("article")
+				.getByRole("link", { name: /contact/i })
+				.first()
+				.click();
+			await expect(page).toHaveURL(/\/disclaimer\/#contact$/);
+		}
+		const preview = await page.goto("http://127.0.0.1:4377/legal-preview/");
+		expect(preview?.status()).toBe(404);
+	} finally {
+		await context.close();
 	}
-	await page.goto("/disclaimer/#contact");
-	await expect(page.locator("#contact")).toHaveCount(1);
 });
 
 test("adjacent page links work across project and request directories", async ({

@@ -13,8 +13,9 @@ export function getStaticPaths() {
 		<p class="eyebrow">Development only</p>
 		<h1>Legal integration preview</h1>
 		<p>
-			These documents are drafts, not effective policies. Their routes and this
-			preview are omitted from production builds.
+			Terms and Privacy are published pages. This development-only page previews
+			the separate account-agreement interaction and is omitted from production
+			builds.
 		</p>
 		<ul class="mt-6 grid gap-4">
 			{legalDocuments.map((document) => (
@@ -23,7 +24,8 @@ export function getStaticPaths() {
 						{document.title} →
 					</a>
 					<p class="mb-0 mt-2 text-sm">
-						Draft · Awaiting publication review · Last Updated:{" "}
+						{document.status === "published" ? "Published" : "Draft"} · Last
+						Updated:{" "}
 						{document.lastUpdated
 							? formatLegalDate(document.lastUpdated)
 							: "Not set"}
