@@ -1,0 +1,32 @@
+slug: zomello
+name: Zomello
+authors: [zombeatz]
+repository: https://github.com/ZomBeatz/Zomello
+website: https://docs.zombeatzmedia.com/zomello/
+browser_url: https://zombeatz.github.io/Zomello/
+originals:
+  - trello
+  - microsoft-planner
+category: productivity
+languages:
+  - TypeScript
+  - Rust
+platforms:
+  - Windows
+  - Linux
+  - Android
+  - Web
+status: beta
+compatibility: partial
+summary: Trello and Microsoft Planner style boards for Windows, Linux and Android, with Trello and Planner import and an optional self-hosted server.
+description: A kanban planner with boards, buckets and cards, labels, checklists, priorities, progress, due dates and repeats, plus board, list, calendar, timeline and chart views and a My Day page. Imports Trello JSON exports and Microsoft Planner Excel or CSV exports. Runs on its own device without an account, or syncs through an optional self-hosted server.
+license: MIT
+docs: https://docs.zombeatzmedia.com/zomello/
+limitations: Targets Trello and Planner board workflows, not their hosted services or APIs. Import only; there is no export back to Trello or Planner formats. No macOS or iOS release yet.
+screenshots:
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/board.png
+    alt: A Zomello board with buckets and cards.
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/calendar.png
+    alt: The calendar view with cards on their due dates.
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/phone.png
+    alt: Zomello on a phone.
