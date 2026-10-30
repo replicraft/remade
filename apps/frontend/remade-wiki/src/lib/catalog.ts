@@ -1,6 +1,6 @@
 import { readdir, readFile } from "node:fs/promises";
-import { basename, join, relative } from "node:path";
-import { pathToFileURL } from "node:url";
+import { basename, join, relative, sep } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import * as v from "valibot";
 import { catalogAddedAt, loadAdditionDates } from "./catalog-history";
 import {
@@ -49,22 +49,24 @@ async function records<S extends v.GenericSchema>(
 	validateFiles?: (record: v.InferOutput<S>, path: string) => Promise<unknown>,
 ): Promise<v.InferOutput<S>[]> {
 	return Promise.all(
-		(await files(new URL(`src/content/catalog/${folder}/`, root).pathname)).map(
-			async (path) => {
-				const record = v.parse(schema, parseYaml(await readFile(path, "utf8")));
+		(
+			await files(
+				fileURLToPath(new URL(`src/content/catalog/${folder}/`, root)),
+			)
+		).map(async (path) => {
+			const record = v.parse(schema, parseYaml(await readFile(path, "utf8")));
 
-				if (
-					typeof record !== "object" ||
-					record === null ||
-					(record as Record<string, unknown>)[key] !== basename(path, ".yaml")
-				)
-					throw new Error(`Filename must match ${key}: ${path}`);
+			if (
+				typeof record !== "object" ||
+				record === null ||
+				(record as Record<string, unknown>)[key] !== basename(path, ".yaml")
+			)
+				throw new Error(`Filename must match ${key}: ${path}`);
 
-				await validateFiles?.(record, path);
+			await validateFiles?.(record, path);
 
-				return record;
-			},
-		),
+			return record;
+		}),
 	);
 }
 
@@ -142,11 +144,12 @@ export async function loadCatalog() {
 			addedAt: catalogAddedAt(additionDates, "tools", t.slug),
 		})),
 	];
-	const requestDirectory = new URL("src/content/catalog/requests/", root)
-		.pathname;
+	const requestDirectory = fileURLToPath(
+		new URL("src/content/catalog/requests/", root),
+	);
 	const requestVendors = new Map(
 		(await files(requestDirectory)).map((path) => {
-			const parts = relative(requestDirectory, path).split("/");
+			const parts = relative(requestDirectory, path).split(sep);
 
 			return [
 				basename(path, ".yaml"),
@@ -216,7 +219,7 @@ export type CatalogData = Awaited<ReturnType<typeof loadCatalog>>;
 
 export async function loadScreenshotAssets() {
 	const paths = await files(
-		new URL("src/content/catalog/projects/", root).pathname,
+		fileURLToPath(new URL("src/content/catalog/projects/", root)),
 	);
 	const assets = await Promise.all(
 		paths.map(async (path) => {
