@@ -1,0 +1,16 @@
+# Broader Steam library/distribution alternative included at maintainer request.
+slug: "gamedepot"
+name: "GameDepot"
+authors: ["cmspeedau"]
+repository: "https://github.com/cmspeedau/GameDepot"
+originals: ["steam"]
+category: "games"
+languages: ["TypeScript", "Rust"]
+platforms: ["Windows", "Linux", "macOS", "Web"]
+status: "experimental"
+compatibility: "partial"
+summary: "Self-host a Steam-style game depot with library management, chunked delivery and a native desktop client."
+description: "A self-hosted Steam-style game distribution and preservation platform, developed as a hard fork of Drop OSS. Retains library, account and desktop-client workflows while developing storefront ingestion, content-addressed chunk delivery, deduplication and mesh-networking integrations. Uses TypeScript/Svelte services and Rust transfer components."
+license: "AGPL-3.0"
+docs: "https://github.com/cmspeedau/GameDepot#readme"
+limitations: "Early fork; release maturity and broad roadmap completion are not independently verified. Does not reproduce Steam accounts, DRM, store purchases, Workshop or service APIs. Store adapters and networking depend on external projects and services; inherited components retain their respective licenses."
