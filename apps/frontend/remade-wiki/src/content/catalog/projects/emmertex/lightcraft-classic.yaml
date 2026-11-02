@@ -7,7 +7,7 @@ browser_url: https://playground.daijro.dev/lightcraft-classic/
 originals: [adobe-lightroom]
 category: creative
 languages: [Rust]
-platforms: [Linux, macOS, Windows, FreeBSD, Web]
+platforms: [Linux, macOS, Windows, FreeBSD, Web, Android]
 status: experimental
 compatibility: partial
 description: "Chromaforge, formerly LightCraft Classic, is a downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows. Provides a seven-module workspace, non-destructive RAW development, photo catalogs, masking and Immich integration."

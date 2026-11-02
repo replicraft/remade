@@ -14,7 +14,7 @@ compatibility: partial
 description: An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, color adjustments, audio, titles and media export.
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
-limitations: Under active development. Full Premiere behavioral, project-format and plug-in compatibility is not asserted by this listing.
+limitations: "Alpha; compatibility is maintainer-reported. Cannot open Premiere PRPROJ projects or host its third-party plug-ins. Codec and hardware acceleration support vary by platform; Windows/Linux runtime and audio-device reliability still need qualification. Output has not been systematically compared with Premiere, and browser workflows remain incomplete."
 summary: "Premiere-style video editing with multitrack timelines, color adjustments, audio, titles and exports."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-assembly.png

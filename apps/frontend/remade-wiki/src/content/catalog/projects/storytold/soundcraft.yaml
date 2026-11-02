@@ -14,7 +14,7 @@ compatibility: partial
 description: An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing.
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
-limitations: Maintainers describe it as pre-alpha. Menu coverage does not establish complete behavioral or session-format compatibility.
+limitations: "Pre-alpha. Cannot exchange Pro Tools PTX, AAF or OMF sessions. Recording and decoded sources are held in RAM rather than streamed to disk. Third-party VST3 hosting is blocked in signed macOS builds; AU editors, control surfaces and external synchronization remain incomplete. Output fidelity against Pro Tools is unmeasured."
 summary: "Pro Tools-style audio and MIDI editing, mixing, automation and offline processing."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/soundcraft/main/docs/images/mix.png
