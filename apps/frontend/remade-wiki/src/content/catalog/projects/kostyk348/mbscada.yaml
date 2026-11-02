@@ -21,3 +21,5 @@ limitations: Imports .mbp/.mbw; the engine has a byte-preserving .mbp round-trip
 screenshots:
   - src: https://raw.githubusercontent.com/kostyk348/mbscada-rs/master/docs/img/app.png
     alt: "mbSCADA: device polling and live Modbus values."
+  - src: https://raw.githubusercontent.com/kostyk348/mbscada-rs/bfe37f08fd2eb91500891af9052ab0f8d70bd2d3/docs/img/app-en.png
+    alt: "mbSCADA displaying live parameter tables, connection controls and an alarm log."

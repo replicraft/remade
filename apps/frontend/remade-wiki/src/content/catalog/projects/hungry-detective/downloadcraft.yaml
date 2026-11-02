@@ -18,3 +18,7 @@ limitations: Early Windows application. Full IDM behavior, settings and browser-
 screenshots:
   - src: https://raw.githubusercontent.com/hungry-detective/downloadcraft/master/docs/screenshot-main-window.png
     alt: "DownloadCraft: download list with transfer states."
+  - src: https://raw.githubusercontent.com/hungry-detective/downloadcraft/5fe78c1facfa948943baddde12ecd3e88a94c3c4/docs/screenshot-progress-window.png
+    alt: "Progress window with eight connections"
+  - src: https://raw.githubusercontent.com/hungry-detective/downloadcraft/5fe78c1facfa948943baddde12ecd3e88a94c3c4/docs/screenshot-extension-downloads.png
+    alt: "Extension Downloads tab"

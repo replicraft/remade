@@ -18,3 +18,8 @@ license: "Unlicensed"
 website: https://rolltop.app/
 docs: https://github.com/grahamsz/rolltop#readme
 limitations: "Requires a self-hosted server and existing IMAP/SMTP accounts. A broader Gmail alternative, not a Gmail API implementation; offline access covers previously viewed mail. Upstream proposes AGPL-3.0-or-later but provides no project license file or clear current license grant. Stable maturity is not established."
+screenshots:
+  - src: https://rolltop.app/assets/1inbox.png
+    alt: "RollTop inbox with folder navigation, sender names and message previews."
+  - src: https://rolltop.app/assets/2search.png
+    alt: "RollTop search results with matching messages and a folder sidebar."

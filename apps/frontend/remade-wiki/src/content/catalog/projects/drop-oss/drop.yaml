@@ -15,3 +15,6 @@ license: "AGPL-3.0"
 website: "https://droposs.org/"
 docs: "https://github.com/Drop-OSS/drop#readme"
 limitations: "A broader alternative, not a compatible Steam client or replacement for Valve accounts, DRM, purchases, Workshop or multiplayer services. Requires a self-hosted server and separately supplied games. Upstream is in maintenance mode with bug fixes and external contributions still accepted; client packages vary by platform."
+screenshots:
+  - src: https://raw.githubusercontent.com/Drop-OSS/drop/497cd53f4d89611666384f231c58222af0a96cac/sites/promo/public/screenshots/app.webp
+    alt: "Drop store displaying a featured game and a library of game cover tiles."

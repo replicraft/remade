@@ -25,3 +25,7 @@ screenshots:
     alt: "DashCraft: report dashboard with charts and summary metrics."
   - src: https://raw.githubusercontent.com/Jxck-S/dashcraft/main/docs/images/dashcraft-interaction.png
     alt: "DashCraft: filtered store-performance report."
+  - src: https://raw.githubusercontent.com/Jxck-S/dashcraft/72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe/docs/images/dashcraft-table.png
+    alt: "Table view of the Orders table, 3,900 rows, with the SQL filter bar above the grid"
+  - src: https://raw.githubusercontent.com/Jxck-S/dashcraft/72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe/docs/images/dashcraft-model.png
+    alt: "Model view diagram of the 11 Acme Outfitters tables and their 8 relationships"

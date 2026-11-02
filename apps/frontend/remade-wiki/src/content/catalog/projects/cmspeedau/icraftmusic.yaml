@@ -14,3 +14,6 @@ description: "A native Rust player reproducing classic iTunes-style local music-
 license: MIT
 docs: https://github.com/cmspeedau/iCraftMusic#readme
 limitations: "Linux AppImage releases are available. Accessibility support is maintainer-reported. Broader media and device workflows remain incomplete; native iTunes library compatibility is not documented. Codec recognition does not establish playback support for every file."
+screenshots:
+  - src: https://raw.githubusercontent.com/cmspeedau/iCraftMusic/6307c2c99e078405b34b0c35db4316e36aff3a63/tools/reference/captures/ours-now.png
+    alt: "iCraftMusic displaying albums in a grid with library navigation and playback controls."

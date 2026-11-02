@@ -21,3 +21,7 @@ screenshots:
     alt: "PhotoCraft: layered image in the photo-editing workspace."
   - src: https://raw.githubusercontent.com/storytold/photocraft/main/docs/images/photocraft-adjustments.jpg
     alt: "PhotoCraft: painting displayed with editing controls."
+  - src: https://raw.githubusercontent.com/storytold/photocraft/5d9c57e60db966382abda2638d0ccbb7489d8ee7/docs/images/photocraft-layer-styles.jpg
+    alt: "The Layer Style dialog editing an Outer Glow on the EARTHRISE type layer, with Stroke also enabled, over the Apollo 8 Earthrise photograph"
+  - src: https://raw.githubusercontent.com/storytold/photocraft/5d9c57e60db966382abda2638d0ccbb7489d8ee7/docs/images/photocraft-masks.jpg
+    alt: "PhotoCraft editing Girl with a Pearl Earring with layers, masks and adjustment controls."

@@ -25,3 +25,7 @@ screenshots:
     alt: "BreezeCAD: mechanical flange in the modeling workspace."
   - src: https://raw.githubusercontent.com/MikeVerx/breezecad/main/docs/images/sketch.png
     alt: "BreezeCAD: dimensioned sketch profile."
+  - src: https://raw.githubusercontent.com/MikeVerx/breezecad/94b105620d40fccd29321ba3b0984558414c7a90/docs/images/thread.png
+    alt: "Thread panel"
+  - src: https://raw.githubusercontent.com/MikeVerx/breezecad/94b105620d40fccd29321ba3b0984558414c7a90/docs/images/model-dark.png
+    alt: "Dark theme"

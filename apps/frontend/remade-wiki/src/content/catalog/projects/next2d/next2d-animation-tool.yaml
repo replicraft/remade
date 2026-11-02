@@ -18,3 +18,6 @@ website: https://next2d.app/en/
 docs: https://next2d.app/en/usage/
 discord_server: https://discord.gg/6c9rv5Uns5
 limitations: SWF import is simplified. FLA/XFL project compatibility and ActionScript support are not documented; frame scripting uses JavaScript, and exported JSON targets Next2D Player.
+screenshots:
+  - src: https://raw.githubusercontent.com/Next2D/tool.next2d.app/6a2ff02bfe58c43171459aa50cb88a53f6e4c514/docs/assets/img/ogp.png
+    alt: "Next2D animation editor with a character on the canvas, a script editor and a layer timeline."

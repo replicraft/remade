@@ -21,3 +21,7 @@ screenshots:
     alt: "paint.rs: painting canvas and color controls."
   - src: https://raw.githubusercontent.com/daijro/paint.rs/main/assets/screenshots/02-effects-menu.png
     alt: "paint.rs: effects menu beside an open image."
+  - src: https://raw.githubusercontent.com/daijro/paint.rs/14a67adea785d5a72b7be191979569217aeb624f/assets/screenshots/06-tools.png
+    alt: "Tool chooser"
+  - src: https://raw.githubusercontent.com/daijro/paint.rs/14a67adea785d5a72b7be191979569217aeb624f/assets/screenshots/03-effect-preview.png
+    alt: "Twist effect"

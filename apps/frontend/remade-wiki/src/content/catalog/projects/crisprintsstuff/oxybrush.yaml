@@ -16,3 +16,7 @@ limitations: "Alpha; native ZBrush file interoperability is research, not shippe
 screenshots:
   - src: https://raw.githubusercontent.com/crisprintsstuff/OxyBrush/main/docs/images/screenshot.png
     alt: "OxyBrush: sculpting viewport, brush controls and model pieces."
+  - src: https://raw.githubusercontent.com/crisprintsstuff/OxyBrush/9bac689b6514d9d9a336349f1094f7cf4ee432a6/docs/images/arrange-bottom.png
+    alt: "Brushes in a strip along the bottom, with size and strength centered at the top of the viewport"
+  - src: https://raw.githubusercontent.com/crisprintsstuff/OxyBrush/9bac689b6514d9d9a336349f1094f7cf4ee432a6/docs/images/layout-touch.png
+    alt: "The touch-friendly layout: brush tiles, on-screen Smooth / Mask / Invert, and larger controls"

@@ -21,3 +21,5 @@ screenshots:
     alt: "Sotto: calling home screen and guest links."
   - src: https://raw.githubusercontent.com/rbr48/sotto/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png
     alt: "Sotto: encrypted-call interface."
+  - src: https://raw.githubusercontent.com/rbr48/sotto/93bbea08e4adab157dce05c40679bc46bf30968c/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png
+    alt: "Comparing a safety number before saving a contact"

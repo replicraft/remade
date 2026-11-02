@@ -21,3 +21,7 @@ screenshots:
     alt: "Honeydew: drum pattern editor and song arrangement."
   - src: https://raw.githubusercontent.com/daijro/honeydew/main/assets/screenshots/09-automation-editor.webp
     alt: "Honeydew: automation curve editor."
+  - src: https://raw.githubusercontent.com/daijro/honeydew/5543bdce441f57d3a45564f7d9821e931ac20312/assets/screenshots/01-playlist-sampler.webp
+    alt: "The playlist and a sampler"
+  - src: https://raw.githubusercontent.com/daijro/honeydew/5543bdce441f57d3a45564f7d9821e931ac20312/assets/screenshots/02-playlist-supersaw.webp
+    alt: "The playlist and a synth"

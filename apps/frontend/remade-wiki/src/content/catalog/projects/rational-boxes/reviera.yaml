@@ -19,3 +19,7 @@ screenshots:
     alt: "BIM Reviera: building model and contextual editing tools."
   - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/main/design_documents/application_screenshots/plan-view.png
     alt: "BIM Reviera: architectural floor plan and properties."
+  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/d9381cb9d87621a62218de370a1a196295878e1e/design_documents/application_screenshots/section-box.png
+    alt: "A section box cutting the Institute model open, in isometric projection"
+  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/d9381cb9d87621a62218de370a1a196295878e1e/design_documents/application_screenshots/manor-transparency.png
+    alt: "The Manor sample see-through in 3D, its roof selected"

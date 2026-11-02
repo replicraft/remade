@@ -20,3 +20,7 @@ screenshots:
     alt: "Trazo: mobile animation editor and layered timeline."
   - src: https://raw.githubusercontent.com/hazielcampos/trazo/main/docs/capturas/escritorio_editor.png
     alt: "Trazo: desktop animation editor and drawing canvas."
+  - src: https://raw.githubusercontent.com/hazielcampos/trazo/2fac412db1e08750ca1d26b17e51b5aacba5c762/docs/capturas/telefono_inicio.png
+    alt: "Home screen: my animations"
+  - src: https://raw.githubusercontent.com/hazielcampos/trazo/2fac412db1e08750ca1d26b17e51b5aacba5c762/docs/capturas/telefono_capas.png
+    alt: "Layers"

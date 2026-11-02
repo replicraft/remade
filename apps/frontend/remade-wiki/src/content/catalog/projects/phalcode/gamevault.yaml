@@ -16,3 +16,8 @@ license: "CC-BY-NC-SA-4.0"
 website: "https://gamevau.lt/"
 docs: "https://github.com/Phalcode/gamevault-backend#readme"
 limitations: "Source-available under a noncommercial license, not open-source software. Does not replace Steam purchases, accounts, DRM or service APIs. Requires a server and separately supplied games; client implementations live in separate repositories. GameVault 2 clients are public beta, with GameVault+ features still missing."
+screenshots:
+  - src: https://gamevau.lt/assets/images/gv2-library-54b330216d300e91dd4dd5a8bfa8faad.webp
+    alt: "GameVault library with game cover tiles, filters and navigation."
+  - src: https://gamevau.lt/assets/images/gv2-install-3d8a12a8fdd898b3b19fb12113940cb2.webp
+    alt: "GameVault download manager showing game downloads, progress and installation controls."

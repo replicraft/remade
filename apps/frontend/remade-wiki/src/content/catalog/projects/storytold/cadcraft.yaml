@@ -20,3 +20,5 @@ screenshots:
     alt: "CADCraft: apartment floor plan with drafting tools."
   - src: https://raw.githubusercontent.com/storytold/cadcraft/main/docs/images/ui-layout.png
     alt: "CADCraft: paper-space layout and drawing viewport."
+  - src: https://raw.githubusercontent.com/storytold/cadcraft/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/docs/images/ui-bracket.png
+    alt: "CADCraft with a mounting bracket part drawing: front view with bolt holes, centre lines and dimensions, a hatched section view, notes and a title block"

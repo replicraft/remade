@@ -21,3 +21,7 @@ screenshots:
     alt: "DeckCraft: presentation editor with a selected shape."
   - src: https://raw.githubusercontent.com/storytold/deckcraft/main/docs/images/format-pane.png
     alt: "DeckCraft: gradient controls beside an editable slide."
+  - src: https://raw.githubusercontent.com/storytold/deckcraft/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/images/editor.png
+    alt: "DeckCraft editing a slide: ribbon, slide thumbnails with sections, a process diagram on the canvas, notes and status bar"
+  - src: https://raw.githubusercontent.com/storytold/deckcraft/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/images/slide-sorter.png
+    alt: "Slide Sorter view with transitions under each slide"

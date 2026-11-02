@@ -27,3 +27,7 @@ screenshots:
     alt: "OpenLogi: radial action-menu configuration."
   - src: https://assets.openlogi.org/screenshots/macos/light/cards/keys.png
     alt: "OpenLogi: keyboard layout and key assignments."
+  - src: https://assets.openlogi.org/screenshots/macos/light/devices-grid.png
+    alt: "OpenLogi device list with six Logitech devices: mice, a keyboard, and a Litra light"
+  - src: https://assets.openlogi.org/screenshots/macos/light/cards/easy-switch.png
+    alt: "Easy-Switch card listing three paired computers"

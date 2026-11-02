@@ -16,3 +16,8 @@ website: https://writewithharper.com/
 docs: https://writewithharper.com/docs/about
 discord_server: https://discord.com/invite/JBqcAaKrzQ
 limitations: Supports English and its dialects only. Its scope is narrower than Grammarly's broader writing assistant; full feature parity and interface compatibility are not claimed. Available features vary by integration.
+screenshots:
+  - src: https://raw.githubusercontent.com/Automattic/harper/19551243709cadcc5e6e214f53ea15cb360d13ea/harper-desktop/screenshot.png
+    alt: "Harper desktop editor highlighting writing issues and listing suggested corrections."
+  - src: https://raw.githubusercontent.com/Automattic/harper/19551243709cadcc5e6e214f53ea15cb360d13ea/packages/web/static/images/obsidian_screenshot.webp
+    alt: "Harper checking a note in Obsidian and offering a grammar correction."

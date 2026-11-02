@@ -22,3 +22,7 @@ screenshots:
     alt: "CapsuleCraft: note editor and linked pages."
   - src: https://raw.githubusercontent.com/kostyk348/CapsuleCraft/main/screenshots/capsulecraft-native-search.png
     alt: "CapsuleCraft: full-text search beside an open note."
+  - src: https://raw.githubusercontent.com/kostyk348/CapsuleCraft/6c139062fbd3ead79ca777959ae49f39f9e7099d/screenshots/capsulecraft-native-backlinks.png
+    alt: "Wiki links and backlinks"
+  - src: https://raw.githubusercontent.com/kostyk348/CapsuleCraft/6c139062fbd3ead79ca777959ae49f39f9e7099d/screenshots/capsulecraft-native-planning.png
+    alt: "CapsuleCraft Planning page with tasks, progress indicators and view tabs."

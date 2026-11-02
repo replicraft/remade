@@ -23,3 +23,5 @@ limitations: "Revit import is partial: undecoded elements are skipped or approxi
 screenshots:
   - src: https://raw.githubusercontent.com/IPedrax/BIMCraft/main/docs/images/family-editor.png
     alt: "BIMCraft: window-family editor and parameter controls."
+  - src: https://raw.githubusercontent.com/IPedrax/BIMCraft/0733fd4328a4aceb1c2dfa3ec07bd9f4d970d546/docs/images/desktop.png
+    alt: "BIMCraft desktop app displaying a dimensioned floor plan with its ribbon and Properties panel."

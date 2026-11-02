@@ -19,3 +19,6 @@ limitations: Early development; coverage and benchmark results are maintainer-re
 screenshots:
   - src: https://raw.githubusercontent.com/tangency-labs/fieldcraft/develop/docs/media/setup-symbols.png
     alt: "FieldCraft: structural simulation with supports and loading."
+  - src: https://raw.githubusercontent.com/tangency-labs/fieldcraft/cb976117889edf8de5f093ba949980b0aa79c1e2/docs/media/bracket-hex.png
+    alt: "The all-hex mesh with O-grids round the holes"
+    caption: "Hexahedral mesh generated in FieldCraft."

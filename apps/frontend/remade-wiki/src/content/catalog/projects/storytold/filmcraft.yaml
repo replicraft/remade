@@ -21,3 +21,7 @@ screenshots:
     alt: "FilmCraft: video assembly workspace with clips and monitors."
   - src: https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-color.png
     alt: "FilmCraft: color workspace with video scopes."
+  - src: https://raw.githubusercontent.com/storytold/filmcraft/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/images/filmcraft-hero.png
+    alt: "FilmCraft editing a film sequence with video previews, an effects panel and a multitrack timeline."
+  - src: https://raw.githubusercontent.com/storytold/filmcraft/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/images/filmcraft-timeline.png
+    alt: "FilmCraft timeline with stacked video clips, transitions, audio waveforms and a loudness meter."

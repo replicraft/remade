@@ -13,3 +13,7 @@ description: "Targets Houdini's procedural geometry workflows with a Rust SOP en
 license: Unlicensed
 docs: https://github.com/pascaldisse/hexe/blob/main/STATUS.md
 limitations: "SOP, VEX and HIP coverage is partial. Endorphin behavior networks and constraint attachments remain unsupported; only a small controller subset is re-authored, with solver and visual fidelity unverified. macOS is the documented app build. No project-level license file; package metadata declares MIT OR Apache-2.0, pending clarification."
+screenshots:
+  - src: https://raw.githubusercontent.com/pascaldisse/hexe/bdbd03104c8f9d3c2854655ccd4ea842d96c3549/apps/hexe-tauri/proof/endorphin-ui-balance-F90.png
+    alt: "Hexe prototype rendering a humanoid skeleton balancing in a 3D scene."
+    caption: "Hexe behavior-controller prototype render."

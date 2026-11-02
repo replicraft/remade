@@ -22,3 +22,5 @@ limitations: Broader alternative, without Wand's curated per-game trainers, over
 screenshots:
   - src: https://raw.githubusercontent.com/Petru101/ferret/master/data/screenshots/find-supertux.png
     alt: "Ferret: game-value search beside the running game."
+  - src: https://raw.githubusercontent.com/Petru101/ferret/f3848e6d6eac7b26340f066a90c290eacb3b717e/data/screenshots/values-supertux.png
+    alt: "The coins saved in the Values tab, set to 999 and kept at least there"

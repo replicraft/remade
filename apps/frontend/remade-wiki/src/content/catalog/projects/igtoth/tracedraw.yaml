@@ -29,3 +29,7 @@ screenshots:
     alt: "TraceDraw: document editor with Japanese menus."
   - src: https://raw.githubusercontent.com/tracedraw/tracedraw/main/docs/images/tracedraw-perspective.jpg
     alt: "TraceDraw: perspective drawing and editing tools."
+  - src: https://raw.githubusercontent.com/tracedraw/tracedraw/abc3a761b4628ca460428e5ced953b1d65b16f15/docs/images/tracedraw-hero.jpg
+    alt: "TraceDraw with an illustrated poster of a lake at dusk: the title is selected, the property bar shows its font, size and alignment, and the Objects panel lists the five layers and their named objects"
+  - src: https://raw.githubusercontent.com/tracedraw/tracedraw/abc3a761b4628ca460428e5ced953b1d65b16f15/docs/images/tracedraw-curves.jpg
+    alt: "A leaf drawn with smooth curves; the Shape tool has every node selected, showing the handles, and the property bar shows the node buttons"

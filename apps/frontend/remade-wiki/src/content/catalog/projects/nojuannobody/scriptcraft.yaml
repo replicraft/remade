@@ -20,3 +20,7 @@ screenshots:
     alt: "ScriptCraft: screenplay editor with Cyrillic text."
   - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/main/docs/explainer/poster.png
     alt: "ScriptCraft: dialogue editing and screenplay tools."
+  - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/fce1d3c57a1964742d989d6488df638fc97f089d/docs/images/hero.png
+    alt: "ScriptCraft screenplay editor with scene navigation, a formatted script page and an inspector."
+  - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/fce1d3c57a1964742d989d6488df638fc97f089d/docs/images/cards.png
+    alt: "Index cards view: four cards in a grid, each with a coloured band, scene number, bold Courier scene heading, page and length in eighths, an editable summary and the cast along the bottom"

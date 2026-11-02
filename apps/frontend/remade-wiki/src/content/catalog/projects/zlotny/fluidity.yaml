@@ -13,3 +13,8 @@ description: Independent OpenVPN client modeled on Viscosity's menu bar workflow
 license: 0BSD
 website: https://fluidity.ndrs.es
 limitations: Imports a Viscosity connection's OpenVPN config and certificates, but not its app-specific settings. System proxy push and the global shortcut are macOS only. Windows needs OpenVPN installed separately.
+screenshots:
+  - src: https://raw.githubusercontent.com/zlotny/fluidity-vpn/65c7b3dda4b933e7d23db7773f3d1644b7aba040/site/img/editor.png
+    alt: "Fluidity connection editor with server, port, protocol and device settings."
+  - src: https://raw.githubusercontent.com/zlotny/fluidity-vpn/65c7b3dda4b933e7d23db7773f3d1644b7aba040/site/img/details-traffic.png
+    alt: "Fluidity connection details showing live upload and download traffic graphs."

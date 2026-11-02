@@ -20,3 +20,7 @@ limitations: XP support is a conversion workflow rather than a drop-in RGSS runt
 screenshots:
   - src: https://raw.githubusercontent.com/Psychronic-Games/RPGReactor/main/docs/media/releases/0.99.2/08-editor.jpg
     alt: "RPG Reactor: game-world editor and resource search."
+  - src: https://raw.githubusercontent.com/Psychronic-Games/RPGReactor/1fdac236850df3f5f3d443cde35b2ee3198d0e27/docs/media/releases/0.99.4/01-online-town.jpg
+    alt: "Players meeting in North Haven"
+  - src: https://raw.githubusercontent.com/Psychronic-Games/RPGReactor/1fdac236850df3f5f3d443cde35b2ee3198d0e27/docs/media/releases/0.99.4/02-character-creator.jpg
+    alt: "Character creation inside a game"

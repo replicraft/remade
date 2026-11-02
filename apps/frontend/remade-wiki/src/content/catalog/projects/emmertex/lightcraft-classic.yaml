@@ -20,3 +20,7 @@ screenshots:
     alt: "Chromaforge: photo library grid and catalog panels."
   - src: https://raw.githubusercontent.com/emmertex/chromaforge/main/docs/images/classic/develop.jpg
     alt: "Chromaforge: develop workspace with a landscape photograph."
+  - src: https://raw.githubusercontent.com/emmertex/chromaforge/b976eac38a7bb150af51a8112e9e5147ea15c7ba/docs/images/classic/map.jpg
+    alt: "Map module: an OpenStreetMap world map with the location filter bar and Map Style, Saved Locations and Tracklog panels"
+  - src: https://raw.githubusercontent.com/emmertex/chromaforge/b976eac38a7bb150af51a8112e9e5147ea15c7ba/docs/images/classic/book.jpg
+    alt: "Book module: a multi-page view of a landscape book laid out automatically, with Book Settings on the right"

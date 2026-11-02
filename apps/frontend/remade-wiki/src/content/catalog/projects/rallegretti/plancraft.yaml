@@ -27,3 +27,7 @@ screenshots:
     alt: "PlanCraft: project schedule and critical-path chart."
   - src: https://raw.githubusercontent.com/rallegretti/PlanCraft/main/docs/images/gantt-dark.png
     alt: "PlanCraft: project schedule in the dark theme."
+  - src: https://raw.githubusercontent.com/rallegretti/PlanCraft/7cf3e28d3de99e9767afeed79cf1b96448e57058/docs/images/milestones.png
+    alt: "Milestones"
+  - src: https://raw.githubusercontent.com/rallegretti/PlanCraft/7cf3e28d3de99e9767afeed79cf1b96448e57058/docs/images/resource-usage.png
+    alt: "Resource Usage"

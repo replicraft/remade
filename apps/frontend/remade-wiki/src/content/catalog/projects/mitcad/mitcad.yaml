@@ -31,3 +31,7 @@ screenshots:
     alt: "Mitcad: mechanical part in the modeling workspace."
   - src: https://mitcad.org/assets/shots/sketch-constraints.webp
     alt: "Mitcad: dimensioned sketch and constraint controls."
+  - src: https://mitcad.org/assets/shots/feature-edit.webp
+    alt: "Editing an extrude: the command panel, drag handles and parameter labels, the timeline rolled back"
+  - src: https://mitcad.org/assets/shots/rendered-view.webp
+    alt: "The rendered view: the assembly path traced with soft shadows inside the application"

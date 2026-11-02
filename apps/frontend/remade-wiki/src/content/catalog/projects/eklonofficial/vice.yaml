@@ -15,3 +15,8 @@ license: GPL-3.0-or-later
 website: https://splitshotz.github.io/Vice-Website/
 docs: https://github.com/splitshotz/Vice#readme
 limitations: Linux only; Bazzite and Fedora Atomic are not supported yet. Recording depends on gpu-screen-recorder and platform permissions. Full Medal.tv behavior or service compatibility is not claimed. Public share links depend on the project's sharing infrastructure.
+screenshots:
+  - src: https://splitshotz.github.io/Vice-Website/assets/shots/blue/editor.webp
+    alt: "Vice video editor with a gameplay preview, media thumbnails and a recording timeline."
+  - src: https://splitshotz.github.io/Vice-Website/assets/shots/blue/home.webp
+    alt: "Vice home screen with recording shortcuts, recent gameplay clips and library navigation."

@@ -20,3 +20,7 @@ screenshots:
     alt: "OpenMailClient: mailbox and formatted message reader."
   - src: https://raw.githubusercontent.com/AdriaanBoshoff/OpenMailClient/main/docs/images/openmailclient-recurrence.png
     alt: "OpenMailClient: recurring-appointment editor."
+  - src: https://raw.githubusercontent.com/AdriaanBoshoff/OpenMailClient/edf8a0f6722f6aee727be7e72a72ce1a6c7dedc1/docs/images/openmailclient-compose.png
+    alt: "OpenMailClient composing a reply in the reading pane, with attachment controls above the message."
+  - src: https://raw.githubusercontent.com/AdriaanBoshoff/OpenMailClient/edf8a0f6722f6aee727be7e72a72ce1a6c7dedc1/docs/images/openmailclient-calendar.png
+    alt: "The Calendar's week view with appointments, all-day events, reminders and a line at the current time"

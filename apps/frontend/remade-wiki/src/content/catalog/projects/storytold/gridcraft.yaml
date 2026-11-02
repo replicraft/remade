@@ -20,3 +20,7 @@ screenshots:
     alt: "GridCraft: budget worksheet with conditional formatting."
   - src: https://raw.githubusercontent.com/storytold/gridcraft/main/docs/images/grades-formulas.png
     alt: "GridCraft: gradebook worksheet with calculated results."
+  - src: https://raw.githubusercontent.com/storytold/gridcraft/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/images/dark-insert.png
+    alt: "The sales dashboard in dark mode with the Insert ribbon tab open, showing Pivot Table, Table, Pictures, Shapes, chart, sparkline, link, comment, text box and symbol buttons"
+  - src: https://raw.githubusercontent.com/storytold/gridcraft/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/images/pivot.png
+    alt: "GridCraft displaying a revenue pivot table with the Pivot Table Fields panel open."

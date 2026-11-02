@@ -22,3 +22,7 @@ screenshots:
     alt: "PaintCraft: drawing canvas in the Windows 11 theme."
   - src: https://raw.githubusercontent.com/replicraft/PaintCraft/main/assets/repo/classic-windows-10.png
     alt: "PaintCraft: drawing canvas in the Windows 10 theme."
+  - src: https://raw.githubusercontent.com/replicraft/PaintCraft/5ca286d610c1cb7ac28964bbd3f63dbdbf29eba8/assets/repo/studio.png
+    alt: "PaintCraft Studio"
+  - src: https://raw.githubusercontent.com/replicraft/PaintCraft/5ca286d610c1cb7ac28964bbd3f63dbdbf29eba8/assets/repo/classic-windows-7.png
+    alt: "PaintCraft Classic, Windows 7"

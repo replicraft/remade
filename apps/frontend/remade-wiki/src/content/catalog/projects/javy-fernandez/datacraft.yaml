@@ -21,3 +21,7 @@ screenshots:
     alt: "DataCraft: database table and object browser."
   - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/main/docs/screenshots/readme/objects-list.png
     alt: "DataCraft: table properties beside database records."
+  - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/b1011176700d4f7cc371fd4f8670b7fa6e3d195c/docs/screenshots/readme/objects-grid.png
+    alt: "Full DataCraft window with compact object columns, colored folders and the inspector"
+  - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/b1011176700d4f7cc371fd4f8670b7fa6e3d195c/docs/screenshots/readme/sql-console.png
+    alt: "Full DataCraft window with a highlighted SQL query and its result grid"

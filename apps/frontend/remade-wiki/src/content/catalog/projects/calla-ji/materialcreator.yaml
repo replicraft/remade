@@ -19,3 +19,7 @@ screenshots:
     alt: "MaterialCreator: material preview and procedural node graph."
   - src: https://raw.githubusercontent.com/Calla-Ji/materialcreator/main/assets/screenshots/tiling.png
     alt: "MaterialCreator: tiled material view and editing controls."
+  - src: https://raw.githubusercontent.com/Calla-Ji/materialcreator/1b1236d6ac5e942d8037dc4ba8ee5c1755765d10/assets/screenshots/hero.png
+    alt: "MaterialCreator showing a material node graph, previews and an image export dialog."
+  - src: https://raw.githubusercontent.com/Calla-Ji/materialcreator/1b1236d6ac5e942d8037dc4ba8ee5c1755765d10/assets/screenshots/node-graph.png
+    alt: "Node graph canvas, category-colored nodes and wires"

@@ -24,3 +24,7 @@ screenshots:
     alt: "recoil-metal: commander selection and game interface."
   - src: https://raw.githubusercontent.com/akwiatkowski/recoil-metal/main/docs/images/m20-5-battle.jpg
     alt: "recoil-metal: units approaching an opposing base."
+  - src: https://raw.githubusercontent.com/akwiatkowski/recoil-metal/5689a37cab7aa431d567caa583be9dded6fb96cb/docs/images/m11-sky-water.jpg
+    alt: "a BAR map with sky and water"
+  - src: https://raw.githubusercontent.com/akwiatkowski/recoil-metal/5689a37cab7aa431d567caa583be9dded6fb96cb/docs/images/m11-sky-water-fa.jpg
+    alt: "the same on a Supreme Commander map"

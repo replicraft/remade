@@ -22,3 +22,7 @@ screenshots:
     alt: "Extrudo: wall bracket in the modeling workspace."
   - src: https://raw.githubusercontent.com/zoltanf/extrudo/main/docs/images/readme/home-light.webp
     alt: "Extrudo: start page with recent designs."
+  - src: https://raw.githubusercontent.com/zoltanf/extrudo/c05d910395f514f4810d3fc76504ce6bb1c73da8/docs/images/readme/home-dark.webp
+    alt: "Extrudo start screen in its dark theme with sample models and design shortcuts."
+  - src: https://raw.githubusercontent.com/zoltanf/extrudo/c05d910395f514f4810d3fc76504ce6bb1c73da8/docs/images/readme/model-dark.webp
+    alt: "Extrudo modeling a bracket in its dark theme with feature history and modeling tools."

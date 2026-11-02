@@ -22,3 +22,5 @@ screenshots:
     alt: "Lemon Studio: music arrangement and instrument panels."
   - src: https://raw.githubusercontent.com/ItsAlphaNeon/Lemon-Studio/main/docs/assets/screenshot-piano-roll.webp
     alt: "Lemon Studio: piano roll with melody and chord notes."
+  - src: https://raw.githubusercontent.com/ItsAlphaNeon/Lemon-Studio/277e16c55b337eadd487435b85beadfb03518c13/docs/assets/screenshot-playlist.webp
+    alt: "The playlist with a 64-bar song arranged from pattern, audio and automation clips under section markers"

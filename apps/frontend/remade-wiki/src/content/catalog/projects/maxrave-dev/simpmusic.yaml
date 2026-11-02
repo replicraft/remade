@@ -22,3 +22,6 @@ license: GPL-3.0-only
 website: https://simpmusic.org/
 docs: https://github.com/maxrave-dev/SimpMusic#readme
 limitations: Beta software using upstream YouTube services, not a replacement for their backend. Service changes may affect playback or account features. The README notes desktop Linux stability issues and x64 builds for Windows/Linux ARM64 users.
+screenshots:
+  - src: https://raw.githubusercontent.com/maxrave-dev/SimpMusic/dev/asset/screenshot/03.png?raw=true
+    alt: "SimpMusic mobile player with album artwork and playback controls, shown in an upstream promotional screenshot."

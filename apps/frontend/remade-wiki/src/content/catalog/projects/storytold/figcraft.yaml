@@ -22,3 +22,7 @@ screenshots:
     alt: "FigCraft: linked mobile screens in the prototype editor."
   - src: https://raw.githubusercontent.com/storytold/figcraft/main/docs/images/shot-5-vector.png
     alt: "FigCraft: editable vector paths and design properties."
+  - src: https://raw.githubusercontent.com/storytold/figcraft/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/docs/images/shot-1-hero.png
+    alt: "FigCraft editing three hiking-app phone screens in its dark theme, with layers and design properties."
+  - src: https://raw.githubusercontent.com/storytold/figcraft/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/docs/images/shot-6-dashboard-light.png
+    alt: "FigCraft editing an analytics dashboard with charts, metric cards and a layers panel in its light theme."

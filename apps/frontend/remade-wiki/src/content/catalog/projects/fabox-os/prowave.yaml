@@ -26,3 +26,5 @@ screenshots:
     alt: "ProWave: music arrangement and mixer."
   - src: https://raw.githubusercontent.com/fabox-os/Pro-Wave/main/docs/screenshots/piano-roll.webp
     alt: "ProWave: piano-roll editor beneath the arrangement."
+  - src: https://raw.githubusercontent.com/fabox-os/Pro-Wave/b7a6015e844f351ac1bb4c48885da00a3269a7d4/docs/screenshots/playback.webp
+    alt: "Playing back: green play button, moving playhead and live meters in the Mixer"

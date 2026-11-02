@@ -6,7 +6,7 @@
 	"current_main_commit": "2f7d1cab560dbb16b586c6590bd4385c34ce1493",
 	"branch": "audit/catalog-2026-11-02",
 	"baseline_worktree": "Clean before the audit batch; no user-owned untracked catalog entries. Later merged additions reconciled before completion.",
-	"scope": "Every current project and supporting tool, including documented mirrors and external links. Backlog issue triage is a separately timestamped snapshot.",
+	"scope": "Every current project and supporting tool, including documented mirrors and external links. Backlog issue triage is a separately timestamped snapshot. Per-entry changes below describe the earlier field audit; subsequent screenshot additions and per-project image decisions are recorded in screenshot_review_file.",
 	"completion": "Catalog field-level documentary audit complete for all 190 current entries. Supported corrections are proposed in this PR; explicit maintainer holds and upstream ambiguities are recorded separately. This does not certify runtime compatibility, source provenance, security or legal compliance.",
 	"coverage": {
 		"entries": 190,
@@ -20,7 +20,11 @@
 		"github_archived": 0,
 		"github_disabled": 0,
 		"confirmed_repository_moves": 4,
-		"entries_updated_in_this_pr": 60,
+		"entries_updated_in_this_pr": 113,
+		"entries_updated_before_screenshot_followup": 60,
+		"screenshot_images_added": 148,
+		"screenshot_first_galleries": 22,
+		"screenshot_expanded_galleries": 67,
 		"additional_entries_reconciled_since_first_pass": 12,
 		"linked_supporting_documents_screened_for_catalog_fields": 234,
 		"unique_external_url_checks": 533,
@@ -44,7 +48,7 @@
 		"license": "Project license files and relevant notices take precedence over API/package metadata. Missing texts, intended licensing, asset/model exceptions and source-available terms remain explicit; no legal certification.",
 		"platforms": "Documented builds and release artifacts considered without equating builds with tested hardware or maturity.",
 		"holds": "Flare listing remains byte-for-byte unchanged from main until released v0.1.0, per explicit maintainer direction. BeamCraft website retained per earlier direction.",
-		"ledger": "original_fields plus changes reconstruct the reviewed values. changes_in_this_pr isolates corrections against current main. Common review boundaries are declared once in review_methods; per-entry dimension results and pinned sources remain explicit. URL results are stored in url_evidence_file; per-entry url_checks lists its keys.",
+		"ledger": "original_fields plus changes reconstruct the reviewed values. changes_in_this_pr isolates corrections against current main. Common review boundaries are declared once in review_methods; per-entry dimension results and pinned sources remain explicit. URL results are stored in url_evidence_file; per-entry url_checks lists its keys. Subsequent screenshot additions are recorded separately in screenshot_review_file.",
 		"field_order": "Summary immediately precedes description (projects/tools) or reason (requests). Other fields follow the majority existing pattern. Reordering alone preserved parsed data across all 575 catalog YAML files; Flare remains byte-for-byte unchanged. Comments and list ordering retained; examples updated.",
 		"description_follow_up": "Every one of the 190 descriptions compared with existing pre-audit wording and current pinned upstream documentary evidence. Restore useful omitted detail; correct outdated/unsupported statements rather than preserve misinformation. No exhaustive feature inventory or runtime certification implied."
 	},
@@ -22748,5 +22752,6 @@
 		}
 	],
 	"url_evidence_file": "2026-11-02-catalog-links.json",
-	"description_review_file": "2026-11-02-descriptions.json"
+	"description_review_file": "2026-11-02-descriptions.json",
+	"screenshot_review_file": "docs/audits/2026-11-02-screenshots.json"
 }

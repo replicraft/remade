@@ -20,3 +20,7 @@ screenshots:
     alt: "EffectCraft: animation preview and value-curve editor."
   - src: https://raw.githubusercontent.com/storytold/effectcraft/main/docs/images/effectcraft-effects.png
     alt: "EffectCraft: particle composition and effect controls."
+  - src: https://raw.githubusercontent.com/storytold/effectcraft/ad7abfa5076a00b4b214811bae66ee0600828ac5/docs/images/effectcraft-hero.png
+    alt: "EffectCraft"
+  - src: https://raw.githubusercontent.com/storytold/effectcraft/ad7abfa5076a00b4b214811bae66ee0600828ac5/docs/images/effectcraft-3d.png
+    alt: "The 3D Showcase demo in Custom View 1: intersecting cards lit by a spot light with soft shadows on a gridded floor, with the camera frustum and light drawn as wireframes"

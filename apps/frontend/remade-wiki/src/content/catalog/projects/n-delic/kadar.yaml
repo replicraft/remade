@@ -19,3 +19,5 @@ screenshots:
     alt: "Kadar: photo-editing canvas with a text overlay."
   - src: https://raw.githubusercontent.com/n-delic/kadar/main/docs/screenshots/video-editor.jpg
     alt: "Kadar: vertical video preview and caption timeline."
+  - src: https://raw.githubusercontent.com/n-delic/kadar/babf9f1a7702f975174ba906c5c5a606821a60fb/docs/screenshots/text-tools.jpg
+    alt: "Kadar editing a photo caption with font and text-style controls."

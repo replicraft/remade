@@ -21,3 +21,7 @@ screenshots:
     alt: "LightCraft: photo editor with tone-curve controls."
   - src: https://raw.githubusercontent.com/storytold/lightcraft/main/docs/images/grading-migrant-mother.jpg
     alt: "LightCraft: photo editor with color-grading controls."
+  - src: https://raw.githubusercontent.com/storytold/lightcraft/ebe247710867f8c47512fab1ff488f17815161e5/docs/images/hero-tetons.jpg
+    alt: "LightCraft photo editor displaying a black-and-white mountain landscape with adjustment panels."
+  - src: https://raw.githubusercontent.com/storytold/lightcraft/ebe247710867f8c47512fab1ff488f17815161e5/docs/images/ba-tetons.jpg
+    alt: "Side-by-side before and after of The Tetons and the Snake River: the after has deeper clouds and more open shadows along the river"

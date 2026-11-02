@@ -21,3 +21,7 @@ screenshots:
     alt: "SoundCraft: audio mixer with channel strips."
   - src: https://raw.githubusercontent.com/storytold/soundcraft/main/docs/images/midi.png
     alt: "SoundCraft: mIDI notes and track arrangement."
+  - src: https://raw.githubusercontent.com/storytold/soundcraft/8444edf075eae24ad37b128675c939fd5d370a60/docs/images/edit.png
+    alt: "SoundCraft multitrack session with colored audio clips, track controls and meters."
+  - src: https://raw.githubusercontent.com/storytold/soundcraft/8444edf075eae24ad37b128675c939fd5d370a60/docs/images/automation.png
+    alt: "Volume automation drawn on the Pad track, with the Memory Locations and Big Counter windows open"

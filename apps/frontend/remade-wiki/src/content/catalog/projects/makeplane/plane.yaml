@@ -21,3 +21,7 @@ screenshots:
     alt: "Plane: project board with issue cards."
   - src: https://media.docs.plane.so/GitHub-readme/github-work-items.webp
     alt: "Plane: timeline and grouped issue views."
+  - src: https://media.docs.plane.so/GitHub-readme/github-cycles.webp
+    alt: "Plane Cycles view showing project progress, completion charts and cycle dates."
+  - src: https://media.docs.plane.so/GitHub-readme/github-modules.webp
+    alt: "Plane Modules view showing grouped issues and module progress."

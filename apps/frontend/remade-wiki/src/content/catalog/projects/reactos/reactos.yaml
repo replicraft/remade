@@ -15,3 +15,6 @@ website: https://reactos.org/
 docs: https://reactos.org/wiki/
 discord_server: https://discord.gg/7knjvhT
 limitations: Still alpha; application and driver compatibility is incomplete. The project does not guarantee stability or safety of files and does not provide full compatibility with current Windows releases. Components retain their respective licenses.
+screenshots:
+  - src: https://reactos.org/sites/default/files/Mizu-Desktop.png
+    alt: "ReactOS desktop with a system-information window and display appearance settings."

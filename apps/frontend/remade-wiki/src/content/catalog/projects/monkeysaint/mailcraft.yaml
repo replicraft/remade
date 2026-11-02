@@ -18,3 +18,7 @@ screenshots:
     alt: "MailCraft: message reader in a narrow window."
   - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/master/docs/images/hero.png
     alt: "MailCraft: mailbox, reading pane and ribbon controls."
+  - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/docs/images/dark.png
+    alt: "MailCraft in the dark theme"
+  - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/docs/images/classic-ribbon.png
+    alt: "The Classic ribbon with groups and large buttons"

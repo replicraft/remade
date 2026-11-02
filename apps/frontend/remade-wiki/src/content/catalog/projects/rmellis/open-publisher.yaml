@@ -26,3 +26,5 @@ limitations: Publisher import is maintainer-reported; complete PUB fidelity and 
 screenshots:
   - src: https://raw.githubusercontent.com/rmellis/open-publisher/main/docs/screenshots/batch_image_swap.png
     alt: "Open Publisher: page-layout workspace with image placeholders."
+  - src: https://github.com/user-attachments/assets/af83b0b5-6d2b-4ddd-ac1c-cb0d2e22976a
+    alt: "Open Publisher on Windows 11"

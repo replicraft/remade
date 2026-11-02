@@ -21,3 +21,7 @@ screenshots:
     alt: "PdfCraft: pDF document with annotation panels."
   - src: https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-scripts.png
     alt: "PdfCraft: multilingual document displayed in the PDF viewer."
+  - src: https://raw.githubusercontent.com/storytold/pdfcraft/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/images/pdfcraft-twoup.png
+    alt: "Two facing pages in Read mode with the dark theme: the Foreword and the Setting Text chapter with its drop cap and pull quote"
+  - src: https://raw.githubusercontent.com/storytold/pdfcraft/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/images/pdfcraft-dark.png
+    alt: "The dark theme showing the Code and Images chapter, a syntax-coloured listing and a fractal image, with the comments panel open"

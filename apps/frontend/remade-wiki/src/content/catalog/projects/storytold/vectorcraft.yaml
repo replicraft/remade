@@ -21,3 +21,7 @@ screenshots:
     alt: "VectorCraft: poster artwork and live appearance effects."
   - src: https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-2-ribbons.png
     alt: "VectorCraft: blended vector shapes and layer controls."
+  - src: https://raw.githubusercontent.com/storytold/vectorcraft/4ee0ef231aa31f50192f0072554fa390957532bf/docs/images/shot-4-bezier.png
+    alt: "Direct Selection tool showing anchor points and Bézier handles on a crescent built with Pathfinder, with the contextual task bar below it"
+  - src: https://raw.githubusercontent.com/storytold/vectorcraft/4ee0ef231aa31f50192f0072554fa390957532bf/docs/images/shot-6-revolve.png
+    alt: "A still life of a vase, a bowl, a sphere and a bottle made with 3D Revolve; the vase is selected and the Revolve dialog shows its rotation, cap and view settings beside the rotation gizmo"

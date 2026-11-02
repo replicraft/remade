@@ -17,3 +17,5 @@ limitations: "Alpha; notebook formats may change. ONE import is command-line onl
 screenshots:
   - src: https://raw.githubusercontent.com/AlienTechSoftware/notecraft/main/docs/images/dark-green.png
     alt: "NoteCraft: notebook editor in the dark theme."
+  - src: https://raw.githubusercontent.com/AlienTechSoftware/notecraft/e9626e65866f44896ceacf893225c3f6e69b744f/docs/images/hero.png
+    alt: "NoteCraft showing a formatted note, notebook navigation and the Home ribbon."

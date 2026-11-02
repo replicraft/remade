@@ -21,3 +21,7 @@ screenshots:
     alt: "RadioMaster: radio playlist and playback controls."
   - src: https://raw.githubusercontent.com/epell-development/RadioMaster/main/docs/screenshots/additional-window.png
     alt: "RadioMaster: additional playlist window."
+  - src: https://raw.githubusercontent.com/epell-development/RadioMaster/5924f9605014f64c15c938ddc272bd26508ee80e/docs/screenshots/playlist-menu.png
+    alt: "Playlist menu"
+  - src: https://raw.githubusercontent.com/epell-development/RadioMaster/5924f9605014f64c15c938ddc272bd26508ee80e/docs/screenshots/hour-marker.png
+    alt: "Waiting for an hour marker"

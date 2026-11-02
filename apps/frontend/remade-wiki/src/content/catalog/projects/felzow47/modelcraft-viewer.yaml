@@ -16,3 +16,7 @@ limitations: "MIT is declared in the README, NOTICE and Cargo metadata; a standa
 screenshots:
   - src: https://raw.githubusercontent.com/Felzow47/ModelCraft/main/assets/captures/solidworks_part_measure.png
     alt: "ModelCraft: SolidWorks part with measurement controls."
+  - src: https://raw.githubusercontent.com/Felzow47/ModelCraft/33cf23fa315bff210a4cbe6c33696714559425fe/assets/captures/solidworks_assembly.png
+    alt: "SolidWorks assembly"
+  - src: https://raw.githubusercontent.com/Felzow47/ModelCraft/33cf23fa315bff210a4cbe6c33696714559425fe/assets/captures/step_assembly.png
+    alt: "STEP assembly"

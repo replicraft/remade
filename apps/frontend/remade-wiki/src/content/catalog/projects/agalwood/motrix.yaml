@@ -20,3 +20,5 @@ screenshots:
     alt: "Motrix: download dashboard and activity summary."
   - src: https://raw.githubusercontent.com/agalwood/Motrix/main/screenshots/motrix-downloads-en-light.webp
     alt: "Motrix: download list and navigation sidebar."
+  - src: https://raw.githubusercontent.com/agalwood/Motrix/963ff18d92a71d340180ffe96d89cda72c3e0546/screenshots/motrix-settings-en-light.webp
+    alt: "Motrix Settings"

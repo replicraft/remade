@@ -20,3 +20,7 @@ screenshots:
     alt: "StitchFoundry: embroidery design-creation dialog."
   - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/main/docs/images/stitchfoundry-online-orders.png
     alt: "StitchFoundry: online order setup and embroidery rules."
+  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/0bd00d3caf9eb61b1bad499ec1338de8872ea9eb/docs/images/stitchfoundry-branching.png
+    alt: "StitchFoundry: thirty satin petals and a fill vine sewn as one thread, with the Stitch Sequence panel"
+  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/0bd00d3caf9eb61b1bad499ec1338de8872ea9eb/docs/images/stitchfoundry-simple-mode.png
+    alt: "Simple mode on the light screen: big buttons down the left, the appliqué star sample in the middle, its size, stitches and sewing time on the right"

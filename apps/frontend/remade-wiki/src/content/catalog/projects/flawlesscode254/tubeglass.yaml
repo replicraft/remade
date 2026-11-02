@@ -26,3 +26,7 @@ screenshots:
     alt: "TubeGlass: video subscriptions and home feed."
   - src: https://raw.githubusercontent.com/flawlesscode254/TubeGlass/main/docs/screenshots/player.png
     alt: "TubeGlass: video player and playback controls."
+  - src: https://raw.githubusercontent.com/flawlesscode254/TubeGlass/759eb25c4b594569a02edb6dfa9f50641bcc2d61/docs/screenshots/music-player.png
+    alt: "TubeGlass music player with an audio visualizer, playback controls and lyrics."
+  - src: https://raw.githubusercontent.com/flawlesscode254/TubeGlass/759eb25c4b594569a02edb6dfa9f50641bcc2d61/docs/screenshots/music-search.png
+    alt: "TubeGlass showing music search results with track titles and durations."

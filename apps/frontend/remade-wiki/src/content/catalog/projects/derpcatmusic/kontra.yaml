@@ -25,3 +25,6 @@ discord_server: https://discord.gg/7hpCbGasQa
 limitations: Alpha nightly builds; Kontakt playback, scripts, interfaces and effects are partial.
   Falcon/UFS coverage and sound parity are incomplete. Bring separately authorized libraries; a purchase
   may not authorize third-party playback. Upstream says parser redistribution rights remain unresolved.
+screenshots:
+  - src: https://derpcatmusic.github.io/KONTRA/assets/kontra-ui.webp
+    alt: "KONTRA instrument interface with a preset browser, instrument controls and an on-screen keyboard."

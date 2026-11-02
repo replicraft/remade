@@ -20,3 +20,7 @@ screenshots:
     alt: "SubCraft: mesh-baking preview and settings."
   - src: https://raw.githubusercontent.com/Aalzard/subcraft/main/docs/screenshots/v018-new-project.png
     alt: "SubCraft: new texture-project dialog."
+  - src: https://raw.githubusercontent.com/Aalzard/subcraft/56a23a7e88077fbb5d11bd15865d73750964ae78/docs/screenshots/v018-overview.png
+    alt: "SubCraft painting a crate"
+  - src: https://raw.githubusercontent.com/Aalzard/subcraft/56a23a7e88077fbb5d11bd15865d73750964ae78/docs/screenshots/tool-clone.png
+    alt: "Clone tool with source marker"

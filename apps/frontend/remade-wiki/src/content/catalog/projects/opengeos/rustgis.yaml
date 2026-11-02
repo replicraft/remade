@@ -21,3 +21,7 @@ screenshots:
     alt: "RustGIS: map styling and symbology controls."
   - src: https://assets.rustgis.app/images/assistant.webp
     alt: "RustGIS: map and assistant query results."
+  - src: https://assets.rustgis.app/images/hero.webp
+    alt: "RustGIS displaying a 3D globe alongside layer navigation and feature information."
+  - src: https://assets.rustgis.app/images/buffer-history.webp
+    alt: "The Analyze tab with a gallery of geoprocessing tools and the Tools pane showing Buffer; dissolved 300 km buffers around African cities"

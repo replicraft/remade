@@ -20,3 +20,5 @@ screenshots:
     alt: "ScreenCraft: recording preview and editing timeline."
   - src: https://raw.githubusercontent.com/MarshallNickolauson/ScreenCraft/main/docs/screenshots/editor-zoom.png
     alt: "ScreenCraft: zoom and cursor presentation controls."
+  - src: https://raw.githubusercontent.com/MarshallNickolauson/ScreenCraft/743e8cddbb16e0fa6e4ab6b3e25075c519af5a29/docs/screenshots/editor-look.png
+    alt: "ScreenCraft video editor with cursor settings, a preview and a recording timeline."

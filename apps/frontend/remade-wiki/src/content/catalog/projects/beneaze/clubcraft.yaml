@@ -19,3 +19,7 @@ screenshots:
     alt: "ClubCraft: mix timeline and stem transition controls."
   - src: https://raw.githubusercontent.com/beneaze/ClubCraft/main/docs/images/settings.jpg
     alt: "ClubCraft: deck configuration and playback settings."
+  - src: https://raw.githubusercontent.com/beneaze/ClubCraft/65e0784cc6a74cfa774b51ef107e19eed83f4573/docs/images/live.jpg
+    alt: "ClubCraft live view with two decks, scrolling waveforms, hot cues and a central mixer."
+  - src: https://raw.githubusercontent.com/beneaze/ClubCraft/65e0784cc6a74cfa774b51ef107e19eed83f4573/docs/images/library.jpg
+    alt: "The library showing a mix"

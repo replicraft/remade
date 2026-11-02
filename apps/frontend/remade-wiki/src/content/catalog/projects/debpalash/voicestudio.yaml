@@ -21,3 +21,7 @@ screenshots:
     alt: "VoiceStudio: voice-cloning workspace with a demo voice."
   - src: https://raw.githubusercontent.com/debpalash/VoiceStudio/main/docs/media/electron/dubbing.png
     alt: "VoiceStudio: video dubbing workspace."
+  - src: https://raw.githubusercontent.com/debpalash/VoiceStudio/88f8ae4518f7cfdab0aa9f82758f94e459d5c02f/docs/media/electron/voice-cloning.webp
+    alt: "Voice cloning workspace with the bundled demo voice"
+  - src: https://raw.githubusercontent.com/debpalash/VoiceStudio/88f8ae4518f7cfdab0aa9f82758f94e459d5c02f/docs/media/electron/dubbing.webp
+    alt: "Video dubbing workspace"

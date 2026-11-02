@@ -19,3 +19,7 @@ limitations: Young project with a small starter template library; Canva project 
 screenshots:
   - src: https://raw.githubusercontent.com/shaongitbd/doory/main/.github/readme/editor.webp
     alt: "Doory: poster design with text-editing controls."
+  - src: https://raw.githubusercontent.com/shaongitbd/doory/177a7411cc0f72770f8b36d1ed0235893246148f/.github/readme/feature-animate.webp
+    alt: "The Animate panel with enter animations"
+  - src: https://raw.githubusercontent.com/shaongitbd/doory/177a7411cc0f72770f8b36d1ed0235893246148f/.github/readme/feature-layers.webp
+    alt: "The Layers panel with its right-click menu"

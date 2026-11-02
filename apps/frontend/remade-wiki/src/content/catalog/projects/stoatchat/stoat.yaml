@@ -16,3 +16,8 @@ license: AGPL-3.0; component-specific licenses
 website: https://stoat.chat/
 docs: https://developers.stoat.chat/
 limitations: Uses its own service and API rather than Discord's; Discord account, bot and client compatibility is not established. The linked repository contains the backend; web, desktop, Android and iOS clients live in separate repositories. Individual backend crates may use different licenses.
+screenshots:
+  - src: https://stoat.chat/_astro/product.BtN8cTR_.png
+    alt: "Stoat server conversation with channels, messages and a member list."
+  - src: https://stoat.chat/_astro/group.BpE8XtMG.png
+    alt: "Stoat group conversation showing invited members and a message composer."
