@@ -3,7 +3,6 @@ slug: soundcraft
 name: SoundCraft
 authors: [storytold]
 repository: https://github.com/storytold/soundcraft
-website: https://getartcraft.com/apps/soundcraft
 browser_url: https://playground.daijro.dev/soundcraft/
 originals: [avid-pro-tools]
 category: creative
@@ -11,11 +10,12 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: experimental
 compatibility: partial
+summary: "Pro Tools-style audio and MIDI editing, mixing, automation and offline processing."
 description: An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/soundcraft
 discord_server: https://discord.gg/artcraft
 limitations: "Pre-alpha. Cannot exchange Pro Tools PTX, AAF or OMF sessions. Recording and decoded sources are held in RAM rather than streamed to disk. Third-party VST3 hosting is blocked in signed macOS builds; AU editors, control surfaces and external synchronization remain incomplete. Output fidelity against Pro Tools is unmeasured."
-summary: "Pro Tools-style audio and MIDI editing, mixing, automation and offline processing."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/soundcraft/main/docs/images/mix.png
     alt: "SoundCraft: audio mixer with channel strips."

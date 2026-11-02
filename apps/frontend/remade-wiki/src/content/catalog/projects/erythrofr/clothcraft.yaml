@@ -9,11 +9,11 @@ languages: [Rust]
 platforms: [Windows, Web]
 status: alpha
 compatibility: targeting
+summary: "Design and sew garment patterns in 2D and 3D, following Marvelous Designer and CLO workflows."
 description: "Independent garment-editor and cloth-simulation prototype targeting Marvelous Designer and CLO 3D workflows. Provides polygon and Bezier patterns, partial and multi-edge sewing, 3D arrangement, local project saving and recovery, static avatar imports and limited DXF/SVG pattern-outline imports."
 license: MIT
 docs: https://github.com/erythrofr/ClothCraft/blob/main/README.md
 limitations: "Research prototype; Windows is the main development platform, with macOS and Linux acceptance testing pending. No native Marvelous/CLO files or verified parity. Simulation uses hybrid GPU/CPU VBD with OGC contact; friction, material calibration and dense-mesh performance need work. Industrial DXF-AAMA/ASTM, animated avatars, PDF printing and grading remain planned."
-summary: "Design and sew garment patterns in 2D and 3D, following Marvelous Designer and CLO workflows."
 screenshots:
   - src: https://raw.githubusercontent.com/erythrofr/ClothCraft/main/docs/screenshots/workspace.png
     alt: "ClothCraft: garment preview beside editable sewing patterns."

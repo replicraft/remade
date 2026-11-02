@@ -10,11 +10,11 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: experimental
 compatibility: partial
+summary: "AutoCAD-style drafting with drawing commands, layers, dimensions and DXF/DWG support."
 description: An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, layers, dimensions, DXF and DWG support.
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: "Pre-alpha; DWG support uses acadrust. Saving DWG can discard unsupported entities and metadata; a warning and backup reduce but do not eliminate that risk. Real-file exchange with AutoCAD is unverified. Dynamic blocks, some geometry operations and plotting fidelity remain incomplete; browser autosave is unavailable."
-summary: "AutoCAD-style drafting with drawing commands, layers, dimensions and DXF/DWG support."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/cadcraft/main/docs/images/ui-apartment.png
     alt: "CADCraft: apartment floor plan with drafting tools."

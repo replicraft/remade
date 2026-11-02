@@ -3,15 +3,15 @@ slug: firecraft
 name: FireCraft
 authors: [aliasfoxkde]
 repository: https://github.com/aliasfoxkde/FireCraft
+browser_url: https://firecraft-web.pages.dev/
 originals: [adobe-fireworks]
 category: creative
 languages: [Rust]
 status: experimental
 compatibility: partial
+summary: "Fireworks-style vector and bitmap editing with Fireworks PNG files, symbols and scripting."
 description: An independent implementation targeting Fireworks CS6 document and scripting workflows. Provides Fireworks PNG reading and writing, vector and bitmap operations, text, symbols, a CPU compositor and JSF scripting commands. Offers a browser build, desktop releases and CLI tools for document and image conversion.
 license: MIT OR Apache-2.0
+website: https://firecraft-web.pages.dev
 docs: https://github.com/aliasfoxkde/FireCraft/blob/main/docs/PROGRESS.md
 limitations: "Compatibility and parity measurements are maintainer-reported. Some CS6 DOM and rendering behavior remains evidence-gated, including destructive effect bounds. A completed command or format matrix does not establish full Fireworks fidelity. Desktop, CLI and browser builds are available."
-website: https://firecraft-web.pages.dev
-browser_url: https://firecraft-web.pages.dev/
-summary: "Fireworks-style vector and bitmap editing with Fireworks PNG files, symbols and scripting."

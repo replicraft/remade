@@ -10,11 +10,11 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Excel-style spreadsheets with formulas, formatting, tables, charts and XLSX file support."
 description: An independent Excel-style spreadsheet application by ArtCraft with formulas, workbook recalculation, formatting, tables, charts and XLSX reading and writing.
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Alpha; compatibility is maintainer-reported. XLSX fidelity on real-world files, very large workbooks, multithreaded recalculation, chart depth, multilingual text and legacy XLS import still need work.
-summary: "Excel-style spreadsheets with formulas, formatting, tables, charts and XLSX file support."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/gridcraft/main/docs/images/budget.png
     alt: "GridCraft: budget worksheet with conditional formatting."

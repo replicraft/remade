@@ -3,7 +3,6 @@ slug: lightcraft
 name: LightCraft
 authors: [storytold]
 repository: https://github.com/storytold/lightcraft
-website: https://getartcraft.com/apps/lightcraft
 browser_url: https://playground.daijro.dev/lightcraft/
 originals: [adobe-lightroom]
 category: creative
@@ -11,11 +10,12 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Lightroom-style photo management with non-destructive RAW development, adjustments and masking."
 description: An independent Lightroom-style photography application by ArtCraft with a photo library, non-destructive adjustments, RAW development and masking.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/lightcraft
 discord_server: https://discord.gg/artcraft
 limitations: "Alpha; camera color and render fidelity are not measured against Lightroom. Some compressed RAW variants remain preview-only, and lens profiles are limited. Several AI masks are heuristics; denoise models have separate terms. HDR, video and Classic Print, Book and Map workflows have gaps. Windows/macOS and GPU behavior need broader qualification."
-summary: "Lightroom-style photo management with non-destructive RAW development, adjustments and masking."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/lightcraft/main/docs/images/curve-tetons.jpg
     alt: "LightCraft: photo editor with tone-curve controls."

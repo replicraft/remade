@@ -3,7 +3,6 @@ slug: vectorcraft
 name: VectorCraft
 authors: [storytold]
 repository: https://github.com/storytold/vectorcraft
-website: https://getartcraft.com/apps/vectorcraft
 browser_url: https://playground.daijro.dev/vectorcraft/
 originals: [adobe-illustrator]
 category: creative
@@ -11,11 +10,12 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Illustrator-style vector art with paths, artboards, typography and SVG, PDF and compatible AI files."
 description: VectorCraft by ArtCraft independently implements Illustrator-style vector illustration, including paths, artboards, typography, SVG, PDF and PDF-compatible AI files.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/vectorcraft
 discord_server: https://discord.gg/artcraft
 limitations: Under active development with incomplete Illustrator parity. AI support targets PDF-compatible files; full compatibility is not claimed.
-summary: "Illustrator-style vector art with paths, artboards, typography and SVG, PDF and compatible AI files."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-1-neon.png
     alt: "VectorCraft: poster artwork and live appearance effects."

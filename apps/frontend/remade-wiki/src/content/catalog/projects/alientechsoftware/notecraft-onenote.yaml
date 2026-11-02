@@ -9,11 +9,11 @@ languages: [Rust]
 platforms: [Windows, Linux]
 status: "alpha"
 compatibility: partial
+summary: "OneNote-style notebooks with a ribbon, nested pages, formatted editing, tags, attachments and search."
 description: "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, diagrams, search, autosave and CLI/MCP access. CLI import converts supported ONE sections into notebooks with pages and attachments."
 license: MIT OR Apache-2.0
 docs: https://github.com/AlienTechSoftware/notecraft/blob/main/docs/gaps.md
 limitations: "Alpha; notebook formats may change. ONE import is command-line only and omits ink, tags and password-protected sections. Cross-block selection and mixed-direction text editing remain incomplete. macOS is untested. Koala artwork is excluded from the code license and is described by its owner as AI-generated."
-summary: "OneNote-style notebooks with a ribbon, nested pages, formatted editing, tags, attachments and search."
 screenshots:
   - src: https://raw.githubusercontent.com/AlienTechSoftware/notecraft/main/docs/images/dark-green.png
     alt: "NoteCraft: notebook editor in the dark theme."

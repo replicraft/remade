@@ -11,8 +11,8 @@ platforms:
   - Windows
 status: alpha
 compatibility: partial
+summary: "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices and mathematical functions."
 description: "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices, anonymous functions, classdef classes, N-D arrays and numerical/DSP functions. Provides a desktop Studio, CLI/MCP automation, plotting and MAT-file interchange."
 license: MIT OR Apache-2.0
 docs: https://github.com/NibrasAz7/matcraft/blob/master/docs/language.md
 limitations: "Alpha; compatibility is maintainer-reported. Most toolbox functions, object arrays and parts of class behavior remain incomplete. Corpus parse rates do not establish execution compatibility. Simulink-style modeling is handled separately through SimCraft."
-summary: "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices and mathematical functions."

@@ -1,5 +1,5 @@
 # Requested in https://github.com/replicraft/remade/issues/21.
 original: naturalmotion-euphoria
+summary: "Wanted: Euphoria-style procedural character animation and active ragdolls."
 reason: Reproduce Euphoria-style procedural character animation and active ragdolls, including balance, impact reactions, protective bracing and attempts to grab ledges or car doors while falling. Generate physically responsive behavior instead of relying only on prerecorded animations.
 suggested_names: [PerishCraft]
-summary: "Wanted: Euphoria-style procedural character animation and active ragdolls."

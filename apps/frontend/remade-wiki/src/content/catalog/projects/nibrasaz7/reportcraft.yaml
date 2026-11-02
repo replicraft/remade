@@ -8,8 +8,8 @@ category: productivity
 languages: [Rust]
 status: alpha
 compatibility: partial
+summary: "Power BI-style reporting with data imports, table models, measures, visualizations and row-level security."
 description: A Rust-native business-intelligence studio targeting Power BI workflows. Imports CSV, TSV and JSON, models table relationships and DAX-class measures, applies row-level security and Power Query-style transformations, and exchanges TMDL semantic models. Provides a desktop Studio, SVG/HTML/PDF reports, CLI and MCP automation.
 license: MIT OR Apache-2.0
 docs: https://github.com/NibrasAz7/ReportCraft#readme
 limitations: Alpha; compatibility is maintainer-reported. Live database drivers, Excel and Parquet readers, and proprietary binary PBIX extraction remain planned. SQL query folding generates queries rather than providing database connections. TMDL exchange does not establish full Power BI file or behavioral parity.
-summary: "Power BI-style reporting with data imports, table models, measures, visualizations and row-level security."

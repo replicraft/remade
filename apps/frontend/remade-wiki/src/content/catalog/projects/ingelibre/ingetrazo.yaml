@@ -2,18 +2,18 @@ slug: ingetrazo
 name: IngeTrazo
 authors: [ingelibre]
 repository: https://github.com/ingelibre/ingetrazo
-website: https://ingetrazo.com/en
 originals: [sketchup]
 category: engineering
 languages: [Python]
 platforms: [Linux, Windows, macOS]
 status: beta
 compatibility: partial
+summary: "SketchUp-style architectural modeling with push/pull tools, snapping, components and SKP import."
 description: IngeTrazo reproduces SketchUp-style push/pull modeling with drawing tools, snapping, components, materials, dimensions and scenes. It imports SketchUp SKP files and adds architectural sheets, terrain and BIM workflows.
 license: GPL-3.0-or-later
+website: https://ingetrazo.com/en
 docs: https://ingetrazo-docs.pages.dev/
 limitations: Pre-1.0 software; document and plugin formats may change. SketchUp import compatibility is maintainer-reported; SKP export is not documented. macOS builds target Apple Silicon, and DWG import is currently Linux-only.
-summary: "SketchUp-style architectural modeling with push/pull tools, snapping, components and SKP import."
 screenshots:
   - src: https://raw.githubusercontent.com/ingelibre/ingetrazo/main/docs/images/viewport.png
     alt: "IngeTrazo: architectural scene in the 3D viewport."

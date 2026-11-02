@@ -10,12 +10,12 @@ languages: [Rust]
 platforms: [Windows, Linux, macOS]
 status: "alpha"
 compatibility: partial
+summary: "Substance Designer-style procedural materials with node graphs, previews, mesh baking and texture exports."
 description: "A Substance 3D Designer-style procedural material editor with node graphs, 2D/3D previews, mesh baking and texture output. Uses SBS as its project format and documents compatibility with Designer nodes, with inherited and third-party licenses recorded separately."
 license: MIT OR Apache-2.0
 docs: https://github.com/PiJellyPin/MaterialCraft#readme
 discord_server: https://discord.gg/9KVCNatNvX
 limitations: "Upstream currently describes the project as early alpha. SBS interoperability and node coverage are maintainer-reported, not full Designer compatibility. The roadmap still lists end-to-end workflow completion, MaterialX export, downstream engine qualification, and Android/Web deployment as unfinished."
-summary: "Substance Designer-style procedural materials with node graphs, previews, mesh baking and texture exports."
 screenshots:
   - src: https://github.com/user-attachments/assets/aed97881-c091-4ef3-b2f4-065f99dd44fe
     alt: "MaterialCraft: procedural material graph and previews."

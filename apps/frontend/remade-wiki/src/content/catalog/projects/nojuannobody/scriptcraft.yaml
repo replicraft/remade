@@ -10,11 +10,11 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, Web]
 status: experimental
 compatibility: partial
+summary: "Final Draft-style screenwriting with automatic pagination, SmartType, index cards and Fountain/FDX files."
 description: "A Rust implementation of Final Draft-style screenwriting with screenplay pagination, SmartType, index cards, an outline and beat board. Opens and saves Fountain and supported FDX files, exports PDF, and provides revision mode, locked pages, script comparison, production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces."
 license: MIT OR Apache-2.0
 docs: https://github.com/NoJuanNobody/scriptcraft/blob/main/docs/parity-checklist.md
 limitations: "Early development; FDX compatibility is partial and maintainer-reported. Final Draft behavior has not been verified side by side. Thesaurus, Format Assistant, watermarks, FDXT template import and focus/typewriter mode remain unfinished."
-summary: "Final Draft-style screenwriting with automatic pagination, SmartType, index cards and Fountain/FDX files."
 screenshots:
   - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/main/docs/images/russian.png
     alt: "ScriptCraft: screenplay editor with Cyrillic text."

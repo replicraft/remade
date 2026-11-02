@@ -4,10 +4,10 @@ authors: [raisulsohan]
 repository: https://github.com/raisulsohan/lazymaplayers-effectcraft
 url: https://github.com/raisulsohan/lazymaplayers-effectcraft
 languages: [JavaScript, TypeScript]
-platforms: [Windows, macOS, Linux]
-license: MIT
-status: alpha
-limitations: "Requires EffectCraft 0.8.0 or newer, Node.js 22 or newer, and Edge or Chrome; upstream recommends EffectCraft 0.10.0 or newer. Older hosts have undo and Self-test limits fixed in later versions. Long shot lists and detailed outlines remain costly, and whole-frame keyframes can produce frame-count differences. Coverage is maintainer-reported."
-description: "Map animation panel for EffectCraft: globe-to-street flights, routes, multilingual labels, data maps, historical maps and TCX import. The author reports 657 expression cases in 62 kinds match After Effects' maths. The original panel runs through a compatibility layer in a separate window communicating over --control."
 projects: [effectcraft]
+platforms: [Windows, macOS, Linux]
+status: alpha
+license: MIT
 summary: "Add globe-to-street flights, routes, labels and animated data maps to EffectCraft."
+description: "Map animation panel for EffectCraft: globe-to-street flights, routes, multilingual labels, data maps, historical maps and TCX import. The author reports 657 expression cases in 62 kinds match After Effects' maths. The original panel runs through a compatibility layer in a separate window communicating over --control."
+limitations: "Requires EffectCraft 0.8.0 or newer, Node.js 22 or newer, and Edge or Chrome; upstream recommends EffectCraft 0.10.0 or newer. Older hosts have undo and Self-test limits fixed in later versions. Long shot lists and detailed outlines remain costly, and whole-frame keyframes can produce frame-count differences. Coverage is maintainer-reported."

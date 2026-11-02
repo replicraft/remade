@@ -9,9 +9,9 @@ category: operating-systems
 languages: [C, Assembly]
 status: experimental
 compatibility: partial
+summary: "A small Unix-like operating system for resource-constrained machines, with System V-style and POSIX interfaces."
 description: A small Unix-like operating system combining independently developed UZI branches, extended with System III/System V-style interfaces and parts of POSIX. Targets resource-constrained retrocomputers and microcontrollers, with a multitasking kernel, C libraries, utilities and prebuilt images for selected machines.
 license: GPL-2.0; component-specific licenses
 website: https://www.fuzix.org/
 docs: https://codeberg.org/EtchedPixels/FUZIX/src/branch/master/README.md
 limitations: UZI-derived foundation; the distribution also includes licensed UNIX V7/32V code, not a complete independent rewrite. Libraries and applications have separate licenses; some optional BCPL and game components are noncommercial. Hardware support and toolchains vary; the development tree documents broken or experimental ports. Full UNIX/POSIX compatibility is not claimed.
-summary: "A small Unix-like operating system for resource-constrained machines, with System V-style and POSIX interfaces."

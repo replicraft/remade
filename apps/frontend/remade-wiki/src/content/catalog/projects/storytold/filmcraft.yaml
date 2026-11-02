@@ -3,7 +3,6 @@ slug: filmcraft
 name: FilmCraft
 authors: [storytold]
 repository: https://github.com/storytold/filmcraft
-website: https://getartcraft.com/apps/filmcraft
 browser_url: https://playground.daijro.dev/filmcraft/
 originals: [adobe-premiere-pro]
 category: creative
@@ -11,11 +10,12 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Premiere-style video editing with multitrack timelines, color adjustments, audio, titles and exports."
 description: An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, color adjustments, audio, titles and media export.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/filmcraft
 discord_server: https://discord.gg/artcraft
 limitations: "Alpha; compatibility is maintainer-reported. Cannot open Premiere PRPROJ projects or host its third-party plug-ins. Codec and hardware acceleration support vary by platform; Windows/Linux runtime and audio-device reliability still need qualification. Output has not been systematically compared with Premiere, and browser workflows remain incomplete."
-summary: "Premiere-style video editing with multitrack timelines, color adjustments, audio, titles and exports."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-assembly.png
     alt: "FilmCraft: video assembly workspace with clips and monitors."

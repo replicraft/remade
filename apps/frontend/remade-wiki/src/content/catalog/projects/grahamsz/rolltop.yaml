@@ -8,6 +8,7 @@ languages: [Go, TypeScript, Kotlin]
 platforms: [Web, Android]
 status: "experimental"
 compatibility: partial
+summary: "Self-hosted email with Gmail-style search, threaded conversations, snooze and multiple IMAP accounts."
 description: >-
   Self-hosted email client offering Gmail-style search operators, threaded
   conversations, snooze, and keyboard shortcuts. Mirrors multiple IMAP accounts
@@ -17,4 +18,3 @@ license: "Unlicensed"
 website: https://rolltop.app/
 docs: https://github.com/grahamsz/rolltop#readme
 limitations: "Requires a self-hosted server and existing IMAP/SMTP accounts. A broader Gmail alternative, not a Gmail API implementation; offline access covers previously viewed mail. Upstream proposes AGPL-3.0-or-later but provides no project license file or clear current license grant. Stable maturity is not established."
-summary: "Self-hosted email with Gmail-style search, threaded conversations, snooze and multiple IMAP accounts."

@@ -3,7 +3,6 @@ slug: figcraft
 name: FigCraft
 authors: [storytold]
 repository: https://github.com/storytold/figcraft
-website: https://getartcraft.com/apps/figcraft
 browser_url: https://playground.daijro.dev/figcraft/
 originals: [figma]
 category: creative
@@ -11,12 +10,13 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Figma-style interface design and prototyping with auto layout, components, variants, vectors and variables."
 description: FigCraft independently implements Figma-style interface design and prototyping in Rust, with frames, auto layout, components and variants, vector networks, styles and variables. Supports offline editing, best-effort Figma file import and preview live collaboration.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/figcraft
 docs: https://github.com/storytold/figcraft/blob/main/docs/target-app-parity.md
 discord_server: https://discord.gg/artcraft
 limitations: "Alpha; FIG import is best effort and export remains experimental. Full Figma file, rendering and collaboration fidelity is not established. Uses its own sandboxed WASM plug-in system rather than Figma-compatible plug-ins; multiplayer, typography and platform-specific pen input remain incomplete."
-summary: "Figma-style interface design and prototyping with auto layout, components, variants, vectors and variables."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/figcraft/main/docs/images/shot-3-prototype.png
     alt: "FigCraft: linked mobile screens in the prototype editor."

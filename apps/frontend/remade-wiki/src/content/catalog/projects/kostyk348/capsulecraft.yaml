@@ -12,11 +12,11 @@ languages:
 platforms: [Linux, Windows, macOS, Web]
 status: experimental
 compatibility: partial
-license: MIT
 summary: Obsidian-style local knowledge storage with linked notes, search and planning, using portable .eml files.
 description: "A local knowledge-storage alternative to Obsidian, limited to collecting, organizing and finding information. Stores notes, tasks and datasets as RFC 5322 .eml files rather than Markdown vaults, with linked pages, backlinks, search and planning tools. Offers a Rust/egui desktop shell and a browser application. The native shell also supports audio recording/playback and local JavaScript execution."
-limitations: "Covers the knowledge-storage workflow, not full Obsidian compatibility. Does not claim Obsidian Markdown-vault or plugin-API compatibility. Native and browser feature coverage differs; desktop package behavior remains maintainer-reported."
+license: MIT
 docs: https://github.com/kostyk348/CapsuleCraft#readme
+limitations: "Covers the knowledge-storage workflow, not full Obsidian compatibility. Does not claim Obsidian Markdown-vault or plugin-API compatibility. Native and browser feature coverage differs; desktop package behavior remains maintainer-reported."
 screenshots:
   - src: https://raw.githubusercontent.com/kostyk348/CapsuleCraft/main/screenshots/capsulecraft-native-page.png
     alt: "CapsuleCraft: note editor and linked pages."

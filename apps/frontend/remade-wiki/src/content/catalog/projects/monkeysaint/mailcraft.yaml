@@ -8,11 +8,11 @@ languages: [Rust]
 platforms: [Linux, Windows, macOS, FreeBSD, Web]
 status: experimental
 compatibility: partial
+summary: "An Outlook-style email client with familiar mail organization and desktop workflows."
 description: MailCraft reproduces classic Outlook-style mail, calendar, contacts, tasks and notes workflows with a ribbon, reading pane, rules and quick steps. It supports standard mail protocols, local-first storage, common file formats and CLI/MCP automation.
 license: MIT OR Apache-2.0
 docs: https://github.com/MonkeySaint/mailcraft#readme
 limitations: Pre-alpha; compatibility is maintainer-reported. Exchange EWS is unsupported. OAuth sign-in requires a provider-registered client ID. Without an OS credential store, account secrets fall back to an unencrypted local file.
-summary: "An Outlook-style email client with familiar mail organization and desktop workflows."
 screenshots:
   - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/master/docs/images/narrow.png
     alt: "MailCraft: message reader in a narrow window."

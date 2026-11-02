@@ -9,12 +9,12 @@ languages: [TypeScript, JavaScript, Rust, Swift]
 platforms: [Windows, macOS, Linux, Web]
 status: beta
 compatibility: partial
+summary: "Manage HTTP, FTP, torrent and magnet downloads with queues, scheduling and browser integration."
 description: A broader Internet Download Manager alternative for HTTP, FTP, BitTorrent and magnet downloads. Uses a Motrix-maintained aria2 engine with queues, scheduling, speed limits, browser integration and persistent sessions. Provides an Electron desktop app and a headless server with a web interface, CLI access and plug-ins.
 license: MIT
 website: https://motrix.app/
 docs: https://github.com/agalwood/Motrix#readme
 limitations: "IDM settings, queue files and integration compatibility are not documented; browser integration uses Motrix's own extension and protocol. Migration imports selected older Motrix tasks paused and requires a separate resume action. Legacy progress migration on Windows is restricted to local NTFS with explicit authorization. Third-party components retain separate licenses."
-summary: "Manage HTTP, FTP, torrent and magnet downloads with queues, scheduling and browser integration."
 screenshots:
   - src: https://raw.githubusercontent.com/agalwood/Motrix/main/screenshots/motrix-dashboard-en-light.webp
     alt: "Motrix: download dashboard and activity summary."

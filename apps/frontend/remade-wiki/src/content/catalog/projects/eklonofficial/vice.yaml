@@ -9,9 +9,9 @@ languages: [Python, TypeScript, JavaScript]
 platforms: [Linux]
 status: experimental
 compatibility: partial
+summary: "Capture instant replays on Linux, edit game clips and share them with playable links."
 description: An independent Medal.tv-style game clipper for Linux, with instant replay, session recording, highlight markers, a multitrack editor and share links. Uses gpu-screen-recorder for hardware-accelerated capture on supported GPUs.
 license: GPL-3.0-or-later
-docs: https://github.com/splitshotz/Vice#readme
 website: https://splitshotz.github.io/Vice-Website/
+docs: https://github.com/splitshotz/Vice#readme
 limitations: Linux only; Bazzite and Fedora Atomic are not supported yet. Recording depends on gpu-screen-recorder and platform permissions. Full Medal.tv behavior or service compatibility is not claimed. Public share links depend on the project's sharing infrastructure.
-summary: "Capture instant replays on Linux, edit game clips and share them with playable links."

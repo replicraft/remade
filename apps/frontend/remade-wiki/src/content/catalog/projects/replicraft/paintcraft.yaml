@@ -3,8 +3,6 @@ slug: paintcraft
 name: PaintCraft
 authors: [replicraft]
 repository: https://github.com/replicraft/PaintCraft
-discord_server: https://discord.gg/xNASvxSx6j
-website: https://paint.replicraft.dev
 browser_url: https://paint.replicraft.dev/
 originals: [paint-net, microsoft-paint]
 category: creative
@@ -15,7 +13,9 @@ compatibility: partial
 summary: Paint.NET and MS Paint workflows in Rust, with layers, brushes, selections, Classic skins and a tabbed Studio workspace.
 description: "A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs, floating panels, editable filters and layer masks. Desktop, browser, CLI and MCP interfaces provide painting and image conversion. PCND projects preserve layers, filters and masks; supported layered imports include OpenRaster, limited historical PDN/PAINT and basic raster PSD/PSB."
 license: MIT
+website: https://paint.replicraft.dev
 docs: https://github.com/replicraft/PaintCraft#readme
+discord_server: https://discord.gg/xNASvxSx6j
 limitations: "Early preview; full feature parity is not claimed. PDN and PAINT import accepts limited historical subsets as converted copies; writing either format is unsupported. Image conversions may lose metadata, color depth or unsupported layers. GIF exchange is still-image only; supported TIFF pages are selected individually. Format availability differs across desktop, browser, CLI and MCP."
 screenshots:
   - src: https://raw.githubusercontent.com/replicraft/PaintCraft/main/assets/repo/classic-windows-11.png

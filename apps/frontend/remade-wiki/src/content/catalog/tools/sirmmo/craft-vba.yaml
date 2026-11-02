@@ -4,10 +4,10 @@ authors: [sirmmo]
 repository: https://github.com/sirmmo/craft-vba
 url: https://github.com/sirmmo/craft-vba
 languages: [Rust]
+projects: [gridcraft, deckcraft, wordcraft]
 platforms: [macOS, Windows, Linux]
 license: MIT OR Apache-2.0
+summary: "Run VBA macros in GridCraft, DeckCraft and WordCraft through an out-of-process add-in."
 description: An out-of-process VBA add-in for GridCraft, DeckCraft and WordCraft. Reads and writes embedded VBA projects, interprets macros against host document objects and records supported app commands as VBA procedures through the Craft plugin protocol.
 docs: https://github.com/sirmmo/craft-vba#readme
 limitations: Implements a VBA subset. Class modules, UserForms, events, COM creation, Windows API declarations, shell commands and file I/O are unsupported. Word and PowerPoint object coverage is incomplete. Module variables reset per run, execution has statement and call-depth limits, and some recorded actions become comments.
-projects: [gridcraft, deckcraft, wordcraft]
-summary: "Run VBA macros in GridCraft, DeckCraft and WordCraft through an out-of-process add-in."

@@ -3,7 +3,6 @@ slug: photocraft
 name: PhotoCraft
 authors: [storytold]
 repository: https://github.com/storytold/photocraft
-website: https://getartcraft.com/apps/photocraft
 browser_url: https://playground.daijro.dev/photocraft/
 originals: [adobe-photoshop]
 category: creative
@@ -11,11 +10,12 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Photoshop-style image editing with layers, adjustments, selections and layered PSD files."
 description: PhotoCraft by ArtCraft independently implements Photoshop-style image editing, including layers, adjustments, selections and layered PSD documents.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/photocraft
 discord_server: https://discord.gg/artcraft
 limitations: "Alpha; PSD files written by PhotoCraft are not yet reliably accepted by Photoshop. Menu coverage does not establish format or rendering fidelity. Typography, AI features, professional workflows and Photoshop plug-in compatibility remain incomplete; native tablet and platform behavior have differing validation coverage."
-summary: "Photoshop-style image editing with layers, adjustments, selections and layered PSD files."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/photocraft/main/docs/images/photocraft-demo.jpg
     alt: "PhotoCraft: layered image in the photo-editing workspace."

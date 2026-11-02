@@ -5,18 +5,18 @@ authors: [billsecond, benandez]
 
 repository: https://github.com/UCS-Care-Group/mailcraft
 browser_url: https://playground.daijro.dev/mailcraft/
-docs: https://github.com/UCS-Care-Group/mailcraft#readme
 
 originals: [microsoft-outlook]
 category: productivity
 languages: [Rust]
 platforms: [Windows, macOS, Linux, FreeBSD, Web]
-license: MIT OR Apache-2.0
 status: beta
 compatibility: partial
 
 summary: "Outlook-style mail, calendars, contacts and tasks for Microsoft 365, Outlook.com and IMAP accounts."
 description: Native Rust reimplementation of classic Outlook's mail, calendar, contacts and tasks, with ribbon, folder and reading panes. Supports Microsoft OAuth, Graph sync, shared mailboxes, IMAP/SMTP and preview EWS mail. Includes multiple rich-text compose windows, automatic replies for Microsoft accounts, Work Offline, high contrast, rules and recurring meetings. Imports/exports EML, MBOX, ICS and VCF; renders HTML without a web engine. CLI/MCP command access; browser builds offer read-only JMAP.
+license: MIT OR Apache-2.0
+docs: https://github.com/UCS-Care-Group/mailcraft#readme
 limitations: "Beta covers Microsoft accounts; other providers remain experimental. EWS: mail-only preview, tested on Grommunio; Exchange Server, SmarterMail and NTLM untested on real servers. Microsoft sign-in may need admin approval. Unsigned Windows/macOS builds; slow large/shared-mailbox sync; incomplete IMAP sync. No PST/OST/MSG/OLM import, printing or S/MIME/OpenPGP. Browser JMAP: read-only, CORS required."
 
 screenshots:

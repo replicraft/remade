@@ -3,19 +3,19 @@ slug: getcadcraft-cadcraft
 name: CadCraft
 authors: [getcadcraft]
 repository: https://github.com/getcadcraft/cadcraft
+browser_url: https://getcadcraft.com/use/cadcraft
 originals: [autodesk-autocad]
 category: engineering
 languages: [JavaScript]
 platforms: [Windows, Linux, Web]
 status: experimental
 compatibility: partial
+summary: "AutoCAD-style drafting with layers, blocks, dimensions, layouts and DWG/DXF file support."
 description: An independent AutoCAD-style drafting application with a command line, layers, blocks, dimensions, paper-space layouts, plotting and a 3D view. Reads and writes DWG and DXF through its own documented format engines.
 license: Apache-2.0
-docs: https://github.com/getcadcraft/cadcraft#readme
 website: https://getcadcraft.com/apps/cadcraft
-browser_url: https://getcadcraft.com/use/cadcraft
+docs: https://github.com/getcadcraft/cadcraft#readme
 limitations: In development; compatibility is maintainer-reported. Full AutoCAD behavior, plugin support and DWG fidelity are not claimed. macOS and mobile editions are planned. This is a separate project from ArtCraft's Rust CADCraft.
-summary: "AutoCAD-style drafting with layers, blocks, dimensions, layouts and DWG/DXF file support."
 screenshots:
   - src: https://raw.githubusercontent.com/getcadcraft/cadcraft/main/screenshots/paper.png
     alt: "CadCraft: drafting workspace with a drawing layout."

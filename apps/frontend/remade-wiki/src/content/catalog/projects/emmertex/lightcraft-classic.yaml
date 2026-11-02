@@ -10,11 +10,11 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web, Android]
 status: experimental
 compatibility: partial
+summary: "Lightroom Classic-style photo catalogs and non-destructive RAW development, built on LightCraft."
 description: "Chromaforge, formerly LightCraft Classic, is a downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows. Provides a seven-module workspace, non-destructive RAW development, photo catalogs, masking and Immich integration."
 license: MIT AND Apache-2.0
 docs: "https://github.com/emmertex/chromaforge#readme"
 limitations: "Compatibility is incomplete and maintainer-reported. Camera-color calibration and verification across camera models remain incomplete. AI model downloads are optional; sky masks are heuristic and denoise quality is unverified. HDR display covers only the loupe, and video editing is limited to global adjustments. Android support is early."
-summary: "Lightroom Classic-style photo catalogs and non-destructive RAW development, built on LightCraft."
 screenshots:
   - src: https://raw.githubusercontent.com/emmertex/chromaforge/main/docs/images/classic/library.jpg
     alt: "Chromaforge: photo library grid and catalog panels."

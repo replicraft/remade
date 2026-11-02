@@ -3,18 +3,18 @@ slug: lookout
 name: Lookout
 authors: [gavindi]
 repository: https://github.com/gavindi/lookout
-website: https://lookout-mail.com/
 originals: [microsoft-outlook]
 category: productivity
 languages: [Rust]
 platforms: [Linux]
 status: experimental
 compatibility: partial
+summary: "Outlook-style mail, calendar, contacts and tasks in a native GNOME app with IMAP, SMTP, CalDAV and CardDAV."
 description: "An Outlook-style Linux email client for GNOME with IMAP/SMTP mail and Microsoft 365 integration. Provides calendar and contacts through CalDAV/CardDAV or Microsoft accounts, with Google Tasks and Microsoft To Do support, local search and familiar mailbox workflows."
 license: GPL-3.0-or-later
+website: https://lookout-mail.com/
 docs: https://github.com/gavindi/lookout#readme
 limitations: Compatibility is maintainer-reported; full Outlook feature or file-format compatibility is not claimed. Targets the Linux GNOME desktop with GTK 4, libadwaita and WebKitGTK.
-summary: "Outlook-style mail, calendar, contacts and tasks in a native GNOME app with IMAP, SMTP, CalDAV and CardDAV."
 screenshots:
   - src: https://raw.githubusercontent.com/gavindi/lookout/main/assets/screenshots/mail_read_dark_1.png
     alt: "Lookout: mail folders and message reading view."

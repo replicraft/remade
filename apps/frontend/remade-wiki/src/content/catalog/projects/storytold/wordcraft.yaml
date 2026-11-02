@@ -3,7 +3,6 @@ slug: wordcraft
 name: WordCraft
 authors: [storytold]
 repository: https://github.com/storytold/wordcraft
-website: https://getartcraft.com/apps/wordcraft
 browser_url: https://playground.daijro.dev/wordcraft/
 originals: [microsoft-word]
 category: productivity
@@ -11,11 +10,12 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Word-style document editing with styles, tables, review tools, DOCX files and PDF export."
 description: An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, DOCX reading and writing, and PDF export.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/wordcraft
 discord_server: https://discord.gg/artcraft
 limitations: "Alpha; real-world DOCX round-trip and page-layout fidelity against Word remain unverified. Pagination, native ink rendering, embedded objects, proofing languages and some legacy formats have gaps. Upstream reports platform-specific crashes and freezes. Menu coverage does not establish full Word compatibility."
-summary: "Word-style document editing with styles, tables, review tools, DOCX files and PDF export."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/wordcraft/main/docs/images/review.png
     alt: "WordCraft: document review with tracked changes and comments."

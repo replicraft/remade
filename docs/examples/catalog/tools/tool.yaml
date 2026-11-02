@@ -4,20 +4,19 @@ name: Example Tool
 # Optional: explicitly credited GitHub user or organization handles.
 # authors: [example]
 repository: https://github.com/example/example-tool
+# mirrors: [https://codeberg.org/example/example-tool]
 url: https://example.org/tool
+languages: [TypeScript]
+projects: [example-implementation]
 platforms: [Web]
+# status: beta
 # Optional: use the documented license identifier; omit when unknown.
 license: MIT
-languages: [TypeScript]
-# status: beta
-# mirrors: [https://codeberg.org/example/example-tool]
-# docs: https://example.org/tool/docs
-# website: https://example.org/tool
-# limitations: Some host APIs are not yet supported.
+# Required card text: one line, 1–144 characters. Keep full details below.
+summary: A short, factual overview of the software or requested workflows.
 description: A browser launcher that adds access to an indexed implementation.
-projects: [example-implementation]
 # Alternatively, or alongside projects, reference a suite supported in full:
 # suites: [example-suite]
-
-# Required card text: one line, 1–144 characters. Keep full details above.
-summary: A short, factual overview of the software or requested workflows.
+# website: https://example.org/tool
+# docs: https://example.org/tool/docs
+# limitations: Some host APIs are not yet supported.

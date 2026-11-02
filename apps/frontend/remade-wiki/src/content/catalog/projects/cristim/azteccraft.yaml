@@ -8,8 +8,8 @@ category: creative
 languages: [Rust]
 status: experimental
 compatibility: targeting
+summary: "An early Maya-style 3D editor with primitives, transforms, undo/redo and perspective navigation."
 description: "A Rust desktop prototype targeting Maya's interface and behavior. Offers primitive creation, selection, transforms, undo/redo and perspective navigation, with bounded Maya binary scene decoding and provisional Unix and Windows writing for supported existing records. Library APIs provide single-face extrusion and OBJ export; optional MCP controls a new editor window."
 license: MIT OR Apache-2.0
 docs: https://github.com/cristim/AztecCraft#current-capabilities
 limitations: "Provisional Unix and Windows Maya binary Save/Save As for supported existing records needs native QA; Maya ASCII and structural rewriting are unsupported. GUI export and extrusion remain unfinished. Animation, rigging, UVs, rendering, scripting and plug-in compatibility are planned. Overall Maya coverage is unmeasured; cross-platform launch verification remains incomplete."
-summary: "An early Maya-style 3D editor with primitives, transforms, undo/redo and perspective navigation."

@@ -3,7 +3,6 @@ slug: deckcraft
 name: DeckCraft
 authors: [storytold]
 repository: https://github.com/storytold/deckcraft
-website: https://getartcraft.com/apps/deckcraft
 browser_url: https://playground.daijro.dev/deckcraft/
 originals: [microsoft-powerpoint]
 category: productivity
@@ -11,11 +10,12 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "PowerPoint-style presentations with themes, slide layouts, shapes, transitions, animations and file support."
 description: An independent PowerPoint-style presentation application by ArtCraft with themes, slide layouts, shapes, transitions, animations and PowerPoint file support.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/deckcraft
 discord_server: https://discord.gg/artcraft
 limitations: "Alpha; compatibility is maintainer-reported. Upstream reports data-loss and crash paths, incomplete PPTX media round-trips, missing SVG picture rendering and no printing. Presenter view does not automatically use a second display. PDF export rasterizes slide artwork; real PowerPoint file fidelity remains unverified."
-summary: "PowerPoint-style presentations with themes, slide layouts, shapes, transitions, animations and file support."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/deckcraft/main/docs/images/shape-format.png
     alt: "DeckCraft: presentation editor with a selected shape."
