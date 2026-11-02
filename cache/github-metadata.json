@@ -423,6 +423,15 @@
       "pushedAt": "2026-11-02T11:01:02Z",
       "stars": 0
     },
+    "emmertex/chromaforge": {
+      "fetchedAt": "2026-11-02T13:33:17Z",
+      "forks": 7,
+      "isArchived": false,
+      "licenseSpdx": "MIT",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-02T13:32:17Z",
+      "stars": 121
+    },
     "emmertex/lightcraft-classic": {
       "fetchedAt": "2026-11-01T14:30:04Z",
       "forks": 7,
@@ -548,6 +557,15 @@
       "primaryLanguage": "Rust",
       "pushedAt": "2026-10-31T12:46:28Z",
       "stars": 9
+    },
+    "freewright-dev/filecraft": {
+      "fetchedAt": "2026-11-02T13:33:17Z",
+      "forks": 1,
+      "isArchived": false,
+      "licenseSpdx": "GPL-3.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-01T13:31:44Z",
+      "stars": 16
     },
     "fressmeigasu/inventcraft": {
       "fetchedAt": "2026-10-16T12:43:46Z",
@@ -1449,6 +1467,15 @@
       "pushedAt": "2026-10-19T20:07:38Z",
       "stars": 345
     },
+    "stitchwright/laserfoundry": {
+      "fetchedAt": "2026-11-02T13:33:17Z",
+      "forks": 1,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-02T11:21:52Z",
+      "stars": 8
+    },
     "stitchwright/lightfoundry": {
       "fetchedAt": "2026-11-01T14:30:04Z",
       "forks": 1,
@@ -1664,6 +1691,15 @@
       "primaryLanguage": "Rust",
       "pushedAt": "2026-10-20T16:02:07Z",
       "stars": 51
+    },
+    "tracedraw/tracedraw": {
+      "fetchedAt": "2026-11-02T13:33:17Z",
+      "forks": 45,
+      "isArchived": false,
+      "licenseSpdx": "NOASSERTION",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-02T03:30:00Z",
+      "stars": 299
     },
     "ucs-care-group/mailcraft": {
       "fetchedAt": "2026-11-01T14:30:04Z",
