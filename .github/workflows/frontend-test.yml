@@ -18,20 +18,20 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: 'Windows checkout café #100%'
+        working-directory: 'Windows checkout café'
     steps:
       - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
-          path: 'Windows checkout café #100%'
+          path: 'Windows checkout café'
       - uses: pnpm/action-setup@v6.1.0
         with:
-          package_json_file: 'Windows checkout café #100%/package.json'
+          package_json_file: 'Windows checkout café/package.json'
       - uses: actions/setup-node@v7.1.0
         with:
           node-version: '24'
           cache: pnpm
-          cache-dependency-path: 'Windows checkout café #100%/pnpm-lock.yaml'
+          cache-dependency-path: 'Windows checkout café/pnpm-lock.yaml'
       - run: pnpm install --frozen-lockfile
       - name: Confirm the regression fails without the patch
         run: |
@@ -45,6 +45,7 @@ jobs:
             exit 1
           fi
           cat negative-control.log
+          node -e "const text = require('node:fs').readFileSync('negative-control.log', 'utf8'); if (!text.includes('ENOENT') || !text.includes('scandir')) throw new Error('Failure did not reproduce catalog directory loading');"
           echo 'Confirmed the unfixed loader fails; restoring PR 194'
       - run: pnpm check
       - name: Catalog and path regression checks
@@ -88,7 +89,7 @@ jobs:
         uses: actions/upload-artifact@v7.0.2
         with:
           name: windows-pr194-dev-log
-          path: 'Windows checkout café #100%/dev-review.log'
+          path: 'Windows checkout café/dev-review.log'
           if-no-files-found: ignore
   build:
     name: App Build + Unit Tests
