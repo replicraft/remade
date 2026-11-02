@@ -1,0 +1,14 @@
+slug: "rook"
+name: "Rook"
+authors: ["asyncfinn"]
+repository: "https://github.com/AsyncFinn/rook"
+originals: ["roblox"]
+category: "games"
+languages: ["Rust"]
+status: "experimental"
+compatibility: "partial"
+summary: "Run Roblox place files in an independent Rust engine with Luau scripting, physics and client/server play."
+description: "An independent implementation of the Roblox engine that reads and writes place/model files, runs Luau scripts and reproduces selected Instance APIs and services. Combines its own DataModel, scheduling and replication with open-source Luau, rbx-dom, Rapier and wgpu. Includes rendering, audio, terrain and inspection tools."
+license: "Apache-2.0"
+docs: "https://github.com/AsyncFinn/rook#readme"
+limitations: "Early development; file-loading and script-test results are maintainer-reported, not full game compatibility. GUI support remains in progress. Does not connect to Roblox servers or provide wire compatibility with the official client/server. Game places and assets must be supplied separately; some content resolution uses Roblox services."

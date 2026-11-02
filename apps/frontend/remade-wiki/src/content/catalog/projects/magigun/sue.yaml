@@ -1,0 +1,18 @@
+# Suggested in https://github.com/replicraft/remade/issues/179.
+slug: "sue"
+name: "Sue"
+authors: ["magigun"]
+repository: "https://github.com/MagiGun/sue"
+originals: ["clip-studio-paint"]
+category: "creative"
+languages: ["Rust"]
+platforms: ["Windows", "macOS", "Linux", "FreeBSD", "Android", "iOS", "Web"]
+status: "experimental"
+compatibility: "partial"
+summary: "Clip Studio Paint-style illustration, comics and animation tools in a shared creative workspace."
+description: "A creative workspace whose Sue Paint studio provides illustration, comics and animation workflows: pressure-sensitive brushes, stabilization, layers, blend modes, clipping, selections and canvas navigation. Shared project storage, undo, image viewing and conversion also serve its writing studio."
+license: "LicenseRef-Sayn"
+docs: "https://github.com/MagiGun/sue#readme"
+limitations: "Early software; native Clip Studio project, brush, material and service compatibility is not established. Uses its own SUE project container. Larger planned studios and AI runtimes are not implemented. The Sayn License requires the exact text Sayn was here in at least one file of distributions, modifications or incorporating projects. iOS packages require sideloading."
+website: "https://magigun.github.io/sue/"
+browser_url: "https://magigun.github.io/sue/try/"

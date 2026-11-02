@@ -1,0 +1,18 @@
+# Source-available project included at maintainer request; the noncommercial license is disclosed publicly.
+slug: "gamevault"
+name: "GameVault"
+authors: ["phalcode"]
+repository: "https://github.com/Phalcode/gamevault-backend"
+originals: ["steam"]
+category: "games"
+languages: ["TypeScript"]
+platforms: ["Windows", "Linux", "macOS", "Web"]
+status: "beta"
+compatibility: "partial"
+summary: "A source-available, self-hosted Steam-style library for DRM-free games, downloads and playtime tracking."
+description: "A source-available Steam-style platform for hosting an operator-supplied DRM-free game library. The server indexes games and metadata, manages accounts and distributes files to separate desktop and web clients, which provide installation, launching, library browsing and playtime/progress tracking."
+license: "CC-BY-NC-SA-4.0"
+docs: "https://github.com/Phalcode/gamevault-backend#readme"
+limitations: "Source-available under a noncommercial license, not open-source software. Does not replace Steam purchases, accounts, DRM or service APIs. Requires a server and separately supplied games; client implementations live in separate repositories. GameVault 2 clients are public beta, with GameVault+ features still missing."
+website: "https://gamevau.lt/"
+browser_url: "https://demo.gamevau.lt/"
