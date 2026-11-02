@@ -1,0 +1,1821 @@
+{
+	"review_date": "2026-11-02",
+	"checked_at_utc": "2026-11-02T10:38:02.542052+00:00",
+	"scope": "All 84 open issues, including comments, and all 4 open PRs, oldest first. Suggestion-source deep reviews remain explicitly pending; no new suggestion is approved by this triage.",
+	"question_follow_up": "None of #120, #131 or #135 has a submitter reply after the Oct 26 clarification requests. Keep waiting for author clarification; do not infer approval or closure.",
+	"issues": [
+		{
+			"number": 120,
+			"url": "https://github.com/replicraft/remade/issues/120",
+			"title": "[Catalog Suggestion] PeaceCraft III — Warcraft III: The Frozen Throne",
+			"created_at": "2026-10-25T08:37:14Z",
+			"updated_at": "2026-10-26T22:44:41Z",
+			"labels": ["question"],
+			"target": "Warcraft III: The Frozen Throne (classic 1.29b)",
+			"repository": "https://github.com/maci0/peacecraft3",
+			"disposition": "awaiting-author",
+			"review": "No reply since Oct 26. Needs clean-room process clarification: decompiler/disassembly analysis versus separately authored behavioral implementation. Do not accept without resolving provenance.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/120#issuecomment-6429097431",
+				"createdAt": "2026-10-26T22:44:29Z",
+				"body": "Very cool project, thanks for submitting this! I have one question however. Remade focuses on independently authored, clean-room reimplementations. You describe the project as independently developed, but a cursory review of the repository’s RE notes suggests that decompilation was performed and the original binaries were analyzed.\n\nCould you clarify how that analysis informed the implementation? Was any code directly translated from decompiler output, or was implementation carried out separately using chinese wall-style behavioral specifications, with an information barrier between analysis and implementation? I’d like to understand the development process before deciding on the listing.",
+				"author": "PixelSoftwareStudios"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 131,
+			"url": "https://github.com/replicraft/remade/issues/131",
+			"title": "[Запрос на проект] autocad",
+			"created_at": "2026-10-26T10:43:08Z",
+			"updated_at": "2026-10-26T22:57:41Z",
+			"labels": ["question", "project-request"],
+			"target": "autocad 3d",
+			"repository": "",
+			"disposition": "awaiting-author",
+			"review": "No reply since Oct 26. Needs exact AutoCAD 3D workflows/product; do not assume Fusion. Existing AutoCAD implementations do not establish the requested 3D coverage.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-autocad",
+					"request": null,
+					"projects": ["getcadcraft-cadcraft", "cadcraft"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/131#issuecomment-6429294328",
+				"createdAt": "2026-10-26T22:57:01Z",
+				"body": "Hi. If you mean Autodesk Fusion, take a look at [SolidCraft](https://solidcraft.io/), which targets that workflow. If you meant another one of AutoCAD’s 3D tools specifically, could you clarify which features you’re looking for?",
+				"author": "PixelSoftwareStudios"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 135,
+			"url": "https://github.com/replicraft/remade/issues/135",
+			"title": "[Project Request] Dolby atmos dsp",
+			"created_at": "2026-10-26T15:35:02Z",
+			"updated_at": "2026-10-26T23:05:50Z",
+			"labels": ["question", "project-request"],
+			"target": "Dolby atmos window",
+			"repository": "",
+			"disposition": "awaiting-author",
+			"review": "No reply since Oct 26. Needs exact Dolby product and desired DSP behavior before choosing a target.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/135#issuecomment-6429424214",
+				"createdAt": "2026-10-26T23:05:30Z",
+				"body": "Hi, could you clarify which Dolby Atmos software you’re requesting, like is it Dolby Access, Dolby Atmos Renderer, Dolby Atmos Music Panner, Dolby Atmos Binaural Settings Plug-in, or Dolby Atmos Conversion Tool?\n\nPlease include a product link and describe the processing or workflow you’d like reproduced",
+				"author": "PixelSoftwareStudios"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 145,
+			"url": "https://github.com/replicraft/remade/issues/145",
+			"title": "i have a numark nvii and im stuck paying 20$ a month to properly use the thing with serato dj pro. willing to help, but just got a little strix halo",
+			"created_at": "2026-10-27T03:01:08Z",
+			"updated_at": "2026-10-27T03:01:23Z",
+			"labels": ["project-request"],
+			"target": "serato dj pro",
+			"repository": "",
+			"disposition": "existing-request",
+			"review": "Serato DJ Pro request exists. Preserve the concrete Numark NVII jogwheel/display/controller requirements and offer the existing request link; no hardware compatibility is established.",
+			"existing_catalog_candidates": [
+				{
+					"original": "serato-dj-pro",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/serato/serato-dj-pro.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 146,
+			"url": "https://github.com/replicraft/remade/issues/146",
+			"title": "Picasso Suite",
+			"created_at": "2026-10-27T04:40:57Z",
+			"updated_at": "2026-10-27T04:41:16Z",
+			"labels": ["catalog-suggestion"],
+			"target": "DaVinci Resolve",
+			"repository": "https://github.com/fabox-os/Picasso-Suite",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "davinci-resolve",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/blackmagic-design/davinci-resolve.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 147,
+			"url": "https://github.com/replicraft/remade/issues/147",
+			"title": "MusicCraft",
+			"created_at": "2026-10-27T04:50:42Z",
+			"updated_at": "2026-10-27T04:50:57Z",
+			"labels": ["catalog-suggestion"],
+			"target": "FL Studio",
+			"repository": "https://github.com/bhimio1/musiccraft",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "fl-studio",
+					"request": null,
+					"projects": ["lemon-studio"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 149,
+			"url": "https://github.com/replicraft/remade/issues/149",
+			"title": "[Project Request] двайдверы",
+			"created_at": "2026-10-27T07:33:34Z",
+			"updated_at": "2026-10-27T07:33:48Z",
+			"labels": ["project-request"],
+			"target": "Двайдверы",
+			"repository": "",
+			"disposition": "clarify-target",
+			"review": "Generic driver request; identify hardware, platform, proprietary software/driver and missing observable behavior. These two issues overlap; no arbitrary new catalog target inferred.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 150,
+			"url": "https://github.com/replicraft/remade/issues/150",
+			"title": "[Project Request] Please develop a software like Moldflow or Cadmould, Mouldex3D, Sigmasoft for designer for injection plastic parts",
+			"created_at": "2026-10-27T07:33:56Z",
+			"updated_at": "2026-10-27T12:22:14Z",
+			"labels": ["project-request"],
+			"target": "Moldflow",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "Moldflow/injection-molding simulation request. Compare exact Moldflow scope and other named products; do not create four originals solely from a comparison list.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/150#issuecomment-6440890354",
+				"createdAt": "2026-10-27T11:35:06Z",
+				"body": "There are two Moldflow packages, the big one and Moldflow Adviser. A clone like Adviser would be fine.\nWhat can help to develop such a software:\nhttps://www.youtube.com/watch?v=iFOLU816mmo\nThat is created using OpenFoam, OpenSource software.\nhttps://github.com/krebeljk/openInjMoldSim\n",
+				"author": "freecad-heini-1"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 151,
+			"url": "https://github.com/replicraft/remade/issues/151",
+			"title": "[Project Request]",
+			"created_at": "2026-10-27T07:34:33Z",
+			"updated_at": "2026-10-27T07:34:48Z",
+			"labels": ["project-request"],
+			"target": "Драйверы",
+			"repository": "",
+			"disposition": "clarify-target",
+			"review": "Generic driver request; identify hardware, platform, proprietary software/driver and missing observable behavior. These two issues overlap; no arbitrary new catalog target inferred.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 152,
+			"url": "https://github.com/replicraft/remade/issues/152",
+			"title": "[Project Request]  Mount cloud storage as a disk in Macos Finder and Windows File Explorer",
+			"created_at": "2026-10-27T08:16:04Z",
+			"updated_at": "2026-10-27T08:16:19Z",
+			"labels": ["project-request"],
+			"target": "Mountain Duck",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "Mountain Duck workflow: mount cloud/object storage in Finder/File Explorer. Review specific protocols and existing request aliases before addition.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 153,
+			"url": "https://github.com/replicraft/remade/issues/153",
+			"title": "[Project Request]",
+			"created_at": "2026-10-27T14:02:09Z",
+			"updated_at": "2026-10-27T14:02:25Z",
+			"labels": ["project-request"],
+			"target": "yalla ludo",
+			"repository": "",
+			"disposition": "clarify-target",
+			"review": "Yalla Ludo named with insufficient workflow/compatibility detail; ask for a specific request.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 154,
+			"url": "https://github.com/replicraft/remade/issues/154",
+			"title": "[Project Request] Chief Architect Premier X18 — Full Architectural CAD/BIM Reimplementation with Native AI, MCP & Automation",
+			"created_at": "2026-10-27T15:09:35Z",
+			"updated_at": "2026-10-27T15:09:56Z",
+			"labels": ["project-request"],
+			"target": "Chief Architect Premier X18",
+			"repository": "",
+			"disposition": "existing-request",
+			"review": "Chief Architect request exists. Retain useful architectural/BIM workflow requirements when resolving the duplicate; proposed names and AI goals are not shipped capabilities.",
+			"existing_catalog_candidates": [
+				{
+					"original": "chief-architect",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/chief-architect/chief-architect.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 155,
+			"url": "https://github.com/replicraft/remade/issues/155",
+			"title": "Polycam — 3D Scanning, LiDAR, Photogrammetry, Gaussian Splatting & Native AI/MCP Integration",
+			"created_at": "2026-10-27T15:16:21Z",
+			"updated_at": "2026-10-27T15:16:38Z",
+			"labels": ["project-request"],
+			"target": "Polycam",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "Polycam scanning/LiDAR/photogrammetry/splatting request; clarify priority workflows rather than promising every product feature.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 156,
+			"url": "https://github.com/replicraft/remade/issues/156",
+			"title": "Bluebeam Revu — Construction PDF, Quantity Takeoffs, Estimating & Native AI/MCP Automation",
+			"created_at": "2026-10-27T15:20:38Z",
+			"updated_at": "2026-10-27T15:20:57Z",
+			"labels": ["project-request"],
+			"target": "Bluebeam Revu",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "Bluebeam Revu already has indexed projects. Reply with current software page and explain incomplete compatibility; do not add a coexisting request.",
+			"existing_catalog_candidates": [
+				{
+					"original": "bluebeam-revu",
+					"request": null,
+					"projects": ["getcadcraft-markupcraft", "takeoffcraft", "openrevu"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 157,
+			"url": "https://github.com/replicraft/remade/issues/157",
+			"title": "Саби",
+			"created_at": "2026-10-27T18:30:03Z",
+			"updated_at": "2026-10-27T18:30:23Z",
+			"labels": ["project-request"],
+			"target": "Saby",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "Saby/SBIS business platform; confirm specific modules, deployment and interchange requirements.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 159,
+			"url": "https://github.com/replicraft/remade/issues/159",
+			"title": "[Project Request]",
+			"created_at": "2026-10-27T20:03:06Z",
+			"updated_at": "2026-10-27T20:03:23Z",
+			"labels": ["project-request"],
+			"target": "Ableton",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "Likely Ableton Live music recording request; Suhina already indexed. Link current Ableton page and acknowledge pre-alpha limitations.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 160,
+			"url": "https://github.com/replicraft/remade/issues/160",
+			"title": "[Project Request]",
+			"created_at": "2026-10-27T21:24:46Z",
+			"updated_at": "2026-10-27T21:25:07Z",
+			"labels": ["project-request"],
+			"target": "Lemon Studio",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 164,
+			"url": "https://github.com/replicraft/remade/issues/164",
+			"title": "BYPRO",
+			"created_at": "2026-10-28T03:37:48Z",
+			"updated_at": "2026-10-28T03:38:06Z",
+			"labels": ["project-request"],
+			"target": "ISLAU BY-PRO",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 165,
+			"url": "https://github.com/replicraft/remade/issues/165",
+			"title": "PlanetsFoundation",
+			"created_at": "2026-10-28T06:20:52Z",
+			"updated_at": "2026-10-28T06:21:11Z",
+			"labels": ["project-request"],
+			"target": "VGA Planets",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "VGA Planets client request. Verify exact game/client/version and boundaries versus existing implementations.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 166,
+			"url": "https://github.com/replicraft/remade/issues/166",
+			"title": "ArtificialMule",
+			"created_at": "2026-10-28T06:30:11Z",
+			"updated_at": "2026-10-28T06:34:44Z",
+			"labels": ["project-request"],
+			"target": "M.U.L.E.",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "M.U.L.E. request. Confirm exact original/version and user-provided asset requirements.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 167,
+			"url": "https://github.com/replicraft/remade/issues/167",
+			"title": "Wilcom e4.5 [Project Request]",
+			"created_at": "2026-10-28T12:56:11Z",
+			"updated_at": "2026-10-28T12:56:29Z",
+			"labels": ["project-request"],
+			"target": "Wilcom e4.5",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "Wilcom EmbroideryStudio already has StitchFoundry and Roidery. Link implementations, noting native Wilcom files and production qualification remain incomplete.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 168,
+			"url": "https://github.com/replicraft/remade/issues/168",
+			"title": "Internet Download Manager (IDM) and torrent clients",
+			"created_at": "2026-10-28T15:47:15Z",
+			"updated_at": "2026-10-28T15:47:36Z",
+			"labels": ["project-request"],
+			"target": "Internet Download Manager (IDM), BitTorrent clients (e.g. uTorrent, qBittorrent)",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "IDM already has indexed implementations. Torrent-client functionality is separate; another version of an existing FOSS torrent client is outside request policy.",
+			"existing_catalog_candidates": [
+				{
+					"original": "internet-download-manager",
+					"request": null,
+					"projects": ["motrix", "downloadcraft", "easy-download-manager"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 169,
+			"url": "https://github.com/replicraft/remade/issues/169",
+			"title": "[Project Request] Apollo ai",
+			"created_at": "2026-10-28T16:27:35Z",
+			"updated_at": "2026-10-28T16:27:54Z",
+			"labels": ["project-request"],
+			"target": "Apollo ai",
+			"repository": "",
+			"disposition": "clarify-target",
+			"review": "Apollo AI is ambiguous. Confirm vendor/product (for example Apollo.io) and requested observable workflows before cataloging.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 170,
+			"url": "https://github.com/replicraft/remade/issues/170",
+			"title": "Turning path of vehicles in civil 3d",
+			"created_at": "2026-10-28T17:40:43Z",
+			"updated_at": "2026-10-28T17:41:02Z",
+			"labels": ["project-request"],
+			"target": "Autodesk Vehicle Tracking",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "Autodesk Vehicle Tracking may be a distinct Civil 3D add-on. Keep swept-path/turning analysis requirements; confirm exact target rather than assuming all Civil 3D.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 171,
+			"url": "https://github.com/replicraft/remade/issues/171",
+			"title": "[Project Request] Autodesk Maya with full parity (scripting and plug ins APIs)",
+			"created_at": "2026-10-28T18:28:27Z",
+			"updated_at": "2026-10-28T18:31:25Z",
+			"labels": ["project-request"],
+			"target": "Autodesk Maya",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "Maya has AztecCraft; requested scripting/plugin parity is not established. Explain prototype scope and point to upstream feature requests; do not claim C++ makes compatibility impossible.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-maya",
+					"request": null,
+					"projects": ["azteccraft"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/171#issuecomment-6477309306",
+				"createdAt": "2026-10-28T18:31:25Z",
+				"body": "\n>     * ⚠️ An implementation of this original is already indexed. A Project Request may be unnecessary.\n> \n>     * ✅ Original software matches catalog entry `autodesk-maya`.\n\nNo issue, I'm asking for a project that would do a proper implementation instead of what the already indexed one is doing.",
+				"author": "DonnieAlex"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 172,
+			"url": "https://github.com/replicraft/remade/issues/172",
+			"title": "[Project Request] SimpleScreenRecorder for Wayland",
+			"created_at": "2026-10-28T22:37:00Z",
+			"updated_at": "2026-10-28T22:37:16Z",
+			"labels": ["project-request"],
+			"target": "SimpleScreenRecorder",
+			"repository": "",
+			"disposition": "outside-policy",
+			"review": "Requests for updated/platform variants of SimpleScreenRecorder or BlueGriffon, already open-source implementations. Do not publish under current policy.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 173,
+			"url": "https://github.com/replicraft/remade/issues/173",
+			"title": "[Project Request] Bluegriffon in a modern version",
+			"created_at": "2026-10-28T23:00:06Z",
+			"updated_at": "2026-10-28T23:01:40Z",
+			"labels": ["project-request"],
+			"target": "Bluegriffon Editor",
+			"repository": "",
+			"disposition": "outside-policy",
+			"review": "Requests for updated/platform variants of SimpleScreenRecorder or BlueGriffon, already open-source implementations. Do not publish under current policy.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 174,
+			"url": "https://github.com/replicraft/remade/issues/174",
+			"title": "activechroma",
+			"created_at": "2026-10-28T23:31:29Z",
+			"updated_at": "2026-10-28T23:31:43Z",
+			"labels": ["project-request"],
+			"target": "razer chroma",
+			"repository": "",
+			"disposition": "clarify-target",
+			"review": "Razer Chroma RGB effects/integration request; distinguish Chroma SDK/studio behavior from Synapse and existing open RGB tools.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 175,
+			"url": "https://github.com/replicraft/remade/issues/175",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T00:06:27Z",
+			"updated_at": "2026-10-29T00:06:44Z",
+			"labels": ["project-request"],
+			"target": "nose",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 177,
+			"url": "https://github.com/replicraft/remade/issues/177",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T00:56:00Z",
+			"updated_at": "2026-10-29T00:56:16Z",
+			"labels": ["project-request"],
+			"target": "Ericson",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 178,
+			"url": "https://github.com/replicraft/remade/issues/178",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T05:40:53Z",
+			"updated_at": "2026-10-29T05:41:12Z",
+			"labels": ["project-request"],
+			"target": "kk",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 179,
+			"url": "https://github.com/replicraft/remade/issues/179",
+			"title": "[Catalog Suggestion] Sue (Sue Paint)",
+			"created_at": "2026-10-29T07:19:41Z",
+			"updated_at": "2026-10-29T07:20:02Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Clip Studio Paint v5 EX",
+			"repository": "https://github.com/MagiGun/sue",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "clip-studio-paint",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/celsys/clip-studio-paint.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 180,
+			"url": "https://github.com/replicraft/remade/issues/180",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T07:39:55Z",
+			"updated_at": "2026-10-29T07:40:13Z",
+			"labels": ["project-request"],
+			"target": "Lemon Studio",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 182,
+			"url": "https://github.com/replicraft/remade/issues/182",
+			"title": "Threechill",
+			"created_at": "2026-10-29T10:52:21Z",
+			"updated_at": "2026-10-29T10:52:42Z",
+			"labels": ["project-request"],
+			"target": "Windchill",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "PTC Windchill PLM request. Confirm exact product scope and data/workflow compatibility.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 183,
+			"url": "https://github.com/replicraft/remade/issues/183",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T13:51:51Z",
+			"updated_at": "2026-10-29T13:52:09Z",
+			"labels": ["project-request"],
+			"target": "hjhjhjjjhjjjjjjjjjjj",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 184,
+			"url": "https://github.com/replicraft/remade/issues/184",
+			"title": "[Project Request] Adobe Dreamweaver",
+			"created_at": "2026-10-29T14:58:37Z",
+			"updated_at": "2026-10-29T14:58:54Z",
+			"labels": ["project-request"],
+			"target": "Adobe Dreamweaver",
+			"repository": "",
+			"disposition": "existing-request",
+			"review": "Dreamweaver request already exists. Preserve useful native/WYSIWYG authoring requirements before closing duplicate.",
+			"existing_catalog_candidates": [
+				{
+					"original": "adobe-dreamweaver",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/adobe/adobe-dreamweaver.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 185,
+			"url": "https://github.com/replicraft/remade/issues/185",
+			"title": "proyecto",
+			"created_at": "2026-10-29T16:31:59Z",
+			"updated_at": "2026-10-29T16:32:16Z",
+			"labels": ["project-request"],
+			"target": "house",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 186,
+			"url": "https://github.com/replicraft/remade/issues/186",
+			"title": "nose[Project Request]",
+			"created_at": "2026-10-29T18:02:47Z",
+			"updated_at": "2026-10-29T18:03:04Z",
+			"labels": ["project-request"],
+			"target": "nose",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 187,
+			"url": "https://github.com/replicraft/remade/issues/187",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T20:07:21Z",
+			"updated_at": "2026-10-29T20:07:39Z",
+			"labels": ["project-request"],
+			"target": "Makaroff",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 188,
+			"url": "https://github.com/replicraft/remade/issues/188",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T21:51:17Z",
+			"updated_at": "2026-10-29T21:51:32Z",
+			"labels": ["project-request"],
+			"target": "Dixiciete",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 189,
+			"url": "https://github.com/replicraft/remade/issues/189",
+			"title": "[Project Request]",
+			"created_at": "2026-10-29T22:47:24Z",
+			"updated_at": "2026-10-29T22:47:38Z",
+			"labels": ["project-request"],
+			"target": "Mmmk",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 190,
+			"url": "https://github.com/replicraft/remade/issues/190",
+			"title": "g",
+			"created_at": "2026-10-30T05:03:34Z",
+			"updated_at": "2026-10-30T05:03:34Z",
+			"labels": [],
+			"target": "",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 191,
+			"url": "https://github.com/replicraft/remade/issues/191",
+			"title": "[Project Request]",
+			"created_at": "2026-10-30T05:50:16Z",
+			"updated_at": "2026-10-30T05:50:30Z",
+			"labels": ["project-request"],
+			"target": "Dreamweaver",
+			"repository": "",
+			"disposition": "existing-request",
+			"review": "Dreamweaver request already exists. Preserve useful native/WYSIWYG authoring requirements before closing duplicate.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 192,
+			"url": "https://github.com/replicraft/remade/issues/192",
+			"title": "[Project Request]",
+			"created_at": "2026-10-30T07:17:05Z",
+			"updated_at": "2026-10-30T07:17:26Z",
+			"labels": ["project-request"],
+			"target": "Fran",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/192#issuecomment-6517207745",
+				"createdAt": "2026-10-30T07:17:26Z",
+				"body": "Km\n\nJjjk",
+				"author": "ff304576-tech"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 193,
+			"url": "https://github.com/replicraft/remade/issues/193",
+			"title": "[Project Request]",
+			"created_at": "2026-10-30T07:19:13Z",
+			"updated_at": "2026-10-30T07:19:29Z",
+			"labels": ["project-request"],
+			"target": "FL STUDIO",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [
+				{
+					"original": "fl-studio",
+					"request": null,
+					"projects": ["lemon-studio"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 195,
+			"url": "https://github.com/replicraft/remade/issues/195",
+			"title": "CloudCraft",
+			"created_at": "2026-10-30T10:56:24Z",
+			"updated_at": "2026-10-30T10:56:42Z",
+			"labels": ["project-request"],
+			"target": "Synology Drive, Google Drive, Dropbox, NextCloud",
+			"repository": "",
+			"disposition": "clarify-target",
+			"review": "Mixed Synology Drive/Google Drive/Dropbox/Nextcloud request. Dropbox has SyncBox; Nextcloud is already FOSS. Clarify the proprietary client/workflow actually requested.",
+			"existing_catalog_candidates": [
+				{
+					"original": "dropbox",
+					"request": null,
+					"projects": ["syncbox"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 196,
+			"url": "https://github.com/replicraft/remade/issues/196",
+			"title": "[Project Request]",
+			"created_at": "2026-10-30T14:11:05Z",
+			"updated_at": "2026-10-30T14:11:25Z",
+			"labels": ["project-request"],
+			"target": "Protools",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "Pro Tools already has SoundCraft; describe its current pre-alpha limits rather than adding a request.",
+			"existing_catalog_candidates": [
+				{
+					"original": "avid-pro-tools",
+					"request": null,
+					"projects": ["soundcraft"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 197,
+			"url": "https://github.com/replicraft/remade/issues/197",
+			"title": "[Project Request]",
+			"created_at": "2026-10-30T14:29:59Z",
+			"updated_at": "2026-10-30T14:30:16Z",
+			"labels": ["project-request"],
+			"target": "fl studio",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [
+				{
+					"original": "fl-studio",
+					"request": null,
+					"projects": ["lemon-studio"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 198,
+			"url": "https://github.com/replicraft/remade/issues/198",
+			"title": "[Project Request]",
+			"created_at": "2026-10-30T14:55:00Z",
+			"updated_at": "2026-10-30T14:56:23Z",
+			"labels": ["project-request"],
+			"target": "FL studio",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [
+				{
+					"original": "fl-studio",
+					"request": null,
+					"projects": ["lemon-studio"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/198#issuecomment-6525796562",
+				"createdAt": "2026-10-30T14:56:23Z",
+				"body": "Thank you for considering this request! FL Studio has an incredible community of producers, and having an open-source reimplementation would open up amazing possibilities for cross-platform music production and workflow compatibility. Let me know if you need any more details or references!\"",
+				"author": "Danfait367"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 199,
+			"url": "https://github.com/replicraft/remade/issues/199",
+			"title": "[Project Request]",
+			"created_at": "2026-10-30T15:22:37Z",
+			"updated_at": "2026-10-30T15:22:55Z",
+			"labels": ["project-request"],
+			"target": "https://remade.wiki/projects/woodsketch/",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "WoodSketch already indexed; point to its actual listing.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 201,
+			"url": "https://github.com/replicraft/remade/issues/201",
+			"title": "test",
+			"created_at": "2026-10-30T16:42:09Z",
+			"updated_at": "2026-10-30T16:43:06Z",
+			"labels": ["project-request"],
+			"target": "lemon",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/201#issuecomment-6528153120",
+				"createdAt": "2026-10-30T16:43:06Z",
+				"body": "testing",
+				"author": "prabhatkami211-dotcom"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 202,
+			"url": "https://github.com/replicraft/remade/issues/202",
+			"title": "[Catalog Suggestion] Mole (tw93/Mole)",
+			"created_at": "2026-10-30T20:19:14Z",
+			"updated_at": "2026-10-30T20:19:35Z",
+			"labels": ["catalog-suggestion"],
+			"target": "CleanMyMac (MacPaw)",
+			"repository": "https://github.com/tw93/Mole",
+			"disposition": "maintainer-scope-decision",
+			"review": "Mole is primarily macOS terminal cleanup/maintenance rather than full CleanMyMac behavior. Needs broader-alternative approval after source/license review.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 203,
+			"url": "https://github.com/replicraft/remade/issues/203",
+			"title": "[Project Request] Open-source reimplementation of FL Studio",
+			"created_at": "2026-10-30T20:43:52Z",
+			"updated_at": "2026-10-30T20:44:11Z",
+			"labels": ["project-request"],
+			"target": "FL Studio (Image-Line)",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [
+				{
+					"original": "fl-studio",
+					"request": null,
+					"projects": ["lemon-studio"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 204,
+			"url": "https://github.com/replicraft/remade/issues/204",
+			"title": "LEMON STUDIO",
+			"created_at": "2026-10-31T02:52:27Z",
+			"updated_at": "2026-10-31T02:52:45Z",
+			"labels": ["project-request"],
+			"target": "LEMON STUDIO",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "FL Studio/Lemon Studio overlap. Link FL Studio implementations; Lemon Studio itself is FOSS. Retain useful FLP, pattern/piano-roll and plugin requirements from detailed duplicates; no new coexisting request.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 205,
+			"url": "https://github.com/replicraft/remade/issues/205",
+			"title": "Miosss",
+			"created_at": "2026-10-31T10:51:32Z",
+			"updated_at": "2026-10-31T10:51:48Z",
+			"labels": ["project-request"],
+			"target": "Okeykakak",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/205#issuecomment-6542445306",
+				"createdAt": "2026-10-31T10:51:45Z",
+				"body": "Okeyy ",
+				"author": "redrigopelon-netizen"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 206,
+			"url": "https://github.com/replicraft/remade/issues/206",
+			"title": "[Project Request]",
+			"created_at": "2026-10-31T10:54:21Z",
+			"updated_at": "2026-10-31T10:54:34Z",
+			"labels": ["project-request"],
+			"target": "Software",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 207,
+			"url": "https://github.com/replicraft/remade/issues/207",
+			"title": "Project Request: Adobe Animate (Open-Source Reimplementation)",
+			"created_at": "2026-10-31T12:10:14Z",
+			"updated_at": "2026-10-31T12:14:32Z",
+			"labels": ["project-request"],
+			"target": "Adobe Animate",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "Submitter explicitly wants faithful Animate behavior and names Flare. Flare, Minnamate, AniCraft and Next2D are already indexed; reply acknowledging incomplete UI/FLA/SWF fidelity, not claiming the request is fully solved.",
+			"existing_catalog_candidates": [
+				{
+					"original": "adobe-animate",
+					"request": null,
+					"projects": [
+						"flare-animate",
+						"minnamate",
+						"next2d-animation-tool",
+						"anicraft"
+					]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": {
+				"url": "https://github.com/replicraft/remade/issues/207#issuecomment-6543211031",
+				"createdAt": "2026-10-31T12:13:00Z",
+				"body": "Thanks for the automated review! While `adobe-animate` is indexed, the current open-source implementations don't fully match the real Adobe Animate workflow yet. \n\nI'm requesting tracking for a faithful alternative (like Flare) that replicates Adobe Animate's native UI, timeline, vector tweening, and direct .FLA / .SWF compatibility.",
+				"author": "rifatofficial020-sudo"
+			},
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 208,
+			"url": "https://github.com/replicraft/remade/issues/208",
+			"title": "A Version of Logitech Capture Camera Software for Linux",
+			"created_at": "2026-10-31T14:12:07Z",
+			"updated_at": "2026-10-31T14:12:25Z",
+			"labels": ["project-request"],
+			"target": "Logitech Capture",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "Logitech Capture is a camera/desktop recording application, distinct from Options+/OpenLogi device settings. Clarify capture/compositing requirements and Linux target.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 209,
+			"url": "https://github.com/replicraft/remade/issues/209",
+			"title": "AI Karaoke Video Creator for Linux (Powerkaraoke)",
+			"created_at": "2026-10-31T14:23:35Z",
+			"updated_at": "2026-10-31T14:23:50Z",
+			"labels": ["project-request"],
+			"target": "AI Karaoke Video Creator for Windows",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "PowerKaraoke AI Karaoke Video Creator for Linux; not a request to replace Windows. Check exact official product and desired workflow.",
+			"existing_catalog_candidates": [
+				{
+					"original": "microsoft-windows",
+					"request": null,
+					"projects": ["libernt", "reactos"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 210,
+			"url": "https://github.com/replicraft/remade/issues/210",
+			"title": "[Project Request] PrnCraft and CraftFans",
+			"created_at": "2026-10-31T15:53:11Z",
+			"updated_at": "2026-10-31T15:53:29Z",
+			"labels": ["project-request"],
+			"target": "pornhub and onlyfans",
+			"repository": "",
+			"disposition": "clarify-target",
+			"review": "Pornhub/OnlyFans broad service replacement is underspecified for compatibility scope. Ask for a specific proprietary software/client workflow; do not assume a qualifying implementation request.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 211,
+			"url": "https://github.com/replicraft/remade/issues/211",
+			"title": "[Update] WordCraft for Android – 0.13.2 touch fork with working APK releases",
+			"created_at": "2026-10-31T15:54:34Z",
+			"updated_at": "2026-10-31T15:54:53Z",
+			"labels": ["catalog-suggestion"],
+			"target": "WordCraft",
+			"repository": "https://github.com/FilmsickMystery/wordcraft-android-touch",
+			"disposition": "fork-or-tool-review",
+			"review": "WordCraft Android touch fork. Review Android-specific distribution/tool classification and duplication with indexed WordCraft Android before a separate listing.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 213,
+			"url": "https://github.com/replicraft/remade/issues/213",
+			"title": "[Catalog Suggestion] layerling",
+			"created_at": "2026-10-31T16:59:17Z",
+			"updated_at": "2026-11-02T01:05:32Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Tinkercad (3D-Design Module)",
+			"repository": "https://github.com/henmedia/layerling",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 214,
+			"url": "https://github.com/replicraft/remade/issues/214",
+			"title": "[Catalog Suggestion] SketchForge",
+			"created_at": "2026-10-31T17:07:12Z",
+			"updated_at": "2026-11-02T01:06:10Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Tinkercad (3D-Design Module)",
+			"repository": "https://github.com/Formsmith746/SketchForge-3D",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 215,
+			"url": "https://github.com/replicraft/remade/issues/215",
+			"title": "[Catalog Suggestion] SketchForge PCB",
+			"created_at": "2026-10-31T17:18:22Z",
+			"updated_at": "2026-11-02T01:06:29Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Tinkercad (Circuits Module)",
+			"repository": "https://github.com/Formsmith746/SketchForge-PCB",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 216,
+			"url": "https://github.com/replicraft/remade/issues/216",
+			"title": "[Catalog Suggestion] materializr",
+			"created_at": "2026-10-31T18:49:51Z",
+			"updated_at": "2026-11-01T18:52:07Z",
+			"labels": ["catalog-suggestion"],
+			"target": "shapr3D",
+			"repository": "https://github.com/materializr-cad/materializr",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "shapr3d",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/shapr3d/shapr3d.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 217,
+			"url": "https://github.com/replicraft/remade/issues/217",
+			"title": "AutoPitchCraft",
+			"created_at": "2026-11-01T04:28:13Z",
+			"updated_at": "2026-11-01T04:28:32Z",
+			"labels": ["project-request"],
+			"target": "Autotune by Antares",
+			"repository": "",
+			"disposition": "existing-request",
+			"review": "Antares Auto-Tune request already exists; retain useful pitch-correction workflow detail.",
+			"existing_catalog_candidates": [
+				{
+					"original": "antares-auto-tune",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/antares/antares-auto-tune.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 218,
+			"url": "https://github.com/replicraft/remade/issues/218",
+			"title": "Kickcraft",
+			"created_at": "2026-11-01T04:51:36Z",
+			"updated_at": "2026-11-01T04:51:58Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Kickstart by Nicky Romero",
+			"repository": "https://github.com/Zoniumgames/Kickcraft",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 219,
+			"url": "https://github.com/replicraft/remade/issues/219",
+			"title": "[Project Request]",
+			"created_at": "2026-11-01T11:48:05Z",
+			"updated_at": "2026-11-01T11:48:25Z",
+			"labels": ["project-request"],
+			"target": "SculptForge",
+			"repository": "",
+			"disposition": "duplicate-submission",
+			"review": "SculptForge announcement entered as a request; same repository is submitted correctly in #232. Review #232 once and resolve the duplicate without adding a request for SculptForge itself.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 220,
+			"url": "https://github.com/replicraft/remade/issues/220",
+			"title": "Bathysphere",
+			"created_at": "2026-11-01T12:33:45Z",
+			"updated_at": "2026-11-01T12:34:02Z",
+			"labels": ["project-request"],
+			"target": "Emagic Sounddiver",
+			"repository": "",
+			"disposition": "candidate-request",
+			"review": "Emagic SoundDiver editor/librarian request, including SysEx support. Not Materialise Magics; substring duplicate matching was misleading.",
+			"existing_catalog_candidates": [
+				{
+					"original": "materialise-magics",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/materialise/materialise-magics.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 221,
+			"url": "https://github.com/replicraft/remade/issues/221",
+			"title": "Remade software catalogs",
+			"created_at": "2026-11-01T14:41:14Z",
+			"updated_at": "2026-11-01T14:41:14Z",
+			"labels": [],
+			"target": "",
+			"repository": "",
+			"disposition": "discovery-resource",
+			"review": "Software catalog/directory links, not individual independently authored implementations. Discovery leads only; review candidates separately instead of indexing the directory as a project.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 222,
+			"url": "https://github.com/replicraft/remade/issues/222",
+			"title": "Edi",
+			"created_at": "2026-11-01T16:22:02Z",
+			"updated_at": "2026-11-01T16:22:23Z",
+			"labels": ["project-request"],
+			"target": "Bb",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 223,
+			"url": "https://github.com/replicraft/remade/issues/223",
+			"title": "[Catalog Suggestion] MusaCAD",
+			"created_at": "2026-11-01T18:32:16Z",
+			"updated_at": "2026-11-01T18:54:14Z",
+			"labels": ["catalog-suggestion"],
+			"target": "AutoCAD",
+			"repository": "https://github.com/MusaCAD/MusaCAD",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-autocad",
+					"request": null,
+					"projects": ["getcadcraft-cadcraft", "cadcraft"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 224,
+			"url": "https://github.com/replicraft/remade/issues/224",
+			"title": "[Catalog Suggestion] Open CAD Studio",
+			"created_at": "2026-11-01T18:44:47Z",
+			"updated_at": "2026-11-01T18:45:05Z",
+			"labels": ["catalog-suggestion"],
+			"target": "AutoCAD",
+			"repository": "https://github.com/HakanSeven12/OpenCADStudio",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-autocad",
+					"request": null,
+					"projects": ["getcadcraft-cadcraft", "cadcraft"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 225,
+			"url": "https://github.com/replicraft/remade/issues/225",
+			"title": "[Catalog Suggestion] QymCAD",
+			"created_at": "2026-11-01T19:28:12Z",
+			"updated_at": "2026-11-01T19:28:28Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Fusion 360",
+			"repository": "https://github.com/QymIs-Tech/QymCAD",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-fusion",
+					"request": null,
+					"projects": ["mitcad", "solidcraft", "extrudo"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 226,
+			"url": "https://github.com/replicraft/remade/issues/226",
+			"title": "[Catalog Suggestion] ConstructCAD",
+			"created_at": "2026-11-01T20:19:48Z",
+			"updated_at": "2026-11-01T23:25:22Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Revit",
+			"repository": "https://github.com/francisreboucas/constructcad",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-revit",
+					"request": null,
+					"projects": ["bimcraft", "ipedrax-bimcraft", "reviera"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 227,
+			"url": "https://github.com/replicraft/remade/issues/227",
+			"title": "[Project Request]",
+			"created_at": "2026-11-01T20:30:23Z",
+			"updated_at": "2026-11-01T20:30:41Z",
+			"labels": ["project-request"],
+			"target": "Hola",
+			"repository": "",
+			"disposition": "insufficient-information",
+			"review": "No actionable software target or compatibility requirement in current issue/comments. Candidate for concise clarification or closure by maintainer; no catalog change.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 228,
+			"url": "https://github.com/replicraft/remade/issues/228",
+			"title": "[Catalog Suggestion] ravynOS - macOS compatible OS",
+			"created_at": "2026-11-01T20:50:08Z",
+			"updated_at": "2026-11-01T20:50:25Z",
+			"labels": ["catalog-suggestion"],
+			"target": "macOS",
+			"repository": "https://github.com/ravynsoft",
+			"disposition": "source-review",
+			"review": "Supplied GitHub URL is the ravynsoft organization. Identify actual ravynOS source and assess FreeBSD/Darwin foundation and application compatibility before deciding.",
+			"existing_catalog_candidates": [
+				{
+					"original": "macos",
+					"request": null,
+					"projects": ["vibedarling"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 229,
+			"url": "https://github.com/replicraft/remade/issues/229",
+			"title": "[Catalog Suggestion] Sawhorse",
+			"created_at": "2026-11-01T21:07:29Z",
+			"updated_at": "2026-11-01T21:07:47Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Sketchup",
+			"repository": "https://github.com/sawhorse3d/sawhorse",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "sketchup",
+					"request": null,
+					"projects": ["woodsketch", "modelcraft", "hew", "ingetrazo"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 230,
+			"url": "https://github.com/replicraft/remade/issues/230",
+			"title": "[Catalog Suggestion] CreaBIM",
+			"created_at": "2026-11-01T22:17:11Z",
+			"updated_at": "2026-11-01T22:17:27Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Revit",
+			"repository": "https://github.com/kingbenoitbrice-fun/CreaBIM",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-revit",
+					"request": null,
+					"projects": ["bimcraft", "ipedrax-bimcraft", "reviera"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 231,
+			"url": "https://github.com/replicraft/remade/issues/231",
+			"title": "[Catalog Suggestion] Lapin",
+			"created_at": "2026-11-01T22:54:46Z",
+			"updated_at": "2026-11-01T23:09:03Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Revit",
+			"repository": "https://github.com/Ciuntuc-BIM-Studio/lapin",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "autodesk-revit",
+					"request": null,
+					"projects": ["bimcraft", "ipedrax-bimcraft", "reviera"]
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 232,
+			"url": "https://github.com/replicraft/remade/issues/232",
+			"title": "[Catalog Suggestion] Zbrush",
+			"created_at": "2026-11-02T00:56:23Z",
+			"updated_at": "2026-11-02T00:56:41Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Zbrush",
+			"repository": "https://github.com/islandmed/SculptForge",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [
+				{
+					"original": "zbrush",
+					"request": "apps/frontend/remade-wiki/src/content/catalog/requests/maxon/zbrush.yaml",
+					"projects": []
+				}
+			],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 233,
+			"url": "https://github.com/replicraft/remade/issues/233",
+			"title": "[Catalog Suggestion] JumpStart 3D",
+			"created_at": "2026-11-02T01:04:01Z",
+			"updated_at": "2026-11-02T02:00:04Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Autodesk Tinkercad (3D-Design Module)",
+			"repository": "https://github.com/classyapps2026/jumpstart3d",
+			"disposition": "source-review",
+			"review": "Existing-project suggestion awaiting source, license, meaningful-implementation and compatibility review; not accepted or added by this backlog pass.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 234,
+			"url": "https://github.com/replicraft/remade/issues/234",
+			"title": "[Catalog Suggestion] Various Projects",
+			"created_at": "2026-11-02T03:07:06Z",
+			"updated_at": "2026-11-02T03:07:25Z",
+			"labels": ["catalog-suggestion"],
+			"target": "Adobe Microsoft Autodesk",
+			"repository": "https://clonesof.com/",
+			"disposition": "discovery-resource",
+			"review": "Software catalog/directory links, not individual independently authored implementations. Discovery leads only; review candidates separately instead of indexing the directory as a project.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		},
+		{
+			"number": 235,
+			"url": "https://github.com/replicraft/remade/issues/235",
+			"title": "CAD for goldsmiths",
+			"created_at": "2026-11-02T08:06:42Z",
+			"updated_at": "2026-11-02T08:06:59Z",
+			"labels": ["project-request"],
+			"target": "Rhino Ceros",
+			"repository": "",
+			"disposition": "existing-projects",
+			"review": "Rhino/goldsmith workflow request. Rhinoceros already has indexed projects; preserve jewelry-specific requirements and avoid implying Rhino plugin compatibility.",
+			"existing_catalog_candidates": [],
+			"repository_duplicates": [],
+			"last_human_comment": null,
+			"action_taken": "None; no comments or closures sent."
+		}
+	],
+	"pull_requests": [
+		{
+			"number": 54,
+			"url": "https://github.com/replicraft/remade/pull/54",
+			"title": "feat(launcher): add gated website integration and eligibility feed",
+			"draft": true,
+			"created_at": "2026-10-15T14:17:50Z",
+			"updated_at": "2026-10-17T00:02:28Z",
+			"disposition": "keep-draft",
+			"review": "Launcher integration remains draft and needs a separate update/rebase against current main. Existing old checks do not establish compatibility with current main.",
+			"checks_at_review": [
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-17T00:02:39Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/38984424553/job/117252452091",
+					"name": "App Build + Unit Tests",
+					"startedAt": "2026-10-17T00:01:50Z",
+					"status": "COMPLETED",
+					"workflowName": "App Build + Unit Tests"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-17T00:01:58Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/38984424569/job/117252452032",
+					"name": "Auth Worker Validation",
+					"startedAt": "2026-10-17T00:01:51Z",
+					"status": "COMPLETED",
+					"workflowName": "Auth Worker Validation"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-17T00:02:08Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/38984424605/job/117252452604",
+					"name": "Catalog integrity",
+					"startedAt": "2026-10-17T00:01:51Z",
+					"status": "COMPLETED",
+					"workflowName": "Catalog and PR policy checks"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-17T00:02:00Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/38984424541/job/117252451966",
+					"name": "Dead Link Checker",
+					"startedAt": "2026-10-17T00:01:50Z",
+					"status": "COMPLETED",
+					"workflowName": "Dead Link Checker"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-17T00:02:27Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://dash.cloudflare.com/?to=/b8918eb4d80bddff5bf89a3d6356e56d/pages/view/remade/ee628ec0-bdb3-48b6-81e7-c0218e09a9a6",
+					"name": "Cloudflare Pages",
+					"startedAt": "2026-10-17T00:02:27Z",
+					"status": "COMPLETED",
+					"workflowName": ""
+				}
+			],
+			"action_taken": "Read-only review; no reviews, comments or merge sent."
+		},
+		{
+			"number": 194,
+			"url": "https://github.com/replicraft/remade/pull/194",
+			"title": "fix(catalog): resolve catalog directories with fileURLToPath",
+			"draft": false,
+			"created_at": "2026-10-30T08:57:03Z",
+			"updated_at": "2026-10-30T08:57:05Z",
+			"disposition": "ready-for-maintainer-merge",
+			"review": "fileURLToPath fixes Windows drive-letter and encoded-path handling; splitting relative paths on node:path sep is correct. Diff covers catalog records, request vendors and screenshot assets. Current checks green; no code correction identified in review.",
+			"checks_at_review": [
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T08:58:15Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41029896383/job/123976838175",
+					"name": "App Build + Unit Tests",
+					"startedAt": "2026-10-30T08:57:09Z",
+					"status": "COMPLETED",
+					"workflowName": "App Build + Unit Tests"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T08:57:13Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41029896508/job/123976838235",
+					"name": "Auth Worker Validation",
+					"startedAt": "2026-10-30T08:57:09Z",
+					"status": "COMPLETED",
+					"workflowName": "Auth Worker Validation"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T08:57:30Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41029896521/job/123976837825",
+					"name": "Catalog integrity",
+					"startedAt": "2026-10-30T08:57:09Z",
+					"status": "COMPLETED",
+					"workflowName": "Catalog and PR policy checks"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T08:57:18Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41029896561/job/123976838215",
+					"name": "Dead Link Checker",
+					"startedAt": "2026-10-30T08:57:09Z",
+					"status": "COMPLETED",
+					"workflowName": "Dead Link Checker"
+				}
+			],
+			"action_taken": "Read-only review; no reviews, comments or merge sent."
+		},
+		{
+			"number": 200,
+			"url": "https://github.com/replicraft/remade/pull/200",
+			"title": "Add Zomello (Trello, Microsoft Planner)",
+			"draft": false,
+			"created_at": "2026-10-30T15:59:55Z",
+			"updated_at": "2026-10-30T15:59:56Z",
+			"disposition": "maintainer-scope-decision",
+			"review": "MIT LICENSE and beta/distribution documentation verified at Zomello bd9029e3db714156b9705cc57cbf3cd9b5715050. Trello/Planner board workflows and import are supported by README, with distinct service/API limits. All checks green; accept as broader alternative only with maintainer approval.",
+			"checks_at_review": [
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T16:01:00Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41085833113/job/124166642631",
+					"name": "App Build + Unit Tests",
+					"startedAt": "2026-10-30T16:00:02Z",
+					"status": "COMPLETED",
+					"workflowName": "App Build + Unit Tests"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T16:00:09Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41085833196/job/124166642434",
+					"name": "Auth Worker Validation",
+					"startedAt": "2026-10-30T16:00:02Z",
+					"status": "COMPLETED",
+					"workflowName": "Auth Worker Validation"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T16:00:28Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41085833120/job/124166642361",
+					"name": "Catalog integrity",
+					"startedAt": "2026-10-30T16:00:03Z",
+					"status": "COMPLETED",
+					"workflowName": "Catalog and PR policy checks"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-30T16:00:16Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41085833363/job/124166643181",
+					"name": "Dead Link Checker",
+					"startedAt": "2026-10-30T16:00:02Z",
+					"status": "COMPLETED",
+					"workflowName": "Dead Link Checker"
+				}
+			],
+			"action_taken": "Read-only review; no reviews, comments or merge sent."
+		},
+		{
+			"number": 212,
+			"url": "https://github.com/replicraft/remade/pull/212",
+			"title": "MailCraft: status alpha → beta",
+			"draft": false,
+			"created_at": "2026-10-31T16:29:27Z",
+			"updated_at": "2026-10-31T16:32:32Z",
+			"disposition": "supported-change-refresh-ci",
+			"review": "README and ROADMAP explicitly public beta. Correction is justified. Failed policy-acknowledgment check reflects an older issue-body state; current PR body has the checked acknowledgment. Refresh that check before merging; catalog validation itself passed. Avoid duplicate audit edit.",
+			"checks_at_review": [
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-31T16:29:41Z",
+					"conclusion": "FAILURE",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41219924621/job/124592183153",
+					"name": "Catalog integrity",
+					"startedAt": "2026-10-31T16:29:33Z",
+					"status": "COMPLETED",
+					"workflowName": "Catalog and PR policy checks"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-31T16:30:35Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41219924658/job/124592183209",
+					"name": "App Build + Unit Tests",
+					"startedAt": "2026-10-31T16:29:33Z",
+					"status": "COMPLETED",
+					"workflowName": "App Build + Unit Tests"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-31T16:29:40Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41219924799/job/124592183633",
+					"name": "Auth Worker Validation",
+					"startedAt": "2026-10-31T16:29:34Z",
+					"status": "COMPLETED",
+					"workflowName": "Auth Worker Validation"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-31T16:32:54Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41220181595/job/124592923372",
+					"name": "Catalog integrity",
+					"startedAt": "2026-10-31T16:32:38Z",
+					"status": "COMPLETED",
+					"workflowName": "Catalog and PR policy checks"
+				},
+				{
+					"__typename": "CheckRun",
+					"completedAt": "2026-10-31T16:29:46Z",
+					"conclusion": "SUCCESS",
+					"detailsUrl": "https://github.com/replicraft/remade/actions/runs/41219924839/job/124592183606",
+					"name": "Dead Link Checker",
+					"startedAt": "2026-10-31T16:29:34Z",
+					"status": "COMPLETED",
+					"workflowName": "Dead Link Checker"
+				}
+			],
+			"action_taken": "Read-only review; no reviews, comments or merge sent."
+		}
+	]
+}
