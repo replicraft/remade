@@ -135,6 +135,24 @@
       "pushedAt": "2026-10-30T21:13:45Z",
       "stars": 35
     },
+    "asad-albadi/pixelcraft": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": "MIT",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-02T10:43:27Z",
+      "stars": 1
+    },
+    "asyncfinn/rook": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 2,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-01T06:55:46Z",
+      "stars": 13
+    },
     "automattic/harper": {
       "fetchedAt": "2026-11-01T14:30:04Z",
       "forks": 788,
@@ -216,6 +234,15 @@
       "pushedAt": "2026-10-23T01:30:35Z",
       "stars": 10
     },
+    "cmspeedau/gamedepot": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": null,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-11-02T10:55:26Z",
+      "stars": 0
+    },
     "cmspeedau/icraftmusic": {
       "fetchedAt": "2026-11-01T14:30:04Z",
       "forks": 0,
@@ -251,6 +278,24 @@
       "primaryLanguage": "Python",
       "pushedAt": "2026-11-01T03:40:26Z",
       "stars": 28
+    },
+    "crisprintsstuff/oxybrush": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-01T19:51:50Z",
+      "stars": 7
+    },
+    "crisprintsstuff/oxypixel": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 1,
+      "isArchived": false,
+      "licenseSpdx": "MIT",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-02T11:09:01Z",
+      "stars": 2
     },
     "cristim/azteccraft": {
       "fetchedAt": "2026-11-01T14:30:04Z",
@@ -333,6 +378,15 @@
       "pushedAt": "2026-10-30T03:21:06Z",
       "stars": 44
     },
+    "drop-oss/drop": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 50,
+      "isArchived": false,
+      "licenseSpdx": null,
+      "primaryLanguage": "Vue",
+      "pushedAt": "2026-11-01T09:00:16Z",
+      "stars": 766
+    },
     "egsk4/craftpulse": {
       "fetchedAt": "2026-11-01T14:30:04Z",
       "forks": 1,
@@ -359,6 +413,15 @@
       "primaryLanguage": "Python",
       "pushedAt": "2026-10-14T21:21:27Z",
       "stars": 327
+    },
+    "el-j/encodercraft": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": null,
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-02T11:01:02Z",
+      "stars": 0
     },
     "emmertex/lightcraft-classic": {
       "fetchedAt": "2026-11-01T14:30:04Z",
@@ -440,6 +503,15 @@
       "primaryLanguage": "C",
       "pushedAt": "2026-07-05T21:20:25Z",
       "stars": 1066
+    },
+    "felzow47/modelcraft": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": null,
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-01T20:33:25Z",
+      "stars": 0
     },
     "flare-animate/flare": {
       "fetchedAt": "2026-11-01T14:30:04Z",
@@ -864,6 +936,15 @@
       "pushedAt": "2026-10-15T02:33:42Z",
       "stars": 22
     },
+    "magigun/sue": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 1,
+      "isArchived": false,
+      "licenseSpdx": "NOASSERTION",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-02T06:21:52Z",
+      "stars": 4
+    },
     "makeplane/plane": {
       "fetchedAt": "2026-11-01T14:30:04Z",
       "forks": 6264,
@@ -1124,6 +1205,15 @@
       "primaryLanguage": "Rust",
       "pushedAt": "2026-10-27T17:35:48Z",
       "stars": 4
+    },
+    "phalcode/gamevault-backend": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 38,
+      "isArchived": false,
+      "licenseSpdx": "NOASSERTION",
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-10-30T12:45:22Z",
+      "stars": 330
     },
     "pierruno-labs/filecraft": {
       "fetchedAt": "2026-11-01T14:30:04Z",
@@ -1655,6 +1745,15 @@
       "primaryLanguage": "Rust",
       "pushedAt": "2026-10-14T05:54:10Z",
       "stars": 12
+    },
+    "yalkouassi/humanmotioncraft": {
+      "fetchedAt": "2026-11-02T11:09:19Z",
+      "forks": 0,
+      "isArchived": false,
+      "licenseSpdx": "GPL-3.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-01T16:47:33Z",
+      "stars": 3
     },
     "ysnx64523/ribbon-file-manager": {
       "fetchedAt": "2026-11-01T14:30:04Z",
