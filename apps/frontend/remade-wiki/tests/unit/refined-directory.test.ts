@@ -40,15 +40,16 @@ it("matches target names and aliases with deterministic project/request classifi
 });
 it("includes every suite member in a tool card's complete target list", () => {
 	const tool = records.find((record) => record.id === "openplayground");
-	expect(tool?.targets).toHaveLength(32);
+	expect(tool?.targets).toHaveLength(33);
 	expect(tool?.targets).toEqual(
 		expect.arrayContaining([
+			{ name: "ClothCraft", href: "/projects/clothcraft/" },
 			{ name: "PhotoCraft", href: "/projects/photocraft/" },
 			{ name: "EarthCraft", href: "/projects/earthcraft/" },
 			{ name: "MailCraft", href: "/projects/ucs-mailcraft/" },
 		]),
 	);
-	expect(new Set(tool?.targets.map((target) => target.href)).size).toBe(32);
+	expect(new Set(tool?.targets.map((target) => target.href)).size).toBe(33);
 });
 
 it("preserves reviewed community links and keeps tools distinct", () => {
