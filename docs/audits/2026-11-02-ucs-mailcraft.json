@@ -22,11 +22,11 @@
 		},
 		"maturity": {
 			"result": "maintainer-reported",
-			"details": "ROADMAP explicitly public beta since 0.8.0 (2026-10-24); retains PR #212 beta correction and partial compatibility."
+			"details": "ROADMAP explicitly public beta since 0.8.0 (2026-10-24); retains PR #212 beta correction and partial compatibility. Release v0.10.0 reiterates that the beta covers Microsoft accounts; other providers remain outside the beta scope."
 		},
 		"features": {
 			"result": "maintainer-reported",
-			"details": "README and current gap documents reviewed. Added Graph/shared-mailbox support, EWS mail-only scope, recurrence, rules and EML/MBOX/ICS/VCF import/export. Read-only browser JMAP confirmed by docs/jmap.md; not desktop/CLI JMAP, and not unrestricted browser mail-server connectivity."
+			"details": "README and current gap documents reviewed. Added Graph/shared-mailbox support, EWS mail-only scope, recurrence, rules and EML/MBOX/ICS/VCF import/export. Read-only browser JMAP confirmed by docs/jmap.md; not desktop/CLI JMAP, and not unrestricted browser mail-server connectivity. Release v0.10.0 confirms multiple rich-text compose windows, Work Offline, Microsoft Automatic Replies and high contrast. Exchange is explicitly a mail-only preview tried on Grommunio; Microsoft Exchange Server, SmarterMail and NTLM have not been tested against real servers."
 		},
 		"websites": {
 			"result": "HTTP app shell and hosting source verified",
@@ -46,8 +46,8 @@
 		}
 	},
 	"changes": {
-		"description": "Retains original Outlook layout, protocols, HTML rendering and CLI/MCP details, adds current features within the 500-character limit.",
-		"limitations": "Retains beta/partial scope and slow large/shared Microsoft mailbox sync. Corrects obsolete browser-no-connectivity claim, records CORS/read-only JMAP, incomplete IMAP sync, admin approval, unsigned Windows/macOS downloads, missing proprietary archive imports, printing and message encryption.",
+		"description": "Retains original Outlook layout, protocols, HTML rendering and CLI/MCP details, adds current features within the 500-character limit. Includes the selected v0.10.0 additions without adding individual command inventories or benchmark claims.",
+		"limitations": "Retains beta/partial scope and slow large/shared Microsoft mailbox sync. Corrects obsolete browser-no-connectivity claim, records CORS/read-only JMAP, incomplete IMAP sync, admin approval, unsigned Windows/macOS downloads, missing proprietary archive imports, printing and message encryption. Explicitly qualifies EWS preview interoperability and the Microsoft-account beta scope.",
 		"screenshots": "Two additional representative screenshots; summary unchanged."
 	},
 	"sources": [
@@ -56,12 +56,13 @@
 		"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/docs/gaps.md",
 		"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/docs/jmap.md",
 		"https://github.com/daijro/OpenPlayground/blob/main/tools.yaml",
-		"https://playground.daijro.dev/mailcraft/"
+		"https://playground.daijro.dev/mailcraft/",
+		"https://github.com/UCS-Care-Group/mailcraft/releases/tag/v0.10.0"
 	],
 	"validation": {
 		"tests": "Left to PR CI under AGENTS.md; upstream code never executed.",
-		"description_characters": 476,
-		"limitations_characters": 347
+		"description_characters": 494,
+		"limitations_characters": 400
 	},
 	"unresolved": [
 		"No independent real-account, runtime or cross-provider interoperability verification performed.",

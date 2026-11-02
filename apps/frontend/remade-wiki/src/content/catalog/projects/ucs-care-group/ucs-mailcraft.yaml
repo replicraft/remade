@@ -16,8 +16,8 @@ status: beta
 compatibility: partial
 
 summary: "Outlook-style mail, calendars, contacts and tasks for Microsoft 365, Outlook.com and IMAP accounts."
-description: MailCraft reimplements classic Outlook's mail, calendar, contacts and tasks in native Rust, with its ribbon, folder pane and reading pane. Supports Microsoft 365 and Outlook.com OAuth, Graph sync and shared mailboxes, IMAP/SMTP and Exchange Server mail over EWS. Includes recurring meetings, rules and rich-text mail; imports and exports EML, MBOX, ICS and VCF. Renders HTML without a web engine and exposes commands through a CLI and MCP. Browser builds offer read-only JMAP.
-limitations: Public beta; compatibility is maintainer-reported. Microsoft sign-in may need admin approval. Windows/macOS downloads are unsigned. Large/shared Microsoft mailboxes can sync slowly. No PST/OST/MSG/OLM import, printing, S/MIME or OpenPGP. Some IMAP changes do not sync. Browser JMAP is read-only and needs server CORS support; no browser IMAP/SMTP.
+description: Native Rust reimplementation of classic Outlook's mail, calendar, contacts and tasks, with ribbon, folder and reading panes. Supports Microsoft OAuth, Graph sync, shared mailboxes, IMAP/SMTP and preview EWS mail. Includes multiple rich-text compose windows, automatic replies for Microsoft accounts, Work Offline, high contrast, rules and recurring meetings. Imports/exports EML, MBOX, ICS and VCF; renders HTML without a web engine. CLI/MCP command access; browser builds offer read-only JMAP.
+limitations: Beta covers Microsoft accounts; other providers remain experimental. EWS: mail-only preview, tested on Grommunio; Exchange Server, SmarterMail and NTLM untested on real servers. Microsoft sign-in may need admin approval. Unsigned Windows/macOS builds; slow large/shared-mailbox sync; incomplete IMAP sync. No PST/OST/MSG/OLM import, printing or S/MIME/OpenPGP. Browser JMAP: read-only, CORS required.
 
 screenshots:
   - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/mail-dark.png
