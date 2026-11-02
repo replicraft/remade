@@ -474,6 +474,11 @@
   name: Microsoft Project
   url: https://www.microsoft.com/en-us/microsoft-365/planner/project-plan-3
   category: productivity
+- slug: microsoft-planner
+  vendor: microsoft
+  name: Microsoft Planner
+  url: https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner
+  category: productivity
 - slug: microsoft-publisher
   vendor: microsoft
   name: Microsoft Publisher
@@ -2883,3 +2888,19 @@
   name: Opcode Galaxy Plus Editors
   url: https://oldschooldaw.com/opcode/uploads/PDF/Tech_Primer.pdf
   category: creative
+- slug: roblox
+  vendor: "roblox"
+  name: "Roblox"
+  url: "https://www.roblox.com/"
+  category: "games"
+- slug: steam
+  vendor: "valve"
+  name: "Steam"
+  url: "https://store.steampowered.com/about/"
+  category: "games"
+- slug: edrawings-viewer
+  vendor: "dassault-systemes"
+  name: "eDrawings Viewer"
+  url: "https://www.edrawingsviewer.com/"
+  category: "engineering"
+  aliases: [eDrawings]

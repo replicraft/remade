@@ -1,0 +1,15 @@
+slug: "pixelcraft"
+name: "PixelCraft"
+authors: ["asad-albadi"]
+repository: "https://github.com/asad-albadi/PixelCraft"
+originals: ["aseprite"]
+category: "creative"
+languages: ["Rust"]
+platforms: ["Linux"]
+status: "alpha"
+compatibility: "partial"
+summary: "Aseprite-style pixel art and animation with ASE file exchange, tilemaps, palettes and independent Lua extensions."
+description: "A standalone pixel-art editor with layered drawing, frame animation, tilemaps, palettes and native project storage. Imports and exports supported ASE/ASEPRITE documents using the published format specification. Includes an embedded Lua runtime and an independent extension interface."
+license: "MIT"
+docs: "https://github.com/asad-albadi/PixelCraft#readme"
+limitations: "Early alpha. Published v0.1.0 assets cover Linux; Windows installer workflows are documented but a released installer was not verified. Full ICC preview, arbitrary Aseprite Lua APIs, original themes and some ASE encodings or tileset arrangements are unsupported. Other platforms remain unvalidated."

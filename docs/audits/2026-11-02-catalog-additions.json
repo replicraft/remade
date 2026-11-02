@@ -1,0 +1,1153 @@
+{
+	"review_date": "2026-11-02",
+	"checked_at": "2026-11-02T11:02:43.328148+00:00",
+	"scope": "User-supplied candidates plus the separately approved Phalcode GameVault. Audit PR #236 is separate.",
+	"counts": {
+		"additions": 11,
+		"already_listed": 1,
+		"held": 1,
+		"excluded": 1,
+		"removed_requests": 5
+	},
+	"checks": {
+		"catalog": "Passed: 529 originals, 175 projects, 380 requests, five featured.",
+		"tests": "Not run locally under AGENTS.md; left to CI.",
+		"execution": "Upstream code never executed; read-only documentary/source inspection. HTTP checks do not certify app runtime, provenance or legal safety."
+	},
+	"removed_requests": [
+		"apps/frontend/remade-wiki/src/content/catalog/requests/maxon/zbrush.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/requests/celsys/clip-studio-paint.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/requests/adobe/adobe-media-encoder.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/requests/nekki/cascadeur.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/requests/igara/aseprite.yaml"
+	],
+	"link_checks": {
+		"https://github.com/crisprintsstuff/oxypixel": {
+			"checked_at": "2026-11-02T11:00:43.792818+00:00",
+			"status": 200,
+			"final_url": "https://github.com/crisprintsstuff/oxypixel",
+			"title": "GitHub - crisprintsstuff/oxypixel: Pixel-art editor for Windows and Linux. Layers, animation, and PNG, BMP, and GIF import and export. · GitHub",
+			"references": [
+				{
+					"slug": "oxypixel",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/crisprintsstuff/oxypixel#readme": {
+			"checked_at": "2026-11-02T11:00:43.794986+00:00",
+			"status": 200,
+			"final_url": "https://github.com/crisprintsstuff/oxypixel#readme",
+			"title": "GitHub - crisprintsstuff/oxypixel: Pixel-art editor for Windows and Linux. Layers, animation, and PNG, BMP, and GIF import and export. · GitHub",
+			"references": [
+				{
+					"slug": "oxypixel",
+					"field": "docs"
+				}
+			]
+		},
+		"https://raw.githubusercontent.com/crisprintsstuff/oxypixel/main/docs/images/editor.png": {
+			"checked_at": "2026-11-02T11:00:43.440670+00:00",
+			"status": 200,
+			"final_url": "https://raw.githubusercontent.com/crisprintsstuff/oxypixel/main/docs/images/editor.png",
+			"title": null,
+			"references": [
+				{
+					"slug": "oxypixel",
+					"field": "screenshot"
+				}
+			]
+		},
+		"https://github.com/asad-albadi/PixelCraft": {
+			"checked_at": "2026-11-02T11:00:43.880361+00:00",
+			"status": 200,
+			"final_url": "https://github.com/asad-albadi/PixelCraft",
+			"title": "GitHub - asad-albadi/PixelCraft: Pixel art, sprites and animation, in a standalone desktop editor. · GitHub",
+			"references": [
+				{
+					"slug": "pixelcraft",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/asad-albadi/PixelCraft#readme": {
+			"checked_at": "2026-11-02T11:00:43.883378+00:00",
+			"status": 200,
+			"final_url": "https://github.com/asad-albadi/PixelCraft#readme",
+			"title": "GitHub - asad-albadi/PixelCraft: Pixel art, sprites and animation, in a standalone desktop editor. · GitHub",
+			"references": [
+				{
+					"slug": "pixelcraft",
+					"field": "docs"
+				}
+			]
+		},
+		"https://github.com/AsyncFinn/rook": {
+			"checked_at": "2026-11-02T11:00:44.003962+00:00",
+			"status": 200,
+			"final_url": "https://github.com/AsyncFinn/rook",
+			"title": "GitHub - AsyncFinn/rook: An open-source reimplementation of the Roblox engine, written in Rust. · GitHub",
+			"references": [
+				{
+					"slug": "rook",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/AsyncFinn/rook#readme": {
+			"checked_at": "2026-11-02T11:00:44.007587+00:00",
+			"status": 200,
+			"final_url": "https://github.com/AsyncFinn/rook#readme",
+			"title": "GitHub - AsyncFinn/rook: An open-source reimplementation of the Roblox engine, written in Rust. · GitHub",
+			"references": [
+				{
+					"slug": "rook",
+					"field": "docs"
+				}
+			]
+		},
+		"https://github.com/MagiGun/sue": {
+			"checked_at": "2026-11-02T11:00:43.857424+00:00",
+			"status": 200,
+			"final_url": "https://github.com/MagiGun/sue",
+			"title": "GitHub - MagiGun/sue: Sue, the Singular Unified Engine: one creative environment for painting, comics, animation, writing, sound and more. · GitHub",
+			"references": [
+				{
+					"slug": "sue",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/MagiGun/sue#readme": {
+			"checked_at": "2026-11-02T11:00:43.851646+00:00",
+			"status": 200,
+			"final_url": "https://github.com/MagiGun/sue#readme",
+			"title": "GitHub - MagiGun/sue: Sue, the Singular Unified Engine: one creative environment for painting, comics, animation, writing, sound and more. · GitHub",
+			"references": [
+				{
+					"slug": "sue",
+					"field": "docs"
+				}
+			]
+		},
+		"https://magigun.github.io/sue/": {
+			"checked_at": "2026-11-02T11:00:43.985284+00:00",
+			"status": 200,
+			"final_url": "https://magigun.github.io/sue/",
+			"title": "Sue",
+			"references": [
+				{
+					"slug": "sue",
+					"field": "website"
+				}
+			]
+		},
+		"https://magigun.github.io/sue/try/": {
+			"checked_at": "2026-11-02T11:00:43.990344+00:00",
+			"status": 200,
+			"final_url": "https://magigun.github.io/sue/try/",
+			"title": "Sue",
+			"references": [
+				{
+					"slug": "sue",
+					"field": "browser_url"
+				}
+			]
+		},
+		"https://github.com/crisprintsstuff/OxyBrush": {
+			"checked_at": "2026-11-02T11:00:44.639486+00:00",
+			"status": 200,
+			"final_url": "https://github.com/crisprintsstuff/OxyBrush",
+			"title": "GitHub - crisprintsstuff/OxyBrush: Open-source digital sculpting app in Rust — sculpt 3D models like digital clay. Windows &amp; Linux. Alpha: testers welcome! · GitHub",
+			"references": [
+				{
+					"slug": "oxybrush",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/crisprintsstuff/OxyBrush#readme": {
+			"checked_at": "2026-11-02T11:00:44.638103+00:00",
+			"status": 200,
+			"final_url": "https://github.com/crisprintsstuff/OxyBrush#readme",
+			"title": "GitHub - crisprintsstuff/OxyBrush: Open-source digital sculpting app in Rust — sculpt 3D models like digital clay. Windows &amp; Linux. Alpha: testers welcome! · GitHub",
+			"references": [
+				{
+					"slug": "oxybrush",
+					"field": "docs"
+				}
+			]
+		},
+		"https://raw.githubusercontent.com/crisprintsstuff/OxyBrush/main/docs/images/screenshot.png": {
+			"checked_at": "2026-11-02T11:00:44.179873+00:00",
+			"status": 200,
+			"final_url": "https://raw.githubusercontent.com/crisprintsstuff/OxyBrush/main/docs/images/screenshot.png",
+			"title": null,
+			"references": [
+				{
+					"slug": "oxybrush",
+					"field": "screenshot"
+				}
+			]
+		},
+		"https://github.com/YalKouassi/HumanMotionCraft": {
+			"checked_at": "2026-11-02T11:00:44.649941+00:00",
+			"status": 200,
+			"final_url": "https://github.com/YalKouassi/HumanMotionCraft",
+			"title": "GitHub - YalKouassi/HumanMotionCraft: Pose and animate a human rig: IK, physics, AI in-between, motion from text. Everything is a command (UI, CLI, MCP). · GitHub",
+			"references": [
+				{
+					"slug": "humanmotioncraft",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/YalKouassi/HumanMotionCraft#readme": {
+			"checked_at": "2026-11-02T11:00:44.648014+00:00",
+			"status": 200,
+			"final_url": "https://github.com/YalKouassi/HumanMotionCraft#readme",
+			"title": "GitHub - YalKouassi/HumanMotionCraft: Pose and animate a human rig: IK, physics, AI in-between, motion from text. Everything is a command (UI, CLI, MCP). · GitHub",
+			"references": [
+				{
+					"slug": "humanmotioncraft",
+					"field": "docs"
+				}
+			]
+		},
+		"https://github.com/Felzow47/ModelCraft": {
+			"checked_at": "2026-11-02T11:00:44.660955+00:00",
+			"status": 200,
+			"final_url": "https://github.com/Felzow47/ModelCraft",
+			"title": "GitHub - Felzow47/ModelCraft · GitHub",
+			"references": [
+				{
+					"slug": "modelcraft-viewer",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/Felzow47/ModelCraft#readme": {
+			"checked_at": "2026-11-02T11:00:44.659602+00:00",
+			"status": 200,
+			"final_url": "https://github.com/Felzow47/ModelCraft#readme",
+			"title": "GitHub - Felzow47/ModelCraft · GitHub",
+			"references": [
+				{
+					"slug": "modelcraft-viewer",
+					"field": "docs"
+				}
+			]
+		},
+		"https://raw.githubusercontent.com/Felzow47/ModelCraft/main/assets/captures/solidworks_part_measure.png": {
+			"checked_at": "2026-11-02T11:00:44.238358+00:00",
+			"status": 200,
+			"final_url": "https://raw.githubusercontent.com/Felzow47/ModelCraft/main/assets/captures/solidworks_part_measure.png",
+			"title": null,
+			"references": [
+				{
+					"slug": "modelcraft-viewer",
+					"field": "screenshot"
+				}
+			]
+		},
+		"https://github.com/el-j/encoderCraft": {
+			"checked_at": "2026-11-02T11:00:44.812969+00:00",
+			"status": 200,
+			"final_url": "https://github.com/el-j/encoderCraft",
+			"title": "GitHub - el-j/encoderCraft · GitHub",
+			"references": [
+				{
+					"slug": "encodercraft",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/el-j/encoderCraft#readme": {
+			"checked_at": "2026-11-02T11:00:44.814374+00:00",
+			"status": 200,
+			"final_url": "https://github.com/el-j/encoderCraft#readme",
+			"title": "GitHub - el-j/encoderCraft · GitHub",
+			"references": [
+				{
+					"slug": "encodercraft",
+					"field": "docs"
+				}
+			]
+		},
+		"https://github.com/Drop-OSS/drop": {
+			"checked_at": "2026-11-02T11:00:45.378905+00:00",
+			"status": 200,
+			"final_url": "https://github.com/Drop-OSS/drop",
+			"title": "GitHub - Drop-OSS/drop: Drop is an open-source game distribution platform. · GitHub",
+			"references": [
+				{
+					"slug": "drop",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/Drop-OSS/drop#readme": {
+			"checked_at": "2026-11-02T11:00:45.378028+00:00",
+			"status": 200,
+			"final_url": "https://github.com/Drop-OSS/drop#readme",
+			"title": "GitHub - Drop-OSS/drop: Drop is an open-source game distribution platform. · GitHub",
+			"references": [
+				{
+					"slug": "drop",
+					"field": "docs"
+				}
+			]
+		},
+		"https://droposs.org/": {
+			"checked_at": "2026-11-02T11:00:44.833654+00:00",
+			"status": 200,
+			"final_url": "https://droposs.org/",
+			"title": "Drop - An open Steam",
+			"references": [
+				{
+					"slug": "drop",
+					"field": "website"
+				}
+			]
+		},
+		"https://github.com/cmspeedau/GameDepot": {
+			"checked_at": "2026-11-02T11:00:45.370140+00:00",
+			"status": 200,
+			"final_url": "https://github.com/cmspeedau/GameDepot",
+			"title": "GitHub - cmspeedau/GameDepot: GameDepot is an open-source game distribution platform. · GitHub",
+			"references": [
+				{
+					"slug": "gamedepot",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/cmspeedau/GameDepot#readme": {
+			"checked_at": "2026-11-02T11:00:45.376491+00:00",
+			"status": 200,
+			"final_url": "https://github.com/cmspeedau/GameDepot#readme",
+			"title": "GitHub - cmspeedau/GameDepot: GameDepot is an open-source game distribution platform. · GitHub",
+			"references": [
+				{
+					"slug": "gamedepot",
+					"field": "docs"
+				}
+			]
+		},
+		"https://github.com/Phalcode/gamevault-backend": {
+			"checked_at": "2026-11-02T11:00:45.409078+00:00",
+			"status": 200,
+			"final_url": "https://github.com/Phalcode/gamevault-backend",
+			"title": "GitHub - Phalcode/gamevault-backend: Backend for the self-hosted gaming platform for drm-free games · GitHub",
+			"references": [
+				{
+					"slug": "gamevault",
+					"field": "repository"
+				}
+			]
+		},
+		"https://github.com/Phalcode/gamevault-backend#readme": {
+			"checked_at": "2026-11-02T11:00:45.412493+00:00",
+			"status": 200,
+			"final_url": "https://github.com/Phalcode/gamevault-backend#readme",
+			"title": "GitHub - Phalcode/gamevault-backend: Backend for the self-hosted gaming platform for drm-free games · GitHub",
+			"references": [
+				{
+					"slug": "gamevault",
+					"field": "docs"
+				}
+			]
+		},
+		"https://gamevau.lt/": {
+			"checked_at": "2026-11-02T11:00:44.976890+00:00",
+			"status": 200,
+			"final_url": "https://gamevau.lt/",
+			"title": "The Ultimate Self-Hosted Gaming Platform | GameVault",
+			"references": [
+				{
+					"slug": "gamevault",
+					"field": "website"
+				}
+			]
+		},
+		"https://demo.gamevau.lt/": {
+			"checked_at": "2026-11-02T11:00:45.606466+00:00",
+			"status": 200,
+			"final_url": "https://demo.gamevau.lt/",
+			"title": "GameVault",
+			"references": [
+				{
+					"slug": "gamevault",
+					"field": "browser_url"
+				}
+			]
+		},
+		"https://www.roblox.com/": {
+			"checked_at": "2026-11-02T11:00:45.539486+00:00",
+			"status": 200,
+			"final_url": "https://www.roblox.com/",
+			"title": "Roblox: Play Free Online Games - Sign Up to Play!",
+			"references": []
+		},
+		"https://www.edrawingsviewer.com/": {
+			"checked_at": "2026-11-02T11:00:45.973115+00:00",
+			"status": 200,
+			"final_url": "https://www.edrawingsviewer.com/",
+			"title": "Review 2D &amp; 3D Designs with eDrawings | Edrawings",
+			"references": []
+		},
+		"https://store.steampowered.com/about/": {
+			"checked_at": "2026-11-02T11:00:45.585964+00:00",
+			"status": 200,
+			"final_url": "https://store.steampowered.com/about/",
+			"title": "Steam, The Ultimate Online Game Platform",
+			"references": []
+		}
+	},
+	"entries": [
+		{
+			"slug": "oxypixel",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/crisprintsstuff/oxypixel.yaml",
+			"fields": {
+				"slug": "oxypixel",
+				"name": "OxyPixel",
+				"authors": ["crisprintsstuff"],
+				"repository": "https://github.com/crisprintsstuff/oxypixel",
+				"originals": ["aseprite"],
+				"category": "creative",
+				"languages": ["Rust"],
+				"platforms": ["Windows", "Linux"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Pixel-art drawing and animation with layers, Aseprite imports and sprite-atlas packing.",
+				"description": "A pixel-art editor with layered drawing, frame animation, tags, palettes and sprite-sheet export. Imports supported ASE/ASEPRITE documents for editing in its own OXYPix format. Its OxyPack atlas packer reads Aseprite files and emits game-engine PNG/JSON atlases; CLI and MCP tools share the editing core.",
+				"license": "MIT",
+				"docs": "https://github.com/crisprintsstuff/oxypixel#readme",
+				"limitations": "Early release; full Aseprite behavior and plugin compatibility are not claimed. ASE imports convert to OXYPix rather than saving back: tilemaps become plain layers, reference layers are omitted and cel opacity is baked into pixels. Editing is limited to 1024 pixels per side, 256 frames and 32 layers. Windows downloads are unsigned.",
+				"screenshots": [
+					{
+						"src": "https://raw.githubusercontent.com/crisprintsstuff/oxypixel/main/docs/images/editor.png",
+						"alt": "OxyPixel: layered pixel-art scene and drawing tools."
+					}
+				]
+			},
+			"reviewed_default_revision": "e3f9af0501d363e72a47b6745027d57ee3d06975",
+			"sources": [
+				{
+					"url": "https://github.com/crisprintsstuff/oxypixel/blob/e3f9af0501d363e72a47b6745027d57ee3d06975/README.md",
+					"kind": "readme",
+					"blob_oid": "2fe0f3484c40090bc086ea825660d799518c1852"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/oxypixel/blob/e3f9af0501d363e72a47b6745027d57ee3d06975/LICENSE",
+					"kind": "license",
+					"blob_oid": "7fd553ee1e38828b559ba733631755c00894f705"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/oxypixel/blob/e3f9af0501d363e72a47b6745027d57ee3d06975/CONTRIBUTING.md",
+					"blob_oid": "6100c370e22339902a5baa70be082901a6abab9a",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/oxypixel/blob/e3f9af0501d363e72a47b6745027d57ee3d06975/docs/ROADMAP.md",
+					"blob_oid": "18be457ceae96a5ea267fe42c122c96a22440ce4",
+					"kind": "supporting_document"
+				}
+			],
+			"notes": []
+		},
+		{
+			"slug": "pixelcraft",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/asad-albadi/pixelcraft.yaml",
+			"fields": {
+				"slug": "pixelcraft",
+				"name": "PixelCraft",
+				"authors": ["asad-albadi"],
+				"repository": "https://github.com/asad-albadi/PixelCraft",
+				"originals": ["aseprite"],
+				"category": "creative",
+				"languages": ["Rust"],
+				"platforms": ["Linux"],
+				"status": "alpha",
+				"compatibility": "partial",
+				"summary": "Aseprite-style pixel art and animation with ASE file exchange, tilemaps, palettes and independent Lua extensions.",
+				"description": "A standalone pixel-art editor with layered drawing, frame animation, tilemaps, palettes and native project storage. Imports and exports supported ASE/ASEPRITE documents using the published format specification. Includes an embedded Lua runtime and an independent extension interface.",
+				"license": "MIT",
+				"docs": "https://github.com/asad-albadi/PixelCraft#readme",
+				"limitations": "Early alpha. Published v0.1.0 assets cover Linux; Windows installer workflows are documented but a released installer was not verified. Full ICC preview, arbitrary Aseprite Lua APIs, original themes and some ASE encodings or tileset arrangements are unsupported. Other platforms remain unvalidated."
+			},
+			"reviewed_default_revision": "e5f258352b6b7d4899213ac690ba4ea5b6e94206",
+			"sources": [
+				{
+					"url": "https://github.com/asad-albadi/PixelCraft/blob/e5f258352b6b7d4899213ac690ba4ea5b6e94206/README.md",
+					"kind": "readme",
+					"blob_oid": "81ed6213695605b196f02283aeef15876a956bde"
+				},
+				{
+					"url": "https://github.com/asad-albadi/PixelCraft/blob/e5f258352b6b7d4899213ac690ba4ea5b6e94206/LICENSE",
+					"kind": "license",
+					"blob_oid": "a28c3c9322574c5991bdf43fb6e4738856951dbf"
+				},
+				{
+					"url": "https://github.com/asad-albadi/PixelCraft/blob/e5f258352b6b7d4899213ac690ba4ea5b6e94206/MECHANICS.md",
+					"blob_oid": "9affb32ff5d4b9d210ede79a301b9d5220dea9f1",
+					"kind": "supporting_document"
+				}
+			],
+			"notes": [
+				"Only Linux AppImage release assets verified; Windows packaging workflow is not treated as a distributed/tested Windows app."
+			]
+		},
+		{
+			"slug": "rook",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/asyncfinn/rook.yaml",
+			"fields": {
+				"slug": "rook",
+				"name": "Rook",
+				"authors": ["asyncfinn"],
+				"repository": "https://github.com/AsyncFinn/rook",
+				"originals": ["roblox"],
+				"category": "games",
+				"languages": ["Rust"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Run Roblox place files in an independent Rust engine with Luau scripting, physics and client/server play.",
+				"description": "An independent implementation of the Roblox engine that reads and writes place/model files, runs Luau scripts and reproduces selected Instance APIs and services. Combines its own DataModel, scheduling and replication with open-source Luau, rbx-dom, Rapier and wgpu. Includes rendering, audio, terrain and inspection tools.",
+				"license": "Apache-2.0",
+				"docs": "https://github.com/AsyncFinn/rook#readme",
+				"limitations": "Early development; file-loading and script-test results are maintainer-reported, not full game compatibility. GUI support remains in progress. Does not connect to Roblox servers or provide wire compatibility with the official client/server. Game places and assets must be supplied separately; some content resolution uses Roblox services."
+			},
+			"reviewed_default_revision": "8680da0fde3ded84731b7422c59de26db0e14135",
+			"sources": [
+				{
+					"url": "https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/README.md",
+					"kind": "readme",
+					"blob_oid": "5c8ec4371a760ace4be8f8313defadfdb654c99b"
+				},
+				{
+					"url": "https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/LICENSE",
+					"kind": "license",
+					"blob_oid": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+				},
+				{
+					"url": "https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/CONTRIBUTING.md",
+					"blob_oid": "a19fc5b1209083393e2a196d128dc87f83629ea4",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/NOTICE",
+					"blob_oid": "d42eb22339eedca70b1a7c90cd33cb276054817f",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/docs/guide/getting-started.md",
+					"blob_oid": "e04dfa7b96c0c948a3fe70e0f623de483c609fbb",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/docs/roadmap/README.md",
+					"blob_oid": "f2f8c289e19fcdfcc220258e13da220b8367f873",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/docs/roadmap/unscheduled.md",
+					"blob_oid": "03d31c2f01bd0ebedef16be975f57d0cb8b369ba",
+					"kind": "supporting_document"
+				}
+			],
+			"notes": []
+		},
+		{
+			"slug": "sue",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/magigun/sue.yaml",
+			"fields": {
+				"slug": "sue",
+				"name": "Sue",
+				"authors": ["magigun"],
+				"repository": "https://github.com/MagiGun/sue",
+				"originals": ["clip-studio-paint"],
+				"category": "creative",
+				"languages": ["Rust"],
+				"platforms": [
+					"Windows",
+					"macOS",
+					"Linux",
+					"FreeBSD",
+					"Android",
+					"iOS",
+					"Web"
+				],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Clip Studio Paint-style illustration, comics and animation tools in a shared creative workspace.",
+				"description": "A creative workspace whose Sue Paint studio provides illustration, comics and animation workflows: pressure-sensitive brushes, stabilization, layers, blend modes, clipping, selections and canvas navigation. Shared project storage, undo, image viewing and conversion also serve its writing studio.",
+				"license": "LicenseRef-Sayn",
+				"docs": "https://github.com/MagiGun/sue#readme",
+				"limitations": "Early software; native Clip Studio project, brush, material and service compatibility is not established. Uses its own SUE project container. Larger planned studios and AI runtimes are not implemented. The Sayn License requires the exact text Sayn was here in at least one file of distributions, modifications or incorporating projects. iOS packages require sideloading.",
+				"website": "https://magigun.github.io/sue/",
+				"browser_url": "https://magigun.github.io/sue/try/"
+			},
+			"reviewed_default_revision": "f49c37577440165b629dbbcf2419b62d61a99317",
+			"sources": [
+				{
+					"url": "https://github.com/MagiGun/sue/blob/f49c37577440165b629dbbcf2419b62d61a99317/README.md",
+					"kind": "readme",
+					"blob_oid": "43528b270fb6d95b868b3b07a4f83e8041ac337b"
+				},
+				{
+					"url": "https://github.com/MagiGun/sue/blob/f49c37577440165b629dbbcf2419b62d61a99317/LICENSE",
+					"kind": "license",
+					"blob_oid": "a634723728777742e70a56d54540ed9328a1d557"
+				},
+				{
+					"url": "https://github.com/MagiGun/sue/blob/f49c37577440165b629dbbcf2419b62d61a99317/CONTRIBUTING.md",
+					"blob_oid": "355b2f4193261f3d57f88dcb8b630ae9ec6cc532",
+					"kind": "supporting_document"
+				}
+			],
+			"notes": [
+				"Sayn LICENSE is MIT-like with an added exact-string attribution condition; recorded LicenseRef-Sayn, not MIT.",
+				"Hosted build is the user-supplied /try/ URL. Native CSP format/material/service compatibility not inferred from painting UI."
+			]
+		},
+		{
+			"slug": "oxybrush",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/crisprintsstuff/oxybrush.yaml",
+			"fields": {
+				"slug": "oxybrush",
+				"name": "OxyBrush",
+				"authors": ["crisprintsstuff"],
+				"repository": "https://github.com/crisprintsstuff/OxyBrush",
+				"originals": ["zbrush"],
+				"category": "creative",
+				"languages": ["Rust"],
+				"platforms": ["Windows", "Linux", "macOS"],
+				"status": "alpha",
+				"compatibility": "partial",
+				"summary": "ZBrush-style digital sculpting with brushes, subdivision levels, voxel remeshing and OBJ/STL exchange.",
+				"description": "A digital-clay sculpting application with pressure-sensitive brushes, masking, symmetry, multi-piece scenes, subdivision levels, voxel remeshing, decimation and face groups. Saves its own OXB projects with autosave/recovery and imports or exports OBJ and STL geometry.",
+				"license": "MIT OR Apache-2.0",
+				"docs": "https://github.com/crisprintsstuff/OxyBrush#readme",
+				"limitations": "Alpha; native ZBrush file interoperability is research, not shipped support. Dynamic topology, vertex color, sculpt layers, posing, UVs and baking remain planned. Tablet pressure and high-poly performance need qualification. Windows builds are unsigned and macOS packages are not notarized; iPad is planned.",
+				"screenshots": [
+					{
+						"src": "https://raw.githubusercontent.com/crisprintsstuff/OxyBrush/main/docs/images/screenshot.png",
+						"alt": "OxyBrush: sculpting viewport, brush controls and model pieces."
+					}
+				]
+			},
+			"reviewed_default_revision": "9bac689b6514d9d9a336349f1094f7cf4ee432a6",
+			"sources": [
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/README.md",
+					"kind": "readme",
+					"blob_oid": "4d4055cb2e5c2b843b614d27a94d23370d4b8b14"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/CONTRIBUTING.md",
+					"blob_oid": "bc84c087ebe91030441aa1a05f959f67848701e0",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/LICENSE-APACHE",
+					"blob_oid": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/LICENSE-MIT",
+					"blob_oid": "e7c1235c48d99681a2c159d176c7c5981b67ba95",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/docs/ROADMAP.md",
+					"blob_oid": "5d2efb4524005b70dc626a39daa48d0fdd236d08",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/LICENSE-MIT",
+					"blob_oid": "e7c1235c48d99681a2c159d176c7c5981b67ba95",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/LICENSE-APACHE",
+					"blob_oid": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/docs/ROADMAP.md",
+					"blob_oid": "5d2efb4524005b70dc626a39daa48d0fdd236d08",
+					"kind": "supporting_document"
+				}
+			],
+			"notes": []
+		},
+		{
+			"slug": "humanmotioncraft",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/yalkouassi/humanmotioncraft.yaml",
+			"fields": {
+				"slug": "humanmotioncraft",
+				"name": "HumanMotionCraft",
+				"authors": ["yalkouassi"],
+				"repository": "https://github.com/YalKouassi/HumanMotionCraft",
+				"originals": ["cascadeur"],
+				"category": "creative",
+				"languages": ["Rust"],
+				"platforms": ["Windows", "Linux"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Cascadeur-style humanoid animation with IK, keyframes, physics-assisted posing and learned in-betweening.",
+				"description": "A broader alternative for Cascadeur-style 3D humanoid animation. Provides a built-in humanoid rig, keyframes, layers, IK pins, physics-assisted posing, motion-matching locomotion and learned in-betweening. Desktop, CLI and MCP commands share the same core and export GLB animation clips.",
+				"license": "GPL-3.0-or-later",
+				"docs": "https://github.com/YalKouassi/HumanMotionCraft#readme",
+				"limitations": "Not a Spine 2D replacement or a full Cascadeur clone; native Cascadeur project compatibility is not established. Focuses on humanoids rather than arbitrary rigs, character creation or a full 3D scene editor. Published releases are Windows-only; Linux builds are documented. Optional motion-from-text helpers require separate models with their own licenses."
+			},
+			"reviewed_default_revision": "5eda21e0be7e2c9912b204eabb1a5d79ecd90d06",
+			"sources": [
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/README.md",
+					"kind": "readme",
+					"blob_oid": "5de89bcd9dc7d45310b5e876299d7398c5522d2c"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/LICENSE",
+					"kind": "license",
+					"blob_oid": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/ATTRIBUTION.md",
+					"blob_oid": "5459ed2ec3e9bb277cc53e5bf2660fb1abaca42d",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/NOTICE",
+					"blob_oid": "100a3f2cf81119424c896691fda693188d3ed9bb",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/ROADMAP.md",
+					"blob_oid": "f3f1f86c1257c671327a9eb3c241b0a494ccf59d",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/AGENTS.md",
+					"blob_oid": "8163682a606b15c772669b2a268bd8682c8ac87e",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/docs/README.md",
+					"blob_oid": "6352f4c3e5761b2ea8052fbdb31a5792a39f3720",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/docs/naming.md",
+					"blob_oid": "694510a9888a22d286eb37002190bb1585b1209b",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/craft-app.json",
+					"blob_oid": "e6d113ec9ee688fdd5ff43ce7efe28fd09e2d326",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/HEAD/AGENTS.md",
+					"blob_oid": "8163682a606b15c772669b2a268bd8682c8ac87e",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/YalKouassi/HumanMotionCraft/blob/HEAD/ROADMAP.md",
+					"blob_oid": "f3f1f86c1257c671327a9eb3c241b0a494ccf59d",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				}
+			],
+			"notes": [
+				"Maintainer explicitly approved a broader Cascadeur alternative after clarification.",
+				"3D humanoid animation; not Spine 2D. Proprietary Cascadeur format/API parity is not established. Optional model licenses remain separate."
+			]
+		},
+		{
+			"slug": "modelcraft-viewer",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/felzow47/modelcraft-viewer.yaml",
+			"fields": {
+				"slug": "modelcraft-viewer",
+				"name": "ModelCraft",
+				"authors": ["felzow47"],
+				"repository": "https://github.com/Felzow47/ModelCraft",
+				"originals": ["edrawings-viewer"],
+				"category": "engineering",
+				"languages": ["Rust"],
+				"platforms": ["Windows", "Linux"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "eDrawings-style CAD viewing with SolidWorks and Revit readers, measurements, sections and assembly inspection.",
+				"description": "An independent CAD viewer for eDrawings-style inspection of SolidWorks parts/assemblies, Revit documents and common interchange formats. Provides an assembly tree, measurements, section planes, visibility controls and image capture. Format readers use independent code and documented open-source libraries; it is separate from getcadcraft ModelCraft.",
+				"license": "MIT",
+				"docs": "https://github.com/Felzow47/ModelCraft#readme",
+				"limitations": "MIT is declared in the README, NOTICE and Cargo metadata; a standalone project license text was not found. Some interface code is adapted from PdfCraft; bundled components retain their own licenses. Format coverage is partial and maintainer-reported. Some formats need optional Open CASCADE, assimp or web-ifc builds. This is a viewer, not a CAD authoring replacement.",
+				"screenshots": [
+					{
+						"src": "https://raw.githubusercontent.com/Felzow47/ModelCraft/main/assets/captures/solidworks_part_measure.png",
+						"alt": "ModelCraft: SolidWorks part with measurement controls."
+					}
+				]
+			},
+			"reviewed_default_revision": "33cf23fa315bff210a4cbe6c33696714559425fe",
+			"sources": [
+				{
+					"url": "https://github.com/Felzow47/ModelCraft/blob/33cf23fa315bff210a4cbe6c33696714559425fe/README.md",
+					"kind": "readme",
+					"blob_oid": "4fa58bfd32ed9b7f9b25de4a0821347dc65c9129"
+				},
+				{
+					"url": "https://github.com/Felzow47/ModelCraft/blob/33cf23fa315bff210a4cbe6c33696714559425fe/NOTICE.md",
+					"blob_oid": "56879ace262732adb19f4160b723a0c2c9815f83",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/Felzow47/ModelCraft/blob/33cf23fa315bff210a4cbe6c33696714559425fe/Cargo.toml",
+					"blob_oid": "b83e730c1d09ad41c4aac2e78ae36339bb3a2917",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/Felzow47/ModelCraft/blob/33cf23fa315bff210a4cbe6c33696714559425fe/NOTICE.md",
+					"blob_oid": "56879ace262732adb19f4160b723a0c2c9815f83",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/Felzow47/ModelCraft/blob/33cf23fa315bff210a4cbe6c33696714559425fe/licenses/LICENSE-PdfCraft-MIT.txt",
+					"blob_oid": "d2c0cd3fbf0f4285fb1f521159163695c0e1e0d8",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/Felzow47/ModelCraft/blob/HEAD/crates/craft-formats/src/easm.rs",
+					"blob_oid": "40c40980335286056745977b3de2283dc8370a50",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/Felzow47/ModelCraft/blob/HEAD/crates/sw-format/src/lib.rs",
+					"blob_oid": "bdbfbb8f51082bb8d1556aa68d2410fab334ede2",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				}
+			],
+			"notes": [
+				"Classified as eDrawings Viewer-style CAD inspection, not the existing getcadcraft ModelCraft or a full SolidWorks/Revit authoring replacement.",
+				"README/NOTICE declare MIT; full standalone project license text absent. Kept third-party terms and missing-file caveat visible."
+			]
+		},
+		{
+			"slug": "encodercraft",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/el-j/encodercraft.yaml",
+			"fields": {
+				"slug": "encodercraft",
+				"name": "encoderCraft",
+				"authors": ["el-j"],
+				"repository": "https://github.com/el-j/encoderCraft",
+				"originals": ["adobe-media-encoder"],
+				"category": "creative",
+				"languages": ["Rust"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "An early Media Encoder-style queue, preset and watch-folder prototype with codec and automation components.",
+				"description": "An early Adobe Media Encoder-style prototype with queue management, presets, watch folders, a desktop interface and CLI/MCP automation. Includes codec and media-pipeline components built on craft-libs. Source-media transcoding is not connected to the current export pipeline.",
+				"license": "MIT OR Apache-2.0",
+				"docs": "https://github.com/el-j/encoderCraft#readme",
+				"limitations": "Not a usable general-purpose Media Encoder replacement. The current export pipeline generates blank video frames and silent audio rather than decoding the selected input. Native AME project and Adobe integration compatibility are unverified. README/Cargo declare MIT OR Apache-2.0, but the referenced project license files are absent."
+			},
+			"reviewed_default_revision": "52afa53bb598e02f750a0cf7be92125c26ee5bd2",
+			"sources": [
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/52afa53bb598e02f750a0cf7be92125c26ee5bd2/README.md",
+					"kind": "readme",
+					"blob_oid": "45034043c2cfceb9ab11e80d4316e663e32ebe18"
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/52afa53bb598e02f750a0cf7be92125c26ee5bd2/ROADMAP.md",
+					"blob_oid": "081c7d3df030286ce7cb4cde532e524c277f93ab",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/52afa53bb598e02f750a0cf7be92125c26ee5bd2/docs/target-app-parity.md",
+					"blob_oid": "48ac886fb4868aeaf56c5ab086848d0488e036a2",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/52afa53bb598e02f750a0cf7be92125c26ee5bd2/Cargo.toml",
+					"blob_oid": "4e7ec36304b93643cd523ef99f9f53433621f90e",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/52afa53bb598e02f750a0cf7be92125c26ee5bd2/ROADMAP.md",
+					"blob_oid": "081c7d3df030286ce7cb4cde532e524c277f93ab",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/52afa53bb598e02f750a0cf7be92125c26ee5bd2/docs/implementation-milestones.md",
+					"blob_oid": "3f810ff4e92a900a4e13bf9b44485a3ed23a8060",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/HEAD/crates/pipeline/src/pipeline.rs",
+					"blob_oid": "dddfe0efd98e022191dd1f0879a7ac9662ab57eb",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/HEAD/crates/video-codecs/src/h264.rs",
+					"blob_oid": "ad04b281694c472092145e7d8811b649e2a93f06",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/HEAD/crates/video-codecs/src/encoder.rs",
+					"blob_oid": "5dcfd683a4a209a84123331130c97a756ac6ccb7",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/HEAD/apps/encodercraft-cli/src/main.rs",
+					"blob_oid": "199757f7a378c6d6709626b0613952301835a1bb",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/el-j/encoderCraft/blob/HEAD/crates/engine/src/lib.rs",
+					"blob_oid": "421a93686634fbf02f4cb269499a7c687923948a",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				}
+			],
+			"notes": [
+				"Did not adopt 100% parity/complete implementation claims. TranscodePipeline does not reference self.spec.source; video allocates 24 frames and stems allocate silence.",
+				"Retained experimental for implemented queue/preset/codec components; not represented as a usable source-media transcoder.",
+				"README explicitly declares MIT OR Apache-2.0; referenced license files absent. Missing texts disclosed; no contradictory LICENSE file overrides the declaration."
+			]
+		},
+		{
+			"slug": "drop",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/drop-oss/drop.yaml",
+			"fields": {
+				"slug": "drop",
+				"name": "Drop",
+				"authors": ["drop-oss"],
+				"repository": "https://github.com/Drop-OSS/drop",
+				"originals": ["steam"],
+				"category": "games",
+				"languages": ["TypeScript", "Rust"],
+				"platforms": ["Windows", "Linux", "macOS", "Web"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Self-host a Steam-style library to browse, distribute, install and launch your own DRM-free games.",
+				"description": "A self-hosted game-distribution platform with a library storefront, metadata imports, user accounts and a desktop client for downloading, installing and launching operator-supplied DRM-free games. Reimplements a subset of Steam-style library and distribution workflows on infrastructure the operator controls.",
+				"license": "AGPL-3.0",
+				"docs": "https://github.com/Drop-OSS/drop#readme",
+				"limitations": "A broader alternative, not a compatible Steam client or replacement for Valve accounts, DRM, purchases, Workshop or multiplayer services. Requires a self-hosted server and separately supplied games. Upstream is in maintenance mode with bug fixes and external contributions still accepted; client packages vary by platform.",
+				"website": "https://droposs.org/"
+			},
+			"reviewed_default_revision": "497cd53f4d89611666384f231c58222af0a96cac",
+			"sources": [
+				{
+					"url": "https://github.com/Drop-OSS/drop/blob/497cd53f4d89611666384f231c58222af0a96cac/README.md",
+					"blob_oid": "e9e9d14cfe0b0d3ce15a78484a500f0457aa8f09",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/Drop-OSS/drop/blob/497cd53f4d89611666384f231c58222af0a96cac/server/LICENSE",
+					"blob_oid": "0bc19aef7302d58d9d2d9705f3956edf9e072243",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/Drop-OSS/drop/blob/497cd53f4d89611666384f231c58222af0a96cac/package.json",
+					"blob_oid": "cdba65da029d03a70d71cd5eef72408394b4c09d",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/Drop-OSS/drop/blob/HEAD/server/package.json",
+					"blob_oid": "1013ff25a73b9d20d1206c12ca389256270637b0",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/Drop-OSS/drop/blob/HEAD/desktop/LICENSE",
+					"blob_oid": "0bc19aef7302d58d9d2d9705f3956edf9e072243",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/Drop-OSS/drop/blob/HEAD/desktop/src-tauri/Cargo.toml",
+					"blob_oid": "bde7d0fc0a70359c443cb08b69083139c91945c7",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				}
+			],
+			"notes": [
+				"User requested Steam mapping; accepted as broader self-hosted library/distribution alternatives, not Steam service/DRM replacements.",
+				"GameDepot is a disclosed fork of independently licensed Drop, not a fork of Steam."
+			]
+		},
+		{
+			"slug": "gamedepot",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/gamedepot.yaml",
+			"fields": {
+				"slug": "gamedepot",
+				"name": "GameDepot",
+				"authors": ["cmspeedau"],
+				"repository": "https://github.com/cmspeedau/GameDepot",
+				"originals": ["steam"],
+				"category": "games",
+				"languages": ["TypeScript", "Rust"],
+				"platforms": ["Windows", "Linux", "macOS", "Web"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Self-host a Steam-style game depot with library management, chunked delivery and a native desktop client.",
+				"description": "A self-hosted Steam-style game distribution and preservation platform, developed as a hard fork of Drop OSS. Retains library, account and desktop-client workflows while developing storefront ingestion, content-addressed chunk delivery, deduplication and mesh-networking integrations. Uses TypeScript/Svelte services and Rust transfer components.",
+				"license": "AGPL-3.0",
+				"docs": "https://github.com/cmspeedau/GameDepot#readme",
+				"limitations": "Early fork; release maturity and broad roadmap completion are not independently verified. Does not reproduce Steam accounts, DRM, store purchases, Workshop or service APIs. Store adapters and networking depend on external projects and services; inherited components retain their respective licenses."
+			},
+			"reviewed_default_revision": "da594978dd2e35c0806602e03ae6a212bb685458",
+			"sources": [
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/da594978dd2e35c0806602e03ae6a212bb685458/README.md",
+					"kind": "readme",
+					"blob_oid": "01ba8ad87b3a0ba2bbe91acd84587c606e401748"
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/da594978dd2e35c0806602e03ae6a212bb685458/CONTRIBUTING.md",
+					"blob_oid": "baedc40e8de28514265a103e04ccbda6f5f58ec3",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/da594978dd2e35c0806602e03ae6a212bb685458/ROADMAP.md",
+					"blob_oid": "8358e0e67e3b80d51700cb7823dcbfb221040361",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/da594978dd2e35c0806602e03ae6a212bb685458/server/LICENSE",
+					"blob_oid": "0bc19aef7302d58d9d2d9705f3956edf9e072243",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/da594978dd2e35c0806602e03ae6a212bb685458/package.json",
+					"blob_oid": "8948e624152b7526d37637f93cad56ae4ee1d8c9",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/da594978dd2e35c0806602e03ae6a212bb685458/ROADMAP.md",
+					"blob_oid": "8358e0e67e3b80d51700cb7823dcbfb221040361",
+					"kind": "supporting_document"
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/HEAD/desktop/LICENSE",
+					"blob_oid": "0bc19aef7302d58d9d2d9705f3956edf9e072243",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/HEAD/desktop/src-tauri/Cargo.toml",
+					"blob_oid": "1f8b1d217499b586a0171004a5ceab48cf1541bf",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				},
+				{
+					"url": "https://github.com/cmspeedau/GameDepot/blob/HEAD/server/package.json",
+					"blob_oid": "bab18805c95a97cf3df13db3f14280ce7f44980b",
+					"kind": "source_or_license",
+					"note": "Read as data, not executed. HEAD snapshot identified by blob hash."
+				}
+			],
+			"notes": [
+				"User requested Steam mapping; accepted as broader self-hosted library/distribution alternatives, not Steam service/DRM replacements.",
+				"GameDepot is a disclosed fork of independently licensed Drop, not a fork of Steam."
+			]
+		},
+		{
+			"slug": "gamevault",
+			"decision": "add",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/phalcode/gamevault.yaml",
+			"fields": {
+				"slug": "gamevault",
+				"name": "GameVault",
+				"authors": ["phalcode"],
+				"repository": "https://github.com/Phalcode/gamevault-backend",
+				"originals": ["steam"],
+				"category": "games",
+				"languages": ["TypeScript"],
+				"platforms": ["Windows", "Linux", "macOS", "Web"],
+				"status": "beta",
+				"compatibility": "partial",
+				"summary": "A source-available, self-hosted Steam-style library for DRM-free games, downloads and playtime tracking.",
+				"description": "A source-available Steam-style platform for hosting an operator-supplied DRM-free game library. The server indexes games and metadata, manages accounts and distributes files to separate desktop and web clients, which provide installation, launching, library browsing and playtime/progress tracking.",
+				"license": "CC-BY-NC-SA-4.0",
+				"docs": "https://github.com/Phalcode/gamevault-backend#readme",
+				"limitations": "Source-available under a noncommercial license, not open-source software. Does not replace Steam purchases, accounts, DRM or service APIs. Requires a server and separately supplied games; client implementations live in separate repositories. GameVault 2 clients are public beta, with GameVault+ features still missing.",
+				"website": "https://gamevau.lt/",
+				"browser_url": "https://demo.gamevau.lt/"
+			},
+			"reviewed_default_revision": "2c2ca1c8a16e175b8e753760c4b1fbdd6d6fc861",
+			"sources": [
+				{
+					"url": "https://github.com/Phalcode/gamevault-backend/blob/2c2ca1c8a16e175b8e753760c4b1fbdd6d6fc861/README.md",
+					"kind": "readme.md",
+					"blob_oid": "aaeffe93b1faf45ed17e163830d0dd9fab2a67d1"
+				},
+				{
+					"url": "https://github.com/Phalcode/gamevault-backend/blob/2c2ca1c8a16e175b8e753760c4b1fbdd6d6fc861/LICENSE",
+					"kind": "license",
+					"blob_oid": "cbe5ad1670406e4402217edfb82d2c56af7e8631"
+				}
+			],
+			"notes": [
+				"Maintainer requested this GameVault after the domain ambiguity was explained.",
+				"CC-BY-NC-SA-4.0 is source-available/noncommercial, not an open-source license; disclosed in description, limitations and comment.",
+				"Backend is primary repository; native/web clients are separate implementations in the same Phalcode product ecosystem."
+			]
+		},
+		{
+			"slug": "mbscada",
+			"decision": "already-listed",
+			"repository": "https://github.com/kostyk348/mbscada-rs",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/kostyk348/mbscada.yaml",
+			"listing": "https://remade.wiki/projects/mbscada/",
+			"note": "Same repository already indexed for Modbus Poll; no duplicate added."
+		},
+		{
+			"slug": "horizon",
+			"decision": "hold-for-provenance-clarification",
+			"repository": "https://github.com/horizon-rust/horizon",
+			"sources": [
+				{
+					"url": "https://github.com/horizon-rust/horizon/blob/43de4c91010baa6d01be6bbe82d927879cbcef07/CONTRIBUTING.md",
+					"finding": "Implementers are instructed to read vanilla code/bytecode before writing Horizon code."
+				},
+				{
+					"url": "https://github.com/horizon-rust/horizon/blob/e1cb997dbd35d26668bac525a8515a5231cacc6c/.claude/skills/vanilla-parity/SKILL.md",
+					"finding": "Method-to-function port ledger and explicit instruction to translate vanilla methods rather than reinvent them."
+				},
+				{
+					"url": "https://github.com/horizon-rust/horizon/blob/e1cb997dbd35d26668bac525a8515a5231cacc6c/docs/decompilation-status.md",
+					"finding": "Full client/server Vineflower decompilation and JADX method queries are documented."
+				}
+			],
+			"note": "Not recommended under current clean-room editorial standard. This is not a legal determination or proof every Rust function is copied; a separately authored behavioral-specification process has not been established."
+		},
+		{
+			"slug": "gamevault-to",
+			"decision": "exclude-at-maintainer-request",
+			"url": "https://www.gamevault.to/",
+			"note": "Different product from gamevau.lt. No public implementation repository was identified from site links, inspected public JS, or GitHub search. Maintainer explicitly requested omitting it after that check."
+		}
+	]
+}

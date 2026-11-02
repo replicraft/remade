@@ -1,0 +1,16 @@
+# Broader Cascadeur alternative included with maintainer approval.
+slug: "humanmotioncraft"
+name: "HumanMotionCraft"
+authors: ["yalkouassi"]
+repository: "https://github.com/YalKouassi/HumanMotionCraft"
+originals: ["cascadeur"]
+category: "creative"
+languages: ["Rust"]
+platforms: ["Windows", "Linux"]
+status: "experimental"
+compatibility: "partial"
+summary: "Cascadeur-style humanoid animation with IK, keyframes, physics-assisted posing and learned in-betweening."
+description: "A broader alternative for Cascadeur-style 3D humanoid animation. Provides a built-in humanoid rig, keyframes, layers, IK pins, physics-assisted posing, motion-matching locomotion and learned in-betweening. Desktop, CLI and MCP commands share the same core and export GLB animation clips."
+license: "GPL-3.0-or-later"
+docs: "https://github.com/YalKouassi/HumanMotionCraft#readme"
+limitations: "Not a Spine 2D replacement or a full Cascadeur clone; native Cascadeur project compatibility is not established. Focuses on humanoids rather than arbitrary rigs, character creation or a full 3D scene editor. Published releases are Windows-only; Linux builds are documented. Optional motion-from-text helpers require separate models with their own licenses."

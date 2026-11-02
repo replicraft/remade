@@ -1,0 +1,35 @@
+slug: zomello
+name: Zomello
+authors: [zombeatz]
+repository: https://github.com/ZomBeatz/Zomello
+website: https://docs.zombeatzmedia.com/zomello/
+browser_url: https://zombeatz.github.io/Zomello/
+originals:
+  - trello
+  - microsoft-planner
+category: productivity
+languages:
+  - TypeScript
+  - Rust
+platforms:
+  - Windows
+  - Linux
+  - Android
+  - Web
+  - macOS (server only)
+status: beta
+compatibility: partial
+summary: Trello and Microsoft Planner-style boards with offline tasks, import, calendar and timeline views, and optional self-hosted collaboration.
+description: A kanban planner with boards, buckets and cards, labels, checklists, priorities, progress, due dates and repeats, attachments, linked tasks, custom fields and time tracking. Includes board, list, calendar, timeline and chart views and My Day. Imports Trello JSON and Microsoft Planner XLSX/CSV exports; shares portable .zomello board files. Runs offline on your device without an account, or supports shared boards and live collaboration through an optional self-hosted server.
+license: MIT
+docs: https://docs.zombeatzmedia.com/zomello/
+limitations: Does not replace Trello or Planner services or APIs, or export their formats. Trello uploads remain links; older comments and Planner fields absent from exports may be missing. The hosted demo stores changes only in your browser. macOS downloads are server-only; no native macOS or public iOS app release.
+screenshots:
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/board.png
+    alt: A Zomello board with buckets and cards.
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/calendar.png
+    alt: The calendar view with cards on their due dates.
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/phone.png
+    alt: Zomello on a phone.
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/home.png
+    alt: The Zomello Home dashboard showing late, due today and upcoming tasks.

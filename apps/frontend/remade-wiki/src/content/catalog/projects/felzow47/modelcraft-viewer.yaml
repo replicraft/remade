@@ -1,0 +1,18 @@
+slug: "modelcraft-viewer"
+name: "ModelCraft"
+authors: ["felzow47"]
+repository: "https://github.com/Felzow47/ModelCraft"
+originals: ["edrawings-viewer"]
+category: "engineering"
+languages: ["Rust"]
+platforms: ["Windows", "Linux"]
+status: "experimental"
+compatibility: "partial"
+summary: "eDrawings-style CAD viewing with SolidWorks and Revit readers, measurements, sections and assembly inspection."
+description: "An independent CAD viewer for eDrawings-style inspection of SolidWorks parts/assemblies, Revit documents and common interchange formats. Provides an assembly tree, measurements, section planes, visibility controls and image capture. Format readers use independent code and documented open-source libraries; it is separate from getcadcraft ModelCraft."
+license: "MIT"
+docs: "https://github.com/Felzow47/ModelCraft#readme"
+limitations: "MIT is declared in the README, NOTICE and Cargo metadata; a standalone project license text was not found. Some interface code is adapted from PdfCraft; bundled components retain their own licenses. Format coverage is partial and maintainer-reported. Some formats need optional Open CASCADE, assimp or web-ifc builds. This is a viewer, not a CAD authoring replacement."
+screenshots:
+  - src: https://raw.githubusercontent.com/Felzow47/ModelCraft/main/assets/captures/solidworks_part_measure.png
+    alt: "ModelCraft: SolidWorks part with measurement controls."

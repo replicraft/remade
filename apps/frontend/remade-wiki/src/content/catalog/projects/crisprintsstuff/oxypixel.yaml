@@ -1,0 +1,18 @@
+slug: "oxypixel"
+name: "OxyPixel"
+authors: ["crisprintsstuff"]
+repository: "https://github.com/crisprintsstuff/oxypixel"
+originals: ["aseprite"]
+category: "creative"
+languages: ["Rust"]
+platforms: ["Windows", "Linux"]
+status: "experimental"
+compatibility: "partial"
+summary: "Pixel-art drawing and animation with layers, Aseprite imports and sprite-atlas packing."
+description: "A pixel-art editor with layered drawing, frame animation, tags, palettes and sprite-sheet export. Imports supported ASE/ASEPRITE documents for editing in its own OXYPix format. Its OxyPack atlas packer reads Aseprite files and emits game-engine PNG/JSON atlases; CLI and MCP tools share the editing core."
+license: "MIT"
+docs: "https://github.com/crisprintsstuff/oxypixel#readme"
+limitations: "Early release; full Aseprite behavior and plugin compatibility are not claimed. ASE imports convert to OXYPix rather than saving back: tilemaps become plain layers, reference layers are omitted and cel opacity is baked into pixels. Editing is limited to 1024 pixels per side, 256 frames and 32 layers. Windows downloads are unsigned."
+screenshots:
+  - src: https://raw.githubusercontent.com/crisprintsstuff/oxypixel/main/docs/images/editor.png
+    alt: "OxyPixel: layered pixel-art scene and drawing tools."
