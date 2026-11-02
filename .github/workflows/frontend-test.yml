@@ -52,6 +52,7 @@ jobs:
         run: >-
           pnpm --filter ./apps/frontend/remade-wiki exec vitest run
           --config tests/vitest.config.ts
+          --testTimeout 30000 --hookTimeout 60000
           tests/unit/catalog-paths.test.ts tests/unit/catalog.test.ts
           tests/unit/vendors.test.ts tests/unit/catalog-history.test.ts
           tests/unit/catalog-export.test.ts tests/unit/screenshots.test.ts

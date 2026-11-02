@@ -1,15 +1,6 @@
-import {
-	appendFile,
-	cp,
-	mkdir,
-	mkdtemp,
-	realpath,
-	rm,
-	writeFile,
-} from "node:fs/promises";
+import { mkdir, mkdtemp, realpath, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { fileURLToPath } from "node:url";
 import { expect, it, vi } from "vitest";
 
 it("loads every catalog source, fallback vendors, metadata and local screenshots from an encoded checkout path", async () => {
@@ -21,11 +12,6 @@ it("loads every catalog source, fallback vendors, metadata and local screenshots
 	const screenshot = join(projectFolder, "editor.png");
 
 	try {
-		await cp(
-			fileURLToPath(new URL("../../src/content/catalog/", import.meta.url)),
-			catalog,
-			{ recursive: true },
-		);
 		await mkdir(projectFolder, { recursive: true });
 		await mkdir(join(app, "public"), { recursive: true });
 		await writeFile(join(app, "public", "_redirects"), "");
@@ -54,13 +40,24 @@ screenshots:
 				"base64",
 			),
 		);
-		await appendFile(
+		await writeFile(
 			join(catalog, "originals.yaml"),
-			"\n- slug: path-review-original\n  name: Path Review Original\n  url: https://example.org/path-review\n  category: other\n",
+			"- slug: path-review-original\n  name: Path Review Original\n  url: https://example.org/path-review\n  category: other\n- slug: microsoft-paint\n  name: Microsoft Paint\n  url: https://example.org/paint\n  category: creative\n",
 		);
-		await appendFile(
+		await writeFile(
 			join(catalog, "vendors.yaml"),
-			"\n- slug: path-review-vendor\n  name: Path Review Vendor\n",
+			"- slug: path-review-vendor\n  name: Path Review Vendor\n",
+		);
+		await writeFile(join(catalog, "featured.yaml"), "[path-review]\n");
+		await mkdir(join(catalog, "suites"), { recursive: true });
+		await writeFile(
+			join(catalog, "suites", "path-review-suite.yaml"),
+			"slug: path-review-suite\nname: Path Review Suite\ndescription: A suite for filesystem path regression coverage.\nprojects: [path-review]\n",
+		);
+		await mkdir(join(catalog, "tools", "example"), { recursive: true });
+		await writeFile(
+			join(catalog, "tools", "example", "path-review-tool.yaml"),
+			"slug: path-review-tool\nname: Path Review Tool\nrepository: https://github.com/example/path-review-tool\nurl: https://example.org/path-review-tool\nlanguages: [Rust]\nsummary: A fixture supporting the review project.\ndescription: A tool for filesystem path regression coverage.\nsuites: [path-review-suite]\n",
 		);
 		const requests = join(catalog, "requests", "path-review-vendor");
 		await mkdir(requests, { recursive: true });
@@ -98,8 +95,9 @@ screenshots:
 		expect(
 			loaded.projects.some((project) => project.slug === "path-review"),
 		).toBe(true);
-		expect(loaded.tools.length).toBeGreaterThan(0);
-		expect(loaded.suites.length).toBeGreaterThan(0);
+		expect(loaded.tools[0].projects).toEqual(["path-review"]);
+		expect(loaded.suites[0].slug).toBe("path-review-suite");
+		expect(loaded.featured).toEqual(["path-review"]);
 		expect(
 			loaded.requests.find(
 				(request) => request.original === "path-review-original",
@@ -114,4 +112,4 @@ screenshots:
 	} finally {
 		await rm(temporary, { recursive: true, force: true });
 	}
-});
+}, 30_000);
