@@ -1,0 +1,70 @@
+{
+	"checked_at": "2026-11-02T11:59:59.592037+00:00",
+	"scope": "Focused follow-up to audit PR #236 and MailCraft beta PR #212; one existing project reviewed.",
+	"baseline": {
+		"revision": "6977a0f2b831070434ce2979d07581888d8407c8",
+		"worktree": "clean before edits",
+		"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ucs-care-group/ucs-mailcraft.yaml",
+		"original_yaml": "# Features and compatibility are maintainer-reported in the repository README and ROADMAP.\nslug: ucs-mailcraft\nname: MailCraft\nauthors: [billsecond, benandez]\nrepository: https://github.com/UCS-Care-Group/mailcraft\nbrowser_url: https://playground.daijro.dev/mailcraft/\noriginals: [microsoft-outlook]\ncategory: productivity\nlanguages: [Rust]\nplatforms: [Windows, macOS, Linux, FreeBSD, Web]\nstatus: beta\ncompatibility: partial\ndescription: MailCraft reimplements classic Outlook's mail, calendar, contacts and tasks as a native Rust application with Outlook's ribbon, folder pane and reading pane. It signs in to Microsoft 365 and Outlook.com with OAuth, also works with IMAP/SMTP accounts, shows HTML mail without a web engine, and exposes every command to a CLI and an MCP server.\nlicense: MIT OR Apache-2.0\ndocs: https://github.com/UCS-Care-Group/mailcraft#readme\nlimitations: Public beta since 0.8.0 (October 2026), for Microsoft 365 and Outlook.com accounts; coverage is maintainer-reported. Builds are unsigned. Send/Receive can be slow on Microsoft mailboxes with many folders and on shared mailboxes. No PST/OST/MSG/OLM import, printing or S/MIME. Browser builds cannot connect directly to mail servers.\nsummary: \"Outlook-style mail, calendars, contacts and tasks for Microsoft 365, Outlook.com and IMAP accounts.\"\nscreenshots:\n  - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/mail-dark.png\n    alt: \"MailCraft: dark-themed mailbox and reading pane.\"\n  - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/html-mail.png\n    alt: \"MailCraft: formatted message in the composition window.\"\n"
+	},
+	"upstream": {
+		"repository": "https://github.com/UCS-Care-Group/mailcraft",
+		"revision": "6e02c208a4b4d0289e92a55f85b9c109bc0d5af8"
+	},
+	"dimensions": {
+		"identity": {
+			"result": "verified",
+			"details": "Repository unchanged; existing authors retained."
+		},
+		"availability": {
+			"result": "verified",
+			"details": "Public and not archived."
+		},
+		"maturity": {
+			"result": "maintainer-reported",
+			"details": "ROADMAP explicitly public beta since 0.8.0 (2026-10-24); retains PR #212 beta correction and partial compatibility."
+		},
+		"features": {
+			"result": "maintainer-reported",
+			"details": "README and current gap documents reviewed. Added Graph/shared-mailbox support, EWS mail-only scope, recurrence, rules and EML/MBOX/ICS/VCF import/export. Read-only browser JMAP confirmed by docs/jmap.md; not desktop/CLI JMAP, and not unrestricted browser mail-server connectivity."
+		},
+		"websites": {
+			"result": "HTTP app shell and hosting source verified",
+			"details": "Existing playground demo responds with MailCraft app shell. daijro/OpenPlayground tools.yaml explicitly maps MailCraft to UCS-Care-Group/mailcraft. No new official website documented. Browser interactions not exercised."
+		},
+		"license": {
+			"result": "verified in parent audit; current README confirmed",
+			"details": "Retained MIT OR Apache-2.0. Audit #236 reviewed LICENSE-MIT, LICENSE-APACHE and NOTICE. No licensing change proposed."
+		},
+		"platforms": {
+			"result": "maintainer-reported",
+			"details": "Retained Windows/macOS/Linux/FreeBSD/Web; README/ROADMAP describe CI builds, while daily-driver beta focuses on Microsoft accounts on Windows/macOS/Linux. No platform maturity promotion inferred."
+		},
+		"screenshots": {
+			"result": "verified HTTP/content type",
+			"details": "Added upstream calendar-week.png and add-account.png; both return 200 image/png. README identifies screenshots as a sample mailbox."
+		}
+	},
+	"changes": {
+		"description": "Retains original Outlook layout, protocols, HTML rendering and CLI/MCP details, adds current features within the 500-character limit.",
+		"limitations": "Retains beta/partial scope and slow large/shared Microsoft mailbox sync. Corrects obsolete browser-no-connectivity claim, records CORS/read-only JMAP, incomplete IMAP sync, admin approval, unsigned Windows/macOS downloads, missing proprietary archive imports, printing and message encryption.",
+		"screenshots": "Two additional representative screenshots; summary unchanged."
+	},
+	"sources": [
+		"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/README.md",
+		"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/ROADMAP.md",
+		"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/docs/gaps.md",
+		"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/docs/jmap.md",
+		"https://github.com/daijro/OpenPlayground/blob/main/tools.yaml",
+		"https://playground.daijro.dev/mailcraft/"
+	],
+	"validation": {
+		"tests": "Left to PR CI under AGENTS.md; upstream code never executed.",
+		"description_characters": 476,
+		"limitations_characters": 347
+	},
+	"unresolved": [
+		"No independent real-account, runtime or cross-provider interoperability verification performed.",
+		"Upstream README, ROADMAP and gaps contain some stale details; catalog uses specific current protocol documentation for browser JMAP."
+	]
+}
