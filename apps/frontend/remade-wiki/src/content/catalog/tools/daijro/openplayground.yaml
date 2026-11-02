@@ -8,5 +8,5 @@ platforms: [Web]
 description: OpenPlayground hosts browser builds of creative, office, CAD, audio and other applications, including the ArtCraft suite. It provides optimized WebAssembly builds, shared file browsing, community plugins, system-font access, themes, clipboard integration and real-time collaboration. Browser builds can differ in features and stability from their desktop counterparts.
 suites: [artcraft]
 # Additional supported apps from the upstream tools.yaml manifest.
-projects: [earthcraft, firecraft, honeydew, lemon-studio, lightcraft-classic, matcraft, materialcraft, mixstudio, notecraft-onenote, oxiguitar, paint-rs, paintcraft, procraft, prowave, solidcraft, subcraft, suhina, tracedraw, ucs-mailcraft]
+projects: [clothcraft, earthcraft, firecraft, honeydew, lemon-studio, lightcraft-classic, matcraft, materialcraft, mixstudio, notecraft-onenote, oxiguitar, paint-rs, paintcraft, procraft, prowave, solidcraft, subcraft, suhina, tracedraw, ucs-mailcraft]
 summary: "Run creative, office, audio and CAD apps in your browser with WebAssembly builds, shared files and live collaboration."

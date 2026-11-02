@@ -15,11 +15,11 @@ platforms:
   - Linux
 status: experimental
 compatibility: partial
-description: An independent Logic Pro-style digital audio workstation built with Rust and egui. Provides audio and MIDI regions, piano-roll editing with quantization and velocity controls, a mixer, tempo maps, a built-in synthesizer and streamed audio playback. Saves arrangements and media in its own .prowave project format.
+description: "An independent Logic Pro-style DAW in Rust with a tracks timeline, MIDI and audio regions, recording, piano-roll editing, a mixer with effects and automation, and a built-in synthesizer. Uses its own project format."
 license: GPL-3.0-or-later
 docs: https://github.com/fabox-os/Pro-Wave#readme
 discord_server: https://discord.gg/V5m5nnP9uB
-limitations: Early development. Recording, undo/redo, effects processing and most Logic instruments remain planned. Mixer controls do not establish complete effects or routing support. Logic Pro .logicx project compatibility is not established. Upstream reports Windows use; Linux and macOS packages have not been tested on real hardware. Builds are unsigned or ad-hoc signed and not notarized.
+limitations: "Early development; most Logic instruments and many editing commands remain unfinished. Native Logic project compatibility is not documented. Windows packages are unsigned and macOS builds are not notarized. Linux and macOS packages have not been tested on real hardware by the maintainer."
 summary: Logic Pro-style audio and MIDI arrangement, piano-roll editing, mixing and synthesis in a Rust desktop app.
 screenshots:
   - src: https://raw.githubusercontent.com/fabox-os/Pro-Wave/main/docs/screenshots/tracks-and-mixer.webp

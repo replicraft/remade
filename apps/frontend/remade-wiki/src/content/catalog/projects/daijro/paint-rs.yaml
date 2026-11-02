@@ -8,7 +8,7 @@ browser_url: https://playground.daijro.dev/paint-rs/
 originals: [paint-net]
 category: creative
 languages: [Rust]
-platforms: [Windows, macOS, Linux, Web]
+platforms: [Windows, macOS, Linux, FreeBSD, Web]
 status: experimental
 compatibility: partial
 summary: Paint.NET-style image editing with layers, PDN files, effects, editable text and PhotoCraft-derived tools.

@@ -10,11 +10,11 @@ languages: [Rust]
 platforms: [Windows, macOS, Linux]
 status: experimental
 compatibility: partial
-description: Early Rust implementation targeting Guitar Pro's tablature and notation workflows. Its M1 desktop viewer opens Guitar Pro 3 through 8 files, displays standard notation and tablature in multiple layouts and exports PDF. Editing, playback and broader interchange are subsequent milestones.
+description: "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays notation and tablature, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export."
 license: GPL-3.0-only
 docs: https://mateusrdp.github.io/oxiguitar/
-limitations: Early M1 viewer; editing and playback remain planned despite broader wording in the README introduction. MuseScore, MusicXML, ABC and MIDI interchange await plugins. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only.
-summary: "An early Guitar Pro-style score viewer with GP3-GP8 file support and notation and tablature display."
+limitations: "Prerelease for player testing; complete Guitar Pro file and behavioral parity is not established. MuseScore, MusicXML, ABC and MIDI interchange remain planned. Sound sets and amp models are separately obtained files. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only."
+summary: "Guitar Pro-style score editing and playback with GP3-GP8 files, notation, tablature and PDF/audio exports."
 screenshots:
   - src: https://raw.githubusercontent.com/mateusrdp/oxiguitar/develop/docs/readme/light.png
     alt: "OxiGuitar: score editor with lyrics."

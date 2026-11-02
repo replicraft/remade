@@ -7,8 +7,8 @@ category: productivity
 languages: [Dart]
 status: experimental
 compatibility: partial
-description: A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Implements pressure-sensitive pens, highlighters, stylus erasing, palm rejection, stroke and area erasers, lasso transformations and undo/redo. Native storage saves pages in its own JSON-based format.
-license: Unlicensed
+description: "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Provides pressure-sensitive pens, highlighting, stylus erasing, lasso transformations, undo/redo, rich text and notebook/section/page organization. Stores native notes as JSON-based documents, uses browser preferences for web persistence, and includes document import/export and PDF rendering."
+license: "MIT"
 docs: https://github.com/HasanMajid/open-note/blob/main/docs/ROADMAP.md
-limitations: Early implementation; rich text, full notebook/section hierarchy, media and PDF annotation, portable export and sync remain planned. Native OneNote and Samsung Notes document compatibility is not documented. Browser storage is an in-memory cache; platform behavior is unverified. No project-level license grant is documented.
+limitations: "Early implementation; native OneNote and Samsung Notes document compatibility and cross-platform behavior are not established. Browser storage and native saves can fall back to an in-memory cache on failure. Full media/PDF annotation and synchronization compatibility are not documented."
 summary: "A Flutter notebook with Samsung Notes-style handwriting and OneNote-style organization."

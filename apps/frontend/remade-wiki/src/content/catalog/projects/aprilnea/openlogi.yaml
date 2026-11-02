@@ -14,9 +14,7 @@ platforms:
 - Windows
 status: experimental
 compatibility: partial
-description: An independent Logi Options+-style configuration application using Logitech HID++ device
-  communication. Provides supported-device button remapping, DPI, SmartShift, gestures and local
-  application profiles, with selected keyboard and Litra controls.
+description: "An independent Logi Options+-style configuration application using Logitech HID++ and UVC device communication. Provides supported-device button remapping, DPI, SmartShift, gestures and local application profiles, with selected keyboard, Litra and webcam controls."
 license: MIT OR Apache-2.0
 docs: https://github.com/AprilNEA/OpenLogi#readme
 limitations: Under active development; device capabilities and platform behavior vary. Linux application

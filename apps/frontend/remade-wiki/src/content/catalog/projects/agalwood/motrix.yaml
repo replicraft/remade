@@ -13,7 +13,7 @@ description: A broader Internet Download Manager alternative for HTTP, FTP, BitT
 license: MIT
 website: https://motrix.app/
 docs: https://github.com/agalwood/Motrix#readme
-limitations: The current rewrite is in beta. IDM settings, queue files and integration compatibility are not documented; browser integration uses Motrix's own extension and protocol. Migration from older Motrix imports selected tasks paused and requires a separate resume action; legacy progress import is unavailable on Windows. Third-party components retain separate licenses.
+limitations: "IDM settings, queue files and integration compatibility are not documented; browser integration uses Motrix's own extension and protocol. Migration imports selected older Motrix tasks paused and requires a separate resume action. Legacy progress migration on Windows is restricted to local NTFS with explicit authorization. Third-party components retain separate licenses."
 summary: "Manage HTTP, FTP, torrent and magnet downloads with queues, scheduling and browser integration."
 screenshots:
   - src: https://raw.githubusercontent.com/agalwood/Motrix/main/screenshots/motrix-dashboard-en-light.webp

@@ -1,8 +1,8 @@
 # Scope and limitations are maintainer-reported in the repository documentation.
 slug: lightfoundry
-name: LightFoundry
+name: "LaserFoundry"
 authors: [sitesentrix]
-repository: https://github.com/Stitchwright/lightfoundry
+repository: "https://github.com/Stitchwright/laserfoundry"
 browser_url: https://stitchwright.github.io/laserfoundry/
 originals: [lightburn]
 category: creative
@@ -11,6 +11,6 @@ status: experimental
 compatibility: partial
 description: A LightBurn-style laser layout and control application with vector editing, SVG and DXF import, per-layer cut settings, raster dithering, toolpath preview and GRBL G-code streaming. Includes a simulated controller and headless commands.
 license: MIT OR Apache-2.0
-docs: https://github.com/Stitchwright/lightfoundry#readme
+docs: "https://github.com/Stitchwright/laserfoundry#readme"
 limitations: Early development; machine control has only been verified against a simulator. Marlin and Smoothieware output is untested on hardware. Many LightBurn workflows and controller families are missing; native LightBurn project compatibility is not documented.
 summary: "LightBurn-style laser design and control with vector editing, cut settings, dithering and GRBL output."
