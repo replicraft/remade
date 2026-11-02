@@ -16,13 +16,14 @@ platforms:
   - Linux
   - Android
   - Web
+  - macOS (server only)
 status: beta
 compatibility: partial
-summary: Trello and Microsoft Planner style boards for Windows, Linux and Android, with Trello and Planner import and an optional self-hosted server.
-description: A kanban planner with boards, buckets and cards, labels, checklists, priorities, progress, due dates and repeats, plus board, list, calendar, timeline and chart views and a My Day page. Imports Trello JSON exports and Microsoft Planner Excel or CSV exports. Runs on its own device without an account, or syncs through an optional self-hosted server.
+summary: Trello and Microsoft Planner-style boards with offline tasks, import, calendar and timeline views, and optional self-hosted collaboration.
+description: A local-first kanban planner targeting Trello and Microsoft Planner workflows. Boards and cards support checklists, labels, recurring tasks, attachments, linked tasks, custom fields and time tracking. Includes board, list, calendar, timeline and chart views, plus My Day. Imports Trello JSON and Planner XLSX/CSV; shares portable .zomello board files. Use it offline without an account or collaborate on shared boards with live updates through an optional self-hosted server.
 license: MIT
 docs: https://docs.zombeatzmedia.com/zomello/
-limitations: Targets Trello and Planner board workflows, not their hosted services or APIs. Import only; there is no export back to Trello or Planner formats. No macOS or iOS release yet.
+limitations: Does not replace Trello or Planner services or APIs, or export their formats. Trello uploads remain links; older comments and Planner fields absent from exports may be missing. The hosted demo stores changes only in your browser. macOS downloads are server-only; no native macOS or public iOS app release. Current source includes changes newer than the v0.5.0 prerelease.
 screenshots:
   - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/board.png
     alt: A Zomello board with buckets and cards.
@@ -30,3 +31,5 @@ screenshots:
     alt: The calendar view with cards on their due dates.
   - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/phone.png
     alt: Zomello on a phone.
+  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/home.png
+    alt: The Zomello Home dashboard showing late, due today and upcoming tasks.
