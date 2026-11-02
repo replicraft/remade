@@ -2,21 +2,29 @@
 slug: ucs-mailcraft
 name: MailCraft
 authors: [billsecond, benandez]
+
 repository: https://github.com/UCS-Care-Group/mailcraft
 browser_url: https://playground.daijro.dev/mailcraft/
+docs: https://github.com/UCS-Care-Group/mailcraft#readme
+
 originals: [microsoft-outlook]
 category: productivity
 languages: [Rust]
 platforms: [Windows, macOS, Linux, FreeBSD, Web]
-status: alpha
-compatibility: partial
-description: MailCraft reimplements classic Outlook's mail, calendar, contacts and tasks as a native Rust application with Outlook's ribbon, folder pane and reading pane. It signs in to Microsoft 365 and Outlook.com with OAuth, also works with IMAP/SMTP accounts, shows HTML mail without a web engine, and exposes every command to a CLI and an MCP server.
 license: MIT OR Apache-2.0
-docs: https://github.com/UCS-Care-Group/mailcraft#readme
-limitations: Early alpha; coverage is maintainer-reported, with real-server use on one Microsoft 365 mailbox. Builds are unsigned. Graph sending, calendar and contacts are documented; Graph mailbox sync and shared mailboxes remain under development/testing. No PST/OST/MSG/OLM import, printing or S/MIME. Browser builds cannot connect directly to mail servers.
+status: beta
+compatibility: partial
+
 summary: "Outlook-style mail, calendars, contacts and tasks for Microsoft 365, Outlook.com and IMAP accounts."
+description: Native Rust reimplementation of classic Outlook's mail, calendar, contacts and tasks, with ribbon, folder and reading panes. Supports Microsoft OAuth, Graph sync, shared mailboxes, IMAP/SMTP and preview EWS mail. Includes multiple rich-text compose windows, automatic replies for Microsoft accounts, Work Offline, high contrast, rules and recurring meetings. Imports/exports EML, MBOX, ICS and VCF; renders HTML without a web engine. CLI/MCP command access; browser builds offer read-only JMAP.
+limitations: "Beta covers Microsoft accounts; other providers remain experimental. EWS: mail-only preview, tested on Grommunio; Exchange Server, SmarterMail and NTLM untested on real servers. Microsoft sign-in may need admin approval. Unsigned Windows/macOS builds; slow large/shared-mailbox sync; incomplete IMAP sync. No PST/OST/MSG/OLM import, printing or S/MIME/OpenPGP. Browser JMAP: read-only, CORS required."
+
 screenshots:
   - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/mail-dark.png
     alt: "MailCraft: dark-themed mailbox and reading pane."
   - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/html-mail.png
     alt: "MailCraft: formatted message in the composition window."
+  - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/calendar-week.png
+    alt: "MailCraft: the calendar in week view."
+  - src: https://raw.githubusercontent.com/UCS-Care-Group/mailcraft/main/docs/images/add-account.png
+    alt: "MailCraft: adding a mail account."
