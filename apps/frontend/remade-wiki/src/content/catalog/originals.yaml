@@ -474,6 +474,11 @@
   name: Microsoft Project
   url: https://www.microsoft.com/en-us/microsoft-365/planner/project-plan-3
   category: productivity
+- slug: microsoft-planner
+  vendor: microsoft
+  name: Microsoft Planner
+  url: https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner
+  category: productivity
 - slug: microsoft-publisher
   vendor: microsoft
   name: Microsoft Publisher

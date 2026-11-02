@@ -1,0 +1,83 @@
+{
+	"checked_at": "2026-11-02T11:37:33.204298+00:00",
+	"scope": "Focused review of the unpublished Zomello submission in PR #200; one entry reviewed.",
+	"baseline": {
+		"remade_revision": "8c7629a31d528fc757c79f89d829e41df89efe39",
+		"initial_worktree": "clean",
+		"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zombeatz/zomello.yaml",
+		"original_yaml": "slug: zomello\nname: Zomello\nauthors: [zombeatz]\nrepository: https://github.com/ZomBeatz/Zomello\nwebsite: https://docs.zombeatzmedia.com/zomello/\nbrowser_url: https://zombeatz.github.io/Zomello/\noriginals:\n  - trello\n  - microsoft-planner\ncategory: productivity\nlanguages:\n  - TypeScript\n  - Rust\nplatforms:\n  - Windows\n  - Linux\n  - Android\n  - Web\nstatus: beta\ncompatibility: partial\nsummary: Trello and Microsoft Planner style boards for Windows, Linux and Android, with Trello and Planner import and an optional self-hosted server.\ndescription: A kanban planner with boards, buckets and cards, labels, checklists, priorities, progress, due dates and repeats, plus board, list, calendar, timeline and chart views and a My Day page. Imports Trello JSON exports and Microsoft Planner Excel or CSV exports. Runs on its own device without an account, or syncs through an optional self-hosted server.\nlicense: MIT\ndocs: https://docs.zombeatzmedia.com/zomello/\nlimitations: Targets Trello and Planner board workflows, not their hosted services or APIs. Import only; there is no export back to Trello or Planner formats. No macOS or iOS release yet.\nscreenshots:\n  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/board.png\n    alt: A Zomello board with buckets and cards.\n  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/calendar.png\n    alt: The calendar view with cards on their due dates.\n  - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/phone.png\n    alt: Zomello on a phone.\n"
+	},
+	"upstream": {
+		"repository": "https://github.com/ZomBeatz/Zomello",
+		"revision": "bd9029e3db714156b9705cc57cbf3cd9b5715050",
+		"latest_release": "v0.5.0",
+		"prerelease": true,
+		"published_at": "2026-10-17T19:54:23Z"
+	},
+	"dimensions": {
+		"identity": {
+			"result": "verified",
+			"details": "Canonical repository unchanged; ZomBeatz owner credited. No additional documented mirrors or Discord community links found in reviewed README/docs."
+		},
+		"availability": {
+			"result": "verified",
+			"details": "Public, not archived. Repository metadata and source accessible."
+		},
+		"maturity": {
+			"result": "maintainer-reported",
+			"details": "Beta explicitly offered by README and official docs. Retained beta/partial. CHANGELOG marks 0.6.0 in progress; current source is newer than the published v0.5.0 prerelease."
+		},
+		"features": {
+			"result": "maintainer-reported; import implementation inspected",
+			"details": "Expanded board/task details, linked tasks, custom fields, time tracking, native board-file sharing and live server collaboration. Trello JSON / Planner XLSX and CSV parsers confirmed in src/importers.ts. Import limits retained explicitly; not a runtime compatibility certification."
+		},
+		"websites": {
+			"result": "verified HTTP/content",
+			"details": "Official guide and browser demo return 200 with Zomello identities. Demo is an app shell; interaction/persistence not independently exercised. README states changes remain in local browser."
+		},
+		"license": {
+			"result": "verified",
+			"details": "LICENSE is MIT. README separately excludes project names/logos and identifies Lucide icons as ISC; MIT describes project code, not unrestricted brand rights."
+		},
+		"platforms": {
+			"result": "verified release assets; maintainer-reported operation",
+			"details": "v0.5.0 assets include Windows/Linux desktop, Android APK and Windows/Linux/macOS server binaries. macOS platform added explicitly as server-only; public native macOS/iOS app availability not established."
+		},
+		"screenshots": {
+			"result": "verified HTTP/content type",
+			"details": "Board, calendar, phone and Home PNG URLs return 200 image/png. Added Home dashboard as fourth screenshot."
+		}
+	},
+	"sources": [
+		"https://github.com/ZomBeatz/Zomello/blob/bd9029e3db714156b9705cc57cbf3cd9b5715050/README.md",
+		"https://github.com/ZomBeatz/Zomello/blob/bd9029e3db714156b9705cc57cbf3cd9b5715050/LICENSE",
+		"https://github.com/ZomBeatz/Zomello/blob/bd9029e3db714156b9705cc57cbf3cd9b5715050/CHANGELOG.md",
+		"https://github.com/ZomBeatz/Zomello/blob/bd9029e3db714156b9705cc57cbf3cd9b5715050/docs/apps.md",
+		"https://github.com/ZomBeatz/Zomello/blob/bd9029e3db714156b9705cc57cbf3cd9b5715050/docs/server.md",
+		"https://github.com/ZomBeatz/Zomello/blob/bd9029e3db714156b9705cc57cbf3cd9b5715050/src/importers.ts",
+		"https://github.com/ZomBeatz/Zomello/releases/tag/v0.5.0",
+		"https://docs.zombeatzmedia.com/zomello/",
+		"https://zombeatz.github.io/Zomello/"
+	],
+	"changed_fields": [
+		"summary",
+		"description",
+		"limitations",
+		"platforms",
+		"screenshots"
+	],
+	"validation": {
+		"tests": "Not run locally under AGENTS.md; left to PR CI.",
+		"field_lengths": {
+			"summary": 138,
+			"description": 475,
+			"limitations": 371
+		},
+		"duplicates": "No existing Zomello repository/slug on main. PR already adds canonical microsoft-planner and reuses trello; no open request for either target found.",
+		"execution": "Upstream code never executed."
+	},
+	"unresolved": [
+		"No independent application runtime or complete import-fidelity validation performed.",
+		"Current source features are not all established as present in the older published prerelease."
+	]
+}
