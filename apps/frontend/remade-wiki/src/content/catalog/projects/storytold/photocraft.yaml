@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Photoshop-style image editing with layers, adjustments, selections and layered PSD files."
-description: PhotoCraft by ArtCraft independently implements Photoshop-style image editing, including layers, adjustments, selections and layered PSD documents.
+description: "PhotoCraft by ArtCraft independently implements Photoshop-style image editing with brushes, layers and masks, adjustments, selections, filters, text and layered PSD/PSB documents. Supports high-bit-depth images, CMYK/Lab workflows and common raster formats. The native desktop and browser interfaces share editing commands with the CLI, JSON control channel and MCP server; Photoshop interchange remains partial."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/photocraft
 discord_server: https://discord.gg/artcraft

@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Acrobat-style PDF viewing, page organization, annotation, forms and document protection."
-description: An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting PDF documents.
+description: "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting documents. Adds supported text/image editing, page manipulation, redaction, OCR, conversion, signature workflows and PDF inspection. Runs natively and in the browser; CLI, JSON control and MCP interfaces automate the same document operations. Editing, conversion and standards support remain partial."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/pdfcraft
 discord_server: https://discord.gg/artcraft

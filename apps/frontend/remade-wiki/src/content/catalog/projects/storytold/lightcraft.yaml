@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Lightroom-style photo management with non-destructive RAW development, adjustments and masking."
-description: An independent Lightroom-style photography application by ArtCraft with a photo library, non-destructive adjustments, RAW development and masking.
+description: "An independent Lightroom-style photography application by ArtCraft with photo-library organization, non-destructive adjustments, RAW development and masking. Provides crop and lens tools, local edits, presets, batch processing and image export, using the same Rust processing engine on desktop and in the browser. CLI commands, a JSON control channel and MCP expose library and development workflows."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/lightcraft
 discord_server: https://discord.gg/artcraft

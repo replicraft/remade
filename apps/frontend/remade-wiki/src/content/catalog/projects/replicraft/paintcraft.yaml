@@ -11,7 +11,7 @@ platforms: [Windows, macOS, Linux, Web]
 status: experimental
 compatibility: partial
 summary: Paint.NET and MS Paint workflows in Rust, with layers, brushes, selections, Classic skins and a tabbed Studio workspace.
-description: "A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs, floating panels, editable filters and layer masks. Desktop, browser, CLI and MCP interfaces provide painting and image conversion. PCND projects preserve layers, filters and masks; supported layered imports include OpenRaster, limited historical PDN/PAINT and basic raster PSD/PSB."
+description: "Rust reimplementation of Paint.NET and MS Paint workflows. Classic has Windows 7/10/11 skins; Studio adds tabs, floating panels, editable filters and layer masks. Brushes, shapes, text, selections, layers and undo/redo are available on desktop/browser and through headless CLI/MCP. PCND preserves layers, filters and masks. Exchanges PNG/JPEG/BMP, still GIF and selected TIFF pages; layered imports include OpenRaster, historical PDN/PAINT subsets and basic raster PSD/PSB."
 license: MIT
 website: https://paint.replicraft.dev
 docs: https://github.com/replicraft/PaintCraft#readme

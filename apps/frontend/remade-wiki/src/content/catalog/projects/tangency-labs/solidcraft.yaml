@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Fusion-style parametric 3D CAD with constrained sketches, solid modeling and a rebuildable feature timeline."
-description: "A Rust parametric CAD application targeting Fusion-style design workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces."
+description: "A Rust parametric CAD application targeting Fusion-style workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools; parameter changes rebuild the model. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces."
 license: MIT OR Apache-2.0
 website: https://solidcraft.io
 docs: https://docs.solidcraft.io

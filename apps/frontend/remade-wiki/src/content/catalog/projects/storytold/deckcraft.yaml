@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "PowerPoint-style presentations with themes, slide layouts, shapes, transitions, animations and file support."
-description: An independent PowerPoint-style presentation application by ArtCraft with themes, slide layouts, shapes, transitions, animations and PowerPoint file support.
+description: "An independent PowerPoint-style presentation application by ArtCraft with themes, slide masters, layouts, shapes, formatted text, pictures, tables, charts and basic SmartArt. Provides transitions, animations and full-screen presenting. Opens and saves PPTX and exports PDF, with desktop/browser interfaces and undoable commands shared by the CLI, control channel and MCP server."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/deckcraft
 discord_server: https://discord.gg/artcraft

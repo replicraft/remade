@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "After Effects-style compositing with layered animation, keyframes, expressions, effects and rendering."
-description: An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering.
+description: "An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering. Supports shape and text animation, masks, nested compositions and time remapping. Uses readable .ecproj project files and imports/exports Lottie. The desktop interface, CLI, JSON control channel and MCP server share the same command engine."
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Cannot open AEP or AEPX projects or run After Effects plug-ins. Render behavior has not yet been systematically compared with After Effects.

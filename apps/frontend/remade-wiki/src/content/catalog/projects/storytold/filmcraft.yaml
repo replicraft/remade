@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Premiere-style video editing with multitrack timelines, color adjustments, audio, titles and exports."
-description: An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, color adjustments, audio, titles and media export.
+description: "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, three-point editing, ripple/roll/slip/slide trimming, nested sequences and keyframes. Includes color adjustments, audio mixing, titles, captions and media export. Its native project format supports autosave and crash recovery; CLI and MCP commands drive the same editing engine."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/filmcraft
 discord_server: https://discord.gg/artcraft

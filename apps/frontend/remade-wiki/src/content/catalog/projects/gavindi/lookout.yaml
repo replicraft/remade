@@ -10,7 +10,7 @@ platforms: [Linux]
 status: experimental
 compatibility: partial
 summary: "Outlook-style mail, calendar, contacts and tasks in a native GNOME app with IMAP, SMTP, CalDAV and CardDAV."
-description: "An Outlook-style Linux email client for GNOME with IMAP/SMTP mail and Microsoft 365 integration. Provides calendar and contacts through CalDAV/CardDAV or Microsoft accounts, with Google Tasks and Microsoft To Do support, local search and familiar mailbox workflows."
+description: "An Outlook-style mail, calendar, contacts and tasks client for GNOME, built with Rust and GTK 4. Supports IMAP/SMTP, GNOME Online Accounts and Microsoft 365 integration, with full-text search and rich-text composition. Calendars and contacts use CalDAV/CardDAV or Microsoft accounts; tasks integrate with Google Tasks and Microsoft To Do."
 license: GPL-3.0-or-later
 website: https://lookout-mail.com/
 docs: https://github.com/gavindi/lookout#readme

@@ -12,7 +12,7 @@ platforms: [macOS, Windows, Linux]
 status: experimental
 compatibility: partial
 summary: "Browse databases, write SQL and edit table data in a native DataGrip-style client."
-description: "A DataGrip-style native database client with schema browsing, SQL consoles, completion, transactional table editing and query-result exports. Supports PostgreSQL, SQL Server, SQLite and other documented engines, with SSH tunneling and OS credential storage."
+description: "A DataGrip-style native database client with schema browsing, highlighted SQL consoles, completion, transactional table-data editing and query-result exports to common text formats. Supports PostgreSQL, SQL Server, SQLite, MySQL/MariaDB, Oracle and other documented engines. Provides SSH tunneling and OS credential storage through macOS Keychain, Windows Credential Manager or Linux Secret Service."
 license: MIT OR Apache-2.0
 docs: https://github.com/javy-fernandez/datacraft#readme
 limitations: "Early implementation; full DataGrip feature, project and plugin compatibility is not documented. Database-engine coverage varies. macOS builds are not notarized and Windows executables are unsigned. Linux requires its documented graphics and credential-service dependencies."

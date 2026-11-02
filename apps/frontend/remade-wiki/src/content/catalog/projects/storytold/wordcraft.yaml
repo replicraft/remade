@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Word-style document editing with styles, tables, review tools, DOCX files and PDF export."
-description: An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, DOCX reading and writing, and PDF export.
+description: "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, track changes, references and mail merge. Reads/writes DOCX, ODT, RTF, HTML, Markdown, LaTeX and plain text, opens supported legacy DOC files and exports PDF. Desktop and browser interfaces share document commands with the CLI, JSON control channel and MCP server; Word layout and format fidelity remain partial."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/wordcraft
 discord_server: https://discord.gg/artcraft

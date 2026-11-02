@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: experimental
 compatibility: partial
 summary: "Pro Tools-style audio and MIDI editing, mixing, automation and offline processing."
-description: An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing.
+description: "An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing. Provides multitrack recording, clip-edit modes, buses, sends, built-in effects and instruments, piano-roll workflows and audio bouncing. Desktop controls, a CLI and MCP automation share the command engine; session exchange, plugin hosting and recording scalability remain incomplete."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/soundcraft
 discord_server: https://discord.gg/artcraft

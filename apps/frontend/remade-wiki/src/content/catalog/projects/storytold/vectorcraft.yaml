@@ -11,7 +11,7 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Illustrator-style vector art with paths, artboards, typography and SVG, PDF and compatible AI files."
-description: VectorCraft by ArtCraft independently implements Illustrator-style vector illustration, including paths, artboards, typography, SVG, PDF and PDF-compatible AI files.
+description: "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration with paths, artboards, typography, shapes, curve booleans, gradients, symbols and effects. Reads/writes SVG and PDF and supports PDF-compatible AI files. Provides desktop and browser editing plus undoable commands exposed through CLI, JSON control and MCP interfaces. Native Illustrator interchange remains partial."
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/vectorcraft
 discord_server: https://discord.gg/artcraft

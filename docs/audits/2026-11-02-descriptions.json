@@ -1,0 +1,3675 @@
+{
+	"review_date": "2026-11-02",
+	"checked_at_utc": "2026-11-02T12:50:30.332284+00:00",
+	"scope": "All 176 project and 14 supporting-tool descriptions. Preserve existing supported meaning; only correct, add or reword. Flare held unchanged until released v0.1.0.",
+	"counts": {
+		"reviewed": 190,
+		"changed": 26,
+		"held": 1
+	},
+	"ordering": {
+		"catalog_files_with_semantic_equality_verified": 575,
+		"changed_files_in_ordering_commit": 555,
+		"ordering_commit": "447fe38",
+		"summary": "Immediately before description on projects/tools; before reason on requests.",
+		"other_fields": "Existing majority order.",
+		"preserved": "Values, comments, multiline text, screenshot/list order and featured priority.",
+		"exception": "Flare YAML remains unchanged by explicit maintainer instruction."
+	},
+	"entries": [
+		{
+			"slug": "subcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/aalzard/subcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "56a23a7e88077fbb5d11bd15865d73750964ae78",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841048+00:00",
+				"source_repository": "https://github.com/Aalzard/subcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Aalzard/subcraft/blob/56a23a7e88077fbb5d11bd15865d73750964ae78/README.md",
+				"https://github.com/Aalzard/subcraft/blob/56a23a7e88077fbb5d11bd15865d73750964ae78/docs/progress.md"
+			]
+		},
+		{
+			"slug": "openmailclient",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/adriaanboshoff/openmailclient.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "edf8a0f6722f6aee727be7e72a72ce1a6c7dedc1",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841368+00:00",
+				"source_repository": "https://github.com/AdriaanBoshoff/OpenMailClient"
+			},
+			"decision": "Restored PDF printing of both messages and folder lists.",
+			"description_before": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes recurring calendars, contacts and tasks with CalDAV/CardDAV synchronization, plus a CLI and PDF printing.",
+			"description_after": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes recurring calendars, contacts and tasks with CalDAV/CardDAV synchronization, a CLI, and PDF printing of messages and folder lists.",
+			"source_urls": [
+				"https://github.com/AdriaanBoshoff/OpenMailClient/blob/edf8a0f6722f6aee727be7e72a72ce1a6c7dedc1/README.md",
+				"https://github.com/AdriaanBoshoff/OpenMailClient/blob/edf8a0f6722f6aee727be7e72a72ce1a6c7dedc1/ROADMAP.md",
+				"https://github.com/AdriaanBoshoff/OpenMailClient/blob/edf8a0f6722f6aee727be7e72a72ce1a6c7dedc1/docs/gaps.md",
+				"https://github.com/AdriaanBoshoff/OpenMailClient/blob/edf8a0f6722f6aee727be7e72a72ce1a6c7dedc1/docs/parity-checklist.md"
+			]
+		},
+		{
+			"slug": "motrix",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/agalwood/motrix.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "963ff18d92a71d340180ffe96d89cda72c3e0546",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812118+00:00",
+				"source_repository": "https://github.com/agalwood/Motrix"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/agalwood/Motrix/blob/963ff18d92a71d340180ffe96d89cda72c3e0546/README.md",
+				"https://github.com/agalwood/Motrix/blob/963ff18d92a71d340180ffe96d89cda72c3e0546/THIRD_PARTY_NOTICES.md",
+				"https://github.com/agalwood/Motrix/blob/963ff18d92a71d340180ffe96d89cda72c3e0546/docs/release-notes/2.2.0.md"
+			]
+		},
+		{
+			"slug": "ageskeleton",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/agechaos/ageskeleton.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "9881d18d4f763dc301ef9841e1759fd8d72bd1e7",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841371+00:00",
+				"source_repository": "https://github.com/AgeChaos/AgeSkeleton"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/AgeChaos/AgeSkeleton/blob/9881d18d4f763dc301ef9841e1759fd8d72bd1e7/README.md",
+				"https://github.com/AgeChaos/AgeSkeleton/blob/9881d18d4f763dc301ef9841e1759fd8d72bd1e7/LICENSE.txt",
+				"https://github.com/AgeChaos/AgeSkeleton/blob/9881d18d4f763dc301ef9841e1759fd8d72bd1e7/THIRD_PARTY_NOTICES.md"
+			]
+		},
+		{
+			"slug": "libernt",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ahmedarif193/libernt.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "87beae62ae9ae31e6de4a8abe12ef2c52cea7b9e",
+				"branch": "main-nt10",
+				"checked_at": "2026-11-02T12:12:27.623509+00:00",
+				"source_repository": "https://github.com/LiberNT/LiberNT"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/LiberNT/LiberNT/blob/87beae62ae9ae31e6de4a8abe12ef2c52cea7b9e/README.md"
+			]
+		},
+		{
+			"slug": "crimsonland-macos",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/akwiatkowski/crimsonland-macos.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f6323c1793c6210bed6724aabebdf0a55ed23bc7",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:36.812119+00:00",
+				"source_repository": "https://github.com/akwiatkowski/crimsonland"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/akwiatkowski/crimsonland/blob/f6323c1793c6210bed6724aabebdf0a55ed23bc7/README.md"
+			]
+		},
+		{
+			"slug": "recoil-metal",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/akwiatkowski/recoil-metal.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5689a37cab7aa431d567caa583be9dded6fb96cb",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812121+00:00",
+				"source_repository": "https://github.com/akwiatkowski/recoil-metal"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/akwiatkowski/recoil-metal/blob/5689a37cab7aa431d567caa583be9dded6fb96cb/README.md",
+				"https://github.com/akwiatkowski/recoil-metal/blob/5689a37cab7aa431d567caa583be9dded6fb96cb/docs/fa-gameplay-progress.md"
+			]
+		},
+		{
+			"slug": "firecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/aliasfoxkde/firecraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "7c829971b722168a5bdcf9735db0498f365129dd",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812123+00:00",
+				"source_repository": "https://github.com/aliasfoxkde/FireCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/aliasfoxkde/FireCraft/blob/7c829971b722168a5bdcf9735db0498f365129dd/README.md",
+				"https://github.com/aliasfoxkde/FireCraft/blob/7c829971b722168a5bdcf9735db0498f365129dd/docs/ATTRIBUTION.md",
+				"https://github.com/aliasfoxkde/FireCraft/blob/7c829971b722168a5bdcf9735db0498f365129dd/docs/PROGRESS.md"
+			]
+		},
+		{
+			"slug": "notecraft-onenote",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/alientechsoftware/notecraft-onenote.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "e9626e65866f44896ceacf893225c3f6e69b744f",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841373+00:00",
+				"source_repository": "https://github.com/AlienTechSoftware/notecraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/AlienTechSoftware/notecraft/blob/e9626e65866f44896ceacf893225c3f6e69b744f/README.md",
+				"https://github.com/AlienTechSoftware/notecraft/blob/e9626e65866f44896ceacf893225c3f6e69b744f/ATTRIBUTION.md",
+				"https://github.com/AlienTechSoftware/notecraft/blob/e9626e65866f44896ceacf893225c3f6e69b744f/ROADMAP.md",
+				"https://github.com/AlienTechSoftware/notecraft/blob/e9626e65866f44896ceacf893225c3f6e69b744f/docs/feature-parity.md",
+				"https://github.com/AlienTechSoftware/notecraft/blob/e9626e65866f44896ceacf893225c3f6e69b744f/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "motionity",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/alyssaxuu/motionity.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5843fa14c2fabc72d1bcabf442acf6062ce71387",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812169+00:00",
+				"source_repository": "https://github.com/alyssaxuu/motionity"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/alyssaxuu/motionity/blob/5843fa14c2fabc72d1bcabf442acf6062ce71387/README.md"
+			]
+		},
+		{
+			"slug": "beamcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/apibim-com/beamcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "547186df0dda53a741154e6f2a3142972a318111",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:21.841375+00:00",
+				"source_repository": "https://github.com/Apibim-com/BeamCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Apibim-com/BeamCraft/blob/547186df0dda53a741154e6f2a3142972a318111/README.md",
+				"https://github.com/Apibim-com/BeamCraft/blob/547186df0dda53a741154e6f2a3142972a318111/ROADMAP.md",
+				"https://github.com/Apibim-com/BeamCraft/blob/547186df0dda53a741154e6f2a3142972a318111/docs/brand/LICENSE-brand.txt"
+			]
+		},
+		{
+			"slug": "openlogi",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/aprilnea/openlogi.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d4d98060a2b66aecd7dc94b67fe7c0be001cb361",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:21.841377+00:00",
+				"source_repository": "https://github.com/AprilNEA/OpenLogi"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/AprilNEA/OpenLogi/blob/d4d98060a2b66aecd7dc94b67fe7c0be001cb361/README.md"
+			]
+		},
+		{
+			"slug": "inventcraft-datum",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/artis-98/inventcraft-datum.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "53452ca6b7cd94cb5d5255b4947bb4d272306e71",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841378+00:00",
+				"source_repository": "https://github.com/Artis-98/inventcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Artis-98/inventcraft/blob/53452ca6b7cd94cb5d5255b4947bb4d272306e71/README.md"
+			]
+		},
+		{
+			"slug": "pixelcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/asad-albadi/pixelcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "73c8ab9cbbc377998599c9f9e9948f30e0e9fbad",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812183+00:00",
+				"source_repository": "https://github.com/asad-albadi/PixelCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/asad-albadi/PixelCraft/blob/73c8ab9cbbc377998599c9f9e9948f30e0e9fbad/README.md",
+				"https://github.com/asad-albadi/PixelCraft/blob/73c8ab9cbbc377998599c9f9e9948f30e0e9fbad/runtime/LUA-LICENSE.txt"
+			]
+		},
+		{
+			"slug": "rook",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/asyncfinn/rook.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "8680da0fde3ded84731b7422c59de26db0e14135",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841381+00:00",
+				"source_repository": "https://github.com/AsyncFinn/rook"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/README.md",
+				"https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/docs/roadmap/README.md",
+				"https://github.com/AsyncFinn/rook/blob/8680da0fde3ded84731b7422c59de26db0e14135/docs/roadmap/unscheduled.md"
+			]
+		},
+		{
+			"slug": "harper",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/automattic/harper.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "19551243709cadcc5e6e214f53ea15cb360d13ea",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:21.841383+00:00",
+				"source_repository": "https://github.com/Automattic/harper"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Automattic/harper/blob/19551243709cadcc5e6e214f53ea15cb360d13ea/README.md"
+			]
+		},
+		{
+			"slug": "photonforge",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/babisque/photonforge.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "c18e909dcff60c8cf622d7021c98e16df7a6a7c5",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870393+00:00",
+				"source_repository": "https://github.com/babisque/PhotonForge"
+			},
+			"decision": "Replaced a stale bootstrap-only claim with implemented geometry, SVG layout, editing, preview and G-code output, verified in roadmap/app/milestone source. Explicitly retained planned hardware streaming and incomplete manual validation.",
+			"description_before": "An early Rust project planning a LightBurn-style laser engraving and cutting workflow, initially for GRBL controllers. The workspace separates geometry, file import/export, G-code generation, device communication and the GUI. Its README identifies the current stage as Phase 0 workspace bootstrap; these are planned capabilities, not a finished laser-control application.",
+			"description_after": "An early Rust implementation of LightBurn-style laser layout workflows, initially targeting GRBL. Its layered workspace separates geometry, SVG import, G-code generation, device communication and an egui GUI. Tools arrange and edit shapes, configure per-layer cuts, preview toolpaths and save G-code, with undo/redo. Read-only GRBL connection code is present; machine control and job streaming remain planned.",
+			"source_urls": [
+				"https://github.com/babisque/PhotonForge/blob/c18e909dcff60c8cf622d7021c98e16df7a6a7c5/README.md",
+				"https://github.com/babisque/PhotonForge/blob/c18e909dcff60c8cf622d7021c98e16df7a6a7c5/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "projectcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/benandez/projectcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "1757247b53a5641d645bfcd0b4612504c5150785",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853938+00:00",
+				"source_repository": "https://github.com/UCS-Care-Group/projectcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/UCS-Care-Group/projectcraft/blob/1757247b53a5641d645bfcd0b4612504c5150785/README.md",
+				"https://github.com/UCS-Care-Group/projectcraft/blob/1757247b53a5641d645bfcd0b4612504c5150785/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "clubcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/beneaze/clubcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "65e0784cc6a74cfa774b51ef107e19eed83f4573",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870453+00:00",
+				"source_repository": "https://github.com/beneaze/ClubCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/beneaze/ClubCraft/blob/65e0784cc6a74cfa774b51ef107e19eed83f4573/README.md",
+				"https://github.com/beneaze/ClubCraft/blob/65e0784cc6a74cfa774b51ef107e19eed83f4573/ATTRIBUTION.md"
+			]
+		},
+		{
+			"slug": "cliprecorder",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/by183/cliprecorder.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "153025b4c88ed42a23a97e030ce140c2fc54949d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841385+00:00",
+				"source_repository": "https://github.com/By183/ClipRecorder"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/By183/ClipRecorder/blob/153025b4c88ed42a23a97e030ce140c2fc54949d/README.md"
+			]
+		},
+		{
+			"slug": "materialcreator",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/calla-ji/materialcreator.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "1b1236d6ac5e942d8037dc4ba8ee5c1755765d10",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841386+00:00",
+				"source_repository": "https://github.com/Calla-Ji/materialcreator"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Calla-Ji/materialcreator/blob/1b1236d6ac5e942d8037dc4ba8ee5c1755765d10/README.md"
+			]
+		},
+		{
+			"slug": "diagramcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/charles-hood/diagramcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c44a8070bbaf186622869ff9268f3d3e01eb852a",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:27.623520+00:00",
+				"source_repository": "https://github.com/MisterDiagram/MisterDiagram"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/MisterDiagram/MisterDiagram/blob/c44a8070bbaf186622869ff9268f3d3e01eb852a/README.md",
+				"https://github.com/MisterDiagram/MisterDiagram/blob/c44a8070bbaf186622869ff9268f3d3e01eb852a/ATTRIBUTION.md",
+				"https://github.com/MisterDiagram/MisterDiagram/blob/c44a8070bbaf186622869ff9268f3d3e01eb852a/ROADMAP.md",
+				"https://github.com/MisterDiagram/MisterDiagram/blob/c44a8070bbaf186622869ff9268f3d3e01eb852a/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "serpentine3d",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/chisomobanzi/serpentine3d.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "eb02726eba44e55a958a1946fbc1823a51219efb",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870457+00:00",
+				"source_repository": "https://github.com/chisomobanzi/Serpentine3D"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/chisomobanzi/Serpentine3D/blob/eb02726eba44e55a958a1946fbc1823a51219efb/README.md"
+			]
+		},
+		{
+			"slug": "assetcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/assetcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "4aed9a4a34a4be4aa0b566c1ce58850d89f637c2",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:39.870459+00:00",
+				"source_repository": "https://github.com/cmspeedau/AssetCraft"
+			},
+			"decision": "Added documented download components, offline library and Blender adapter without implying complete live downloads or a finished GUI. Retained account/asset-license boundaries and disclosed validation/keyring gaps.",
+			"description_before": "An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its current Rust CLI searches the Fab catalog and signs in to user accounts. The planned desktop application covers browsing, downloads and export to content-creation tools.",
+			"description_after": "An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its Rust CLI searches Fab and signs in to user accounts, with implemented download-queue and chunk-reassembly components, a SQLite library for offline browsing of downloaded assets, and a Blender PBR export adapter. Complete live downloads still need signed-in CDN validation; the desktop application and in-Blender add-on remain planned.",
+			"source_urls": [
+				"https://github.com/cmspeedau/AssetCraft/blob/4aed9a4a34a4be4aa0b566c1ce58850d89f637c2/README.md",
+				"https://github.com/cmspeedau/AssetCraft/blob/4aed9a4a34a4be4aa0b566c1ce58850d89f637c2/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "gamedepot",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/gamedepot.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "96ca565668b519f228835f772e82c91d119463e4",
+				"branch": "develop",
+				"checked_at": "2026-11-02T12:12:39.870461+00:00",
+				"source_repository": "https://github.com/cmspeedau/GameDepot"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/cmspeedau/GameDepot/blob/96ca565668b519f228835f772e82c91d119463e4/README.md"
+			]
+		},
+		{
+			"slug": "icraftmusic",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/icraftmusic.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "6307c2c99e078405b34b0c35db4316e36aff3a63",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870465+00:00",
+				"source_repository": "https://github.com/cmspeedau/iCraftMusic"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/cmspeedau/iCraftMusic/blob/6307c2c99e078405b34b0c35db4316e36aff3a63/README.md",
+				"https://github.com/cmspeedau/iCraftMusic/blob/6307c2c99e078405b34b0c35db4316e36aff3a63/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "notecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/notecraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d604d9982077cc58b25f4c8fc7362f8ad79baed9",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870462+00:00",
+				"source_repository": "https://github.com/cmspeedau/NoteCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/cmspeedau/NoteCraft/blob/d604d9982077cc58b25f4c8fc7362f8ad79baed9/README.md",
+				"https://github.com/cmspeedau/NoteCraft/blob/d604d9982077cc58b25f4c8fc7362f8ad79baed9/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "syncbox",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cmspeedau/syncbox.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "36a8c4d531342791f9113d06063eb41684ae2744",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870464+00:00",
+				"source_repository": "https://github.com/cmspeedau/SyncBox"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/cmspeedau/SyncBox/blob/36a8c4d531342791f9113d06063eb41684ae2744/README.md",
+				"https://github.com/cmspeedau/SyncBox/blob/36a8c4d531342791f9113d06063eb41684ae2744/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "narwhal-3d",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/contributionrich/narwhal-3d.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "a0c65cafd6d62a101501dd016b6e46fc5ff0a194",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:21.841388+00:00",
+				"source_repository": "https://github.com/ContributionRich/Narwhal3D"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/ContributionRich/Narwhal3D/blob/a0c65cafd6d62a101501dd016b6e46fc5ff0a194/README.md",
+				"https://github.com/ContributionRich/Narwhal3D/blob/a0c65cafd6d62a101501dd016b6e46fc5ff0a194/ROADMAP.md",
+				"https://github.com/ContributionRich/Narwhal3D/blob/a0c65cafd6d62a101501dd016b6e46fc5ff0a194/STATUS.md",
+				"https://github.com/ContributionRich/Narwhal3D/blob/a0c65cafd6d62a101501dd016b6e46fc5ff0a194/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "oxybrush",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/crisprintsstuff/oxybrush.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "9bac689b6514d9d9a336349f1094f7cf4ee432a6",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870466+00:00",
+				"source_repository": "https://github.com/crisprintsstuff/OxyBrush"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/README.md",
+				"https://github.com/crisprintsstuff/OxyBrush/blob/9bac689b6514d9d9a336349f1094f7cf4ee432a6/docs/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "oxypixel",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/crisprintsstuff/oxypixel.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c481e4f7eb2bad4ca586a19e37ea0c2320bf758a",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870525+00:00",
+				"source_repository": "https://github.com/crisprintsstuff/oxypixel"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/crisprintsstuff/oxypixel/blob/c481e4f7eb2bad4ca586a19e37ea0c2320bf758a/README.md",
+				"https://github.com/crisprintsstuff/oxypixel/blob/c481e4f7eb2bad4ca586a19e37ea0c2320bf758a/docs/ROADMAP.md",
+				"https://github.com/crisprintsstuff/oxypixel/blob/c481e4f7eb2bad4ca586a19e37ea0c2320bf758a/docs/THIRD-PARTY.md"
+			]
+		},
+		{
+			"slug": "azteccraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cristim/azteccraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5913766eebef956de76e0ab474a43e61beeb38d4",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870533+00:00",
+				"source_repository": "https://github.com/cristim/AztecCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/cristim/AztecCraft/blob/5913766eebef956de76e0ab474a43e61beeb38d4/README.md"
+			]
+		},
+		{
+			"slug": "drift",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/cutwire-studios/drift.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "957889ac3f7009b62dfacbb182d3b62fc799e84f",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892735+00:00",
+				"source_repository": "https://github.com/CutWire-Studios/Drift"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/CutWire-Studios/Drift/blob/957889ac3f7009b62dfacbb182d3b62fc799e84f/README.md"
+			]
+		},
+		{
+			"slug": "honeydew",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/daijro/honeydew.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5543bdce441f57d3a45564f7d9821e931ac20312",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:39.870535+00:00",
+				"source_repository": "https://github.com/daijro/honeydew"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/daijro/honeydew/blob/5543bdce441f57d3a45564f7d9821e931ac20312/README.md",
+				"https://github.com/daijro/honeydew/blob/5543bdce441f57d3a45564f7d9821e931ac20312/THIRD_PARTY_NOTICES.md"
+			]
+		},
+		{
+			"slug": "paint-rs",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/daijro/paint-rs.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "14a67adea785d5a72b7be191979569217aeb624f",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040092+00:00",
+				"source_repository": "https://github.com/daijro/paint.rs"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/daijro/paint.rs/blob/14a67adea785d5a72b7be191979569217aeb624f/README.md",
+				"https://github.com/daijro/paint.rs/blob/14a67adea785d5a72b7be191979569217aeb624f/LICENSE.md"
+			]
+		},
+		{
+			"slug": "nerthus",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/danemadsen/nerthus.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "b80c3e5e792d45832b517674a054df7d50928afa",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040097+00:00",
+				"source_repository": "https://github.com/danemadsen/nerthus"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/danemadsen/nerthus/blob/b80c3e5e792d45832b517674a054df7d50928afa/README.md"
+			]
+		},
+		{
+			"slug": "rusty-teams",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/danieldaeschle/rusty-teams.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "96a0b9eaa05edd02c018692ad69c6e4f02ba4259",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040099+00:00",
+				"source_repository": "https://github.com/danieldaeschle/rusty-teams"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/danieldaeschle/rusty-teams/blob/96a0b9eaa05edd02c018692ad69c6e4f02ba4259/README.md",
+				"https://github.com/danieldaeschle/rusty-teams/blob/96a0b9eaa05edd02c018692ad69c6e4f02ba4259/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "voicestudio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/debpalash/voicestudio.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "1a29929cb87f8ff1470271e6498f0694d395f54d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040101+00:00",
+				"source_repository": "https://github.com/debpalash/VoiceStudio"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
+				"https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/LICENSE-NOTICE.md"
+			]
+		},
+		{
+			"slug": "kontra",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/derpcatmusic/kontra.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "724a42751f905cf68cc92e8a3591403625d6bbec",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892769+00:00",
+				"source_repository": "https://github.com/DerpcatMusic/KONTRA"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/DerpcatMusic/KONTRA/blob/724a42751f905cf68cc92e8a3591403625d6bbec/README.md",
+				"https://github.com/DerpcatMusic/KONTRA/blob/724a42751f905cf68cc92e8a3591403625d6bbec/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "drop",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/drop-oss/drop.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "497cd53f4d89611666384f231c58222af0a96cac",
+				"branch": "develop",
+				"checked_at": "2026-11-02T12:12:24.892771+00:00",
+				"source_repository": "https://github.com/Drop-OSS/drop"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Drop-OSS/drop/blob/497cd53f4d89611666384f231c58222af0a96cac/README.md"
+			]
+		},
+		{
+			"slug": "e-journal",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ekarinlb/e-journal.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "6d9fea9bf10813c570d02311fb9f0ed1dd388503",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:24.892773+00:00",
+				"source_repository": "https://github.com/EkarinLB/e-journal"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/EkarinLB/e-journal/blob/6d9fea9bf10813c570d02311fb9f0ed1dd388503/README.md"
+			]
+		},
+		{
+			"slug": "vice",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/eklonofficial/vice.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "7e4b2a3bccc6e43285d095afe95d0d7fe3d0c84c",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112982+00:00",
+				"source_repository": "https://github.com/splitshotz/Vice"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/splitshotz/Vice/blob/7e4b2a3bccc6e43285d095afe95d0d7fe3d0c84c/README.md"
+			]
+		},
+		{
+			"slug": "encodercraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/el-j/encodercraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c3f2299a78e31b699455a64d206d7767548068a0",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040104+00:00",
+				"source_repository": "https://github.com/el-j/encoderCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/el-j/encoderCraft/blob/c3f2299a78e31b699455a64d206d7767548068a0/README.md",
+				"https://github.com/el-j/encoderCraft/blob/c3f2299a78e31b699455a64d206d7767548068a0/ROADMAP.md",
+				"https://github.com/el-j/encoderCraft/blob/c3f2299a78e31b699455a64d206d7767548068a0/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "lightcraft-classic",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/emmertex/lightcraft-classic.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "b976eac38a7bb150af51a8112e9e5147ea15c7ba",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040105+00:00",
+				"source_repository": "https://github.com/emmertex/chromaforge"
+			},
+			"decision": "Retained rename, fork ancestry, seven-module workspace, RAW development, catalogs, masks and Immich. The old future intention to send changes upstream is not documented in the current README; it is not presented as shipped functionality.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/emmertex/chromaforge/blob/b976eac38a7bb150af51a8112e9e5147ea15c7ba/README.md",
+				"https://github.com/emmertex/chromaforge/blob/b976eac38a7bb150af51a8112e9e5147ea15c7ba/ROADMAP.md",
+				"https://github.com/emmertex/chromaforge/blob/b976eac38a7bb150af51a8112e9e5147ea15c7ba/assets/ATTRIBUTION.md",
+				"https://github.com/emmertex/chromaforge/blob/b976eac38a7bb150af51a8112e9e5147ea15c7ba/docs/parity-checklist.md",
+				"https://github.com/emmertex/chromaforge/blob/b976eac38a7bb150af51a8112e9e5147ea15c7ba/docs/raw-parity.md"
+			]
+		},
+		{
+			"slug": "radiomaster",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/epell-development/radiomaster.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5924f9605014f64c15c938ddc272bd26508ee80e",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040107+00:00",
+				"source_repository": "https://github.com/epell-development/RadioMaster"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/epell-development/RadioMaster/blob/5924f9605014f64c15c938ddc272bd26508ee80e/README.md"
+			]
+		},
+		{
+			"slug": "anticensor",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/erkinalp/anticensor.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c458236883d2502eb46a719897f2cffd348febd4",
+				"branch": "default",
+				"checked_at": "2026-11-02T12:12:43.040110+00:00",
+				"source_repository": "https://github.com/erkinalp/anticensor"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/erkinalp/anticensor/blob/c458236883d2502eb46a719897f2cffd348febd4/README.md"
+			]
+		},
+		{
+			"slug": "precall",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/erkinalp/precall.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "6e1a1793e0f520231984549695b34e62185f6b38",
+				"branch": "default",
+				"checked_at": "2026-11-02T12:12:43.040108+00:00",
+				"source_repository": "https://github.com/erkinalp/PreCall"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/erkinalp/PreCall/blob/6e1a1793e0f520231984549695b34e62185f6b38/README.md"
+			]
+		},
+		{
+			"slug": "clothcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/erythrofr/clothcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "fa836139613cdb614648c183c58a2c23d05353c1",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040111+00:00",
+				"source_repository": "https://github.com/erythrofr/ClothCraft"
+			},
+			"decision": "Restored explicit 2D drafting and linked 2D/3D sewing while retaining added import, recovery and avatar details.",
+			"description_before": "Independent garment-editor and cloth-simulation prototype targeting Marvelous Designer and CLO 3D workflows. Provides polygon and Bezier patterns, partial and multi-edge sewing, 3D arrangement, local project saving and recovery, static avatar imports and limited DXF/SVG pattern-outline imports.",
+			"description_after": "Independent garment-editor and cloth-simulation prototype targeting Marvelous Designer and CLO 3D workflows. Provides 2D polygon and Bezier drafting, linked 2D/3D sewing with partial and multi-edge seams, 3D arrangement and simulation, local project saving and recovery, static avatar imports and limited DXF/SVG pattern-outline imports.",
+			"source_urls": [
+				"https://github.com/erythrofr/ClothCraft/blob/fa836139613cdb614648c183c58a2c23d05353c1/README.md",
+				"https://github.com/erythrofr/ClothCraft/blob/fa836139613cdb614648c183c58a2c23d05353c1/ROADMAP.md",
+				"https://github.com/erythrofr/ClothCraft/blob/fa836139613cdb614648c183c58a2c23d05353c1/assets/makehuman/LICENSE.ASSETS.md"
+			]
+		},
+		{
+			"slug": "fuzix",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/etchedpixels/fuzix.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "6f1101e878fb2daf89f930f2e9ada5cfd412bd18",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:25:57.358511+00:00",
+				"source_repository": "https://codeberg.org/EtchedPixels/FUZIX"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://codeberg.org/EtchedPixels/FUZIX/src/commit/6f1101e878fb2daf89f930f2e9ada5cfd412bd18/README.md"
+			]
+		},
+		{
+			"slug": "exomyth",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/exonerv-pec/exomyth.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "0a30f75e72d230f16efe1b614fd5841944b6cb19",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892774+00:00",
+				"source_repository": "https://github.com/Exonerv-Pec/Exomyth"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Exonerv-Pec/Exomyth/blob/0a30f75e72d230f16efe1b614fd5841944b6cb19/README.md",
+				"https://github.com/Exonerv-Pec/Exomyth/blob/0a30f75e72d230f16efe1b614fd5841944b6cb19/LICENSE-NOTE.md",
+				"https://github.com/Exonerv-Pec/Exomyth/blob/0a30f75e72d230f16efe1b614fd5841944b6cb19/ROADMAP.md",
+				"https://github.com/Exonerv-Pec/Exomyth/blob/0a30f75e72d230f16efe1b614fd5841944b6cb19/THIRD_PARTY_NOTICES.md"
+			]
+		},
+		{
+			"slug": "prowave",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/fabox-os/prowave.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "b7a6015e844f351ac1bb4c48885da00a3269a7d4",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.242960+00:00",
+				"source_repository": "https://github.com/fabox-os/Pro-Wave"
+			},
+			"decision": "Restored egui, piano-roll quantization/velocity controls, tempo maps, disk streaming and the .prowave arrangement/media format alongside newer recording/effects/automation details.",
+			"description_before": "An independent Logic Pro-style DAW in Rust with a tracks timeline, MIDI and audio regions, recording, piano-roll editing, a mixer with effects and automation, and a built-in synthesizer. Uses its own project format.",
+			"description_after": "An independent Logic Pro-style DAW built with Rust and egui. Provides a tracks timeline, audio and MIDI regions, recording, piano-roll editing with quantization and velocity controls, tempo maps, streamed audio playback, a mixer with effects and automation, and a built-in synthesizer. Saves arrangements and media in its own .prowave project format.",
+			"source_urls": [
+				"https://github.com/fabox-os/Pro-Wave/blob/b7a6015e844f351ac1bb4c48885da00a3269a7d4/README.md",
+				"https://github.com/fabox-os/Pro-Wave/blob/b7a6015e844f351ac1bb4c48885da00a3269a7d4/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "freedos",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/fdos/freedos.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d6791add2043c9d7b584d840a8ffaf8829fd2bdc",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:24.892776+00:00",
+				"source_repository": "https://github.com/FDOS/kernel"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/FDOS/kernel/blob/d6791add2043c9d7b584d840a8ffaf8829fd2bdc/README.md"
+			]
+		},
+		{
+			"slug": "modelcraft-viewer",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/felzow47/modelcraft-viewer.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "33cf23fa315bff210a4cbe6c33696714559425fe",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892779+00:00",
+				"source_repository": "https://github.com/Felzow47/ModelCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Felzow47/ModelCraft/blob/33cf23fa315bff210a4cbe6c33696714559425fe/README.md"
+			]
+		},
+		{
+			"slug": "flare-animate",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/flare-animate/flare-animate.yaml",
+			"kind": "project",
+			"result": "held unchanged",
+			"reviewed_revision": {
+				"commit": "c201a375a07d59fa50ceb953d3a378cd606748aa",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892780+00:00",
+				"source_repository": "https://github.com/Flare-Animate/Flare"
+			},
+			"decision": "Excluded from edits by explicit maintainer hold until released v0.1.0; current description and complete YAML left unchanged.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Flare-Animate/Flare/blob/c201a375a07d59fa50ceb953d3a378cd606748aa/README.md",
+				"https://github.com/Flare-Animate/Flare/blob/c201a375a07d59fa50ceb953d3a378cd606748aa/docs/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "tubeglass",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/flawlesscode254/tubeglass.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "759eb25c4b594569a02edb6dfa9f50641bcc2d61",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243014+00:00",
+				"source_repository": "https://github.com/flawlesscode254/TubeGlass"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/flawlesscode254/TubeGlass/blob/759eb25c4b594569a02edb6dfa9f50641bcc2d61/README.md",
+				"https://github.com/flawlesscode254/TubeGlass/blob/759eb25c4b594569a02edb6dfa9f50641bcc2d61/packaging/THIRD_PARTY_NOTICES.md"
+			]
+		},
+		{
+			"slug": "woodsketch",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/fmastro/woodsketch.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "158acd310660f64c332dff5c3478f81b20f0e83f",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892777+00:00",
+				"source_repository": "https://github.com/FMastro/woodsketch"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/FMastro/woodsketch/blob/158acd310660f64c332dff5c3478f81b20f0e83f/README.md",
+				"https://github.com/FMastro/woodsketch/blob/158acd310660f64c332dff5c3478f81b20f0e83f/THIRD-PARTY-NOTICES.md"
+			]
+		},
+		{
+			"slug": "lookout",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/gavindi/lookout.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "f7779dd32537e908a5fc6bcb989efb2432973bc9",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243023+00:00",
+				"source_repository": "https://github.com/gavindi/lookout"
+			},
+			"decision": "Restored Rust/GTK 4, GNOME Online Accounts, full-text search, rich-text composition and the explicit mail/calendar/contacts/tasks scope alongside Microsoft, Google Tasks and To Do support.",
+			"description_before": "An Outlook-style Linux email client for GNOME with IMAP/SMTP mail and Microsoft 365 integration. Provides calendar and contacts through CalDAV/CardDAV or Microsoft accounts, with Google Tasks and Microsoft To Do support, local search and familiar mailbox workflows.",
+			"description_after": "An Outlook-style mail, calendar, contacts and tasks client for GNOME, built with Rust and GTK 4. Supports IMAP/SMTP, GNOME Online Accounts and Microsoft 365 integration, with full-text search and rich-text composition. Calendars and contacts use CalDAV/CardDAV or Microsoft accounts; tasks integrate with Google Tasks and Microsoft To Do.",
+			"source_urls": [
+				"https://github.com/gavindi/lookout/blob/f7779dd32537e908a5fc6bcb989efb2432973bc9/README.md",
+				"https://github.com/gavindi/lookout/blob/f7779dd32537e908a5fc6bcb989efb2432973bc9/OUTLOOK_PARITY.md"
+			]
+		},
+		{
+			"slug": "mt-sync",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/gavindi/mt-sync.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "931dba9e18bd3c21a2eeecb0e3004ebac89a03a2",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:46.243021+00:00",
+				"source_repository": "https://github.com/gavindi/MtSync"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/gavindi/MtSync/blob/931dba9e18bd3c21a2eeecb0e3004ebac89a03a2/README.md"
+			]
+		},
+		{
+			"slug": "bimcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/bimcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "51c1b44012b98685f43f3ca99a463c240cf0d7ef",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243024+00:00",
+				"source_repository": "https://github.com/getcadcraft/bimcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/bimcraft/blob/51c1b44012b98685f43f3ca99a463c240cf0d7ef/README.md",
+				"https://github.com/getcadcraft/bimcraft/blob/51c1b44012b98685f43f3ca99a463c240cf0d7ef/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "civilcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/civilcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "0c3d327dc54e4583af469163ac8afcdce8258e02",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243030+00:00",
+				"source_repository": "https://github.com/getcadcraft/civilcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/civilcraft/blob/0c3d327dc54e4583af469163ac8afcdce8258e02/README.md",
+				"https://github.com/getcadcraft/civilcraft/blob/0c3d327dc54e4583af469163ac8afcdce8258e02/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "detailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/detailcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "7b75132f217d72cdae222c7f706ebf8f6ac60c41",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243031+00:00",
+				"source_repository": "https://github.com/getcadcraft/detailcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/detailcraft/blob/7b75132f217d72cdae222c7f706ebf8f6ac60c41/README.md",
+				"https://github.com/getcadcraft/detailcraft/blob/7b75132f217d72cdae222c7f706ebf8f6ac60c41/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "getcadcraft-cadcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/getcadcraft-cadcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "2e6fee4a123aa47597b6d2bc388ccfd1576b0422",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243028+00:00",
+				"source_repository": "https://github.com/getcadcraft/cadcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/cadcraft/blob/2e6fee4a123aa47597b6d2bc388ccfd1576b0422/README.md",
+				"https://github.com/getcadcraft/cadcraft/blob/2e6fee4a123aa47597b6d2bc388ccfd1576b0422/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "getcadcraft-markupcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/getcadcraft-markupcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "01c51f80dbea81675c304137c132b7fd24d3f1da",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243033+00:00",
+				"source_repository": "https://github.com/getcadcraft/markupcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/markupcraft/blob/01c51f80dbea81675c304137c132b7fd24d3f1da/README.md",
+				"https://github.com/getcadcraft/markupcraft/blob/01c51f80dbea81675c304137c132b7fd24d3f1da/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "modelcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/modelcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f2d68a12062c71c8a0bd2142ab68852429e4307b",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243035+00:00",
+				"source_repository": "https://github.com/getcadcraft/modelcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/modelcraft/blob/f2d68a12062c71c8a0bd2142ab68852429e4307b/README.md",
+				"https://github.com/getcadcraft/modelcraft/blob/f2d68a12062c71c8a0bd2142ab68852429e4307b/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "partcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/partcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "25c97be1b07f3088cf429d78d69a529b4d4f5a3f",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243036+00:00",
+				"source_repository": "https://github.com/getcadcraft/partcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/partcraft/blob/25c97be1b07f3088cf429d78d69a529b4d4f5a3f/README.md",
+				"https://github.com/getcadcraft/partcraft/blob/25c97be1b07f3088cf429d78d69a529b4d4f5a3f/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "takeoffcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/getcadcraft/takeoffcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "2b64bbfa1bd3050fda1cb0689326624c8390597f",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170420+00:00",
+				"source_repository": "https://github.com/getcadcraft/takeoffcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/getcadcraft/takeoffcraft/blob/2b64bbfa1bd3050fda1cb0689326624c8390597f/README.md",
+				"https://github.com/getcadcraft/takeoffcraft/blob/2b64bbfa1bd3050fda1cb0689326624c8390597f/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "corinzia",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/githuhl/corinzia.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "cbe96700dbc6eff2c36a8591fe55c95ac5e4a450",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892781+00:00",
+				"source_repository": "https://github.com/GitHuhl/Corinzia"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/GitHuhl/Corinzia/blob/cbe96700dbc6eff2c36a8591fe55c95ac5e4a450/README.md"
+			]
+		},
+		{
+			"slug": "rsedit",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/goodappsstore/rsedit.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "63a9ee4966d3fe1cfcd7d4af70e963e10aa297ff",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170448+00:00",
+				"source_repository": "https://github.com/goodappsstore/rsedit"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/goodappsstore/rsedit/blob/63a9ee4966d3fe1cfcd7d4af70e963e10aa297ff/README.md"
+			]
+		},
+		{
+			"slug": "rolltop",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/grahamsz/rolltop.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c16dccd315dabb0490e3ad4f5f8cd643a82ed6e4",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170450+00:00",
+				"source_repository": "https://github.com/grahamsz/rolltop"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/grahamsz/rolltop/blob/c16dccd315dabb0490e3ad4f5f8cd643a82ed6e4/README.md"
+			]
+		},
+		{
+			"slug": "graphite",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/graphiteeditor/graphite.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "2055a74502e0cf204ac10439923a21a6154f31a9",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:24.892795+00:00",
+				"source_repository": "https://github.com/GraphiteEditor/Graphite"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/GraphiteEditor/Graphite/blob/2055a74502e0cf204ac10439923a21a6154f31a9/README.md"
+			]
+		},
+		{
+			"slug": "open-note",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hasanmajid/open-note.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "527c0c8e2596c3218f66dbf6a4176ab1f9574a34",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:24.892796+00:00",
+				"source_repository": "https://github.com/HasanMajid/open-note"
+			},
+			"decision": "Restored palm rejection and separate stroke/area erasers without dropping newer organization, rich-text or persistence details.",
+			"description_before": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Provides pressure-sensitive pens, highlighting, stylus erasing, lasso transformations, undo/redo, rich text and notebook/section/page organization. Stores native notes as JSON-based documents, uses browser preferences for web persistence, and includes document import/export and PDF rendering.",
+			"description_after": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Provides pressure-sensitive pens, highlighters, stylus erasing, palm rejection, stroke and area erasers, lasso transformations, undo/redo, rich text and notebook/section/page organization. Native notes use JSON-based storage; web builds persist through browser preferences. Includes document import/export and PDF rendering.",
+			"source_urls": [
+				"https://github.com/HasanMajid/open-note/blob/527c0c8e2596c3218f66dbf6a4176ab1f9574a34/README.md"
+			]
+		},
+		{
+			"slug": "trazo",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hazielcampos/trazo.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "2fac412db1e08750ca1d26b17e51b5aacba5c762",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170457+00:00",
+				"source_repository": "https://github.com/hazielcampos/trazo"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/hazielcampos/trazo/blob/2fac412db1e08750ca1d26b17e51b5aacba5c762/README.md"
+			]
+		},
+		{
+			"slug": "hew",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hew3d/hew.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "4ca0f446186ebbd074e16d0eb9454c0db696f7b0",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170463+00:00",
+				"source_repository": "https://github.com/hew3d/hew"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/hew3d/hew/blob/4ca0f446186ebbd074e16d0eb9454c0db696f7b0/README.md",
+				"https://github.com/hew3d/hew/blob/4ca0f446186ebbd074e16d0eb9454c0db696f7b0/docs/ROADMAP.md",
+				"https://github.com/hew3d/hew/blob/4ca0f446186ebbd074e16d0eb9454c0db696f7b0/docs/agents/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "draugr-time",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hlophlopgaming/draugr-time.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "83aaaf5eab508c4c452eb6489bf0014a0f88903c",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170465+00:00",
+				"source_repository": "https://github.com/hlophlopgaming/DraugrTime"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/hlophlopgaming/DraugrTime/blob/83aaaf5eab508c4c452eb6489bf0014a0f88903c/README.md"
+			]
+		},
+		{
+			"slug": "mothref",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hlophlopgaming/mothref.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "132627a91a448aa2cd5847a533c171be80854297",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170468+00:00",
+				"source_repository": "https://github.com/hlophlopgaming/mothRef"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/hlophlopgaming/mothRef/blob/132627a91a448aa2cd5847a533c171be80854297/README.md",
+				"https://github.com/hlophlopgaming/mothRef/blob/132627a91a448aa2cd5847a533c171be80854297/ROADMAP.md",
+				"https://github.com/hlophlopgaming/mothRef/blob/132627a91a448aa2cd5847a533c171be80854297/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "downloadcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hungry-detective/downloadcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5fe78c1facfa948943baddde12ecd3e88a94c3c4",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:49.170471+00:00",
+				"source_repository": "https://github.com/hungry-detective/downloadcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/hungry-detective/downloadcraft/blob/5fe78c1facfa948943baddde12ecd3e88a94c3c4/README.md"
+			]
+		},
+		{
+			"slug": "tequila",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ifpintac/tequila.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "4b79621bf0465ee57cd86e71b4dce022f6f720a4",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170472+00:00",
+				"source_repository": "https://github.com/ifpintac/tequila"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/ifpintac/tequila/blob/4b79621bf0465ee57cd86e71b4dce022f6f720a4/README.md",
+				"https://github.com/ifpintac/tequila/blob/4b79621bf0465ee57cd86e71b4dce022f6f720a4/THIRD_PARTY_LICENSES.md",
+				"https://github.com/ifpintac/tequila/blob/4b79621bf0465ee57cd86e71b4dce022f6f720a4/docs/05-ROADMAP-AND-TESTING.md"
+			]
+		},
+		{
+			"slug": "tracedraw",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/igtoth/tracedraw.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "abc3a761b4628ca460428e5ced953b1d65b16f15",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:06.449312+00:00",
+				"source_repository": "https://github.com/tracedraw/tracedraw"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/tracedraw/tracedraw/blob/abc3a761b4628ca460428e5ced953b1d65b16f15/README.md",
+				"https://github.com/tracedraw/tracedraw/blob/abc3a761b4628ca460428e5ced953b1d65b16f15/ATTRIBUTION.md",
+				"https://github.com/tracedraw/tracedraw/blob/abc3a761b4628ca460428e5ced953b1d65b16f15/docs/blueprint-gaps.md",
+				"https://github.com/tracedraw/tracedraw/blob/abc3a761b4628ca460428e5ced953b1d65b16f15/docs/roadmap.md"
+			]
+		},
+		{
+			"slug": "ingetrazo",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ingelibre/ingetrazo.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "e61132a7f8a098ca77fb6b0e7cac488c1bd410cb",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170473+00:00",
+				"source_repository": "https://github.com/ingelibre/ingetrazo"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/ingelibre/ingetrazo/blob/e61132a7f8a098ca77fb6b0e7cac488c1bd410cb/README.md"
+			]
+		},
+		{
+			"slug": "ipedrax-bimcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ipedrax/ipedrax-bimcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "0733fd4328a4aceb1c2dfa3ec07bd9f4d970d546",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623481+00:00",
+				"source_repository": "https://github.com/IPedrax/BIMCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/IPedrax/BIMCraft/blob/0733fd4328a4aceb1c2dfa3ec07bd9f4d970d546/README.md"
+			]
+		},
+		{
+			"slug": "lemon-studio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/itsalphaneon/lemon-studio.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "277e16c55b337eadd487435b85beadfb03518c13",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623501+00:00",
+				"source_repository": "https://github.com/ItsAlphaNeon/Lemon-Studio"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/ItsAlphaNeon/Lemon-Studio/blob/277e16c55b337eadd487435b85beadfb03518c13/README.md",
+				"https://github.com/ItsAlphaNeon/Lemon-Studio/blob/277e16c55b337eadd487435b85beadfb03518c13/THIRD-PARTY-NOTICES.txt",
+				"https://github.com/ItsAlphaNeon/Lemon-Studio/blob/277e16c55b337eadd487435b85beadfb03518c13/crates/os-app/asiosdk/LICENSE.txt",
+				"https://github.com/ItsAlphaNeon/Lemon-Studio/blob/277e16c55b337eadd487435b85beadfb03518c13/crates/os-ui/icons/TABLER-LICENSE.txt",
+				"https://github.com/ItsAlphaNeon/Lemon-Studio/blob/277e16c55b337eadd487435b85beadfb03518c13/crates/os-vst2/LICENSE-vst2sdk.txt",
+				"https://github.com/ItsAlphaNeon/Lemon-Studio/blob/277e16c55b337eadd487435b85beadfb03518c13/docs/status.md"
+			]
+		},
+		{
+			"slug": "blok",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jackuait/blok.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "cfee312fc766d17bf2e04c58fe2eb22951e82600",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623504+00:00",
+				"source_repository": "https://github.com/JackUait/blok"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/JackUait/blok/blob/cfee312fc766d17bf2e04c58fe2eb22951e82600/README.md"
+			]
+		},
+		{
+			"slug": "datacraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/javy-fernandez/datacraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "b1011176700d4f7cc371fd4f8670b7fa6e3d195c",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170475+00:00",
+				"source_repository": "https://github.com/javy-fernandez/datacraft"
+			},
+			"decision": "Restored highlighted SQL and common-text exports; named added engines and each OS credential store instead of generic shorthand.",
+			"description_before": "A DataGrip-style native database client with schema browsing, SQL consoles, completion, transactional table editing and query-result exports. Supports PostgreSQL, SQL Server, SQLite and other documented engines, with SSH tunneling and OS credential storage.",
+			"description_after": "A DataGrip-style native database client with schema browsing, highlighted SQL consoles, completion, transactional table-data editing and query-result exports to common text formats. Supports PostgreSQL, SQL Server, SQLite, MySQL/MariaDB, Oracle and other documented engines. Provides SSH tunneling and OS credential storage through macOS Keychain, Windows Credential Manager or Linux Secret Service.",
+			"source_urls": [
+				"https://github.com/javy-fernandez/datacraft/blob/b1011176700d4f7cc371fd4f8670b7fa6e3d195c/README.md"
+			]
+		},
+		{
+			"slug": "dotcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/javy-fernandez/dotcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "7fa1192eafcbf2d0ff08851edcc134cf2d4dfa28",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:49.170476+00:00",
+				"source_repository": "https://github.com/javy-fernandez/dotcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/javy-fernandez/dotcraft/blob/7fa1192eafcbf2d0ff08851edcc134cf2d4dfa28/README.md"
+			]
+		},
+		{
+			"slug": "prosecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jennraeross/prosecraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d82358b3db336ebd071795d58d848776c1e9bf56",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255278+00:00",
+				"source_repository": "https://github.com/jennraeross/ProseCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/jennraeross/ProseCraft/blob/d82358b3db336ebd071795d58d848776c1e9bf56/README.md"
+			]
+		},
+		{
+			"slug": "opensidian",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jpzk/opensidian.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "7be21324401d70b6383b6737cc090ebe26ce15c0",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255321+00:00",
+				"source_repository": "https://github.com/jpzk/opensidian"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/jpzk/opensidian/blob/7be21324401d70b6383b6737cc090ebe26ce15c0/README.md",
+				"https://github.com/jpzk/opensidian/blob/7be21324401d70b6383b6737cc090ebe26ce15c0/THIRD-PARTY.md"
+			]
+		},
+		{
+			"slug": "concat",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jub0t/concat.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f0c0169628c61de7311f7fc15ee5be82dd611d2e",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255324+00:00",
+				"source_repository": "https://github.com/jub0t/concat"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/jub0t/concat/blob/f0c0169628c61de7311f7fc15ee5be82dd611d2e/README.md"
+			]
+		},
+		{
+			"slug": "dashcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/jxck-s/dashcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623507+00:00",
+				"source_repository": "https://github.com/Jxck-S/dashcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Jxck-S/dashcraft/blob/72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe/README.md",
+				"https://github.com/Jxck-S/dashcraft/blob/72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe/THIRD_PARTY_NOTICES.md",
+				"https://github.com/Jxck-S/dashcraft/blob/72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe/docs/GAPS.md",
+				"https://github.com/Jxck-S/dashcraft/blob/72e4d7dfc9fc67a3107c06c16987f1e0f8ff00fe/docs/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "capsulecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/kostyk348/capsulecraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "6c139062fbd3ead79ca777959ae49f39f9e7099d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255325+00:00",
+				"source_repository": "https://github.com/kostyk348/CapsuleCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/kostyk348/CapsuleCraft/blob/6c139062fbd3ead79ca777959ae49f39f9e7099d/README.md"
+			]
+		},
+		{
+			"slug": "mbscada",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/kostyk348/mbscada.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "bfe37f08fd2eb91500891af9052ab0f8d70bd2d3",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:52.255327+00:00",
+				"source_repository": "https://github.com/kostyk348/mbscada-rs"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/kostyk348/mbscada-rs/blob/bfe37f08fd2eb91500891af9052ab0f8d70bd2d3/README.md"
+			]
+		},
+		{
+			"slug": "elixiroffice",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/leag1234/elixiroffice.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "9109c5bdcd794b88064a7454318af0df6ef33cb8",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255328+00:00",
+				"source_repository": "https://github.com/leag1234/elixiroffice"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/leag1234/elixiroffice/blob/9109c5bdcd794b88064a7454318af0df6ef33cb8/README.md",
+				"https://github.com/leag1234/elixiroffice/blob/9109c5bdcd794b88064a7454318af0df6ef33cb8/branding/fonts/LICENSES.md"
+			]
+		},
+		{
+			"slug": "open-notebook",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lfnovo/open-notebook.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "a0f6f3081ae06328f0a451b3a3ef2959ca25721d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255330+00:00",
+				"source_repository": "https://github.com/lfnovo/open-notebook"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/lfnovo/open-notebook/blob/a0f6f3081ae06328f0a451b3a3ef2959ca25721d/README.md"
+			]
+		},
+		{
+			"slug": "roidery",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lork-fork/roidery.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "0187f73daf2b5b05ff9e88cacc8c972c6abb9687",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255332+00:00",
+				"source_repository": "https://github.com/lork-fork/Roidery"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/lork-fork/Roidery/blob/0187f73daf2b5b05ff9e88cacc8c972c6abb9687/README.md"
+			]
+		},
+		{
+			"slug": "ledger-reborn",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lxistired/ledger-reborn.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:52.255334+00:00",
+				"source_repository": "https://github.com/lxistired/ledger-reborn"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md",
+				"https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "substancecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/lyraedan/substancecraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "8292b2f02d1a1f73bf6c2801f8468c9083656482",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623510+00:00",
+				"source_repository": "https://github.com/Lyraedan/SubstanceCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Lyraedan/SubstanceCraft/blob/8292b2f02d1a1f73bf6c2801f8468c9083656482/README.md",
+				"https://github.com/Lyraedan/SubstanceCraft/blob/8292b2f02d1a1f73bf6c2801f8468c9083656482/ROADMAP.md",
+				"https://github.com/Lyraedan/SubstanceCraft/blob/8292b2f02d1a1f73bf6c2801f8468c9083656482/docs/gaps.md",
+				"https://github.com/Lyraedan/SubstanceCraft/blob/8292b2f02d1a1f73bf6c2801f8468c9083656482/docs/roadmap.md",
+				"https://github.com/Lyraedan/SubstanceCraft/blob/8292b2f02d1a1f73bf6c2801f8468c9083656482/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "sue",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/magigun/sue.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f49c37577440165b629dbbcf2419b62d61a99317",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623512+00:00",
+				"source_repository": "https://github.com/MagiGun/sue"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/MagiGun/sue/blob/f49c37577440165b629dbbcf2419b62d61a99317/README.md"
+			]
+		},
+		{
+			"slug": "plane",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/makeplane/plane.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "b98e1defb0e089d4505712d89ee9e137fd0935cd",
+				"branch": "preview",
+				"checked_at": "2026-11-02T12:12:52.255335+00:00",
+				"source_repository": "https://github.com/makeplane/plane"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/makeplane/plane/blob/b98e1defb0e089d4505712d89ee9e137fd0935cd/README.md"
+			]
+		},
+		{
+			"slug": "screencraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/marshallnickolauson/screencraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "743e8cddbb16e0fa6e4ab6b3e25075c519af5a29",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623513+00:00",
+				"source_repository": "https://github.com/MarshallNickolauson/ScreenCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/MarshallNickolauson/ScreenCraft/blob/743e8cddbb16e0fa6e4ab6b3e25075c519af5a29/README.md",
+				"https://github.com/MarshallNickolauson/ScreenCraft/blob/743e8cddbb16e0fa6e4ab6b3e25075c519af5a29/THIRD-PARTY-NOTICES.md"
+			]
+		},
+		{
+			"slug": "oxiguitar",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mateusrdp/oxiguitar.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "dad955db8ddfe8dceee32bf6e1799fc424dbca6f",
+				"branch": "develop",
+				"checked_at": "2026-11-02T12:12:52.255336+00:00",
+				"source_repository": "https://github.com/mateusrdp/oxiguitar"
+			},
+			"decision": "Restored standard notation and multiple layouts while retaining editing, player and WAV features; the old subsequent-milestone claim is obsolete.",
+			"description_before": "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays notation and tablature, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export.",
+			"description_after": "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays standard notation and tablature in multiple layouts, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export.",
+			"source_urls": [
+				"https://github.com/mateusrdp/oxiguitar/blob/dad955db8ddfe8dceee32bf6e1799fc424dbca6f/README.md",
+				"https://github.com/mateusrdp/oxiguitar/blob/dad955db8ddfe8dceee32bf6e1799fc424dbca6f/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "simpmusic",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/maxrave-dev/simpmusic.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5d709a359b1423c36f7806b43b8684e99ea61cb3",
+				"branch": "dev",
+				"checked_at": "2026-11-02T12:12:52.255338+00:00",
+				"source_repository": "https://github.com/maxrave-dev/SimpMusic"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/maxrave-dev/SimpMusic/blob/5d709a359b1423c36f7806b43b8684e99ea61cb3/README.md"
+			]
+		},
+		{
+			"slug": "breezecad",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mikeverx/breezecad.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "94b105620d40fccd29321ba3b0984558414c7a90",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623517+00:00",
+				"source_repository": "https://github.com/MikeVerx/breezecad"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/MikeVerx/breezecad/blob/94b105620d40fccd29321ba3b0984558414c7a90/README.md"
+			]
+		},
+		{
+			"slug": "mineclonia",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mineclonia/mineclonia.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c80e28b78b6e2d589101d46df56e3a392d91b6e8",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:25:57.358511+00:00",
+				"source_repository": "https://codeberg.org/mineclonia/mineclonia"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://codeberg.org/mineclonia/mineclonia/src/commit/c80e28b78b6e2d589101d46df56e3a392d91b6e8/README.md"
+			]
+		},
+		{
+			"slug": "itamiiru",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/minnowo/itamiiru.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5fd091a184282f5ebe9ddb7b60f95e9bfb464a39",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623519+00:00",
+				"source_repository": "https://github.com/Minnowo/itamiiru"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Minnowo/itamiiru/blob/5fd091a184282f5ebe9ddb7b60f95e9bfb464a39/README.md"
+			]
+		},
+		{
+			"slug": "minnamate",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mirvoxtm/minnamate.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "cd2afd95b5b235ec9b1b7b70b0c5b9503d6068c1",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515036+00:00",
+				"source_repository": "https://github.com/mirvoxtm/minnamate"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/mirvoxtm/minnamate/blob/cd2afd95b5b235ec9b1b7b70b0c5b9503d6068c1/README.md"
+			]
+		},
+		{
+			"slug": "mitcad",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/mitcad/mitcad.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "a14be4bc42eb07b80e4e87ce731f50916789dd4c",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515072+00:00",
+				"source_repository": "https://github.com/mitcad/Mitcad"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/mitcad/Mitcad/blob/a14be4bc42eb07b80e4e87ce731f50916789dd4c/README.md",
+				"https://github.com/mitcad/Mitcad/blob/a14be4bc42eb07b80e4e87ce731f50916789dd4c/third_party/vcpkg-ports/README.md"
+			]
+		},
+		{
+			"slug": "mailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/monkeysaint/mailcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "2ac4db88369abcd3d4e9dc025d5b9816c20b50b6",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:30.431060+00:00",
+				"source_repository": "https://github.com/MonkeySaint/mailcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/MonkeySaint/mailcraft/blob/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/README.md",
+				"https://github.com/MonkeySaint/mailcraft/blob/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/ATTRIBUTION.md",
+				"https://github.com/MonkeySaint/mailcraft/blob/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/ROADMAP.md",
+				"https://github.com/MonkeySaint/mailcraft/blob/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/docs/parity.md"
+			]
+		},
+		{
+			"slug": "kadar",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/n-delic/kadar.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "babf9f1a7702f975174ba906c5c5a606821a60fb",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515077+00:00",
+				"source_repository": "https://github.com/n-delic/kadar"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/n-delic/kadar/blob/babf9f1a7702f975174ba906c5c5a606821a60fb/README.md",
+				"https://github.com/n-delic/kadar/blob/babf9f1a7702f975174ba906c5c5a606821a60fb/ATTRIBUTION.md",
+				"https://github.com/n-delic/kadar/blob/babf9f1a7702f975174ba906c5c5a606821a60fb/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "next2d-animation-tool",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/next2d/next2d-animation-tool.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "6a2ff02bfe58c43171459aa50cb88a53f6e4c514",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:30.431093+00:00",
+				"source_repository": "https://github.com/Next2D/tool.next2d.app"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Next2D/tool.next2d.app/blob/6a2ff02bfe58c43171459aa50cb88a53f6e4c514/README.md"
+			]
+		},
+		{
+			"slug": "matcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/matcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "effb4218bd7c5c82eefb157378d6561d5b0f2cb3",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:30.431101+00:00",
+				"source_repository": "https://github.com/NibrasAz7/matcraft"
+			},
+			"decision": "Restored column-major, complex/sparse matrices, 2D/3D plots, SVG/PNG/PDF and MAT v5, plus TCP automation. Replaced an obsolete built-in count with a durable feature description.",
+			"description_before": "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices, anonymous functions, classdef classes, N-D arrays and numerical/DSP functions. Provides a desktop Studio, CLI/MCP automation, plotting and MAT-file interchange.",
+			"description_after": "A MATLAB-style numerical environment with a native Rust M-file interpreter, a column-major matrix core, complex and sparse matrices, cells, structs, anonymous functions, classdef classes, N-D arrays and numerical/DSP built-ins. Provides a MATLAB-style desktop Studio, CLI, MCP/TCP automation, 2D/3D plotting with SVG/PNG/PDF export and MAT v5 load/save.",
+			"source_urls": [
+				"https://github.com/NibrasAz7/matcraft/blob/effb4218bd7c5c82eefb157378d6561d5b0f2cb3/README.md",
+				"https://github.com/NibrasAz7/matcraft/blob/effb4218bd7c5c82eefb157378d6561d5b0f2cb3/ROADMAP.md",
+				"https://github.com/NibrasAz7/matcraft/blob/effb4218bd7c5c82eefb157378d6561d5b0f2cb3/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "reportcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/reportcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "cb603c83f046bca4b4184d1c831791fb17165596",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:30.431095+00:00",
+				"source_repository": "https://github.com/NibrasAz7/ReportCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/NibrasAz7/ReportCraft/blob/cb603c83f046bca4b4184d1c831791fb17165596/README.md",
+				"https://github.com/NibrasAz7/ReportCraft/blob/cb603c83f046bca4b4184d1c831791fb17165596/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "sadacraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/sadacraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "07dd5af7f02984045169bd834abf88150565759d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:30.431100+00:00",
+				"source_repository": "https://github.com/NibrasAz7/SadaCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/NibrasAz7/SadaCraft/blob/07dd5af7f02984045169bd834abf88150565759d/README.md"
+			]
+		},
+		{
+			"slug": "simcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/simcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d2e57eba0773daca61c094e2860941a0d04bbcff",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:30.431105+00:00",
+				"source_repository": "https://github.com/NibrasAz7/simcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/NibrasAz7/simcraft/blob/d2e57eba0773daca61c094e2860941a0d04bbcff/README.md"
+			]
+		},
+		{
+			"slug": "warraqcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nibrasaz7/warraqcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "75e3a3d0c8a7de5886feebb359a708b42fdd7a68",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:30.431108+00:00",
+				"source_repository": "https://github.com/NibrasAz7/warraqcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/NibrasAz7/warraqcraft/blob/75e3a3d0c8a7de5886feebb359a708b42fdd7a68/README.md"
+			]
+		},
+		{
+			"slug": "scriptcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/nojuannobody/scriptcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "fce1d3c57a1964742d989d6488df638fc97f089d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:30.431109+00:00",
+				"source_repository": "https://github.com/NoJuanNobody/scriptcraft"
+			},
+			"decision": "Restored Enter/Tab, MORE/CONT'D breaks, dual dialogue, scene navigation and character/scene reports alongside current production/collaboration features.",
+			"description_before": "A Rust implementation of Final Draft-style screenwriting with screenplay pagination, SmartType, index cards, an outline and beat board. Opens and saves Fountain and supported FDX files, exports PDF, and provides revision mode, locked pages, script comparison, production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces.",
+			"description_after": "A Rust Final Draft-style screenwriter with Enter/Tab element flow, SmartType, screenplay pagination with MORE/CONT'D dialogue breaks, dual dialogue, a scene navigator, index cards, outline and beat board. Opens/saves Fountain and supported FDX, exports PDF, and provides revision mode, locked pages, script comparison, character/scene production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces.",
+			"source_urls": [
+				"https://github.com/NoJuanNobody/scriptcraft/blob/fce1d3c57a1964742d989d6488df638fc97f089d/README.md",
+				"https://github.com/NoJuanNobody/scriptcraft/blob/fce1d3c57a1964742d989d6488df638fc97f089d/ATTRIBUTION.md",
+				"https://github.com/NoJuanNobody/scriptcraft/blob/fce1d3c57a1964742d989d6488df638fc97f089d/ROADMAP.md",
+				"https://github.com/NoJuanNobody/scriptcraft/blob/fce1d3c57a1964742d989d6488df638fc97f089d/docs/parity-checklist.md",
+				"https://github.com/NoJuanNobody/scriptcraft/blob/fce1d3c57a1964742d989d6488df638fc97f089d/docs/typing-parity.md"
+			]
+		},
+		{
+			"slug": "salescompel",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/occupysaas/salescompel.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "2aa326536f38768c24744079398966d325bb6589",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515079+00:00",
+				"source_repository": "https://github.com/occupysaas/salescompel"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/occupysaas/salescompel/blob/2aa326536f38768c24744079398966d325bb6589/README.md",
+				"https://github.com/occupysaas/salescompel/blob/2aa326536f38768c24744079398966d325bb6589/docs/plans/2026-10-14-salesforce-compatibility-roadmap.md",
+				"https://github.com/occupysaas/salescompel/blob/2aa326536f38768c24744079398966d325bb6589/docs/plans/2026-10-20-progress-and-remaining-roadmap.md"
+			]
+		},
+		{
+			"slug": "opencut",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/opencut-app/opencut.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "e668010778568641babef2cc40be4703ae6916d6",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:30.431110+00:00",
+				"source_repository": "https://github.com/OpenCut-app/OpenCut"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/OpenCut-app/OpenCut/blob/e668010778568641babef2cc40be4703ae6916d6/README.md"
+			]
+		},
+		{
+			"slug": "rustgis",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/opengeos/rustgis.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f373a4c509cd07bbb8242a6bd78ce5bd280a0abc",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515082+00:00",
+				"source_repository": "https://github.com/opengeos/RustGIS"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/opengeos/RustGIS/blob/f373a4c509cd07bbb8242a6bd78ce5bd280a0abc/README.md",
+				"https://github.com/opengeos/RustGIS/blob/f373a4c509cd07bbb8242a6bd78ce5bd280a0abc/ATTRIBUTION.md",
+				"https://github.com/opengeos/RustGIS/blob/f373a4c509cd07bbb8242a6bd78ce5bd280a0abc/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "hexe",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pascaldisse/hexe.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "bdbd03104c8f9d3c2854655ccd4ea842d96c3549",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515083+00:00",
+				"source_repository": "https://github.com/pascaldisse/hexe"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/pascaldisse/hexe/blob/bdbd03104c8f9d3c2854655ccd4ea842d96c3549/README.md",
+				"https://github.com/pascaldisse/hexe/blob/bdbd03104c8f9d3c2854655ccd4ea842d96c3549/ATTRIBUTION.md",
+				"https://github.com/pascaldisse/hexe/blob/bdbd03104c8f9d3c2854655ccd4ea842d96c3549/ROADMAP.md",
+				"https://github.com/pascaldisse/hexe/blob/bdbd03104c8f9d3c2854655ccd4ea842d96c3549/STATUS.md"
+			]
+		},
+		{
+			"slug": "ferret",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/petru101/ferret.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f3848e6d6eac7b26340f066a90c290eacb3b717e",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:30.431112+00:00",
+				"source_repository": "https://github.com/Petru101/ferret"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Petru101/ferret/blob/f3848e6d6eac7b26340f066a90c290eacb3b717e/README.md"
+			]
+		},
+		{
+			"slug": "gamevault",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/phalcode/gamevault.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "2c2ca1c8a16e175b8e753760c4b1fbdd6d6fc861",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:30.431113+00:00",
+				"source_repository": "https://github.com/Phalcode/gamevault-backend"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Phalcode/gamevault-backend/blob/2c2ca1c8a16e175b8e753760c4b1fbdd6d6fc861/README.md"
+			]
+		},
+		{
+			"slug": "filecraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pierruno-labs/filecraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f1ab57fd9124ebc86894b1a61bb5070d8c0a67c6",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:46.243019+00:00",
+				"source_repository": "https://github.com/freewright-dev/FileCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/freewright-dev/FileCraft/blob/f1ab57fd9124ebc86894b1a61bb5070d8c0a67c6/README.md"
+			]
+		},
+		{
+			"slug": "materialcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pijellypin/materialcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "3a41a1998d2a6d028197d2fe39c190072c2854ae",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853898+00:00",
+				"source_repository": "https://github.com/PiJellyPin/MaterialCraft"
+			},
+			"decision": "Restored texture/function/pattern graphs, generators, filters, subgraphs and command-line rendering. Corrected the obsolete proprietary-own-graph-format statement to documented SBS projects and MaterialX output.",
+			"description_before": "A Substance 3D Designer-style procedural material editor with node graphs, 2D/3D previews, mesh baking and texture output. Uses SBS as its project format and documents compatibility with Designer nodes, with inherited and third-party licenses recorded separately.",
+			"description_after": "A Substance 3D Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D/3D previews, mesh baking and command-line rendering. Uses SBS projects and documents Designer-node compatibility. Outputs texture maps and MaterialX materials; inherited and third-party code retains its own license terms.",
+			"source_urls": [
+				"https://github.com/PiJellyPin/MaterialCraft/blob/3a41a1998d2a6d028197d2fe39c190072c2854ae/README.md",
+				"https://github.com/PiJellyPin/MaterialCraft/blob/3a41a1998d2a6d028197d2fe39c190072c2854ae/ATTRIBUTION.md",
+				"https://github.com/PiJellyPin/MaterialCraft/blob/3a41a1998d2a6d028197d2fe39c190072c2854ae/docs/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "pireel",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pireel/pireel.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "b824ee23ff1667c45232930366cf1ef5c85318c4",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515085+00:00",
+				"source_repository": "https://github.com/pireel/pireel"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/pireel/pireel/blob/b824ee23ff1667c45232930366cf1ef5c85318c4/README.md"
+			]
+		},
+		{
+			"slug": "easy-download-manager",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/pranavo72bex/easy-download-manager.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "71db7b8a6463921ef43253fd22cc7176f06eab60",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515086+00:00",
+				"source_repository": "https://github.com/pranavo72bex/Easy-Download-Manager"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/pranavo72bex/Easy-Download-Manager/blob/71db7b8a6463921ef43253fd22cc7176f06eab60/README.md",
+				"https://github.com/pranavo72bex/Easy-Download-Manager/blob/71db7b8a6463921ef43253fd22cc7176f06eab60/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "rpg-reactor",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/psychronic-games/rpg-reactor.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "1fdac236850df3f5f3d443cde35b2ee3198d0e27",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853924+00:00",
+				"source_repository": "https://github.com/Psychronic-Games/RPGReactor"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Psychronic-Games/RPGReactor/blob/1fdac236850df3f5f3d443cde35b2ee3198d0e27/README.md",
+				"https://github.com/Psychronic-Games/RPGReactor/blob/1fdac236850df3f5f3d443cde35b2ee3198d0e27/THIRD_PARTY_NOTICES.md",
+				"https://github.com/Psychronic-Games/RPGReactor/blob/1fdac236850df3f5f3d443cde35b2ee3198d0e27/docs/STATUS.md",
+				"https://github.com/Psychronic-Games/RPGReactor/blob/1fdac236850df3f5f3d443cde35b2ee3198d0e27/docs/posts/release-notes-0.99.3.md",
+				"https://github.com/Psychronic-Games/RPGReactor/blob/1fdac236850df3f5f3d443cde35b2ee3198d0e27/docs/posts/release-notes-0.99.4.md"
+			]
+		},
+		{
+			"slug": "plancraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/rallegretti/plancraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "7cf3e28d3de99e9767afeed79cf1b96448e57058",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.436964+00:00",
+				"source_repository": "https://github.com/rallegretti/PlanCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/rallegretti/PlanCraft/blob/7cf3e28d3de99e9767afeed79cf1b96448e57058/README.md"
+			]
+		},
+		{
+			"slug": "reviera",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/rational-boxes/reviera.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d9381cb9d87621a62218de370a1a196295878e1e",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853926+00:00",
+				"source_repository": "https://github.com/Rational-Boxes/NoDesk_Reviera"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Rational-Boxes/NoDesk_Reviera/blob/d9381cb9d87621a62218de370a1a196295878e1e/README.md"
+			]
+		},
+		{
+			"slug": "sotto",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/rbr48/sotto.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "93bbea08e4adab157dce05c40679bc46bf30968c",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.436987+00:00",
+				"source_repository": "https://github.com/rbr48/sotto"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/rbr48/sotto/blob/93bbea08e4adab157dce05c40679bc46bf30968c/README.md",
+				"https://github.com/rbr48/sotto/blob/93bbea08e4adab157dce05c40679bc46bf30968c/docs/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "reactos",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/reactos/reactos.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5f6ef754f90eef792e4ef90561bcff2cac4d3afb",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:58.436989+00:00",
+				"source_repository": "https://github.com/reactos/reactos"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/reactos/reactos/blob/5f6ef754f90eef792e4ef90561bcff2cac4d3afb/README.md"
+			]
+		},
+		{
+			"slug": "open-stop-motion-studio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/realhartlmax/open-stop-motion-studio.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "ce80d842bd0dece391edfc1a44a7cb0333bab87d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853928+00:00",
+				"source_repository": "https://github.com/RealHartlMax/Open-Stop-Motion-Studio"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/RealHartlMax/Open-Stop-Motion-Studio/blob/ce80d842bd0dece391edfc1a44a7cb0333bab87d/README.md"
+			]
+		},
+		{
+			"slug": "royal-tasks",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/realrules/royal-tasks.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "fe47a7707b4a34f31e76c25ebd96cedd1ed02f19",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853929+00:00",
+				"source_repository": "https://github.com/RealRules/royal-tasks"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/RealRules/royal-tasks/blob/fe47a7707b4a34f31e76c25ebd96cedd1ed02f19/README.md"
+			]
+		},
+		{
+			"slug": "paintcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/replicraft/paintcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "5ca286d610c1cb7ac28964bbd3f63dbdbf29eba8",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.436991+00:00",
+				"source_repository": "https://github.com/replicraft/PaintCraft"
+			},
+			"decision": "Restored brushes, shapes, text, selections, layers, undo/redo, named image formats and headless MCP without dropping filters, masks or qualified layered imports.",
+			"description_before": "A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs, floating panels, editable filters and layer masks. Desktop, browser, CLI and MCP interfaces provide painting and image conversion. PCND projects preserve layers, filters and masks; supported layered imports include OpenRaster, limited historical PDN/PAINT and basic raster PSD/PSB.",
+			"description_after": "Rust reimplementation of Paint.NET and MS Paint workflows. Classic has Windows 7/10/11 skins; Studio adds tabs, floating panels, editable filters and layer masks. Brushes, shapes, text, selections, layers and undo/redo are available on desktop/browser and through headless CLI/MCP. PCND preserves layers, filters and masks. Exchanges PNG/JPEG/BMP, still GIF and selected TIFF pages; layered imports include OpenRaster, historical PDN/PAINT subsets and basic raster PSD/PSB.",
+			"source_urls": [
+				"https://github.com/replicraft/PaintCraft/blob/5ca286d610c1cb7ac28964bbd3f63dbdbf29eba8/README.md"
+			]
+		},
+		{
+			"slug": "open-publisher",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/rmellis/open-publisher.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "9c704753c1d6094850297b43870d1e1435116fed",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.436992+00:00",
+				"source_repository": "https://github.com/rmellis/open-publisher"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/rmellis/open-publisher/blob/9c704753c1d6094850297b43870d1e1435116fed/README.md"
+			]
+		},
+		{
+			"slug": "doory",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/shaongitbd/doory.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "177a7411cc0f72770f8b36d1ed0235893246148f",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.436998+00:00",
+				"source_repository": "https://github.com/shaongitbd/doory"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/shaongitbd/doory/blob/177a7411cc0f72770f8b36d1ed0235893246148f/README.md",
+				"https://github.com/shaongitbd/doory/blob/177a7411cc0f72770f8b36d1ed0235893246148f/THIRD_PARTY.md"
+			]
+		},
+		{
+			"slug": "xnotes",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/shardulvs/xnotes.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "3926304a0a2ca20b0ac259317b5e60f77d4668b1",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:58.437000+00:00",
+				"source_repository": "https://github.com/shardulvs/xnotes-android"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/shardulvs/xnotes-android/blob/3926304a0a2ca20b0ac259317b5e60f77d4668b1/README.md"
+			]
+		},
+		{
+			"slug": "lightfoundry",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/sitesentrix/lightfoundry.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "da1a3bedafe3fe5ed759bc448e186258399d2c3d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853933+00:00",
+				"source_repository": "https://github.com/Stitchwright/laserfoundry"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Stitchwright/laserfoundry/blob/da1a3bedafe3fe5ed759bc448e186258399d2c3d/README.md",
+				"https://github.com/Stitchwright/laserfoundry/blob/da1a3bedafe3fe5ed759bc448e186258399d2c3d/ROADMAP.md",
+				"https://github.com/Stitchwright/laserfoundry/blob/da1a3bedafe3fe5ed759bc448e186258399d2c3d/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "stitchfoundry",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/sitesentrix/stitchfoundry.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "0bd00d3caf9eb61b1bad499ec1338de8872ea9eb",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853931+00:00",
+				"source_repository": "https://github.com/Stitchwright/StitchFoundry"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Stitchwright/StitchFoundry/blob/0bd00d3caf9eb61b1bad499ec1338de8872ea9eb/README.md"
+			]
+		},
+		{
+			"slug": "papercraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/slyim/papercraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "035fe8bf09fb919753f615752f20e7432199497d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.437003+00:00",
+				"source_repository": "https://github.com/slyim/papercraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/slyim/papercraft/blob/035fe8bf09fb919753f615752f20e7432199497d/README.md",
+				"https://github.com/slyim/papercraft/blob/035fe8bf09fb919753f615752f20e7432199497d/THIRD_PARTY_NOTICES.md"
+			]
+		},
+		{
+			"slug": "armada",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/soapbox-pub/armada.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "f1dc48d13ea20f1e2331a6459ff37d40fb9434b7",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.437008+00:00",
+				"source_repository": "https://github.com/soapbox-pub/armada"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/soapbox-pub/armada/blob/f1dc48d13ea20f1e2331a6459ff37d40fb9434b7/README.md"
+			]
+		},
+		{
+			"slug": "anicraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/soof-golan/anicraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "9d7172d9f9c0ffcf0cf6a1ae28cbb3f6b533ad4a",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.437010+00:00",
+				"source_repository": "https://github.com/soof-golan/anicraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/soof-golan/anicraft/blob/9d7172d9f9c0ffcf0cf6a1ae28cbb3f6b533ad4a/README.md",
+				"https://github.com/soof-golan/anicraft/blob/9d7172d9f9c0ffcf0cf6a1ae28cbb3f6b533ad4a/ATTRIBUTION.md"
+			]
+		},
+		{
+			"slug": "mixstudio",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/soulspin/mixstudio.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c141cb6725439ba9ac2de782f9246373525d65fd",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112951+00:00",
+				"source_repository": "https://github.com/soulspin/MixStudio"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/soulspin/MixStudio/blob/c141cb6725439ba9ac2de782f9246373525d65fd/README.md",
+				"https://github.com/soulspin/MixStudio/blob/c141cb6725439ba9ac2de782f9246373525d65fd/docs/RELEASE-NOTES.md",
+				"https://github.com/soulspin/MixStudio/blob/c141cb6725439ba9ac2de782f9246373525d65fd/docs/TIME-STRETCH-LICENSES.md"
+			]
+		},
+		{
+			"slug": "stoat",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/stoatchat/stoat.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "df96bca08906567ae7c20bc6c4c2a0587b831ff4",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112986+00:00",
+				"source_repository": "https://github.com/stoatchat/stoatchat"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/stoatchat/stoatchat/blob/df96bca08906567ae7c20bc6c4c2a0587b831ff4/README.md"
+			]
+		},
+		{
+			"slug": "cadcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/cadcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "ebc67fa81dccb0d89c157babb27e7d5c3a5c1177",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112987+00:00",
+				"source_repository": "https://github.com/storytold/cadcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, layers, dimensions, DXF and DWG support.",
+			"description_after": "An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, object snaps, layers, blocks, dimensions and layouts. Reads and writes supported DXF and DWG drawings, provides paper-space viewports and PDF plotting, and exposes the shared command engine through CLI and MCP automation.",
+			"source_urls": [
+				"https://github.com/storytold/cadcraft/blob/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/README.md",
+				"https://github.com/storytold/cadcraft/blob/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/ATTRIBUTION.md",
+				"https://github.com/storytold/cadcraft/blob/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/ROADMAP.md",
+				"https://github.com/storytold/cadcraft/blob/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/cadcraft/blob/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/docs/file-format-parity.md",
+				"https://github.com/storytold/cadcraft/blob/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "deckcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/deckcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112991+00:00",
+				"source_repository": "https://github.com/storytold/deckcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent PowerPoint-style presentation application by ArtCraft with themes, slide layouts, shapes, transitions, animations and PowerPoint file support.",
+			"description_after": "An independent PowerPoint-style presentation application by ArtCraft with themes, slide masters, layouts, shapes, formatted text, pictures, tables, charts and basic SmartArt. Provides transitions, animations and full-screen presenting. Opens and saves PPTX and exports PDF, with desktop/browser interfaces and undoable commands shared by the CLI, control channel and MCP server.",
+			"source_urls": [
+				"https://github.com/storytold/deckcraft/blob/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/README.md",
+				"https://github.com/storytold/deckcraft/blob/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/ATTRIBUTION.md",
+				"https://github.com/storytold/deckcraft/blob/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/ROADMAP.md",
+				"https://github.com/storytold/deckcraft/blob/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/deckcraft/blob/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/gaps.md",
+				"https://github.com/storytold/deckcraft/blob/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/parity-checklist.md",
+				"https://github.com/storytold/deckcraft/blob/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "designcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/designcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "cc3c70d4be5092262b61c43b607e26b4a0b82fc6",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112993+00:00",
+				"source_repository": "https://github.com/storytold/designcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, threaded text frames, paragraph composition and PDF export.",
+			"description_after": "An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, parent pages, threaded text frames, paragraph composition, styles, images and PDF export. Reads supported INDD documents and exchanges IDML, with its own native format and editable PPTX and image exports. Desktop and browser interfaces share commands with a CLI, JSON control channel and MCP server.",
+			"source_urls": [
+				"https://github.com/storytold/designcraft/blob/cc3c70d4be5092262b61c43b607e26b4a0b82fc6/README.md",
+				"https://github.com/storytold/designcraft/blob/cc3c70d4be5092262b61c43b607e26b4a0b82fc6/ROADMAP.md",
+				"https://github.com/storytold/designcraft/blob/cc3c70d4be5092262b61c43b607e26b4a0b82fc6/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/designcraft/blob/cc3c70d4be5092262b61c43b607e26b4a0b82fc6/docs/gaps.md",
+				"https://github.com/storytold/designcraft/blob/cc3c70d4be5092262b61c43b607e26b4a0b82fc6/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "effectcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/effectcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "ad7abfa5076a00b4b214811bae66ee0600828ac5",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112994+00:00",
+				"source_repository": "https://github.com/storytold/effectcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering.",
+			"description_after": "An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering. Supports shape and text animation, masks, nested compositions and time remapping. Uses readable .ecproj project files and imports/exports Lottie. The desktop interface, CLI, JSON control channel and MCP server share the same command engine.",
+			"source_urls": [
+				"https://github.com/storytold/effectcraft/blob/ad7abfa5076a00b4b214811bae66ee0600828ac5/README.md",
+				"https://github.com/storytold/effectcraft/blob/ad7abfa5076a00b4b214811bae66ee0600828ac5/ATTRIBUTION.md",
+				"https://github.com/storytold/effectcraft/blob/ad7abfa5076a00b4b214811bae66ee0600828ac5/ROADMAP.md",
+				"https://github.com/storytold/effectcraft/blob/ad7abfa5076a00b4b214811bae66ee0600828ac5/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/effectcraft/blob/ad7abfa5076a00b4b214811bae66ee0600828ac5/docs/gaps.md",
+				"https://github.com/storytold/effectcraft/blob/ad7abfa5076a00b4b214811bae66ee0600828ac5/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "figcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/figcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112996+00:00",
+				"source_repository": "https://github.com/storytold/figcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/storytold/figcraft/blob/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/README.md",
+				"https://github.com/storytold/figcraft/blob/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/ATTRIBUTION.md",
+				"https://github.com/storytold/figcraft/blob/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/ROADMAP.md",
+				"https://github.com/storytold/figcraft/blob/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/figcraft/blob/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/docs/parity-checklist.md",
+				"https://github.com/storytold/figcraft/blob/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "filmcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/filmcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "68919ed87aa6a097a4d21414ec7c438883f5fe22",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112997+00:00",
+				"source_repository": "https://github.com/storytold/filmcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, color adjustments, audio, titles and media export.",
+			"description_after": "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, three-point editing, ripple/roll/slip/slide trimming, nested sequences and keyframes. Includes color adjustments, audio mixing, titles, captions and media export. Its native project format supports autosave and crash recovery; CLI and MCP commands drive the same editing engine.",
+			"source_urls": [
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/README.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/ATTRIBUTION.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/ROADMAP.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/codec-parity.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/file-format-parity.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/gaps.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/hardware-parity.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/localization-parity.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/roadmap.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/target-app-parity.md",
+				"https://github.com/storytold/filmcraft/blob/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/ui-parity.md"
+			]
+		},
+		{
+			"slug": "gridcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/gridcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "488f9982ebf05be9bfe581489d0edc6e3918eec7",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112998+00:00",
+				"source_repository": "https://github.com/storytold/gridcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent Excel-style spreadsheet application by ArtCraft with formulas, workbook recalculation, formatting, tables, charts and XLSX reading and writing.",
+			"description_after": "An independent Excel-style spreadsheet application by ArtCraft with formulas, incremental workbook recalculation, dynamic arrays, formatting, tables, charts and XLSX reading/writing. Includes conditional formats, validation, PivotTable workflows, Solver and analysis tools; imports supported legacy XLS content. Desktop and browser interfaces share commands with the CLI, JSON control channel and MCP server.",
+			"source_urls": [
+				"https://github.com/storytold/gridcraft/blob/488f9982ebf05be9bfe581489d0edc6e3918eec7/README.md",
+				"https://github.com/storytold/gridcraft/blob/488f9982ebf05be9bfe581489d0edc6e3918eec7/ATTRIBUTION.md",
+				"https://github.com/storytold/gridcraft/blob/488f9982ebf05be9bfe581489d0edc6e3918eec7/ROADMAP.md",
+				"https://github.com/storytold/gridcraft/blob/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/gridcraft/blob/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/function-parity.md",
+				"https://github.com/storytold/gridcraft/blob/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/gaps.md",
+				"https://github.com/storytold/gridcraft/blob/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/parity-checklist.md"
+			]
+		},
+		{
+			"slug": "lightcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/lightcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "ebe247710867f8c47512fab1ff488f17815161e5",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.113000+00:00",
+				"source_repository": "https://github.com/storytold/lightcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent Lightroom-style photography application by ArtCraft with a photo library, non-destructive adjustments, RAW development and masking.",
+			"description_after": "An independent Lightroom-style photography application by ArtCraft with photo-library organization, non-destructive adjustments, RAW development and masking. Provides crop and lens tools, local edits, presets, batch processing and image export, using the same Rust processing engine on desktop and in the browser. CLI commands, a JSON control channel and MCP expose library and development workflows.",
+			"source_urls": [
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/README.md",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/ROADMAP.md",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/assets/ATTRIBUTION.md",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/docs/gaps.md",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/docs/parity-checklist.md",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/docs/raw-parity.md",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/docs/roadmap.md",
+				"https://github.com/storytold/lightcraft/blob/ebe247710867f8c47512fab1ff488f17815161e5/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "pdfcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/pdfcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "f47618f59b522a9cc80c061e0d540eef8e494f5d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192355+00:00",
+				"source_repository": "https://github.com/storytold/pdfcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting PDF documents.",
+			"description_after": "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting documents. Adds supported text/image editing, page manipulation, redaction, OCR, conversion, signature workflows and PDF inspection. Runs natively and in the browser; CLI, JSON control and MCP interfaces automate the same document operations. Editing, conversion and standards support remain partial.",
+			"source_urls": [
+				"https://github.com/storytold/pdfcraft/blob/f47618f59b522a9cc80c061e0d540eef8e494f5d/README.md",
+				"https://github.com/storytold/pdfcraft/blob/f47618f59b522a9cc80c061e0d540eef8e494f5d/ATTRIBUTION.md",
+				"https://github.com/storytold/pdfcraft/blob/f47618f59b522a9cc80c061e0d540eef8e494f5d/ROADMAP.md",
+				"https://github.com/storytold/pdfcraft/blob/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/pdfcraft/blob/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/gaps.md",
+				"https://github.com/storytold/pdfcraft/blob/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/roadmap.md",
+				"https://github.com/storytold/pdfcraft/blob/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "photocraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/photocraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "5d9c57e60db966382abda2638d0ccbb7489d8ee7",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192390+00:00",
+				"source_repository": "https://github.com/storytold/photocraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "PhotoCraft by ArtCraft independently implements Photoshop-style image editing, including layers, adjustments, selections and layered PSD documents.",
+			"description_after": "PhotoCraft by ArtCraft independently implements Photoshop-style image editing with brushes, layers and masks, adjustments, selections, filters, text and layered PSD/PSB documents. Supports high-bit-depth images, CMYK/Lab workflows and common raster formats. The native desktop and browser interfaces share editing commands with the CLI, JSON control channel and MCP server; Photoshop interchange remains partial.",
+			"source_urls": [
+				"https://github.com/storytold/photocraft/blob/5d9c57e60db966382abda2638d0ccbb7489d8ee7/README.md",
+				"https://github.com/storytold/photocraft/blob/5d9c57e60db966382abda2638d0ccbb7489d8ee7/ATTRIBUTION.md",
+				"https://github.com/storytold/photocraft/blob/5d9c57e60db966382abda2638d0ccbb7489d8ee7/ROADMAP.md",
+				"https://github.com/storytold/photocraft/blob/5d9c57e60db966382abda2638d0ccbb7489d8ee7/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/photocraft/blob/5d9c57e60db966382abda2638d0ccbb7489d8ee7/docs/parity-checklist.md",
+				"https://github.com/storytold/photocraft/blob/5d9c57e60db966382abda2638d0ccbb7489d8ee7/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "soundcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/soundcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "8444edf075eae24ad37b128675c939fd5d370a60",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192392+00:00",
+				"source_repository": "https://github.com/storytold/soundcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing.",
+			"description_after": "An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing. Provides multitrack recording, clip-edit modes, buses, sends, built-in effects and instruments, piano-roll workflows and audio bouncing. Desktop controls, a CLI and MCP automation share the command engine; session exchange, plugin hosting and recording scalability remain incomplete.",
+			"source_urls": [
+				"https://github.com/storytold/soundcraft/blob/8444edf075eae24ad37b128675c939fd5d370a60/README.md",
+				"https://github.com/storytold/soundcraft/blob/8444edf075eae24ad37b128675c939fd5d370a60/ATTRIBUTION.md",
+				"https://github.com/storytold/soundcraft/blob/8444edf075eae24ad37b128675c939fd5d370a60/ROADMAP.md",
+				"https://github.com/storytold/soundcraft/blob/8444edf075eae24ad37b128675c939fd5d370a60/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/soundcraft/blob/8444edf075eae24ad37b128675c939fd5d370a60/docs/gaps.md",
+				"https://github.com/storytold/soundcraft/blob/8444edf075eae24ad37b128675c939fd5d370a60/docs/parity-checklist.md",
+				"https://github.com/storytold/soundcraft/blob/8444edf075eae24ad37b128675c939fd5d370a60/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "vectorcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/vectorcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "4ee0ef231aa31f50192f0072554fa390957532bf",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192396+00:00",
+				"source_repository": "https://github.com/storytold/vectorcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration, including paths, artboards, typography, SVG, PDF and PDF-compatible AI files.",
+			"description_after": "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration with paths, artboards, typography, shapes, curve booleans, gradients, symbols and effects. Reads/writes SVG and PDF and supports PDF-compatible AI files. Provides desktop and browser editing plus undoable commands exposed through CLI, JSON control and MCP interfaces. Native Illustrator interchange remains partial.",
+			"source_urls": [
+				"https://github.com/storytold/vectorcraft/blob/4ee0ef231aa31f50192f0072554fa390957532bf/README.md",
+				"https://github.com/storytold/vectorcraft/blob/4ee0ef231aa31f50192f0072554fa390957532bf/ROADMAP.md",
+				"https://github.com/storytold/vectorcraft/blob/4ee0ef231aa31f50192f0072554fa390957532bf/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/vectorcraft/blob/4ee0ef231aa31f50192f0072554fa390957532bf/docs/gaps.md",
+				"https://github.com/storytold/vectorcraft/blob/4ee0ef231aa31f50192f0072554fa390957532bf/docs/localization-parity.md",
+				"https://github.com/storytold/vectorcraft/blob/4ee0ef231aa31f50192f0072554fa390957532bf/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "wordcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/storytold/wordcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192398+00:00",
+				"source_repository": "https://github.com/storytold/wordcraft"
+			},
+			"decision": "Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
+			"description_before": "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, DOCX reading and writing, and PDF export.",
+			"description_after": "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, track changes, references and mail merge. Reads/writes DOCX, ODT, RTF, HTML, Markdown, LaTeX and plain text, opens supported legacy DOC files and exports PDF. Desktop and browser interfaces share document commands with the CLI, JSON control channel and MCP server; Word layout and format fidelity remain partial.",
+			"source_urls": [
+				"https://github.com/storytold/wordcraft/blob/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/README.md",
+				"https://github.com/storytold/wordcraft/blob/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/ATTRIBUTION.md",
+				"https://github.com/storytold/wordcraft/blob/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/ROADMAP.md",
+				"https://github.com/storytold/wordcraft/blob/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/docs/brand/LICENSE-brand.txt",
+				"https://github.com/storytold/wordcraft/blob/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/docs/gaps.md",
+				"https://github.com/storytold/wordcraft/blob/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/docs/parity-checklist.md",
+				"https://github.com/storytold/wordcraft/blob/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "suhina",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/suhina-daw/suhina.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "0866f283285b4295c93ea2aa5e100cc54cf353cf",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192399+00:00",
+				"source_repository": "https://github.com/suhina-daw/suhina-daw"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/suhina-daw/suhina-daw/blob/0866f283285b4295c93ea2aa5e100cc54cf353cf/README.md",
+				"https://github.com/suhina-daw/suhina-daw/blob/0866f283285b4295c93ea2aa5e100cc54cf353cf/ROADMAP.md",
+				"https://github.com/suhina-daw/suhina-daw/blob/0866f283285b4295c93ea2aa5e100cc54cf353cf/docs/decisions/0016-parity-target.md",
+				"https://github.com/suhina-daw/suhina-daw/blob/0866f283285b4295c93ea2aa5e100cc54cf353cf/docs/research/parity-live-12.md",
+				"https://github.com/suhina-daw/suhina-daw/blob/0866f283285b4295c93ea2aa5e100cc54cf353cf/third_party/asiosdk/VENDORED.md"
+			]
+		},
+		{
+			"slug": "procraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/surfrpt1/procraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "4b6723b811e5b297ca7dd875b4f6a128adb9c9a7",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192401+00:00",
+				"source_repository": "https://github.com/surfrpt1/procraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/surfrpt1/procraft/blob/4b6723b811e5b297ca7dd875b4f6a128adb9c9a7/README.md"
+			]
+		},
+		{
+			"slug": "fieldcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tangency-labs/fieldcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "cb976117889edf8de5f093ba949980b0aa79c1e2",
+				"branch": "develop",
+				"checked_at": "2026-11-02T12:13:04.192402+00:00",
+				"source_repository": "https://github.com/tangency-labs/fieldcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/tangency-labs/fieldcraft/blob/cb976117889edf8de5f093ba949980b0aa79c1e2/README.md",
+				"https://github.com/tangency-labs/fieldcraft/blob/cb976117889edf8de5f093ba949980b0aa79c1e2/ROADMAP.md",
+				"https://github.com/tangency-labs/fieldcraft/blob/cb976117889edf8de5f093ba949980b0aa79c1e2/docs/parity.md"
+			]
+		},
+		{
+			"slug": "pcbcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tangency-labs/pcbcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "31138579e5ce1c9d9ba4ee1f83f9253581c1c689",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192403+00:00",
+				"source_repository": "https://github.com/tangency-labs/pcbcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/tangency-labs/pcbcraft/blob/31138579e5ce1c9d9ba4ee1f83f9253581c1c689/README.md",
+				"https://github.com/tangency-labs/pcbcraft/blob/31138579e5ce1c9d9ba4ee1f83f9253581c1c689/ATTRIBUTION.md",
+				"https://github.com/tangency-labs/pcbcraft/blob/31138579e5ce1c9d9ba4ee1f83f9253581c1c689/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "solidcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tangency-labs/solidcraft.yaml",
+			"kind": "project",
+			"result": "restored/expanded/corrected",
+			"reviewed_revision": {
+				"commit": "3c806394b06b2567d247ee779148ce4a62307225",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192405+00:00",
+				"source_repository": "https://github.com/tangency-labs/solidcraft"
+			},
+			"decision": "Restored the explicit parameter-change/rebuild relationship; obsolete simple-parts-only framing remains corrected, while current assemblies/rendering/sheet-metal and interface details are preserved.",
+			"description_before": "A Rust parametric CAD application targeting Fusion-style design workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces.",
+			"description_after": "A Rust parametric CAD application targeting Fusion-style workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools; parameter changes rebuild the model. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces.",
+			"source_urls": [
+				"https://github.com/tangency-labs/solidcraft/blob/3c806394b06b2567d247ee779148ce4a62307225/README.md",
+				"https://github.com/tangency-labs/solidcraft/blob/3c806394b06b2567d247ee779148ce4a62307225/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "shelled",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/tecno14/shelled.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "097784024fbd48498302b7b995a494b71ae1a5e2",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192410+00:00",
+				"source_repository": "https://github.com/tecno14/shelled"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/tecno14/shelled/blob/097784024fbd48498302b7b995a494b71ae1a5e2/README.md"
+			]
+		},
+		{
+			"slug": "earthcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/therichronicles/earthcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "559438c89db7fda0f84f55e05bec2e7eb673ff88",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:04.192412+00:00",
+				"source_repository": "https://github.com/therichronicles/EarthCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/therichronicles/EarthCraft/blob/559438c89db7fda0f84f55e05bec2e7eb673ff88/README.md"
+			]
+		},
+		{
+			"slug": "zeroauthy",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/thomasmeadows/zeroauthy.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5d1c30c1ac7c90d88307c1958af7d7fd20ef0d54",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515080+00:00",
+				"source_repository": "https://github.com/occupysaas/zeroauthy"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/occupysaas/zeroauthy/blob/5d1c30c1ac7c90d88307c1958af7d7fd20ef0d54/README.md",
+				"https://github.com/occupysaas/zeroauthy/blob/5d1c30c1ac7c90d88307c1958af7d7fd20ef0d54/docs/superpowers/specs/2026-10-19-zeroauthy-management-roadmap-design.md"
+			]
+		},
+		{
+			"slug": "metriccraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ucs-care-group/metriccraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "765eec66b7556dad7e21922875733cca4cef4a5b",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853935+00:00",
+				"source_repository": "https://github.com/UCS-Care-Group/metriccraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/UCS-Care-Group/metriccraft/blob/765eec66b7556dad7e21922875733cca4cef4a5b/README.md",
+				"https://github.com/UCS-Care-Group/metriccraft/blob/765eec66b7556dad7e21922875733cca4cef4a5b/ROADMAP.md"
+			]
+		},
+		{
+			"slug": "ucs-mailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ucs-care-group/ucs-mailcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "6e02c208a4b4d0289e92a55f85b9c109bc0d5af8",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:33.853934+00:00",
+				"source_repository": "https://github.com/UCS-Care-Group/mailcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/README.md",
+				"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/ATTRIBUTION.md",
+				"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/ROADMAP.md",
+				"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/docs/calendar-parity.md",
+				"https://github.com/UCS-Care-Group/mailcraft/blob/6e02c208a4b4d0289e92a55f85b9c109bc0d5af8/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "vibedarling",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/vibedarling/vibedarling.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "ad3d8d5e6d26145084a4f9dd914a9b8fc7fd0ecf",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:33.853940+00:00",
+				"source_repository": "https://github.com/VibeDarling/darling"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/VibeDarling/darling/blob/ad3d8d5e6d26145084a4f9dd914a9b8fc7fd0ecf/README.md"
+			]
+		},
+		{
+			"slug": "openrevu",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/vineetpadia/openrevu.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "d7c52caa3e8c208ba2220eae95e60a82ce154518",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:13:06.449333+00:00",
+				"source_repository": "https://github.com/vineetpadia/openrevu"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/vineetpadia/openrevu/blob/d7c52caa3e8c208ba2220eae95e60a82ce154518/README.md"
+			]
+		},
+		{
+			"slug": "lasercraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/wdunn001/lasercraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "0bbbbce9012c0a105e735d996f45094f0e47ff0b",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:06.449334+00:00",
+				"source_repository": "https://github.com/wdunn001/lasercraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/wdunn001/lasercraft/blob/0bbbbce9012c0a105e735d996f45094f0e47ff0b/README.md"
+			]
+		},
+		{
+			"slug": "recordly",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/webadderallorg/recordly.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "109ca3a13c362e969d9add25d1f93406c36dba2a",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:06.449336+00:00",
+				"source_repository": "https://github.com/webadderallorg/recordly"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/webadderallorg/recordly/blob/109ca3a13c362e969d9add25d1f93406c36dba2a/README.md"
+			]
+		},
+		{
+			"slug": "ledgercraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/wr3nch98dev/ledgercraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "e2fe64dc9111d3effcc4b3d232927ec519092fa7",
+				"branch": "master",
+				"checked_at": "2026-11-02T12:12:33.853943+00:00",
+				"source_repository": "https://github.com/Wr3nch98DEV/LedgerCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/Wr3nch98DEV/LedgerCraft/blob/e2fe64dc9111d3effcc4b3d232927ec519092fa7/README.md",
+				"https://github.com/Wr3nch98DEV/LedgerCraft/blob/e2fe64dc9111d3effcc4b3d232927ec519092fa7/PROGRESS.md"
+			]
+		},
+		{
+			"slug": "humanmotioncraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/yalkouassi/humanmotioncraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5eda21e0be7e2c9912b204eabb1a5d79ecd90d06",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.811561+00:00",
+				"source_repository": "https://github.com/YalKouassi/HumanMotionCraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/README.md",
+				"https://github.com/YalKouassi/HumanMotionCraft/blob/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/ATTRIBUTION.md"
+			]
+		},
+		{
+			"slug": "ribbon-file-manager",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ysnx64523/ribbon-file-manager.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "feeec7c433dc0a1028d730f228a1d50aba861de6",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:06.449337+00:00",
+				"source_repository": "https://github.com/ysnx64523/Ribbon-File-Manager"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/ysnx64523/Ribbon-File-Manager/blob/feeec7c433dc0a1028d730f228a1d50aba861de6/README.md"
+			]
+		},
+		{
+			"slug": "zidan44-mailcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zidan44/zidan44-mailcraft.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "9413d410d24788fb7d145e85de4eb2c67e8b4697",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812110+00:00",
+				"source_repository": "https://github.com/ZIDAN44/mailcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/ZIDAN44/mailcraft/blob/9413d410d24788fb7d145e85de4eb2c67e8b4697/README.md",
+				"https://github.com/ZIDAN44/mailcraft/blob/9413d410d24788fb7d145e85de4eb2c67e8b4697/docs/gaps.md"
+			]
+		},
+		{
+			"slug": "fluidity",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zlotny/fluidity.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "65c7b3dda4b933e7d23db7773f3d1644b7aba040",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:06.449339+00:00",
+				"source_repository": "https://github.com/zlotny/fluidity-vpn"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/zlotny/fluidity-vpn/blob/65c7b3dda4b933e7d23db7773f3d1644b7aba040/README.md"
+			]
+		},
+		{
+			"slug": "extrudo",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zoltanf/extrudo.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c05d910395f514f4810d3fc76504ce6bb1c73da8",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:06.449344+00:00",
+				"source_repository": "https://github.com/zoltanf/extrudo"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/zoltanf/extrudo/blob/c05d910395f514f4810d3fc76504ce6bb1c73da8/README.md",
+				"https://github.com/zoltanf/extrudo/blob/c05d910395f514f4810d3fc76504ce6bb1c73da8/docs/03-roadmap.md"
+			]
+		},
+		{
+			"slug": "zomello",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/zombeatz/zomello.yaml",
+			"kind": "project",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "bd9029e3db714156b9705cc57cbf3cd9b5715050",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812115+00:00",
+				"source_repository": "https://github.com/ZomBeatz/Zomello"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/ZomBeatz/Zomello/blob/bd9029e3db714156b9705cc57cbf3cd9b5715050/README.md"
+			]
+		},
+		{
+			"slug": "filmcraft-android",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/artcraft-android/filmcraft-android.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c41b58467edd28d098336286528159b24c5203b5",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812177+00:00",
+				"source_repository": "https://github.com/artcraft-android/filmcraft-android"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/artcraft-android/filmcraft-android/blob/c41b58467edd28d098336286528159b24c5203b5/README.md"
+			]
+		},
+		{
+			"slug": "lightcraft-android",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/artcraft-android/lightcraft-android.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "7eb9f0e7e2bb6314879bd9f272a2b12f011f00b2",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812179+00:00",
+				"source_repository": "https://github.com/artcraft-android/lightcraft-android"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/artcraft-android/lightcraft-android/blob/7eb9f0e7e2bb6314879bd9f272a2b12f011f00b2/README.md"
+			]
+		},
+		{
+			"slug": "pdfcraft-android",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/artcraft-android/pdfcraft-android.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "66e832c5dec7bd3b81e1ca94a6544b53a10b4cda",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:36.812181+00:00",
+				"source_repository": "https://github.com/artcraft-android/pdfcraft-android"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/artcraft-android/pdfcraft-android/blob/66e832c5dec7bd3b81e1ca94a6544b53a10b4cda/README.md"
+			]
+		},
+		{
+			"slug": "openplayground",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/daijro/openplayground.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5edc9298deec4bf6d5d56c0dbcb065610e361a0d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040054+00:00",
+				"source_repository": "https://github.com/daijro/openplayground"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/daijro/openplayground/blob/5edc9298deec4bf6d5d56c0dbcb065610e361a0d/README.md"
+			]
+		},
+		{
+			"slug": "craftpulse",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/egsk4/craftpulse.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "5b13f9da388f2c8316cfc110378e7e0037898b8d",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:43.040102+00:00",
+				"source_repository": "https://github.com/egsk4/CraftPulse"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/egsk4/CraftPulse/blob/5b13f9da388f2c8316cfc110378e7e0037898b8d/README.md"
+			]
+		},
+		{
+			"slug": "crafthub",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/megathelegend/crafthub.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "af6c2b39fac0dd9fb03d83b9432d96a9ba938401",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:27.623516+00:00",
+				"source_repository": "https://github.com/MegaTheLEGEND/CraftHub"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/MegaTheLEGEND/CraftHub/blob/af6c2b39fac0dd9fb03d83b9432d96a9ba938401/README.md"
+			]
+		},
+		{
+			"slug": "photocraft-android",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/morte2437/photocraft-android.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "60fa59533e143aef37fac1011d6801c5f6b7e964",
+				"branch": "android-port",
+				"checked_at": "2026-11-02T12:12:55.515074+00:00",
+				"source_repository": "https://github.com/morte2437/photocraft-android"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/morte2437/photocraft-android/blob/60fa59533e143aef37fac1011d6801c5f6b7e964/README.md",
+				"https://github.com/morte2437/photocraft-android/blob/60fa59533e143aef37fac1011d6801c5f6b7e964/ATTRIBUTION.md",
+				"https://github.com/morte2437/photocraft-android/blob/60fa59533e143aef37fac1011d6801c5f6b7e964/docs/brand/LICENSE-brand.txt"
+			]
+		},
+		{
+			"slug": "artcraft-android-builder",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/mostafaxs1/artcraft-android-builder.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "fbb4f66fcc868afdd8303d5227aa81db6a21d7fa",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:30.431089+00:00",
+				"source_repository": "https://github.com/MostafaXS1/artcraft-android"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/MostafaXS1/artcraft-android/blob/fbb4f66fcc868afdd8303d5227aa81db6a21d7fa/README.md"
+			]
+		},
+		{
+			"slug": "wordcraft-android",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/mypenc/wordcraft-android.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "c324ded26e8749af6420a2bb72387ef70d22b014",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515076+00:00",
+				"source_repository": "https://github.com/mypenc/wordcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/mypenc/wordcraft/blob/c324ded26e8749af6420a2bb72387ef70d22b014/README.md",
+				"https://github.com/mypenc/wordcraft/blob/c324ded26e8749af6420a2bb72387ef70d22b014/ATTRIBUTION.md",
+				"https://github.com/mypenc/wordcraft/blob/c324ded26e8749af6420a2bb72387ef70d22b014/ROADMAP.md",
+				"https://github.com/mypenc/wordcraft/blob/c324ded26e8749af6420a2bb72387ef70d22b014/docs/brand/LICENSE-brand.txt",
+				"https://github.com/mypenc/wordcraft/blob/c324ded26e8749af6420a2bb72387ef70d22b014/docs/gaps.md",
+				"https://github.com/mypenc/wordcraft/blob/c324ded26e8749af6420a2bb72387ef70d22b014/docs/parity-checklist.md",
+				"https://github.com/mypenc/wordcraft/blob/c324ded26e8749af6420a2bb72387ef70d22b014/docs/target-app-parity.md"
+			]
+		},
+		{
+			"slug": "lazymaplayers-effectcraft",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/raisulsohan/lazymaplayers-effectcraft.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "26e4b757ba46e735aa9b17a8e134f4e64d7aed89",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:55.515088+00:00",
+				"source_repository": "https://github.com/raisulsohan/lazymaplayers-effectcraft"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/raisulsohan/lazymaplayers-effectcraft/blob/26e4b757ba46e735aa9b17a8e134f4e64d7aed89/README.md"
+			]
+		},
+		{
+			"slug": "craft-vba",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/sirmmo/craft-vba.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "155b224fb9857d3254c36b74634986036bb66951",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.437001+00:00",
+				"source_repository": "https://github.com/sirmmo/craft-vba"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/sirmmo/craft-vba/blob/155b224fb9857d3254c36b74634986036bb66951/README.md"
+			]
+		},
+		{
+			"slug": "artcraft-toolbox",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/smyrgeorge/artcraft-toolbox.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "8ddcf667b9af017fc3163a22c8fb8b5edf0ef0e8",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:12:58.437006+00:00",
+				"source_repository": "https://github.com/smyrgeorge/artcraft-toolbox"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/smyrgeorge/artcraft-toolbox/blob/8ddcf667b9af017fc3163a22c8fb8b5edf0ef0e8/README.md",
+				"https://github.com/smyrgeorge/artcraft-toolbox/blob/8ddcf667b9af017fc3163a22c8fb8b5edf0ef0e8/docs/roadmap.md"
+			]
+		},
+		{
+			"slug": "artcraft-launcher",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/storytold/artcraft-launcher.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "ec205366ebe42635e155b9ab246f036052fef406",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:01.112990+00:00",
+				"source_repository": "https://github.com/storytold/craft-launcher"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/storytold/craft-launcher/blob/ec205366ebe42635e155b9ab246f036052fef406/README.md",
+				"https://github.com/storytold/craft-launcher/blob/ec205366ebe42635e155b9ab246f036052fef406/ATTRIBUTION.md",
+				"https://github.com/storytold/craft-launcher/blob/ec205366ebe42635e155b9ab246f036052fef406/docs/brand/LICENSE-brand.txt"
+			]
+		},
+		{
+			"slug": "craft-icons",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/vbasky/craft-icons.yaml",
+			"kind": "tool",
+			"result": "retained after review",
+			"reviewed_revision": {
+				"commit": "4f3103c6a0d38938a2e5f093cf3a5ee05d5e0ac1",
+				"branch": "main",
+				"checked_at": "2026-11-02T12:13:06.449330+00:00",
+				"source_repository": "https://github.com/vbasky/craft-icons"
+			},
+			"decision": "Retained: current description remains accurate and no supported detail was removed.",
+			"description_before": null,
+			"description_after": null,
+			"source_urls": [
+				"https://github.com/vbasky/craft-icons/blob/4f3103c6a0d38938a2e5f093cf3a5ee05d5e0ac1/README.md"
+			]
+		}
+	]
+}

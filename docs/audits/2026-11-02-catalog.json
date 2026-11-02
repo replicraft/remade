@@ -1,7 +1,7 @@
 {
 	"audit_date": "2026-11-02",
 	"timezone": "America/Los_Angeles",
-	"checked_at_utc": "2026-11-02T12:25:57.358511+00:00",
+	"checked_at_utc": "2026-11-02T12:50:30.332284+00:00",
 	"initial_baseline_commit": "941f2c0aae168976043503e20d3f72c593ed2e66",
 	"current_main_commit": "2f7d1cab560dbb16b586c6590bd4385c34ce1493",
 	"branch": "audit/catalog-2026-11-02",
@@ -20,14 +20,16 @@
 		"github_archived": 0,
 		"github_disabled": 0,
 		"confirmed_repository_moves": 4,
-		"entries_updated_in_this_pr": 54,
+		"entries_updated_in_this_pr": 60,
 		"additional_entries_reconciled_since_first_pass": 12,
 		"linked_supporting_documents_screened_for_catalog_fields": 234,
 		"unique_external_url_checks": 533,
 		"url_http_200": 532,
 		"url_network_errors": 1,
 		"expired_discord_invites_removed": 2,
-		"explicit_release_holds": 1
+		"explicit_release_holds": 1,
+		"descriptions_reviewed": 190,
+		"descriptions_restored_expanded_or_corrected": 26
 	},
 	"validation": {
 		"catalog_schema": "Passed: 530 originals, 176 projects, 380 requests, five featured; 14 supporting tools inventoried.",
@@ -42,7 +44,9 @@
 		"license": "Project license files and relevant notices take precedence over API/package metadata. Missing texts, intended licensing, asset/model exceptions and source-available terms remain explicit; no legal certification.",
 		"platforms": "Documented builds and release artifacts considered without equating builds with tested hardware or maturity.",
 		"holds": "Flare listing remains byte-for-byte unchanged from main until released v0.1.0, per explicit maintainer direction. BeamCraft website retained per earlier direction.",
-		"ledger": "original_fields plus changes reconstruct the reviewed values. changes_in_this_pr isolates corrections against current main. Common review boundaries are declared once in review_methods; per-entry dimension results and pinned sources remain explicit. URL results are stored in url_evidence_file; per-entry url_checks lists its keys."
+		"ledger": "original_fields plus changes reconstruct the reviewed values. changes_in_this_pr isolates corrections against current main. Common review boundaries are declared once in review_methods; per-entry dimension results and pinned sources remain explicit. URL results are stored in url_evidence_file; per-entry url_checks lists its keys.",
+		"field_order": "Summary immediately precedes description (projects/tools) or reason (requests). Other fields follow the majority existing pattern. Reordering alone preserved parsed data across all 575 catalog YAML files; Flare remains byte-for-byte unchanged. Comments and list ordering retained; examples updated.",
+		"description_follow_up": "Every one of the 190 descriptions compared with existing pre-audit wording and current pinned upstream documentary evidence. Restore useful omitted detail; correct outdated/unsupported statements rather than preserve misinformation. No exhaustive feature inventory or runtime certification implied."
 	},
 	"unresolved": [
 		{
@@ -116,7 +120,7 @@
 		},
 		{
 			"slug": "motrix",
-			"resolution": "Retained conservative beta after reviewing release and third-party notices; no unsupported stage promotion."
+			"resolution": "Retained conservative beta after reviewing release and third-party notices; no unsupported stage promotion. Description retained in the full pass."
 		}
 	],
 	"entries": [
@@ -363,10 +367,6 @@
 					"before": "Early development; compatibility is maintainer-reported. IMAP synchronizes folders and message states; calendar views and appointment editing exist, while recurrence, CalDAV, People and Tasks remain unfinished. MCP and browser builds are planned. OST is read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs.",
 					"after": "Alpha; compatibility is maintainer-reported. MCP and browser builds are planned. OST is read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs. Windows installers are unsigned; published Linux builds target x64."
 				},
-				"description": {
-					"before": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes a CLI and PDF printing of messages and folder lists.",
-					"after": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes recurring calendars, contacts and tasks with CalDAV/CardDAV synchronization, plus a CLI and PDF printing."
-				},
 				"platforms": {
 					"before": null,
 					"after": ["Windows", "Linux"]
@@ -374,19 +374,19 @@
 				"status": {
 					"before": "experimental",
 					"after": "alpha"
+				},
+				"description": {
+					"before": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes a CLI and PDF printing of messages and folder lists.",
+					"after": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes recurring calendars, contacts and tasks with CalDAV/CardDAV synchronization, a CLI, and PDF printing of messages and folder lists."
 				}
 			},
-			"review_notes": "Corrected description, limitations, platforms, status using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description, limitations, platforms, status using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored PDF printing of both messages and folder lists.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Early development; compatibility is maintainer-reported. IMAP synchronizes folders and message states; calendar views and appointment editing exist, while recurrence, CalDAV, People and Tasks remain unfinished. MCP and browser builds are planned. OST is read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs.",
 					"after": "Alpha; compatibility is maintainer-reported. MCP and browser builds are planned. OST is read-only; saving into Outlook-authored PST files remains unverified. Some text layout differs. Windows installers are unsigned; published Linux builds target x64."
 				},
-				"description": {
-					"before": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes a CLI and PDF printing of messages and folder lists.",
-					"after": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes recurring calendars, contacts and tasks with CalDAV/CardDAV synchronization, plus a CLI and PDF printing."
-				},
 				"platforms": {
 					"before": null,
 					"after": ["Windows", "Linux"]
@@ -394,6 +394,10 @@
 				"status": {
 					"before": "experimental",
 					"after": "alpha"
+				},
+				"description": {
+					"before": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes a CLI and PDF printing of messages and folder lists.",
+					"after": "Independent Outlook Classic-style mail client with a ribbon, folder panes, formatted message reading and composition. Reads PST, OST, MSG, OFT and EML, writes PST and individual messages, and supports IMAP, POP3 and SMTP accounts. Includes recurring calendars, contacts and tasks with CalDAV/CardDAV synchronization, a CLI, and PDF printing of messages and folder lists."
 				}
 			}
 		},
@@ -1187,13 +1191,13 @@
 					"before": ["Windows"],
 					"after": ["Windows", "Linux"]
 				},
-				"description": {
-					"before": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, search, autosave and CLI/MCP access. A partial ONE section-file reader is implemented.",
-					"after": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, diagrams, search, autosave and CLI/MCP access. CLI import converts supported ONE sections into notebooks with pages and attachments."
-				},
 				"status": {
 					"before": "experimental",
 					"after": "alpha"
+				},
+				"description": {
+					"before": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, search, autosave and CLI/MCP access. A partial ONE section-file reader is implemented.",
+					"after": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, diagrams, search, autosave and CLI/MCP access. CLI import converts supported ONE sections into notebooks with pages and attachments."
 				}
 			},
 			"review_notes": "Corrected description, limitations, platforms, status using current upstream documentation. Remaining documentary conflicts are recorded separately.",
@@ -1207,13 +1211,13 @@
 					"before": ["Windows"],
 					"after": ["Windows", "Linux"]
 				},
-				"description": {
-					"before": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, search, autosave and CLI/MCP access. A partial ONE section-file reader is implemented.",
-					"after": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, diagrams, search, autosave and CLI/MCP access. CLI import converts supported ONE sections into notebooks with pages and attachments."
-				},
 				"status": {
 					"before": "experimental",
 					"after": "alpha"
+				},
+				"description": {
+					"before": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, search, autosave and CLI/MCP access. A partial ONE section-file reader is implemented.",
+					"after": "A OneNote-style notebook with an Office-style ribbon, nested notebooks, sections and pages stored as folders and HTML or Markdown files. Provides formatted editing, movable page containers, tags, equations, attachments, diagrams, search, autosave and CLI/MCP access. CLI import converts supported ONE sections into notebooks with pages and attachments."
 				}
 			}
 		},
@@ -1987,9 +1991,9 @@
 					"empty": false
 				},
 				"maturity": {
-					"result": "maintainer-reported",
+					"result": "conservative classification from substantive implementation",
 					"before": "planned",
-					"after": "planned"
+					"after": "experimental"
 				},
 				"features": {
 					"result": "maintainer-reported; documentary field review complete"
@@ -2028,13 +2032,67 @@
 					"kind": "supporting_document",
 					"blob_oid": "d9c1486b9d95b8c38cc893364ddfa46a5dc945a8",
 					"review": "Relevant current status, capability, open-gap or attribution sections screened."
+				},
+				{
+					"url": "https://github.com/babisque/PhotonForge/blob/c18e909dcff60c8cf622d7021c98e16df7a6a7c5/crates/pf-app/src/app.rs",
+					"kind": "source_follow_up",
+					"review": "SVG import, G-code export, layer editing and undo/redo entry points inspected."
+				},
+				{
+					"url": "https://github.com/babisque/PhotonForge/blob/c18e909dcff60c8cf622d7021c98e16df7a6a7c5/crates/pf-io/tests/m2_edit_flow.rs",
+					"kind": "source_follow_up",
+					"review": "Read milestone code tracing SVG import, layout edits and G-code generation; not executed."
 				}
 			],
 			"url_checks": ["https://github.com/babisque/PhotonForge#readme"],
-			"changes": {},
-			"review_notes": "README explicitly remains Phase 0 workspace bootstrap; retain planned status and avoid listing planned GRBL control as working.",
-			"unresolved": [],
-			"changes_in_this_pr": {}
+			"changes": {
+				"compatibility": {
+					"before": "targeting",
+					"after": "partial"
+				},
+				"limitations": {
+					"before": "Workspace scaffolding only; end-to-end editing, toolpath generation, hardware streaming and LightBurn project-file compatibility are not established. Do not treat the planned workflow as implemented machine-control support.",
+					"after": "Experimental; GUI workflows and G-code simulation lack recorded manual verification. Read-only GRBL access has not been tested on hardware. Machine control/streaming, raster engraving and native project files remain planned; no LightBurn project-file interoperability is documented."
+				},
+				"status": {
+					"before": "planned",
+					"after": "experimental"
+				},
+				"summary": {
+					"before": "Planned LightBurn-style laser engraving and cutting software, initially targeting GRBL controllers.",
+					"after": "LightBurn-style SVG layout, per-layer cut settings, toolpath preview and G-code generation, initially targeting GRBL."
+				},
+				"description": {
+					"before": "An early Rust project planning a LightBurn-style laser engraving and cutting workflow, initially for GRBL controllers. The workspace separates geometry, file import/export, G-code generation, device communication and the GUI. Its README identifies the current stage as Phase 0 workspace bootstrap; these are planned capabilities, not a finished laser-control application.",
+					"after": "An early Rust implementation of LightBurn-style laser layout workflows, initially targeting GRBL. Its layered workspace separates geometry, SVG import, G-code generation, device communication and an egui GUI. Tools arrange and edit shapes, configure per-layer cuts, preview toolpaths and save G-code, with undo/redo. Read-only GRBL connection code is present; machine control and job streaming remain planned."
+				}
+			},
+			"review_notes": "README bootstrap wording is stale. Current roadmap and actual GUI/geometry/G-code source establish meaningful implementation, so experimental/partial replaces planned/targeting. Hardware access and complete machine control remain unqualified.",
+			"unresolved": [
+				"Roadmap and source supersede stale bootstrap-only README wording; hardware and manual-GUI validation remain incomplete."
+			],
+			"changes_in_this_pr": {
+				"compatibility": {
+					"before": "targeting",
+					"after": "partial"
+				},
+				"limitations": {
+					"before": "Workspace scaffolding only; end-to-end editing, toolpath generation, hardware streaming and LightBurn project-file compatibility are not established. Do not treat the planned workflow as implemented machine-control support.",
+					"after": "Experimental; GUI workflows and G-code simulation lack recorded manual verification. Read-only GRBL access has not been tested on hardware. Machine control/streaming, raster engraving and native project files remain planned; no LightBurn project-file interoperability is documented."
+				},
+				"status": {
+					"before": "planned",
+					"after": "experimental"
+				},
+				"summary": {
+					"before": "Planned LightBurn-style laser engraving and cutting software, initially targeting GRBL controllers.",
+					"after": "LightBurn-style SVG layout, per-layer cut settings, toolpath preview and G-code generation, initially targeting GRBL."
+				},
+				"description": {
+					"before": "An early Rust project planning a LightBurn-style laser engraving and cutting workflow, initially for GRBL controllers. The workspace separates geometry, file import/export, G-code generation, device communication and the GUI. Its README identifies the current stage as Phase 0 workspace bootstrap; these are planned capabilities, not a finished laser-control application.",
+					"after": "An early Rust implementation of LightBurn-style laser layout workflows, initially targeting GRBL. Its layered workspace separates geometry, SVG import, G-code generation, device communication and an egui GUI. Tools arrange and edit shapes, configure per-layer cuts, preview toolpaths and save G-code, with undo/redo. Read-only GRBL connection code is present; machine control and job streaming remain planned."
+				}
+			}
 		},
 		{
 			"slug": "projectcraft",
@@ -2773,10 +2831,28 @@
 				}
 			],
 			"url_checks": ["https://github.com/cmspeedau/AssetCraft#readme"],
-			"changes": {},
-			"review_notes": "Explicit pre-alpha CLI search/auth foundation and no desktop UI match existing qualifications.",
+			"changes": {
+				"limitations": {
+					"before": "Pre-alpha; no desktop interface yet, and the full browser/download/export surface remains planned. Current scope is the CLI foundation. Fab account access and asset use depend on the service and each asset license; software licensing does not grant rights to downloaded content.",
+					"after": "Pre-alpha; no desktop UI or Blender add-on yet. Download components and export adapters are implemented, but Fab CDN resolution still needs a real signed-in response and end-to-end download validation. OS keyring integration is unfinished. Account access and asset use depend on Fab and each asset license; the software license grants no rights to downloaded assets."
+				},
+				"description": {
+					"before": "An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its current Rust CLI searches the Fab catalog and signs in to user accounts. The planned desktop application covers browsing, downloads and export to content-creation tools.",
+					"after": "An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its Rust CLI searches Fab and signs in to user accounts, with implemented download-queue and chunk-reassembly components, a SQLite library for offline browsing of downloaded assets, and a Blender PBR export adapter. Complete live downloads still need signed-in CDN validation; the desktop application and in-Blender add-on remain planned."
+				}
+			},
+			"review_notes": "Current roadmap documents download/library/export components beyond the old search-only description. Full signed-in CDN/download validation, desktop UI, Blender add-on and OS keyring remain unfinished.",
 			"unresolved": [],
-			"changes_in_this_pr": {}
+			"changes_in_this_pr": {
+				"limitations": {
+					"before": "Pre-alpha; no desktop interface yet, and the full browser/download/export surface remains planned. Current scope is the CLI foundation. Fab account access and asset use depend on the service and each asset license; software licensing does not grant rights to downloaded content.",
+					"after": "Pre-alpha; no desktop UI or Blender add-on yet. Download components and export adapters are implemented, but Fab CDN resolution still needs a real signed-in response and end-to-end download validation. OS keyring integration is unfinished. Account access and asset use depend on Fab and each asset license; the software license grants no rights to downloaded assets."
+				},
+				"description": {
+					"before": "An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its current Rust CLI searches the Fab catalog and signs in to user accounts. The planned desktop application covers browsing, downloads and export to content-creation tools.",
+					"after": "An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its Rust CLI searches Fab and signs in to user accounts, with implemented download-queue and chunk-reassembly components, a SQLite library for offline browsing of downloaded assets, and a Blender PBR export adapter. Complete live downloads still need signed-in CDN validation; the desktop application and in-Blender add-on remain planned."
+				}
+			}
 		},
 		{
 			"slug": "gamedepot",
@@ -5073,17 +5149,9 @@
 				"https://github.com/emmertex/chromaforge#readme"
 			],
 			"changes": {
-				"limitations": {
-					"before": "Compatibility is incomplete and maintainer-reported. Expanded Lightroom catalog support, camera calibration, some compressed RAW formats, AI masking and denoising, HDR and video remain works in progress; real-camera tethering checks are pending.",
-					"after": "Compatibility is incomplete and maintainer-reported. Camera-color calibration and verification across camera models remain incomplete. AI model downloads are optional; sky masks are heuristic and denoise quality is unverified. HDR display covers only the loupe, and video editing is limited to global adjustments. Android support is early."
-				},
-				"platforms": {
-					"before": ["Linux", "macOS", "Windows", "FreeBSD", "Web"],
-					"after": ["Linux", "macOS", "Windows", "FreeBSD", "Web", "Android"]
-				},
-				"description": {
-					"before": "A downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows, with a seven-module workspace, non-destructive RAW development, photo catalogs and Immich integration. Shared changes are intended to flow back upstream.",
-					"after": "Chromaforge, formerly LightCraft Classic, is a downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows. Provides a seven-module workspace, non-destructive RAW development, photo catalogs, masking and Immich integration."
+				"docs": {
+					"before": "https://github.com/emmertex/lightcraft-classic#readme",
+					"after": "https://github.com/emmertex/chromaforge#readme"
 				},
 				"name": {
 					"before": "LightCraft Classic",
@@ -5093,9 +5161,13 @@
 					"before": "https://github.com/emmertex/lightcraft-classic",
 					"after": "https://github.com/emmertex/chromaforge"
 				},
-				"docs": {
-					"before": "https://github.com/emmertex/lightcraft-classic#readme",
-					"after": "https://github.com/emmertex/chromaforge#readme"
+				"limitations": {
+					"before": "Compatibility is incomplete and maintainer-reported. Expanded Lightroom catalog support, camera calibration, some compressed RAW formats, AI masking and denoising, HDR and video remain works in progress; real-camera tethering checks are pending.",
+					"after": "Compatibility is incomplete and maintainer-reported. Camera-color calibration and verification across camera models remain incomplete. AI model downloads are optional; sky masks are heuristic and denoise quality is unverified. HDR display covers only the loupe, and video editing is limited to global adjustments. Android support is early."
+				},
+				"platforms": {
+					"before": ["Linux", "macOS", "Windows", "FreeBSD", "Web"],
+					"after": ["Linux", "macOS", "Windows", "FreeBSD", "Web", "Android"]
 				},
 				"screenshots": {
 					"before": [
@@ -5118,22 +5190,18 @@
 							"alt": "Chromaforge: develop workspace with a landscape photograph."
 						}
 					]
+				},
+				"description": {
+					"before": "A downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows, with a seven-module workspace, non-destructive RAW development, photo catalogs and Immich integration. Shared changes are intended to flow back upstream.",
+					"after": "Chromaforge, formerly LightCraft Classic, is a downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows. Provides a seven-module workspace, non-destructive RAW development, photo catalogs, masking and Immich integration."
 				}
 			},
 			"review_notes": "Current releases provide Android APK/AAB packages; retain early-Android limitation. FreeBSD is explicitly maintained in .github/workflows/freebsd.yml, not inferred from upstream platform support. Confirmed repository rename and scoped MIT/Apache license notices. Android packages now exist and were added with the existing early-support caveat. FreeBSD is explicitly maintained by the fork workflow, although the latest prerelease has no FreeBSD asset.",
 			"unresolved": [],
 			"changes_in_this_pr": {
-				"limitations": {
-					"before": "Compatibility is incomplete and maintainer-reported. Expanded Lightroom catalog support, camera calibration, some compressed RAW formats, AI masking and denoising, HDR and video remain works in progress; real-camera tethering checks are pending.",
-					"after": "Compatibility is incomplete and maintainer-reported. Camera-color calibration and verification across camera models remain incomplete. AI model downloads are optional; sky masks are heuristic and denoise quality is unverified. HDR display covers only the loupe, and video editing is limited to global adjustments. Android support is early."
-				},
-				"platforms": {
-					"before": ["Linux", "macOS", "Windows", "FreeBSD", "Web"],
-					"after": ["Linux", "macOS", "Windows", "FreeBSD", "Web", "Android"]
-				},
-				"description": {
-					"before": "A downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows, with a seven-module workspace, non-destructive RAW development, photo catalogs and Immich integration. Shared changes are intended to flow back upstream.",
-					"after": "Chromaforge, formerly LightCraft Classic, is a downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows. Provides a seven-module workspace, non-destructive RAW development, photo catalogs, masking and Immich integration."
+				"docs": {
+					"before": "https://github.com/emmertex/lightcraft-classic#readme",
+					"after": "https://github.com/emmertex/chromaforge#readme"
 				},
 				"name": {
 					"before": "LightCraft Classic",
@@ -5143,9 +5211,13 @@
 					"before": "https://github.com/emmertex/lightcraft-classic",
 					"after": "https://github.com/emmertex/chromaforge"
 				},
-				"docs": {
-					"before": "https://github.com/emmertex/lightcraft-classic#readme",
-					"after": "https://github.com/emmertex/chromaforge#readme"
+				"limitations": {
+					"before": "Compatibility is incomplete and maintainer-reported. Expanded Lightroom catalog support, camera calibration, some compressed RAW formats, AI masking and denoising, HDR and video remain works in progress; real-camera tethering checks are pending.",
+					"after": "Compatibility is incomplete and maintainer-reported. Camera-color calibration and verification across camera models remain incomplete. AI model downloads are optional; sky masks are heuristic and denoise quality is unverified. HDR display covers only the loupe, and video editing is limited to global adjustments. Android support is early."
+				},
+				"platforms": {
+					"before": ["Linux", "macOS", "Windows", "FreeBSD", "Web"],
+					"after": ["Linux", "macOS", "Windows", "FreeBSD", "Web", "Android"]
 				},
 				"screenshots": {
 					"before": [
@@ -5168,6 +5240,10 @@
 							"alt": "Chromaforge: develop workspace with a landscape photograph."
 						}
 					]
+				},
+				"description": {
+					"before": "A downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows, with a seven-module workspace, non-destructive RAW development, photo catalogs and Immich integration. Shared changes are intended to flow back upstream.",
+					"after": "Chromaforge, formerly LightCraft Classic, is a downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows. Provides a seven-module workspace, non-destructive RAW development, photo catalogs, masking and Immich integration."
 				}
 			}
 		},
@@ -5555,6 +5631,10 @@
 				"https://github.com/erythrofr/ClothCraft/blob/main/README.md"
 			],
 			"changes": {
+				"browser_url": {
+					"before": null,
+					"after": "https://playground.daijro.dev/head/clothcraft/"
+				},
 				"limitations": {
 					"before": "Early alpha with an English UI; only Windows is exercised. No native Marvelous/CLO files or verified parity. Contact detection remains CPU-based. Friction, animated avatars, calibrated fabrics, partial sewing and most industry interchange are unfinished. No autosave or recovery; export overwrites fixed filenames.",
 					"after": "Research prototype; Windows is the main development platform, with macOS and Linux acceptance testing pending. No native Marvelous/CLO files or verified parity. Simulation uses hybrid GPU/CPU VBD with OGC contact; friction, material calibration and dense-mesh performance need work. Industrial DXF-AAMA/ASTM, animated avatars, PDF printing and grading remain planned."
@@ -5565,16 +5645,16 @@
 				},
 				"description": {
 					"before": "Independent implementation targeting the pattern-based garment workflows of Marvelous Designer and CLO 3D, with 2D polygon and Bezier drafting, linked 2D/3D edge sewing, 3D arrangement and cloth simulation.",
-					"after": "Independent garment-editor and cloth-simulation prototype targeting Marvelous Designer and CLO 3D workflows. Provides polygon and Bezier patterns, partial and multi-edge sewing, 3D arrangement, local project saving and recovery, static avatar imports and limited DXF/SVG pattern-outline imports."
-				},
-				"browser_url": {
-					"before": null,
-					"after": "https://playground.daijro.dev/head/clothcraft/"
+					"after": "Independent garment-editor and cloth-simulation prototype targeting Marvelous Designer and CLO 3D workflows. Provides 2D polygon and Bezier drafting, linked 2D/3D sewing with partial and multi-edge seams, 3D arrangement and simulation, local project saving and recovery, static avatar imports and limited DXF/SVG pattern-outline imports."
 				}
 			},
-			"review_notes": "Corrected browser_url, description, limitations, platforms using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected browser_url, description, limitations, platforms using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored explicit 2D drafting and linked 2D/3D sewing while retaining added import, recovery and avatar details.",
 			"unresolved": [],
 			"changes_in_this_pr": {
+				"browser_url": {
+					"before": null,
+					"after": "https://playground.daijro.dev/head/clothcraft/"
+				},
 				"limitations": {
 					"before": "Early alpha with an English UI; only Windows is exercised. No native Marvelous/CLO files or verified parity. Contact detection remains CPU-based. Friction, animated avatars, calibrated fabrics, partial sewing and most industry interchange are unfinished. No autosave or recovery; export overwrites fixed filenames.",
 					"after": "Research prototype; Windows is the main development platform, with macOS and Linux acceptance testing pending. No native Marvelous/CLO files or verified parity. Simulation uses hybrid GPU/CPU VBD with OGC contact; friction, material calibration and dense-mesh performance need work. Industrial DXF-AAMA/ASTM, animated avatars, PDF printing and grading remain planned."
@@ -5585,11 +5665,7 @@
 				},
 				"description": {
 					"before": "Independent implementation targeting the pattern-based garment workflows of Marvelous Designer and CLO 3D, with 2D polygon and Bezier drafting, linked 2D/3D edge sewing, 3D arrangement and cloth simulation.",
-					"after": "Independent garment-editor and cloth-simulation prototype targeting Marvelous Designer and CLO 3D workflows. Provides polygon and Bezier patterns, partial and multi-edge sewing, 3D arrangement, local project saving and recovery, static avatar imports and limited DXF/SVG pattern-outline imports."
-				},
-				"browser_url": {
-					"before": null,
-					"after": "https://playground.daijro.dev/head/clothcraft/"
+					"after": "Independent garment-editor and cloth-simulation prototype targeting Marvelous Designer and CLO 3D workflows. Provides 2D polygon and Bezier drafting, linked 2D/3D sewing with partial and multi-edge seams, 3D arrangement and simulation, local project saving and recovery, static avatar imports and limited DXF/SVG pattern-outline imports."
 				}
 			}
 		},
@@ -5789,13 +5865,13 @@
 				"https://github.com/Exonerv-Pec/Exomyth#readme"
 			],
 			"changes": {
-				"website": {
-					"before": "https://exonerv-pec.github.io/Exomyth/",
-					"after": "https://exonerv-pec.github.io/ExoMyth/"
-				},
 				"limitations": {
 					"before": "Early alpha. Covers overlapping worldbuilding workflows, not full product parity or verified native project-format compatibility. Imports from World Anvil, Campfire and LegendKeeper and their hosted collaboration or publishing features are not established. Native desktop packaging is planned.",
 					"after": "Maintainer-designated stable 1.0. Covers overlapping worldbuilding workflows, not full product parity or verified native project-format compatibility. Imports from World Anvil, Campfire and LegendKeeper and compatibility with their hosted services are not established. Runs as an offline, installable web application."
+				},
+				"website": {
+					"before": "https://exonerv-pec.github.io/Exomyth/",
+					"after": "https://exonerv-pec.github.io/ExoMyth/"
 				},
 				"status": {
 					"before": "alpha",
@@ -5805,13 +5881,13 @@
 			"review_notes": "Corrected limitations, status, website using current upstream documentation. Remaining documentary conflicts are recorded separately.",
 			"unresolved": [],
 			"changes_in_this_pr": {
-				"website": {
-					"before": "https://exonerv-pec.github.io/Exomyth/",
-					"after": "https://exonerv-pec.github.io/ExoMyth/"
-				},
 				"limitations": {
 					"before": "Early alpha. Covers overlapping worldbuilding workflows, not full product parity or verified native project-format compatibility. Imports from World Anvil, Campfire and LegendKeeper and their hosted collaboration or publishing features are not established. Native desktop packaging is planned.",
 					"after": "Maintainer-designated stable 1.0. Covers overlapping worldbuilding workflows, not full product parity or verified native project-format compatibility. Imports from World Anvil, Campfire and LegendKeeper and compatibility with their hosted services are not established. Runs as an offline, installable web application."
+				},
+				"website": {
+					"before": "https://exonerv-pec.github.io/Exomyth/",
+					"after": "https://exonerv-pec.github.io/ExoMyth/"
 				},
 				"status": {
 					"before": "alpha",
@@ -5948,10 +6024,10 @@
 				},
 				"description": {
 					"before": "An independent Logic Pro-style digital audio workstation built with Rust and egui. Provides audio and MIDI regions, piano-roll editing with quantization and velocity controls, a mixer, tempo maps, a built-in synthesizer and streamed audio playback. Saves arrangements and media in its own .prowave project format.",
-					"after": "An independent Logic Pro-style DAW in Rust with a tracks timeline, MIDI and audio regions, recording, piano-roll editing, a mixer with effects and automation, and a built-in synthesizer. Uses its own project format."
+					"after": "An independent Logic Pro-style DAW built with Rust and egui. Provides a tracks timeline, audio and MIDI regions, recording, piano-roll editing with quantization and velocity controls, tempo maps, streamed audio playback, a mixer with effects and automation, and a built-in synthesizer. Saves arrangements and media in its own .prowave project format."
 				}
 			},
-			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored egui, piano-roll quantization/velocity controls, tempo maps, disk streaming and the .prowave arrangement/media format alongside newer recording/effects/automation details.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
@@ -5960,7 +6036,7 @@
 				},
 				"description": {
 					"before": "An independent Logic Pro-style digital audio workstation built with Rust and egui. Provides audio and MIDI regions, piano-roll editing with quantization and velocity controls, a mixer, tempo maps, a built-in synthesizer and streamed audio playback. Saves arrangements and media in its own .prowave project format.",
-					"after": "An independent Logic Pro-style DAW in Rust with a tracks timeline, MIDI and audio regions, recording, piano-roll editing, a mixer with effects and automation, and a built-in synthesizer. Uses its own project format."
+					"after": "An independent Logic Pro-style DAW built with Rust and egui. Provides a tracks timeline, audio and MIDI regions, recording, piano-roll editing with quantization and velocity controls, tempo maps, streamed audio playback, a mixer with effects and automation, and a built-in synthesizer. Saves arrangements and media in its own .prowave project format."
 				}
 			}
 		},
@@ -6654,15 +6730,15 @@
 			"changes": {
 				"description": {
 					"before": "Lookout reimplements Outlook-style mail, calendar, contacts and tasks in a native GNOME application built with Rust and GTK 4. It supports IMAP/SMTP mail, CalDAV calendars, CardDAV contacts, GNOME Online Accounts, full-text mail search and rich-text composition.",
-					"after": "An Outlook-style Linux email client for GNOME with IMAP/SMTP mail and Microsoft 365 integration. Provides calendar and contacts through CalDAV/CardDAV or Microsoft accounts, with Google Tasks and Microsoft To Do support, local search and familiar mailbox workflows."
+					"after": "An Outlook-style mail, calendar, contacts and tasks client for GNOME, built with Rust and GTK 4. Supports IMAP/SMTP, GNOME Online Accounts and Microsoft 365 integration, with full-text search and rich-text composition. Calendars and contacts use CalDAV/CardDAV or Microsoft accounts; tasks integrate with Google Tasks and Microsoft To Do."
 				}
 			},
-			"review_notes": "Corrected description using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored Rust/GTK 4, GNOME Online Accounts, full-text search, rich-text composition and the explicit mail/calendar/contacts/tasks scope alongside Microsoft, Google Tasks and To Do support.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"description": {
 					"before": "Lookout reimplements Outlook-style mail, calendar, contacts and tasks in a native GNOME application built with Rust and GTK 4. It supports IMAP/SMTP mail, CalDAV calendars, CardDAV contacts, GNOME Online Accounts, full-text mail search and rich-text composition.",
-					"after": "An Outlook-style Linux email client for GNOME with IMAP/SMTP mail and Microsoft 365 integration. Provides calendar and contacts through CalDAV/CardDAV or Microsoft accounts, with Google Tasks and Microsoft To Do support, local search and familiar mailbox workflows."
+					"after": "An Outlook-style mail, calendar, contacts and tasks client for GNOME, built with Rust and GTK 4. Supports IMAP/SMTP, GNOME Online Accounts and Microsoft 365 integration, with full-text search and rich-text composition. Calendars and contacts use CalDAV/CardDAV or Microsoft accounts; tasks integrate with Google Tasks and Microsoft To Do."
 				}
 			}
 		},
@@ -8304,10 +8380,10 @@
 				},
 				"description": {
 					"before": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Implements pressure-sensitive pens, highlighters, stylus erasing, palm rejection, stroke and area erasers, lasso transformations and undo/redo. Native storage saves pages in its own JSON-based format.",
-					"after": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Provides pressure-sensitive pens, highlighting, stylus erasing, lasso transformations, undo/redo, rich text and notebook/section/page organization. Stores native notes as JSON-based documents, uses browser preferences for web persistence, and includes document import/export and PDF rendering."
+					"after": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Provides pressure-sensitive pens, highlighters, stylus erasing, palm rejection, stroke and area erasers, lasso transformations, undo/redo, rich text and notebook/section/page organization. Native notes use JSON-based storage; web builds persist through browser preferences. Includes document import/export and PDF rendering."
 				}
 			},
-			"review_notes": "MIT LICENSE now present. Read storage/PDF-export source at 527c0c8e2596c3218f66dbf6a4176ab1f9574a34: SharedPreferences persistence, native document import/export and PDF generation exist; failed persistence can fall back to memory.",
+			"review_notes": "MIT LICENSE now present. Read storage/PDF-export source at 527c0c8e2596c3218f66dbf6a4176ab1f9574a34: SharedPreferences persistence, native document import/export and PDF generation exist; failed persistence can fall back to memory. Description follow-up: Restored palm rejection and separate stroke/area erasers without dropping newer organization, rich-text or persistence details.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"license": {
@@ -8320,7 +8396,7 @@
 				},
 				"description": {
 					"before": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Implements pressure-sensitive pens, highlighters, stylus erasing, palm rejection, stroke and area erasers, lasso transformations and undo/redo. Native storage saves pages in its own JSON-based format.",
-					"after": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Provides pressure-sensitive pens, highlighting, stylus erasing, lasso transformations, undo/redo, rich text and notebook/section/page organization. Stores native notes as JSON-based documents, uses browser preferences for web persistence, and includes document import/export and PDF rendering."
+					"after": "A Flutter notebook targeting Samsung Notes-style inking and OneNote-style organization. Provides pressure-sensitive pens, highlighters, stylus erasing, palm rejection, stroke and area erasers, lasso transformations, undo/redo, rich text and notebook/section/page organization. Native notes use JSON-based storage; web builds persist through browser preferences. Includes document import/export and PDF rendering."
 				}
 			}
 		},
@@ -9204,17 +9280,17 @@
 				"https://github.com/tracedraw/tracedraw#readme"
 			],
 			"changes": {
-				"repository": {
-					"before": "https://github.com/igtoth/tracedraw",
-					"after": "https://github.com/tracedraw/tracedraw"
+				"docs": {
+					"before": "https://github.com/igtoth/tracedraw#readme",
+					"after": "https://github.com/tracedraw/tracedraw#readme"
 				},
 				"browser_url": {
 					"before": "https://igtoth.github.io/tracedraw/",
 					"after": "https://tracedraw.github.io/tracedraw/"
 				},
-				"docs": {
-					"before": "https://github.com/igtoth/tracedraw#readme",
-					"after": "https://github.com/tracedraw/tracedraw#readme"
+				"repository": {
+					"before": "https://github.com/igtoth/tracedraw",
+					"after": "https://github.com/tracedraw/tracedraw"
 				},
 				"screenshots": {
 					"before": [
@@ -9242,17 +9318,17 @@
 			"review_notes": "Corrected browser_url, docs, repository, screenshots using current upstream documentation. Remaining documentary conflicts are recorded separately.",
 			"unresolved": [],
 			"changes_in_this_pr": {
-				"repository": {
-					"before": "https://github.com/igtoth/tracedraw",
-					"after": "https://github.com/tracedraw/tracedraw"
+				"docs": {
+					"before": "https://github.com/igtoth/tracedraw#readme",
+					"after": "https://github.com/tracedraw/tracedraw#readme"
 				},
 				"browser_url": {
 					"before": "https://igtoth.github.io/tracedraw/",
 					"after": "https://tracedraw.github.io/tracedraw/"
 				},
-				"docs": {
-					"before": "https://github.com/igtoth/tracedraw#readme",
-					"after": "https://github.com/tracedraw/tracedraw#readme"
+				"repository": {
+					"before": "https://github.com/igtoth/tracedraw",
+					"after": "https://github.com/tracedraw/tracedraw"
 				},
 				"screenshots": {
 					"before": [
@@ -9869,10 +9945,10 @@
 				},
 				"description": {
 					"before": "A DataGrip-style native database client with schema browsing, highlighted SQL consoles, completion and transactional table-data editing. Connects to PostgreSQL, SQL Server and SQLite, exports query results to common text formats and stores credentials in the macOS Keychain.",
-					"after": "A DataGrip-style native database client with schema browsing, SQL consoles, completion, transactional table editing and query-result exports. Supports PostgreSQL, SQL Server, SQLite and other documented engines, with SSH tunneling and OS credential storage."
+					"after": "A DataGrip-style native database client with schema browsing, highlighted SQL consoles, completion, transactional table-data editing and query-result exports to common text formats. Supports PostgreSQL, SQL Server, SQLite, MySQL/MariaDB, Oracle and other documented engines. Provides SSH tunneling and OS credential storage through macOS Keychain, Windows Credential Manager or Linux Secret Service."
 				}
 			},
-			"review_notes": "Corrected description, limitations, platforms using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description, limitations, platforms using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored highlighted SQL and common-text exports; named added engines and each OS credential store instead of generic shorthand.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
@@ -9885,7 +9961,7 @@
 				},
 				"description": {
 					"before": "A DataGrip-style native database client with schema browsing, highlighted SQL consoles, completion and transactional table-data editing. Connects to PostgreSQL, SQL Server and SQLite, exports query results to common text formats and stores credentials in the macOS Keychain.",
-					"after": "A DataGrip-style native database client with schema browsing, SQL consoles, completion, transactional table editing and query-result exports. Supports PostgreSQL, SQL Server, SQLite and other documented engines, with SSH tunneling and OS credential storage."
+					"after": "A DataGrip-style native database client with schema browsing, highlighted SQL consoles, completion, transactional table-data editing and query-result exports to common text formats. Supports PostgreSQL, SQL Server, SQLite, MySQL/MariaDB, Oracle and other documented engines. Provides SSH tunneling and OS credential storage through macOS Keychain, Windows Credential Manager or Linux Secret Service."
 				}
 			}
 		},
@@ -11784,33 +11860,33 @@
 				"https://raw.githubusercontent.com/mateusrdp/oxiguitar/develop/docs/readme/playing.png"
 			],
 			"changes": {
-				"summary": {
-					"before": "An early Guitar Pro-style score viewer with GP3-GP8 file support and notation and tablature display.",
-					"after": "Guitar Pro-style score editing and playback with GP3-GP8 files, notation, tablature and PDF/audio exports."
-				},
 				"limitations": {
 					"before": "Early M1 viewer; editing and playback remain planned despite broader wording in the README introduction. MuseScore, MusicXML, ABC and MIDI interchange await plugins. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only.",
 					"after": "Prerelease for player testing; complete Guitar Pro file and behavioral parity is not established. MuseScore, MusicXML, ABC and MIDI interchange remain planned. Sound sets and amp models are separately obtained files. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only."
 				},
+				"summary": {
+					"before": "An early Guitar Pro-style score viewer with GP3-GP8 file support and notation and tablature display.",
+					"after": "Guitar Pro-style score editing and playback with GP3-GP8 files, notation, tablature and PDF/audio exports."
+				},
 				"description": {
 					"before": "Early Rust implementation targeting Guitar Pro's tablature and notation workflows. Its M1 desktop viewer opens Guitar Pro 3 through 8 files, displays standard notation and tablature in multiple layouts and exports PDF. Editing, playback and broader interchange are subsequent milestones.",
-					"after": "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays notation and tablature, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export."
+					"after": "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays standard notation and tablature in multiple layouts, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export."
 				}
 			},
-			"review_notes": "README status now describes the M4 player prerelease, score editing/saving, playback and audio export; old M1-only limits removed.",
+			"review_notes": "README status now describes the M4 player prerelease, score editing/saving, playback and audio export; old M1-only limits removed. Description follow-up: Restored standard notation and multiple layouts while retaining editing, player and WAV features; the old subsequent-milestone claim is obsolete.",
 			"unresolved": [],
 			"changes_in_this_pr": {
-				"summary": {
-					"before": "An early Guitar Pro-style score viewer with GP3-GP8 file support and notation and tablature display.",
-					"after": "Guitar Pro-style score editing and playback with GP3-GP8 files, notation, tablature and PDF/audio exports."
-				},
 				"limitations": {
 					"before": "Early M1 viewer; editing and playback remain planned despite broader wording in the README introduction. MuseScore, MusicXML, ABC and MIDI interchange await plugins. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only.",
 					"after": "Prerelease for player testing; complete Guitar Pro file and behavioral parity is not established. MuseScore, MusicXML, ABC and MIDI interchange remain planned. Sound sets and amp models are separately obtained files. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only."
 				},
+				"summary": {
+					"before": "An early Guitar Pro-style score viewer with GP3-GP8 file support and notation and tablature display.",
+					"after": "Guitar Pro-style score editing and playback with GP3-GP8 files, notation, tablature and PDF/audio exports."
+				},
 				"description": {
 					"before": "Early Rust implementation targeting Guitar Pro's tablature and notation workflows. Its M1 desktop viewer opens Guitar Pro 3 through 8 files, displays standard notation and tablature in multiple layouts and exports PDF. Editing, playback and broader interchange are subsequent milestones.",
-					"after": "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays notation and tablature, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export."
+					"after": "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays standard notation and tablature in multiple layouts, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export."
 				}
 			}
 		},
@@ -12882,10 +12958,10 @@
 				},
 				"description": {
 					"before": "Independent numerical computing environment targeting the MATLAB language: a native Rust interpreter for .m files with a column-major matrix core, ~280 builtins, complex and sparse matrices, 2D/3D plotting with SVG/PNG/PDF export, a MATLAB-style desktop Studio, .mat v5 file I/O, a CLI, and MCP/TCP automation channels.",
-					"after": "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices, anonymous functions, classdef classes, N-D arrays and numerical/DSP functions. Provides a desktop Studio, CLI/MCP automation, plotting and MAT-file interchange."
+					"after": "A MATLAB-style numerical environment with a native Rust M-file interpreter, a column-major matrix core, complex and sparse matrices, cells, structs, anonymous functions, classdef classes, N-D arrays and numerical/DSP built-ins. Provides a MATLAB-style desktop Studio, CLI, MCP/TCP automation, 2D/3D plotting with SVG/PNG/PDF export and MAT v5 load/save."
 				}
 			},
-			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored column-major, complex/sparse matrices, 2D/3D plots, SVG/PNG/PDF and MAT v5, plus TCP automation. Replaced an obsolete built-in count with a durable feature description.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
@@ -12894,7 +12970,7 @@
 				},
 				"description": {
 					"before": "Independent numerical computing environment targeting the MATLAB language: a native Rust interpreter for .m files with a column-major matrix core, ~280 builtins, complex and sparse matrices, 2D/3D plotting with SVG/PNG/PDF export, a MATLAB-style desktop Studio, .mat v5 file I/O, a CLI, and MCP/TCP automation channels.",
-					"after": "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices, anonymous functions, classdef classes, N-D arrays and numerical/DSP functions. Provides a desktop Studio, CLI/MCP automation, plotting and MAT-file interchange."
+					"after": "A MATLAB-style numerical environment with a native Rust M-file interpreter, a column-major matrix core, complex and sparse matrices, cells, structs, anonymous functions, classdef classes, N-D arrays and numerical/DSP built-ins. Provides a MATLAB-style desktop Studio, CLI, MCP/TCP automation, 2D/3D plotting with SVG/PNG/PDF export and MAT v5 load/save."
 				}
 			}
 		},
@@ -13367,10 +13443,10 @@
 				},
 				"description": {
 					"before": "An independent Final Draft-style screenwriting application with Enter/Tab element flow, SmartType autocompletion, industry-standard pagination with (MORE)/(CONT'D) dialogue breaks, dual dialogue, a scene navigator, index cards, character and scene reports, FDX and Fountain reading and writing, and PDF export.",
-					"after": "A Rust implementation of Final Draft-style screenwriting with screenplay pagination, SmartType, index cards, an outline and beat board. Opens and saves Fountain and supported FDX files, exports PDF, and provides revision mode, locked pages, script comparison, production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces."
+					"after": "A Rust Final Draft-style screenwriter with Enter/Tab element flow, SmartType, screenplay pagination with MORE/CONT'D dialogue breaks, dual dialogue, a scene navigator, index cards, outline and beat board. Opens/saves Fountain and supported FDX, exports PDF, and provides revision mode, locked pages, script comparison, character/scene production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces."
 				}
 			},
-			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored Enter/Tab, MORE/CONT'D breaks, dual dialogue, scene navigation and character/scene reports alongside current production/collaboration features.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
@@ -13379,7 +13455,7 @@
 				},
 				"description": {
 					"before": "An independent Final Draft-style screenwriting application with Enter/Tab element flow, SmartType autocompletion, industry-standard pagination with (MORE)/(CONT'D) dialogue breaks, dual dialogue, a scene navigator, index cards, character and scene reports, FDX and Fountain reading and writing, and PDF export.",
-					"after": "A Rust implementation of Final Draft-style screenwriting with screenplay pagination, SmartType, index cards, an outline and beat board. Opens and saves Fountain and supported FDX files, exports PDF, and provides revision mode, locked pages, script comparison, production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces."
+					"after": "A Rust Final Draft-style screenwriter with Enter/Tab element flow, SmartType, screenplay pagination with MORE/CONT'D dialogue breaks, dual dialogue, a scene navigator, index cards, outline and beat board. Opens/saves Fountain and supported FDX, exports PDF, and provides revision mode, locked pages, script comparison, character/scene production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces."
 				}
 			}
 		},
@@ -14158,33 +14234,33 @@
 				"https://github.com/freewright-dev/FileCraft/blob/main/docs/user-guide.md"
 			],
 			"changes": {
-				"license": {
-					"before": "MIT",
-					"after": "GPL-3.0-or-later"
+				"docs": {
+					"before": "https://github.com/pierruno-labs/FileCraft/blob/main/docs/user-guide.md",
+					"after": "https://github.com/freewright-dev/FileCraft/blob/main/docs/user-guide.md"
 				},
 				"repository": {
 					"before": "https://github.com/pierruno-labs/FileCraft",
 					"after": "https://github.com/freewright-dev/FileCraft"
 				},
-				"docs": {
-					"before": "https://github.com/pierruno-labs/FileCraft/blob/main/docs/user-guide.md",
-					"after": "https://github.com/freewright-dev/FileCraft/blob/main/docs/user-guide.md"
+				"license": {
+					"before": "MIT",
+					"after": "GPL-3.0-or-later"
 				}
 			},
 			"review_notes": "Corrected docs, license, repository using current upstream documentation. Remaining documentary conflicts are recorded separately.",
 			"unresolved": [],
 			"changes_in_this_pr": {
-				"license": {
-					"before": "MIT",
-					"after": "GPL-3.0-or-later"
+				"docs": {
+					"before": "https://github.com/pierruno-labs/FileCraft/blob/main/docs/user-guide.md",
+					"after": "https://github.com/freewright-dev/FileCraft/blob/main/docs/user-guide.md"
 				},
 				"repository": {
 					"before": "https://github.com/pierruno-labs/FileCraft",
 					"after": "https://github.com/freewright-dev/FileCraft"
 				},
-				"docs": {
-					"before": "https://github.com/pierruno-labs/FileCraft/blob/main/docs/user-guide.md",
-					"after": "https://github.com/freewright-dev/FileCraft/blob/main/docs/user-guide.md"
+				"license": {
+					"before": "MIT",
+					"after": "GPL-3.0-or-later"
 				}
 			}
 		},
@@ -14315,29 +14391,29 @@
 					"before": "Initial beta release. Third-party material and project formats are unsupported. Splines, AxF import, OCIO/ACE color management, scripting, SVG gradients, CFF fonts, path-traced rendering and custom preview meshes remain unimplemented. Compatibility is maintainer-reported.",
 					"after": "Upstream currently describes the project as early alpha. SBS interoperability and node coverage are maintainer-reported, not full Designer compatibility. The roadmap still lists end-to-end workflow completion, MaterialX export, downstream engine qualification, and Android/Web deployment as unfinished."
 				},
-				"description": {
-					"before": "A Substance Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.",
-					"after": "A Substance 3D Designer-style procedural material editor with node graphs, 2D/3D previews, mesh baking and texture output. Uses SBS as its project format and documents compatibility with Designer nodes, with inherited and third-party licenses recorded separately."
-				},
 				"status": {
 					"before": "beta",
 					"after": "alpha"
+				},
+				"description": {
+					"before": "A Substance Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.",
+					"after": "A Substance 3D Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D/3D previews, mesh baking and command-line rendering. Uses SBS projects and documents Designer-node compatibility. Outputs texture maps and MaterialX materials; inherited and third-party code retains its own license terms."
 				}
 			},
-			"review_notes": "Corrected description, limitations, status using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description, limitations, status using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored texture/function/pattern graphs, generators, filters, subgraphs and command-line rendering. Corrected the obsolete proprietary-own-graph-format statement to documented SBS projects and MaterialX output.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Initial beta release. Third-party material and project formats are unsupported. Splines, AxF import, OCIO/ACE color management, scripting, SVG gradients, CFF fonts, path-traced rendering and custom preview meshes remain unimplemented. Compatibility is maintainer-reported.",
 					"after": "Upstream currently describes the project as early alpha. SBS interoperability and node coverage are maintainer-reported, not full Designer compatibility. The roadmap still lists end-to-end workflow completion, MaterialX export, downstream engine qualification, and Android/Web deployment as unfinished."
 				},
-				"description": {
-					"before": "A Substance Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.",
-					"after": "A Substance 3D Designer-style procedural material editor with node graphs, 2D/3D previews, mesh baking and texture output. Uses SBS as its project format and documents compatibility with Designer nodes, with inherited and third-party licenses recorded separately."
-				},
 				"status": {
 					"before": "beta",
 					"after": "alpha"
+				},
+				"description": {
+					"before": "A Substance Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.",
+					"after": "A Substance 3D Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D/3D previews, mesh baking and command-line rendering. Uses SBS projects and documents Designer-node compatibility. Outputs texture maps and MaterialX materials; inherited and third-party code retains its own license terms."
 				}
 			}
 		},
@@ -15454,19 +15530,19 @@
 			"changes": {
 				"description": {
 					"before": "A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs and floating panels. Desktop, browser and CLI interfaces provide brushes, shapes, text, selections, layers and undo/redo. Projects use the native PCND format, with PNG, JPEG and BMP image exchange, still GIF import and single-page TIFF import. MCP tools expose headless painting operations.",
-					"after": "A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs, floating panels, editable filters and layer masks. Desktop, browser, CLI and MCP interfaces provide painting and image conversion. PCND projects preserve layers, filters and masks; supported layered imports include OpenRaster, limited historical PDN/PAINT and basic raster PSD/PSB."
+					"after": "Rust reimplementation of Paint.NET and MS Paint workflows. Classic has Windows 7/10/11 skins; Studio adds tabs, floating panels, editable filters and layer masks. Brushes, shapes, text, selections, layers and undo/redo are available on desktop/browser and through headless CLI/MCP. PCND preserves layers, filters and masks. Exchanges PNG/JPEG/BMP, still GIF and selected TIFF pages; layered imports include OpenRaster, historical PDN/PAINT subsets and basic raster PSD/PSB."
 				},
 				"limitations": {
 					"before": "Early preview; full feature parity is not claimed. PDN and PAINT support is limited to structural inspection, without layered project decoding or preserving saves. GIF import is still-image only and TIFF import is single-page; their frontend exports are disabled.",
 					"after": "Early preview; full feature parity is not claimed. PDN and PAINT import accepts limited historical subsets as converted copies; writing either format is unsupported. Image conversions may lose metadata, color depth or unsupported layers. GIF exchange is still-image only; supported TIFF pages are selected individually. Format availability differs across desktop, browser, CLI and MCP."
 				}
 			},
-			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately.",
+			"review_notes": "Corrected description, limitations using current upstream documentation. Remaining documentary conflicts are recorded separately. Description follow-up: Restored brushes, shapes, text, selections, layers, undo/redo, named image formats and headless MCP without dropping filters, masks or qualified layered imports.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"description": {
 					"before": "A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs and floating panels. Desktop, browser and CLI interfaces provide brushes, shapes, text, selections, layers and undo/redo. Projects use the native PCND format, with PNG, JPEG and BMP image exchange, still GIF import and single-page TIFF import. MCP tools expose headless painting operations.",
-					"after": "A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs, floating panels, editable filters and layer masks. Desktop, browser, CLI and MCP interfaces provide painting and image conversion. PCND projects preserve layers, filters and masks; supported layered imports include OpenRaster, limited historical PDN/PAINT and basic raster PSD/PSB."
+					"after": "Rust reimplementation of Paint.NET and MS Paint workflows. Classic has Windows 7/10/11 skins; Studio adds tabs, floating panels, editable filters and layer masks. Brushes, shapes, text, selections, layers and undo/redo are available on desktop/browser and through headless CLI/MCP. PCND preserves layers, filters and masks. Exchanges PNG/JPEG/BMP, still GIF and selected TIFF pages; layered imports include OpenRaster, historical PDN/PAINT subsets and basic raster PSD/PSB."
 				},
 				"limitations": {
 					"before": "Early preview; full feature parity is not claimed. PDN and PAINT support is limited to structural inspection, without layered project decoding or preserving saves. GIF import is still-image only and TIFF import is single-page; their frontend exports are disabled.",
@@ -15924,33 +16000,33 @@
 				"https://github.com/Stitchwright/laserfoundry#readme"
 			],
 			"changes": {
-				"repository": {
-					"before": "https://github.com/Stitchwright/lightfoundry",
-					"after": "https://github.com/Stitchwright/laserfoundry"
+				"docs": {
+					"before": "https://github.com/Stitchwright/lightfoundry#readme",
+					"after": "https://github.com/Stitchwright/laserfoundry#readme"
 				},
 				"name": {
 					"before": "LightFoundry",
 					"after": "LaserFoundry"
 				},
-				"docs": {
-					"before": "https://github.com/Stitchwright/lightfoundry#readme",
-					"after": "https://github.com/Stitchwright/laserfoundry#readme"
+				"repository": {
+					"before": "https://github.com/Stitchwright/lightfoundry",
+					"after": "https://github.com/Stitchwright/laserfoundry"
 				}
 			},
 			"review_notes": "Corrected docs, name, repository using current upstream documentation. Remaining documentary conflicts are recorded separately.",
 			"unresolved": [],
 			"changes_in_this_pr": {
-				"repository": {
-					"before": "https://github.com/Stitchwright/lightfoundry",
-					"after": "https://github.com/Stitchwright/laserfoundry"
+				"docs": {
+					"before": "https://github.com/Stitchwright/lightfoundry#readme",
+					"after": "https://github.com/Stitchwright/laserfoundry#readme"
 				},
 				"name": {
 					"before": "LightFoundry",
 					"after": "LaserFoundry"
 				},
-				"docs": {
-					"before": "https://github.com/Stitchwright/lightfoundry#readme",
-					"after": "https://github.com/Stitchwright/laserfoundry#readme"
+				"repository": {
+					"before": "https://github.com/Stitchwright/lightfoundry",
+					"after": "https://github.com/Stitchwright/laserfoundry"
 				}
 			}
 		},
@@ -16747,14 +16823,22 @@
 				"limitations": {
 					"before": "Early development. DWG support uses the open-source acadrust library; complete AutoCAD behavioral and file-format fidelity is not asserted.",
 					"after": "Pre-alpha; DWG support uses acadrust. Saving DWG can discard unsupported entities and metadata; a warning and backup reduce but do not eliminate that risk. Real-file exchange with AutoCAD is unverified. Dynamic blocks, some geometry operations and plotting fidelity remain incomplete; browser autosave is unavailable."
+				},
+				"description": {
+					"before": "An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, layers, dimensions, DXF and DWG support.",
+					"after": "An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, object snaps, layers, blocks, dimensions and layouts. Reads and writes supported DXF and DWG drawings, provides paper-space viewports and PDF plotting, and exposes the shared command engine through CLI and MCP automation."
 				}
 			},
-			"review_notes": "Current gaps document specifically warns that DWG saving discards unsupported content; generic incompleteness wording concealed a material interchange risk.",
+			"review_notes": "Current gaps document specifically warns that DWG saving discards unsupported content; generic incompleteness wording concealed a material interchange risk. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Early development. DWG support uses the open-source acadrust library; complete AutoCAD behavioral and file-format fidelity is not asserted.",
 					"after": "Pre-alpha; DWG support uses acadrust. Saving DWG can discard unsupported entities and metadata; a warning and backup reduce but do not eliminate that risk. Real-file exchange with AutoCAD is unverified. Dynamic blocks, some geometry operations and plotting fidelity remain incomplete; browser autosave is unavailable."
+				},
+				"description": {
+					"before": "An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, layers, dimensions, DXF and DWG support.",
+					"after": "An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, object snaps, layers, blocks, dimensions and layouts. Reads and writes supported DXF and DWG drawings, provides paper-space viewports and PDF plotting, and exposes the shared command engine through CLI and MCP automation."
 				}
 			}
 		},
@@ -16908,14 +16992,22 @@
 				"limitations": {
 					"before": "Alpha; compatibility is maintainer-reported. Feature breadth does not establish complete PowerPoint fidelity; full behavioral and presentation-format compatibility is not claimed.",
 					"after": "Alpha; compatibility is maintainer-reported. Upstream reports data-loss and crash paths, incomplete PPTX media round-trips, missing SVG picture rendering and no printing. Presenter view does not automatically use a second display. PDF export rasterizes slide artwork; real PowerPoint file fidelity remains unverified."
+				},
+				"description": {
+					"before": "An independent PowerPoint-style presentation application by ArtCraft with themes, slide layouts, shapes, transitions, animations and PowerPoint file support.",
+					"after": "An independent PowerPoint-style presentation application by ArtCraft with themes, slide masters, layouts, shapes, formatted text, pictures, tables, charts and basic SmartArt. Provides transitions, animations and full-screen presenting. Opens and saves PPTX and exports PDF, with desktop/browser interfaces and undoable commands shared by the CLI, control channel and MCP server."
 				}
 			},
-			"review_notes": "Documented data-loss, SVG, printing and round-trip gaps matter more than a generic compatibility disclaimer.",
+			"review_notes": "Documented data-loss, SVG, printing and round-trip gaps matter more than a generic compatibility disclaimer. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Alpha; compatibility is maintainer-reported. Feature breadth does not establish complete PowerPoint fidelity; full behavioral and presentation-format compatibility is not claimed.",
 					"after": "Alpha; compatibility is maintainer-reported. Upstream reports data-loss and crash paths, incomplete PPTX media round-trips, missing SVG picture rendering and no printing. Presenter view does not automatically use a second display. PDF export rasterizes slide artwork; real PowerPoint file fidelity remains unverified."
+				},
+				"description": {
+					"before": "An independent PowerPoint-style presentation application by ArtCraft with themes, slide layouts, shapes, transitions, animations and PowerPoint file support.",
+					"after": "An independent PowerPoint-style presentation application by ArtCraft with themes, slide masters, layouts, shapes, formatted text, pictures, tables, charts and basic SmartArt. Provides transitions, animations and full-screen presenting. Opens and saves PPTX and exports PDF, with desktop/browser interfaces and undoable commands shared by the CLI, control channel and MCP server."
 				}
 			}
 		},
@@ -17050,14 +17142,22 @@
 				"limitations": {
 					"before": "Development and fidelity work are ongoing. Complete InDesign behavior and native document-format compatibility is not asserted by this listing.",
 					"after": "Pre-alpha. Primary Text Frame autoflow can add pages users cannot delete. Editing and clipboard behavior vary by platform. INDD/INDT reading and IDML exchange are partial, with incomplete typography, rendering and round-trip fidelity. Full InDesign layout and native-format compatibility are not established."
+				},
+				"description": {
+					"before": "An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, threaded text frames, paragraph composition and PDF export.",
+					"after": "An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, parent pages, threaded text frames, paragraph composition, styles, images and PDF export. Reads supported INDD documents and exchanges IDML, with its own native format and editable PPTX and image exports. Desktop and browser interfaces share commands with a CLI, JSON control channel and MCP server."
 				}
 			},
-			"review_notes": "Current alpha gate and native format gaps qualify threaded text and production layout claims.",
+			"review_notes": "Current alpha gate and native format gaps qualify threaded text and production layout claims. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Development and fidelity work are ongoing. Complete InDesign behavior and native document-format compatibility is not asserted by this listing.",
 					"after": "Pre-alpha. Primary Text Frame autoflow can add pages users cannot delete. Editing and clipboard behavior vary by platform. INDD/INDT reading and IDML exchange are partial, with incomplete typography, rendering and round-trip fidelity. Full InDesign layout and native-format compatibility are not established."
+				},
+				"description": {
+					"before": "An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, threaded text frames, paragraph composition and PDF export.",
+					"after": "An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, parent pages, threaded text frames, paragraph composition, styles, images and PDF export. Reads supported INDD documents and exchanges IDML, with its own native format and editable PPTX and image exports. Desktop and browser interfaces share commands with a CLI, JSON control channel and MCP server."
 				}
 			}
 		},
@@ -17199,10 +17299,20 @@
 				"https://raw.githubusercontent.com/storytold/effectcraft/main/docs/images/effectcraft-effects.png",
 				"https://raw.githubusercontent.com/storytold/effectcraft/main/docs/images/effectcraft-graph-editor.png"
 			],
-			"changes": {},
-			"review_notes": "No correction identified in documentary screening; retained current scope and maturity.",
+			"changes": {
+				"description": {
+					"before": "An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering.",
+					"after": "An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering. Supports shape and text animation, masks, nested compositions and time remapping. Uses readable .ecproj project files and imports/exports Lottie. The desktop interface, CLI, JSON control channel and MCP server share the same command engine."
+				}
+			},
+			"review_notes": "No correction identified in documentary screening; retained current scope and maturity. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
-			"changes_in_this_pr": {}
+			"changes_in_this_pr": {
+				"description": {
+					"before": "An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering.",
+					"after": "An independent After Effects-style compositor by ArtCraft with compositions, layered animation, keyframes, expressions, effects and rendering. Supports shape and text animation, masks, nested compositions and time remapping. Uses readable .ecproj project files and imports/exports Lottie. The desktop interface, CLI, JSON control channel and MCP server share the same command engine."
+				}
+			}
 		},
 		{
 			"slug": "figcraft",
@@ -17541,14 +17651,22 @@
 				"limitations": {
 					"before": "Under active development. Full Premiere behavioral, project-format and plug-in compatibility is not asserted by this listing.",
 					"after": "Alpha; compatibility is maintainer-reported. Cannot open Premiere PRPROJ projects or host its third-party plug-ins. Codec and hardware acceleration support vary by platform; Windows/Linux runtime and audio-device reliability still need qualification. Output has not been systematically compared with Premiere, and browser workflows remain incomplete."
+				},
+				"description": {
+					"before": "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, color adjustments, audio, titles and media export.",
+					"after": "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, three-point editing, ripple/roll/slip/slide trimming, nested sequences and keyframes. Includes color adjustments, audio mixing, titles, captions and media export. Its native project format supports autosave and crash recovery; CLI and MCP commands drive the same editing engine."
 				}
 			},
-			"review_notes": "Replace generic parity caveat with current project-format, plugin, hardware and runtime boundaries.",
+			"review_notes": "Replace generic parity caveat with current project-format, plugin, hardware and runtime boundaries. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Under active development. Full Premiere behavioral, project-format and plug-in compatibility is not asserted by this listing.",
 					"after": "Alpha; compatibility is maintainer-reported. Cannot open Premiere PRPROJ projects or host its third-party plug-ins. Codec and hardware acceleration support vary by platform; Windows/Linux runtime and audio-device reliability still need qualification. Output has not been systematically compared with Premiere, and browser workflows remain incomplete."
+				},
+				"description": {
+					"before": "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, color adjustments, audio, titles and media export.",
+					"after": "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, three-point editing, ripple/roll/slip/slide trimming, nested sequences and keyframes. Includes color adjustments, audio mixing, titles, captions and media export. Its native project format supports autosave and crash recovery; CLI and MCP commands drive the same editing engine."
 				}
 			}
 		},
@@ -17696,10 +17814,20 @@
 				"https://raw.githubusercontent.com/storytold/gridcraft/main/docs/images/grades-formulas.png",
 				"https://raw.githubusercontent.com/storytold/gridcraft/main/docs/images/budget.png"
 			],
-			"changes": {},
-			"review_notes": "No correction identified in documentary screening; retained current scope and maturity.",
+			"changes": {
+				"description": {
+					"before": "An independent Excel-style spreadsheet application by ArtCraft with formulas, workbook recalculation, formatting, tables, charts and XLSX reading and writing.",
+					"after": "An independent Excel-style spreadsheet application by ArtCraft with formulas, incremental workbook recalculation, dynamic arrays, formatting, tables, charts and XLSX reading/writing. Includes conditional formats, validation, PivotTable workflows, Solver and analysis tools; imports supported legacy XLS content. Desktop and browser interfaces share commands with the CLI, JSON control channel and MCP server."
+				}
+			},
+			"review_notes": "No correction identified in documentary screening; retained current scope and maturity. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
-			"changes_in_this_pr": {}
+			"changes_in_this_pr": {
+				"description": {
+					"before": "An independent Excel-style spreadsheet application by ArtCraft with formulas, workbook recalculation, formatting, tables, charts and XLSX reading and writing.",
+					"after": "An independent Excel-style spreadsheet application by ArtCraft with formulas, incremental workbook recalculation, dynamic arrays, formatting, tables, charts and XLSX reading/writing. Includes conditional formats, validation, PivotTable workflows, Solver and analysis tools; imports supported legacy XLS content. Desktop and browser interfaces share commands with the CLI, JSON control channel and MCP server."
+				}
+			}
 		},
 		{
 			"slug": "lightcraft",
@@ -17863,14 +17991,22 @@
 				"limitations": {
 					"before": "Camera calibration and some compressed RAW variants remain limited. AI masking, denoise, HDR, video and Classic Print, Book and Map workflows have gaps.",
 					"after": "Alpha; camera color and render fidelity are not measured against Lightroom. Some compressed RAW variants remain preview-only, and lens profiles are limited. Several AI masks are heuristics; denoise models have separate terms. HDR, video and Classic Print, Book and Map workflows have gaps. Windows/macOS and GPU behavior need broader qualification."
+				},
+				"description": {
+					"before": "An independent Lightroom-style photography application by ArtCraft with a photo library, non-destructive adjustments, RAW development and masking.",
+					"after": "An independent Lightroom-style photography application by ArtCraft with photo-library organization, non-destructive adjustments, RAW development and masking. Provides crop and lens tools, local edits, presets, batch processing and image export, using the same Rust processing engine on desktop and in the browser. CLI commands, a JSON control channel and MCP expose library and development workflows."
 				}
 			},
-			"review_notes": "Current gap documents distinguish preview-only compressed RAW variants and heuristic masks from full RAW/AI support.",
+			"review_notes": "Current gap documents distinguish preview-only compressed RAW variants and heuristic masks from full RAW/AI support. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Camera calibration and some compressed RAW variants remain limited. AI masking, denoise, HDR, video and Classic Print, Book and Map workflows have gaps.",
 					"after": "Alpha; camera color and render fidelity are not measured against Lightroom. Some compressed RAW variants remain preview-only, and lens profiles are limited. Several AI masks are heuristics; denoise models have separate terms. HDR, video and Classic Print, Book and Map workflows have gaps. Windows/macOS and GPU behavior need broader qualification."
+				},
+				"description": {
+					"before": "An independent Lightroom-style photography application by ArtCraft with a photo library, non-destructive adjustments, RAW development and masking.",
+					"after": "An independent Lightroom-style photography application by ArtCraft with photo-library organization, non-destructive adjustments, RAW development and masking. Provides crop and lens tools, local edits, presets, batch processing and image export, using the same Rust processing engine on desktop and in the browser. CLI commands, a JSON control channel and MCP expose library and development workflows."
 				}
 			}
 		},
@@ -18020,10 +18156,20 @@
 				"https://getartcraft.com/apps/pdfcraft",
 				"https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-viewer.png"
 			],
-			"changes": {},
-			"review_notes": "No correction identified in documentary screening; retained current scope and maturity.",
+			"changes": {
+				"description": {
+					"before": "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting PDF documents.",
+					"after": "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting documents. Adds supported text/image editing, page manipulation, redaction, OCR, conversion, signature workflows and PDF inspection. Runs natively and in the browser; CLI, JSON control and MCP interfaces automate the same document operations. Editing, conversion and standards support remain partial."
+				}
+			},
+			"review_notes": "No correction identified in documentary screening; retained current scope and maturity. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
-			"changes_in_this_pr": {}
+			"changes_in_this_pr": {
+				"description": {
+					"before": "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting PDF documents.",
+					"after": "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting documents. Adds supported text/image editing, page manipulation, redaction, OCR, conversion, signature workflows and PDF inspection. Runs natively and in the browser; CLI, JSON control and MCP interfaces automate the same document operations. Editing, conversion and standards support remain partial."
+				}
+			}
 		},
 		{
 			"slug": "photocraft",
@@ -18169,14 +18315,22 @@
 				"limitations": {
 					"before": "Early alpha. The maintainers report gaps in AI and generative features, typography, professional workflows and Photoshop plug-in compatibility.",
 					"after": "Alpha; PSD files written by PhotoCraft are not yet reliably accepted by Photoshop. Menu coverage does not establish format or rendering fidelity. Typography, AI features, professional workflows and Photoshop plug-in compatibility remain incomplete; native tablet and platform behavior have differing validation coverage."
+				},
+				"description": {
+					"before": "PhotoCraft by ArtCraft independently implements Photoshop-style image editing, including layers, adjustments, selections and layered PSD documents.",
+					"after": "PhotoCraft by ArtCraft independently implements Photoshop-style image editing with brushes, layers and masks, adjustments, selections, filters, text and layered PSD/PSB documents. Supports high-bit-depth images, CMYK/Lab workflows and common raster formats. The native desktop and browser interfaces share editing commands with the CLI, JSON control channel and MCP server; Photoshop interchange remains partial."
 				}
 			},
-			"review_notes": "Roadmap specifically identifies unreliable PSD exchange as the beta blocker.",
+			"review_notes": "Roadmap specifically identifies unreliable PSD exchange as the beta blocker. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Early alpha. The maintainers report gaps in AI and generative features, typography, professional workflows and Photoshop plug-in compatibility.",
 					"after": "Alpha; PSD files written by PhotoCraft are not yet reliably accepted by Photoshop. Menu coverage does not establish format or rendering fidelity. Typography, AI features, professional workflows and Photoshop plug-in compatibility remain incomplete; native tablet and platform behavior have differing validation coverage."
+				},
+				"description": {
+					"before": "PhotoCraft by ArtCraft independently implements Photoshop-style image editing, including layers, adjustments, selections and layered PSD documents.",
+					"after": "PhotoCraft by ArtCraft independently implements Photoshop-style image editing with brushes, layers and masks, adjustments, selections, filters, text and layered PSD/PSB documents. Supports high-bit-depth images, CMYK/Lab workflows and common raster formats. The native desktop and browser interfaces share editing commands with the CLI, JSON control channel and MCP server; Photoshop interchange remains partial."
 				}
 			}
 		},
@@ -18330,14 +18484,22 @@
 				"limitations": {
 					"before": "Maintainers describe it as pre-alpha. Menu coverage does not establish complete behavioral or session-format compatibility.",
 					"after": "Pre-alpha. Cannot exchange Pro Tools PTX, AAF or OMF sessions. Recording and decoded sources are held in RAM rather than streamed to disk. Third-party VST3 hosting is blocked in signed macOS builds; AU editors, control surfaces and external synchronization remain incomplete. Output fidelity against Pro Tools is unmeasured."
+				},
+				"description": {
+					"before": "An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing.",
+					"after": "An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing. Provides multitrack recording, clip-edit modes, buses, sends, built-in effects and instruments, piano-roll workflows and audio bouncing. Desktop controls, a CLI and MCP automation share the command engine; session exchange, plugin hosting and recording scalability remain incomplete."
 				}
 			},
-			"review_notes": "Current alpha blockers include session exchange and memory-only recording, not merely incomplete menu parity.",
+			"review_notes": "Current alpha blockers include session exchange and memory-only recording, not merely incomplete menu parity. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Maintainers describe it as pre-alpha. Menu coverage does not establish complete behavioral or session-format compatibility.",
 					"after": "Pre-alpha. Cannot exchange Pro Tools PTX, AAF or OMF sessions. Recording and decoded sources are held in RAM rather than streamed to disk. Third-party VST3 hosting is blocked in signed macOS builds; AU editors, control surfaces and external synchronization remain incomplete. Output fidelity against Pro Tools is unmeasured."
+				},
+				"description": {
+					"before": "An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing.",
+					"after": "An independent Pro Tools-style audio workstation by ArtCraft with audio and MIDI editing, mixing, automation and offline audio processing. Provides multitrack recording, clip-edit modes, buses, sends, built-in effects and instruments, piano-roll workflows and audio bouncing. Desktop controls, a CLI and MCP automation share the command engine; session exchange, plugin hosting and recording scalability remain incomplete."
 				}
 			}
 		},
@@ -18481,10 +18643,20 @@
 				"https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-1-neon.png",
 				"https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-2-ribbons.png"
 			],
-			"changes": {},
-			"review_notes": "No correction identified in documentary screening; retained current scope and maturity.",
+			"changes": {
+				"description": {
+					"before": "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration, including paths, artboards, typography, SVG, PDF and PDF-compatible AI files.",
+					"after": "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration with paths, artboards, typography, shapes, curve booleans, gradients, symbols and effects. Reads/writes SVG and PDF and supports PDF-compatible AI files. Provides desktop and browser editing plus undoable commands exposed through CLI, JSON control and MCP interfaces. Native Illustrator interchange remains partial."
+				}
+			},
+			"review_notes": "No correction identified in documentary screening; retained current scope and maturity. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
-			"changes_in_this_pr": {}
+			"changes_in_this_pr": {
+				"description": {
+					"before": "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration, including paths, artboards, typography, SVG, PDF and PDF-compatible AI files.",
+					"after": "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration with paths, artboards, typography, shapes, curve booleans, gradients, symbols and effects. Reads/writes SVG and PDF and supports PDF-compatible AI files. Provides desktop and browser editing plus undoable commands exposed through CLI, JSON control and MCP interfaces. Native Illustrator interchange remains partial."
+				}
+			}
 		},
 		{
 			"slug": "wordcraft",
@@ -18636,14 +18808,22 @@
 				"limitations": {
 					"before": "Development and fidelity work are ongoing. Full Word layout, behavior and document-format parity is not asserted by this listing.",
 					"after": "Alpha; real-world DOCX round-trip and page-layout fidelity against Word remain unverified. Pagination, native ink rendering, embedded objects, proofing languages and some legacy formats have gaps. Upstream reports platform-specific crashes and freezes. Menu coverage does not establish full Word compatibility."
+				},
+				"description": {
+					"before": "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, DOCX reading and writing, and PDF export.",
+					"after": "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, track changes, references and mail merge. Reads/writes DOCX, ODT, RTF, HTML, Markdown, LaTeX and plain text, opens supported legacy DOC files and exports PDF. Desktop and browser interfaces share document commands with the CLI, JSON control channel and MCP server; Word layout and format fidelity remain partial."
 				}
 			},
-			"review_notes": "Current gaps distinguish meaningful DOCX support from unqualified real-world layout/round-trip fidelity.",
+			"review_notes": "Current gaps distinguish meaningful DOCX support from unqualified real-world layout/round-trip fidelity. Description follow-up: Added documented concrete workflows and interface/format scope while preserving every existing supported feature.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"limitations": {
 					"before": "Development and fidelity work are ongoing. Full Word layout, behavior and document-format parity is not asserted by this listing.",
 					"after": "Alpha; real-world DOCX round-trip and page-layout fidelity against Word remain unverified. Pagination, native ink rendering, embedded objects, proofing languages and some legacy formats have gaps. Upstream reports platform-specific crashes and freezes. Menu coverage does not establish full Word compatibility."
+				},
+				"description": {
+					"before": "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, DOCX reading and writing, and PDF export.",
+					"after": "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, track changes, references and mail merge. Reads/writes DOCX, ODT, RTF, HTML, Markdown, LaTeX and plain text, opens supported legacy DOC files and exports PDF. Desktop and browser interfaces share document commands with the CLI, JSON control channel and MCP server; Word layout and format fidelity remain partial."
 				}
 			}
 		},
@@ -19237,19 +19417,19 @@
 			"changes": {
 				"description": {
 					"before": "SolidCraft is a Rust parametric 3D CAD application targeting Fusion-style design workflows. Build constrained sketches and solids with extrude, revolve, sweep, loft, fillet, shell and pattern tools on an editable feature timeline. Parameter changes rebuild the model. It also offers assemblies, sheet metal, STEP/IGES and mesh exchange, plus desktop, browser, CLI and MCP interfaces. Early development focuses on simple parts; full Fusion compatibility is not claimed.",
-					"after": "A Rust parametric CAD application targeting Fusion-style design workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces."
+					"after": "A Rust parametric CAD application targeting Fusion-style workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools; parameter changes rebuild the model. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces."
 				},
 				"limitations": {
 					"before": "Early development focused on simple parts and the Fusion Design workspace. Full Fusion compatibility is not claimed.",
 					"after": "Alpha; full Fusion compatibility and native Fusion project interchange are not established. Sketch, solid and assembly workflows still have gaps. The full drawing workspace remains under development; render/material libraries, sheet-metal options and other Fusion workspaces are incomplete. Some work documented on feature branches is not yet in released builds."
 				}
 			},
-			"review_notes": "Current public roadmap lists functional render/assembly/sheet-metal workflows, while drawing work and other Fusion workspaces remain incomplete.",
+			"review_notes": "Current public roadmap lists functional render/assembly/sheet-metal workflows, while drawing work and other Fusion workspaces remain incomplete. Description follow-up: Restored the explicit parameter-change/rebuild relationship; obsolete simple-parts-only framing remains corrected, while current assemblies/rendering/sheet-metal and interface details are preserved.",
 			"unresolved": [],
 			"changes_in_this_pr": {
 				"description": {
 					"before": "SolidCraft is a Rust parametric 3D CAD application targeting Fusion-style design workflows. Build constrained sketches and solids with extrude, revolve, sweep, loft, fillet, shell and pattern tools on an editable feature timeline. Parameter changes rebuild the model. It also offers assemblies, sheet metal, STEP/IGES and mesh exchange, plus desktop, browser, CLI and MCP interfaces. Early development focuses on simple parts; full Fusion compatibility is not claimed.",
-					"after": "A Rust parametric CAD application targeting Fusion-style design workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces."
+					"after": "A Rust parametric CAD application targeting Fusion-style workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools; parameter changes rebuild the model. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces."
 				},
 				"limitations": {
 					"before": "Early development focused on simple parts and the Fusion Design workspace. Full Fusion compatibility is not claimed.",
@@ -19809,14 +19989,6 @@
 					"before": "Early alpha; coverage is maintainer-reported, with real-server use on one Microsoft 365 mailbox. Builds are unsigned. Graph sending, calendar and contacts are documented; Graph mailbox sync and shared mailboxes remain under development/testing. No PST/OST/MSG/OLM import, printing or S/MIME. Browser builds cannot connect directly to mail servers.",
 					"after": "Beta covers Microsoft accounts; other providers remain experimental. EWS: mail-only preview, tested on Grommunio; Exchange Server, SmarterMail and NTLM untested on real servers. Microsoft sign-in may need admin approval. Unsigned Windows/macOS builds; slow large/shared-mailbox sync; incomplete IMAP sync. No PST/OST/MSG/OLM import, printing or S/MIME/OpenPGP. Browser JMAP: read-only, CORS required."
 				},
-				"description": {
-					"before": "MailCraft reimplements classic Outlook's mail, calendar, contacts and tasks as a native Rust application with Outlook's ribbon, folder pane and reading pane. It signs in to Microsoft 365 and Outlook.com with OAuth, also works with IMAP/SMTP accounts, shows HTML mail without a web engine, and exposes every command to a CLI and an MCP server.",
-					"after": "Native Rust reimplementation of classic Outlook's mail, calendar, contacts and tasks, with ribbon, folder and reading panes. Supports Microsoft OAuth, Graph sync, shared mailboxes, IMAP/SMTP and preview EWS mail. Includes multiple rich-text compose windows, automatic replies for Microsoft accounts, Work Offline, high contrast, rules and recurring meetings. Imports/exports EML, MBOX, ICS and VCF; renders HTML without a web engine. CLI/MCP command access; browser builds offer read-only JMAP."
-				},
-				"status": {
-					"before": "alpha",
-					"after": "beta"
-				},
 				"screenshots": {
 					"before": [
 						{
@@ -19846,6 +20018,14 @@
 							"alt": "MailCraft: adding a mail account."
 						}
 					]
+				},
+				"status": {
+					"before": "alpha",
+					"after": "beta"
+				},
+				"description": {
+					"before": "MailCraft reimplements classic Outlook's mail, calendar, contacts and tasks as a native Rust application with Outlook's ribbon, folder pane and reading pane. It signs in to Microsoft 365 and Outlook.com with OAuth, also works with IMAP/SMTP accounts, shows HTML mail without a web engine, and exposes every command to a CLI and an MCP server.",
+					"after": "Native Rust reimplementation of classic Outlook's mail, calendar, contacts and tasks, with ribbon, folder and reading panes. Supports Microsoft OAuth, Graph sync, shared mailboxes, IMAP/SMTP and preview EWS mail. Includes multiple rich-text compose windows, automatic replies for Microsoft accounts, Work Offline, high contrast, rules and recurring meetings. Imports/exports EML, MBOX, ICS and VCF; renders HTML without a web engine. CLI/MCP command access; browser builds offer read-only JMAP."
 				}
 			},
 			"review_notes": "Beta, features, browser JMAP and preview EWS corrections were merged in PR #212; preserved current main rather than duplicating those changes.",
@@ -22567,5 +22747,6 @@
 			"changes_in_this_pr": {}
 		}
 	],
-	"url_evidence_file": "2026-11-02-catalog-links.json"
+	"url_evidence_file": "2026-11-02-catalog-links.json",
+	"description_review_file": "2026-11-02-descriptions.json"
 }

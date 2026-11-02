@@ -11,7 +11,7 @@ platforms: [Windows, macOS, Linux]
 status: experimental
 compatibility: partial
 summary: "Guitar Pro-style score editing and playback with GP3-GP8 files, notation, tablature and PDF/audio exports."
-description: "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays notation and tablature, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export."
+description: "A Rust implementation targeting Guitar Pro tablature and notation workflows. Opens, edits and saves supported GP3-GP8 files, displays standard notation and tablature in multiple layouts, and exports PDF. Its prerelease player offers looping, metronome, per-track controls, external sound sets, amp models and WAV export."
 license: GPL-3.0-only
 docs: https://mateusrdp.github.io/oxiguitar/
 limitations: "Prerelease for player testing; complete Guitar Pro file and behavioral parity is not established. MuseScore, MusicXML, ABC and MIDI interchange remain planned. Sound sets and amp models are separately obtained files. Platform coverage is maintainer-reported. Own code is GPL-3.0-or-later; distributed MuseScore-derived code requires GPL-3.0-only."

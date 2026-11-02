@@ -11,7 +11,7 @@ platforms: [Windows, Linux, macOS]
 status: "alpha"
 compatibility: partial
 summary: "Substance Designer-style procedural materials with node graphs, previews, mesh baking and texture exports."
-description: "A Substance 3D Designer-style procedural material editor with node graphs, 2D/3D previews, mesh baking and texture output. Uses SBS as its project format and documents compatibility with Designer nodes, with inherited and third-party licenses recorded separately."
+description: "A Substance 3D Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D/3D previews, mesh baking and command-line rendering. Uses SBS projects and documents Designer-node compatibility. Outputs texture maps and MaterialX materials; inherited and third-party code retains its own license terms."
 license: MIT OR Apache-2.0
 docs: https://github.com/PiJellyPin/MaterialCraft#readme
 discord_server: https://discord.gg/9KVCNatNvX
