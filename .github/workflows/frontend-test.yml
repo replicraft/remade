@@ -11,6 +11,85 @@ permissions:
   contents: read
 
 jobs:
+  windows-path-review:
+    if: github.event_name == 'workflow_dispatch'
+    name: Windows PR 194 verification
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: 'Windows checkout café #100%'
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          path: 'Windows checkout café #100%'
+      - uses: pnpm/action-setup@v6.1.0
+        with:
+          package_json_file: 'Windows checkout café #100%/package.json'
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+          cache: pnpm
+          cache-dependency-path: 'Windows checkout café #100%/pnpm-lock.yaml'
+      - run: pnpm install --frozen-lockfile
+      - name: Confirm the regression fails without the patch
+        run: |
+          catalog=apps/frontend/remade-wiki/src/lib/catalog.ts
+          cp "$catalog" "$catalog.reviewed"
+          trap 'mv "$catalog.reviewed" "$catalog"' EXIT
+          git show 1a4cc93:apps/frontend/remade-wiki/src/lib/catalog.ts > "$catalog"
+          if pnpm --filter ./apps/frontend/remade-wiki exec vitest run --config tests/vitest.config.ts tests/unit/catalog-paths.test.ts > negative-control.log 2>&1; then
+            echo 'Expected the unfixed loader to fail the path regression'
+            cat negative-control.log
+            exit 1
+          fi
+          cat negative-control.log
+          echo 'Confirmed the unfixed loader fails; restoring PR 194'
+      - run: pnpm check
+      - name: Catalog and path regression checks
+        run: >-
+          pnpm --filter ./apps/frontend/remade-wiki exec vitest run
+          --config tests/vitest.config.ts
+          tests/unit/catalog-paths.test.ts tests/unit/catalog.test.ts
+          tests/unit/vendors.test.ts tests/unit/catalog-history.test.ts
+          tests/unit/catalog-export.test.ts tests/unit/screenshots.test.ts
+      - run: pnpm build
+      - name: Verify dev server routes
+        run: |
+          pnpm dev --host 127.0.0.1 --port 4321 > dev-review.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          node --input-type=module <<'NODE'
+          import { setTimeout } from 'node:timers/promises';
+          let ready = false;
+          for (let attempt = 0; attempt < 60; attempt++) {
+            try {
+              const response = await fetch('http://127.0.0.1:4321/');
+              if (response.ok) { ready = true; break; }
+            } catch {}
+            await setTimeout(1000);
+          }
+          if (!ready) throw new Error('Dev server did not become ready');
+          for (const path of ['/', '/explore/', '/requests/', '/data/catalog.json']) {
+            const response = await fetch(`http://127.0.0.1:4321${path}`);
+            if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+            if (path.endsWith('.json')) {
+              const data = await response.json();
+              if (!data.projects?.length) throw new Error('Catalog feed has no projects');
+            } else if (!(await response.text()).includes('Remade')) {
+              throw new Error(`${path}: missing rendered page content`);
+            }
+            console.log(`Verified ${path}`);
+          }
+          NODE
+      - name: Save dev log
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: windows-pr194-dev-log
+          path: 'Windows checkout café #100%/dev-review.log'
+          if-no-files-found: ignore
   build:
     name: App Build + Unit Tests
     runs-on: ubuntu-latest
