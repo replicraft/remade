@@ -1,6 +1,6 @@
 # Requested in https://github.com/replicraft/remade/issues/2.
 original: autopano-giga
+summary: "Wanted: Stitch overlapping photos into panoramas with Autopano-style controls."
 reason: Reproduce Autopano Giga's panorama stitching, including image grouping, control-point alignment, projection selection, masking, exposure and color correction, blending and high-resolution panorama export.
 suggested_names:
 - PanoCraft
-summary: "Wanted: Stitch overlapping photos into panoramas with Autopano-style controls."

@@ -10,13 +10,17 @@ languages: [Rust]
 platforms: [Windows, Linux]
 status: experimental
 compatibility: partial
+summary: "Painter-style 3D texture painting with PBR layers, masks, mesh baking and game-engine exports."
 description: An independent Painter-style 3D texture painting application with layered PBR materials, masks, generators, smart materials, mesh-map baking and game-engine export presets. Imports OBJ, glTF and FBX and saves its own project format.
 license: MIT OR Apache-2.0
 docs: https://github.com/Aalzard/subcraft#readme
 limitations: Early but usable, with breaking project-format changes possible. Painter project compatibility is not documented. SBSAR materials cannot be read directly; exported texture maps can be imported instead. Some painting and export workflows remain incomplete. Windows binaries are unsigned.
-summary: "Painter-style 3D texture painting with PBR layers, masks, mesh baking and game-engine exports."
 screenshots:
   - src: https://raw.githubusercontent.com/Aalzard/subcraft/main/docs/screenshots/bake-height-bent-normal-dialog.png
     alt: "SubCraft: mesh-baking preview and settings."
   - src: https://raw.githubusercontent.com/Aalzard/subcraft/main/docs/screenshots/v018-new-project.png
     alt: "SubCraft: new texture-project dialog."
+  - src: https://raw.githubusercontent.com/Aalzard/subcraft/56a23a7e88077fbb5d11bd15865d73750964ae78/docs/screenshots/v018-overview.png
+    alt: "SubCraft painting a crate"
+  - src: https://raw.githubusercontent.com/Aalzard/subcraft/56a23a7e88077fbb5d11bd15865d73750964ae78/docs/screenshots/tool-clone.png
+    alt: "Clone tool with source marker"

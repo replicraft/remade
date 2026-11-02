@@ -14,4 +14,4 @@ summary: LightBurn-style laser design and control with vector editing, raster en
 description: A Rust laser-design and machine-control app targeting LightBurn-style workflows. Includes vector drawing, per-layer cut and engrave settings, raster dithering, toolpath preview, .lbrn import and G-code output. Provides a WebAssembly browser editor and a CLI, with controller modules for GRBL, Marlin, Snapmaker, DSP and galvo marking.
 license: MIT OR Apache-2.0
 docs: https://github.com/wdunn001/lasercraft#readme
-limitations: Early implementation; documented feature parity and controller support are maintainer-reported, with no independent hardware validation. Full LightBurn workflow and project-format compatibility is not claimed.
+limitations: "Early implementation; feature parity and controller support are maintainer-reported, without independent hardware validation. Full LightBurn workflow and project-format compatibility is not claimed. Cargo metadata declares MIT OR Apache-2.0; corresponding project license files are absent."

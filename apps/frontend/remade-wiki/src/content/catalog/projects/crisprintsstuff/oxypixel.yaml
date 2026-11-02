@@ -16,3 +16,7 @@ limitations: "Early release; full Aseprite behavior and plugin compatibility are
 screenshots:
   - src: https://raw.githubusercontent.com/crisprintsstuff/oxypixel/main/docs/images/editor.png
     alt: "OxyPixel: layered pixel-art scene and drawing tools."
+  - src: https://raw.githubusercontent.com/crisprintsstuff/oxypixel/c481e4f7eb2bad4ca586a19e37ea0c2320bf758a/docs/images/editor-frames.png
+    alt: "OxyPixel editing an animated campfire sprite with a preview, palette and frame timeline."
+  - src: https://raw.githubusercontent.com/crisprintsstuff/oxypixel/c481e4f7eb2bad4ca586a19e37ea0c2320bf758a/docs/images/pack.png
+    alt: "OxyPixel packing four animation frames into a sprite sheet."

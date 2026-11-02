@@ -3,7 +3,6 @@ slug: filmcraft
 name: FilmCraft
 authors: [storytold]
 repository: https://github.com/storytold/filmcraft
-website: https://getartcraft.com/apps/filmcraft
 browser_url: https://playground.daijro.dev/filmcraft/
 originals: [adobe-premiere-pro]
 category: creative
@@ -11,13 +10,18 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, color adjustments, audio, titles and media export.
-license: MIT OR Apache-2.0
-discord_server: https://discord.gg/artcraft
-limitations: Under active development. Full Premiere behavioral, project-format and plug-in compatibility is not asserted by this listing.
 summary: "Premiere-style video editing with multitrack timelines, color adjustments, audio, titles and exports."
+description: "An independent Premiere-style video editor by ArtCraft with multitrack timelines, editing workspaces, three-point editing, ripple/roll/slip/slide trimming, nested sequences and keyframes. Includes color adjustments, audio mixing, titles, captions and media export. Its native project format supports autosave and crash recovery; CLI and MCP commands drive the same editing engine."
+license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/filmcraft
+discord_server: https://discord.gg/artcraft
+limitations: "Alpha; compatibility is maintainer-reported. Cannot open Premiere PRPROJ projects or host its third-party plug-ins. Codec and hardware acceleration support vary by platform; Windows/Linux runtime and audio-device reliability still need qualification. Output has not been systematically compared with Premiere, and browser workflows remain incomplete."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-assembly.png
     alt: "FilmCraft: video assembly workspace with clips and monitors."
   - src: https://raw.githubusercontent.com/storytold/filmcraft/main/docs/images/filmcraft-color.png
     alt: "FilmCraft: color workspace with video scopes."
+  - src: https://raw.githubusercontent.com/storytold/filmcraft/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/images/filmcraft-hero.png
+    alt: "FilmCraft editing a film sequence with video previews, an effects panel and a multitrack timeline."
+  - src: https://raw.githubusercontent.com/storytold/filmcraft/68919ed87aa6a097a4d21414ec7c438883f5fe22/docs/images/filmcraft-timeline.png
+    alt: "FilmCraft timeline with stacked video clips, transitions, audio waveforms and a loudness meter."

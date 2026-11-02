@@ -15,13 +15,17 @@ platforms:
 - Android
 status: experimental
 compatibility: partial
-license: MPL-2.0
 summary: Inventor-style parametric CAD with constrained sketches, solid features, holes and threads.
 description: An offline parametric CAD application targeting Autodesk Inventor-style modeling workflows. Built in C++ on OpenCASCADE, it combines a ribbon interface and feature tree with constrained sketches, extrusion, revolution, holes and threads. Documents desktop builds and an Android edition, plus keyboard and mouse presets for Inventor users.
-limitations: Early preview; full Inventor feature coverage and native IPT/IAM project round-trip compatibility are not established. Platform support and Android stability are maintainer-reported, with Windows described as the main platform.
+license: MPL-2.0
 docs: https://github.com/MikeVerx/breezecad#readme
+limitations: Early preview; full Inventor feature coverage and native IPT/IAM project round-trip compatibility are not established. Platform support and Android stability are maintainer-reported, with Windows described as the main platform.
 screenshots:
   - src: https://raw.githubusercontent.com/MikeVerx/breezecad/main/docs/images/model-light.png
     alt: "BreezeCAD: mechanical flange in the modeling workspace."
   - src: https://raw.githubusercontent.com/MikeVerx/breezecad/main/docs/images/sketch.png
     alt: "BreezeCAD: dimensioned sketch profile."
+  - src: https://raw.githubusercontent.com/MikeVerx/breezecad/94b105620d40fccd29321ba3b0984558414c7a90/docs/images/thread.png
+    alt: "Thread panel"
+  - src: https://raw.githubusercontent.com/MikeVerx/breezecad/94b105620d40fccd29321ba3b0984558414c7a90/docs/images/model-dark.png
+    alt: "Dark theme"

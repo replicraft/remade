@@ -14,14 +14,17 @@ platforms:
 - Linux
 status: alpha
 compatibility: partial
+summary: "An experimental sampler for Kontakt instruments and UVI Falcon/UFS playback, with CLAP and VST3 builds."
 description: An independent sampler targeting Kontakt instruments and UVI Falcon/UFS playback. Provides
   CLAP, VST3 and standalone builds with experimental sample playback, partial scripting, authored
   instrument interfaces and effects.
 license: Apache-2.0
+website: https://derpcatmusic.github.io/KONTRA/
 docs: https://github.com/DerpcatMusic/KONTRA#readme
 discord_server: https://discord.gg/7hpCbGasQa
 limitations: Alpha nightly builds; Kontakt playback, scripts, interfaces and effects are partial.
   Falcon/UFS coverage and sound parity are incomplete. Bring separately authorized libraries; a purchase
   may not authorize third-party playback. Upstream says parser redistribution rights remain unresolved.
-website: https://derpcatmusic.github.io/KONTRA/
-summary: "An experimental sampler for Kontakt instruments and UVI Falcon/UFS playback, with CLAP and VST3 builds."
+screenshots:
+  - src: https://derpcatmusic.github.io/KONTRA/assets/kontra-ui.webp
+    alt: "KONTRA instrument interface with a preset browser, instrument controls and an on-screen keyboard."

@@ -2,16 +2,19 @@ slug: motionity
 name: Motionity
 authors: [alyssaxuu]
 repository: https://github.com/alyssaxuu/motionity
+browser_url: https://www.motionity.app/
 originals: [adobe-after-effects, canva]
 category: creative
 languages: [JavaScript]
 platforms: [Web]
 status: experimental
 compatibility: targeting
+summary: "Create motion graphics in your browser with keyframes, masks, filters, video trimming and audio."
 description: A broader After Effects and Canva alternative for browser-based motion graphics. Provides keyframes with custom easing, layer masking, image and video filters, video trimming, audio, animated text, Lottie support and Pixabay asset search.
 license: MIT
 website: https://motionity.app/
-browser_url: https://www.motionity.app/
 docs: https://github.com/alyssaxuu/motionity#readme
 limitations: Focuses on its own browser-based animation workflow. After Effects project and plug-in compatibility and Canva design import are not documented. Asset search uses an external Pixabay integration. Compatibility and feature parity are not independently verified.
-summary: "Create motion graphics in your browser with keyframes, masks, filters, video trimming and audio."
+screenshots:
+  - src: https://raw.githubusercontent.com/alyssaxuu/motionity/5843fa14c2fabc72d1bcabf442acf6062ce71387/preview.gif
+    alt: "Motionity editing animated text with a canvas, layers and a multitrack timeline."

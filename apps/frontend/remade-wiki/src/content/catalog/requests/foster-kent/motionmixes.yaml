@@ -1,4 +1,5 @@
 original: motionmixes
+summary: "Wanted: Live radio jingle and music-bed playback with intro, loop, drop and outro controls."
 reason: >-
   Reproduce MotionMixes' live radio jingle and music-bed workflows: intro, loop,
   drop and outro buttons, real-time dynamics, seamless transitions, arrangement
@@ -6,4 +7,3 @@ reason: >-
   external controllers and royalty-report logging. Use original or appropriately
   licensed audio rather than redistributing its bundled music library.
 suggested_names: [JingleCraft]
-summary: "Wanted: Live radio jingle and music-bed playback with intro, loop, drop and outro controls."

@@ -8,9 +8,13 @@ category: productivity
 languages: [Rust]
 status: experimental
 compatibility: partial
+summary: "Read, render and edit Visio files through a headless Rust engine, command line and MCP server."
 description: A headless implementation of Visio package formats and ShapeSheet formulas, formerly DiagramCraft. Reads diagrams, stencils and templates, renders PNG, SVG and PDF, and writes and authors drawings with glued connectors and routing. Exposes CLI commands and an MCP server.
 license: MIT OR Apache-2.0
+website: https://misterdiagram.com
 docs: https://github.com/MisterDiagram/MisterDiagram#readme
 limitations: Pre-alpha; no GUI is provided or planned. Macro-enabled files discard VBA. File fidelity and Visio comparisons are maintainer-reported. Text wrapping, EMF+ images, compound line patterns, connector rendering and some save serialization remain incomplete.
-website: https://misterdiagram.com
-summary: "Read, render and edit Visio files through a headless Rust engine, command line and MCP server."
+screenshots:
+  - src: https://raw.githubusercontent.com/MisterDiagram/MisterDiagram/c44a8070bbaf186622869ff9268f3d3e01eb852a/docs/images/office-network.png
+    alt: "An invented office network made by the CLI"
+    caption: "Example network diagram rendered by MisterDiagram."

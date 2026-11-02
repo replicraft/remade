@@ -3,7 +3,6 @@ slug: deckcraft
 name: DeckCraft
 authors: [storytold]
 repository: https://github.com/storytold/deckcraft
-website: https://getartcraft.com/apps/deckcraft
 browser_url: https://playground.daijro.dev/deckcraft/
 originals: [microsoft-powerpoint]
 category: productivity
@@ -11,13 +10,18 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: An independent PowerPoint-style presentation application by ArtCraft with themes, slide layouts, shapes, transitions, animations and PowerPoint file support.
-license: MIT OR Apache-2.0
-discord_server: https://discord.gg/artcraft
-limitations: Alpha; compatibility is maintainer-reported. Feature breadth does not establish complete PowerPoint fidelity; full behavioral and presentation-format compatibility is not claimed.
 summary: "PowerPoint-style presentations with themes, slide layouts, shapes, transitions, animations and file support."
+description: "An independent PowerPoint-style presentation application by ArtCraft with themes, slide masters, layouts, shapes, formatted text, pictures, tables, charts and basic SmartArt. Provides transitions, animations and full-screen presenting. Opens and saves PPTX and exports PDF, with desktop/browser interfaces and undoable commands shared by the CLI, control channel and MCP server."
+license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/deckcraft
+discord_server: https://discord.gg/artcraft
+limitations: "Alpha; compatibility is maintainer-reported. Upstream reports data-loss and crash paths, incomplete PPTX media round-trips, missing SVG picture rendering and no printing. Presenter view does not automatically use a second display. PDF export rasterizes slide artwork; real PowerPoint file fidelity remains unverified."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/deckcraft/main/docs/images/shape-format.png
     alt: "DeckCraft: presentation editor with a selected shape."
   - src: https://raw.githubusercontent.com/storytold/deckcraft/main/docs/images/format-pane.png
     alt: "DeckCraft: gradient controls beside an editable slide."
+  - src: https://raw.githubusercontent.com/storytold/deckcraft/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/images/editor.png
+    alt: "DeckCraft editing a slide: ribbon, slide thumbnails with sections, a process diagram on the canvas, notes and status bar"
+  - src: https://raw.githubusercontent.com/storytold/deckcraft/0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9/docs/images/slide-sorter.png
+    alt: "Slide Sorter view with transitions under each slide"

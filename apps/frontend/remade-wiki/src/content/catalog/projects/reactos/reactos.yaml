@@ -8,10 +8,13 @@ category: operating-systems
 languages: [C, C++, Assembly]
 status: alpha
 compatibility: partial
+summary: "A Windows NT-compatible operating system aiming to run existing Windows applications and drivers."
 description: ReactOS is an open-source operating system implementing Windows NT architecture, aiming to run existing Windows applications and drivers. Its user-mode implementation substantially reuses Wine code, alongside its own kernel and operating-system components.
 license: GPL-2.0
 website: https://reactos.org/
 docs: https://reactos.org/wiki/
 discord_server: https://discord.gg/7knjvhT
 limitations: Still alpha; application and driver compatibility is incomplete. The project does not guarantee stability or safety of files and does not provide full compatibility with current Windows releases. Components retain their respective licenses.
-summary: "A Windows NT-compatible operating system aiming to run existing Windows applications and drivers."
+screenshots:
+  - src: https://reactos.org/sites/default/files/Mizu-Desktop.png
+    alt: "ReactOS desktop with a system-information window and display appearance settings."

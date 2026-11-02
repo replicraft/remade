@@ -10,13 +10,15 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: experimental
 compatibility: partial
-description: An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, layers, dimensions, DXF and DWG support.
+summary: "AutoCAD-style drafting with drawing commands, layers, dimensions and DXF/DWG support."
+description: "An independent AutoCAD-style drafting application by ArtCraft with a command line, drawing and modification commands, object snaps, layers, blocks, dimensions and layouts. Reads and writes supported DXF and DWG drawings, provides paper-space viewports and PDF plotting, and exposes the shared command engine through CLI and MCP automation."
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
-limitations: Early development. DWG support uses the open-source acadrust library; complete AutoCAD behavioral and file-format fidelity is not asserted.
-summary: "AutoCAD-style drafting with drawing commands, layers, dimensions and DXF/DWG support."
+limitations: "Pre-alpha; DWG support uses acadrust. Saving DWG can discard unsupported entities and metadata; a warning and backup reduce but do not eliminate that risk. Real-file exchange with AutoCAD is unverified. Dynamic blocks, some geometry operations and plotting fidelity remain incomplete; browser autosave is unavailable."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/cadcraft/main/docs/images/ui-apartment.png
     alt: "CADCraft: apartment floor plan with drafting tools."
   - src: https://raw.githubusercontent.com/storytold/cadcraft/main/docs/images/ui-layout.png
     alt: "CADCraft: paper-space layout and drawing viewport."
+  - src: https://raw.githubusercontent.com/storytold/cadcraft/ebc67fa81dccb0d89c157babb27e7d5c3a5c1177/docs/images/ui-bracket.png
+    alt: "CADCraft with a mounting bracket part drawing: front view with bolt holes, centre lines and dimensions, a hatched section view, notes and a title block"

@@ -3,20 +3,20 @@ slug: solidcraft
 name: SolidCraft
 authors: [tangency-labs]
 repository: https://github.com/tangency-labs/solidcraft
-website: https://solidcraft.io
 browser_url: https://solidcraft.io/app
-docs: https://docs.solidcraft.io
-discord_server: https://solidcraft.io/discord
 originals: [autodesk-fusion]
 category: engineering
 languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: SolidCraft is a Rust parametric 3D CAD application targeting Fusion-style design workflows. Build constrained sketches and solids with extrude, revolve, sweep, loft, fillet, shell and pattern tools on an editable feature timeline. Parameter changes rebuild the model. It also offers assemblies, sheet metal, STEP/IGES and mesh exchange, plus desktop, browser, CLI and MCP interfaces. Early development focuses on simple parts; full Fusion compatibility is not claimed.
-license: MIT OR Apache-2.0
-limitations: Early development focused on simple parts and the Fusion Design workspace. Full Fusion compatibility is not claimed.
 summary: "Fusion-style parametric 3D CAD with constrained sketches, solid modeling and a rebuildable feature timeline."
+description: "A Rust parametric CAD application targeting Fusion-style workflows. Constrained sketches and an editable feature timeline drive extrude, revolve, sweep, loft, fillet, shell and pattern tools; parameter changes rebuild the model. Includes assemblies and joints, motion studies, sheet metal with flat patterns, GPU rendering and STEP/IGES/mesh exchange. Runs on desktop and in the browser, with CLI and MCP interfaces."
+license: MIT OR Apache-2.0
+website: https://solidcraft.io
+docs: https://docs.solidcraft.io
+discord_server: https://solidcraft.io/discord
+limitations: "Alpha; full Fusion compatibility and native Fusion project interchange are not established. Sketch, solid and assembly workflows still have gaps. The full drawing workspace remains under development; render/material libraries, sheet-metal options and other Fusion workspaces are incomplete. Some work documented on feature branches is not yet in released builds."
 screenshots:
   - src: https://raw.githubusercontent.com/tangency-labs/solidcraft/main/docs/screenshots/sample-plate.png
     alt: SolidCraft modeling workspace with a sample plate.

@@ -14,6 +14,7 @@ platforms:
 - Windows
 status: experimental
 compatibility: partial
+summary: "A local Paper-style design editor with artboards, text, shapes, color tokens, alignment and undo."
 description: A local design editor targeting Paper-style layout workflows, with an artboard, rectangle
   and text layers, color tokens, alignment, layer controls and undo. Saves its own JSON documents
   and exports standalone HTML and SVG; bounded SVG exchange with FigCraft and VectorCraft is documented.
@@ -23,4 +24,3 @@ limitations: Early prerelease; Paper document compatibility, nested layouts, ima
   SVG import, arbitrary CSS, collaboration and MCP remain deferred. SVG export does not preserve
   automatic text wrapping. Windows native interaction is unverified; desktop packages are unsigned
   or ad-hoc signed.
-summary: "A local Paper-style design editor with artboards, text, shapes, color tokens, alignment and undo."

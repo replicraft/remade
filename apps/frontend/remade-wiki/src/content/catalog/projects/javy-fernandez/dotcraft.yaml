@@ -9,18 +9,20 @@ originals:
 category: developer-tools
 languages:
 - Rust
-platforms:
-- macOS
-- Windows
+platforms: [macOS, Windows, Linux]
 status: experimental
 compatibility: partial
-license: MIT OR Apache-2.0
 summary: Rider-inspired C# and .NET IDE with Roslyn intelligence, build/run/test actions, debugging and Git.
 description: A native Rust and egui IDE targeting JetBrains Rider-style .NET and C# development workflows. Works with solutions and projects, using Roslyn for code intelligence, the .NET CLI for builds, running and tests, netcoredbg for debugging, and Git integration. Includes Rider-style keymaps and tool-window layouts.
-limitations: Requires the .NET SDK and external tooling for language services, debugging and version control. Does not claim Rider plugin compatibility or complete Rider feature parity. Documented desktop targets are macOS and Windows.
+license: MIT OR Apache-2.0
 docs: https://github.com/javy-fernandez/dotcraft#readme
+limitations: "Requires the .NET SDK and external tooling for language services, debugging and version control. Does not claim Rider plugin compatibility or complete Rider feature parity. Documented desktop targets are macOS, Windows and Linux."
 screenshots:
   - src: https://raw.githubusercontent.com/javy-fernandez/dotcraft/main/docs/screenshots/workspace-dark.png
     alt: "DotCraft: source editor and solution explorer."
   - src: https://raw.githubusercontent.com/javy-fernandez/dotcraft/main/docs/screenshots/blame-dark.png
     alt: "DotCraft: source annotations in the editor gutter."
+  - src: https://raw.githubusercontent.com/javy-fernandez/dotcraft/7fa1192eafcbf2d0ff08851edcc134cf2d4dfa28/docs/screenshots/completion-dark.png
+    alt: "Completion popup with Roslyn items and documentation"
+  - src: https://raw.githubusercontent.com/javy-fernandez/dotcraft/7fa1192eafcbf2d0ff08851edcc134cf2d4dfa28/docs/screenshots/search-dark.png
+    alt: "Search Everywhere finding files by their initials"

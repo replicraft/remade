@@ -8,8 +8,12 @@ languages: [Rust, TypeScript]
 platforms: [macOS]
 status: experimental
 compatibility: partial
-description: Targets Houdini's procedural geometry workflows with a Rust SOP engine, node graphs, a Tauri desktop viewport and a command-line interface. Implements a subset of SOPs, VEX expressions, geometry formats and HIP scene import. Also includes experimental Endorphin scene reading and passive ragdoll simulation.
+summary: "Houdini-style procedural geometry with a Rust SOP engine, node graphs, desktop viewport and CLI."
+description: "Targets Houdini's procedural geometry workflows with a Rust SOP engine, node graphs, a Tauri desktop viewport and a CLI. Implements partial SOP, VEX and HIP support and geometry exchange. Experimental Endorphin support reads ENS scenes and simulates authored events, ragdolls and a small set of re-authored behavior controllers."
 license: Unlicensed
 docs: https://github.com/pascaldisse/hexe/blob/main/STATUS.md
-limitations: SOP, VEX and HIP coverage is partial; many nodes, animated parameters and scene behaviors remain unsupported or unverified. Endorphin support does not reproduce its behavior controllers or solver. macOS is the documented app build. No project-level license file; package metadata declares MIT OR Apache-2.0, pending clarification.
-summary: "Houdini-style procedural geometry with a Rust SOP engine, node graphs, desktop viewport and CLI."
+limitations: "SOP, VEX and HIP coverage is partial. Endorphin behavior networks and constraint attachments remain unsupported; only a small controller subset is re-authored, with solver and visual fidelity unverified. macOS is the documented app build. No project-level license file; package metadata declares MIT OR Apache-2.0, pending clarification."
+screenshots:
+  - src: https://raw.githubusercontent.com/pascaldisse/hexe/bdbd03104c8f9d3c2854655ccd4ea842d96c3549/apps/hexe-tauri/proof/endorphin-ui-balance-F90.png
+    alt: "Hexe prototype rendering a humanoid skeleton balancing in a 3D scene."
+    caption: "Hexe behavior-controller prototype render."

@@ -14,3 +14,7 @@ description: "A broader alternative for Cascadeur-style 3D humanoid animation. P
 license: "GPL-3.0-or-later"
 docs: "https://github.com/YalKouassi/HumanMotionCraft#readme"
 limitations: "Not a Spine 2D replacement or a full Cascadeur clone; native Cascadeur project compatibility is not established. Focuses on humanoids rather than arbitrary rigs, character creation or a full 3D scene editor. Published releases are Windows-only; Linux builds are documented. Optional motion-from-text helpers require separate models with their own licenses."
+screenshots:
+  - src: https://raw.githubusercontent.com/YalKouassi/HumanMotionCraft/5eda21e0be7e2c9912b204eabb1a5d79ecd90d06/docs/media/ai-fill.gif
+    alt: "HumanMotionCraft animation demo showing a humanoid pose in a 3D viewport."
+    caption: "Humanoid animation demo published with the project."

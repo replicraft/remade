@@ -3,8 +3,6 @@ slug: paintcraft
 name: PaintCraft
 authors: [replicraft]
 repository: https://github.com/replicraft/PaintCraft
-discord_server: https://discord.gg/xNASvxSx6j
-website: https://paint.replicraft.dev
 browser_url: https://paint.replicraft.dev/
 originals: [paint-net, microsoft-paint]
 category: creative
@@ -13,12 +11,18 @@ platforms: [Windows, macOS, Linux, Web]
 status: experimental
 compatibility: partial
 summary: Paint.NET and MS Paint workflows in Rust, with layers, brushes, selections, Classic skins and a tabbed Studio workspace.
-description: A Rust reimplementation targeting Paint.NET and MS Paint drawing and editing workflows. Classic offers Windows 7, 10 and 11 skins; Studio adds document tabs and floating panels. Desktop, browser and CLI interfaces provide brushes, shapes, text, selections, layers and undo/redo. Projects use the native PCND format, with PNG, JPEG and BMP image exchange, still GIF import and single-page TIFF import. MCP tools expose headless painting operations.
+description: "Rust reimplementation of Paint.NET and MS Paint workflows. Classic has Windows 7/10/11 skins; Studio adds tabs, floating panels, editable filters and layer masks. Brushes, shapes, text, selections, layers and undo/redo are available on desktop/browser and through headless CLI/MCP. PCND preserves layers, filters and masks. Exchanges PNG/JPEG/BMP, still GIF and selected TIFF pages; layered imports include OpenRaster, historical PDN/PAINT subsets and basic raster PSD/PSB."
 license: MIT
+website: https://paint.replicraft.dev
 docs: https://github.com/replicraft/PaintCraft#readme
-limitations: Early preview; full feature parity is not claimed. PDN and PAINT support is limited to structural inspection, without layered project decoding or preserving saves. GIF import is still-image only and TIFF import is single-page; their frontend exports are disabled.
+discord_server: https://discord.gg/xNASvxSx6j
+limitations: "Early preview; full feature parity is not claimed. PDN and PAINT import accepts limited historical subsets as converted copies; writing either format is unsupported. Image conversions may lose metadata, color depth or unsupported layers. GIF exchange is still-image only; supported TIFF pages are selected individually. Format availability differs across desktop, browser, CLI and MCP."
 screenshots:
   - src: https://raw.githubusercontent.com/replicraft/PaintCraft/main/assets/repo/classic-windows-11.png
     alt: "PaintCraft: drawing canvas in the Windows 11 theme."
   - src: https://raw.githubusercontent.com/replicraft/PaintCraft/main/assets/repo/classic-windows-10.png
     alt: "PaintCraft: drawing canvas in the Windows 10 theme."
+  - src: https://raw.githubusercontent.com/replicraft/PaintCraft/5ca286d610c1cb7ac28964bbd3f63dbdbf29eba8/assets/repo/studio.png
+    alt: "PaintCraft Studio"
+  - src: https://raw.githubusercontent.com/replicraft/PaintCraft/5ca286d610c1cb7ac28964bbd3f63dbdbf29eba8/assets/repo/classic-windows-7.png
+    alt: "PaintCraft Classic, Windows 7"

@@ -3,7 +3,6 @@ slug: figcraft
 name: FigCraft
 authors: [storytold]
 repository: https://github.com/storytold/figcraft
-website: https://getartcraft.com/apps/figcraft
 browser_url: https://playground.daijro.dev/figcraft/
 originals: [figma]
 category: creative
@@ -11,14 +10,19 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
+summary: "Figma-style interface design and prototyping with auto layout, components, variants, vectors and variables."
 description: FigCraft independently implements Figma-style interface design and prototyping in Rust, with frames, auto layout, components and variants, vector networks, styles and variables. Supports offline editing, best-effort Figma file import and preview live collaboration.
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/figcraft
 docs: https://github.com/storytold/figcraft/blob/main/docs/target-app-parity.md
 discord_server: https://discord.gg/artcraft
-limitations: Compatibility is maintainer-reported and has not been checked against real Figma documents. Figma file import is best effort. Multiplayer is a preview without accounts, teams or cloud parity. Uses its own WebAssembly plugins rather than Figma plugins. Online sharing uploads files to a server and is not end-to-end encrypted.
-summary: "Figma-style interface design and prototyping with auto layout, components, variants, vectors and variables."
+limitations: "Alpha; FIG import is best effort and export remains experimental. Full Figma file, rendering and collaboration fidelity is not established. Uses its own sandboxed WASM plug-in system rather than Figma-compatible plug-ins; multiplayer, typography and platform-specific pen input remain incomplete."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/figcraft/main/docs/images/shot-3-prototype.png
     alt: "FigCraft: linked mobile screens in the prototype editor."
   - src: https://raw.githubusercontent.com/storytold/figcraft/main/docs/images/shot-5-vector.png
     alt: "FigCraft: editable vector paths and design properties."
+  - src: https://raw.githubusercontent.com/storytold/figcraft/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/docs/images/shot-1-hero.png
+    alt: "FigCraft editing three hiking-app phone screens in its dark theme, with layers and design properties."
+  - src: https://raw.githubusercontent.com/storytold/figcraft/e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164/docs/images/shot-6-dashboard-light.png
+    alt: "FigCraft editing an analytics dashboard with charts, metric cards and a layers panel in its light theme."

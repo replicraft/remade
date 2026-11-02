@@ -10,13 +10,17 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, Web]
 status: experimental
 compatibility: partial
-description: An independent Final Draft-style screenwriting application with Enter/Tab element flow, SmartType autocompletion, industry-standard pagination with (MORE)/(CONT'D) dialogue breaks, dual dialogue, a scene navigator, index cards, character and scene reports, FDX and Fountain reading and writing, and PDF export.
+summary: "Final Draft-style screenwriting with automatic pagination, SmartType, index cards and Fountain/FDX files."
+description: "A Rust Final Draft-style screenwriter with Enter/Tab element flow, SmartType, screenplay pagination with MORE/CONT'D dialogue breaks, dual dialogue, a scene navigator, index cards, outline and beat board. Opens/saves Fountain and supported FDX, exports PDF, and provides revision mode, locked pages, script comparison, character/scene production reports and local-network collaboration. Includes desktop, browser, CLI and MCP interfaces."
 license: MIT OR Apache-2.0
 docs: https://github.com/NoJuanNobody/scriptcraft/blob/main/docs/parity-checklist.md
-limitations: Early development; revision mode, locked pages, Beat Board, Outline Editor, collaboration and templates are not yet implemented. FDX compatibility is partial and maintainer-reported; Final Draft behavior has not been verified side by side.
-summary: "Final Draft-style screenwriting with automatic pagination, SmartType, index cards and Fountain/FDX files."
+limitations: "Early development; FDX compatibility is partial and maintainer-reported. Final Draft behavior has not been verified side by side. Thesaurus, Format Assistant, watermarks, FDXT template import and focus/typewriter mode remain unfinished."
 screenshots:
   - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/main/docs/images/russian.png
     alt: "ScriptCraft: screenplay editor with Cyrillic text."
   - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/main/docs/explainer/poster.png
     alt: "ScriptCraft: dialogue editing and screenplay tools."
+  - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/fce1d3c57a1964742d989d6488df638fc97f089d/docs/images/hero.png
+    alt: "ScriptCraft screenplay editor with scene navigation, a formatted script page and an inspector."
+  - src: https://raw.githubusercontent.com/NoJuanNobody/scriptcraft/fce1d3c57a1964742d989d6488df638fc97f089d/docs/images/cards.png
+    alt: "Index cards view: four cards in a grid, each with a coloured band, scene number, bold Courier scene heading, page and length in eighths, an editable summary and the cast along the bottom"

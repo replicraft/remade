@@ -3,7 +3,6 @@ slug: vectorcraft
 name: VectorCraft
 authors: [storytold]
 repository: https://github.com/storytold/vectorcraft
-website: https://getartcraft.com/apps/vectorcraft
 browser_url: https://playground.daijro.dev/vectorcraft/
 originals: [adobe-illustrator]
 category: creative
@@ -11,13 +10,18 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: VectorCraft by ArtCraft independently implements Illustrator-style vector illustration, including paths, artboards, typography, SVG, PDF and PDF-compatible AI files.
+summary: "Illustrator-style vector art with paths, artboards, typography and SVG, PDF and compatible AI files."
+description: "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration with paths, artboards, typography, shapes, curve booleans, gradients, symbols and effects. Reads/writes SVG and PDF and supports PDF-compatible AI files. Provides desktop and browser editing plus undoable commands exposed through CLI, JSON control and MCP interfaces. Native Illustrator interchange remains partial."
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/vectorcraft
 discord_server: https://discord.gg/artcraft
 limitations: Under active development with incomplete Illustrator parity. AI support targets PDF-compatible files; full compatibility is not claimed.
-summary: "Illustrator-style vector art with paths, artboards, typography and SVG, PDF and compatible AI files."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-1-neon.png
     alt: "VectorCraft: poster artwork and live appearance effects."
   - src: https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-2-ribbons.png
     alt: "VectorCraft: blended vector shapes and layer controls."
+  - src: https://raw.githubusercontent.com/storytold/vectorcraft/4ee0ef231aa31f50192f0072554fa390957532bf/docs/images/shot-4-bezier.png
+    alt: "Direct Selection tool showing anchor points and Bézier handles on a crescent built with Pathfinder, with the contextual task bar below it"
+  - src: https://raw.githubusercontent.com/storytold/vectorcraft/4ee0ef231aa31f50192f0072554fa390957532bf/docs/images/shot-6-revolve.png
+    alt: "A still life of a vase, a bowl, a sphere and a bottle made with 3D Revolve; the vase is selected and the Revolve dialog shows its rotation, cap and view settings beside the rotation gizmo"

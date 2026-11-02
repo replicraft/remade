@@ -11,18 +11,8 @@ platforms:
   - Windows
 status: alpha
 compatibility: partial
-description: >-
-  Independent numerical computing environment targeting the MATLAB
-  language: a native Rust interpreter for .m files with a column-major
-  matrix core, ~280 builtins, complex and sparse matrices, 2D/3D plotting
-  with SVG/PNG/PDF export, a MATLAB-style desktop Studio, .mat v5 file
-  I/O, a CLI, and MCP/TCP automation channels.
+summary: "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices and mathematical functions."
+description: "A MATLAB-style numerical environment with a native Rust M-file interpreter, a column-major matrix core, complex and sparse matrices, cells, structs, anonymous functions, classdef classes, N-D arrays and numerical/DSP built-ins. Provides a MATLAB-style desktop Studio, CLI, MCP/TCP automation, 2D/3D plotting with SVG/PNG/PDF export and MAT v5 load/save."
 license: MIT OR Apache-2.0
 docs: https://github.com/NibrasAz7/matcraft/blob/master/docs/language.md
-limitations: >-
-  Alpha. No anonymous function handles (@), classdef OOP, N-D indexing,
-  image I/O, or Simulink-style block modeling yet. In a sweep of 638
-  real-world pre-2022 .m files across 8 domains, the maintainer reports ~87%
-  parse cleanly; parsing does not establish execution compatibility.
-  Methodology and ranked gaps are in docs/wild-corpus.md.
-summary: "A MATLAB-style numerical environment with a Rust M-file interpreter, matrices and mathematical functions."
+limitations: "Alpha; compatibility is maintainer-reported. Most toolbox functions, object arrays and parts of class behavior remain incomplete. Corpus parse rates do not establish execution compatibility. Simulink-style modeling is handled separately through SimCraft."

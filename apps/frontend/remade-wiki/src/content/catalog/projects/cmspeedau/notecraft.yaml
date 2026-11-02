@@ -9,8 +9,8 @@ languages: [Rust]
 platforms: [Windows]
 status: experimental
 compatibility: targeting
-description: NoteCraft is a newly started Rust implementation targeting Windows 11 Notepad's familiar interface and observable editing behavior, including file handling, encodings, search, tabs and session restoration.
+summary: "An early Rust project targeting Windows 11 Notepad's editing, tabs, file handling and session workflows."
+description: "A Rust implementation targeting Windows 11 Notepad's interface and editing behavior. Provides encoding-aware file handling, tabs, session restoration including unsaved work, find/replace, undo/redo and Markdown formatting with source and rendered views."
 license: MIT
 docs: https://github.com/cmspeedau/NoteCraft/blob/main/ROADMAP.md
-limitations: Repository created on October 11, 2026. Specification and application foundation are in progress; listed workflows are goals rather than completed features. The reference Notepad version is not yet pinned, and the parity report has no measurements.
-summary: "An early Rust project targeting Windows 11 Notepad's editing, tabs, file handling and session workflows."
+limitations: "Active early development with no published release. Several UI surfaces, settings, desktop integration and performance qualification remain unfinished. Feature implementation and verification differ by workflow; full Notepad parity is not established."

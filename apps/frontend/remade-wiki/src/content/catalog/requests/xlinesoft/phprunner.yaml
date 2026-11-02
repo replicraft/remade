@@ -1,5 +1,5 @@
 # Requested in https://github.com/replicraft/remade/issues/23.
 original: phprunner
+summary: "Wanted: Turn databases into web applications through a visual PHP builder."
 reason: Reproduce PHPRunner's visual database-to-web-app workflow, with CRUD pages, search, master-detail forms, reports, charts, authentication and permissions. Include editable page layouts, custom event code and deployment of generated PHP applications to the user's own infrastructure.
 suggested_names: [FormCraft]
-summary: "Wanted: Turn databases into web applications through a visual PHP builder."

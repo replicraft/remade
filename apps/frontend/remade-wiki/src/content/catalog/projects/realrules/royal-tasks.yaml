@@ -23,3 +23,5 @@ screenshots:
     alt: Royal Tasks board with task lists and cards.
   - src: https://raw.githubusercontent.com/RealRules/royal-tasks/main/docs/screenshots/card.png
     alt: "Royal Tasks: task-card details, checklists and comments."
+  - src: https://raw.githubusercontent.com/RealRules/royal-tasks/fe47a7707b4a34f31e76c25ebd96cedd1ed02f19/docs/screenshots/phone.png
+    alt: "The same board on a phone"

@@ -13,3 +13,6 @@ description: "A standalone pixel-art editor with layered drawing, frame animatio
 license: "MIT"
 docs: "https://github.com/asad-albadi/PixelCraft#readme"
 limitations: "Early alpha. Published v0.1.0 assets cover Linux; Windows installer workflows are documented but a released installer was not verified. Full ICC preview, arbitrary Aseprite Lua APIs, original themes and some ASE encodings or tileset arrangements are unsupported. Other platforms remain unvalidated."
+screenshots:
+  - src: https://raw.githubusercontent.com/asad-albadi/PixelCraft/73c8ab9cbbc377998599c9f9e9948f30e0e9fbad/shots/pixelcraft.png
+    alt: "PixelCraft editing a mushroom sprite with a color palette, layers and animation frames."

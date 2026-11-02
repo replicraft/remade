@@ -5,16 +5,21 @@ name: Armada
 authors: [soapbox-pub]
 repository: https://gitworkshop.dev/soapbox.pub/armada
 mirrors: [https://github.com/soapbox-pub/armada]
+browser_url: https://armada.buzz/
 originals: [discord]
 category: productivity
 languages: [TypeScript]
 platforms: [Web, Windows, macOS, Linux, Android]
 status: beta
 compatibility: partial
+summary: "A Nostr-based Discord alternative with communities, channels, threads, moderation and voice."
 description: A broader Discord alternative with communities, channels, threads, moderation and voice, built on Nostr. Concord communities use end-to-end encrypted events over relays; NIP-29 groups are also supported. Offers a React web client, Electron desktop apps and an Android app, with Discord server-import and bridging workflows.
 license: AGPL-3.0 with additional app-store distribution permission
 website: https://soapbox.pub/armada
-browser_url: https://armada.buzz/
 docs: https://github.com/soapbox-pub/armada#readme
 limitations: Uses Nostr and Concord rather than Discord's service or API; imports and bridges do not establish full Discord compatibility. Relays and voice brokers remain infrastructure dependencies. Encryption properties vary by supported protocol and are upstream-reported. The iOS app is not yet released.
-summary: "A Nostr-based Discord alternative with communities, channels, threads, moderation and voice."
+screenshots:
+  - src: https://raw.githubusercontent.com/soapbox-pub/armada/f1dc48d13ea20f1e2331a6459ff37d40fb9434b7/public/screenshots/discover.png
+    alt: "Armada Discover page with community cards and a server navigation sidebar."
+  - src: https://raw.githubusercontent.com/soapbox-pub/armada/f1dc48d13ea20f1e2331a6459ff37d40fb9434b7/public/screenshots/dms.png
+    alt: "Armada direct-message interface with a conversation list and a new-message composer."

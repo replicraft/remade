@@ -2,7 +2,6 @@ slug: woodsketch
 name: WoodSketch
 authors: [fmastro]
 repository: https://github.com/FMastro/woodsketch
-website: https://woodsketch.net/
 originals: [sketchup]
 category: engineering
 languages: [Rust]
@@ -13,6 +12,7 @@ summary: SketchUp-style woodworking design with joinery, cut lists, cutting diag
 description: A woodworking modeler recreating SketchUp-style drawing, push/pull, inference snapping, groups, components and shortcuts. Adds real lumber sizes, grain direction, furniture templates, editable joinery, wood-movement checks, cutting diagrams and shopping lists. Imports SketchUp 2021 and later SKP files, saves its own drawings and exports OBJ, STL and CNC DXF/SVG. Includes a CLI and MCP server.
 # LICENSE contains Apache-2.0; README, website and Cargo metadata claim MIT OR Apache-2.0.
 license: Apache-2.0
+website: https://woodsketch.net/
 docs: https://github.com/FMastro/woodsketch#readme
 limitations: Early software with rough edges. SketchUp behavior and SKP import coverage are maintainer-reported; full file fidelity and extension compatibility are not established. SketchUp 2020 and older files are not supported.
 screenshots:

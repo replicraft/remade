@@ -3,20 +3,20 @@ slug: civilcraft
 name: CivilCraft
 authors: [getcadcraft]
 repository: https://github.com/getcadcraft/civilcraft
+browser_url: https://getcadcraft.com/use/civilcraft
 originals: [autodesk-civil-3d]
 category: engineering
 languages: [JavaScript]
 platforms: [Windows, Linux, Web]
 status: experimental
 compatibility: partial
+summary: "Civil 3D-style site design with terrain surfaces, alignments, corridors, grading and pipe networks."
 description: A Civil 3D-style site-design application with surfaces from survey points and breaklines, alignments, profiles, corridors, grading and pipe-network workflows. Supports LandXML interchange.
 license: Apache-2.0
-docs: https://github.com/getcadcraft/civilcraft#readme
 website: https://getcadcraft.com/apps/civilcraft
-browser_url: https://getcadcraft.com/use/civilcraft
+docs: https://github.com/getcadcraft/civilcraft#readme
 discord_server: https://discord.gg/chDrtUdCAG
 limitations: In development; compatibility is maintainer-reported. LandXML interchange does not establish complete Civil 3D behavior or native project-object fidelity. Some website content describes planned workflows. macOS and mobile editions are planned.
-summary: "Civil 3D-style site design with terrain surfaces, alignments, corridors, grading and pipe networks."
 screenshots:
   - src: https://raw.githubusercontent.com/getcadcraft/civilcraft/main/screenshots/paper.png
     alt: "CivilCraft: terrain contours and civil design tools."

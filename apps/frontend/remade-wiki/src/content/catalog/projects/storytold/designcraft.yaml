@@ -10,11 +10,11 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: experimental
 compatibility: partial
-description: An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, threaded text frames, paragraph composition and PDF export.
+summary: "InDesign-style page layout with spreads, threaded text frames, typography and PDF export."
+description: "An independent InDesign-style publishing application by ArtCraft with page layouts, spreads, parent pages, threaded text frames, paragraph composition, styles, images and PDF export. Reads supported INDD documents and exchanges IDML, with its own native format and editable PPTX and image exports. Desktop and browser interfaces share commands with a CLI, JSON control channel and MCP server."
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
-limitations: Development and fidelity work are ongoing. Complete InDesign behavior and native document-format compatibility is not asserted by this listing.
-summary: "InDesign-style page layout with spreads, threaded text frames, typography and PDF export."
+limitations: "Pre-alpha. Primary Text Frame autoflow can add pages users cannot delete. Editing and clipboard behavior vary by platform. INDD/INDT reading and IDML exchange are partial, with incomplete typography, rendering and round-trip fidelity. Full InDesign layout and native-format compatibility are not established."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/designcraft/main/docs/images/ui-spread.png
     alt: "DesignCraft: magazine spread in the page-layout editor."

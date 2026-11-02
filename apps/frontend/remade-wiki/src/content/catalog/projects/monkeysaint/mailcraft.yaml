@@ -2,20 +2,23 @@ slug: mailcraft
 name: MailCraft
 authors: [monkeysaint]
 repository: https://github.com/MonkeySaint/mailcraft
-browser_url: https://playground.daijro.dev/mailcraft/
 originals: [microsoft-outlook]
 category: productivity
 languages: [Rust]
 platforms: [Linux, Windows, macOS, FreeBSD, Web]
 status: experimental
 compatibility: partial
+summary: "An Outlook-style email client with familiar mail organization and desktop workflows."
 description: MailCraft reproduces classic Outlook-style mail, calendar, contacts, tasks and notes workflows with a ribbon, reading pane, rules and quick steps. It supports standard mail protocols, local-first storage, common file formats and CLI/MCP automation.
 license: MIT OR Apache-2.0
 docs: https://github.com/MonkeySaint/mailcraft#readme
 limitations: Pre-alpha; compatibility is maintainer-reported. Exchange EWS is unsupported. OAuth sign-in requires a provider-registered client ID. Without an OS credential store, account secrets fall back to an unencrypted local file.
-summary: "An Outlook-style email client with familiar mail organization and desktop workflows."
 screenshots:
   - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/master/docs/images/narrow.png
     alt: "MailCraft: message reader in a narrow window."
   - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/master/docs/images/hero.png
     alt: "MailCraft: mailbox, reading pane and ribbon controls."
+  - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/docs/images/dark.png
+    alt: "MailCraft in the dark theme"
+  - src: https://raw.githubusercontent.com/MonkeySaint/mailcraft/2ac4db88369abcd3d4e9dc025d5b9816c20b50b6/docs/images/classic-ribbon.png
+    alt: "The Classic ribbon with groups and large buttons"

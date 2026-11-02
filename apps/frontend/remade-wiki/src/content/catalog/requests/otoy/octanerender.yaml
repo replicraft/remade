@@ -1,5 +1,5 @@
 # Requested in https://github.com/replicraft/remade/issues/11.
 original: octanerender
+summary: "Wanted: OctaneRender's unbiased spectral GPU rendering, material and lighting workflows and interactive previews."
 reason: Reproduce OctaneRender's unbiased spectral GPU rendering, familiar material and lighting workflows and interactive previews, with compatible scene interchange and cross-platform plugins for common 3D applications.
 suggested_names: [RenderCraft]
-summary: "Wanted: OctaneRender's unbiased spectral GPU rendering, material and lighting workflows and interactive previews."

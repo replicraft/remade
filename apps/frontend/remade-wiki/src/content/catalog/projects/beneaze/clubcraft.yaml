@@ -6,16 +6,20 @@ repository: https://github.com/beneaze/ClubCraft
 originals: [dj-studio, virtualdj]
 category: creative
 languages: [Rust]
-platforms: [macOS, Windows]
-status: alpha
+platforms: [macOS, Windows, Linux]
+status: "beta"
 compatibility: partial
+summary: "Plan DJ mixes and perform live with beat grids, stem separation, automatic cues and matched transitions."
 description: A DJ.Studio-style mix-planning studio and VirtualDJ-style live deck application with beat grids, key analysis, automatic cues, stem separation and beat-matched transitions. Imports DJ.Studio projects, exchanges VirtualDJ database entries and exports WAV mixes with cue sheets. Includes MIDI learning and headless MCP automation.
 license: MIT OR Apache-2.0
 docs: https://github.com/beneaze/ClubCraft#readme
-limitations: Early alpha; DJ.Studio project import is read-only, and full parity with either target is not claimed. Source builds require separate stem-model preparation. macOS releases are ad-hoc signed. Keep VirtualDJ closed during database writes. Model terms are separate; the COCOLA checkpoint was trained on datasets including noncommercial-research material.
-summary: "Plan DJ mixes and perform live with beat grids, stem separation, automatic cues and matched transitions."
+limitations: "Beta; DJ.Studio project import is read-only, and full parity with either target is not claimed. Source builds require separate stem-model preparation. macOS releases are ad-hoc signed; Linux stem separation uses the CPU. Keep VirtualDJ closed during database writes. Model terms are separate; the COCOLA checkpoint was trained on datasets including noncommercial-research material."
 screenshots:
   - src: https://raw.githubusercontent.com/beneaze/ClubCraft/main/docs/images/transition.jpg
     alt: "ClubCraft: mix timeline and stem transition controls."
   - src: https://raw.githubusercontent.com/beneaze/ClubCraft/main/docs/images/settings.jpg
     alt: "ClubCraft: deck configuration and playback settings."
+  - src: https://raw.githubusercontent.com/beneaze/ClubCraft/65e0784cc6a74cfa774b51ef107e19eed83f4573/docs/images/live.jpg
+    alt: "ClubCraft live view with two decks, scrolling waveforms, hot cues and a central mixer."
+  - src: https://raw.githubusercontent.com/beneaze/ClubCraft/65e0784cc6a74cfa774b51ef107e19eed83f4573/docs/images/library.jpg
+    alt: "The library showing a mix"

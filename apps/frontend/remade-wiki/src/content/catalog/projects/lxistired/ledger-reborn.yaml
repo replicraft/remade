@@ -14,6 +14,7 @@ platforms:
 - Web
 status: experimental
 compatibility: partial
+summary: "QuickBooks-style desktop bookkeeping with a local ledger, invoices, bills, inventory and reconciliation."
 description: An independent implementation of QuickBooks Desktop for Mac-style bookkeeping workflows.
   Provides a local SQLite ledger, invoices, bills, payments, inventory, bank reconciliation and financial
   reports, with desktop packages and a browser interface.
@@ -23,7 +24,6 @@ limitations: Preview for one user, one machine and USD. Payroll, tax filing, liv
   multicurrency and complete QuickBooks migration are absent. Report comparisons do not establish
   complete accounting compatibility. Cash-basis output has limited validation. Desktop packages are
   unsigned.
-summary: "QuickBooks-style desktop bookkeeping with a local ledger, invoices, bills, inventory and reconciliation."
 screenshots:
   - src: https://raw.githubusercontent.com/lxistired/ledger-reborn/main/docs/screenshots/accounting.png
     alt: "Ledger Reborn: financial report and report settings."

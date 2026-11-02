@@ -11,11 +11,11 @@ languages:
 - Rust
 status: experimental
 compatibility: partial
-license: MIT
 summary: Scrivener-style novel writing with chapter outlines, storyboards, research notes and publishing exports.
-description: A novel-writing alternative targeting Scrivener-style organization and publishing workflows. Built with Tauri, Svelte and TypeScript, it combines chapter and scene organization, outlines, storyboarding, rich-text editing, character/place templates and research notes. Exports include PDF, DOCX, EPUB, Markdown, HTML and plain text.
-limitations: Scrivener project import/export and full compile compatibility are not established. Timeline, front/back matter and several writing modes remain planned. MIT is declared in package.json; no standalone license file was found.
+description: "A novel-writing alternative targeting Scrivener-style organization and publishing workflows. Built with Tauri, Svelte and TypeScript, it combines chapter and scene organization, outlines, storyboarding, rich-text editing, character/place templates and research notes. Exports include PDF, DOCX, EPUB, Markdown, HTML and plain text. Includes a timeline, focused writing modes and front/back matter."
+license: MIT
 docs: https://github.com/jennraeross/ProseCraft#readme
+limitations: "Scrivener project import/export and full compile compatibility are not established. Advanced mobile synchronization and touch interactions remain unfinished."
 screenshots:
   - src: https://raw.githubusercontent.com/jennraeross/ProseCraft/main/Screenshots/1.26.57%E2%80%AFPM.png
     alt: "ProseCraft: manuscript editor and document inspector."

@@ -70,6 +70,7 @@ it("keeps suite membership in tool categories and project backlinks while compac
 	const extraTargets = toolTargets(playground, catalog.suites).projects;
 	expect(extraTargets).toEqual(
 		expect.arrayContaining([
+			"clothcraft",
 			"lightcraft-classic",
 			"solidcraft",
 			"ucs-mailcraft",
@@ -83,8 +84,8 @@ it("keeps suite membership in tool categories and project backlinks while compac
 		]),
 	);
 	expect(extraTargets).not.toContain("mailcraft");
-	expect(playground.projects).toHaveLength(32);
-	expect(new Set(playground.projects).size).toBe(32);
+	expect(playground.projects).toHaveLength(33);
+	expect(new Set(playground.projects).size).toBe(33);
 
 	for (const slug of suite.projects)
 		expect(

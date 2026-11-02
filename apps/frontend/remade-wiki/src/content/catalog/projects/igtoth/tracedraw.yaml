@@ -1,8 +1,8 @@
 slug: tracedraw
 name: TraceDraw
 authors: [igtoth]
-repository: https://github.com/igtoth/tracedraw
-browser_url: https://igtoth.github.io/tracedraw/
+repository: "https://github.com/tracedraw/tracedraw"
+browser_url: "https://tracedraw.github.io/tracedraw/"
 originals:
 - coreldraw
 category: creative
@@ -15,17 +15,21 @@ platforms:
 - Web
 status: alpha
 compatibility: partial
+summary: "CorelDRAW-style vector and page layout with curves, text, layers, symbols, effects and CDR file support."
 description: A CorelDRAW-style vector and page-layout editor with curves, nodes, text, layers, symbols,
   effects and print export. Implements CDR reading and writing alongside SVG, PDF and other interchange
   formats, with native and browser interfaces.
 license: MIT OR Apache-2.0
-docs: https://github.com/igtoth/tracedraw#readme
+docs: https://github.com/tracedraw/tracedraw#readme
 limitations: Alpha; CDR fidelity is maintainer-reported and needs testing on real documents. Reading
   and writing support different format-version ranges; older output may require older CorelDRAW versions.
   Complete behavior or plugin parity is not claimed. Desktop builds are unsigned.
-summary: "CorelDRAW-style vector and page layout with curves, text, layers, symbols, effects and CDR file support."
 screenshots:
-  - src: https://raw.githubusercontent.com/igtoth/tracedraw/main/docs/images/tracedraw-languages.jpg
+  - src: https://raw.githubusercontent.com/tracedraw/tracedraw/main/docs/images/tracedraw-languages.jpg
     alt: "TraceDraw: document editor with Japanese menus."
-  - src: https://raw.githubusercontent.com/igtoth/tracedraw/main/docs/images/tracedraw-perspective.jpg
+  - src: https://raw.githubusercontent.com/tracedraw/tracedraw/main/docs/images/tracedraw-perspective.jpg
     alt: "TraceDraw: perspective drawing and editing tools."
+  - src: https://raw.githubusercontent.com/tracedraw/tracedraw/abc3a761b4628ca460428e5ced953b1d65b16f15/docs/images/tracedraw-hero.jpg
+    alt: "TraceDraw with an illustrated poster of a lake at dusk: the title is selected, the property bar shows its font, size and alignment, and the Objects panel lists the five layers and their named objects"
+  - src: https://raw.githubusercontent.com/tracedraw/tracedraw/abc3a761b4628ca460428e5ced953b1d65b16f15/docs/images/tracedraw-curves.jpg
+    alt: "A leaf drawn with smooth curves; the Shape tool has every node selected, showing the handles, and the property bar shows the node buttons"

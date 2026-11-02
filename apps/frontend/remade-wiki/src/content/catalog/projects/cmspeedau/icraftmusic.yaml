@@ -9,8 +9,11 @@ languages: [Rust]
 platforms: [Linux]
 status: experimental
 compatibility: partial
-description: A native Rust player reproducing classic iTunes-style local music-library workflows, with album artwork, playlists, a playback queue, search, metadata editing and persistent settings. Uses iTunes 11 as its visual reference.
+summary: "An iTunes-style local music player with album artwork, playlists, a queue and metadata editing."
+description: "A native Rust player reproducing classic iTunes-style local music-library workflows, with album artwork, playlists, a playback queue, search, metadata editing and persistent settings. Uses iTunes 7 as its visual reference."
 license: MIT
 docs: https://github.com/cmspeedau/iCraftMusic#readme
-limitations: Release packaging remains planned; no installer or release artifact is available. Accessibility support is maintainer-reported. Movies, TV shows and podcasts are planned, and iPod synchronization has no decided implementation. Some audio formats are recognized but not playable. Native iTunes library compatibility is not documented.
-summary: "An iTunes-style local music player with album artwork, playlists, a queue and metadata editing."
+limitations: "Linux AppImage releases are available. Accessibility support is maintainer-reported. Broader media and device workflows remain incomplete; native iTunes library compatibility is not documented. Codec recognition does not establish playback support for every file."
+screenshots:
+  - src: https://raw.githubusercontent.com/cmspeedau/iCraftMusic/6307c2c99e078405b34b0c35db4316e36aff3a63/tools/reference/captures/ours-now.png
+    alt: "iCraftMusic displaying albums in a grid with library navigation and playback controls."

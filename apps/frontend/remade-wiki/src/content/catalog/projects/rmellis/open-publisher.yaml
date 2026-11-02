@@ -3,7 +3,6 @@ slug: open-publisher
 name: Open Publisher
 authors: [rmellis]
 repository: https://github.com/rmellis/open-publisher
-website: https://openpublisher.app
 browser_url: https://openpublisher.app/
 originals:
 - microsoft-publisher
@@ -18,11 +17,14 @@ platforms:
 - Web
 status: experimental
 compatibility: partial
-license: GPL-2.0-only
 summary: Publisher-style page layouts with text frames, templates, graphics, PUB import and PDF export.
 description: A desktop and browser publishing alternative to Microsoft Publisher for flyers, brochures, documents and page layouts. Combines text frames, images, shapes, templates and print/export workflows. Uses its own .opub document format and documents import of Publisher .pub files in editable-text or flattened-image modes.
-limitations: Publisher import is maintainer-reported; complete PUB fidelity and native Publisher round-trip compatibility are not established. Projects use .opub rather than the Publisher format.
+license: GPL-2.0-only
+website: https://openpublisher.app
 docs: https://github.com/rmellis/open-publisher#readme
+limitations: Publisher import is maintainer-reported; complete PUB fidelity and native Publisher round-trip compatibility are not established. Projects use .opub rather than the Publisher format.
 screenshots:
   - src: https://raw.githubusercontent.com/rmellis/open-publisher/main/docs/screenshots/batch_image_swap.png
     alt: "Open Publisher: page-layout workspace with image placeholders."
+  - src: https://github.com/user-attachments/assets/af83b0b5-6d2b-4ddd-ac1c-cb0d2e22976a
+    alt: "Open Publisher on Windows 11"

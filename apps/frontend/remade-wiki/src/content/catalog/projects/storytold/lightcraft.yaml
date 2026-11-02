@@ -3,7 +3,6 @@ slug: lightcraft
 name: LightCraft
 authors: [storytold]
 repository: https://github.com/storytold/lightcraft
-website: https://getartcraft.com/apps/lightcraft
 browser_url: https://playground.daijro.dev/lightcraft/
 originals: [adobe-lightroom]
 category: creative
@@ -11,13 +10,18 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: An independent Lightroom-style photography application by ArtCraft with a photo library, non-destructive adjustments, RAW development and masking.
-license: MIT OR Apache-2.0
-discord_server: https://discord.gg/artcraft
-limitations: Camera calibration and some compressed RAW variants remain limited. AI masking, denoise, HDR, video and Classic Print, Book and Map workflows have gaps.
 summary: "Lightroom-style photo management with non-destructive RAW development, adjustments and masking."
+description: "An independent Lightroom-style photography application by ArtCraft with photo-library organization, non-destructive adjustments, RAW development and masking. Provides crop and lens tools, local edits, presets, batch processing and image export, using the same Rust processing engine on desktop and in the browser. CLI commands, a JSON control channel and MCP expose library and development workflows."
+license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/lightcraft
+discord_server: https://discord.gg/artcraft
+limitations: "Alpha; camera color and render fidelity are not measured against Lightroom. Some compressed RAW variants remain preview-only, and lens profiles are limited. Several AI masks are heuristics; denoise models have separate terms. HDR, video and Classic Print, Book and Map workflows have gaps. Windows/macOS and GPU behavior need broader qualification."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/lightcraft/main/docs/images/curve-tetons.jpg
     alt: "LightCraft: photo editor with tone-curve controls."
   - src: https://raw.githubusercontent.com/storytold/lightcraft/main/docs/images/grading-migrant-mother.jpg
     alt: "LightCraft: photo editor with color-grading controls."
+  - src: https://raw.githubusercontent.com/storytold/lightcraft/ebe247710867f8c47512fab1ff488f17815161e5/docs/images/hero-tetons.jpg
+    alt: "LightCraft photo editor displaying a black-and-white mountain landscape with adjustment panels."
+  - src: https://raw.githubusercontent.com/storytold/lightcraft/ebe247710867f8c47512fab1ff488f17815161e5/docs/images/ba-tetons.jpg
+    alt: "Side-by-side before and after of The Tetons and the Snake River: the after has deeper clouds and more open shadows along the river"

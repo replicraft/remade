@@ -15,6 +15,7 @@ platforms:
 - macOS
 status: experimental
 compatibility: partial
+summary: "Parametric CAD with constrained sketches, feature history, assemblies and partial Fusion design import."
 description: An independent parametric CAD application with constrained sketches, feature history,
   parameters and assemblies. Imports Fusion F3D/F3Z designs with supported history and Inventor IPT
   part bodies, alongside other CAD formats. Uses Qt and Open CASCADE with a Rust model, solver and
@@ -25,9 +26,12 @@ limitations: Early active development; format support is maintainer-reported. In
   currently brings bodies without design history. Native Fusion/Inventor export and full behavioral
   parity are not claimed. Direct modeling and some loft combinations remain incomplete. macOS targets
   Apple Silicon.
-summary: "Parametric CAD with constrained sketches, feature history, assemblies and partial Fusion design import."
 screenshots:
   - src: https://mitcad.org/assets/video/mitcad-demo-poster.webp
     alt: "Mitcad: mechanical part in the modeling workspace."
   - src: https://mitcad.org/assets/shots/sketch-constraints.webp
     alt: "Mitcad: dimensioned sketch and constraint controls."
+  - src: https://mitcad.org/assets/shots/feature-edit.webp
+    alt: "Editing an extrude: the command panel, drag handles and parameter labels, the timeline rolled back"
+  - src: https://mitcad.org/assets/shots/rendered-view.webp
+    alt: "The rendered view: the assembly path traced with soft shadows inside the application"

@@ -12,6 +12,9 @@ compatibility: "partial"
 summary: "Self-host a Steam-style library to browse, distribute, install and launch your own DRM-free games."
 description: "A self-hosted game-distribution platform with a library storefront, metadata imports, user accounts and a desktop client for downloading, installing and launching operator-supplied DRM-free games. Reimplements a subset of Steam-style library and distribution workflows on infrastructure the operator controls."
 license: "AGPL-3.0"
+website: "https://droposs.org/"
 docs: "https://github.com/Drop-OSS/drop#readme"
 limitations: "A broader alternative, not a compatible Steam client or replacement for Valve accounts, DRM, purchases, Workshop or multiplayer services. Requires a self-hosted server and separately supplied games. Upstream is in maintenance mode with bug fixes and external contributions still accepted; client packages vary by platform."
-website: "https://droposs.org/"
+screenshots:
+  - src: https://raw.githubusercontent.com/Drop-OSS/drop/497cd53f4d89611666384f231c58222af0a96cac/sites/promo/public/screenshots/app.webp
+    alt: "Drop store displaying a featured game and a library of game cover tiles."

@@ -28,3 +28,7 @@ screenshots:
     alt: "ElixirOffice: document editor with a formatted page."
   - src: https://raw.githubusercontent.com/leag1234/ElixirOffice/main/docs/screenshots/readme/excel-en.png
     alt: "ElixirOffice: spreadsheet editor with cells and a chart."
+  - src: https://raw.githubusercontent.com/leag1234/ElixirOffice/9109c5bdcd794b88064a7454318af0df6ef33cb8/docs/screenshots/readme/powerpoint-en.png
+    alt: "Presentation editor"
+  - src: https://raw.githubusercontent.com/leag1234/ElixirOffice/9109c5bdcd794b88064a7454318af0df6ef33cb8/docs/screenshots/readme/comments-en.png
+    alt: "Comments in the margin"

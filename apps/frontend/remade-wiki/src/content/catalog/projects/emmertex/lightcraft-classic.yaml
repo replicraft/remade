@@ -1,22 +1,26 @@
 # Suggested in https://github.com/replicraft/remade/issues/8.
 slug: lightcraft-classic
-name: LightCraft Classic
+name: "Chromaforge"
 authors: [emmertex]
-repository: https://github.com/emmertex/lightcraft-classic
+repository: "https://github.com/emmertex/chromaforge"
 browser_url: https://playground.daijro.dev/lightcraft-classic/
 originals: [adobe-lightroom]
 category: creative
 languages: [Rust]
-platforms: [Linux, macOS, Windows, FreeBSD, Web]
+platforms: [Linux, macOS, Windows, FreeBSD, Web, Android]
 status: experimental
 compatibility: partial
-description: A downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows, with a seven-module workspace, non-destructive RAW development, photo catalogs and Immich integration. Shared changes are intended to flow back upstream.
-license: MIT AND Apache-2.0
-docs: https://github.com/emmertex/lightcraft-classic#readme
-limitations: Compatibility is incomplete and maintainer-reported. Expanded Lightroom catalog support, camera calibration, some compressed RAW formats, AI masking and denoising, HDR and video remain works in progress; real-camera tethering checks are pending.
 summary: "Lightroom Classic-style photo catalogs and non-destructive RAW development, built on LightCraft."
+description: "Chromaforge, formerly LightCraft Classic, is a downstream fork of ArtCraft's LightCraft focused on Lightroom Classic workflows. Provides a seven-module workspace, non-destructive RAW development, photo catalogs, masking and Immich integration."
+license: MIT AND Apache-2.0
+docs: "https://github.com/emmertex/chromaforge#readme"
+limitations: "Compatibility is incomplete and maintainer-reported. Camera-color calibration and verification across camera models remain incomplete. AI model downloads are optional; sky masks are heuristic and denoise quality is unverified. HDR display covers only the loupe, and video editing is limited to global adjustments. Android support is early."
 screenshots:
-  - src: https://raw.githubusercontent.com/emmertex/lightcraft-classic/main/docs/images/classic/library.jpg
-    alt: "LightCraft Classic: photo library grid and catalog panels."
-  - src: https://raw.githubusercontent.com/emmertex/lightcraft-classic/main/docs/images/classic/develop.jpg
-    alt: "LightCraft Classic: develop workspace with a landscape photograph."
+  - src: https://raw.githubusercontent.com/emmertex/chromaforge/main/docs/images/classic/library.jpg
+    alt: "Chromaforge: photo library grid and catalog panels."
+  - src: https://raw.githubusercontent.com/emmertex/chromaforge/main/docs/images/classic/develop.jpg
+    alt: "Chromaforge: develop workspace with a landscape photograph."
+  - src: https://raw.githubusercontent.com/emmertex/chromaforge/b976eac38a7bb150af51a8112e9e5147ea15c7ba/docs/images/classic/map.jpg
+    alt: "Map module: an OpenStreetMap world map with the location filter bar and Map Style, Saved Locations and Tracklog panels"
+  - src: https://raw.githubusercontent.com/emmertex/chromaforge/b976eac38a7bb150af51a8112e9e5147ea15c7ba/docs/images/classic/book.jpg
+    alt: "Book module: a multi-page view of a landscape book laid out automatically, with Book Settings on the right"

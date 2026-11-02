@@ -3,7 +3,6 @@ slug: wordcraft
 name: WordCraft
 authors: [storytold]
 repository: https://github.com/storytold/wordcraft
-website: https://getartcraft.com/apps/wordcraft
 browser_url: https://playground.daijro.dev/wordcraft/
 originals: [microsoft-word]
 category: productivity
@@ -11,13 +10,18 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, DOCX reading and writing, and PDF export.
-license: MIT OR Apache-2.0
-discord_server: https://discord.gg/artcraft
-limitations: Development and fidelity work are ongoing. Full Word layout, behavior and document-format parity is not asserted by this listing.
 summary: "Word-style document editing with styles, tables, review tools, DOCX files and PDF export."
+description: "An independent Word-style document editor by ArtCraft with ribbon workflows, paragraph styles, tables, review tools, track changes, references and mail merge. Reads/writes DOCX, ODT, RTF, HTML, Markdown, LaTeX and plain text, opens supported legacy DOC files and exports PDF. Desktop and browser interfaces share document commands with the CLI, JSON control channel and MCP server; Word layout and format fidelity remain partial."
+license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/wordcraft
+discord_server: https://discord.gg/artcraft
+limitations: "Alpha; real-world DOCX round-trip and page-layout fidelity against Word remain unverified. Pagination, native ink rendering, embedded objects, proofing languages and some legacy formats have gaps. Upstream reports platform-specific crashes and freezes. Menu coverage does not establish full Word compatibility."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/wordcraft/main/docs/images/review.png
     alt: "WordCraft: document review with tracked changes and comments."
   - src: https://raw.githubusercontent.com/storytold/wordcraft/main/docs/images/references.png
     alt: "WordCraft: document references and page-navigation controls."
+  - src: https://raw.githubusercontent.com/storytold/wordcraft/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/docs/images/hero.png
+    alt: "WordCraft editing The Open Studio Handbook with the Home ribbon and document navigation."
+  - src: https://raw.githubusercontent.com/storytold/wordcraft/242e850aaad6bf38e1cd2be4122cc7cb9e5a15a8/docs/images/design.png
+    alt: "The Design tab showing style-set previews; the document is set in a serif theme with plum headings underlined by thin rules and a pale diagonal DRAFT watermark behind the text"

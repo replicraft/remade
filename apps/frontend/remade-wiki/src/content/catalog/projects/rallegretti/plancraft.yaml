@@ -13,6 +13,7 @@ platforms:
 - Linux
 status: experimental
 compatibility: partial
+summary: "Microsoft Project-style planning with tasks, dependencies, Gantt charts, resources and workload views."
 description: A Project-style desktop planner with tasks, dependencies, Gantt charts, milestones,
   people, costs and workload views. Supports resource planning and a shared command engine exposed
   through MCP so agents can inspect and edit plans with undo.
@@ -21,9 +22,12 @@ docs: https://github.com/rallegretti/PlanCraft#readme
 limitations: Early preview; Microsoft Project native file and complete scheduling compatibility are
   not documented. Uses its own project data rather than claiming MPP fidelity. Windows packages are
   unsigned and macOS builds are not notarized; feature behavior is maintainer-reported.
-summary: "Microsoft Project-style planning with tasks, dependencies, Gantt charts, resources and workload views."
 screenshots:
   - src: https://raw.githubusercontent.com/rallegretti/PlanCraft/main/docs/images/gantt.png
     alt: "PlanCraft: project schedule and critical-path chart."
   - src: https://raw.githubusercontent.com/rallegretti/PlanCraft/main/docs/images/gantt-dark.png
     alt: "PlanCraft: project schedule in the dark theme."
+  - src: https://raw.githubusercontent.com/rallegretti/PlanCraft/7cf3e28d3de99e9767afeed79cf1b96448e57058/docs/images/milestones.png
+    alt: "Milestones"
+  - src: https://raw.githubusercontent.com/rallegretti/PlanCraft/7cf3e28d3de99e9767afeed79cf1b96448e57058/docs/images/resource-usage.png
+    alt: "Resource Usage"

@@ -4,7 +4,6 @@ name: Open Notebook
 authors:
 - lfnovo
 repository: https://github.com/lfnovo/open-notebook
-website: https://www.open-notebook.ai
 originals:
 - gemini-notebook
 category: productivity
@@ -15,11 +14,12 @@ platforms:
 - Web
 status: experimental
 compatibility: partial
-license: MIT
 summary: Self-hosted research notebooks with source-based AI chat, document processing and audio summaries.
 description: A self-hosted alternative to Gemini Notebook, formerly NotebookLM, for organizing research sources and discussing them with AI. Imports documents and other media into notebooks, supports source-grounded chat, search and transformations, and generates podcast-style audio. Supports multiple AI providers and local models.
-limitations: Uses its own storage, interfaces and provider configuration; Google notebook import, account synchronization and full product parity are not established. Hosting and configured models are required; external providers may have separate costs and data policies.
+license: MIT
+website: https://www.open-notebook.ai
 docs: https://github.com/lfnovo/open-notebook#readme
+limitations: Uses its own storage, interfaces and provider configuration; Google notebook import, account synchronization and full product parity are not established. Hosting and configured models are required; external providers may have separate costs and data policies.
 screenshots:
   - src: https://raw.githubusercontent.com/lfnovo/open-notebook/main/docs/assets/asset_list.png
     alt: "Open Notebook: notebook workspace with sources and chat panels."

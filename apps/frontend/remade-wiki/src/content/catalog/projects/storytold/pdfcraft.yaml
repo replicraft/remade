@@ -3,7 +3,6 @@ slug: pdfcraft
 name: PdfCraft
 authors: [storytold]
 repository: https://github.com/storytold/pdfcraft
-website: https://getartcraft.com/apps/pdfcraft
 browser_url: https://playground.daijro.dev/pdfcraft/
 originals: [adobe-acrobat]
 category: productivity
@@ -11,13 +10,18 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting PDF documents.
+summary: "Acrobat-style PDF viewing, page organization, annotation, forms and document protection."
+description: "An independent Acrobat-style PDF workbench by ArtCraft for viewing, organizing, annotating, filling and protecting documents. Adds supported text/image editing, page manipulation, redaction, OCR, conversion, signature workflows and PDF inspection. Runs natively and in the browser; CLI, JSON control and MCP interfaces automate the same document operations. Editing, conversion and standards support remain partial."
 license: MIT OR Apache-2.0
+website: https://getartcraft.com/apps/pdfcraft
 discord_server: https://discord.gg/artcraft
 limitations: Young project. Existing-text editing, OCR, Office conversion, signature validation and PDF preflight remain incomplete.
-summary: "Acrobat-style PDF viewing, page organization, annotation, forms and document protection."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-viewer.png
     alt: "PdfCraft: pDF document with annotation panels."
   - src: https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-scripts.png
     alt: "PdfCraft: multilingual document displayed in the PDF viewer."
+  - src: https://raw.githubusercontent.com/storytold/pdfcraft/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/images/pdfcraft-twoup.png
+    alt: "Two facing pages in Read mode with the dark theme: the Foreword and the Setting Text chapter with its drop cap and pull quote"
+  - src: https://raw.githubusercontent.com/storytold/pdfcraft/f47618f59b522a9cc80c061e0d540eef8e494f5d/docs/images/pdfcraft-dark.png
+    alt: "The dark theme showing the Code and Images chapter, a syntax-coloured listing and a fractal image, with the comments panel open"

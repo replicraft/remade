@@ -3,21 +3,25 @@ slug: honeydew
 name: Honeydew
 authors: [daijro]
 repository: https://github.com/daijro/honeydew
+browser_url: https://playground.daijro.dev/honeydew/
 originals: [fl-studio-mobile]
 category: creative
 languages: [Rust]
-platforms: [Windows, macOS, Linux, Web]
+platforms: [Windows, macOS, Linux, Web, Android]
 status: experimental
 compatibility: partial
+summary: "FL Studio Mobile-style music production with a piano roll, drum editor, mixer, instruments and automation."
 description: Independent Rust implementation of FL Studio Mobile for desktop and browser, with a playlist, piano roll, drum editor, mixer, instrument and effects racks, automation, chords and audio editing. The maintainer demonstrates opening FL Studio Mobile demo projects as .flm files. Bundles separately licensed replacement sounds.
 license: GPL-3.0-or-later
 website: https://playground.daijro.dev/honeydew/
-browser_url: https://playground.daijro.dev/honeydew/
 docs: https://github.com/daijro/honeydew#readme
-limitations: Full FL Studio Mobile parity is not independently verified; native Android and iOS builds are not documented. Original samples and presets are not bundled; desktop users can import them from their own licensed copy. The browser version cannot import original content, and some shortcuts remain controlled by the browser.
-summary: "FL Studio Mobile-style music production with a piano roll, drum editor, mixer, instruments and automation."
+limitations: "Full FL Studio Mobile parity is not independently verified. Android can play and save songs inside the app but lacks microphone recording, MIDI devices and file import/export; uninstalling deletes its songs. iOS builds are not documented. Original sounds are not bundled; desktop users can import their own licensed content. Browser restrictions apply to imports and shortcuts."
 screenshots:
   - src: https://raw.githubusercontent.com/daijro/honeydew/main/assets/screenshots/04-drum-editor.webp
     alt: "Honeydew: drum pattern editor and song arrangement."
   - src: https://raw.githubusercontent.com/daijro/honeydew/main/assets/screenshots/09-automation-editor.webp
     alt: "Honeydew: automation curve editor."
+  - src: https://raw.githubusercontent.com/daijro/honeydew/5543bdce441f57d3a45564f7d9821e931ac20312/assets/screenshots/01-playlist-sampler.webp
+    alt: "The playlist and a sampler"
+  - src: https://raw.githubusercontent.com/daijro/honeydew/5543bdce441f57d3a45564f7d9821e931ac20312/assets/screenshots/02-playlist-supersaw.webp
+    alt: "The playlist and a synth"

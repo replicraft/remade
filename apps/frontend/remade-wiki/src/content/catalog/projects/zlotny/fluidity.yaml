@@ -8,8 +8,13 @@ languages: [Rust, Swift]
 platforms: [macOS, Windows, Linux]
 status: stable
 compatibility: partial
+summary: "Manage OpenVPN connections with Viscosity-style menus, traffic monitoring, DNS controls and a kill switch."
 description: Independent OpenVPN client modeled on Viscosity's menu bar workflow. Manages connections in folders, shows live traffic and logs, and handles DNS, proxies, kill switch, credentials in the system keychain, OTP challenges, smart cards and reconnects. Includes a connection editor, import of .ovpn files and other clients' bundles, scripts, a CLI and managed deployments. A privileged service runs OpenVPN so the app runs as the user.
 license: 0BSD
 website: https://fluidity.ndrs.es
 limitations: Imports a Viscosity connection's OpenVPN config and certificates, but not its app-specific settings. System proxy push and the global shortcut are macOS only. Windows needs OpenVPN installed separately.
-summary: "Manage OpenVPN connections with Viscosity-style menus, traffic monitoring, DNS controls and a kill switch."
+screenshots:
+  - src: https://raw.githubusercontent.com/zlotny/fluidity-vpn/65c7b3dda4b933e7d23db7773f3d1644b7aba040/site/img/editor.png
+    alt: "Fluidity connection editor with server, port, protocol and device settings."
+  - src: https://raw.githubusercontent.com/zlotny/fluidity-vpn/65c7b3dda4b933e7d23db7773f3d1644b7aba040/site/img/details-traffic.png
+    alt: "Fluidity connection details showing live upload and download traffic graphs."

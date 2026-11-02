@@ -9,9 +9,12 @@ category: operating-systems
 languages: [C, Assembly]
 status: stable
 compatibility: high
+summary: "A DOS-compatible operating system for running legacy MS-DOS applications and games on PCs."
 description: FreeDOS independently implements a DOS-compatible operating system for running legacy MS-DOS applications and games on IBM-compatible PCs. Its kernel derives from Pat Villani's DOS-C and implements DOS services alongside a separately maintained command interpreter and utilities.
 license: GPL-2.0-or-later
 website: https://www.freedos.org/
 docs: https://github.com/FDOS/kernel#readme
 limitations: DOS compatibility is project-reported, not independently verified for every application or hardware configuration. Targets DOS programs rather than modern Windows applications. Distribution components use their own licenses. The catalog target covers later MS-DOS releases, not the early versions Microsoft has open-sourced.
-summary: "A DOS-compatible operating system for running legacy MS-DOS applications and games on PCs."
+screenshots:
+  - src: https://www.freedos.org/_images/screenshots/screenshot_freedos14.png
+    alt: "FreeDOS 1.4 command prompt after startup, showing loaded modules and memory usage."

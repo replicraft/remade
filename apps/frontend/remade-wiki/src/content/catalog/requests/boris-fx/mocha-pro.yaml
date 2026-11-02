@@ -1,5 +1,5 @@
 # Requested in https://github.com/replicraft/remade/issues/14.
 original: mocha-pro
+summary: "Wanted: Mocha Pro's planar motion tracking and VFX workflows, including rotoscoping, object removal, stabilization and mesh tracking."
 reason: Reproduce Mocha Pro's planar motion tracking and familiar VFX workflows, including rotoscoping, object removal, stabilization and mesh tracking, with compatible tracking and mask exports and integration into compositing applications.
 suggested_names: [TrackCraft]
-summary: "Wanted: Mocha Pro's planar motion tracking and VFX workflows, including rotoscoping, object removal, stabilization and mesh tracking."

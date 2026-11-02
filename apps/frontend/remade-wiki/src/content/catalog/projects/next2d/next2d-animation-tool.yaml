@@ -4,17 +4,20 @@ slug: next2d-animation-tool
 name: Next2D Animation Tool
 authors: [next2d]
 repository: https://github.com/Next2D/tool.next2d.app
+browser_url: https://tool.next2d.app/
 originals: [adobe-animate]
 category: creative
 languages: [JavaScript]
 platforms: [Web]
 status: beta
 compatibility: partial
+summary: "Animate-style browser animation with timelines, layers, symbols, motion tweens and JavaScript frame scripting."
 description: Browser-based animation authoring with an Animate/Flash-style stage, timeline, layers, keyframes, symbols, motion tweens, onion skin, filters and JavaScript frame scripting. Supports simplified SWF import and exports JSON for Next2D Player, WEBM, APNG and animated GIF.
 license: MIT
 website: https://next2d.app/en/
-browser_url: https://tool.next2d.app/
 docs: https://next2d.app/en/usage/
 discord_server: https://discord.gg/6c9rv5Uns5
 limitations: SWF import is simplified. FLA/XFL project compatibility and ActionScript support are not documented; frame scripting uses JavaScript, and exported JSON targets Next2D Player.
-summary: "Animate-style browser animation with timelines, layers, symbols, motion tweens and JavaScript frame scripting."
+screenshots:
+  - src: https://raw.githubusercontent.com/Next2D/tool.next2d.app/6a2ff02bfe58c43171459aa50cb88a53f6e4c514/docs/assets/img/ogp.png
+    alt: "Next2D animation editor with a character on the canvas, a script editor and a layer timeline."

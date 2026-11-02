@@ -8,16 +8,20 @@ originals: [adobe-substance-3d-designer]
 category: creative
 languages: [Rust]
 platforms: [Windows, Linux, macOS]
-status: beta
+status: "alpha"
 compatibility: partial
-description: A Substance Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D and 3D previews, mesh baking and command-line rendering. Uses its own graph and published-material formats.
+summary: "Substance Designer-style procedural materials with node graphs, previews, mesh baking and texture exports."
+description: "A Substance 3D Designer-style procedural material editor with texture, function and pattern-program graphs, generators, filters, subgraphs, 2D/3D previews, mesh baking and command-line rendering. Uses SBS projects and documents Designer-node compatibility. Outputs texture maps and MaterialX materials; inherited and third-party code retains its own license terms."
 license: MIT OR Apache-2.0
 docs: https://github.com/PiJellyPin/MaterialCraft#readme
 discord_server: https://discord.gg/9KVCNatNvX
-limitations: Initial beta release. Third-party material and project formats are unsupported. Splines, AxF import, OCIO/ACE color management, scripting, SVG gradients, CFF fonts, path-traced rendering and custom preview meshes remain unimplemented. Compatibility is maintainer-reported.
-summary: "Substance Designer-style procedural materials with node graphs, previews, mesh baking and texture exports."
+limitations: "Upstream currently describes the project as early alpha. SBS interoperability and node coverage are maintainer-reported, not full Designer compatibility. The roadmap still lists end-to-end workflow completion, MaterialX export, downstream engine qualification, and Android/Web deployment as unfinished."
 screenshots:
   - src: https://github.com/user-attachments/assets/aed97881-c091-4ef3-b2f4-065f99dd44fe
     alt: "MaterialCraft: procedural material graph and previews."
   - src: https://github.com/user-attachments/assets/90076571-4278-4cdf-bf47-b01343185785
     alt: "MaterialCraft: material nodes and connections."
+  - src: https://github.com/user-attachments/assets/f41d3786-15ba-4205-9371-06089cf96587
+    alt: "Wood-patterned material on a sphere in MaterialCraft"
+  - src: https://github.com/user-attachments/assets/d92aed6e-ef2e-40e5-a1da-a1341e2d1a4e
+    alt: "Purple riveted metal plates displayed on a sphere in MaterialCraft"

@@ -9,8 +9,8 @@ languages: [Rust]
 platforms: [Windows, macOS, Linux]
 status: experimental
 compatibility: targeting
+summary: "Microsoft Project-style scheduling with Gantt charts, task dependencies, calendars and resource planning."
 description: ProjectCraft independently implements Microsoft Project-style desktop scheduling in Rust. Provides a task sheet and Gantt chart, summary tasks, four dependency types with lag, calendars, constraints, critical-path scheduling and slack. Its roadmap also documents resource assignments, task types and costs. Changes share a command engine with CLI access.
 license: MIT OR Apache-2.0
 docs: https://github.com/UCS-Care-Group/projectcraft#readme
 limitations: Pre-alpha with no releases yet; build from source. Coverage is maintainer-reported. Resource calendars, resource leveling, baselines, tracking, MPP/XML/XER interchange and printing remain incomplete or planned. Full Microsoft Project file and behavioral compatibility is not claimed.
-summary: "Microsoft Project-style scheduling with Gantt charts, task dependencies, calendars and resource planning."

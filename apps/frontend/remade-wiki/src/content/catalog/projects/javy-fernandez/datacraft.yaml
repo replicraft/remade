@@ -8,21 +8,20 @@ originals:
 category: developer-tools
 languages:
 - Rust
-platforms:
-- macOS
+platforms: [macOS, Windows, Linux]
 status: experimental
 compatibility: partial
-description: A DataGrip-style native database client with schema browsing, highlighted SQL consoles,
-  completion and transactional table-data editing. Connects to PostgreSQL, SQL Server and SQLite,
-  exports query results to common text formats and stores credentials in the macOS Keychain.
+summary: "Browse databases, write SQL and edit table data in a native DataGrip-style client."
+description: "A DataGrip-style native database client with schema browsing, highlighted SQL consoles, completion, transactional table-data editing and query-result exports to common text formats. Supports PostgreSQL, SQL Server, SQLite, MySQL/MariaDB, Oracle and other documented engines. Provides SSH tunneling and OS credential storage through macOS Keychain, Windows Credential Manager or Linux Secret Service."
 license: MIT OR Apache-2.0
 docs: https://github.com/javy-fernandez/datacraft#readme
-limitations: Early implementation; full DataGrip feature, project and plugin compatibility is not
-  documented. The README documents macOS builds only. Packages are ad-hoc signed rather than notarized.
-  Other database engines and cross-platform behavior are not established.
-summary: "Browse databases, write SQL and edit table data in a native DataGrip-style client."
+limitations: "Early implementation; full DataGrip feature, project and plugin compatibility is not documented. Database-engine coverage varies. macOS builds are not notarized and Windows executables are unsigned. Linux requires its documented graphics and credential-service dependencies."
 screenshots:
   - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/main/docs/screenshots/readme/workspace-dark.png
     alt: "DataCraft: database table and object browser."
   - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/main/docs/screenshots/readme/objects-list.png
     alt: "DataCraft: table properties beside database records."
+  - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/b1011176700d4f7cc371fd4f8670b7fa6e3d195c/docs/screenshots/readme/objects-grid.png
+    alt: "Full DataCraft window with compact object columns, colored folders and the inspector"
+  - src: https://raw.githubusercontent.com/javy-fernandez/datacraft/b1011176700d4f7cc371fd4f8670b7fa6e3d195c/docs/screenshots/readme/sql-console.png
+    alt: "Full DataCraft window with a highlighted SQL query and its result grid"

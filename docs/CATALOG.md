@@ -65,6 +65,12 @@ Organize attributed files as `projects/<github-user>/<slug>.yaml` and `tools/<gi
 
 Entry cards, detail pages and featured cards show a white **Author:** label for one author or **Authors:** for multiple authors, followed by lime GitHub handles linked to their author routes. Cards keep the label and handles inline where space permits; detail pages place handles on the next line. Allow handles to wrap with spacing between them and no separator dots. Omit the entire author block when no author is recorded. Author pages include every explicitly attributed entry, with separate reimplementation and supporting-tool sections.
 
+## Field order
+
+Keep project and tool `summary` immediately before `description`, and request `summary` immediately before `reason`. Other fields follow the existing majority order, as shown in the examples below. Keep identity and repository fields first, project metadata before the text, and screenshots last. Omit optional fields when unavailable.
+
+Field reordering must preserve values, source comments, multiline text and the order of lists. In particular, do not sort screenshots or the maintainer-curated featured list. Explicit maintainer holds may leave a listing unchanged until its scheduled review.
+
 ## Project record
 
 `apps/frontend/remade-wiki/src/content/catalog/projects/<github-user>/<slug>.yaml` has the fields below:

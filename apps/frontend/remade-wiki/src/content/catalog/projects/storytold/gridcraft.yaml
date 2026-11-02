@@ -10,13 +10,17 @@ languages: [Rust]
 platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
-description: An independent Excel-style spreadsheet application by ArtCraft with formulas, workbook recalculation, formatting, tables, charts and XLSX reading and writing.
+summary: "Excel-style spreadsheets with formulas, formatting, tables, charts and XLSX file support."
+description: "An independent Excel-style spreadsheet application by ArtCraft with formulas, incremental workbook recalculation, dynamic arrays, formatting, tables, charts and XLSX reading/writing. Includes conditional formats, validation, PivotTable workflows, Solver and analysis tools; imports supported legacy XLS content. Desktop and browser interfaces share commands with the CLI, JSON control channel and MCP server."
 license: MIT OR Apache-2.0
 discord_server: https://discord.gg/artcraft
 limitations: Alpha; compatibility is maintainer-reported. XLSX fidelity on real-world files, very large workbooks, multithreaded recalculation, chart depth, multilingual text and legacy XLS import still need work.
-summary: "Excel-style spreadsheets with formulas, formatting, tables, charts and XLSX file support."
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/gridcraft/main/docs/images/budget.png
     alt: "GridCraft: budget worksheet with conditional formatting."
   - src: https://raw.githubusercontent.com/storytold/gridcraft/main/docs/images/grades-formulas.png
     alt: "GridCraft: gradebook worksheet with calculated results."
+  - src: https://raw.githubusercontent.com/storytold/gridcraft/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/images/dark-insert.png
+    alt: "The sales dashboard in dark mode with the Insert ribbon tab open, showing Pivot Table, Table, Pictures, Shapes, chart, sparkline, link, comment, text box and symbol buttons"
+  - src: https://raw.githubusercontent.com/storytold/gridcraft/488f9982ebf05be9bfe581489d0edc6e3918eec7/docs/images/pivot.png
+    alt: "GridCraft displaying a revenue pivot table with the Pivot Table Fields panel open."

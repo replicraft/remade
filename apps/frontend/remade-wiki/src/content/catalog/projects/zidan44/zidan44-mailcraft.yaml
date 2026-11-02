@@ -9,13 +9,15 @@ languages: [Rust]
 platforms: [Windows, macOS, Linux, Web]
 status: experimental
 compatibility: partial
+summary: "Outlook-style email with offline search, local caching, threaded messages, rules and account management."
 description: An independent Outlook-style mail client with local caching, offline search, threaded reading, composition, rules and account management. Supports IMAP/SMTP, JMAP and Exchange workflows, calendar and contacts, PST import and mail export, plus a CLI. A browser build handles JMAP accounts.
 license: MIT OR Apache-2.0
 docs: https://github.com/ZIDAN44/mailcraft/blob/main/docs/gaps.md
 limitations: Browser accounts require JMAP and server CORS support. PST export writes mail only, omitting some item types and metadata. Kerberos-only Exchange and ActiveSync are unsupported. HTML positioning and background images differ; mixed-direction editing and native Wayland attachment dragging have gaps. Full Outlook compatibility is not claimed.
-summary: "Outlook-style email with offline search, local caching, threaded messages, rules and account management."
 screenshots:
   - src: https://raw.githubusercontent.com/ZIDAN44/mailcraft/main/docs/images/reading.png
     alt: "MailCraft: mailbox folders and message reader."
   - src: https://raw.githubusercontent.com/ZIDAN44/mailcraft/main/docs/images/search-dark.png
     alt: "MailCraft: mailbox search in the dark theme."
+  - src: https://raw.githubusercontent.com/ZIDAN44/mailcraft/9413d410d24788fb7d145e85de4eb2c67e8b4697/docs/images/compose.png
+    alt: "MailCraft composing a reply with formatting controls and recipient fields beside the message list."

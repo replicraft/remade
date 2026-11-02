@@ -9,13 +9,15 @@ languages: [Kotlin]
 platforms: [Android]
 status: alpha
 compatibility: partial
+summary: "Edit photos and videos offline on Android with stickers, captions, background removal, trimming and music."
 description: Kadar independently implements Picsart- and InShot-style mobile editing on Android, including layered photo editing with on-device background removal, captions and stickers, and video trimming, speed, music and timed text and sticker layers.
 license: GPL-3.0-or-later
 docs: https://github.com/n-delic/kadar#readme
 limitations: Early alpha and a broader alternative, not a full clone. No Picsart or InShot project-file compatibility, generative effects, templates, sequential clip editing or transitions. Android only; background removal depends on Google Play services and proprietary ML Kit, covered by a documented GPL linking permission.
-summary: "Edit photos and videos offline on Android with stickers, captions, background removal, trimming and music."
 screenshots:
   - src: https://raw.githubusercontent.com/n-delic/kadar/main/docs/screenshots/photo-editor.jpg
     alt: "Kadar: photo-editing canvas with a text overlay."
   - src: https://raw.githubusercontent.com/n-delic/kadar/main/docs/screenshots/video-editor.jpg
     alt: "Kadar: vertical video preview and caption timeline."
+  - src: https://raw.githubusercontent.com/n-delic/kadar/babf9f1a7702f975174ba906c5c5a606821a60fb/docs/screenshots/text-tools.jpg
+    alt: "Kadar editing a photo caption with font and text-style controls."

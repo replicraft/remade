@@ -9,8 +9,8 @@ languages: [C++]
 platforms: [Windows]
 status: experimental
 compatibility: partial
+summary: "Spine-style 2D skeletal animation with bones, skinning, weight painting and Spine JSON import."
 description: A source-available 2D skeletal animation editor built on Godot, with Spine JSON import, bone hierarchies, inverse kinematics, skinning, weight painting, keyframe animation and resource export. Provides its own document format and runtime integrations rather than using Spine's editor or commercial runtime.
 license: LicenseRef-AgeSkeleton-Free-RestrictedCommercial-1.0
 docs: https://github.com/AgeChaos/AgeSkeleton#readme
 limitations: Source-available, not OSI open source. Its custom license prohibits external commercial distribution, services and commercial runtime integration. Spine import does not support every version or feature. Current editor builds target Windows x64; other platforms and runtime integrations have differing validation coverage.
-summary: "Spine-style 2D skeletal animation with bones, skinning, weight painting and Spine JSON import."

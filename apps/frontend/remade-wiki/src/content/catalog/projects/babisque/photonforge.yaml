@@ -8,10 +8,10 @@ originals:
 category: engineering
 languages:
 - Rust
-status: planned
-compatibility: targeting
+status: experimental
+compatibility: partial
+summary: LightBurn-style SVG layout, per-layer cut settings, toolpath preview and G-code generation, initially targeting GRBL.
+description: "An early Rust implementation of LightBurn-style laser layout workflows, initially targeting GRBL. Its layered workspace separates geometry, SVG import, G-code generation, device communication and an egui GUI. Tools arrange and edit shapes, configure per-layer cuts, preview toolpaths and save G-code, with undo/redo. Read-only GRBL connection code is present; machine control and job streaming remain planned."
 license: GPL-3.0-or-later
-summary: Planned LightBurn-style laser engraving and cutting software, initially targeting GRBL controllers.
-description: An early Rust project planning a LightBurn-style laser engraving and cutting workflow, initially for GRBL controllers. The workspace separates geometry, file import/export, G-code generation, device communication and the GUI. Its README identifies the current stage as Phase 0 workspace bootstrap; these are planned capabilities, not a finished laser-control application.
-limitations: Workspace scaffolding only; end-to-end editing, toolpath generation, hardware streaming and LightBurn project-file compatibility are not established. Do not treat the planned workflow as implemented machine-control support.
 docs: https://github.com/babisque/PhotonForge#readme
+limitations: "Experimental; GUI workflows and G-code simulation lack recorded manual verification. Read-only GRBL access has not been tested on hardware. Machine control/streaming, raster engraving and native project files remain planned; no LightBurn project-file interoperability is documented."
