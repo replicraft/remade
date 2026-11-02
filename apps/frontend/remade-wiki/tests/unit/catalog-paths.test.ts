@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { expect, it, vi } from "vitest";
 
 it("loads every catalog source, fallback vendors, metadata and local screenshots from an encoded checkout path", async () => {
+	const originalCwd = process.cwd();
 	const temporary = await mkdtemp(join(tmpdir(), "remade-path-review-"));
 	const repository = join(temporary, "checkout café #100%");
 	const app = join(repository, "apps", "frontend", "remade-wiki");
@@ -110,6 +111,7 @@ screenshots:
 		});
 		expect((await loader.loadMetadata())["example/path-review"].stars).toBe(12);
 	} finally {
-		await rm(temporary, { recursive: true, force: true });
+		process.chdir(originalCwd);
+		await rm(temporary, { recursive: true, force: true, maxRetries: 5 });
 	}
 }, 30_000);
