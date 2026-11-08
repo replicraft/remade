@@ -1,0 +1,373 @@
+{
+	"checked_at": "2026-11-08T19:11:40.018553+00:00",
+	"scope": "Focused report-only editorial and representative-source review of all 20 issues in the prior deeper-review group. No project execution, tests, publication, issue comments or closures. Not a security, legal or exhaustive provenance certification.",
+	"repositories": {
+		"Formsmith746/SketchForge-PCB": {
+			"url": "https://github.com/Formsmith746/SketchForge-PCB",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "main",
+				"target": {
+					"oid": "bbbb55276faa11eb23784f4b8d7c701d03a59039"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "AGPL-3.0"
+			}
+		},
+		"objective-see/LuLu": {
+			"url": "https://github.com/objective-see/LuLu",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "master",
+				"target": {
+					"oid": "2d5bdf0625a5d9581ff875695cad4e44cdff88c5"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "GPL-3.0"
+			}
+		},
+		"classyapps2026/jumpstart3d": {
+			"url": "https://github.com/classyapps2026/jumpstart3d",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "main",
+				"target": {
+					"oid": "228464f51379eeb8e1d3a0baccab5db7e5dbb78b"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "MIT"
+			}
+		},
+		"tw93/Mole": {
+			"url": "https://github.com/tw93/Mole",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "main",
+				"target": {
+					"oid": "70e2e3e728808d55c774027a31e3588f5e8ab4d7"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "GPL-3.0"
+			}
+		},
+		"RX-7-GTC/inca": {
+			"url": "https://github.com/RX-7-GTC/inca",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "master",
+				"target": {
+					"oid": "dda105fee46bd9d6c403a6150cc37481a077061a"
+				}
+			},
+			"licenseInfo": null
+		},
+		"ravynsoft/ravynos": {
+			"url": "https://github.com/ravynsoft/ravynos",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "darwin",
+				"target": {
+					"oid": "60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7"
+				}
+			},
+			"licenseInfo": null
+		},
+		"therealglazou/bluegriffon": {
+			"url": "https://github.com/therealglazou/bluegriffon",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "master",
+				"target": {
+					"oid": "7abbf5822d1076356c0389f1e32b1657e424805f"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "MPL-2.0"
+			}
+		},
+		"materializr-cad/materializr": {
+			"url": "https://github.com/materializr-cad/materializr",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "main",
+				"target": {
+					"oid": "d23741ecb7f3e985bd1f0c881d73c05e57ded7d7"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "GPL-3.0"
+			}
+		},
+		"l0ng-ai/openidea": {
+			"url": "https://github.com/l0ng-ai/openidea",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "main",
+				"target": {
+					"oid": "43bcd66b2b6adbd5c1b3794c8c494dc8ef0d23fd"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "Apache-2.0"
+			}
+		},
+		"MaartenBaert/ssr": {
+			"url": "https://github.com/MaartenBaert/ssr",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "master",
+				"target": {
+					"oid": "e73e07664121ac30836872bca76194c6570e04c8"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "GPL-3.0"
+			}
+		},
+		"MaxSikorski/jumpstart-3d": {
+			"url": "https://github.com/MaxSikorski/jumpstart-3d",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "main",
+				"target": {
+					"oid": "b0e7d80c5ffc16e3c7ef870e72a750fe961e5edf"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "AGPL-3.0"
+			}
+		},
+		"alicevision/Meshroom": {
+			"url": "https://github.com/alicevision/Meshroom",
+			"isArchived": false,
+			"isFork": false,
+			"parent": null,
+			"defaultBranchRef": {
+				"name": "develop",
+				"target": {
+					"oid": "5e5185e02c0e5294dfb2f519f4dbd1dfb2f855f3"
+				}
+			},
+			"licenseInfo": {
+				"spdxId": "NOASSERTION"
+			}
+		}
+	},
+	"issues": [
+		{
+			"number": 202,
+			"title": "Mole",
+			"recommendation": "Approve broader alternative",
+			"findings": "Substantive Bash cleanup and Go disk-analysis source. GPLv3 LICENSE. README explicitly combines CleanMyMac-style workflows. List the CLI only: the native Mole for Mac app is a separate proprietary product. No file-format or application compatibility established.",
+			"sources": [
+				"https://github.com/tw93/Mole#readme",
+				"https://github.com/tw93/Mole/blob/main/LICENSE"
+			]
+		},
+		{
+			"number": 256,
+			"title": "LuLu",
+			"recommendation": "Approve broader alternative",
+			"findings": "Substantive Objective-C Network Extension filtering, rules and alert implementation. GPLv3 LICENSE.md. Official documentation supports outgoing-connection filtering and per-application decisions. A bounded Little Snitch alternative, not established full parity or rule-format compatibility.",
+			"sources": [
+				"https://objective-see.org/products/lulu.html",
+				"https://github.com/objective-see/LuLu/blob/master/LICENSE.md"
+			]
+		},
+		{
+			"number": 216,
+			"title": "Materializr",
+			"recommendation": "Approve broader alternative",
+			"findings": "Substantive C++ OpenCASCADE modeling source, including extrusion. GPLv3 with explicit section-7 app-store and platform-SDK permissions; earlier MIT versions retain their terms. Current site describes its own parametric workflow and .mzr format. The issue supplies a Shapr3D inspiration claim, but native Shapr3D project compatibility is not established.",
+			"sources": [
+				"https://materializr.com/",
+				"https://github.com/materializr-cad/materializr/blob/main/LICENSE-EXCEPTIONS.md"
+			]
+		},
+		{
+			"number": 215,
+			"title": "SketchForge PCB",
+			"recommendation": "Clarify target before listing",
+			"findings": "Public TypeScript circuit/board editor, AGPLv3 LICENSE. Implemented placement, routing and KiCad/Gerber export source. Current README limits placement/routing to the top side. No Arduino execution or electrical simulation found in the reviewed editor/interchange modules or README. Tinkercad Circuits is an educational circuit-simulation target, so PCB design alone does not establish a faithful match. Broader acceptance would require a clearly limited scope.",
+			"sources": [
+				"https://github.com/Formsmith746/SketchForge-PCB#readme",
+				"https://github.com/Formsmith746/SketchForge-PCB/blob/main/src/lib/pcbInterchange.ts",
+				"https://www.tinkercad.com/circuits"
+			]
+		},
+		{
+			"number": 255,
+			"title": "Inca",
+			"recommendation": "Recommend addition with licensing documentation follow-up",
+			"findings": "Explicit Maya 2020 workflow target; substantive Rust Maya ASCII importer/exporter and MEL interpreter. .mb is unsupported. README and Cargo workspace declare MIT, but no standalone license file was present in the complete 88-entry tree. Do not describe this as Unlicensed just because automated detection is empty; ask author to supply the declared MIT text. Website FAQ still denies .ma support while current source implements it, so scope must be pinned to source and not assumed released. Old v3ai URL resolves to RX-7-GTC/inca.",
+			"sources": [
+				"https://github.com/RX-7-GTC/inca",
+				"https://github.com/RX-7-GTC/inca/blob/master/crates/inca-core/src/maya.rs",
+				"https://github.com/RX-7-GTC/inca/blob/master/crates/inca-core/src/mel.rs",
+				"https://incacad.com/"
+			]
+		},
+		{
+			"number": 228,
+			"title": "ravynOS",
+			"recommendation": "Case-by-case compatibility-project approval",
+			"findings": "Current darwin branch openly identifies Darwin/FreeBSD foundations. Kernel/_PROVENANCE records imported Apple XNU and drivers under component APSL terms. AppKit/NSApplication.m carries separate Christopher Lloyd and Zoe Knox MIT authorship. Do not call the entire OS a clean-room macOS rewrite or treat licensed Darwin reuse as proof of unauthorized copying. A narrowly described macOS API/desktop compatibility listing is defensible subject to maintainer approval and a representative per-component license description. Binary compatibility remains a goal. Full tree was truncated; targeted component reads were used, not an exhaustive license audit.",
+			"sources": [
+				"https://github.com/ravynsoft/ravynos/blob/darwin/Docs/README.md",
+				"https://github.com/ravynsoft/ravynos/blob/darwin/Kernel/_PROVENANCE",
+				"https://github.com/ravynsoft/ravynos/blob/darwin/Frameworks/AppKit/NSApplication.m"
+			]
+		},
+		{
+			"number": 233,
+			"title": "JumpStart 3D",
+			"recommendation": "Recommend original-project addition",
+			"findings": "Original classyapps2026 repository contains substantive modular JavaScript source and MIT LICENSE. Its version module says 2.0. Beginner source includes the shape-modeling implementation. Max Sikorski explicitly maintains a separate community fork; additions and combined work are now AGPL-3.0-only while original code stays MIT. Use original repository and credit J.Siwek; do not label the fork a mirror or mix its newer features into the original snapshot. Official site could not be read with web tooling, so current hosted-version parity remains unverified.",
+			"sources": [
+				"https://github.com/classyapps2026/jumpstart3d",
+				"https://github.com/MaxSikorski/jumpstart-3d/blob/main/NOTICE.md"
+			]
+		},
+		{
+			"number": 239,
+			"title": "OpenIDEA",
+			"recommendation": "Hold for target and ancestry clarification",
+			"findings": "Apache-2.0 LICENSE and substantive independent Rust/TypeScript modules exist, but THIRD_PARTY_LICENSES explicitly declares adapted IntelliJ VCS algorithms and TypeScript ports of IntelliJ diff/merge implementations, plus reused icons. This is not wholly independent implementation of those subsystems. Reuse is disclosed and licensed; it is not evidence of unauthorized copying. Clarify independently implemented proprietary IntelliJ functionality rather than presenting an independently rewritten Community Edition. Current JetBrains unified distribution still distinguishes open-source builds from proprietary functionality.",
+			"sources": [
+				"https://github.com/l0ng-ai/openidea/blob/main/THIRD_PARTY_LICENSES.md",
+				"https://github.com/l0ng-ai/openidea/blob/main/NOTICE",
+				"https://www.jetbrains.com/help/idea/intellij-idea-single-distribution.html"
+			]
+		},
+		{
+			"number": 172,
+			"title": "SimpleScreenRecorder for Wayland",
+			"recommendation": "Decline under normal scope",
+			"findings": "Original is already GPLv3 open-source software. A Wayland rewrite or port does not qualify without an explicit scope exception. No need to assert whether its author has retired.",
+			"sources": [
+				"https://github.com/MaartenBaert/ssr#readme",
+				"https://github.com/MaartenBaert/ssr/blob/master/COPYING"
+			]
+		},
+		{
+			"number": 173,
+			"title": "Modern BlueGriffon",
+			"recommendation": "Decline or redirect to existing Dreamweaver request",
+			"findings": "Original describes itself as open source and carries MPL-2.0 LICENSE. Modernizing that application is normally outside scope. Its WYSIWYG webpage/newsletter requirements can inform the existing Dreamweaver request without relabeling BlueGriffon as proprietary.",
+			"sources": [
+				"https://github.com/therealglazou/bluegriffon",
+				"https://github.com/therealglazou/bluegriffon/blob/master/LICENSE"
+			]
+		},
+		{
+			"number": 274,
+			"title": "Meshroom for macOS in Rust",
+			"recommendation": "Decline under normal scope",
+			"findings": "COPYING.md explicitly licenses Meshroom under MPL2 and lists third-party licenses. Language/platform preference is not a proprietary target. No scope exception inferred.",
+			"sources": [
+				"https://github.com/alicevision/Meshroom/blob/develop/COPYING.md"
+			]
+		},
+		{
+			"number": 195,
+			"title": "CloudCraft",
+			"recommendation": "Accept narrowed request",
+			"findings": "Target Synology Drive file sharing, versions, sync, access controls and self-hosting workflows. Existing Synology DSM request is broader and does not precisely identify Drive. Nextcloud can be an open-source reference, not an original to reimplement under normal policy. Google Drive and Dropbox should only become additional targets if specific workflows are retained, not automatically from the generic list.",
+			"sources": [
+				"https://www.synology.com/en-global/dsm/feature/drive",
+				"https://github.com/nextcloud/server"
+			]
+		},
+		{
+			"number": 247,
+			"title": "PlasmaCraft",
+			"recommendation": "Accept SheetCAM request and enrich ProNest",
+			"findings": "Specific DXF/SVG-to-G-code single-part plasma workflows, kerf/material presets, preview and rapid edits. SheetCAM is a concrete separate commercial CAM target; ProNest already has a request. Add a SheetCAM request and merge applicable nesting/process details into ProNest. SC2000 appears as a workflow reference, not an independently established additional target.",
+			"sources": [
+				"https://www.sheetcam.com/",
+				"https://github.com/replicraft/remade/issues/247"
+			]
+		},
+		{
+			"number": 254,
+			"title": "STAAD.Pro",
+			"recommendation": "Covered by existing Bentley request",
+			"findings": "Existing bentley-suite request explicitly includes STAAD.Pro structural analysis. Add useful loading, results and steel/concrete design workflow details there, then close as covered. A dedicated STAAD target would be optional taxonomy work, not necessary to resolve the submission.",
+			"sources": ["https://www.bentley.com/software/staad/"]
+		},
+		{
+			"number": 272,
+			"title": "Nuke Studio",
+			"recommendation": "Accept distinct request or explicitly expand existing Nuke scope",
+			"findings": "Foundry identifies Nuke Studio as NukeX plus Hiero with editorial timeline and multi-shot management. Current request only explicitly targets Nuke/NukeX compositing. Do not close as an exact duplicate without preserving Studio editorial/conform/version-management workflows. Recommend a separate Nuke Studio target/request for clarity.",
+			"sources": ["https://www.foundry.com/products/nuke-studio"]
+		},
+		{
+			"number": 174,
+			"title": "ActiveChroma",
+			"recommendation": "Accept distinct Chroma compatibility request",
+			"findings": "Existing Synapse request only mentions peripheral configuration, macros, DPI, profiles and lighting generally. Chroma app/game integration and audio/screen-reactive synchronized effects are a distinct defined software/interface target. Include independent control plus optional documented SDK/API compatibility; do not imply all third-party devices work.",
+			"sources": [
+				"https://www.razer.com/chroma",
+				"https://developer.razer.com/works-with-chroma/setting-up/"
+			]
+		},
+		{
+			"number": 269,
+			"title": "HP original-ink detection removal",
+			"recommendation": "Clarify or decline current submission",
+			"findings": "As written this asks for a tool modifying/disabling original firmware checks, without a printer model or defined independent driver/firmware target. Recommend decline under editorial scope or invite a concrete independent target. No legal conclusion about cartridge refilling or firmware modification is made.",
+			"sources": ["https://github.com/replicraft/remade/issues/269"]
+		},
+		{
+			"number": 259,
+			"title": "Android and iPhone unlocking",
+			"recommendation": "Decline as insufficiently specified",
+			"findings": "Issue contains only a title asking for unlocking software, without a product, ownership/use context, or observable compatibility target. Do not assume whether this means bootloader unlock, carrier unlock or screen-lock removal.",
+			"sources": ["https://github.com/replicraft/remade/issues/259"]
+		},
+		{
+			"number": 262,
+			"title": "StreamFab",
+			"recommendation": "Request narrower scope before acceptance",
+			"findings": "Concrete proprietary product exists, but official site includes dedicated DRM downloaders and subscription-streaming downloads. The issue does not distinguish independent download-management workflows from access-control circumvention or modifying the original app. Ask which independently implemented workflows are wanted; no blanket legal determination is made.",
+			"sources": [
+				"https://streamfab.com/",
+				"https://github.com/replicraft/remade/issues/262"
+			]
+		},
+		{
+			"number": 210,
+			"title": "PrnCraft and CraftFans",
+			"recommendation": "Decline current submission",
+			"findings": "No actual functionality or compatibility target beyond platform names and a desire for free access. Existing suggested professional response remains appropriate. No additional message or closure performed.",
+			"sources": ["https://github.com/replicraft/remade/issues/210"]
+		}
+	]
+}
