@@ -1,0 +1,23 @@
+slug: procraft-painting
+name: ProCraft
+authors: [artcraft-android]
+repository: https://github.com/artcraft-android/procraft
+originals: [procreate]
+category: creative
+languages: [Rust, Kotlin]
+platforms: [Android, Windows, Linux]
+status: beta
+compatibility: partial
+summary: Procreate-style painting on Android tablets, Windows and Linux, with pressure-sensitive brushes, layers and animation.
+description: Independent painting app with its own Rust engine and wgpu renderer, a Kotlin/Jetpack Compose tablet interface and an egui desktop interface. Provides pressure-sensitive brushes, Brush Studio, wet mixing, layers and masks, adjustments, selections, transforms, drawing guides, Animation Assist and time-lapse recording. Supports PSD and common image/media exchange, with OBJ/USDZ 3D painting in progress.
+license: MIT OR Apache-2.0
+docs: https://github.com/artcraft-android/procraft#readme
+discord_server: https://discord.gg/EmRrVN2X
+limitations: Beta; Android tablets require Android 10 or later. Gallery/media export and 3D painting remain in progress; plug-ins are experimental. Full Procreate project or brush compatibility is not documented. Linux video and PDF features rely on system FFmpeg and Poppler. Separate from the retired surfrpt1 project of the same name.
+screenshots:
+  - src: https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/canvas.jpg
+    alt: ProCraft's tablet interface displaying a sunset painting with drawing tools and brush-size controls.
+  - src: https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/brushes.jpg
+    alt: ProCraft's brush library showing painting brushes and their stroke previews.
+  - src: https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/layers.jpg
+    alt: ProCraft's Layers panel showing seven layers of the sunset painting, visibility controls and blend modes.
