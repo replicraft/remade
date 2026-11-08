@@ -2,8 +2,8 @@
 slug: lightfoundry
 name: "LaserFoundry"
 authors: [sitesentrix]
-repository: "https://github.com/Stitchwright/laserfoundry"
-browser_url: https://stitchwright.github.io/laserfoundry/
+repository: https://github.com/StitchFoundry/laserfoundry
+browser_url: https://stitchfoundry.github.io/laserfoundry/
 originals: [lightburn]
 category: creative
 languages: [Rust]
@@ -12,10 +12,10 @@ compatibility: partial
 summary: "LightBurn-style laser design and control with vector editing, cut settings, dithering and GRBL output."
 description: A LightBurn-style laser layout and control application with vector editing, SVG and DXF import, per-layer cut settings, raster dithering, toolpath preview and GRBL G-code streaming. Includes a simulated controller and headless commands.
 license: MIT OR Apache-2.0
-docs: "https://github.com/Stitchwright/laserfoundry#readme"
+docs: https://github.com/StitchFoundry/laserfoundry#readme
 limitations: Early development; machine control has only been verified against a simulator. Marlin and Smoothieware output is untested on hardware. Many LightBurn workflows and controller families are missing; native LightBurn project compatibility is not documented.
 screenshots:
-  - src: https://raw.githubusercontent.com/Stitchwright/laserfoundry/da1a3bedafe3fe5ed759bc448e186258399d2c3d/docs/screenshots/canvas.png
+  - src: https://raw.githubusercontent.com/StitchFoundry/laserfoundry/da1a3bedafe3fe5ed759bc448e186258399d2c3d/docs/screenshots/canvas.png
     alt: "LaserFoundry canvas showing vector shapes, drawing tools and laser-layer settings."
-  - src: https://raw.githubusercontent.com/Stitchwright/laserfoundry/da1a3bedafe3fe5ed759bc448e186258399d2c3d/apps/laserfoundry-web/site/features/img/preview.png
+  - src: https://raw.githubusercontent.com/StitchFoundry/laserfoundry/da1a3bedafe3fe5ed759bc448e186258399d2c3d/apps/laserfoundry-web/site/features/img/preview.png
     alt: "LaserFoundry preview showing lettering and vector shapes with a laser toolpath."

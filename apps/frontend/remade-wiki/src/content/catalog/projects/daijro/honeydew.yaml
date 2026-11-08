@@ -7,15 +7,15 @@ browser_url: https://playground.daijro.dev/honeydew/
 originals: [fl-studio-mobile]
 category: creative
 languages: [Rust]
-platforms: [Windows, macOS, Linux, Web, Android]
+platforms: [Windows, macOS, Linux, FreeBSD, Web, Android, iOS]
 status: experimental
 compatibility: partial
 summary: "FL Studio Mobile-style music production with a piano roll, drum editor, mixer, instruments and automation."
-description: Independent Rust implementation of FL Studio Mobile for desktop and browser, with a playlist, piano roll, drum editor, mixer, instrument and effects racks, automation, chords and audio editing. The maintainer demonstrates opening FL Studio Mobile demo projects as .flm files. Bundles separately licensed replacement sounds.
+description: Independent Rust implementation of FL Studio Mobile for desktop, browser and mobile, with a playlist, piano roll, drum editor, mixer, instrument and effects racks, automation, chords and audio editing. The maintainer demonstrates opening FL Studio Mobile demo projects as .flm files. Bundles separately licensed replacement sounds.
 license: GPL-3.0-or-later
 website: https://playground.daijro.dev/honeydew/
 docs: https://github.com/daijro/honeydew#readme
-limitations: "Full FL Studio Mobile parity is not independently verified. Android can play and save songs inside the app but lacks microphone recording, MIDI devices and file import/export; uninstalling deletes its songs. iOS builds are not documented. Original sounds are not bundled; desktop users can import their own licensed content. Browser restrictions apply to imports and shortcuts."
+limitations: Full FL Studio Mobile parity is not independently verified. Android and experimental iOS builds record audio and import/export songs, renders and samples, but do not support MIDI devices. iOS requires sideloading; uninstalling the mobile app can delete its local songs. Original sounds are not bundled; users can import their own licensed content. Browser restrictions apply to imports and shortcuts.
 screenshots:
   - src: https://raw.githubusercontent.com/daijro/honeydew/main/assets/screenshots/04-drum-editor.webp
     alt: "Honeydew: drum pattern editor and song arrangement."

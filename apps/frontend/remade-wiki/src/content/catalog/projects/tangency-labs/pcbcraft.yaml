@@ -6,11 +6,11 @@ repository: https://github.com/tangency-labs/pcbcraft
 originals: [altium-designer]
 category: engineering
 languages: [Rust]
-platforms: [Linux, Windows]
+platforms: [Linux, Windows, Web]
 status: experimental
 compatibility: targeting
-summary: "An Altium-style PCB design project built around KiCad workflows, libraries and a Rust editor."
-description: A broader Altium Designer alternative for schematic capture and PCB layout, implemented in Rust. Its current foundation follows KiCad workflows, with symbol and footprint libraries, schematic-to-board synchronization, basic routing, design checks and KiCad board export. Provides a native tabbed editor, CLI and MCP automation.
-license: GPL-3.0-or-later
+summary: An early Rust schematic and PCB editor following KiCad workflows, listed as a broader Altium alternative.
+description: A broader Altium Designer alternative built in Rust around KiCad-style workflows. Provides desktop and browser schematic editing, hierarchical sheets, symbols, wires and shared undo/redo. The PCB workspace supports board edges, footprint inspection, placement and rotation. Includes symbol and footprint editors, portable project archives, CLI/MCP control and a desktop AI assistant.
+license: MIT OR Apache-2.0
 docs: https://github.com/tangency-labs/pcbcraft#readme
-limitations: Upstream currently documents KiCad workflows and interchange, not Altium file, interface or API compatibility. General KiCad project import, vias, zone fills, hierarchical designs and comprehensive electrical rules remain planned. Browser code compiles to WebAssembly, but browser file operations are not implemented.
+limitations: Early development; targets familiar KiCad workflows rather than Altium file, interface or API compatibility. Routing, full ERC/DRC and fabrication output are planned. The current source does not establish the earlier listing's KiCad board-export or production layout claims. Platform and end-to-end workflow coverage remain limited.
