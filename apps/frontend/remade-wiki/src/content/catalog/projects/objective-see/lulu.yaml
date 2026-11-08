@@ -1,0 +1,20 @@
+# Accepted with maintainer approval as a broader Little Snitch alternative.
+slug: lulu
+name: LuLu
+authors: [objective-see]
+repository: https://github.com/objective-see/LuLu
+originals: [little-snitch]
+category: other
+languages: [Objective-C]
+platforms: [macOS]
+status: stable
+compatibility: partial
+summary: "A macOS outbound firewall with connection alerts and per-application allow/block rules."
+description: "An open-source outbound application firewall accepted as a broader Little Snitch alternative. Uses a macOS Network Extension to detect outgoing connections, display process and destination details, request allow/block decisions, and manage persistent application rules. Includes temporary decisions and configurable filtering behavior, with local rule management and a menu-bar interface."
+license: GPL-3.0-only
+website: https://objective-see.org/products/lulu.html
+docs: https://objective-see.org/products/lulu.html
+limitations: "Requires macOS 10.15 or later and approval of its system extension and network filter. Not a full Little Snitch replacement: its rule-file compatibility, traffic-history and visualization parity are not established. Default settings may allow Apple and already-installed applications without prompting; review the filtering configuration."
+screenshots:
+  - src: https://objective-see.com/images/LL/alert.png
+    alt: "LuLu connection alert with application details and allow/block controls."
