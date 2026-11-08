@@ -1,4 +1,4 @@
+# Additional request details: https://github.com/replicraft/remade/issues/154.
 original: chief-architect
 summary: "Wanted: Residential building design with walls, roofs, stairs, framing, materials, construction documents and editable plan interchange."
-reason: Residential building design with walls, roofs, stairs, framing, materials, construction documents
-  and editable plan interchange.
+reason: "Reproduce residential design with parametric walls, roofs, stairs, framing, materials, synchronized plans/3D views, terrain, cabinetry, schedules and construction documents. Investigate .plan/.layout interchange with loss reports. Include a documented object API, Python/MCP automation, undo and reviewable drawing-to-model assistance; distinguish inferred geometry from verified dimensions."

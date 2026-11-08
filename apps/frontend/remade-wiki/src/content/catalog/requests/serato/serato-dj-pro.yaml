@@ -1,4 +1,5 @@
+# Additional request details: https://github.com/replicraft/remade/issues/145.
 original: serato-dj-pro
 summary: "Wanted: DJ mixing with crates, cue points, loops, effects and controller workflows."
-reason: Reproduce Serato DJ Pro's deck mixing, crate organization, cue points, loops, effects and controller workflows with compatible libraries. DJCraft should combine Serato DJ, Traktor Pro and Rekordbox workflows in one application, preserving each target's familiar behavior and library interoperability. Mixxx (https://mixxx.org/) is an open-source inspiration.
+reason: "Reproduce Serato DJ Pro's mixing, crates, cues, loops, effects, video DJing and compatible libraries. Include Numark NVII displays, jog wheels, bidirectional MIDI feedback and a controller-mapping wizard. DJCraft should combine Serato, Traktor and Rekordbox workflows with library interoperability. Mixxx (https://mixxx.org/) is an open-source inspiration."
 suggested_names: [DJCraft]

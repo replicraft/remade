@@ -1,4 +1,4 @@
+# Additional request details: https://github.com/replicraft/remade/issues/243.
 original: adobe-captivate
 summary: "Wanted: Slide-based e-learning authoring, software demonstrations, interactive quizzes and standards-based learning-package export."
-reason: Slide-based e-learning authoring, software demonstrations, interactive quizzes and standards-based
-  learning-package export.
+reason: "Reproduce Captivate's slide-based e-learning authoring, software demonstrations and standards-based learning-package export. Include responsive layouts and device previews, quizzes, drag-and-drop and multi-state interactions, audio/video, review links and accessible keyboard/screen-reader workflows."

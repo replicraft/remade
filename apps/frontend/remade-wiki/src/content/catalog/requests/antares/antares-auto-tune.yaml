@@ -1,4 +1,4 @@
+# Additional request details: https://github.com/replicraft/remade/issues/217.
 original: antares-auto-tune
 summary: "Wanted: Real-time pitch correction, scale and key controls, formant handling and DAW automation with audio processing."
-reason: Real-time pitch correction, scale and key controls, formant handling and DAW automation with
-  independently developed audio processing.
+reason: "Reproduce Auto-Tune's real-time pitch correction, scale/key controls, formant handling and DAW automation with independently developed audio processing. Include graph-based pitch/time editing, multi-part harmonies and host integration such as ARA2 where feasible."

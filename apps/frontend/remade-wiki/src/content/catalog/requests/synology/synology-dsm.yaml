@@ -1,4 +1,4 @@
+# Additional request details: https://github.com/replicraft/remade/issues/250.
 original: synology-dsm
 summary: "Wanted: NAS storage, sharing, permissions, backups and package workflows with documented protocol and data interchange."
-reason: NAS storage, sharing, permissions, backups and package workflows with documented protocol
-  and data interchange, without copying Synology binaries.
+reason: "Reproduce DSM's browser-desktop NAS workflows: storage pools, RAID/snapshots, shares, permissions, backups, security and package management, with documented protocol/data interchange and no Synology binaries. Prioritize approachable setup, a modular container-app interface, Proxmox/Docker integration and operation on standard PCs or older NAS hardware without vendor drive restrictions."

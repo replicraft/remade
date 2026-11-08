@@ -1,4 +1,5 @@
+# Additional request details: https://github.com/replicraft/remade/issues/184.
 original: adobe-dreamweaver
 summary: "Wanted: Dreamweaver's visual and code-based website editing, live preview and site-management workflows."
-reason: Reproduce Dreamweaver's visual and code-based website editing, live preview and site-management workflows.
+reason: "Reproduce Dreamweaver's visual and code-based website editing, live preview and site-management workflows in a desktop editor. Keep drag-and-drop page composition, direct visual CSS editing and source editing synchronized, with local HTML/CSS files rather than requiring a hosted website builder."
 suggested_names: [WebCraft]

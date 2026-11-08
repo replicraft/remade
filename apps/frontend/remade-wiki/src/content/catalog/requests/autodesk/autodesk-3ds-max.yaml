@@ -1,4 +1,5 @@
+# Additional request details: https://github.com/replicraft/remade/issues/258.
 # Additional request details in https://github.com/replicraft/remade/issues/96.
 original: autodesk-3ds-max
 summary: "Wanted: 3ds Max's modifier-based modeling and precision product and architectural visualization workflows, beyond generic 3D modeling."
-reason: Reproduce 3ds Max's modifier-based modeling and precision product and architectural visualization workflows. Extending the existing ModelCraft with editable Scale/Array stacks, ordering, disabling, persistence and undo/redo is a possible starting point, not an implemented replacement or a commitment by its maintainers.
+reason: "Reproduce 3ds Max's modifier-based modeling, texturing, animation, rendering and precision product/architectural visualization, with model exchange for Maya/ZBrush workflows. Extending ModelCraft with editable Scale/Array stacks, ordering, disabling, persistence and undo/redo is a possible starting point, not an implemented replacement or maintainer commitment."

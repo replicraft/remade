@@ -1,4 +1,4 @@
+# Additional request details: https://github.com/replicraft/remade/issues/260.
 original: propresenter
 summary: "Wanted: Live presentation cues, lyrics, media playback, stage displays and multi-output production with PowerPoint import where feasible."
-reason: Live presentation cues, lyrics, media playback, stage displays and multi-output production
-  with PowerPoint import where feasible.
+reason: "Reproduce ProPresenter's live cues, lyrics, scripture, reusable service plans, audio/video playback and independent stage/confidence outputs, with PowerPoint import where feasible. Include cameras, OBS/RTMP/NDI workflows, remote control and scripting/plugins. Prioritize offline operation, predictable transitions and playback recovery for live production."
