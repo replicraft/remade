@@ -1,0 +1,20 @@
+# Accepted with maintainer approval as a broader Shapr3D alternative.
+slug: materializr
+name: Materializr
+authors: [materializr-cad]
+repository: https://github.com/materializr-cad/materializr
+originals: [shapr3d]
+category: engineering
+languages: [C++]
+platforms: [Linux, Windows, macOS, iOS, Android]
+status: experimental
+compatibility: partial
+summary: "Parametric solid CAD with touch-friendly sketches, editable history, threads and standard CAD exchange."
+description: "An OpenCASCADE-based parametric CAD application accepted as a broader Shapr3D alternative. Combines inference snapping and constrained sketches with extrusion, lofts, booleans, fillets, shells, direct face editing, threads and curved-surface engraving. Keeps editable design history and supports STEP, IGES, BREP, STL, SVG/DXF and other manufacturing or rendering formats. Offers desktop and tablet layouts, with optional bring-your-own-model AI assistance."
+license: GPL-3.0-only
+website: https://materializr.com/
+docs: https://github.com/materializr-cad/materializr#readme
+limitations: "Young software with rough edges; no native Shapr3D project or full feature compatibility is established. macOS packages require Apple Silicon and are not notarized. iOS availability is documented for iPad. GPLv3 includes additional app-store/SDK permissions in LICENSE-EXCEPTIONS.md; versions through 0.9.7.1 also retain their original MIT terms."
+screenshots:
+  - src: https://raw.githubusercontent.com/materializr-cad/materializr/d23741ecb7f3e985bd1f0c881d73c05e57ded7d7/docs/hero-mug.png
+    alt: "Materializr modeling a mug with filleted edges, a handle and an embossed logo."
