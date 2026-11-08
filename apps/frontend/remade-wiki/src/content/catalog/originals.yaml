@@ -1,3 +1,9 @@
+- slug: autodesk-tinkercad-3d-design
+  vendor: autodesk
+  name: Autodesk Tinkercad 3D Design
+  url: https://www.tinkercad.com/3d-design
+  category: engineering
+  aliases: [Tinkercad 3D, Tinkercad 3D Design]
 - slug: adobe-photoshop
   vendor: adobe
   name: Adobe Photoshop

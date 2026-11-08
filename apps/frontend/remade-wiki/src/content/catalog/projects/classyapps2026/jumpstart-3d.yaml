@@ -1,0 +1,16 @@
+# Original J.Siwek project, distinct from Max Sikorski's community fork.
+slug: jumpstart-3d
+name: JumpStart 3D
+authors: [classyapps2026]
+repository: https://github.com/classyapps2026/jumpstart3d
+originals: [autodesk-tinkercad-3d-design]
+category: engineering
+languages: [JavaScript]
+platforms: [Web]
+status: experimental
+compatibility: partial
+summary: "Browser-based Tinkercad-style shape modeling with beginner tools, sketching and more advanced CAD operations."
+description: "J.Siwek's browser-based 3D design application. Beginner mode combines, groups and subtracts shapes in a Tinkercad-style workspace; advanced tools add sketches, constraints, extrusion, lathe operations, measurement and mesh exchange. Includes separate sculpting and print-simulation tools. The original public source is version 2.0, distinct from the separately maintained community build."
+license: MIT
+docs: https://github.com/classyapps2026/jumpstart3d/tree/main/app/src
+limitations: "Tinkercad project, account and cloud-service compatibility is not established. The public original source identifies itself as 2.0; newer hosted builds have not been matched to that snapshot. Features added by the separate AGPL community fork are not included in this listing. Browser and device compatibility has not been independently verified."
