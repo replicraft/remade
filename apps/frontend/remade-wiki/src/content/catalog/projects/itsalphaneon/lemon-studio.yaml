@@ -3,7 +3,6 @@ slug: lemon-studio
 name: Lemon Studio
 authors: [itsalphaneon]
 repository: https://github.com/ItsAlphaNeon/Lemon-Studio
-browser_url: https://playground.daijro.dev/lemon-studio/
 originals: [fl-studio]
 category: creative
 languages: [Rust]
@@ -13,8 +12,8 @@ compatibility: partial
 summary: "FL Studio-style music production with patterns, a piano roll, mixer routing, plugins and FLP files."
 description: A Rust implementation of FL Studio-style pattern sequencing, piano-roll editing, playlist arrangement and mixer routing. Hosts CLAP and VST3 plugins and reads and writes FLP projects while preserving unrecognized file data.
 license: GPL-3.0-or-later
-website: https://playground.daijro.dev/lemon-studio/
-docs: https://github.com/ItsAlphaNeon/Lemon-Studio#readme
+website: https://getlemonstudio.app/
+docs: https://getlemonstudio.app/wiki/
 discord_server: https://discord.gg/R9JQ9zdeH
 limitations: Pre-alpha and not yet a usable replacement DAW. FLP support is limited to newer FL Studio projects and remains unstable. Audio recording, MIDI file interchange, plugin delay compensation and many controls are missing. No macOS build or prebuilt binaries.
 screenshots:
