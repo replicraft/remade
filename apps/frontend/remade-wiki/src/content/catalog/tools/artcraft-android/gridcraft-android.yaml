@@ -1,0 +1,14 @@
+slug: gridcraft-android
+name: GridCraft for Android
+authors: [artcraft-android]
+repository: https://github.com/artcraft-android/gridcraft-android
+url: https://github.com/artcraft-android/gridcraft-android/releases
+languages: [Kotlin, Rust]
+projects: [gridcraft]
+platforms: [Android]
+status: beta
+license: MIT OR Apache-2.0
+summary: Edit spreadsheets on Android with a native touch interface powered by GridCraft's Rust engine.
+description: An Android frontend for GridCraft using its existing Rust spreadsheet engine with a Kotlin/Jetpack Compose interface. Opens supported Excel, ODS and CSV workbooks and saves XLSX. Provides formula editing, dynamic arrays, tables, charts, shapes, pictures, pen input, formatting, sorting and filtering, comments, PDF sharing and printing.
+docs: https://github.com/artcraft-android/gridcraft-android#readme
+limitations: Beta; requires Android 10 or later. Reuses GridCraft and inherits its workbook and formula compatibility limits. Unsupported workbook parts may be preserved without implementing their behavior. Sheet View, online sharing, co-authoring, data from pictures and maps remain planned.

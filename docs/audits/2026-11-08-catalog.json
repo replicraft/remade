@@ -3,34 +3,35 @@
 	"timezone": "America/Los_Angeles",
 	"checked_at_utc": "2026-11-08T17:13:29.292146+00:00",
 	"baseline_commit": "984ce81153d7a3b35450d2fbb65cb74f9cf3f54e",
-	"scope": "All 190 previously indexed projects/tools plus requested Nootion. Project Requests and originals are checked for schema/reference consistency; this is not an audit of every original vendor product or a new-project discovery batch.",
+	"scope": "All 190 previously indexed projects/tools plus requested Nootion, the active ProCraft painting app and three additional ArtCraft Android tools. All seven public artcraft-android repositories are accounted for. Project Requests/originals receive schema/reference checks, not an audit of every original vendor product.",
 	"completion": "Field-level documentary audit complete for this inventory. Corrections remain proposed in a pull request. Source existence, current upstream claims and inspected wiring are distinct from runtime, provenance, security and legal verification.",
 	"coverage": {
-		"entries_reviewed": 191,
-		"projects": 177,
-		"tools": 14,
+		"entries_reviewed": 195,
+		"projects": 178,
+		"tools": 17,
 		"existing_entries_corrected": 31,
-		"new_projects": 1,
+		"new_projects": 2,
 		"repository_moves": 5,
 		"newly_archived": 1,
 		"status_corrections": 4,
 		"license_corrections": 3,
-		"github_repositories_including_existing_mirror": 189,
+		"github_repositories_including_existing_mirror": 193,
 		"codeberg_repositories": 2,
 		"previously_reviewed_documents_with_changed_blobs": 186,
-		"unique_url_checks_including_upstream_candidates_and_replaced_urls": 933,
-		"current_project_tool_urls": 872,
+		"unique_url_checks_including_upstream_candidates_and_replaced_urls": 947,
+		"current_project_tool_urls": 887,
 		"current_project_tool_url_failures": 1,
-		"discord_invites_checked": 23,
-		"discord_invites_verified": 23,
-		"maintainer_holds": 1
+		"discord_invites_checked": 24,
+		"discord_invites_verified": 24,
+		"maintainer_holds": 1,
+		"new_tools": 3
 	},
 	"methods": {
 		"sources": "Fresh batched GraphQL repository identity, archive/disable flags, current commit, README, root license files and recent releases. Codeberg repository, pinned README and license files checked separately. Armada uses its existing documented GitHub mirror.",
 		"descriptions": "Preserve existing useful detail; correct only supported drift. Compare changed README/supporting-document blobs against exactly pinned previous evidence; unchanged blobs reuse the previous catalog-field review after a fresh hash check. Catalog-relevant sections of additional current documents screened.",
 		"licenses": "Check current applicable LICENSE/COPYING/LICENCE and dual-license/notice files rather than infer from a single API license.",
 		"links": "Lychee is not installed locally. Requests-based review uses verified TLS, bounded retries, per-host concurrency, redirect/title checks and separate public Discord invite checks. Repository-configured Lychee remains enabled in CI. Public 200 pages are not treated as proof of runtime app functionality.",
-		"validation": "Catalog schema passed: 530 originals, 177 projects, 380 requests, five featured; 14 tools reviewed. Tests left to CI under AGENTS.md; hooks enabled. No third-party code executed, no issue comments/closures, no merge or deployment."
+		"validation": "Catalog schema passed: 530 originals, 178 projects, 380 requests, five featured; 17 tools reviewed. Tests left to CI under AGENTS.md; hooks enabled. No third-party code executed, no issue comments/closures, no merge or deployment."
 	},
 	"url_evidence_file": "docs/audits/2026-11-08-catalog-links.json",
 	"backlog_file": "docs/audits/2026-11-08-backlog.json",
@@ -17465,7 +17466,7 @@
 				},
 				"platforms": {
 					"result": "maintainer-reported",
-					"catalog": ["Windows", "iOS"],
+					"catalog": ["Windows", "iOS", "Android"],
 					"basis": "README/platform docs and recent asset names; no native runtime or hardware verification."
 				},
 				"websites": {
@@ -17529,13 +17530,18 @@
 				"limitations": {
 					"before": "Compatibility is maintainer-reported and incomplete. Procreate brush import targets shape tips; complete brush-engine and native Procreate document compatibility are not claimed. PSD masks and uncommon blend modes have gaps. The iOS build requires sideloading.",
 					"after": "Archived after final v0.11.0; no fixes or support planned. Procreate brush import covers shape tips, not full brush-engine or native document fidelity. PSD masks and uncommon blend modes have gaps; iOS requires sideloading. Upstream's artcraft-android/procraft recommendation is a separate, unaffiliated codebase."
+				},
+				"platforms": {
+					"before": ["Windows", "iOS"],
+					"after": ["Windows", "iOS", "Android"]
 				}
 			},
 			"change_reasons": [
 				"GitHub canonical URL confirms repository move.",
 				"GitHub canonical URL confirms repository move.",
 				"GitHub archive flag and retirement notice identify v0.11.0 as final. The referred ProCraft is a separate codebase.",
-				"Retain substantive compatibility limits and disclose retirement."
+				"Retain substantive compatibility limits and disclose retirement.",
+				"Final v0.11.0 publishes Windows ZIP, iOS IPA and Android APK; retain historical Android availability."
 			],
 			"review_notes": [],
 			"source_evidence_key": "procraft"
@@ -21119,7 +21125,530 @@
 			],
 			"review_notes": [],
 			"source_evidence_key": "nootion"
+		},
+		{
+			"slug": "gridcraft-android",
+			"kind": "tools",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/artcraft-android/gridcraft-android.yaml",
+			"original_fields": null,
+			"reviewed_revision": "72d5bfc0729d0966e9bd966c2eabaa0312eea3ff",
+			"canonical_source": "https://github.com/artcraft-android/gridcraft-android",
+			"dimensions": {
+				"identity": {
+					"result": "verified",
+					"catalog_repository": "https://github.com/artcraft-android/gridcraft-android",
+					"reviewed_source": "https://github.com/artcraft-android/gridcraft-android",
+					"credited_authors": ["artcraft-android"]
+				},
+				"availability": {
+					"result": "verified",
+					"archived": false
+				},
+				"maturity": {
+					"result": "maintainer-reported",
+					"catalog": "beta",
+					"basis": "Explicit current README stage; release packages corroborate availability, not runtime qualification."
+				},
+				"features": {
+					"result": "documentary review",
+					"decision": "new maintainer-requested listing",
+					"basis": "README, published packages and engine workspace manifests; no third-party code executed."
+				},
+				"license": {
+					"result": "documentary review",
+					"catalog": "MIT OR Apache-2.0",
+					"files": ["LICENSE-MIT", "LICENSE-APACHE"]
+				},
+				"platforms": {
+					"result": "maintainer-reported",
+					"catalog": ["Android"]
+				},
+				"websites": {
+					"result": "checked",
+					"url_evidence": [
+						"https://github.com/artcraft-android/gridcraft-android",
+						"https://github.com/artcraft-android/gridcraft-android/releases",
+						"https://github.com/artcraft-android/gridcraft-android#readme"
+					]
+				}
+			},
+			"recent_releases": [
+				{
+					"tagName": "v0.0.1-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-08T15:57:28Z",
+					"url": "https://github.com/artcraft-android/gridcraft-android/releases/tag/v0.0.1-beta"
+				}
+			],
+			"changes": {
+				"slug": {
+					"before": null,
+					"after": "gridcraft-android"
+				},
+				"name": {
+					"before": null,
+					"after": "GridCraft for Android"
+				},
+				"authors": {
+					"before": null,
+					"after": ["artcraft-android"]
+				},
+				"repository": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/gridcraft-android"
+				},
+				"url": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/gridcraft-android/releases"
+				},
+				"languages": {
+					"before": null,
+					"after": ["Kotlin", "Rust"]
+				},
+				"projects": {
+					"before": null,
+					"after": ["gridcraft"]
+				},
+				"platforms": {
+					"before": null,
+					"after": ["Android"]
+				},
+				"status": {
+					"before": null,
+					"after": "beta"
+				},
+				"license": {
+					"before": null,
+					"after": "MIT OR Apache-2.0"
+				},
+				"summary": {
+					"before": null,
+					"after": "Edit spreadsheets on Android with a native touch interface powered by GridCraft's Rust engine."
+				},
+				"description": {
+					"before": null,
+					"after": "An Android frontend for GridCraft using its existing Rust spreadsheet engine with a Kotlin/Jetpack Compose interface. Opens supported Excel, ODS and CSV workbooks and saves XLSX. Provides formula editing, dynamic arrays, tables, charts, shapes, pictures, pen input, formatting, sorting and filtering, comments, PDF sharing and printing."
+				},
+				"docs": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/gridcraft-android#readme"
+				},
+				"limitations": {
+					"before": null,
+					"after": "Beta; requires Android 10 or later. Reuses GridCraft and inherits its workbook and formula compatibility limits. Unsupported workbook parts may be preserved without implementing their behavior. Sheet View, online sharing, co-authoring, data from pictures and maps remain planned."
+				}
+			},
+			"change_reasons": [
+				"Explicit maintainer request; reviewed public source, applicable license files, original/parent references and meaningful implementation."
+			],
+			"review_notes": [
+				"Uses the existing gridcraft engine; supporting tool rather than a second independent reimplementation."
+			],
+			"source_evidence_key": "gridcraft-android"
+		},
+		{
+			"slug": "wordcraft-android-native",
+			"kind": "tools",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/artcraft-android/wordcraft-android-native.yaml",
+			"original_fields": null,
+			"reviewed_revision": "b2b7cf913c6f61604062e2db30962f32ec921b11",
+			"canonical_source": "https://github.com/artcraft-android/wordcraft-android",
+			"dimensions": {
+				"identity": {
+					"result": "verified",
+					"catalog_repository": "https://github.com/artcraft-android/wordcraft-android",
+					"reviewed_source": "https://github.com/artcraft-android/wordcraft-android",
+					"credited_authors": ["artcraft-android"]
+				},
+				"availability": {
+					"result": "verified",
+					"archived": false
+				},
+				"maturity": {
+					"result": "maintainer-reported",
+					"catalog": "beta",
+					"basis": "Explicit current README stage; release packages corroborate availability, not runtime qualification."
+				},
+				"features": {
+					"result": "documentary review",
+					"decision": "new maintainer-requested listing",
+					"basis": "README, published packages and engine workspace manifests; no third-party code executed."
+				},
+				"license": {
+					"result": "documentary review",
+					"catalog": "MIT OR Apache-2.0",
+					"files": ["LICENSE-MIT", "LICENSE-APACHE"]
+				},
+				"platforms": {
+					"result": "maintainer-reported",
+					"catalog": ["Android"]
+				},
+				"websites": {
+					"result": "checked",
+					"url_evidence": [
+						"https://github.com/artcraft-android/wordcraft-android",
+						"https://github.com/artcraft-android/wordcraft-android/releases",
+						"https://github.com/artcraft-android/wordcraft-android#readme"
+					]
+				}
+			},
+			"recent_releases": [
+				{
+					"tagName": "v0.0.1-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-08T15:59:31Z",
+					"url": "https://github.com/artcraft-android/wordcraft-android/releases/tag/v0.0.1-beta"
+				}
+			],
+			"changes": {
+				"slug": {
+					"before": null,
+					"after": "wordcraft-android-native"
+				},
+				"name": {
+					"before": null,
+					"after": "WordCraft for Android (native UI)"
+				},
+				"authors": {
+					"before": null,
+					"after": ["artcraft-android"]
+				},
+				"repository": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/wordcraft-android"
+				},
+				"url": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/wordcraft-android/releases"
+				},
+				"languages": {
+					"before": null,
+					"after": ["Kotlin", "Rust"]
+				},
+				"projects": {
+					"before": null,
+					"after": ["wordcraft"]
+				},
+				"platforms": {
+					"before": null,
+					"after": ["Android"]
+				},
+				"status": {
+					"before": null,
+					"after": "beta"
+				},
+				"license": {
+					"before": null,
+					"after": "MIT OR Apache-2.0"
+				},
+				"summary": {
+					"before": null,
+					"after": "Read and edit documents on Android with a native touch interface powered by WordCraft's Rust engine."
+				},
+				"description": {
+					"before": null,
+					"after": "An Android frontend for WordCraft using its existing Rust document engine with a Kotlin/Jetpack Compose interface. Adds mobile and print views, a touch toolbar, formatting, tables, pictures and scans, shapes, charts, page layout, comments and tracked changes, pen drawing, dictation and Read Aloud. Includes templates, autosave, sharing and printing."
+				},
+				"docs": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/wordcraft-android#readme"
+				},
+				"limitations": {
+					"before": null,
+					"after": "Beta; requires Android 10 or later. Reuses WordCraft and inherits its document-format and layout limitations. Local app; generative AI, cloud storage, accounts and co-authoring are not planned. Published APKs do not establish compatibility with every device or Microsoft Word document."
+				}
+			},
+			"change_reasons": [
+				"Explicit maintainer request; reviewed public source, applicable license files, original/parent references and meaningful implementation."
+			],
+			"review_notes": [
+				"Uses the existing wordcraft engine; supporting tool rather than a second independent reimplementation."
+			],
+			"source_evidence_key": "wordcraft-android-native"
+		},
+		{
+			"slug": "procraft-painting",
+			"kind": "projects",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/artcraft-android/procraft-painting.yaml",
+			"original_fields": null,
+			"reviewed_revision": "b84d17665df9d94101d4871679253230ea008ddc",
+			"canonical_source": "https://github.com/artcraft-android/procraft",
+			"dimensions": {
+				"identity": {
+					"result": "verified",
+					"catalog_repository": "https://github.com/artcraft-android/procraft",
+					"reviewed_source": "https://github.com/artcraft-android/procraft",
+					"credited_authors": ["artcraft-android"]
+				},
+				"availability": {
+					"result": "verified",
+					"archived": false
+				},
+				"maturity": {
+					"result": "maintainer-reported",
+					"catalog": "beta",
+					"basis": "Explicit current README stage; release packages corroborate availability, not runtime qualification."
+				},
+				"features": {
+					"result": "documentary review",
+					"decision": "new maintainer-requested listing",
+					"basis": "README, published packages and engine workspace manifests; no third-party code executed."
+				},
+				"license": {
+					"result": "documentary review",
+					"catalog": "MIT OR Apache-2.0",
+					"files": ["LICENSE-MIT", "LICENSE-APACHE"]
+				},
+				"platforms": {
+					"result": "maintainer-reported",
+					"catalog": ["Android", "Windows", "Linux"]
+				},
+				"websites": {
+					"result": "checked",
+					"url_evidence": [
+						"https://github.com/artcraft-android/procraft",
+						"https://github.com/artcraft-android/procraft#readme",
+						"https://discord.gg/EmRrVN2X",
+						"https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/canvas.jpg",
+						"https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/brushes.jpg",
+						"https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/layers.jpg"
+					]
+				}
+			},
+			"recent_releases": [
+				{
+					"tagName": "v0.0.5-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-07T19:57:43Z",
+					"url": "https://github.com/artcraft-android/procraft/releases/tag/v0.0.5-beta"
+				},
+				{
+					"tagName": "v0.0.4-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-04T18:08:22Z",
+					"url": "https://github.com/artcraft-android/procraft/releases/tag/v0.0.4-beta"
+				}
+			],
+			"changes": {
+				"slug": {
+					"before": null,
+					"after": "procraft-painting"
+				},
+				"name": {
+					"before": null,
+					"after": "ProCraft"
+				},
+				"authors": {
+					"before": null,
+					"after": ["artcraft-android"]
+				},
+				"repository": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/procraft"
+				},
+				"originals": {
+					"before": null,
+					"after": ["procreate"]
+				},
+				"category": {
+					"before": null,
+					"after": "creative"
+				},
+				"languages": {
+					"before": null,
+					"after": ["Rust", "Kotlin"]
+				},
+				"platforms": {
+					"before": null,
+					"after": ["Android", "Windows", "Linux"]
+				},
+				"status": {
+					"before": null,
+					"after": "beta"
+				},
+				"compatibility": {
+					"before": null,
+					"after": "partial"
+				},
+				"summary": {
+					"before": null,
+					"after": "Procreate-style painting on Android tablets, Windows and Linux, with pressure-sensitive brushes, layers and animation."
+				},
+				"description": {
+					"before": null,
+					"after": "Independent painting app with its own Rust engine and wgpu renderer, a Kotlin/Jetpack Compose tablet interface and an egui desktop interface. Provides pressure-sensitive brushes, Brush Studio, wet mixing, layers and masks, adjustments, selections, transforms, drawing guides, Animation Assist and time-lapse recording. Supports PSD and common image/media exchange, with OBJ/USDZ 3D painting in progress."
+				},
+				"license": {
+					"before": null,
+					"after": "MIT OR Apache-2.0"
+				},
+				"docs": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/procraft#readme"
+				},
+				"discord_server": {
+					"before": null,
+					"after": "https://discord.gg/EmRrVN2X"
+				},
+				"limitations": {
+					"before": null,
+					"after": "Beta; Android tablets require Android 10 or later. Gallery/media export and 3D painting remain in progress; plug-ins are experimental. Full Procreate project or brush compatibility is not documented. Linux video and PDF features rely on system FFmpeg and Poppler. Separate from the retired surfrpt1 project of the same name."
+				},
+				"screenshots": {
+					"before": null,
+					"after": [
+						{
+							"src": "https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/canvas.jpg",
+							"alt": "ProCraft's tablet interface displaying a sunset painting with drawing tools and brush-size controls."
+						},
+						{
+							"src": "https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/brushes.jpg",
+							"alt": "ProCraft's brush library showing painting brushes and their stroke previews."
+						},
+						{
+							"src": "https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/layers.jpg",
+							"alt": "ProCraft's Layers panel showing seven layers of the sunset painting, visibility controls and blend modes."
+						}
+					]
+				}
+			},
+			"change_reasons": [
+				"Explicit maintainer request; reviewed public source, applicable license files, original/parent references and meaningful implementation."
+			],
+			"review_notes": [
+				"Separate, independently maintained painting codebase recommended by retired surfrpt1/procraft-old; preserve the archived entry and its stable URL."
+			],
+			"source_evidence_key": "procraft-painting"
+		},
+		{
+			"slug": "capcraft-android",
+			"kind": "tools",
+			"path": "apps/frontend/remade-wiki/src/content/catalog/tools/artcraft-android/capcraft-android.yaml",
+			"original_fields": null,
+			"reviewed_revision": "31b4109dbee216612c5416eb400532e4d01a8a16",
+			"canonical_source": "https://github.com/artcraft-android/capcraft-android",
+			"dimensions": {
+				"identity": {
+					"result": "verified",
+					"catalog_repository": "https://github.com/artcraft-android/capcraft-android",
+					"reviewed_source": "https://github.com/artcraft-android/capcraft-android",
+					"credited_authors": ["artcraft-android"]
+				},
+				"availability": {
+					"result": "verified",
+					"archived": false
+				},
+				"maturity": {
+					"result": "maintainer-reported",
+					"catalog": "beta",
+					"basis": "Explicit current README stage; release packages corroborate availability, not runtime qualification."
+				},
+				"features": {
+					"result": "documentary review",
+					"decision": "new maintainer-requested listing",
+					"basis": "README, published packages and engine workspace manifests; no third-party code executed."
+				},
+				"license": {
+					"result": "documentary review",
+					"catalog": "AGPL-3.0-or-later",
+					"files": ["LICENSE"]
+				},
+				"platforms": {
+					"result": "maintainer-reported",
+					"catalog": ["Android"]
+				},
+				"websites": {
+					"result": "checked",
+					"url_evidence": [
+						"https://github.com/artcraft-android/capcraft-android",
+						"https://github.com/artcraft-android/capcraft-android/releases",
+						"https://github.com/artcraft-android/capcraft-android#readme"
+					]
+				}
+			},
+			"recent_releases": [
+				{
+					"tagName": "v0.0.4-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-04T20:21:55Z",
+					"url": "https://github.com/artcraft-android/capcraft-android/releases/tag/v0.0.4-beta"
+				},
+				{
+					"tagName": "v0.0.3-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-10-27T21:35:52Z",
+					"url": "https://github.com/artcraft-android/capcraft-android/releases/tag/v0.0.3-beta"
+				}
+			],
+			"changes": {
+				"slug": {
+					"before": null,
+					"after": "capcraft-android"
+				},
+				"name": {
+					"before": null,
+					"after": "CapCraft for Android"
+				},
+				"authors": {
+					"before": null,
+					"after": ["artcraft-android"]
+				},
+				"repository": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/capcraft-android"
+				},
+				"url": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/capcraft-android/releases"
+				},
+				"languages": {
+					"before": null,
+					"after": ["Kotlin", "Rust"]
+				},
+				"projects": {
+					"before": null,
+					"after": ["concat"]
+				},
+				"platforms": {
+					"before": null,
+					"after": ["Android"]
+				},
+				"status": {
+					"before": null,
+					"after": "beta"
+				},
+				"license": {
+					"before": null,
+					"after": "AGPL-3.0-or-later"
+				},
+				"summary": {
+					"before": null,
+					"after": "Concat-powered Android video editing with a native touch interface, effects, captions and local export."
+				},
+				"description": {
+					"before": null,
+					"after": "An Android frontend built on Concat's Rust video engine with a Kotlin/Jetpack Compose interface. Provides multitrack editing, trimming, speed curves, masks and chroma key, keyframes, filters, transitions, text and stickers, on-device captions, voiceover and audio effects. Exports video, GIFs and still images through a phone-oriented editing workflow."
+				},
+				"docs": {
+					"before": null,
+					"after": "https://github.com/artcraft-android/capcraft-android#readme"
+				},
+				"limitations": {
+					"before": null,
+					"after": "Beta; requires Android 10 or later. Uses Concat's engine with FFmpeg and sherpa-onnx. Background removal downloads a model for local use. A music library and downloadable effects/templates are planned; generative AI, cloud storage and accounts are not planned. Full CapCut behavior and project compatibility are not established."
+				}
+			},
+			"change_reasons": [
+				"Explicit maintainer request; reviewed public source, applicable license files, original/parent references and meaningful implementation."
+			],
+			"review_notes": [
+				"Uses the existing concat engine; supporting tool rather than a second independent reimplementation.",
+				"Concat is outside the ArtCraft suite. Reference Concat directly; do not falsely assert support for every suite member."
+			],
+			"source_evidence_key": "capcraft-android"
 		}
 	],
-	"source_evidence_file": "docs/audits/2026-11-08-sources.json"
+	"source_evidence_file": "docs/audits/2026-11-08-sources.json",
+	"artcraft_android_followup_file": "docs/audits/2026-11-08-artcraft-android.json",
+	"followup_checked_at_utc": "2026-11-08T17:41:31.285846+00:00"
 }

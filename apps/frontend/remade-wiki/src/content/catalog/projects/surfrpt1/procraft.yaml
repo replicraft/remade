@@ -7,7 +7,7 @@ browser_url: https://playground.daijro.dev/head/procraft/
 originals: [procreate]
 category: creative
 languages: [Rust]
-platforms: [Windows, iOS]
+platforms: [Windows, iOS, Android]
 status: archived
 compatibility: partial
 summary: "Procreate-style layered painting with brush dynamics, masks, selections, guides and Animation Assist."

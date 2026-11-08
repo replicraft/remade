@@ -1,0 +1,14 @@
+slug: wordcraft-android-native
+name: WordCraft for Android (native UI)
+authors: [artcraft-android]
+repository: https://github.com/artcraft-android/wordcraft-android
+url: https://github.com/artcraft-android/wordcraft-android/releases
+languages: [Kotlin, Rust]
+projects: [wordcraft]
+platforms: [Android]
+status: beta
+license: MIT OR Apache-2.0
+summary: Read and edit documents on Android with a native touch interface powered by WordCraft's Rust engine.
+description: An Android frontend for WordCraft using its existing Rust document engine with a Kotlin/Jetpack Compose interface. Adds mobile and print views, a touch toolbar, formatting, tables, pictures and scans, shapes, charts, page layout, comments and tracked changes, pen drawing, dictation and Read Aloud. Includes templates, autosave, sharing and printing.
+docs: https://github.com/artcraft-android/wordcraft-android#readme
+limitations: Beta; requires Android 10 or later. Reuses WordCraft and inherits its document-format and layout limitations. Local app; generative AI, cloud storage, accounts and co-authoring are not planned. Published APKs do not establish compatibility with every device or Microsoft Word document.

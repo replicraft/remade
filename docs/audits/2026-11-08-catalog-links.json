@@ -7534,7 +7534,10 @@
 		},
 		"https://github.com/artcraft-android/procraft": {
 			"checked_at": "2026-11-08T16:51:29.932104+00:00",
-			"uses": [["surfrpt1/procraft", "upstream_homepage"]],
+			"uses": [
+				["surfrpt1/procraft", "upstream_homepage"],
+				["procraft-painting", "repository"]
+			],
 			"status": 200,
 			"final_url": "https://github.com/artcraft-android/procraft",
 			"content_type": "text/html; charset=utf-8",
@@ -7797,6 +7800,118 @@
 			"final_url": "https://github.com/surfrpt1/procraft-old#readme",
 			"content_type": "text/html; charset=utf-8",
 			"title": "GitHub - surfrpt1/procraft-old: Retired: ProCraft, a clean-room raster painting studio in pure Rust. v0.11.0 is the final release. The actively mainta"
+		},
+		"https://github.com/artcraft-android/procraft#readme": {
+			"checked_at": "2026-11-08T17:42:12.718040+00:00",
+			"uses": [["procraft-painting", "docs"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/procraft#readme",
+			"content_type": "text/html; charset=utf-8",
+			"title": "GitHub - artcraft-android/procraft: An open-source painting app for Android tablets, Windows and Linux: pressure-sensitive brushes, layers, adjustments, animation and 3D painting on its own Rust engin"
+		},
+		"https://discord.gg/EmRrVN2X": {
+			"checked_at": "2026-11-08T17:42:12.719132+00:00",
+			"uses": [["procraft-painting", "discord_server"]],
+			"status": 200,
+			"final_url": "https://discord.com/invite/EmRrVN2X",
+			"content_type": "text/html",
+			"title": "ProCraft discussion"
+		},
+		"https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/canvas.jpg": {
+			"checked_at": "2026-11-08T17:42:14.830795+00:00",
+			"uses": [["procraft-painting", "screenshot"]],
+			"status": 200,
+			"final_url": "https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/canvas.jpg",
+			"content_type": "image/jpeg",
+			"title": null
+		},
+		"https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/brushes.jpg": {
+			"checked_at": "2026-11-08T17:42:13.290240+00:00",
+			"uses": [["procraft-painting", "screenshot"]],
+			"status": 200,
+			"final_url": "https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/brushes.jpg",
+			"content_type": "image/jpeg",
+			"title": null
+		},
+		"https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/layers.jpg": {
+			"checked_at": "2026-11-08T17:42:15.097819+00:00",
+			"uses": [["procraft-painting", "screenshot"]],
+			"status": 200,
+			"final_url": "https://raw.githubusercontent.com/artcraft-android/procraft/b84d17665df9d94101d4871679253230ea008ddc/docs/images/layers.jpg",
+			"content_type": "image/jpeg",
+			"title": null
+		},
+		"https://github.com/artcraft-android/wordcraft-android": {
+			"checked_at": "2026-11-08T17:42:13.270998+00:00",
+			"uses": [["wordcraft-android-native", "repository"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/wordcraft-android",
+			"content_type": "text/html; charset=utf-8",
+			"title": "GitHub - artcraft-android/wordcraft-android: An open-source reimplementation of Microsoft Word in Rust while using Kotlin as the UI framework. · GitHub"
+		},
+		"https://github.com/artcraft-android/wordcraft-android#readme": {
+			"checked_at": "2026-11-08T17:42:14.922912+00:00",
+			"uses": [["wordcraft-android-native", "docs"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/wordcraft-android#readme",
+			"content_type": "text/html; charset=utf-8",
+			"title": "GitHub - artcraft-android/wordcraft-android: An open-source reimplementation of Microsoft Word in Rust while using Kotlin as the UI framework. · GitHub"
+		},
+		"https://github.com/artcraft-android/wordcraft-android/releases": {
+			"checked_at": "2026-11-08T17:42:13.379983+00:00",
+			"uses": [["wordcraft-android-native", "url"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/wordcraft-android/releases",
+			"content_type": "text/html; charset=utf-8",
+			"title": "Releases · artcraft-android/wordcraft-android · GitHub"
+		},
+		"https://github.com/artcraft-android/capcraft-android": {
+			"checked_at": "2026-11-08T17:42:13.651395+00:00",
+			"uses": [["capcraft-android", "repository"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/capcraft-android",
+			"content_type": "text/html; charset=utf-8",
+			"title": "GitHub - artcraft-android/capcraft-android: An open-source mobile video editor in Rust while using Kotlin as the UI framework. · GitHub"
+		},
+		"https://github.com/artcraft-android/capcraft-android#readme": {
+			"checked_at": "2026-11-08T17:42:13.836288+00:00",
+			"uses": [["capcraft-android", "docs"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/capcraft-android#readme",
+			"content_type": "text/html; charset=utf-8",
+			"title": "GitHub - artcraft-android/capcraft-android: An open-source mobile video editor in Rust while using Kotlin as the UI framework. · GitHub"
+		},
+		"https://github.com/artcraft-android/capcraft-android/releases": {
+			"checked_at": "2026-11-08T17:42:14.098555+00:00",
+			"uses": [["capcraft-android", "url"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/capcraft-android/releases",
+			"content_type": "text/html; charset=utf-8",
+			"title": "Releases · artcraft-android/capcraft-android · GitHub"
+		},
+		"https://github.com/artcraft-android/gridcraft-android": {
+			"checked_at": "2026-11-08T17:42:14.101236+00:00",
+			"uses": [["gridcraft-android", "repository"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/gridcraft-android",
+			"content_type": "text/html; charset=utf-8",
+			"title": "GitHub - artcraft-android/gridcraft-android: An open-source reimplementation of Microsoft Excel in Rust while using Kotlin as the UI framework. · GitHub"
+		},
+		"https://github.com/artcraft-android/gridcraft-android#readme": {
+			"checked_at": "2026-11-08T17:42:14.530321+00:00",
+			"uses": [["gridcraft-android", "docs"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/gridcraft-android#readme",
+			"content_type": "text/html; charset=utf-8",
+			"title": "GitHub - artcraft-android/gridcraft-android: An open-source reimplementation of Microsoft Excel in Rust while using Kotlin as the UI framework. · GitHub"
+		},
+		"https://github.com/artcraft-android/gridcraft-android/releases": {
+			"checked_at": "2026-11-08T17:42:14.703838+00:00",
+			"uses": [["gridcraft-android", "url"]],
+			"status": 200,
+			"final_url": "https://github.com/artcraft-android/gridcraft-android/releases",
+			"content_type": "text/html; charset=utf-8",
+			"title": "Releases · artcraft-android/gridcraft-android · GitHub"
 		}
 	},
 	"discord_invites": {
@@ -7944,6 +8059,13 @@
 			"message": null,
 			"guild": "SolidCraft",
 			"retried": true
+		},
+		"https://discord.gg/EmRrVN2X": {
+			"status": 200,
+			"code": "EmRrVN2X",
+			"message": null,
+			"guild": "ProCraft discussion"
 		}
-	}
+	},
+	"followup_checked_at_utc": "2026-11-08T17:42:11.917315+00:00"
 }

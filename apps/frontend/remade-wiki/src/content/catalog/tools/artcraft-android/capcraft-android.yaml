@@ -1,0 +1,14 @@
+slug: capcraft-android
+name: CapCraft for Android
+authors: [artcraft-android]
+repository: https://github.com/artcraft-android/capcraft-android
+url: https://github.com/artcraft-android/capcraft-android/releases
+languages: [Kotlin, Rust]
+projects: [concat]
+platforms: [Android]
+status: beta
+license: AGPL-3.0-or-later
+summary: Concat-powered Android video editing with a native touch interface, effects, captions and local export.
+description: An Android frontend built on Concat's Rust video engine with a Kotlin/Jetpack Compose interface. Provides multitrack editing, trimming, speed curves, masks and chroma key, keyframes, filters, transitions, text and stickers, on-device captions, voiceover and audio effects. Exports video, GIFs and still images through a phone-oriented editing workflow.
+docs: https://github.com/artcraft-android/capcraft-android#readme
+limitations: Beta; requires Android 10 or later. Uses Concat's engine with FFmpeg and sherpa-onnx. Background removal downloads a model for local use. A music library and downloadable effects/templates are planned; generative AI, cloud storage and accounts are not planned. Full CapCut behavior and project compatibility are not established.
