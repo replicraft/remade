@@ -1,3 +1,9 @@
+- slug: cleanmymac
+  vendor: macpaw
+  name: CleanMyMac
+  url: https://macpaw.com/cleanmymac
+  category: other
+  aliases: [CleanMyMac X]
 - slug: autodesk-tinkercad-3d-design
   vendor: autodesk
   name: Autodesk Tinkercad 3D Design
