@@ -6,13 +6,13 @@ originals: ["zbrush"]
 category: "creative"
 languages: ["Rust"]
 platforms: ["Windows", "Linux", "macOS"]
-status: "alpha"
+status: beta
 compatibility: "partial"
-summary: "ZBrush-style digital sculpting with brushes, subdivision levels, voxel remeshing and OBJ/STL exchange."
-description: "A digital-clay sculpting application with pressure-sensitive brushes, masking, symmetry, multi-piece scenes, subdivision levels, voxel remeshing, decimation and face groups. Saves its own OXB projects with autosave/recovery and imports or exports OBJ and STL geometry."
+summary: ZBrush-style sculpting with dynamic detail, subdivision levels, vertex painting and ZTL/ZPR mesh imports.
+description: A digital-clay sculpting application with pressure-sensitive brushes, masking, symmetry, multi-piece scenes, subdivision levels, voxel remeshing, decimation and face groups. Adds dynamic detail, vertex painting, Curve Move and Kelvinlet brushes. Saves OXB projects with autosave/recovery; imports ZTL/ZPR mesh pieces and OBJ/STL, and exports OBJ, STL, PLY and glTF/GLB.
 license: "MIT OR Apache-2.0"
 docs: "https://github.com/crisprintsstuff/OxyBrush#readme"
-limitations: "Alpha; native ZBrush file interoperability is research, not shipped support. Dynamic topology, vertex color, sculpt layers, posing, UVs and baking remain planned. Tablet pressure and high-poly performance need qualification. Windows builds are unsigned and macOS packages are not notarized; iPad is planned."
+limitations: Beta; ZTL/ZPR import covers mesh geometry and SubTools, not full ZBrush project fidelity or native-format writing. Some format-research documentation still describes an earlier milestone. Sculpt layers, full posing, UVs and baking remain planned. Tablet pressure and high-poly performance need qualification. Windows builds are unsigned and macOS packages are not notarized; iPad is planned.
 screenshots:
   - src: https://raw.githubusercontent.com/crisprintsstuff/OxyBrush/main/docs/images/screenshot.png
     alt: "OxyBrush: sculpting viewport, brush controls and model pieces."

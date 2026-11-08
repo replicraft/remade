@@ -14,7 +14,7 @@ platforms:
 status: experimental
 compatibility: partial
 summary: "Search Fab assets from a Rust CLI, with a Quixel Bridge-style desktop asset manager planned."
-description: "An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its Rust CLI searches Fab and signs in to user accounts, with implemented download-queue and chunk-reassembly components, a SQLite library for offline browsing of downloaded assets, and a Blender PBR export adapter. Complete live downloads still need signed-in CDN validation; the desktop application and in-Blender add-on remain planned."
+description: An independent Quixel Bridge-style asset workflow targeting Fab and Megascans. Its Rust CLI and egui desktop app search Fab, sign in, download owned assets and manage a local SQLite library. Resolves manifests, reassembles chunks and verifies files. Exports recorded assets as Blender PBR layouts and import scripts, with offline export and a Blender sidebar add-on.
 license: MIT OR Apache-2.0
 docs: https://github.com/cmspeedau/AssetCraft#readme
-limitations: "Pre-alpha; no desktop UI or Blender add-on yet. Download components and export adapters are implemented, but Fab CDN resolution still needs a real signed-in response and end-to-end download validation. OS keyring integration is unfinished. Account access and asset use depend on Fab and each asset license; the software license grants no rights to downloaded assets."
+limitations: Pre-alpha; no installers yet. Fab access requires an authorized account and owned assets; service behavior and end-to-end compatibility remain maintainer-reported. Credentials use the OS keyring when available, otherwise an owner-only private file. Other DCC integrations, broader Fab coverage and polish remain unfinished.

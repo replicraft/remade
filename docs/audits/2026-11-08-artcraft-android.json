@@ -1,0 +1,413 @@
+{
+	"checked_at_utc": "2026-11-08T17:41:31.285846+00:00",
+	"scope": "All seven public repositories under artcraft-android; one independent painting implementation and six app-specific supporting tools. No blanket suite-support claim.",
+	"repositories": [
+		{
+			"repository": "https://github.com/artcraft-android/gridcraft-android",
+			"catalog_slug": "gridcraft-android",
+			"kind": "tools",
+			"decision": "added",
+			"extends_project": "gridcraft",
+			"reviewed_revision": "72d5bfc0729d0966e9bd966c2eabaa0312eea3ff",
+			"sources": [
+				{
+					"url": "https://github.com/artcraft-android/gridcraft-android/blob/72d5bfc0729d0966e9bd966c2eabaa0312eea3ff/README.md",
+					"kind": "readme",
+					"blob_oid": "19de83fca16a0fc853874b42afcf3582fae6ab2c"
+				},
+				{
+					"url": "https://github.com/artcraft-android/gridcraft-android/blob/72d5bfc0729d0966e9bd966c2eabaa0312eea3ff/LICENSE-MIT",
+					"kind": "license",
+					"blob_oid": "eba4152b77057d8aa93380b1f11a65cdbddf35a5"
+				},
+				{
+					"url": "https://github.com/artcraft-android/gridcraft-android/blob/72d5bfc0729d0966e9bd966c2eabaa0312eea3ff/LICENSE-APACHE",
+					"kind": "license",
+					"blob_oid": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+				},
+				{
+					"url": "https://github.com/artcraft-android/gridcraft-android/blob/72d5bfc0729d0966e9bd966c2eabaa0312eea3ff/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "89999bec141d32844ccdd5cbcf040b217434ea8a"
+				},
+				{
+					"url": "https://github.com/artcraft-android/gridcraft-android/blob/72d5bfc0729d0966e9bd966c2eabaa0312eea3ff/NOTICE",
+					"kind": "attribution",
+					"blob_oid": "789bb3eeebb118c7812e189b8926d254e520b594"
+				},
+				{
+					"url": "https://github.com/artcraft-android/gridcraft-android/blob/72d5bfc0729d0966e9bd966c2eabaa0312eea3ff/ATTRIBUTION.md",
+					"kind": "attribution",
+					"blob_oid": "91a3af54f2edc50b5077ed2d5aec950e9b645991"
+				}
+			],
+			"releases": [
+				{
+					"tagName": "v0.0.1-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-08T15:57:28Z",
+					"url": "https://github.com/artcraft-android/gridcraft-android/releases/tag/v0.0.1-beta",
+					"asset_names": [
+						"gridcraft-android-0.0.1-beta.apk",
+						"gridcraft-android-0.0.1-beta-armeabi-v7a.apk"
+					]
+				}
+			]
+		},
+		{
+			"repository": "https://github.com/artcraft-android/wordcraft-android",
+			"catalog_slug": "wordcraft-android-native",
+			"kind": "tools",
+			"decision": "added",
+			"extends_project": "wordcraft",
+			"reviewed_revision": "b2b7cf913c6f61604062e2db30962f32ec921b11",
+			"sources": [
+				{
+					"url": "https://github.com/artcraft-android/wordcraft-android/blob/b2b7cf913c6f61604062e2db30962f32ec921b11/README.md",
+					"kind": "readme",
+					"blob_oid": "7577d070cc3e542ceed606363f1734c25324fcfb"
+				},
+				{
+					"url": "https://github.com/artcraft-android/wordcraft-android/blob/b2b7cf913c6f61604062e2db30962f32ec921b11/LICENSE-MIT",
+					"kind": "license",
+					"blob_oid": "c2c4a1caffa887f897f51eed773a903ac0864469"
+				},
+				{
+					"url": "https://github.com/artcraft-android/wordcraft-android/blob/b2b7cf913c6f61604062e2db30962f32ec921b11/LICENSE-APACHE",
+					"kind": "license",
+					"blob_oid": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+				},
+				{
+					"url": "https://github.com/artcraft-android/wordcraft-android/blob/b2b7cf913c6f61604062e2db30962f32ec921b11/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "34278c375f81429dda0b3e7fcfdbccc15a2bee74"
+				},
+				{
+					"url": "https://github.com/artcraft-android/wordcraft-android/blob/b2b7cf913c6f61604062e2db30962f32ec921b11/NOTICE",
+					"kind": "attribution",
+					"blob_oid": "204ab3ca5e8ac8f62d281a196d3bc02cf052a18e"
+				},
+				{
+					"url": "https://github.com/artcraft-android/wordcraft-android/blob/b2b7cf913c6f61604062e2db30962f32ec921b11/ATTRIBUTION.md",
+					"kind": "attribution",
+					"blob_oid": "0e81e6f92d07c3e2691333626088b99c0a696d28"
+				}
+			],
+			"releases": [
+				{
+					"tagName": "v0.0.1-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-08T15:59:31Z",
+					"url": "https://github.com/artcraft-android/wordcraft-android/releases/tag/v0.0.1-beta",
+					"asset_names": [
+						"wordcraft-android-0.0.1-beta.apk",
+						"wordcraft-android-0.0.1-beta-armeabi-v7a.apk"
+					]
+				}
+			]
+		},
+		{
+			"repository": "https://github.com/artcraft-android/procraft",
+			"catalog_slug": "procraft-painting",
+			"kind": "projects",
+			"decision": "added",
+			"extends_project": null,
+			"reviewed_revision": "b84d17665df9d94101d4871679253230ea008ddc",
+			"sources": [
+				{
+					"url": "https://github.com/artcraft-android/procraft/blob/b84d17665df9d94101d4871679253230ea008ddc/README.md",
+					"kind": "readme",
+					"blob_oid": "12de0d5df27c151d90d2c948ba094a021d172d6b"
+				},
+				{
+					"url": "https://github.com/artcraft-android/procraft/blob/b84d17665df9d94101d4871679253230ea008ddc/LICENSE-MIT",
+					"kind": "license",
+					"blob_oid": "b08a44b8fed92b4a7deee476356ab80caa3fdd33"
+				},
+				{
+					"url": "https://github.com/artcraft-android/procraft/blob/b84d17665df9d94101d4871679253230ea008ddc/LICENSE-APACHE",
+					"kind": "license",
+					"blob_oid": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+				},
+				{
+					"url": "https://github.com/artcraft-android/procraft/blob/b84d17665df9d94101d4871679253230ea008ddc/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "9814c9e5b190c098557cc2d63be8fee71c394da9"
+				},
+				{
+					"url": "https://github.com/artcraft-android/procraft/blob/b84d17665df9d94101d4871679253230ea008ddc/NOTICE",
+					"kind": "attribution",
+					"blob_oid": "98dab8e28339e27dfef10becde129aff5c8fe7bd"
+				},
+				{
+					"url": "https://github.com/artcraft-android/procraft/blob/b84d17665df9d94101d4871679253230ea008ddc/ATTRIBUTION.md",
+					"kind": "attribution",
+					"blob_oid": "2bf4102874ef144e8d70d86bb2965a7ce3dd8610"
+				}
+			],
+			"releases": [
+				{
+					"tagName": "v0.0.5-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-07T19:57:43Z",
+					"url": "https://github.com/artcraft-android/procraft/releases/tag/v0.0.5-beta",
+					"asset_names": [
+						"procraft-0.0.5-beta-android-arm32.apk",
+						"procraft-0.0.5-beta-linux-x86_64.deb",
+						"procraft-0.0.5-beta-linux-x86_64.AppImage",
+						"SHA256SUMS.txt",
+						"procraft-0.0.5-beta-android-arm64.apk",
+						"procraft-0.0.5-beta-linux-x86_64.tar.gz",
+						"procraft-0.0.5-beta-windows-arm64-portable.zip",
+						"procraft-0.0.5-beta-windows-x64-portable.zip",
+						"procraft-0.0.5-beta-windows-arm64.msi",
+						"procraft-0.0.5-beta-windows-x64.msi"
+					]
+				},
+				{
+					"tagName": "v0.0.4-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-04T18:08:22Z",
+					"url": "https://github.com/artcraft-android/procraft/releases/tag/v0.0.4-beta",
+					"asset_names": [
+						"procraft-0.0.4-beta-linux-x86_64.deb",
+						"procraft-0.0.4-beta-linux-x86_64.tar.gz",
+						"procraft-0.0.4-beta-android-arm64.apk",
+						"procraft-0.0.4-beta-linux-x86_64.AppImage",
+						"SHA256SUMS.txt",
+						"procraft-0.0.4-beta-windows-arm64-portable.zip",
+						"procraft-0.0.4-beta-windows-arm64.msi",
+						"procraft-0.0.4-beta-windows-x64-portable.zip",
+						"procraft-0.0.4-beta-windows-x64.msi"
+					]
+				}
+			]
+		},
+		{
+			"repository": "https://github.com/artcraft-android/capcraft-android",
+			"catalog_slug": "capcraft-android",
+			"kind": "tools",
+			"decision": "added",
+			"extends_project": "concat",
+			"reviewed_revision": "31b4109dbee216612c5416eb400532e4d01a8a16",
+			"sources": [
+				{
+					"url": "https://github.com/artcraft-android/capcraft-android/blob/31b4109dbee216612c5416eb400532e4d01a8a16/README.md",
+					"kind": "readme",
+					"blob_oid": "6d242ed4deee66d058f7390e98e209f343b227b5"
+				},
+				{
+					"url": "https://github.com/artcraft-android/capcraft-android/blob/31b4109dbee216612c5416eb400532e4d01a8a16/LICENSE",
+					"kind": "license",
+					"blob_oid": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e"
+				},
+				{
+					"url": "https://github.com/artcraft-android/capcraft-android/blob/31b4109dbee216612c5416eb400532e4d01a8a16/NOTICE",
+					"kind": "attribution",
+					"blob_oid": "5371c0660e3deff313918266ca6750a1ea3a497c"
+				},
+				{
+					"url": "https://github.com/artcraft-android/capcraft-android/blob/31b4109dbee216612c5416eb400532e4d01a8a16/src/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "85e88f38aafcccf81e3fdb77d679ee7fa4b44736"
+				},
+				{
+					"url": "https://github.com/artcraft-android/capcraft-android/blob/31b4109dbee216612c5416eb400532e4d01a8a16/src/crates/capcraft-android/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "4062428fcdf6f64a5117810ca5fbd0016d93adb5"
+				}
+			],
+			"releases": [
+				{
+					"tagName": "v0.0.4-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-04T20:21:55Z",
+					"url": "https://github.com/artcraft-android/capcraft-android/releases/tag/v0.0.4-beta",
+					"asset_names": ["capcraft-android-0.0.4-beta.apk"]
+				},
+				{
+					"tagName": "v0.0.3-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-10-27T21:35:52Z",
+					"url": "https://github.com/artcraft-android/capcraft-android/releases/tag/v0.0.3-beta",
+					"asset_names": ["capcraft-android-0.0.3-beta.apk"]
+				}
+			]
+		},
+		{
+			"repository": "https://github.com/artcraft-android/lightcraft-android",
+			"catalog_slug": "lightcraft-android",
+			"kind": "tools",
+			"decision": "already listed",
+			"extends_project": "lightcraft",
+			"reviewed_revision": "e9751a785e9c94d3b6991be2d3a5e2aa5ca48885",
+			"sources": [
+				{
+					"url": "https://github.com/artcraft-android/lightcraft-android/blob/e9751a785e9c94d3b6991be2d3a5e2aa5ca48885/README.md",
+					"kind": "readme",
+					"blob_oid": "79d263a67271b50e63ab93dc2ba823656d051396"
+				},
+				{
+					"url": "https://github.com/artcraft-android/lightcraft-android/blob/e9751a785e9c94d3b6991be2d3a5e2aa5ca48885/LICENSE-MIT",
+					"kind": "license",
+					"blob_oid": "d050b29c63de85bfd6eb683fb27245b9dbbe80e3"
+				},
+				{
+					"url": "https://github.com/artcraft-android/lightcraft-android/blob/e9751a785e9c94d3b6991be2d3a5e2aa5ca48885/LICENSE-APACHE",
+					"kind": "license",
+					"blob_oid": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+				},
+				{
+					"url": "https://github.com/artcraft-android/lightcraft-android/blob/e9751a785e9c94d3b6991be2d3a5e2aa5ca48885/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "34f30c0f0cd567955829ab0dcdae27846c3d172a"
+				},
+				{
+					"url": "https://github.com/artcraft-android/lightcraft-android/blob/e9751a785e9c94d3b6991be2d3a5e2aa5ca48885/NOTICE",
+					"kind": "attribution",
+					"blob_oid": "cdec6124038679e790d366f9e28b13885fe8398d"
+				}
+			],
+			"releases": [
+				{
+					"tagName": "v0.0.6-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-04T16:24:14Z",
+					"url": "https://github.com/artcraft-android/lightcraft-android/releases/tag/v0.0.6-beta",
+					"asset_names": [
+						"lightcraft-android-0.0.6-beta.apk",
+						"lightcraft-android-0.0.6-beta-armeabi-v7a.apk"
+					]
+				},
+				{
+					"tagName": "v0.0.5-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-10-14T14:40:50Z",
+					"url": "https://github.com/artcraft-android/lightcraft-android/releases/tag/v0.0.5-beta",
+					"asset_names": [
+						"lightcraft-android-0.0.5-beta.apk",
+						"lightcraft-android-0.0.5-beta-armeabi-v7a.apk"
+					]
+				}
+			]
+		},
+		{
+			"repository": "https://github.com/artcraft-android/pdfcraft-android",
+			"catalog_slug": "pdfcraft-android",
+			"kind": "tools",
+			"decision": "already listed",
+			"extends_project": "pdfcraft",
+			"reviewed_revision": "c643244e0e00c1f0b746ceaff4661a91921e907e",
+			"sources": [
+				{
+					"url": "https://github.com/artcraft-android/pdfcraft-android/blob/c643244e0e00c1f0b746ceaff4661a91921e907e/README.md",
+					"kind": "readme",
+					"blob_oid": "b5b599c242fd95cfbe9266043490622b3405d698"
+				},
+				{
+					"url": "https://github.com/artcraft-android/pdfcraft-android/blob/c643244e0e00c1f0b746ceaff4661a91921e907e/LICENSE-MIT",
+					"kind": "license",
+					"blob_oid": "d2c0cd3fbf0f4285fb1f521159163695c0e1e0d8"
+				},
+				{
+					"url": "https://github.com/artcraft-android/pdfcraft-android/blob/c643244e0e00c1f0b746ceaff4661a91921e907e/LICENSE-APACHE",
+					"kind": "license",
+					"blob_oid": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+				},
+				{
+					"url": "https://github.com/artcraft-android/pdfcraft-android/blob/c643244e0e00c1f0b746ceaff4661a91921e907e/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "80601cc6b8ccf3dcb911a8e757ccf2df6e3127a8"
+				},
+				{
+					"url": "https://github.com/artcraft-android/pdfcraft-android/blob/c643244e0e00c1f0b746ceaff4661a91921e907e/NOTICE",
+					"kind": "attribution",
+					"blob_oid": "8b3502a9113f6c4d5235aead7188f861ecd434f0"
+				},
+				{
+					"url": "https://github.com/artcraft-android/pdfcraft-android/blob/c643244e0e00c1f0b746ceaff4661a91921e907e/ATTRIBUTION.md",
+					"kind": "attribution",
+					"blob_oid": "e7d2dd570be4e2f6fa91a4f00922a0f49e38d27f"
+				}
+			],
+			"releases": [
+				{
+					"tagName": "v0.0.7-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-11-03T16:53:22Z",
+					"url": "https://github.com/artcraft-android/pdfcraft-android/releases/tag/v0.0.7-beta",
+					"asset_names": [
+						"pdfcraft-android-0.0.7-beta.apk",
+						"pdfcraft-android-0.0.7-beta-armeabi-v7a.apk"
+					]
+				},
+				{
+					"tagName": "v0.0.6-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-10-28T12:53:22Z",
+					"url": "https://github.com/artcraft-android/pdfcraft-android/releases/tag/v0.0.6-beta",
+					"asset_names": [
+						"pdfcraft-android-0.0.6-beta-armeabi-v7a.apk",
+						"pdfcraft-android-0.0.6-beta.apk"
+					]
+				}
+			]
+		},
+		{
+			"repository": "https://github.com/artcraft-android/filmcraft-android",
+			"catalog_slug": "filmcraft-android",
+			"kind": "tools",
+			"decision": "already listed",
+			"extends_project": "filmcraft",
+			"reviewed_revision": "c41b58467edd28d098336286528159b24c5203b5",
+			"sources": [
+				{
+					"url": "https://github.com/artcraft-android/filmcraft-android/blob/c41b58467edd28d098336286528159b24c5203b5/README.md",
+					"kind": "readme",
+					"blob_oid": "1923b12d2730571efad81f8865cbd5889ffcc395"
+				},
+				{
+					"url": "https://github.com/artcraft-android/filmcraft-android/blob/c41b58467edd28d098336286528159b24c5203b5/LICENSE-MIT",
+					"kind": "license",
+					"blob_oid": "458ff62022ecffd3e32cf31895c96bd79e89875f"
+				},
+				{
+					"url": "https://github.com/artcraft-android/filmcraft-android/blob/c41b58467edd28d098336286528159b24c5203b5/LICENSE-APACHE",
+					"kind": "license",
+					"blob_oid": "f433b1a53f5b830a205fd2df78e2b34974656c7b"
+				},
+				{
+					"url": "https://github.com/artcraft-android/filmcraft-android/blob/c41b58467edd28d098336286528159b24c5203b5/Cargo.toml",
+					"kind": "engine_manifest",
+					"blob_oid": "91d9cc90c33bcf7bf5c3dac2ede095837d6c5a51"
+				},
+				{
+					"url": "https://github.com/artcraft-android/filmcraft-android/blob/c41b58467edd28d098336286528159b24c5203b5/NOTICE",
+					"kind": "attribution",
+					"blob_oid": "0d95066dbb7ca38f535b1c0de21971cbe5db20a8"
+				},
+				{
+					"url": "https://github.com/artcraft-android/filmcraft-android/blob/c41b58467edd28d098336286528159b24c5203b5/ATTRIBUTION.md",
+					"kind": "attribution",
+					"blob_oid": "88a874b87ae1da822e5767eb970bf328c1baae08"
+				}
+			],
+			"releases": [
+				{
+					"tagName": "v0.0.2-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-10-29T12:42:04Z",
+					"url": "https://github.com/artcraft-android/filmcraft-android/releases/tag/v0.0.2-beta",
+					"asset_names": ["filmcraft-android-0.0.2-beta.apk"]
+				},
+				{
+					"tagName": "v0.0.1-beta",
+					"isPrerelease": false,
+					"publishedAt": "2026-10-14T23:31:47Z",
+					"url": "https://github.com/artcraft-android/filmcraft-android/releases/tag/v0.0.1-beta",
+					"asset_names": ["filmcraft-android-0.0.1-beta.apk"]
+				}
+			]
+		}
+	]
+}

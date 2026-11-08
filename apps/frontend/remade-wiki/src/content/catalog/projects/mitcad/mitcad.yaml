@@ -21,6 +21,7 @@ description: An independent parametric CAD application with constrained sketches
   part bodies, alongside other CAD formats. Uses Qt and Open CASCADE with a Rust model, solver and
   import layer.
 license: MIT
+website: https://mitcad.org
 docs: https://github.com/mitcad/Mitcad#readme
 limitations: Early active development; format support is maintainer-reported. Inventor IPT import
   currently brings bodies without design history. Native Fusion/Inventor export and full behavioral

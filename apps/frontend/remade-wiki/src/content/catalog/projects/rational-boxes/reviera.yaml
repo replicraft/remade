@@ -1,8 +1,8 @@
 # Scope, implementation status and format exclusions are maintainer-reported in the README.
 slug: reviera
-name: BIM Reviera
+name: BIM Riviera
 authors: [rational-boxes]
-repository: https://github.com/Rational-Boxes/NoDesk_Reviera
+repository: https://github.com/Rational-Boxes/BIM_Riviera
 originals: [autodesk-revit]
 category: engineering
 languages: [Rust, C++, Lua]
@@ -12,14 +12,15 @@ compatibility: partial
 summary: "Revit-style BIM with native IFC storage, parametric building elements, rooms and clash checks."
 description: A broader Revit-style BIM alternative using IFC as its native format. Provides parametric building elements, levels, grids, rooms, component libraries, clash checks and model-derived plans, sections, elevations, schedules and sheets. Uses IfcOpenShell and OpenCASCADE, with a shared command engine for the desktop interface, Lua scripting and MCP automation.
 license: GPL-3.0-or-later
-docs: https://github.com/Rational-Boxes/NoDesk_Reviera#readme
+website: https://bimriviera.com/
+docs: https://github.com/Rational-Boxes/BIM_Riviera#readme
 limitations: Early development; features are maintainer-reported. Explicitly does not target Revit's proprietary RVT or RFA formats. MEP, families, collaboration and CAD import are not built yet; structural and analysis tools remain incomplete. Linux and Windows prerelease packages are available; macOS packaging is untested.
 screenshots:
-  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/main/design_documents/application_screenshots/3D-view.png
+  - src: https://raw.githubusercontent.com/Rational-Boxes/BIM_Riviera/main/design_documents/application_screenshots/3D-view.png
     alt: "BIM Reviera: building model and contextual editing tools."
-  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/main/design_documents/application_screenshots/plan-view.png
+  - src: https://raw.githubusercontent.com/Rational-Boxes/BIM_Riviera/main/design_documents/application_screenshots/plan-view.png
     alt: "BIM Reviera: architectural floor plan and properties."
-  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/d9381cb9d87621a62218de370a1a196295878e1e/design_documents/application_screenshots/section-box.png
+  - src: https://raw.githubusercontent.com/Rational-Boxes/BIM_Riviera/d9381cb9d87621a62218de370a1a196295878e1e/design_documents/application_screenshots/section-box.png
     alt: "A section box cutting the Institute model open, in isometric projection"
-  - src: https://raw.githubusercontent.com/Rational-Boxes/NoDesk_Reviera/d9381cb9d87621a62218de370a1a196295878e1e/design_documents/application_screenshots/manor-transparency.png
+  - src: https://raw.githubusercontent.com/Rational-Boxes/BIM_Riviera/d9381cb9d87621a62218de370a1a196295878e1e/design_documents/application_screenshots/manor-transparency.png
     alt: "The Manor sample see-through in 3D, its roof selected"

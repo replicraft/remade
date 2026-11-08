@@ -2,8 +2,8 @@
 slug: stitchfoundry
 name: StitchFoundry
 authors: [sitesentrix]
-repository: https://github.com/Stitchwright/StitchFoundry
-browser_url: https://stitchwright.github.io/StitchFoundry/
+repository: https://github.com/StitchFoundry/StitchFoundry
+browser_url: https://stitchfoundry.github.io/StitchFoundry/
 originals: [wilcom-embroiderystudio]
 category: creative
 languages: [Rust]
@@ -13,14 +13,14 @@ compatibility: partial
 summary: "Wilcom-style embroidery digitizing with stitch generators, applique, lettering and machine-file exports."
 description: A Wilcom EmbroideryStudio-style digitizing application built on VectorCraft, with running, satin and fill stitches, applique, automatic stitch sequencing, lettering, design checks and embroidery-file import/export. Includes stitch previews and headless automation.
 license: MIT OR Apache-2.0
-docs: https://github.com/Stitchwright/StitchFoundry#readme
+docs: https://github.com/StitchFoundry/StitchFoundry#readme
 limitations: "Pre-release with downloadable release-candidate builds. A broader Wilcom alternative built on VectorCraft; native Wilcom project-file compatibility is not documented. Machine files have been checked in software but not sewn on real hardware. Browser builds cannot download embroidery fonts. AI-assisted artwork generation requires a separate Anthropic API key."
 screenshots:
-  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/main/docs/images/stitchfoundry-make-a-design.png
+  - src: https://raw.githubusercontent.com/StitchFoundry/StitchFoundry/main/docs/images/stitchfoundry-make-a-design.png
     alt: "StitchFoundry: embroidery design-creation dialog."
-  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/main/docs/images/stitchfoundry-online-orders.png
+  - src: https://raw.githubusercontent.com/StitchFoundry/StitchFoundry/main/docs/images/stitchfoundry-online-orders.png
     alt: "StitchFoundry: online order setup and embroidery rules."
-  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/0bd00d3caf9eb61b1bad499ec1338de8872ea9eb/docs/images/stitchfoundry-branching.png
+  - src: https://raw.githubusercontent.com/StitchFoundry/StitchFoundry/0bd00d3caf9eb61b1bad499ec1338de8872ea9eb/docs/images/stitchfoundry-branching.png
     alt: "StitchFoundry: thirty satin petals and a fill vine sewn as one thread, with the Stitch Sequence panel"
-  - src: https://raw.githubusercontent.com/Stitchwright/StitchFoundry/0bd00d3caf9eb61b1bad499ec1338de8872ea9eb/docs/images/stitchfoundry-simple-mode.png
+  - src: https://raw.githubusercontent.com/StitchFoundry/StitchFoundry/0bd00d3caf9eb61b1bad499ec1338de8872ea9eb/docs/images/stitchfoundry-simple-mode.png
     alt: "Simple mode on the light screen: big buttons down the left, the appliqué star sample in the middle, its size, stitches and sewing time on the right"

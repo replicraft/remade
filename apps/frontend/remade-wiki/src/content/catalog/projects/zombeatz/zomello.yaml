@@ -10,12 +10,7 @@ category: productivity
 languages:
   - TypeScript
   - Rust
-platforms:
-  - Windows
-  - Linux
-  - Android
-  - Web
-  - macOS (server only)
+platforms: [Windows, Linux, Android, iOS (TestFlight beta), Web, macOS (server only)]
 status: beta
 compatibility: partial
 summary: Trello and Microsoft Planner-style boards with offline tasks, import, calendar and timeline views, and optional self-hosted collaboration.
@@ -23,7 +18,7 @@ description: A kanban planner with boards, buckets and cards, labels, checklists
 license: MIT
 website: https://docs.zombeatzmedia.com/zomello/
 docs: https://docs.zombeatzmedia.com/zomello/
-limitations: Does not replace Trello or Planner services or APIs, or export their formats. Trello uploads remain links; older comments and Planner fields absent from exports may be missing. The hosted demo stores changes only in your browser. macOS downloads are server-only; no native macOS or public iOS app release.
+limitations: Does not replace Trello or Planner services or APIs, or export their formats. Trello uploads remain links; older comments and Planner fields absent from exports may be missing. The hosted demo stores changes only in your browser. macOS downloads are server-only; there is no native macOS client. iPhone/iPad builds are distributed through the TestFlight beta.
 screenshots:
   - src: https://raw.githubusercontent.com/ZomBeatz/Zomello/main/docs/screenshots/board.png
     alt: A Zomello board with buckets and cards.

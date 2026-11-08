@@ -1,0 +1,22 @@
+slug: nootion
+name: Nootion
+authors: [btronquo]
+repository: https://github.com/btronquo/Nootion
+originals: [notion]
+category: productivity
+languages: [TypeScript]
+platforms: [Web]
+status: experimental
+compatibility: partial
+summary: Self-hosted Notion-style pages and databases with collaborative editing, formulas, automations and Notion imports.
+description: Self-hosted Notion-style pages, wikis and databases with collaborative block editing, comments, sharing and roles. Supports typed properties, relations, rollups, formulas, six database views, automations, recurring templates and widgets. Imports Notion pages and databases through its API and exports Markdown, CSV and JSON. Includes offline PWA editing, REST and MCP access, plugins and backups in a single Docker deployment.
+license: AGPL-3.0-only
+docs: https://github.com/btronquo/Nootion/blob/develop/docs/DEPLOYMENT.md
+limitations: Notion imports require an authorized integration and cannot preserve database views; unsupported formulas retain their values as text. Offline editing covers previously opened pages. Not a drop-in replacement for Notion's hosted service or API. Production maturity is not explicitly documented.
+screenshots:
+  - src: https://raw.githubusercontent.com/btronquo/Nootion/105298c892b0160e3ffd2a65b94d5b059a2be6a7/docs/screenshots/editor.png
+    alt: Nootion editing its demonstration page with formatted blocks and sidebar navigation.
+  - src: https://raw.githubusercontent.com/btronquo/Nootion/105298c892b0160e3ffd2a65b94d5b059a2be6a7/docs/screenshots/database-table.png
+    alt: Nootion's Projects database in table view with status, priority, dates and owner columns.
+  - src: https://raw.githubusercontent.com/btronquo/Nootion/105298c892b0160e3ffd2a65b94d5b059a2be6a7/docs/screenshots/database-board.png
+    alt: The same Nootion database as a board with project cards grouped by status.

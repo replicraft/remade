@@ -12,8 +12,8 @@ compatibility: partial
 summary: "An Auth0-style identity server targeting existing SDKs, authorization flows and token-based authentication."
 description: An independently developed identity server targeting Auth0's Authentication API and existing Auth0 SDK workflows. Implements authorization code with PKCE, rotating refresh tokens, client credentials, password and device grants, pushed authorization requests, consent and logout. Provides hosted database logins, custom-database connections, application-management endpoints and an admin console, with SQLite, PostgreSQL, MySQL or plugin storage.
 license: Apache-2.0
-docs: https://github.com/occupysaas/zeroauthy/blob/main/docs/compat/matrix.md
-limitations: "Compatibility and platform support are maintainer-reported; full Auth0 parity is not established. API coverage and behavior vary by endpoint, SDK and connection type; some cases have only upstream test coverage. OpenID Foundation certification covers the Basic, Config and Form Post OP profiles at commit 38b4229, rather than all Auth0 features."
+docs: https://github.com/occupysaas/zeroauthy/blob/main/docs/compatibility.md
+limitations: Auth0 parity and platform support remain partial and maintainer-reported. API behavior varies by endpoint, SDK and connection; some cases have only upstream tests. OpenID Foundation certification covers the Basic, Config and Form Post OP profiles at commit 38b4229, not all Auth0 features. WebAuthn/passkeys, SAML and enterprise-directory support remain incomplete.
 screenshots:
   - src: https://raw.githubusercontent.com/occupysaas/zeroauthy/main/docs/pics/console-applications.png
     alt: "zeroauthy: administration console with application records."

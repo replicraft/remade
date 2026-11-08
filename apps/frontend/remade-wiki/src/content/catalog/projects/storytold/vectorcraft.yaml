@@ -11,11 +11,11 @@ platforms: [Linux, macOS, Windows, FreeBSD, Web]
 status: alpha
 compatibility: partial
 summary: "Illustrator-style vector art with paths, artboards, typography and SVG, PDF and compatible AI files."
-description: "VectorCraft by ArtCraft independently implements Illustrator-style vector illustration with paths, artboards, typography, shapes, curve booleans, gradients, symbols and effects. Reads/writes SVG and PDF and supports PDF-compatible AI files. Provides desktop and browser editing plus undoable commands exposed through CLI, JSON control and MCP interfaces. Native Illustrator interchange remains partial."
+description: VectorCraft by ArtCraft independently implements Illustrator-style vector illustration with paths, artboards, typography, shapes, curve booleans, gradients, symbols and effects. Reads/writes SVG and PDF, supports PDF-compatible AI and legacy version 7 AI, and writes a bounded native editing copy. Provides desktop and browser editing plus undoable commands exposed through CLI, JSON control and MCP interfaces. Native Illustrator interchange remains partial.
 license: MIT OR Apache-2.0
 website: https://getartcraft.com/apps/vectorcraft
 discord_server: https://discord.gg/artcraft
-limitations: Under active development with incomplete Illustrator parity. AI support targets PDF-compatible files; full compatibility is not claimed.
+limitations: Alpha; Illustrator exchange remains partial. Real AI files can open with incorrect layer structure. Saved native editing data preserves supported effects only on qualifying paths, compound paths and groups; other effects or live objects can be flattened or omitted. Full Illustrator rendering, plug-in and behavioral parity is not claimed.
 screenshots:
   - src: https://raw.githubusercontent.com/storytold/vectorcraft/main/docs/images/shot-1-neon.png
     alt: "VectorCraft: poster artwork and live appearance effects."

@@ -5,10 +5,10 @@ repository: "https://github.com/el-j/encoderCraft"
 originals: ["adobe-media-encoder"]
 category: "creative"
 languages: ["Rust"]
-status: "experimental"
+status: alpha
 compatibility: "partial"
-summary: "An early Media Encoder-style queue, preset and watch-folder prototype with codec and automation components."
-description: "An early Adobe Media Encoder-style prototype with queue management, presets, watch folders, a desktop interface and CLI/MCP automation. Includes codec and media-pipeline components built on craft-libs. Source-media transcoding is not connected to the current export pipeline."
+summary: Media Encoder-style batch transcoding with queues, presets, watch folders, source decoding and CLI/MCP automation.
+description: An Adobe Media Encoder-style application with queue management, presets, watch folders, a desktop interface and CLI/MCP automation. Uses craft-libs and FilmCraft media components to decode source video, audio and image sequences, transform frames and stream them to encoders and muxers. Includes scaling, trimming, frame-rate conversion, overlays, captions and audio processing.
 license: "MIT OR Apache-2.0"
 docs: "https://github.com/el-j/encoderCraft#readme"
-limitations: "Not a usable general-purpose Media Encoder replacement. The current export pipeline generates blank video frames and silent audio rather than decoding the selected input. Native AME project and Adobe integration compatibility are unverified. README/Cargo declare MIT OR Apache-2.0, but the referenced project license files are absent."
+limitations: Alpha; source-media decoding and export are connected, but broad codec, container and platform behavior remain maintainer-reported rather than independently verified. Native AME project and Adobe Dynamic Link compatibility are not established. The README also uses production-ready wording; that does not establish full Media Encoder fidelity.

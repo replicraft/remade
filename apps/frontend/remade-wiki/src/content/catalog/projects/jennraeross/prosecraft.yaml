@@ -14,6 +14,7 @@ compatibility: partial
 summary: Scrivener-style novel writing with chapter outlines, storyboards, research notes and publishing exports.
 description: "A novel-writing alternative targeting Scrivener-style organization and publishing workflows. Built with Tauri, Svelte and TypeScript, it combines chapter and scene organization, outlines, storyboarding, rich-text editing, character/place templates and research notes. Exports include PDF, DOCX, EPUB, Markdown, HTML and plain text. Includes a timeline, focused writing modes and front/back matter."
 license: MIT
+website: https://jennraeross.github.io/ProseCraft/
 docs: https://github.com/jennraeross/ProseCraft#readme
 limitations: "Scrivener project import/export and full compile compatibility are not established. Advanced mobile synchronization and touch interactions remain unfinished."
 screenshots:

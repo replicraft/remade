@@ -16,7 +16,7 @@ platforms:
 status: experimental
 compatibility: partial
 summary: Logic Pro-style audio and MIDI arrangement, piano-roll editing, mixing and synthesis in a Rust desktop app.
-description: "An independent Logic Pro-style DAW built with Rust and egui. Provides a tracks timeline, audio and MIDI regions, recording, piano-roll editing with quantization and velocity controls, tempo maps, streamed audio playback, a mixer with effects and automation, and a built-in synthesizer. Saves arrangements and media in its own .prowave project format."
+description: An independent Logic Pro-style DAW built with Rust and egui. Provides a tracks timeline, audio and MIDI regions, recording, piano-roll editing with quantization and velocity controls, tempo maps, streamed audio playback, a mixer with effects, Amp Designer guitar/bass processing and automation, and a built-in synthesizer. Saves arrangements and media in its own .prowave project format.
 license: GPL-3.0-or-later
 docs: https://github.com/fabox-os/Pro-Wave#readme
 discord_server: https://discord.gg/V5m5nnP9uB
