@@ -1,0 +1,14 @@
+slug: wordcraft-android-touch
+name: WordCraft for Android (touch fork)
+authors: [filmsickmystery]
+repository: https://github.com/FilmsickMystery/wordcraft-android-touch
+url: https://github.com/FilmsickMystery/wordcraft-android-touch/releases
+languages: [Rust, Kotlin]
+projects: [wordcraft]
+platforms: [Android]
+status: experimental
+license: MIT
+summary: "An Android WordCraft port with pinch zoom, system clipboard support, Gboard integration and downloadable APKs."
+description: "An unofficial WordCraft Android port forked from MostafaXS1's ArtCraft Android builder, retaining WordCraft's Rust engine. Adds native pinch-to-zoom, Android system clipboard integration, Gboard editing and navigation, wider touch scrollbars and a keyboard toggle. Publishes a WordCraft 0.13.2 touch APK. This is a separate maintained fork, not a mirror or replacement for the other Android ports."
+docs: https://github.com/FilmsickMystery/wordcraft-android-touch#readme
+limitations: "A pinch gesture can initially select text, and selecting text in menus can repeatedly hide and reopen the keyboard. Reuses WordCraft and inherits its document/layout limitations. The repository carries an MIT license; inherited components retain their own terms. Published APKs do not establish compatibility with every Android device."
