@@ -1,0 +1,26 @@
+# Reviewed for submission #213; source revision 92975a215773f3e315cc4aabf93587348243a0a0.
+slug: layerling
+name: layerling
+authors:
+- henmedia
+repository: https://github.com/henmedia/layerling
+originals:
+- autodesk-tinkercad-3d-design
+category: engineering
+languages:
+- TypeScript
+- JavaScript
+platforms:
+- Web
+status: experimental
+compatibility: partial
+summary: Tinkercad-style shape modeling with fillets, threads, sketches and CAD exchange for 3D printing.
+description: A local-first browser CAD editor derived from SketchForge-3D. Reproduces Tinkercad-style shape placement, solid/hole grouping, alignment and workplane interactions, adding OpenCASCADE-backed edge operations, shelling, sketches, threads, patterns and STEP/STL/3MF exchange. Designs remain in browser storage or a self-hosted project store; local MCP control is available.
+license: AGPL-3.0-only
+website: https://layerling.com/
+browser_url: https://layerling.com/
+docs: https://github.com/henmedia/layerling#readme
+limitations: 'Not a full parametric CAD package: no parametric feature timeline or assemblies. Tinkercad cloud/account compatibility is not established. A community Tinkercad conversion tool is separate and untested by the maintainer. Browser storage requires explicit backups/export.'
+screenshots:
+- src: https://raw.githubusercontent.com/henmedia/layerling/92975a215773f3e315cc4aabf93587348243a0a0/docs/media/screenshot-en.png
+  alt: layerling application workspace from the project documentation.

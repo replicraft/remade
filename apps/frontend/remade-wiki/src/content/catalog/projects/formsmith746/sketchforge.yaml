@@ -1,0 +1,29 @@
+# Reviewed for submission #214; source revision e9cb8e8681f92e12f6044e046046cf1d363f6811.
+slug: sketchforge
+name: SketchForge
+authors:
+- formsmith746
+repository: https://github.com/Formsmith746/SketchForge-3D
+originals:
+- autodesk-tinkercad-3d-design
+category: engineering
+languages:
+- TypeScript
+- JavaScript
+platforms:
+- Web
+- macOS
+status: experimental
+compatibility: partial
+summary: Browser-based Tinkercad-style modeling with solids, holes, grouping, edge tools and model exchange.
+description: A local-first 3D design editor with a Tinkercad-style workplane, primitives, transforms, solid/hole grouping, alignment and precise dimensions. Adds reversible fillet/chamfer operations, mesh import/export, STEP/BREP workflows, local project files and MCP controls. Runs as a browser application or a macOS desktop package.
+license: AGPL-3.0-only
+website: https://sketchforge3d.com/
+browser_url: https://sketchforge3d.com/home
+docs: https://github.com/Formsmith746/SketchForge-3D#readme
+limitations: Tinkercad project, cloud and account compatibility is not established. Projects normally remain in browser storage and need backups. macOS packages may be unsigned; some virtual machines need software WebGL. No full parametric/assembly parity is claimed.
+screenshots:
+- src: https://sketchforge3d.com/assets/landing/editor-phone-stand.png
+  alt: SketchForge application workspace from the project documentation.
+- src: https://sketchforge3d.com/assets/landing/project-dashboard.png
+  alt: SketchForge application workspace from the project documentation.

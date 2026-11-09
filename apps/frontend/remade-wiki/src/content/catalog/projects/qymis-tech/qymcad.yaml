@@ -1,0 +1,27 @@
+# Reviewed for submission #225; source revision bb5ff2dff25c90fd77b5ff7387ea6380d53d34bd.
+slug: qymcad
+name: QymCAD
+authors:
+- qymis-tech
+repository: https://github.com/QymIs-Tech/QymCAD
+originals:
+- autodesk-fusion
+category: engineering
+languages:
+- Rust
+- C++
+platforms:
+- Windows
+- Linux
+- macOS
+status: experimental
+compatibility: partial
+summary: Fusion-style parametric sketches, solid features, editable history and mechanical assemblies.
+description: A desktop parametric CAD application targeting sketch-to-part-to-assembly workflows associated with Autodesk Fusion. Uses OpenCASCADE BREP geometry for constrained sketches, extrude/revolve/sweep/loft, holes, fillets, shells and patterns, with joints and dependent history regeneration. Exchanges standard CAD geometry through STEP.
+license: AGPL-3.0-or-later
+website: https://cad.qymis.tech/
+docs: https://github.com/QymIs-Tech/QymCAD#readme
+limitations: Development builds change their project format without backward compatibility; older files may require conversion. The CAM module is nonfunctional groundwork. Fusion project/cloud/add-in compatibility is not established. macOS builds are not Apple-signed; Linux packages require glibc 2.35 or later.
+screenshots:
+- src: https://raw.githubusercontent.com/QymIs-Tech/QymCAD/bb5ff2dff25c90fd77b5ff7387ea6380d53d34bd/docs/screenshots/01-assembly.png
+  alt: QymCAD application workspace from the project documentation.

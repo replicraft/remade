@@ -1,0 +1,28 @@
+# Reviewed for submission #168; source revision d4a0e15d6176cb0922f0e8af8ac3b5f08ae4f4ae.
+slug: zidan44-downloadcraft
+name: DownloadCraft
+authors:
+- zidan44
+repository: https://github.com/ZIDAN44/downloadcraft
+originals:
+- internet-download-manager
+category: productivity
+languages:
+- Rust
+platforms:
+- Windows
+- macOS
+- Linux
+- FreeBSD
+status: experimental
+compatibility: partial
+summary: Segmented downloads, persistent resume, video-page helpers and torrent transfers in a Rust desktop app.
+description: A Rust download manager targeting IDM-style segmented transfers, queues, pause/resume and persistent partial downloads. Supports direct files, video pages through yt-dlp, torrents, magnet links, file selection and web seeds, with a command-driven egui interface. This is ZIDAN44’s DownloadCraft, distinct from the separately indexed hungry-detective project.
+license: MIT OR Apache-2.0
+docs: https://github.com/ZIDAN44/downloadcraft#readme
+limitations: Early software; FTP and MEGA support remain roadmap items. Video downloads require yt-dlp. IDM settings, browser integration and download-state compatibility are not established. Published platform packages do not establish real-device coverage for every architecture.
+screenshots:
+- src: https://raw.githubusercontent.com/ZIDAN44/downloadcraft/d4a0e15d6176cb0922f0e8af8ac3b5f08ae4f4ae/docs/images/downloads.png
+  alt: DownloadCraft application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/ZIDAN44/downloadcraft/d4a0e15d6176cb0922f0e8af8ac3b5f08ae4f4ae/docs/images/add-link.png
+  alt: DownloadCraft application workspace from the project documentation.

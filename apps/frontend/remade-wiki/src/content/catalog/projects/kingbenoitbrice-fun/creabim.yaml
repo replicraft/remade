@@ -1,0 +1,27 @@
+# Reviewed for submission #230; source revision 0e5ed4678c425bd06c65741a85f891dedbc8b96c.
+slug: creabim
+name: CreaBIM
+authors:
+- kingbenoitbrice-fun
+repository: https://github.com/kingbenoitbrice-fun/CreaBIM
+originals:
+- autodesk-revit
+category: engineering
+languages:
+- Rust
+platforms:
+- Windows
+- Linux
+- macOS
+status: experimental
+compatibility: partial
+summary: BIM modeling with coordinated building geometry, live drawing views, sheets and IFC exchange.
+description: A Rust BIM application targeting Revit-like building authoring and coordinated documentation, with Blender-style direct modeling controls. Keeps building elements, views and sheets linked to one model, with architectural components, dimensions, schedules, generated sections/elevations and native IFC exchange. Stores project and edit history in its own SQLite-based format.
+license: GPL-3.0-or-later
+docs: https://github.com/kingbenoitbrice-fun/CreaBIM#readme
+limitations: Phase 1 software, explicitly not ready for real projects. Native Revit RVT/RFA and add-in compatibility are not established; exchange uses IFC. Some geometry, architectural and documentation workflows remain incomplete. Source-build/platform claims do not imply production-ready installers.
+screenshots:
+- src: https://raw.githubusercontent.com/kingbenoitbrice-fun/CreaBIM/0e5ed4678c425bd06c65741a85f891dedbc8b96c/docs/screenshot.png
+  alt: CreaBIM application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/kingbenoitbrice-fun/CreaBIM/0e5ed4678c425bd06c65741a85f891dedbc8b96c/docs/screenshot-sheet.png
+  alt: CreaBIM application workspace from the project documentation.

@@ -1,0 +1,27 @@
+# Reviewed for submission #277; source revision e0d5c3a598047eddf68b80aa3253457e61db5651.
+slug: desigma
+name: desigma
+authors:
+- deepfounder-ai
+repository: https://github.com/deepfounder-ai/desigma
+originals:
+- figma
+category: creative
+languages:
+- Rust
+platforms:
+- Windows
+- macOS
+- Linux
+status: alpha
+compatibility: partial
+summary: Figma-style interface design with auto layout, components, prototypes, variables and partial FIG import.
+description: A native Rust interface-design tool targeting Figma workflows. Provides frames, auto layout, components/variants, vector and text editing, styles/variables, prototyping, whiteboards and presentation frames. Imports supported FIG and Pencil PEN data into its own document format, with optional live collaboration, motion tools, native plugins and MCP editing.
+license: MIT OR Apache-2.0
+docs: https://github.com/deepfounder-ai/desigma#readme
+limitations: Early alpha, not yet recommended upstream for professional daily work. FIG/PEN imports are partial and are not written back; save uses .desigma. Collaboration, plugins, PDF export and release signing retain gaps. Proprietary fonts may be substituted, and Figma plugins/services are not compatible.
+screenshots:
+- src: https://raw.githubusercontent.com/deepfounder-ai/desigma/e0d5c3a598047eddf68b80aa3253457e61db5651/docs/images/desigma-hero.png
+  alt: desigma application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/deepfounder-ai/desigma/e0d5c3a598047eddf68b80aa3253457e61db5651/docs/images/desigma-components.png
+  alt: desigma application workspace from the project documentation.

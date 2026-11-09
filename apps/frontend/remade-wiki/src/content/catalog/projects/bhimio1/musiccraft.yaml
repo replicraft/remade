@@ -1,0 +1,27 @@
+# Reviewed for submission #147; source revision 195b764644cede8412e367966c493b05d2b8cefc.
+slug: musiccraft
+name: MusicCraft
+authors:
+- bhimio1
+repository: https://github.com/bhimio1/musiccraft
+originals:
+- fl-studio
+category: creative
+languages:
+- Rust
+platforms:
+- Linux
+- macOS
+- Windows
+status: experimental
+compatibility: partial
+summary: FL Studio-style pattern production with a channel rack, piano roll, playlist, mixer and plug-in hosting.
+description: A Rust DAW targeting FL Studio-style pattern sequencing, piano-roll editing, playlist arrangement and mixer workflows. Includes built-in instruments and effects, automation, CLAP/VST3 hosting, audio rendering and CLI/MCP control. Its FLP importer is derived from the separately licensed PyFLP implementation; native projects use MusicCraft formats.
+license: GPL-3.0-or-later
+docs: https://github.com/bhimio1/musiccraft#readme
+limitations: Early software; complete FLP migration, FL Studio plug-in/device parity and project round-trip compatibility are not established. Native VST3 editor windows are documented for Linux only. Releases are unsigned. Optional stem separation downloads a model and has separate runtime requirements.
+screenshots:
+- src: https://raw.githubusercontent.com/bhimio1/musiccraft/195b764644cede8412e367966c493b05d2b8cefc/docs/screenshots/playlist-mixer.png
+  alt: MusicCraft application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/bhimio1/musiccraft/195b764644cede8412e367966c493b05d2b8cefc/docs/screenshots/channel-rack.png
+  alt: MusicCraft application workspace from the project documentation.

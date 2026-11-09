@@ -1,0 +1,28 @@
+# Reviewed for submission #232; source revision f374512b7af68920dc5b8e1e96d07c9508351f57.
+slug: sculptforge
+name: SculptForge
+authors:
+- islandmed
+repository: https://github.com/islandmed/SculptForge
+originals:
+- zbrush
+category: creative
+languages:
+- C++
+platforms:
+- Windows
+- macOS
+- Linux
+status: experimental
+compatibility: partial
+summary: ZBrush-style sculpting with brushes, masks, subdivisions, remeshing, painting and production-format exchange.
+description: A digital sculpting application targeting familiar ZBrush-style brushes, modifier gestures, masks, face groups, parts, subdivision levels and transforms. Adds dynamic topology, quad remeshing, sculpt layers, painting and model exchange with OBJ, FBX, glTF and USD. Includes command/CLI workflows, a Blender bridge and optional AI brush/model tools.
+license: GPL-3.0-or-later
+website: https://sculptforge.app/
+docs: https://github.com/islandmed/SculptForge#readme
+limitations: Early release; full ZBrush project, brush, material and plug-in compatibility is not established. AI features use optional external services or separately licensed local models. Packages are unsigned, and format/hardware coverage remains limited to documented upstream evidence.
+screenshots:
+- src: https://raw.githubusercontent.com/islandmed/SculptForge/f374512b7af68920dc5b8e1e96d07c9508351f57/website/img/bust-256.png
+  alt: SculptForge application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/islandmed/SculptForge/f374512b7af68920dc5b8e1e96d07c9508351f57/docs/images/showcase.jpg
+  alt: SculptForge application workspace from the project documentation.

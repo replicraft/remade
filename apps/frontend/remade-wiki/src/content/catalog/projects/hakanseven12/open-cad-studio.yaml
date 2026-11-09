@@ -1,0 +1,30 @@
+# Reviewed for submission #224; source revision 05974620eede2e10d529ce7052eaf49c17f75150.
+slug: open-cad-studio
+name: Open CAD Studio
+authors:
+- hakanseven12
+repository: https://github.com/HakanSeven12/OpenCADStudio
+originals:
+- autodesk-autocad
+category: engineering
+languages:
+- Rust
+platforms:
+- Windows
+- Linux
+- macOS
+- Web
+status: alpha
+compatibility: partial
+summary: AutoCAD-style DWG/DXF drafting, drawing sheets and solid modeling on desktop and web.
+description: A Rust CAD application targeting familiar AutoCAD drafting and drawing workflows. Provides command input, object snaps, layers, blocks, references, dimensions, model/paper space and plot styles. Reads and writes DWG/DXF, adds solid-modeling operations, and offers desktop printing, plugins, scripts and headless automation alongside a browser build.
+license: GPL-3.0-only
+website: https://www.opencadstudio.com/
+browser_url: https://www.opencadstudio.com/app/
+docs: https://github.com/HakanSeven12/OpenCADStudio#readme
+limitations: Under active development; complete AutoCAD parity is not established. The experimental IFCCAD drawing format may change without migration and does not support general IFCX BIM models. Browser builds omit desktop integrations. Keep original drawings and independent DWG/DXF copies.
+screenshots:
+- src: https://raw.githubusercontent.com/HakanSeven12/OpenCADStudio/05974620eede2e10d529ce7052eaf49c17f75150/site/workspace.png
+  alt: Open CAD Studio application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/HakanSeven12/OpenCADStudio/05974620eede2e10d529ce7052eaf49c17f75150/site/modeling.png
+  alt: Open CAD Studio application workspace from the project documentation.

@@ -1,0 +1,27 @@
+# Reviewed for submission #238; source revision 60def7c5bc4f85c84da550b16902b2e37244c11e.
+slug: clipcraft
+name: ClipCraft
+authors:
+- nanox333
+repository: https://github.com/nanox333/clipcraft
+originals:
+- medal-tv
+- nvidia-shadowplay
+category: creative
+languages:
+- Rust
+platforms:
+- Windows
+- Linux
+status: experimental
+compatibility: partial
+summary: Local replay-buffer capture with hotkey clips, search, trimming and export for games and desktop activity.
+description: A local-first replay recorder targeting Medal and ShadowPlay-style instant clipping. Maintains a capture buffer, saves clips through hotkeys, and provides local browsing, search, playback, trimming and export with configurable audio/capture profiles. Operates without a hosted account, upload or sharing service.
+license: MIT
+docs: https://github.com/nanox333/clipcraft#readme
+limitations: Early release. Current evidence covers generated capture on Windows/AMD and Linux/X11; real games, other devices and Wayland remain incompletely tested. macOS capture is not implemented. No Medal-hosted service or social-feature replacement is claimed. Windows packages are unsigned.
+screenshots:
+- src: https://raw.githubusercontent.com/nanox333/clipcraft/60def7c5bc4f85c84da550b16902b2e37244c11e/docs/screenshots/library.png
+  alt: ClipCraft application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/nanox333/clipcraft/60def7c5bc4f85c84da550b16902b2e37244c11e/docs/screenshots/editor.png
+  alt: ClipCraft application workspace from the project documentation.

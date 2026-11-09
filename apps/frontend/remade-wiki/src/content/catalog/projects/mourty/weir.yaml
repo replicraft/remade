@@ -1,0 +1,25 @@
+# Reviewed for submission #263; source revision d7f4a96b38a2cebe75275b47f107d85c1d014d52.
+slug: weir
+name: Weir
+authors:
+- mourty
+repository: https://github.com/Mourty/Weir
+originals:
+- voicemeeter
+category: creative
+languages:
+- Rust
+platforms:
+- Linux
+status: experimental
+compatibility: partial
+summary: Voicemeeter-style Linux mixing with per-output routing, voice processing, virtual devices and recording.
+description: A PipeWire mixer targeting Voicemeeter-style strips, faders, buses and separate monitor/stream mixes on Linux. Adds virtual playback/microphone devices, suppression, gate, compression, EQ, ducking, limiting, delay, surround routing, hotkeys and scenes. External effect applications can be routed in and back; optional recording uses bundled codec components.
+license: MIT
+docs: https://github.com/Mourty/Weir#readme
+limitations: Linux/PipeWire application, not a Windows driver or full Voicemeeter settings/API replacement. Device and global-hotkey behavior depends on the desktop and audio setup. Noise suppression and MP3 recording retain separate BSD/LGPL component terms.
+screenshots:
+- src: https://raw.githubusercontent.com/Mourty/Weir/d7f4a96b38a2cebe75275b47f107d85c1d014d52/docs/images/mixer.png
+  alt: Weir application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/Mourty/Weir/d7f4a96b38a2cebe75275b47f107d85c1d014d52/docs/images/settings.png
+  alt: Weir application workspace from the project documentation.

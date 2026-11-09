@@ -2916,3 +2916,160 @@
   url: "https://www.edrawingsviewer.com/"
   category: "engineering"
   aliases: [eDrawings]
+- slug: kickstart
+  name: Kickstart
+  url: https://www.kickstart-plugin.com/
+  category: creative
+  aliases:
+  - Nicky Romero Kickstart
+- slug: voicemeeter
+  name: Voicemeeter
+  url: https://vb-audio.com/Voicemeeter/
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/152.
+- slug: mountain-duck
+  name: Mountain Duck
+  url: https://mountainduck.io/
+  category: productivity
+# Requested in https://github.com/replicraft/remade/issues/153.
+- slug: yalla-ludo
+  name: Yalla Ludo
+  url: https://www.yallaludo.com/
+  category: games
+# Requested in https://github.com/replicraft/remade/issues/155.
+- slug: polycam
+  name: Polycam
+  url: https://poly.cam/
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/157.
+- slug: saby
+  name: Saby
+  url: https://saby.ru/
+  category: productivity
+# Requested in https://github.com/replicraft/remade/issues/165.
+- slug: vga-planets
+  name: VGA Planets
+  url: https://www.grgzone.com/games/planets4/
+  category: games
+# Requested in https://github.com/replicraft/remade/issues/166.
+- slug: mule
+  name: M.U.L.E.
+  url: https://en.wikipedia.org/wiki/M.U.L.E.
+  category: games
+# Requested in https://github.com/replicraft/remade/issues/169.
+- slug: apollo
+  name: Apollo
+  url: https://www.apollo.io/
+  category: productivity
+# Requested in https://github.com/replicraft/remade/issues/170.
+- slug: autodesk-vehicle-tracking
+  name: Autodesk Vehicle Tracking
+  url: https://www.autodesk.com/products/vehicle-tracking/overview
+  category: engineering
+  vendor: autodesk
+# Requested in https://github.com/replicraft/remade/issues/174.
+- slug: razer-chroma
+  name: Razer Chroma
+  url: https://www.razer.com/chroma
+  category: other
+  vendor: razer
+# Requested in https://github.com/replicraft/remade/issues/182.
+- slug: ptc-windchill
+  name: PTC Windchill
+  url: https://www.ptc.com/en/products/windchill
+  category: engineering
+  vendor: ptc
+# Requested in https://github.com/replicraft/remade/issues/195.
+- slug: synology-drive
+  name: Synology Drive
+  url: https://www.synology.com/en-global/dsm/feature/drive
+  category: productivity
+  vendor: synology
+# Requested in https://github.com/replicraft/remade/issues/208.
+- slug: logitech-capture
+  name: Logitech Capture
+  url: https://www.logitech.com/en-us/software/capture.html
+  category: creative
+  vendor: logitech
+# Requested in https://github.com/replicraft/remade/issues/209.
+- slug: ai-karaoke-video-creator
+  name: AI Karaoke Video Creator
+  url: https://www.powerkaraoke.com/src/prod-ai-karaoke-video-creator.php
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/220.
+- slug: emagic-sounddiver
+  name: Emagic SoundDiver
+  url: https://medias.audiofanzine.com/files/emagic-apple-sounddiver-v3-0-manual-476540.pdf
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/241.
+- slug: designdoll
+  name: DesignDoll
+  url: https://terawell.net/en/
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/242.
+- slug: abbyy-finereader
+  name: ABBYY FineReader
+  url: https://pdf.abbyy.com/
+  category: productivity
+# Requested in https://github.com/replicraft/remade/issues/245.
+- slug: netlimiter
+  name: NetLimiter
+  url: https://netlimiter.com/
+  category: other
+# Requested in https://github.com/replicraft/remade/issues/247.
+- slug: sheetcam
+  name: SheetCAM
+  url: https://www.sheetcam.com/
+  category: engineering
+# Requested in https://github.com/replicraft/remade/issues/261.
+- slug: hueforge
+  name: HueForge
+  url: https://shop.thehueforge.com/
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/267.
+- slug: cyberark-pam
+  name: CyberArk PAM
+  url: https://www.paloaltonetworks.com/idira/human/privileged-access-management
+  category: developer-tools
+# Requested in https://github.com/replicraft/remade/issues/268.
+- slug: particle-illusion
+  name: Particle Illusion
+  url: https://borisfx.com/products/particle-illusion/
+  category: creative
+  vendor: boris-fx
+# Requested in https://github.com/replicraft/remade/issues/271.
+- slug: world-creator
+  name: World Creator
+  url: https://www.bitethebytes.com/products/world-creator
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/272.
+- slug: nuke-studio
+  name: Nuke Studio
+  url: https://www.foundry.com/products/nuke-studio
+  category: creative
+  vendor: foundry
+# Requested in https://github.com/replicraft/remade/issues/273.
+- slug: lrtimelapse
+  name: LRTimelapse
+  url: https://lrtimelapse.com/
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/278.
+- slug: total-commander
+  name: Total Commander
+  url: https://www.ghisler.com/
+  category: productivity
+# Requested in https://github.com/replicraft/remade/issues/279.
+- slug: buildbox
+  name: Buildbox
+  url: https://buildbox.com/
+  category: developer-tools
+# Requested in https://github.com/replicraft/remade/issues/281.
+- slug: higgsfield
+  name: Higgsfield
+  url: https://higgsfield.ai/
+  category: creative
+# Requested in https://github.com/replicraft/remade/issues/286.
+- slug: design-expert
+  name: Stat-Ease Design-Expert
+  url: https://www.statease.com/software/design-expert/
+  category: engineering
