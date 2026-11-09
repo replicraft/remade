@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/195.
+original: synology-drive
+summary: Self-hosted file synchronization and collaboration without Synology hardware.
+reason: Reproduce Synology Drive-style file access, synchronization, sharing and versioning without requiring
+  Synology hardware. Prioritize simple deployment, SSO, ordinary filesystem/home-directory access and
+  extensible document/photo apps. Nextcloud is a possible reference or foundation, not a proprietary replacement
+  target.

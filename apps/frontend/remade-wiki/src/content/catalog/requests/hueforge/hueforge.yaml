@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/261.
+original: hueforge
+summary: Turn images into layered filament reliefs with transmission-aware previews and 3MF export.
+reason: Reproduce HueForge-style image-to-layered-filament printing using filament color and light-transmission
+  properties. Include a filament library and custom materials, a useful preview, approachable setup guidance
+  and 3MF export for printing.

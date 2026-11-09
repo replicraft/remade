@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/208.
+original: logitech-capture
+summary: Simple Linux webcam and desktop recording with camera controls and saved setups.
+reason: Reproduce Logitech Capture's straightforward webcam and desktop recording workflow on Linux, including
+  combined sources, scene layouts, camera settings and saved profiles. Keep common recording tasks accessible
+  without assembling a complex broadcast setup.

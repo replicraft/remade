@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/241.
+original: designdoll
+summary: Pose adjustable human figures and hands as drawing references, including on Linux.
+reason: Reproduce DesignDoll's artist-reference workflow with adjustable body proportions, detailed hand
+  posing, multiple figures and perspective controls. Support saving and reopening pose scenes and make
+  the workflow available on Linux.

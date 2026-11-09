@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/155.
+original: polycam
+summary: Local photo and LiDAR scanning with editable geometry and useful exports.
+reason: Reproduce photo and LiDAR capture, room scanning and reconstruction workflows with local processing,
+  editable geometry and interoperable exports. Provide scripting or Python/MCP integration for repeatable
+  scan processing without requiring cloud-only reconstruction.

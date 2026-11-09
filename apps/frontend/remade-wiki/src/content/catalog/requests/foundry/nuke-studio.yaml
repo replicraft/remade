@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/272.
+original: nuke-studio
+summary: Timeline editing and shot management integrated with node-based compositing.
+reason: Reproduce Nuke Studio's combined editorial timeline, shot management and node-based compositing
+  workflow, with a native macOS implementation desired. This request covers the Studio editorial integration,
+  beyond the separate Nuke/NukeX compositing target.

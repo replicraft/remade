@@ -1,4 +1,8 @@
+# Additional plasma-workflow detail: https://github.com/replicraft/remade/issues/247.
 original: pronest
-summary: "Wanted: Plate nesting, cutting-process parameters, toolpath optimization and NC generation with documented fabrication-data interchange."
+summary: 'Wanted: Plate nesting, cutting-process parameters, toolpath optimization and NC generation with
+  documented fabrication-data interchange.'
 reason: Plate nesting, cutting-process parameters, toolpath optimization and NC generation with documented
-  fabrication-data interchange.
+  fabrication-data interchange. Include quick single-part plasma jobs, live toolpath previews and editable
+  material/thickness/amperage presets for feed, kerf and controller setup guidance, avoiding repeated
+  job setup for small batches.

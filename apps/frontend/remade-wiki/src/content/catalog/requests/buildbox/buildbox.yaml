@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/279.
+original: buildbox
+summary: Visual 2D/3D game creation through scenes, drag-and-drop tools and behavior nodes.
+reason: Reproduce Buildbox-style scene-based 2D/3D game creation with drag-and-drop assets and approachable
+  visual behavior nodes for rapid prototypes. Prioritize a focused no-code workflow and extensibility
+  for optional MCP-assisted game/asset testing rather than asserting other open-source engines lack these
+  capabilities.

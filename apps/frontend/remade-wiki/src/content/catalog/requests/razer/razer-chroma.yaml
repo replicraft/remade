@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/174.
+original: razer-chroma
+summary: Programmable RGB lighting synchronized with applications, games and audio.
+reason: Reproduce Chroma-style addressable RGB effects, editable lighting patterns and application/audio-triggered
+  cues without requiring the full vendor software suite. Support documented device integrations and spatial
+  effects, such as directional game feedback across connected lights.

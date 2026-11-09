@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/182.
+original: ptc-windchill
+summary: Product lifecycle management for CAD data, BOMs, revisions and engineering changes.
+reason: 'Reproduce Windchill-style product data and lifecycle workflows: CAD/document management, bills
+  of materials, configurations, revisions and engineering change control. Prioritize clear approvals,
+  extensible CAD/ERP integration and practical engineering-to-manufacturing collaboration.'

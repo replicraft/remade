@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/152.
+original: mountain-duck
+summary: Mount remote storage as local files with on-demand downloads and offline access.
+reason: Reproduce remote-storage mounts with on-demand downloads, offline pinning, background uploads
+  and clear sync status. Preserve convenient file-manager integration on macOS and Windows without requiring
+  every remote file to be downloaded first.

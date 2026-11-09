@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/247.
+original: sheetcam
+summary: Fast DXF/SVG-to-G-code plasma CAM with editable material and kerf presets.
+reason: Reproduce SheetCAM-style 2D plasma CAM with DXF/SVG import, editable G-code and live toolpath
+  previews. Prioritize quick single-part jobs and editable material/thickness/amperage presets for feed,
+  kerf and controller setup guidance, then nesting into arbitrary sheet contours and other 2D cutting
+  workflows.

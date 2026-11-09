@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/286.
+original: design-expert
+summary: Guided experimental design, mixture studies, ANOVA and multi-response optimization.
+reason: Reproduce Design-Expert's guided DOE workflows for factorial, screening, mixture and combined
+  designs. Include ANOVA, model diagnostics, Box-Cox transformations, response surfaces, numerical/graphical
+  multi-response optimization and FDS plots, prioritizing approachable mixture-design workflows.

@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/268.
+original: particle-illusion
+summary: Create and animate particle effects in a standalone editor or OpenFX plugin.
+reason: Reproduce Particle Illusion-style particle effect creation, emitter editing and animation for
+  video compositing. A standalone application is useful; an OpenFX implementation would also allow the
+  workflow to be used across compatible editors and compositors.

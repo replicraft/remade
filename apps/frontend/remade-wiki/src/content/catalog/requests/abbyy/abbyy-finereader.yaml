@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/242.
+original: abbyy-finereader
+summary: Offline OCR with multilingual recognition, preserved layouts and editable exports.
+reason: Reproduce FineReader-style offline OCR and document conversion with multilingual recognition,
+  layout/table preservation, searchable PDFs and editable text, Word and spreadsheet output. Include PDF
+  comparison/editing, scriptable batch processing and EPUB/FB2 export for document digitization.

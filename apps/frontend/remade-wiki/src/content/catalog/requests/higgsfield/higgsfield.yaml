@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/281.
+original: higgsfield
+summary: An organized image/video generation workspace with reusable characters, locations and props.
+reason: Reproduce Higgsfield-style image/video creation workflows with an accessible director interface,
+  folders and tagged characters, locations and props that can be referenced in prompts. Use separately
+  available models or services; this request does not promise to reproduce proprietary models or hosted
+  backend access.

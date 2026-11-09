@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/267.
+original: cyberark-pam
+summary: Privileged credential vaulting, rotation, approvals and audited sessions.
+reason: Reproduce privileged-access workflows including credential vaulting/rotation, isolated recorded
+  sessions, least privilege, MFA and audit logs. Prioritize AD/Entra integration, dual-control approvals,
+  ephemeral credentials and policy-as-code. Security and compliance claims require separate verification.

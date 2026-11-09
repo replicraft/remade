@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/166.
+original: mule
+summary: Multiplayer colony economics with resource production, trading and auctions.
+reason: Reproduce the classic multiplayer economic gameplay of M.U.L.E., including colony production,
+  resource trading and auctions, with independently authored code and assets. Make rules extensible for
+  larger planets, additional players and species while retaining an identifiable classic mode.

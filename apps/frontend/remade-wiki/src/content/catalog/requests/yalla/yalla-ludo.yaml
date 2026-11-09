@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/153.
+original: yalla-ludo
+summary: Social Ludo and domino games with voice chat and private rooms.
+reason: An independently authored social Ludo and domino game with private rooms, multiplayer sessions
+  and voice chat. Reproduce the play and social workflows without depending on access to Yalla's proprietary
+  service or copying its artwork.
