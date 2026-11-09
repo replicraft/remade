@@ -1,0 +1,21 @@
+# Scope and limitations: upstream README and source at 135f4f2281ce61d9bda9930ee5f3567cfa226c34.
+slug: mister-download-manager
+name: Mister Download Manager
+authors: [anefzaoui]
+repository: https://github.com/anefzaoui/misterdownloadmanager
+originals: [internet-download-manager]
+category: productivity
+languages: [Rust]
+platforms: [Windows, Linux, macOS]
+status: experimental
+compatibility: partial
+summary: "IDM-style segmented downloads with resume, browser integration, queues, scheduling and torrent support."
+description: "A Rust download manager targeting Internet Download Manager's interface and workflows. Provides segmented transfers, resume, download categories, queues, scheduling and browser integration through its own extension and native-messaging host. Adds BitTorrent and magnet downloads, seeding, video-download helpers, link grouping, archive extraction, and CLI/MCP controls."
+license: GPL-3.0-or-later
+docs: https://github.com/anefzaoui/misterdownloadmanager#readme
+limitations: "Early software; macOS builds are experimental and have not been tried on Mac hardware by the maintainer. Linux screen readers and Flatpak browsers are unsupported. Packages are unsigned. Browser capture requires its own integration; video and archive helpers depend on external programs. IDM settings and download-state interchange are not established."
+screenshots:
+  - src: https://raw.githubusercontent.com/anefzaoui/misterdownloadmanager/135f4f2281ce61d9bda9930ee5f3567cfa226c34/docs/images/main-light.webp
+    alt: "Mister Download Manager showing download categories, toolbar and transfer list."
+  - src: https://raw.githubusercontent.com/anefzaoui/misterdownloadmanager/135f4f2281ce61d9bda9930ee5f3567cfa226c34/docs/images/main-linux.webp
+    alt: "Mister Download Manager running on a Linux GNOME desktop."
