@@ -1,0 +1,19 @@
+# Scope: upstream README, release notes and source at 1d6902f76fe11fc873dc3b5b363115b70a93f756.
+slug: statcraft
+name: StatCraft
+authors: [kobaltgit]
+repository: https://github.com/kobaltgit/StatCraft
+originals: [ibm-spss-statistics]
+category: engineering
+languages: [Rust]
+platforms: [Windows, Linux, macOS]
+status: experimental
+compatibility: partial
+summary: "SPSS-style data and variable editors, statistical procedures, syntax execution and structured output tables."
+description: "A Rust statistical application targeting IBM SPSS Statistics workflows. Combines data and variable views with metadata, missing-value handling, transformations, descriptive statistics, t-tests, ANOVA, correlations, regression and other implemented procedures. Imports CSV/TSV, spreadsheets and SPSS SAV/ZSAV data, executes supported SPSS-style syntax, and presents structured tables with TSV, HTML and text output. Provides local MCP/IPC automation."
+license: MIT OR Apache-2.0
+docs: https://github.com/kobaltgit/StatCraft#readme
+limitations: "Partial SPSS syntax, data-file and procedure coverage; complete project/output interchange and numerical parity are not established. Charting, PDF/LaTeX report export and several advanced procedures remain documented as unfinished. Some feature documentation predates the bridge and theme implementation; source and release scope may differ."
+screenshots:
+  - src: https://raw.githubusercontent.com/kobaltgit/StatCraft/1d6902f76fe11fc873dc3b5b363115b70a93f756/assets/screenshot.png
+    alt: "StatCraft workspace showing variable metadata, syntax logs and statistical output tables."
