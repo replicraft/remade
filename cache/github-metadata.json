@@ -1899,6 +1899,15 @@
       "pushedAt": "2026-11-07T02:59:53Z",
       "stars": 3460
     },
+    "storytold/anicraft": {
+      "fetchedAt": "2026-11-10T06:25:44Z",
+      "forks": 42,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-10T06:15:49Z",
+      "stars": 176
+    },
     "storytold/cadcraft": {
       "fetchedAt": "2026-11-09T17:48:24Z",
       "forks": 3347,
@@ -1980,6 +1989,15 @@
       "pushedAt": "2026-11-09T11:57:02Z",
       "stars": 15754
     },
+    "storytold/materialcraft": {
+      "fetchedAt": "2026-11-10T06:25:44Z",
+      "forks": 139,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-10T06:25:38Z",
+      "stars": 327
+    },
     "storytold/pdfcraft": {
       "fetchedAt": "2026-11-09T17:48:24Z",
       "forks": 7458,
@@ -2006,6 +2024,15 @@
       "primaryLanguage": "Rust",
       "pushedAt": "2026-11-09T11:54:20Z",
       "stars": 4196
+    },
+    "storytold/texturecraft": {
+      "fetchedAt": "2026-11-10T06:25:44Z",
+      "forks": 190,
+      "isArchived": false,
+      "licenseSpdx": "Apache-2.0",
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-11-09T15:09:44Z",
+      "stars": 563
     },
     "storytold/vectorcraft": {
       "fetchedAt": "2026-11-09T17:48:24Z",
