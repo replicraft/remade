@@ -763,3 +763,7 @@
   name: HeyClicky
 - slug: roon-labs
   name: Roon Labs
+- slug: streamfab
+  name: StreamFab
+- slug: bitwig
+  name: Bitwig

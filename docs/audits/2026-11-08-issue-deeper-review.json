@@ -359,12 +359,13 @@
 		{
 			"number": 262,
 			"title": "StreamFab",
-			"recommendation": "Request narrower scope before acceptance",
-			"findings": "Concrete proprietary product exists, but official site includes dedicated DRM downloaders and subscription-streaming downloads. The issue does not distinguish independent download-management workflows from access-control circumvention or modifying the original app. Ask which independently implemented workflows are wanted; no blanket legal determination is made.",
+			"recommendation": "Accepted by the maintainer and added to the held PR",
+			"findings": "Maintainer approved the StreamFab request with protected-stream/DRM compatibility and changing services identified as the central implementation challenge.",
 			"sources": [
 				"https://streamfab.com/",
 				"https://github.com/replicraft/remade/issues/262"
-			]
+			],
+			"catalog_path": "apps/frontend/remade-wiki/src/content/catalog/requests/streamfab/streamfab.yaml"
 		},
 		{
 			"number": 210,

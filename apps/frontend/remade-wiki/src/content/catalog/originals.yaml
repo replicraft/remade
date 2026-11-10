@@ -3123,3 +3123,13 @@
   category: engineering
   aliases:
   - Tinkercad Circuits
+- slug: streamfab
+  vendor: streamfab
+  name: StreamFab
+  url: https://streamfab.com/
+  category: creative
+- slug: bitwig-studio
+  vendor: bitwig
+  name: Bitwig Studio
+  url: https://www.bitwig.com/
+  category: creative

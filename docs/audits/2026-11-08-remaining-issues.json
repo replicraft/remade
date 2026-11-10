@@ -14,13 +14,12 @@
 		"project-added": 22,
 		"insufficient-target": 21,
 		"duplicate-insufficient-target": 1,
-		"request-added": 28,
+		"request-added": 29,
 		"outside-current-scope": 3,
 		"details-consolidated": 1,
 		"already-covered": 1,
 		"discovery-resource": 1,
 		"duplicate-discovery-resource": 1,
-		"needs-scope-clarification": 1,
 		"already-in-held-pr": 3
 	},
 	"issues": [
@@ -1358,8 +1357,11 @@
 			"issue": 262,
 			"url": "https://github.com/replicraft/remade/issues/262",
 			"title": "[Project Request] StreamFab",
-			"disposition": "needs-scope-clarification",
-			"note": "StreamFab request does not distinguish ordinary media/download workflows from access-control bypass or merely obtaining the paid original for free. Clarify the independent implementation target; no legal determination made."
+			"disposition": "request-added",
+			"note": "Maintainer approved the StreamFab request with protected-stream/DRM compatibility and changing services identified as the central implementation challenge.",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/streamfab/streamfab.yaml"
+			]
 		},
 		{
 			"issue": 263,

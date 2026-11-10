@@ -10,9 +10,9 @@
 		"open_issues_accounted_for": 94,
 		"open_issue_pagination_complete": true,
 		"open_issue_set_unchanged": true,
-		"project_additions_reviewed": 35,
+		"project_additions_reviewed": 36,
 		"tool_additions_reviewed": 1,
-		"request_records_reviewed": 43,
+		"request_records_reviewed": 44,
 		"fulfilled_requests_removed": 7,
 		"source_execution": false,
 		"local_tests_run": false,
@@ -31,7 +31,8 @@
 		"Added official project website/community links, replaced SculptForge logo imagery with actual application views and corrected Mole image alt text.",
 		"Assigned 21 existing new originals to explicit vendor identities, registered 20 missing vendor brands and corrected Android touch tool languages.",
 		"Added approved OpenIDEA for IntelliJ IDEA Ultimate and removed its fulfilled request. Withdrew the licensed-component reuse hold without adding a provenance qualification to the listing.",
-		"Added SketchForge PCB as an approved broader Tinkercad Circuits alternative. Added approved ravynOS following a focused clean-room/source-origin review, with Darwin/FreeBSD foundations and pre-alpha limits accurately described."
+		"Added SketchForge PCB as an approved broader Tinkercad Circuits alternative. Added approved ravynOS following a focused clean-room/source-origin review, with Darwin/FreeBSD foundations and pre-alpha limits accurately described.",
+		"Added maintainer-approved StreamFab request, stating protected-stream/DRM compatibility as the central implementation challenge. Added Hikaru OpenLive following the author clarification communicated by the maintainer; withdrew the pending hold without claiming independently certified clean-room development."
 	],
 	"url_evidence": {
 		"previous_ci_run": "https://github.com/replicraft/remade/actions/runs/42573313206",
@@ -73,8 +74,8 @@
 		}
 	},
 	"policy_decisions_remaining": {
-		"awaiting_author_or_target_clarification": [120, 131, 135, 288],
-		"case_by_case_editorial_scope": [262],
+		"awaiting_author_or_target_clarification": [120, 131, 135],
+		"case_by_case_editorial_scope": [],
 		"foss_rewrite_without_exception": [172, 173, 274],
 		"unspecified_driver_or_patch_targets": [149, 151, 259, 269]
 	},
@@ -83,18 +84,16 @@
 	},
 	"counts_by_issue_disposition": {
 		"awaiting-author-clarification": 3,
-		"project-added": 25,
+		"project-added": 26,
 		"insufficient-target": 23,
 		"duplicate-insufficient-target": 1,
-		"request-added": 30,
+		"request-added": 31,
 		"outside-current-scope": 3,
 		"details-consolidated": 1,
 		"already-covered": 1,
 		"discovery-resource": 1,
 		"duplicate-discovery-resource": 1,
-		"needs-scope-clarification": 1,
-		"already-in-held-pr": 3,
-		"awaiting-provenance-clarification": 1
+		"already-in-held-pr": 3
 	},
 	"issues": [
 		{
@@ -925,9 +924,11 @@
 			"checked_updated_at": "2026-11-06T17:01:02Z",
 			"body_sha256": "fa68bd680731481771f71fe1229439f972b9021db28a55d515557311a69321d3",
 			"human_replies_reviewed": 0,
-			"disposition": "needs-scope-clarification",
-			"catalog_paths": [],
-			"finding": "StreamFab is identifiable, but official primary workflows include DRM-protected streaming sources. The requested independent compatibility/access-control boundary still needs an editorial decision; price avoidance alone is not treated as wrongdoing, and no illegality is inferred."
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/streamfab/streamfab.yaml"
+			],
+			"finding": "Maintainer approved the StreamFab request with protected-stream/DRM compatibility and changing services identified as the central implementation challenge."
 		},
 		{
 			"issue": 263,
@@ -1175,9 +1176,11 @@
 			"checked_updated_at": "2026-11-09T10:44:20Z",
 			"body_sha256": "a0f530672094f861b9ae0fb527bc8a0a2c8004cb2bef6b542a98f1c21160fc1a",
 			"human_replies_reviewed": 0,
-			"disposition": "awaiting-provenance-clarification",
-			"catalog_paths": [],
-			"finding": "The issue claims independently authored code, while README describes a Ghidra/Frida/REA pipeline converting proprietary code into Rust-like pseudocode for AI agents and converting proprietary plug-ins. Clarify whether implementation is translated from decompiler output or independently written from separated behavior specifications. This is not a legal finding.",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/hikarucorporation/hikaru-openlive.yaml"
+			],
+			"finding": "Maintainer approved Hikaru OpenLive after receiving author clarification that it is independently authored. Added normal feature/platform/licensing limits; no independently verified formal Chinese-wall claim is made.",
 			"sources": [
 				"https://github.com/hikarucorporation/hikaru-openlive/blob/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/README.md"
 			]
@@ -5020,6 +5023,49 @@
 			"licensing": "Per-file MIT/BSD/APSL notices and other component licenses; not represented as a single-license OS.",
 			"platform_scope": "x86-64 operating system, with current VM bring-up and incomplete real-hardware/application support. ARM is future work.",
 			"runtime_verified": false
+		},
+		{
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/hikarucorporation/hikaru-openlive.yaml",
+			"kind": "project",
+			"current_fields": {
+				"slug": "hikaru-openlive",
+				"name": "Hikaru OpenLive",
+				"authors": ["hikarucorporation"],
+				"repository": "https://github.com/hikarucorporation/hikaru-openlive",
+				"originals": ["bitwig-studio", "ableton-live"],
+				"category": "creative",
+				"languages": ["Rust"],
+				"platforms": ["Linux", "Windows", "FreeBSD"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Bitwig- and Ableton-style live production with a session matrix, clip launching, arranger and wavetable synthesis.",
+				"description": "A Rust DAW targeting Bitwig Studio and Ableton Live performance workflows. Combines scene-based clip launching and an arranger timeline with a CPAL audio engine, sample-accurate sequencing, effect racks and OpenWavetable synthesis. Includes MIDI/piano-roll editing, native project formats and command-line tooling, with ongoing work on automation, controllers and production workflows.",
+				"license": "AGPL-3.0-or-later",
+				"docs": "https://github.com/hikarucorporation/hikaru-openlive#readme",
+				"limitations": "Actively developed; the piano roll is buggy and several workflows remain incomplete. Full Bitwig/Ableton project, device and plug-in compatibility is not established. Linux builds are documented; Windows cross-compilation/Wine testing and the FreeBSD target do not establish equivalent native runtime coverage. File-format and audio-driver libraries use LGPL-3.0-or-later.",
+				"screenshots": [
+					{
+						"src": "https://raw.githubusercontent.com/hikarucorporation/hikaru-openlive/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/assets/screenshots/arranger-view.png",
+						"alt": "Hikaru OpenLive arranger with tracks and a linear composition timeline."
+					},
+					{
+						"src": "https://raw.githubusercontent.com/hikarucorporation/hikaru-openlive/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/assets/screenshots/session-matrix.png",
+						"alt": "Hikaru OpenLive session matrix for scene-based clip launching."
+					}
+				]
+			},
+			"reviewed_revision": "c16cfd0aea83b9571de4f8984a8a6415031fa5cd",
+			"approval_basis": "Maintainer approval after receiving author clarification of independent authorship. Formal analyst/implementer separation was not independently verified.",
+			"sources": [
+				"https://github.com/hikarucorporation/hikaru-openlive/blob/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/README.md",
+				"https://github.com/hikarucorporation/hikaru-openlive/blob/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/LICENSE",
+				"https://github.com/hikarucorporation/hikaru-openlive/blob/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/LICENSE-LGPL-3.0",
+				"https://github.com/hikarucorporation/hikaru-openlive/blob/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/docs/licencias.md",
+				"https://github.com/hikarucorporation/hikaru-openlive/blob/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/crates/hikaru_audio_engine/src/audio_drivers.rs"
+			],
+			"maturity": "Experimental; active development and buggy/WIP piano roll are explicit.",
+			"source_review": "Substantive Rust engine, GUI, sequencing and project-format sources were reviewed during the full PR audit. Main code declares AGPL-3.0-or-later; separately identified libraries retain LGPL terms.",
+			"runtime_verified": false
 		}
 	],
 	"requests": [
@@ -5409,6 +5455,15 @@
 			"summary_chars": 63,
 			"reason_chars": 233,
 			"result": "Checked identifiable target, wanted behavior, scope, duplicate references and absence of an indexed qualifying project. No implementation claims added."
+		},
+		{
+			"path": "apps/frontend/remade-wiki/src/content/catalog/requests/streamfab/streamfab.yaml",
+			"original": "streamfab",
+			"reference": "https://streamfab.com/",
+			"vendor": "streamfab",
+			"summary_chars": 92,
+			"reason_chars": 332,
+			"result": "Maintainer-approved request; protected-stream/DRM compatibility and changing services remain wanted implementation work, not a claim of existing support."
 		}
 	],
 	"removed_requests": [
@@ -5437,6 +5492,7 @@
 		"apps/frontend/remade-wiki/src/content/catalog/projects/francisreboucas/constructcraft.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/hakanseven12/open-cad-studio.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/henmedia/layerling.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/projects/hikarucorporation/hikaru-openlive.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/ingelibre/ingecad.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/islandmed/sculptforge.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/kbarni/albumcraft.yaml",
@@ -5500,6 +5556,7 @@
 		"apps/frontend/remade-wiki/src/content/catalog/requests/shapr3d/shapr3d.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/sheetcam/sheetcam.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/stat-ease/design-expert.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/requests/streamfab/streamfab.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/synology/synology-drive.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/synology/synology-dsm.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/tensor/saby.yaml",
