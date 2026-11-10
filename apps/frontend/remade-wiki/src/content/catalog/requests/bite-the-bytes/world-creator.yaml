@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/271.
+original: world-creator
+summary: Interactive terrain generation with erosion, non-destructive editing and real-time previews.
+reason: Reproduce World Creator-style procedural terrain workflows with GPU acceleration, erosion, sculpting,
+  non-destructive/node-based editing and real-time previews. Prioritize extensible generation algorithms
+  and interoperable exports to Blender and game engines such as Godot; qualify version-4-specific capabilities
+  separately.

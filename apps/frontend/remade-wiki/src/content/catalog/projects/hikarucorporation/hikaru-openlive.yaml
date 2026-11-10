@@ -1,0 +1,36 @@
+# Accepted by the maintainer following the author clarification of independent development for #288.
+# Reviewed source revision c16cfd0aea83b9571de4f8984a8a6415031fa5cd.
+slug: hikaru-openlive
+name: Hikaru OpenLive
+authors:
+- hikarucorporation
+repository: https://github.com/hikarucorporation/hikaru-openlive
+originals:
+- bitwig-studio
+- ableton-live
+category: creative
+languages:
+- Rust
+platforms:
+- Linux
+- Windows
+- FreeBSD
+status: experimental
+compatibility: partial
+summary: Bitwig- and Ableton-style live production with a session matrix, clip launching, arranger and wavetable
+  synthesis.
+description: A Rust DAW targeting Bitwig Studio and Ableton Live performance workflows. Combines scene-based clip
+  launching and an arranger timeline with a CPAL audio engine, sample-accurate sequencing, effect racks and OpenWavetable
+  synthesis. Includes MIDI/piano-roll editing, native project formats and command-line tooling, with ongoing work
+  on automation, controllers and production workflows.
+license: AGPL-3.0-or-later
+docs: https://github.com/hikarucorporation/hikaru-openlive#readme
+limitations: Actively developed; the piano roll is buggy and several workflows remain incomplete. Full Bitwig/Ableton
+  project, device and plug-in compatibility is not established. Linux builds are documented; Windows cross-compilation/Wine
+  testing and the FreeBSD target do not establish equivalent native runtime coverage. File-format and audio-driver
+  libraries use LGPL-3.0-or-later.
+screenshots:
+- src: https://raw.githubusercontent.com/hikarucorporation/hikaru-openlive/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/assets/screenshots/arranger-view.png
+  alt: Hikaru OpenLive arranger with tracks and a linear composition timeline.
+- src: https://raw.githubusercontent.com/hikarucorporation/hikaru-openlive/c16cfd0aea83b9571de4f8984a8a6415031fa5cd/assets/screenshots/session-matrix.png
+  alt: Hikaru OpenLive session matrix for scene-based clip launching.

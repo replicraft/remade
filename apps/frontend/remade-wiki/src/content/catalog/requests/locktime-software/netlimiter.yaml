@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/245.
+original: netlimiter
+summary: Per-application bandwidth limits, traffic history and network access rules.
+reason: Reproduce NetLimiter's per-application upload/download limits, traffic monitoring and history,
+  quotas and network access rules. Prioritize reliable application attribution and bandwidth control for
+  programs that lack their own limiter.

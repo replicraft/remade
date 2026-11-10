@@ -1,0 +1,23 @@
+# Source and limitations: upstream README, ROADMAP and picasso-drp at 2593994322c3916b24c19b6ad380dd1dbcc807c0.
+slug: picasso-suite
+name: Picasso Suite
+authors: [fabox-os]
+repository: https://github.com/fabox-os/Picasso-Suite
+originals: [davinci-resolve]
+category: creative
+languages: [Rust]
+platforms: [Windows, Linux, macOS]
+status: experimental
+compatibility: partial
+summary: "Resolve-style video editing with multi-track timelines, node-based color grading, audio mixing and FFmpeg export."
+description: "A Rust video editor targeting DaVinci Resolve workflows across Media, Cut, Edit, Fusion, Color, Fairlight and Deliver pages. Includes multi-track trimming, multicam, keyframes, titles, node-based grading, scopes, audio recording and mixing, and an FFmpeg render queue. Reads Resolve project settings and media references, saves its own projects, and exchanges timelines through XML, AAF, OpenTimelineIO and EDL."
+license: GPL-3.0-or-later
+docs: https://github.com/fabox-os/Picasso-Suite#readme
+limitations: "Early software. Resolve imports recover settings and media, not timeline clip placement. OFX/.drfx, advanced masks/tracking and ADR remain planned. AAF/XML interchange has not been tested in the target editors. GPU/encoder coverage is limited; macOS 15+ packages are unsigned. Linux normally uses XWayland because native Wayland drag-and-drop is unsupported."
+screenshots:
+  - src: https://raw.githubusercontent.com/fabox-os/Picasso-Suite/2593994322c3916b24c19b6ad380dd1dbcc807c0/docs/screenshots/0.2.0/edit.webp
+    alt: "Picasso Suite Edit page with video viewers and a multi-track timeline."
+  - src: https://raw.githubusercontent.com/fabox-os/Picasso-Suite/2593994322c3916b24c19b6ad380dd1dbcc807c0/docs/screenshots/0.2.0/color.webp
+    alt: "Picasso Suite Color page with a node graph, color wheels, curves and scopes."
+  - src: https://raw.githubusercontent.com/fabox-os/Picasso-Suite/2593994322c3916b24c19b6ad380dd1dbcc807c0/docs/screenshots/0.2.0/fairlight.webp
+    alt: "Picasso Suite Fairlight page with audio waveforms, meters and a mixer."

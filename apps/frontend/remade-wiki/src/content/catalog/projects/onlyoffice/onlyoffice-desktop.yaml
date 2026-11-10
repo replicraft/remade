@@ -1,0 +1,30 @@
+# Reviewed for submission #244; source revision daf8c6948148827201b2907ac1134d222fbfa7b4.
+slug: onlyoffice-desktop
+name: ONLYOFFICE Desktop Editors
+authors:
+- onlyoffice
+repository: https://github.com/ONLYOFFICE/DesktopEditors
+originals:
+- microsoft-word
+- microsoft-excel
+- microsoft-powerpoint
+category: productivity
+languages:
+- C++
+- JavaScript
+platforms:
+- Windows
+- macOS
+- Linux
+status: stable
+compatibility: partial
+summary: Desktop document, spreadsheet and presentation editors with Office Open XML interchange and PDF tools.
+description: An independent desktop office suite targeting Microsoft Word, Excel and PowerPoint document workflows through DOCX, XLSX and PPTX interchange. Combines document, spreadsheet, presentation, form and PDF editors, local file editing and optional connections to supported collaboration services. Its source is assembled from the linked ONLYOFFICE editor and desktop repositories.
+license: AGPL-3.0-only
+website: https://www.onlyoffice.com/desktop
+docs: https://github.com/ONLYOFFICE/DesktopEditors#readme
+limitations: Office format support does not establish full layout, macro, add-in or Microsoft service compatibility. Online collaboration requires a separately configured service. The AGPLv3 license includes additional notice/attribution terms; designated non-code content is CC BY-SA 4.0. Trademark rights are separate.
+discord_server: https://discord.gg/Hcgtf5n4uF
+screenshots:
+- src: https://raw.githubusercontent.com/ONLYOFFICE/DesktopEditors/daf8c6948148827201b2907ac1134d222fbfa7b4/screenshots/ONLYOFFICE%20Desktop%20Editors.png
+  alt: ONLYOFFICE Desktop Editors document, spreadsheet and presentation workspaces.

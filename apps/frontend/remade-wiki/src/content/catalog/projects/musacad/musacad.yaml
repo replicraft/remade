@@ -1,0 +1,28 @@
+# Reviewed for submission #223; source revision 038131a8e82e2bedcc83e17db6a537f87cc79f17.
+slug: musacad
+name: Musa CAD
+authors:
+- musacad
+repository: https://github.com/MusaCAD/MusaCAD
+originals:
+- autodesk-autocad
+category: engineering
+languages:
+- C++
+platforms:
+- Linux
+- Windows
+- macOS
+status: experimental
+compatibility: partial
+summary: AutoCAD-style 2D drafting with familiar commands, snapping, DXF files and an independent geometry engine.
+description: A C++/Qt 2D CAD application targeting AutoCAD-style commands, keyboard shortcuts, drawing aids and interface workflows. Uses its own 2D geometry engine with GPU rendering, layers, blocks, dimensions, undo/redo and DXF read/write. DWG interchange runs through a separately installed external converter rather than a linked DWG library.
+license: LGPL-3.0-or-later
+website: https://musacad.org/
+docs: https://github.com/MusaCAD/MusaCAD#readme
+limitations: Actively developed; 3D BREP modeling is deferred. DWG conversion requires an external tool and its own terms. Full AutoCAD command, extension and drawing-format fidelity is not established; performance figures are upstream measurements rather than Remade verification.
+screenshots:
+- src: https://raw.githubusercontent.com/MusaCAD/MusaCAD/038131a8e82e2bedcc83e17db6a537f87cc79f17/assets/screenshots/overview.png
+  alt: Musa CAD application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/MusaCAD/MusaCAD/038131a8e82e2bedcc83e17db6a537f87cc79f17/assets/screenshots/command-entry.png
+  alt: Musa CAD application workspace from the project documentation.

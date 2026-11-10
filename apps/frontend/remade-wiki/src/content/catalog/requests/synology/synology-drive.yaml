@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/195.
+original: synology-drive
+summary: Self-hosted file synchronization and collaboration without Synology hardware.
+reason: Reproduce Synology Drive-style file access, synchronization, sharing and versioning without requiring Synology
+  hardware. Prioritize simple self-hosted deployment, SSO, ordinary filesystem/home-directory access and extensible
+  document/photo apps, with clear ownership of stored files and user-controlled integrations.

@@ -1,0 +1,26 @@
+# Reviewed for submission #229; source revision bf2c9f0ddcae8ac9971a4fe66dca3d5bb1123fce.
+slug: sawhorse
+name: Sawhorse
+authors:
+- sawhorse3d
+repository: https://github.com/sawhorse3d/sawhorse
+originals:
+- sketchup
+category: engineering
+languages:
+- Rust
+- TypeScript
+platforms:
+- Web
+- Windows
+- macOS
+- Linux
+status: alpha
+compatibility: partial
+summary: SketchUp-style push/pull modeling with precise woodworking dimensions, cut lists and sheet layouts.
+description: A local-first modeler targeting SketchUp-style push/pull, inference snapping, familiar keys, groups/components, tags and scenes. Adds woodworking cut lists, material layouts and manufacturing exports. Imports supported SketchUp SKP models through the independent openskp library, plus common mesh/vector formats, in browser and desktop builds.
+license: MIT OR Apache-2.0
+website: https://sawhorse3d.com/
+browser_url: https://sawhorse3d.com/app/
+docs: https://github.com/sawhorse3d/sawhorse#readme
+limitations: Alpha software. SKP import covers supported versions and features; SKP export is not implemented. Model-size and interchange limits are documented upstream. Desktop installers are unsigned. Complete SketchUp extension, scene and material parity is not established.

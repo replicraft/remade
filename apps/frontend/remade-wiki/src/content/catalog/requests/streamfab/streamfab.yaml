@@ -1,0 +1,6 @@
+# Approved by the maintainer for https://github.com/replicraft/remade/issues/262.
+original: streamfab
+summary: Video downloading with batch queues, quality selection, multiple audio tracks and subtitles.
+reason: Reproduce StreamFab-style video downloading from streaming services, with batch queues, quality controls,
+  audio-track selection and subtitles. The central implementation challenge is protected-stream/DRM compatibility
+  and keeping up with service changes; support for any particular paid service is a goal, not an assumed capability.

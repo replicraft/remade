@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/157.
+original: saby
+summary: Self-hosted business accounting, document exchange, HR and team collaboration.
+reason: A self-hostable implementation of Saby-style accounting, tax reporting, electronic document exchange,
+  approval workflows, inventory, CRM, HR/payroll and team communication. Preserve familiar business workflows
+  and extensibility; jurisdiction-specific reporting and signature support need explicit qualification.

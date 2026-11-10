@@ -1,0 +1,33 @@
+# Reviewed for submission #231; source revision 4c663e60bef3eb6388ae6ed25d49d1b9fe8c3387.
+slug: lapin
+name: Lapin
+authors:
+- ciuntuc-bim-studio
+repository: https://github.com/Ciuntuc-BIM-Studio/lapin
+originals:
+- autodesk-revit
+category: engineering
+languages:
+- C#
+- TypeScript
+- Rust
+platforms:
+- Windows
+- macOS
+- Linux
+- Web
+status: experimental
+compatibility: partial
+summary: IFC-native BIM authoring with building modules, 3D views and a modular desktop workspace.
+description: An IFC-native BIM application targeting Revit-style building authoring. Combines a C#/.NET model and
+  geometry engine with a React/three.js interface, in a Tauri desktop shell or a browser WebAssembly build. Provides
+  architectural, structural, drafting, phasing and cost modules selected by edition. Uses the author’s BubbleBIM-derived
+  kernel and its own Lapin project package.
+license: MIT
+docs: https://lapin.ciuntucbimstudio.ro/docs/
+limitations: Test builds, not production-ready. Windows and Linux packages are unsigned; browser rebuilds can be
+  slower than desktop. Editions contain different modules; absent-module elements remain read-only. Native Revit
+  project/family and add-in compatibility is not established. Helpware encouragement is optional, not a license
+  restriction.
+website: https://ciuntucbimstudio.ro/en/
+browser_url: https://lapin.ciuntucbimstudio.ro/web/

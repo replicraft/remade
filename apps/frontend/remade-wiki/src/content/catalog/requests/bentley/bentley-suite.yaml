@@ -1,4 +1,5 @@
+# Additional request details: https://github.com/replicraft/remade/issues/254.
 original: bentley-suite
 summary: "Wanted: Bentley-style infrastructure design, engineering and project workflows."
-reason: Reproduce Bentley's infrastructure engineering workflows, including MicroStation drafting and modeling, OpenRoads road design, STAAD.Pro structural analysis and ProjectWise coordination, with compatible drawings, models and project interchange. Could be several applications sharing a 3D engine and data formats with CADCraft or SolidCraft.
+reason: "Reproduce Bentley's MicroStation drafting/modeling, OpenRoads design, STAAD.Pro structural analysis and ProjectWise coordination with compatible drawings, models and project interchange. Include load cases, force/displacement results and steel/concrete design checks. Several apps could share a 3D engine and data formats with CADCraft or SolidCraft."
 suggested_names: [InfraCraft]

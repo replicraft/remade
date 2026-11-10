@@ -1,0 +1,22 @@
+# Reviewed for submission #218; source revision ff87b47102fe7cb11a5058990b82e53a574e31cd.
+slug: kickcraft
+name: KickCraft
+authors:
+- zoniumgames
+repository: https://github.com/Zoniumgames/Kickcraft
+originals:
+- kickstart
+category: creative
+languages:
+- C++
+platforms:
+- Windows
+- macOS
+- Linux
+status: experimental
+compatibility: partial
+summary: Tempo-synchronized volume shaping with editable curves, presets, mix and timing controls.
+description: A JUCE-based volume-shaping effect targeting Kickstart-style rhythmic ducking without an external kick signal. Synchronizes to host tempo and meter, with editable envelope points, factory shapes, waveform display, mix/rate/offset controls and saved presets. Builds as VST3 and standalone applications, plus Audio Unit on macOS.
+license: AGPL-3.0-only
+docs: https://github.com/Zoniumgames/Kickcraft#readme
+limitations: Kickstart preset, automation-ID and exact DSP compatibility are not established. Available build artifacts do not prove coverage of every DAW or plug-in host. macOS plug-ins are unsigned and not notarized.

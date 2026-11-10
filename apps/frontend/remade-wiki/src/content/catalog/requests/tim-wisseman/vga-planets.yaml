@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/165.
+original: vga-planets
+summary: Turn-based space empire strategy with independent host, client and AI players.
+reason: An independently authored implementation of VGA Planets turn-based space strategy with documented
+  host/client behavior and AI opponents. The supplied reference is VGA Planets 4; distinguish supported
+  versions and formats rather than assuming compatibility with every edition.

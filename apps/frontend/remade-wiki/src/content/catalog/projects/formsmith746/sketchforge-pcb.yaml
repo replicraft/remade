@@ -1,0 +1,33 @@
+# Accepted by the maintainer as a broader Tinkercad Circuits alternative.
+# Reviewed source revision bbbb55276faa11eb23784f4b8d7c701d03a59039; submission #215.
+slug: sketchforge-pcb
+name: SketchForge PCB
+authors:
+- formsmith746
+repository: https://github.com/Formsmith746/SketchForge-PCB
+originals:
+- autodesk-tinkercad-circuits
+category: engineering
+languages:
+- TypeScript
+platforms:
+- Web
+status: experimental
+compatibility: partial
+summary: Browser-based circuit and PCB design with component libraries, routing, design checks, 3D previews and
+  manufacturing exports.
+description: A local-first circuit and PCB workspace accepted as a broader Tinkercad Circuits alternative. Provides
+  component values and footprints, wire/junction editing, board outlines, placement/routing tools, design checks
+  and 3D inspection. Saves editable SFPCB projects, imports supported KiCad boards and exports KiCad 8 PCB files,
+  Gerber packages, SVG drawings and CSV bills of materials. Optional local-development MCP tooling controls the
+  editor.
+license: AGPL-3.0-only
+website: https://pcb.sketchforge3d.com/
+browser_url: https://pcb.sketchforge3d.com/app
+docs: https://github.com/Formsmith746/SketchForge-PCB#readme
+limitations: Component placement and drawn routing are top-side only. Focuses on circuit and PCB design; Tinkercad-style
+  electrical simulation and Arduino execution are not implemented. Browser-local projects need backups. KiCad interchange
+  covers supported features, and MCP integration requires a local development server.
+screenshots:
+- src: https://raw.githubusercontent.com/Formsmith746/SketchForge-PCB/bbbb55276faa11eb23784f4b8d7c701d03a59039/docs/media/project-7-circuit.png
+  alt: SketchForge PCB circuit editor with components, connections and project controls.

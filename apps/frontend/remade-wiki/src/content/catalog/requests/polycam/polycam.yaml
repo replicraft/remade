@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/155.
+original: polycam
+summary: Local LiDAR, photo and Gaussian-splat capture with editable geometry, measurements and CAD/BIM exchange.
+reason: Reproduce LiDAR/photo reconstruction, Gaussian splats, 360 tours and editable room/floor plans with local-first
+  processing. Include measurement confidence, raw captures, open project formats and CAD/BIM exchange, plus a shared
+  Python/API/MCP automation layer. Distinguish measured from AI-inferred geometry; native Chief Architect .plan
+  export is a separate research goal, not assumed compatibility.

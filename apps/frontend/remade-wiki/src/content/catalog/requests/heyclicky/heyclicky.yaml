@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/289.
+original: heyclicky
+summary: A hotkey-driven desktop voice assistant with screen context and user-supplied AI API credentials.
+reason: Reproduce HeyClicky’s hotkey voice conversation, screen-aware guidance, on-screen annotations, dictation
+  and background-agent workflows on macOS and Windows. Allow user-supplied API credentials and explicit control
+  over screen access. Target the current proprietary workflow; using an older open-source version is a separate
+  licensing and scope question.

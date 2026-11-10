@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/170.
+original: autodesk-vehicle-tracking
+summary: Vehicle swept-path analysis, parking layouts and roundabout design.
+reason: Reproduce swept-path prediction for steered vehicles, light rail and aircraft, plus parking and
+  roundabout layout tools. Prioritize checking driveway and civil-design clearances, with documented geometry
+  exchange or integration workflows for Civil 3D drawings.

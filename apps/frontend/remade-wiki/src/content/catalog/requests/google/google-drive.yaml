@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/195.
+original: google-drive
+summary: Self-hosted file storage, synchronization and sharing with Google Drive-style access and collaboration.
+reason: Reproduce Google Drive-style file organization, sync clients, permissions, sharing links and extensible
+  document collaboration in a self-hosted service. Prioritize SSO, simple deployment and ordinary filesystem/NAS
+  access. Implement independent storage and integrations rather than depending on a free copy of Google’s hosted
+  service.

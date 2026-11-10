@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/220.
+original: emagic-sounddiver
+summary: A multi-device MIDI patch editor and librarian for classic hardware synthesizers.
+reason: Reproduce SoundDiver-style MIDI/SysEx patch editing, bank organization and librarian workflows
+  across classic hardware synthesizers. Prioritize extensible device definitions and broad legacy-instrument
+  coverage rather than a single synthesizer editor.

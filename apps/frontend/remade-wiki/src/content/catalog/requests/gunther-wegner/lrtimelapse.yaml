@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/273.
+original: lrtimelapse
+summary: Timelapse keyframing, day-to-night transitions, deflickering and video rendering.
+reason: Reproduce LRTimelapse-style RAW/DNG/JPEG sequence editing, keyframing, day-to-night transitions,
+  visual deflickering and motion blending. Include color-managed/HDR workflows, batch processing and high-resolution
+  video export, with native Rust/macOS support and documented Lightroom exchange where implemented.

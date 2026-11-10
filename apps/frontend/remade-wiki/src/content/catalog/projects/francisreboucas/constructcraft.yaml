@@ -1,0 +1,28 @@
+# Reviewed for submission #226; source revision 798ac78438cab3026651c3a6b12df6e45aa2d2fe.
+slug: constructcraft
+name: ConstructCraft
+authors:
+- francisreboucas
+repository: https://github.com/francisreboucas/constructcraft
+originals:
+- autodesk-revit
+category: engineering
+languages:
+- Rust
+platforms:
+- Windows
+- Linux
+- macOS
+status: experimental
+compatibility: partial
+summary: Revit-style BIM authoring with coordinated plans, sections, schedules, sheets and IFC exchange.
+description: A Rust BIM application, formerly ConstructCAD, targeting familiar Revit-style building-model and documentation workflows. Derives plans, sections, elevations, schedules and sheets from a parametric model with building elements and types. Provides IFC import/export, scripting and MCP automation while retaining its existing CCAD file and command identities.
+license: GPL-3.0-or-later
+website: https://francisreboucas.github.io/constructcraft/
+docs: https://github.com/francisreboucas/constructcraft#readme
+limitations: Does not read Revit RVT files; Revit models must be exported to IFC first. Supported IFC classes become editable elements while others remain generic geometry. Full Revit families, add-ins and model fidelity are not established. Packages are not code-signed.
+screenshots:
+- src: https://raw.githubusercontent.com/francisreboucas/constructcraft/798ac78438cab3026651c3a6b12df6e45aa2d2fe/docs/screenshots/en/hero.png
+  alt: ConstructCraft application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/francisreboucas/constructcraft/798ac78438cab3026651c3a6b12df6e45aa2d2fe/docs/screenshots/en/roof-3d.png
+  alt: ConstructCraft application workspace from the project documentation.

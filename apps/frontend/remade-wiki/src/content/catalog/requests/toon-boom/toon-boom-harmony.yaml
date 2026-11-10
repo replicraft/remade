@@ -1,4 +1,5 @@
+# Additional request details: https://github.com/replicraft/remade/issues/240.
 original: toon-boom-harmony
 summary: "Wanted: Harmony's drawing, rigging, deformers, exposure sheets and node-based compositing for professional 2D animation."
-reason: Reproduce Harmony's drawing, rigging, deformers, exposure sheets and node-based compositing for professional 2D animation.
+reason: "Reproduce Harmony's vector/bitmap drawing, frame-by-frame timeline, exposure sheets, onion skinning, drawing substitutions, rigging, deformers and node compositing. Include multiplane cameras, audio/lip-sync, reusable scenes, scripting and collaborative production, with image-sequence, GIF and video export."
 suggested_names: [ToonCraft]

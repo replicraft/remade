@@ -1,0 +1,32 @@
+# Reviewed for submission #294; source revision 06ac2c99fbe62bf18e69f032f9405848859bd9ad.
+slug: libretoon
+name: LibreToon
+authors:
+- alvillafm
+repository: https://github.com/alvillafm/LibreToon
+originals:
+- adobe-animate
+category: creative
+languages:
+- Rust
+platforms:
+- Windows
+- Linux
+- macOS
+status: experimental
+compatibility: partial
+summary: Animate-style 2D drawing and animation with symbols, tweening, bone rigging, media tracks and partial FLA
+  exchange.
+description: A Rust 2D animation application targeting Adobe Animate-style frame-by-frame drawing, motion tweening
+  and reusable graphic symbols. Provides vector/raster tools, pressure-sensitive tablet input, bone rigging and
+  Puppet deformation, animation clips, scenes, cameras, layer depth and dedicated media tracks. Imports supported
+  ZIP/XFL-based FLA content, with native projects and GIF/video export.
+license: MIT
+docs: https://github.com/alvillafm/LibreToon#readme
+limitations: 'Experimental. FLA interchange is partial: scripts are not executed, and imported audio, video, bitmap
+  fills, some masks/effects and unsupported tweening are omitted or approximated with warnings. Pre-CS5 binary FLA
+  is unsupported. Typography and timing can differ; no real user-file collection has been validated. Large FLA saves
+  can block the interface.'
+screenshots:
+- src: https://i.imgur.com/N5REuDb.jpeg
+  alt: LibreToon animation workspace with drawing canvas, timeline and tool panels.

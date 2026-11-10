@@ -1,0 +1,22 @@
+# Scope: upstream README at b62548901b5ecd706a5efa0ac0dbadbc34b8026f.
+slug: ingecad
+name: IngeCAD
+authors: [ingelibre]
+repository: https://github.com/ingelibre/ingecad
+originals: [autodesk-autocad]
+category: engineering
+languages: [Python]
+platforms: [Linux, Windows]
+status: experimental
+compatibility: partial
+summary: "Classic AutoCAD-style 2D drafting with familiar commands, DWG/DXF exchange, layouts and surveying tools."
+description: "A Python/Qt 2D CAD application for AutoCAD-style drafting with command aliases, object snaps, dimensions, blocks, layers, external references and editable paper-space layouts. Uses ezdxf for drawings and bundled GNU LibreDWG for DWG conversion. Includes scaled PDF output, Python and SCR scripting, optional AI/MCP automation, and topography, terrain and roads plugins."
+license: GPL-3.0-or-later
+website: https://ingecad.org/
+docs: https://github.com/ingelibre/ingecad#readme
+limitations: "Targets selected 2D workflows, not full AutoCAD parity. DWG is converted by bundled GNU LibreDWG or optional ODA File Converter, not parsed directly; DWG saves target r2000. Unsupported entities may be preserved without being rendered or editable. Terrain elevation data is for preliminary design, not a surveyed surface. Windows packages are unsigned."
+screenshots:
+  - src: https://raw.githubusercontent.com/ingelibre/ingecad/b62548901b5ecd706a5efa0ac0dbadbc34b8026f/docs/images/viewport.png
+    alt: "IngeCAD drawing workspace with a classic command line, layers and layout tabs."
+  - src: https://raw.githubusercontent.com/ingelibre/ingecad/b62548901b5ecd706a5efa0ac0dbadbc34b8026f/docs/images/topografia.jpeg
+    alt: "IngeCAD topography tools showing survey points, boundaries and contours."

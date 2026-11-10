@@ -12,6 +12,8 @@
   name: Accentize
 - slug: acd-systems
   name: ACD Systems
+- slug: macpaw
+  name: MacPaw
 - slug: adobe
   name: Adobe
 - slug: airtable
@@ -715,3 +717,53 @@
   name: Roblox Corporation
 - slug: valve
   name: Valve
+- slug: iterate
+  name: iterate GmbH
+- slug: cableguys
+  name: Cableguys
+- slug: vb-audio
+  name: VB-Audio
+- slug: polycam
+  name: Polycam
+- slug: saby
+  name: Saby
+- slug: apollo
+  name: Apollo
+- slug: powerkaraoke
+  name: PowerKaraoke
+- slug: emagic
+  name: Emagic
+- slug: terawell
+  name: Terawell
+- slug: abbyy
+  name: ABBYY
+- slug: locktime-software
+  name: Locktime Software
+- slug: sheetcam
+  name: SheetCAM
+- slug: hueforge
+  name: HueForge
+- slug: cyberark
+  name: CyberArk
+- slug: bite-the-bytes
+  name: BiteTheBytes
+- slug: gunther-wegner
+  name: Gunther Wegner
+- slug: ghisler
+  name: Ghisler Software
+- slug: buildbox
+  name: Buildbox
+- slug: higgsfield
+  name: Higgsfield
+- slug: stat-ease
+  name: Stat-Ease
+- slug: spotify
+  name: Spotify
+- slug: heyclicky
+  name: HeyClicky
+- slug: roon-labs
+  name: Roon Labs
+- slug: streamfab
+  name: StreamFab
+- slug: bitwig
+  name: Bitwig

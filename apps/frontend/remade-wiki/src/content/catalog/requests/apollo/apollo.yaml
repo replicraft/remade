@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/169.
+original: apollo
+summary: Sales prospecting and lead-search workflows using independently available data.
+reason: Reproduce Apollo-style sales prospecting, lead search, filtering and contact organization using
+  independently available or user-provided datasets. This request concerns the software workflow, not
+  access to Apollo's proprietary contact database or paid service.

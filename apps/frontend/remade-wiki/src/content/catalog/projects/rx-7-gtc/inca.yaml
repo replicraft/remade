@@ -1,0 +1,22 @@
+# MIT is declared in README and Cargo.toml; no standalone license file at reviewed revision dda105fee46bd9d6c403a6150cc37481a077061a.
+slug: inca
+name: Inca
+authors: [rx-7-gtc]
+repository: https://github.com/RX-7-GTC/inca
+originals: [autodesk-maya]
+category: creative
+languages: [Rust]
+platforms: [Windows, Linux, macOS]
+status: experimental
+compatibility: partial
+summary: "Maya-style modeling, animation and rendering with a familiar workspace, MEL scripting and partial Maya ASCII exchange."
+description: "A Rust/egui desktop application targeting Maya 2020's layout and workflows. Provides polygon and curve modeling, construction history, UV tools, skeletons, skinning, animation editors, node-based materials and rendering. Includes a MEL-style interpreter, partial Maya ASCII import/export, FBX rig and animation exchange, and OBJ, glTF and STL interchange. Saves native .inca scenes."
+license: MIT
+website: https://incacad.com/
+docs: https://github.com/RX-7-GTC/inca#readme
+limitations: Maya ASCII covers selected node types; Maya Binary (.mb), FBX blend shapes and constraints are unsupported.
+  Full MEL, Python API and Maya plug-in compatibility are not established. Some menus and animation features remain
+  placeholders. MIT is declared in README/Cargo metadata, but no standalone license text is included.
+screenshots:
+  - src: https://raw.githubusercontent.com/RX-7-GTC/inca/dda105fee46bd9d6c403a6150cc37481a077061a/inca.png
+    alt: "Inca's Maya-style desktop workspace with modeling viewports, shelves and a timeline."

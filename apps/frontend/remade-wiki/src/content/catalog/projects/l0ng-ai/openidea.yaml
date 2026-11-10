@@ -1,0 +1,29 @@
+# Reviewed for submission #239; source revision 8971febef73a833605f3378913f246483de24e30.
+slug: openidea
+name: OpenIDEA
+authors:
+- l0ng-ai
+repository: https://github.com/l0ng-ai/openidea
+originals:
+- intellij-idea-ultimate
+category: developer-tools
+languages:
+- TypeScript
+- Rust
+- Java
+platforms:
+- macOS
+- Windows
+- Linux
+status: experimental
+compatibility: partial
+summary: IntelliJ-style coding with familiar keymaps, code insight, debugging, Git, database tools and an HTTP client.
+description: A native desktop IDE targeting IntelliJ IDEA workflows with a Rust core and TypeScript interface. Provides
+  familiar keymaps, tool windows, search everywhere, code insight, debugging, Git and an integrated terminal. Includes
+  database browsing and SQL consoles, an HTTP client with Spring endpoint discovery, and language tooling across
+  more than 60 languages. Extensible through WebAssembly plugins, themes and language integrations.
+license: Apache-2.0
+docs: https://github.com/l0ng-ai/openidea#readme
+discord_server: https://discord.gg/2Zy4yn7gP
+limitations: The plugin API is a preview. Oracle database connections require separately installed Oracle Instant
+  Client libraries.

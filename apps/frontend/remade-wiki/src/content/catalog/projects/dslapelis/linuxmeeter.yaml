@@ -1,0 +1,27 @@
+# Reviewed for submission #251; source revision 3245d2d42b7ca2f11ac945dd58827a3181de6e46.
+slug: linuxmeeter
+name: linuxmeeter
+authors:
+- dslapelis
+repository: https://github.com/dslapelis/linuxmeeter
+originals:
+- voicemeeter
+category: creative
+languages:
+- Rust
+- TypeScript
+- Svelte
+platforms:
+- Linux
+status: experimental
+compatibility: partial
+summary: Voicemeeter-style PipeWire mixing with channel strips, EQ, dynamics and virtual microphone buses.
+description: A native PipeWire audio mixer targeting Voicemeeter-style strips, routing and buses on Linux. Captures hardware and application sources, applies LSP gate/compressor/EQ/limiter chains, routes to hardware outputs or virtual microphones, and provides metering, mute/solo, profile persistence and a tray interface.
+license: GPL-3.0-or-later
+docs: https://github.com/dslapelis/linuxmeeter#readme
+limitations: Requires PipeWire 1.0 or later, WirePlumber, LSP LV2 plugins and the GTK/WebKit tray/UI dependencies. Not a Windows driver or a complete Voicemeeter preset/API replacement. Virtual devices disappear when the application exits.
+screenshots:
+- src: https://raw.githubusercontent.com/dslapelis/linuxmeeter/3245d2d42b7ca2f11ac945dd58827a3181de6e46/docs/screenshot.png
+  alt: linuxmeeter application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/dslapelis/linuxmeeter/3245d2d42b7ca2f11ac945dd58827a3181de6e46/docs/screenshot-eq.png
+  alt: linuxmeeter application workspace from the project documentation.

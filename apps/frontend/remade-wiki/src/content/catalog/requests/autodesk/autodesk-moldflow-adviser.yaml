@@ -1,4 +1,5 @@
+# Additional request details: https://github.com/replicraft/remade/issues/150.
 # Requested in https://github.com/replicraft/remade/issues/128.
 original: autodesk-moldflow-adviser
 summary: "Wanted: Moldflow Adviser-style plastic injection-molding analysis to assess mold filling before manufacturing."
-reason: Reproduce Autodesk Moldflow Adviser workflows for assessing plastic injection-mold filling before machining and production. Support part and mold inputs, material and process settings, and visual analysis of filling behavior to help identify manufacturing problems.
+reason: "Reproduce Autodesk Moldflow Adviser workflows for assessing plastic injection-mold filling before machining and production. Support part and mold inputs, material and process settings, gate-placement analysis and visual filling results to help identify weld lines and trapped air before manufacturing."

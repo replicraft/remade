@@ -1,0 +1,21 @@
+# Scope and limitations: upstream README and source at 764f4da1ffc1ca668b4a0f2d9f7c3ba8fa063aef.
+slug: albumcraft
+name: AlbumCraft
+authors: [kbarni]
+repository: https://github.com/kbarni/AlbumCraft
+originals: [picasa]
+category: creative
+languages: [Rust]
+platforms: [Linux, Windows, macOS]
+status: experimental
+compatibility: partial
+summary: "Picasa-style photo organization with folders, albums, tags, non-destructive edits, maps and sharing exports."
+description: "A local photo organizer and editor targeting Picasa-style workflows. Indexes existing folders, imports pictures, manages ratings, captions, tags, people and albums, and reads per-folder .picasa.ini notes. Provides non-destructive adjustments, presets and effects, maps and location editing, collages, printing, slideshows, web galleries and optional movie export. Includes CLI/MCP automation."
+license: MIT OR Apache-2.0
+docs: https://github.com/kbarni/AlbumCraft#readme
+limitations: "Early software with missing features. Picasa notes are imported read-only; complete album/edit migration and face-recognition parity are not established. RAW images use embedded camera previews, not full RAW development. Movie export requires FFmpeg. Windows/macOS packages are unsigned, and macOS builds target Apple Silicon. Online maps and place searches use external services when enabled."
+screenshots:
+  - src: https://raw.githubusercontent.com/kbarni/AlbumCraft/764f4da1ffc1ca668b4a0f2d9f7c3ba8fa063aef/docs/screenshots/library.jpg
+    alt: "AlbumCraft photo library with a folder browser and image thumbnails."
+  - src: https://raw.githubusercontent.com/kbarni/AlbumCraft/764f4da1ffc1ca668b4a0f2d9f7c3ba8fa063aef/docs/screenshots/compare.jpg
+    alt: "AlbumCraft editor comparing a photo before and after adjustments."

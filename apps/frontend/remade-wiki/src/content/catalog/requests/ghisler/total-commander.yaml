@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/278.
+original: total-commander
+summary: Keyboard-driven dual-pane file management with archives, sync and extensible plugins.
+reason: Reproduce Total Commander's fast dual-pane workflow with tabs, background transfers, archives
+  as virtual filesystems, remote protocols, search, compare/sync, multi-rename and quick view. Prioritize
+  large-directory performance, consistent cross-platform behavior and documented packer/filesystem/lister/content
+  plugin APIs.

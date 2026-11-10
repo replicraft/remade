@@ -1,0 +1,31 @@
+# Reviewed for submission #253; source revision 802be39da1b0443a208a6fdac4c72dd00fb35538.
+slug: bananav
+name: BananaV
+authors:
+- acasoq-web
+repository: https://github.com/acasoq-web/BananaV
+originals:
+- vegas-pro
+category: creative
+languages:
+- Rust
+platforms:
+- Windows
+- Linux
+status: experimental
+compatibility: partial
+summary: Vegas-style track editing with audio/video events, envelopes, effects, preview and rendering.
+description: A Rust non-linear editor targeting Vegas-style track and event workflows. Provides audio/video timelines,
+  envelopes, keyframes and effects at media, event, track and output levels, plus OpenFX/VST3 hosting, color correction
+  and LUTs. Imports supported .veg project data and uses its own project format, with Media Foundation on Windows
+  and FFmpeg on Linux.
+license: GPL-3.0-or-later
+website: https://bananav-editor.github.io/
+docs: https://github.com/acasoq-web/BananaV#readme
+limitations: Pre-1.0 software; VEG import does not establish complete project or plug-in compatibility. Packages
+  are unsigned. Media formats and acceleration depend on platform codecs, FFmpeg and hardware; keep original projects
+  and media.
+discord_server: https://discord.gg/vtC7Yasz98
+screenshots:
+- src: https://raw.githubusercontent.com/acasoq-web/BananaV/802be39da1b0443a208a6fdac4c72dd00fb35538/site/assets/img/screen-main.png
+  alt: BananaV application workspace from the project documentation.

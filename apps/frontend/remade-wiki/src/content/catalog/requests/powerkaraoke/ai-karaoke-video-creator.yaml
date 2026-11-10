@@ -1,0 +1,6 @@
+# Requested in https://github.com/replicraft/remade/issues/209.
+original: ai-karaoke-video-creator
+summary: Create karaoke videos on Linux with vocal removal, lyric timing and styled lyrics.
+reason: 'Reproduce PowerKaraoke''s music-to-karaoke workflow on Linux: import audio, separate vocals,
+  time and edit lyrics, style the presentation and export finished videos. Prioritize reliable end-to-end
+  rendering without relying on Windows or incomplete Wine support.'

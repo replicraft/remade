@@ -1,0 +1,1638 @@
+{
+	"checked_at": "2026-11-09T06:28:22.742734+00:00",
+	"scope": "All 86 open issues at the start of this pass. Adds qualifying catalog projects and well-defined requests; records unresolved, duplicate, out-of-scope and insufficient submissions. This is not a full re-audit of unrelated existing catalog projects or of every project in linked third-party directories.",
+	"pull_request": "https://github.com/replicraft/remade/pull/283",
+	"delivery": "Draft PR held open. No issue comments, issue state changes, merge or auto-merge in this pass.",
+	"limitations": [
+		"Upstream source, license, README, representative implementation and references were reviewed; no third-party code was executed.",
+		"No local tests run. Catalog validator and commit hooks are separate from runtime or browser validation.",
+		"New project website/browser URLs remain subject to CI link validation; URL reachability does not certify runtime functionality.",
+		"Existing deeper-review and duplicate-resolution ledgers retain earlier evidence and decisions; pending items here do not imply approval."
+	],
+	"counts": {
+		"awaiting-author-clarification": 3,
+		"project-added": 22,
+		"insufficient-target": 21,
+		"duplicate-insufficient-target": 1,
+		"request-added": 29,
+		"outside-current-scope": 3,
+		"details-consolidated": 1,
+		"already-covered": 1,
+		"discovery-resource": 1,
+		"duplicate-discovery-resource": 1,
+		"already-in-held-pr": 3
+	},
+	"issues": [
+		{
+			"issue": 120,
+			"url": "https://github.com/replicraft/remade/issues/120",
+			"title": "[Catalog Suggestion] PeaceCraft III — Warcraft III: The Frozen Throne",
+			"disposition": "awaiting-author-clarification",
+			"note": "Original binary decompilation is described in RE notes; the existing question about direct translation versus separated behavioral specifications remains unanswered. No conclusion of illegality is made."
+		},
+		{
+			"issue": 131,
+			"url": "https://github.com/replicraft/remade/issues/131",
+			"title": "[Запрос на проект] autocad",
+			"disposition": "awaiting-author-clarification",
+			"note": "AutoCAD 3D request is underspecified. Existing reply asks whether Fusion/SolidCraft or particular AutoCAD features are intended; no subsequent answer."
+		},
+		{
+			"issue": 135,
+			"url": "https://github.com/replicraft/remade/issues/135",
+			"title": "[Project Request] Dolby atmos dsp",
+			"disposition": "awaiting-author-clarification",
+			"note": "DSP does not identify which Dolby Atmos product or workflow is intended. Existing product-clarification question remains unanswered."
+		},
+		{
+			"issue": 147,
+			"url": "https://github.com/replicraft/remade/issues/147",
+			"title": "MusicCraft",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/bhimio1/musiccraft.yaml"
+			],
+			"originals": ["fl-studio"],
+			"repository": "https://github.com/bhimio1/musiccraft",
+			"source_revision": "195b764644cede8412e367966c493b05d2b8cefc",
+			"identity": {
+				"canonical": "bhimio1/musiccraft",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "GPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/bhimio1/musiccraft/tree/195b764644cede8412e367966c493b05d2b8cefc",
+				"https://github.com/bhimio1/musiccraft/blob/195b764644cede8412e367966c493b05d2b8cefc/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "tools/stem-model/export.py",
+						"sha": "6423d6f36b11d82750a4485878db5a69bfc31df2",
+						"bytes": 7379
+					},
+					{
+						"path": "crates/musiccraft-engine/src/lib.rs",
+						"sha": "a5acfc7f9e20d40b5595e7f7166dfe2402f115f8",
+						"bytes": 1980
+					}
+				],
+				"source_file_count": 255,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Early software; complete FLP migration, FL Studio plug-in/device parity and project round-trip compatibility are not established. Native VST3 editor windows are documented for Linux only. Releases are unsigned. Optional stem separation downloads a model and has separate runtime requirements.",
+			"screenshots": 2
+		},
+		{
+			"issue": 149,
+			"url": "https://github.com/replicraft/remade/issues/149",
+			"title": "[Project Request] двайдверы",
+			"disposition": "insufficient-target",
+			"note": "Generic device-driver request does not identify a specific proprietary implementation, device or observable compatibility target."
+		},
+		{
+			"issue": 151,
+			"url": "https://github.com/replicraft/remade/issues/151",
+			"title": "[Project Request]",
+			"disposition": "duplicate-insufficient-target",
+			"note": "Duplicates the general driver theme of #149 without identifying a reviewable product/device target."
+		},
+		{
+			"issue": 152,
+			"url": "https://github.com/replicraft/remade/issues/152",
+			"title": "[Project Request]  Mount cloud storage as a disk in Macos Finder and Windows File Explorer",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/iterate/mountain-duck.yaml"
+			],
+			"original": "mountain-duck",
+			"sources": ["https://mountainduck.io/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 153,
+			"url": "https://github.com/replicraft/remade/issues/153",
+			"title": "[Project Request]",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/yalla/yalla-ludo.yaml"
+			],
+			"original": "yalla-ludo",
+			"sources": ["https://www.yallaludo.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 155,
+			"url": "https://github.com/replicraft/remade/issues/155",
+			"title": "Polycam — 3D Scanning, LiDAR, Photogrammetry, Gaussian Splatting & Native AI/MCP Integration",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/polycam/polycam.yaml"
+			],
+			"original": "polycam",
+			"sources": ["https://poly.cam/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 157,
+			"url": "https://github.com/replicraft/remade/issues/157",
+			"title": "Саби",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/tensor/saby.yaml"
+			],
+			"original": "saby",
+			"sources": ["https://saby.ru/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 164,
+			"url": "https://github.com/replicraft/remade/issues/164",
+			"title": "BYPRO",
+			"disposition": "insufficient-target",
+			"note": "BYPRO submission does not establish an identifiable software target and concrete requested workflow."
+		},
+		{
+			"issue": 165,
+			"url": "https://github.com/replicraft/remade/issues/165",
+			"title": "PlanetsFoundation",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/tim-wisseman/vga-planets.yaml"
+			],
+			"original": "vga-planets",
+			"sources": ["https://www.grgzone.com/games/planets4/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 166,
+			"url": "https://github.com/replicraft/remade/issues/166",
+			"title": "ArtificialMule",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/ozark-softscape/mule.yaml"
+			],
+			"original": "mule",
+			"sources": ["https://en.wikipedia.org/wiki/M.U.L.E."],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 168,
+			"url": "https://github.com/replicraft/remade/issues/168",
+			"title": "Internet Download Manager (IDM) and torrent clients",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/zidan44/zidan44-downloadcraft.yaml"
+			],
+			"originals": ["internet-download-manager"],
+			"repository": "https://github.com/ZIDAN44/downloadcraft",
+			"source_revision": "d4a0e15d6176cb0922f0e8af8ac3b5f08ae4f4ae",
+			"identity": {
+				"canonical": "ZIDAN44/downloadcraft",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "MIT OR Apache-2.0",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/ZIDAN44/downloadcraft/tree/d4a0e15d6176cb0922f0e8af8ac3b5f08ae4f4ae",
+				"https://github.com/ZIDAN44/downloadcraft/blob/d4a0e15d6176cb0922f0e8af8ac3b5f08ae4f4ae/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/model/src/job.rs",
+						"sha": "c5c2de79c07c472407f33984f79afcb36f778f9b",
+						"bytes": 5718
+					},
+					{
+						"path": "crates/model/src/lib.rs",
+						"sha": "1d379293c06058bb38cfce5c670db3c1d6764081",
+						"bytes": 9046
+					}
+				],
+				"source_file_count": 49,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Early software; FTP and MEGA support remain roadmap items. Video downloads require yt-dlp. IDM settings, browser integration and download-state compatibility are not established. Published platform packages do not establish real-device coverage for every architecture.",
+			"screenshots": 2
+		},
+		{
+			"issue": 169,
+			"url": "https://github.com/replicraft/remade/issues/169",
+			"title": "[Project Request] Apollo ai",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/apollo/apollo.yaml"
+			],
+			"original": "apollo",
+			"sources": ["https://www.apollo.io/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 170,
+			"url": "https://github.com/replicraft/remade/issues/170",
+			"title": "Turning path of vehicles in civil 3d",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/autodesk/autodesk-vehicle-tracking.yaml"
+			],
+			"original": "autodesk-vehicle-tracking",
+			"sources": [
+				"https://www.autodesk.com/products/vehicle-tracking/overview"
+			],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 172,
+			"url": "https://github.com/replicraft/remade/issues/172",
+			"title": "[Project Request] SimpleScreenRecorder for Wayland",
+			"disposition": "outside-current-scope",
+			"note": "SimpleScreenRecorder is already open-source software. A Wayland rewrite needs an explicit maintainer scope exception, which has not been given."
+		},
+		{
+			"issue": 173,
+			"url": "https://github.com/replicraft/remade/issues/173",
+			"title": "[Project Request] Bluegriffon in a modern version",
+			"disposition": "details-consolidated",
+			"note": "BlueGriffon is already open source, so no rewrite request was added. Useful WYSIWYG/newsletter editing requirements were folded into the existing Dreamweaver request.",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/adobe/adobe-dreamweaver.yaml"
+			]
+		},
+		{
+			"issue": 174,
+			"url": "https://github.com/replicraft/remade/issues/174",
+			"title": "activechroma",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/razer/razer-chroma.yaml"
+			],
+			"original": "razer-chroma",
+			"sources": ["https://www.razer.com/chroma"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 175,
+			"url": "https://github.com/replicraft/remade/issues/175",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 177,
+			"url": "https://github.com/replicraft/remade/issues/177",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "Ericson submission lacks enough product and behavior detail to establish a specific target."
+		},
+		{
+			"issue": 178,
+			"url": "https://github.com/replicraft/remade/issues/178",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 182,
+			"url": "https://github.com/replicraft/remade/issues/182",
+			"title": "Threechill",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/ptc/ptc-windchill.yaml"
+			],
+			"original": "ptc-windchill",
+			"sources": ["https://www.ptc.com/en/products/windchill"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 183,
+			"url": "https://github.com/replicraft/remade/issues/183",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 185,
+			"url": "https://github.com/replicraft/remade/issues/185",
+			"title": "proyecto",
+			"disposition": "insufficient-target",
+			"note": "House/music references do not establish an identifiable proprietary software target."
+		},
+		{
+			"issue": 186,
+			"url": "https://github.com/replicraft/remade/issues/186",
+			"title": "nose[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 187,
+			"url": "https://github.com/replicraft/remade/issues/187",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "Music reference does not establish an identifiable proprietary software target."
+		},
+		{
+			"issue": 188,
+			"url": "https://github.com/replicraft/remade/issues/188",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 189,
+			"url": "https://github.com/replicraft/remade/issues/189",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 190,
+			"url": "https://github.com/replicraft/remade/issues/190",
+			"title": "g",
+			"disposition": "insufficient-target",
+			"note": "Placeholder submission without an identifiable software target."
+		},
+		{
+			"issue": 192,
+			"url": "https://github.com/replicraft/remade/issues/192",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 195,
+			"url": "https://github.com/replicraft/remade/issues/195",
+			"title": "CloudCraft",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/synology/synology-drive.yaml"
+			],
+			"original": "synology-drive",
+			"sources": ["https://www.synology.com/en-global/dsm/feature/drive"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 201,
+			"url": "https://github.com/replicraft/remade/issues/201",
+			"title": "test",
+			"disposition": "already-covered",
+			"note": "Test/Lemon submission does not establish an additional distinct qualifying catalog entry."
+		},
+		{
+			"issue": 205,
+			"url": "https://github.com/replicraft/remade/issues/205",
+			"title": "Miosss",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 206,
+			"url": "https://github.com/replicraft/remade/issues/206",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "Generic software submission lacks an identifiable target and requested behavior."
+		},
+		{
+			"issue": 208,
+			"url": "https://github.com/replicraft/remade/issues/208",
+			"title": "A Version of Logitech Capture Camera Software for Linux",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/logitech/logitech-capture.yaml"
+			],
+			"original": "logitech-capture",
+			"sources": ["https://www.logitech.com/en-us/software/capture.html"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates. Author describes an implementation but has not provided a public source repository; this adds only the unfulfilled request."
+		},
+		{
+			"issue": 209,
+			"url": "https://github.com/replicraft/remade/issues/209",
+			"title": "AI Karaoke Video Creator for Linux (Powerkaraoke)",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/powerkaraoke/ai-karaoke-video-creator.yaml"
+			],
+			"original": "ai-karaoke-video-creator",
+			"sources": [
+				"https://www.powerkaraoke.com/src/prod-ai-karaoke-video-creator.php"
+			],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 213,
+			"url": "https://github.com/replicraft/remade/issues/213",
+			"title": "[Catalog Suggestion] layerling",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/henmedia/layerling.yaml"
+			],
+			"originals": ["autodesk-tinkercad-3d-design"],
+			"repository": "https://github.com/henmedia/layerling",
+			"source_revision": "92975a215773f3e315cc4aabf93587348243a0a0",
+			"identity": {
+				"canonical": "henmedia/layerling",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "AGPL-3.0-only",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/henmedia/layerling/tree/92975a215773f3e315cc4aabf93587348243a0a0",
+				"https://github.com/henmedia/layerling/blob/92975a215773f3e315cc4aabf93587348243a0a0/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "apps/web/src/lib/brepKernel.ts",
+						"sha": "8540515e58c67275ee642e70fef92da367c3271c",
+						"bytes": 2481
+					},
+					{
+						"path": "apps/web/src/lib/modelSplit.ts",
+						"sha": "5c50ceec3476bde59ade74ce0605744d552facc2",
+						"bytes": 10118
+					}
+				],
+				"source_file_count": 551,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Not a full parametric CAD package: no parametric feature timeline or assemblies. Tinkercad cloud/account compatibility is not established. A community Tinkercad conversion tool is separate and untested by the maintainer. Browser storage requires explicit backups/export.",
+			"screenshots": 1
+		},
+		{
+			"issue": 214,
+			"url": "https://github.com/replicraft/remade/issues/214",
+			"title": "[Catalog Suggestion] SketchForge",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge.yaml"
+			],
+			"originals": ["autodesk-tinkercad-3d-design"],
+			"repository": "https://github.com/Formsmith746/SketchForge-3D",
+			"source_revision": "e9cb8e8681f92e12f6044e046046cf1d363f6811",
+			"identity": {
+				"canonical": "Formsmith746/SketchForge-3D",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "AGPL-3.0-only",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/Formsmith746/SketchForge-3D/tree/e9cb8e8681f92e12f6044e046046cf1d363f6811",
+				"https://github.com/Formsmith746/SketchForge-3D/blob/e9cb8e8681f92e12f6044e046046cf1d363f6811/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "apps/web/src/lib/brepKernel.ts",
+						"sha": "4cde20db9372f00154b65036e0552d3c905fb850",
+						"bytes": 1624
+					},
+					{
+						"path": "apps/web/src/lib/skfProject.ts",
+						"sha": "4c962961e04258145be8d2381c1237933445b62b",
+						"bytes": 69719
+					}
+				],
+				"source_file_count": 62,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Tinkercad project, cloud and account compatibility is not established. Projects normally remain in browser storage and need backups. macOS packages may be unsigned; some virtual machines need software WebGL. No full parametric/assembly parity is claimed.",
+			"screenshots": 2
+		},
+		{
+			"issue": 215,
+			"url": "https://github.com/replicraft/remade/issues/215",
+			"title": "[Catalog Suggestion] SketchForge PCB",
+			"disposition": "project-added",
+			"note": "Maintainer approved the broader circuit/PCB-design scope. Added the project with supported formats, browser link, screenshot and functional limitations.",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge-pcb.yaml"
+			]
+		},
+		{
+			"issue": 218,
+			"url": "https://github.com/replicraft/remade/issues/218",
+			"title": "Kickcraft",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/zoniumgames/kickcraft.yaml"
+			],
+			"originals": ["kickstart"],
+			"repository": "https://github.com/Zoniumgames/Kickcraft",
+			"source_revision": "ff87b47102fe7cb11a5058990b82e53a574e31cd",
+			"identity": {
+				"canonical": "Zoniumgames/Kickcraft",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "AGPL-3.0-only",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/Zoniumgames/Kickcraft/tree/ff87b47102fe7cb11a5058990b82e53a574e31cd",
+				"https://github.com/Zoniumgames/Kickcraft/blob/ff87b47102fe7cb11a5058990b82e53a574e31cd/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "Source/PluginEditor.cpp",
+						"sha": "e30a011fcd66fe5387b02b8c683dd1ca835f1272",
+						"bytes": 10010
+					},
+					{
+						"path": "Source/PluginProcessor.cpp",
+						"sha": "de729da357a14ed91c685320f6d821db7c9aff4b",
+						"bytes": 10910
+					}
+				],
+				"source_file_count": 2,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Kickstart preset, automation-ID and exact DSP compatibility are not established. Available build artifacts do not prove coverage of every DAW or plug-in host. macOS plug-ins are unsigned and not notarized.",
+			"screenshots": 0
+		},
+		{
+			"issue": 220,
+			"url": "https://github.com/replicraft/remade/issues/220",
+			"title": "Bathysphere",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/emagic/emagic-sounddiver.yaml"
+			],
+			"original": "emagic-sounddiver",
+			"sources": [
+				"https://medias.audiofanzine.com/files/emagic-apple-sounddiver-v3-0-manual-476540.pdf"
+			],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 221,
+			"url": "https://github.com/replicraft/remade/issues/221",
+			"title": "Remade software catalogs",
+			"disposition": "discovery-resource",
+			"note": "clonesof.com is a directory, not an implementation. Its review method does not establish code provenance or runtime compatibility. The linked blog was inaccessible in the web review. Neither directory was bulk imported; individual projects still need source/license/target review."
+		},
+		{
+			"issue": 222,
+			"url": "https://github.com/replicraft/remade/issues/222",
+			"title": "Edi",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 223,
+			"url": "https://github.com/replicraft/remade/issues/223",
+			"title": "[Catalog Suggestion] MusaCAD",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/musacad/musacad.yaml"
+			],
+			"originals": ["autodesk-autocad"],
+			"repository": "https://github.com/MusaCAD/MusaCAD",
+			"source_revision": "038131a8e82e2bedcc83e17db6a537f87cc79f17",
+			"identity": {
+				"canonical": "MusaCAD/MusaCAD",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "LGPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/MusaCAD/MusaCAD/tree/038131a8e82e2bedcc83e17db6a537f87cc79f17",
+				"https://github.com/MusaCAD/MusaCAD/blob/038131a8e82e2bedcc83e17db6a537f87cc79f17/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "src/command/calc.cpp",
+						"sha": "88f0fb507dc9b25cb92b0128ac06bee18cbac865",
+						"bytes": 13715
+					},
+					{
+						"path": "src/command/tracking.cpp",
+						"sha": "c19e3fcb642cbb60df8bbc2c39d10036a8096244",
+						"bytes": 5166
+					}
+				],
+				"source_file_count": 76,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Actively developed; 3D BREP modeling is deferred. DWG conversion requires an external tool and its own terms. Full AutoCAD command, extension and drawing-format fidelity is not established; performance figures are upstream measurements rather than Remade verification.",
+			"screenshots": 2
+		},
+		{
+			"issue": 224,
+			"url": "https://github.com/replicraft/remade/issues/224",
+			"title": "[Catalog Suggestion] Open CAD Studio",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/hakanseven12/open-cad-studio.yaml"
+			],
+			"originals": ["autodesk-autocad"],
+			"repository": "https://github.com/HakanSeven12/OpenCADStudio",
+			"source_revision": "05974620eede2e10d529ce7052eaf49c17f75150",
+			"identity": {
+				"canonical": "HakanSeven12/OpenCADStudio",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "GPL-3.0-only",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/HakanSeven12/OpenCADStudio/tree/05974620eede2e10d529ce7052eaf49c17f75150",
+				"https://github.com/HakanSeven12/OpenCADStudio/blob/05974620eede2e10d529ce7052eaf49c17f75150/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "src/io/xref_model.rs",
+						"sha": "030c844e8a5d45afd7123dc435e3e9fe8aa0aa33",
+						"bytes": 34945
+					},
+					{
+						"path": "src/scene/project.rs",
+						"sha": "1d292269be7bab92009757680ab8c5a12b64d7f5",
+						"bytes": 55522
+					}
+				],
+				"source_file_count": 952,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "alpha",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Under active development; complete AutoCAD parity is not established. The experimental IFCCAD drawing format may change without migration and does not support general IFCX BIM models. Browser builds omit desktop integrations. Keep original drawings and independent DWG/DXF copies.",
+			"screenshots": 2
+		},
+		{
+			"issue": 225,
+			"url": "https://github.com/replicraft/remade/issues/225",
+			"title": "[Catalog Suggestion] QymCAD",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/qymis-tech/qymcad.yaml"
+			],
+			"originals": ["autodesk-fusion"],
+			"repository": "https://github.com/QymIs-Tech/QymCAD",
+			"source_revision": "bb5ff2dff25c90fd77b5ff7387ea6380d53d34bd",
+			"identity": {
+				"canonical": "QymIs-Tech/QymCAD",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "AGPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/QymIs-Tech/QymCAD/tree/bb5ff2dff25c90fd77b5ff7387ea6380d53d34bd",
+				"https://github.com/QymIs-Tech/QymCAD/blob/bb5ff2dff25c90fd77b5ff7387ea6380d53d34bd/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/qymcad-kernel/build.rs",
+						"sha": "6aa84c5f5f790d43cd0b0454e8e85e5358de9292",
+						"bytes": 4818
+					},
+					{
+						"path": "crates/qymcad-core/src/model.rs",
+						"sha": "151d0f494354d698a1fe24e847bb4a0eff9bd0ea",
+						"bytes": 70841
+					}
+				],
+				"source_file_count": 750,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Development builds change their project format without backward compatibility; older files may require conversion. The CAM module is nonfunctional groundwork. Fusion project/cloud/add-in compatibility is not established. macOS builds are not Apple-signed; Linux packages require glibc 2.35 or later.",
+			"screenshots": 1
+		},
+		{
+			"issue": 226,
+			"url": "https://github.com/replicraft/remade/issues/226",
+			"title": "[Catalog Suggestion] ConstructCAD",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/francisreboucas/constructcraft.yaml"
+			],
+			"originals": ["autodesk-revit"],
+			"repository": "https://github.com/francisreboucas/constructcraft",
+			"source_revision": "798ac78438cab3026651c3a6b12df6e45aa2d2fe",
+			"identity": {
+				"canonical": "francisreboucas/constructcraft",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null,
+				"note": "Submitted constructcad URL now resolves to constructcraft; use canonical current identity."
+			},
+			"license": {
+				"catalog": "GPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/francisreboucas/constructcraft/tree/798ac78438cab3026651c3a6b12df6e45aa2d2fe",
+				"https://github.com/francisreboucas/constructcraft/blob/798ac78438cab3026651c3a6b12df6e45aa2d2fe/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/cc_skp/src/model.rs",
+						"sha": "eadfc38f73892cf421465d4dddac51c4e536ca13",
+						"bytes": 31607
+					},
+					{
+						"path": "crates/cc_engine/src/lib.rs",
+						"sha": "3c378f19394bda9e14960d28ca5e4676d0b9616f",
+						"bytes": 1833
+					}
+				],
+				"source_file_count": 291,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Does not read Revit RVT files; Revit models must be exported to IFC first. Supported IFC classes become editable elements while others remain generic geometry. Full Revit families, add-ins and model fidelity are not established. Packages are not code-signed.",
+			"screenshots": 2
+		},
+		{
+			"issue": 227,
+			"url": "https://github.com/replicraft/remade/issues/227",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 228,
+			"url": "https://github.com/replicraft/remade/issues/228",
+			"title": "[Catalog Suggestion] ravynOS - macOS compatible OS",
+			"disposition": "project-added",
+			"note": "Maintainer approved ravynOS following the focused clean-room/source-origin review. Added for macOS application interfaces, retaining the Darwin/FreeBSD foundations, component-specific terms and pre-alpha application/hardware limitations.",
+			"followup_report": "docs/audits/2026-11-09-ravynos-provenance-review.json",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/ravynsoft/ravynos.yaml"
+			]
+		},
+		{
+			"issue": 229,
+			"url": "https://github.com/replicraft/remade/issues/229",
+			"title": "[Catalog Suggestion] Sawhorse",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/sawhorse3d/sawhorse.yaml"
+			],
+			"originals": ["sketchup"],
+			"repository": "https://github.com/sawhorse3d/sawhorse",
+			"source_revision": "bf2c9f0ddcae8ac9971a4fe66dca3d5bb1123fce",
+			"identity": {
+				"canonical": "sawhorse3d/sawhorse",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "MIT OR Apache-2.0",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/sawhorse3d/sawhorse/tree/bf2c9f0ddcae8ac9971a4fe66dca3d5bb1123fce",
+				"https://github.com/sawhorse3d/sawhorse/blob/bf2c9f0ddcae8ac9971a4fe66dca3d5bb1123fce/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "src/kernel/types.ts",
+						"sha": "819a286d41d7876f52a7ee06827c8c64534c9614",
+						"bytes": 48858
+					},
+					{
+						"path": "src/kernel/client.ts",
+						"sha": "2345de07b4a4093c69b9116bb38b32c169def471",
+						"bytes": 20572
+					}
+				],
+				"source_file_count": 260,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "alpha",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Alpha software. SKP import covers supported versions and features; SKP export is not implemented. Model-size and interchange limits are documented upstream. Desktop installers are unsigned. Complete SketchUp extension, scene and material parity is not established.",
+			"screenshots": 0
+		},
+		{
+			"issue": 230,
+			"url": "https://github.com/replicraft/remade/issues/230",
+			"title": "[Catalog Suggestion] CreaBIM",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/kingbenoitbrice-fun/creabim.yaml"
+			],
+			"originals": ["autodesk-revit"],
+			"repository": "https://github.com/kingbenoitbrice-fun/CreaBIM",
+			"source_revision": "0e5ed4678c425bd06c65741a85f891dedbc8b96c",
+			"identity": {
+				"canonical": "kingbenoitbrice-fun/CreaBIM",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "GPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/kingbenoitbrice-fun/CreaBIM/tree/0e5ed4678c425bd06c65741a85f891dedbc8b96c",
+				"https://github.com/kingbenoitbrice-fun/CreaBIM/blob/0e5ed4678c425bd06c65741a85f891dedbc8b96c/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/creabim-core/src/model.rs",
+						"sha": "3fd0e102ffaac66280e0b8f00471de0d77acaad8",
+						"bytes": 6302
+					},
+					{
+						"path": "crates/creabim-app/src/commands.rs",
+						"sha": "014328f33f76955d7c0e960f0286891f861a45da",
+						"bytes": 6807
+					}
+				],
+				"source_file_count": 198,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Phase 1 software, explicitly not ready for real projects. Native Revit RVT/RFA and add-in compatibility are not established; exchange uses IFC. Some geometry, architectural and documentation workflows remain incomplete. Source-build/platform claims do not imply production-ready installers.",
+			"screenshots": 2
+		},
+		{
+			"issue": 231,
+			"url": "https://github.com/replicraft/remade/issues/231",
+			"title": "[Catalog Suggestion] Lapin",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/ciuntuc-bim-studio/lapin.yaml"
+			],
+			"originals": ["autodesk-revit"],
+			"repository": "https://github.com/Ciuntuc-BIM-Studio/lapin",
+			"source_revision": "4c663e60bef3eb6388ae6ed25d49d1b9fe8c3387",
+			"identity": {
+				"canonical": "Ciuntuc-BIM-Studio/lapin",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "MIT",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/Ciuntuc-BIM-Studio/lapin/tree/4c663e60bef3eb6388ae6ed25d49d1b9fe8c3387",
+				"https://github.com/Ciuntuc-BIM-Studio/lapin/blob/4c663e60bef3eb6388ae6ed25d49d1b9fe8c3387/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "ui/src/app/commands.ts",
+						"sha": "e2450064197c6129892124da8504cdf924b0c7de",
+						"bytes": 11023
+					},
+					{
+						"path": "ui/src/engine/files.ts",
+						"sha": "00937a4de555fc5583fd96c959c32e90ca32d333",
+						"bytes": 30357
+					}
+				],
+				"source_file_count": 961,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Early software. The native boolean library is currently built only for Apple Silicon macOS. Editions contain different modules; absent-module elements remain read-only. Native Revit project/family and add-in compatibility is not established. Helpware encouragement is optional, not a license restriction.",
+			"screenshots": 0
+		},
+		{
+			"issue": 232,
+			"url": "https://github.com/replicraft/remade/issues/232",
+			"title": "[Catalog Suggestion] Zbrush",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/islandmed/sculptforge.yaml"
+			],
+			"originals": ["zbrush"],
+			"repository": "https://github.com/islandmed/SculptForge",
+			"source_revision": "f374512b7af68920dc5b8e1e96d07c9508351f57",
+			"identity": {
+				"canonical": "islandmed/SculptForge",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "GPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/islandmed/SculptForge/tree/f374512b7af68920dc5b8e1e96d07c9508351f57",
+				"https://github.com/islandmed/SculptForge/blob/f374512b7af68920dc5b8e1e96d07c9508351f57/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "src/core/Project.cpp",
+						"sha": "64b5a9ca5482f5d4cc9dc0e832496b137b3b0ff0",
+						"bytes": 68259
+					},
+					{
+						"path": "src/ai/AiCommands.cpp",
+						"sha": "ea666a29ffaddca7e5a5b58da013256d5d3afffc",
+						"bytes": 20211
+					}
+				],
+				"source_file_count": 360,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Early release; full ZBrush project, brush, material and plug-in compatibility is not established. AI features use optional external services or separately licensed local models. Packages are unsigned, and format/hardware coverage remains limited to documented upstream evidence.",
+			"screenshots": 2
+		},
+		{
+			"issue": 234,
+			"url": "https://github.com/replicraft/remade/issues/234",
+			"title": "[Catalog Suggestion] Various Projects",
+			"disposition": "duplicate-discovery-resource",
+			"note": "Same clonesof.com directory lead as #221. A directory itself is not a qualifying project; no unchecked bulk imports."
+		},
+		{
+			"issue": 238,
+			"url": "https://github.com/replicraft/remade/issues/238",
+			"title": "[Catalog Suggestion] ClipCraft",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/nanox333/clipcraft.yaml"
+			],
+			"originals": ["medal-tv", "nvidia-shadowplay"],
+			"repository": "https://github.com/nanox333/clipcraft",
+			"source_revision": "60def7c5bc4f85c84da550b16902b2e37244c11e",
+			"identity": {
+				"canonical": "nanox333/clipcraft",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "MIT",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/nanox333/clipcraft/tree/60def7c5bc4f85c84da550b16902b2e37244c11e",
+				"https://github.com/nanox333/clipcraft/blob/60def7c5bc4f85c84da550b16902b2e37244c11e/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "apps/clipcraft/src/editor_media.rs",
+						"sha": "40628c5711b211183a740c060d4e6c99cbee1c7d",
+						"bytes": 29889
+					},
+					{
+						"path": "crates/clipcraft-engine/src/lib.rs",
+						"sha": "d839b886d84f9eb077dc0b9488a71e4df673c465",
+						"bytes": 78489
+					}
+				],
+				"source_file_count": 157,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Early release. Current evidence covers generated capture on Windows/AMD and Linux/X11; real games, other devices and Wayland remain incompletely tested. macOS capture is not implemented. No Medal-hosted service or social-feature replacement is claimed. Windows packages are unsigned.",
+			"screenshots": 2
+		},
+		{
+			"issue": 239,
+			"url": "https://github.com/replicraft/remade/issues/239",
+			"title": "[Catalog Suggestion] OpenIDEA",
+			"disposition": "project-added",
+			"note": "Maintainer approved OpenIDEA. Added the IntelliJ IDEA listing and removed its fulfilled Ultimate request. The prior licensed-reuse hold is withdrawn.",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/l0ng-ai/openidea.yaml"
+			]
+		},
+		{
+			"issue": 241,
+			"url": "https://github.com/replicraft/remade/issues/241",
+			"title": "[Project Request] DesignDoll",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/terawell/designdoll.yaml"
+			],
+			"original": "designdoll",
+			"sources": ["https://terawell.net/en/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 242,
+			"url": "https://github.com/replicraft/remade/issues/242",
+			"title": "[Project Request] ABBYY FineReader",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/abbyy/abbyy-finereader.yaml"
+			],
+			"original": "abbyy-finereader",
+			"sources": ["https://pdf.abbyy.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 244,
+			"url": "https://github.com/replicraft/remade/issues/244",
+			"title": "[Catalog Suggestion] ONLYOFFICE Desktop",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/onlyoffice/onlyoffice-desktop.yaml"
+			],
+			"originals": [
+				"microsoft-word",
+				"microsoft-excel",
+				"microsoft-powerpoint"
+			],
+			"repository": "https://github.com/ONLYOFFICE/DesktopEditors",
+			"source_revision": "daf8c6948148827201b2907ac1134d222fbfa7b4",
+			"identity": {
+				"canonical": "ONLYOFFICE/DesktopEditors",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "AGPL-3.0-only",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/ONLYOFFICE/DesktopEditors/tree/daf8c6948148827201b2907ac1134d222fbfa7b4",
+				"https://github.com/ONLYOFFICE/DesktopEditors/blob/daf8c6948148827201b2907ac1134d222fbfa7b4/README.md",
+				"https://github.com/ONLYOFFICE/DesktopEditors/blob/daf8c6948148827201b2907ac1134d222fbfa7b4/.gitmodules",
+				"https://github.com/ONLYOFFICE/core/blob/master/OOXML/DocxFormat/Document.cpp",
+				"https://www.onlyoffice.com/download-desktop"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [],
+				"source_file_count": 0,
+				"runtime_verified": false,
+				"note": "DesktopEditors is a submodule assembly; inspected .gitmodules, desktop-apps source inventory and actual core Document.cpp implementation. Zero direct source files in the wrapper tree does not mean no implementation."
+			},
+			"maturity": {
+				"catalog": "stable",
+				"compatibility": "partial",
+				"basis": "Official supported desktop product/download distributions for Windows, macOS and Linux, supported by the documented editor feature set. Compatibility remains partial."
+			},
+			"limitations": "Office format support does not establish full layout, macro, add-in or Microsoft service compatibility. Online collaboration requires a separately configured service. The AGPLv3 license includes additional notice/attribution terms; designated non-code content is CC BY-SA 4.0. Trademark rights are separate.",
+			"screenshots": 1
+		},
+		{
+			"issue": 245,
+			"url": "https://github.com/replicraft/remade/issues/245",
+			"title": "[Project Request] Netlimiter",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/locktime-software/netlimiter.yaml"
+			],
+			"original": "netlimiter",
+			"sources": ["https://netlimiter.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 246,
+			"url": "https://github.com/replicraft/remade/issues/246",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "Placeholder without a reviewable product or requested workflow."
+		},
+		{
+			"issue": 247,
+			"url": "https://github.com/replicraft/remade/issues/247",
+			"title": "PlasmaCraft",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/sheetcam/sheetcam.yaml",
+				"apps/frontend/remade-wiki/src/content/catalog/requests/hypertherm/pronest.yaml"
+			],
+			"original": "sheetcam",
+			"sources": ["https://www.sheetcam.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates. Existing ProNest reason also expanded with single-part plasma workflow details."
+		},
+		{
+			"issue": 251,
+			"url": "https://github.com/replicraft/remade/issues/251",
+			"title": "[Catalog Suggestion] Linuxmeeter",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/dslapelis/linuxmeeter.yaml"
+			],
+			"originals": ["voicemeeter"],
+			"repository": "https://github.com/dslapelis/linuxmeeter",
+			"source_revision": "3245d2d42b7ca2f11ac945dd58827a3181de6e46",
+			"identity": {
+				"canonical": "dslapelis/linuxmeeter",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "GPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/dslapelis/linuxmeeter/tree/3245d2d42b7ca2f11ac945dd58827a3181de6e46",
+				"https://github.com/dslapelis/linuxmeeter/blob/3245d2d42b7ca2f11ac945dd58827a3181de6e46/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/lm-engine/src/links.rs",
+						"sha": "797022c1bc5c9b69ff050f2688d01e68c7e6ea51",
+						"bytes": 10172
+					},
+					{
+						"path": "crates/lm-engine/src/meter.rs",
+						"sha": "dc3356d71884097044cef484a40f65c2c2931f6a",
+						"bytes": 12661
+					}
+				],
+				"source_file_count": 19,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Requires PipeWire 1.0 or later, WirePlumber, LSP LV2 plugins and the GTK/WebKit tray/UI dependencies. Not a Windows driver or a complete Voicemeeter preset/API replacement. Virtual devices disappear when the application exits.",
+			"screenshots": 2
+		},
+		{
+			"issue": 253,
+			"url": "https://github.com/replicraft/remade/issues/253",
+			"title": "[Catalog Suggestion] - BananaV (Vegas)",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/acasoq-web/bananav.yaml"
+			],
+			"originals": ["vegas-pro"],
+			"repository": "https://github.com/acasoq-web/BananaV",
+			"source_revision": "802be39da1b0443a208a6fdac4c72dd00fb35538",
+			"identity": {
+				"canonical": "acasoq-web/BananaV",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "GPL-3.0-or-later",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/acasoq-web/BananaV/tree/802be39da1b0443a208a6fdac4c72dd00fb35538",
+				"https://github.com/acasoq-web/BananaV/blob/802be39da1b0443a208a6fdac4c72dd00fb35538/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/engine/src/lib.rs",
+						"sha": "f5f1c96ac41d9c10f69eac5f9e1aa090bf009915",
+						"bytes": 50176
+					},
+					{
+						"path": "crates/engine/src/live.rs",
+						"sha": "c5d203e2a7e29ec07a918cf09050a70bd6b8ebd1",
+						"bytes": 15407
+					}
+				],
+				"source_file_count": 502,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Pre-1.0 software; full Vegas project, plug-in and render-template compatibility is not established. Packages are unsigned. Media formats and acceleration depend on available platform codecs, FFmpeg and hardware. Features described in current source may exceed a published release.",
+			"screenshots": 1
+		},
+		{
+			"issue": 259,
+			"url": "https://github.com/replicraft/remade/issues/259",
+			"title": "je voudrais des logiciel de deverouillage de android et iphone",
+			"disposition": "insufficient-target",
+			"note": "Generic phone unlocking request does not identify a concrete software product, device or independently authored compatibility workflow."
+		},
+		{
+			"issue": 261,
+			"url": "https://github.com/replicraft/remade/issues/261",
+			"title": "[Project Request]",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/hueforge/hueforge.yaml"
+			],
+			"original": "hueforge",
+			"sources": ["https://shop.thehueforge.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 262,
+			"url": "https://github.com/replicraft/remade/issues/262",
+			"title": "[Project Request] StreamFab",
+			"disposition": "request-added",
+			"note": "Maintainer approved the StreamFab request with protected-stream/DRM compatibility and changing services identified as the central implementation challenge.",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/streamfab/streamfab.yaml"
+			]
+		},
+		{
+			"issue": 263,
+			"url": "https://github.com/replicraft/remade/issues/263",
+			"title": "[Catalog Suggestion] Weir",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/mourty/weir.yaml"
+			],
+			"originals": ["voicemeeter"],
+			"repository": "https://github.com/Mourty/Weir",
+			"source_revision": "d7f4a96b38a2cebe75275b47f107d85c1d014d52",
+			"identity": {
+				"canonical": "Mourty/Weir",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "MIT",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/Mourty/Weir/tree/d7f4a96b38a2cebe75275b47f107d85c1d014d52",
+				"https://github.com/Mourty/Weir/blob/d7f4a96b38a2cebe75275b47f107d85c1d014d52/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/engine/src/lib.rs",
+						"sha": "154c382d3ada9b5647ec4218621b332a2fe41ceb",
+						"bytes": 2574
+					},
+					{
+						"path": "crates/cli/src/commands.rs",
+						"sha": "552f22d4130828f5c66cdfeb4eaca820eeec99d8",
+						"bytes": 44228
+					}
+				],
+				"source_file_count": 148,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "experimental",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Linux/PipeWire application, not a Windows driver or full Voicemeeter settings/API replacement. Device and global-hotkey behavior depends on the desktop and audio setup. Noise suppression and MP3 recording retain separate BSD/LGPL component terms.",
+			"screenshots": 2
+		},
+		{
+			"issue": 264,
+			"url": "https://github.com/replicraft/remade/issues/264",
+			"title": "[Catalog Suggestion] StatCraft",
+			"disposition": "already-in-held-pr",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/kobaltgit/statcraft.yaml"
+			],
+			"note": "Included in the preceding approved additions on this same draft PR; no duplicate record created."
+		},
+		{
+			"issue": 265,
+			"url": "https://github.com/replicraft/remade/issues/265",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "No identifiable software target or actionable workflow."
+		},
+		{
+			"issue": 267,
+			"url": "https://github.com/replicraft/remade/issues/267",
+			"title": "Independent Reimplementation of CyberArk PAM (Privileged Access Manager)",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/cyberark/cyberark-pam.yaml"
+			],
+			"original": "cyberark-pam",
+			"sources": [
+				"https://www.paloaltonetworks.com/idira/human/privileged-access-management"
+			],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 268,
+			"url": "https://github.com/replicraft/remade/issues/268",
+			"title": "[Project Request] particle effect maker",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/boris-fx/particle-illusion.yaml"
+			],
+			"original": "particle-illusion",
+			"sources": ["https://borisfx.com/products/particle-illusion/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 269,
+			"url": "https://github.com/replicraft/remade/issues/269",
+			"title": "[Project Request] HP printer original ink detection removal",
+			"disposition": "outside-current-scope",
+			"note": "HP ink detection/firmware patch request has no specified printer or independent replacement implementation and currently describes modifying the original rather than reimplementing a defined target."
+		},
+		{
+			"issue": 271,
+			"url": "https://github.com/replicraft/remade/issues/271",
+			"title": "[Project Request]  World Creator 4 – A real-time procedural terrain and world generation tool for creating stunning 3D",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/bite-the-bytes/world-creator.yaml"
+			],
+			"original": "world-creator",
+			"sources": ["https://www.bitethebytes.com/products/world-creator"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 272,
+			"url": "https://github.com/replicraft/remade/issues/272",
+			"title": "[Project Request] VFXTOOLs",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/foundry/nuke-studio.yaml"
+			],
+			"original": "nuke-studio",
+			"sources": ["https://www.foundry.com/products/nuke-studio"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 273,
+			"url": "https://github.com/replicraft/remade/issues/273",
+			"title": "[Project Request] TIMELAPSE",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/gunther-wegner/lrtimelapse.yaml"
+			],
+			"original": "lrtimelapse",
+			"sources": ["https://lrtimelapse.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 274,
+			"url": "https://github.com/replicraft/remade/issues/274",
+			"title": "[Project Request] PHOTOGRAMETRIE",
+			"disposition": "outside-current-scope",
+			"note": "Meshroom is already open source. A Rust/macOS rewrite needs an explicit maintainer scope exception, which has not been given."
+		},
+		{
+			"issue": 275,
+			"url": "https://github.com/replicraft/remade/issues/275",
+			"title": "AlbumCraft",
+			"disposition": "already-in-held-pr",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/kbarni/albumcraft.yaml"
+			],
+			"note": "Included in the preceding approved additions on this same draft PR; no duplicate record created."
+		},
+		{
+			"issue": 277,
+			"url": "https://github.com/replicraft/remade/issues/277",
+			"title": "[Catalog Suggestion] Desigma",
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/deepfounder-ai/desigma.yaml"
+			],
+			"originals": ["figma"],
+			"repository": "https://github.com/deepfounder-ai/desigma",
+			"source_revision": "e0d5c3a598047eddf68b80aa3253457e61db5651",
+			"identity": {
+				"canonical": "deepfounder-ai/desigma",
+				"archived": false,
+				"empty": false,
+				"fork": false,
+				"parent": null
+			},
+			"license": {
+				"catalog": "MIT OR Apache-2.0",
+				"authority": "Applicable repository license files; not API detection alone. See pinned source tree."
+			},
+			"sources": [
+				"https://github.com/deepfounder-ai/desigma/tree/e0d5c3a598047eddf68b80aa3253457e61db5651",
+				"https://github.com/deepfounder-ai/desigma/blob/e0d5c3a598047eddf68b80aa3253457e61db5651/README.md"
+			],
+			"source_review": {
+				"tree_truncated": false,
+				"representative_files": [
+					{
+						"path": "crates/desigma-mcp/src/engine.rs",
+						"sha": "52d8956f3237a628f48781237123102e1d9ccb05",
+						"bytes": 50181
+					},
+					{
+						"path": "crates/desigma-engine/src/edit.rs",
+						"sha": "7c03c785d57f88e541e353ec1ccf12e8054882d7",
+						"bytes": 6981
+					}
+				],
+				"source_file_count": 332,
+				"runtime_verified": false
+			},
+			"maturity": {
+				"catalog": "alpha",
+				"compatibility": "partial",
+				"basis": "Maintainer documentation and representative implementation source; no runtime compatibility certification."
+			},
+			"limitations": "Early alpha, not yet recommended upstream for professional daily work. FIG/PEN imports are partial and are not written back; save uses .desigma. Collaboration, plugins, PDF export and release signing retain gaps. Proprietary fonts may be substituted, and Figma plugins/services are not compatible.",
+			"screenshots": 2
+		},
+		{
+			"issue": 278,
+			"url": "https://github.com/replicraft/remade/issues/278",
+			"title": "[Project Request] CommanderCraft",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/ghisler/total-commander.yaml"
+			],
+			"original": "total-commander",
+			"sources": ["https://www.ghisler.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 279,
+			"url": "https://github.com/replicraft/remade/issues/279",
+			"title": "[Project Request] CraftCrate",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/buildbox/buildbox.yaml"
+			],
+			"original": "buildbox",
+			"sources": ["https://buildbox.com/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 280,
+			"url": "https://github.com/replicraft/remade/issues/280",
+			"title": "[Catalog Suggestion] Mister Download Manager (MDM)",
+			"disposition": "already-in-held-pr",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/anefzaoui/mister-download-manager.yaml"
+			],
+			"note": "Included in the preceding approved additions on this same draft PR; no duplicate record created."
+		},
+		{
+			"issue": 281,
+			"url": "https://github.com/replicraft/remade/issues/281",
+			"title": "[Project Request]",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/higgsfield/higgsfield.yaml"
+			],
+			"original": "higgsfield",
+			"sources": ["https://higgsfield.ai/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		},
+		{
+			"issue": 284,
+			"url": "https://github.com/replicraft/remade/issues/284",
+			"title": "[Project Request]",
+			"disposition": "insufficient-target",
+			"note": "Placeholder ss/s/s submission without an identifiable software target."
+		},
+		{
+			"issue": 286,
+			"url": "https://github.com/replicraft/remade/issues/286",
+			"title": "[Project Request] Stat-Ease Design-Expert Design-of-Experiments software",
+			"disposition": "request-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/requests/stat-ease/design-expert.yaml"
+			],
+			"original": "design-expert",
+			"sources": ["https://www.statease.com/software/design-expert/"],
+			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
+		}
+	],
+	"followup": "OpenIDEA accepted and added after maintainer review; see the 2026-11-09 PR audit."
+}

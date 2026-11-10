@@ -1,0 +1,19 @@
+# Accepted with maintainer approval as a broader CleanMyMac alternative; CLI only.
+slug: mole
+name: Mole
+authors: [tw93]
+repository: https://github.com/tw93/Mole
+originals: [cleanmymac]
+category: other
+languages: [Shell, Go]
+platforms: [macOS]
+status: stable
+compatibility: partial
+summary: "CleanMyMac-style cleanup, app removal, disk analysis and live system monitoring from a macOS terminal."
+description: "An open-source macOS CLI accepted as a broader CleanMyMac alternative. Combines cache and leftover cleanup, application uninstalling, bounded maintenance, disk-usage exploration and live system monitoring. Provides interactive terminal interfaces, preview options, configurable exclusions and JSON output for selected workflows. This listing covers the repository's CLI, not the separate proprietary Mole for Mac app."
+license: GPL-3.0-only
+docs: https://github.com/tw93/Mole#readme
+limitations: "Requires macOS 12 or later. Does not establish CleanMyMac feature, settings or malware-detection parity. Restricted folders can produce partial disk scans; automation must inspect scan_status. Cleanup can permanently remove data, including emptying the user's Trash by default. Windows/Linux branches are outside this macOS listing."
+screenshots:
+- src: https://raw.githubusercontent.com/tw93/Mole/70e2e3e728808d55c774027a31e3588f5e8ab4d7/docs/img/big-mole.png
+  alt: Mole project graphic combining its mascot with terminal cleanup results.
