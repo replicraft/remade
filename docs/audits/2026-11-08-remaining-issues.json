@@ -11,7 +11,7 @@
 	],
 	"counts": {
 		"awaiting-author-clarification": 3,
-		"project-added": 19,
+		"project-added": 20,
 		"insufficient-target": 21,
 		"duplicate-insufficient-target": 1,
 		"request-added": 28,
@@ -20,7 +20,7 @@
 		"already-covered": 1,
 		"needs-target-clarification": 1,
 		"discovery-resource": 1,
-		"needs-editorial-decision": 2,
+		"needs-editorial-decision": 1,
 		"duplicate-discovery-resource": 1,
 		"needs-scope-clarification": 1,
 		"already-in-held-pr": 3
@@ -1118,8 +1118,11 @@
 			"issue": 239,
 			"url": "https://github.com/replicraft/remade/issues/239",
 			"title": "[Catalog Suggestion] OpenIDEA",
-			"disposition": "needs-editorial-decision",
-			"note": "OpenIDEA includes licensed ports of IntelliJ source/algorithms and icons. An independently implemented proprietary feature target must be distinguished from a rewrite/port of the open-source original before listing. This is an eligibility question, not an allegation of unauthorized copying."
+			"disposition": "project-added",
+			"note": "Maintainer approved OpenIDEA. Added the IntelliJ IDEA listing and removed its fulfilled Ultimate request. The prior licensed-reuse hold is withdrawn.",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/l0ng-ai/openidea.yaml"
+			]
 		},
 		{
 			"issue": 241,
@@ -1623,5 +1626,6 @@
 			"sources": ["https://www.statease.com/software/design-expert/"],
 			"note": "Wanted behavior, not a claim that an implementation exists. Checked current project/request references for duplicates."
 		}
-	]
+	],
+	"followup": "OpenIDEA accepted and added after maintainer review; see the 2026-11-09 PR audit."
 }

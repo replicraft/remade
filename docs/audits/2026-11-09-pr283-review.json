@@ -10,10 +10,10 @@
 		"open_issues_accounted_for": 94,
 		"open_issue_pagination_complete": true,
 		"open_issue_set_unchanged": true,
-		"project_additions_reviewed": 32,
+		"project_additions_reviewed": 33,
 		"tool_additions_reviewed": 1,
 		"request_records_reviewed": 43,
-		"fulfilled_requests_removed": 6,
+		"fulfilled_requests_removed": 7,
 		"source_execution": false,
 		"local_tests_run": false,
 		"issue_comments_posted": 0,
@@ -29,7 +29,8 @@
 		"Expanded Polycam and Mountain Duck requirements; retained the requested Rust/macOS preference for Nuke Studio and LRTimelapse.",
 		"Updated BananaV description with supported VEG interchange and OpenFX/VST3 scope. Removed source-versus-release editorial notes from public limitations while retaining substantive compatibility gaps.",
 		"Added official project website/community links, replaced SculptForge logo imagery with actual application views and corrected Mole image alt text.",
-		"Assigned 21 existing new originals to explicit vendor identities, registered 20 missing vendor brands and corrected Android touch tool languages."
+		"Assigned 21 existing new originals to explicit vendor identities, registered 20 missing vendor brands and corrected Android touch tool languages.",
+		"Added approved OpenIDEA for IntelliJ IDEA Ultimate and removed its fulfilled request. Withdrew the licensed-component reuse hold without adding a provenance qualification to the listing."
 	],
 	"url_evidence": {
 		"previous_ci_run": "https://github.com/replicraft/remade/actions/runs/42573313206",
@@ -72,7 +73,7 @@
 	},
 	"policy_decisions_remaining": {
 		"awaiting_author_or_target_clarification": [120, 131, 135, 215, 288],
-		"case_by_case_editorial_scope": [228, 239, 262],
+		"case_by_case_editorial_scope": [228, 262],
 		"foss_rewrite_without_exception": [172, 173, 274],
 		"unspecified_driver_or_patch_targets": [149, 151, 259, 269]
 	},
@@ -82,7 +83,7 @@
 	},
 	"counts_by_issue_disposition": {
 		"awaiting-author-clarification": 3,
-		"project-added": 22,
+		"project-added": 23,
 		"insufficient-target": 23,
 		"duplicate-insufficient-target": 1,
 		"request-added": 30,
@@ -91,7 +92,7 @@
 		"already-covered": 1,
 		"needs-target-clarification": 1,
 		"discovery-resource": 1,
-		"needs-editorial-decision": 2,
+		"needs-editorial-decision": 1,
 		"duplicate-discovery-resource": 1,
 		"needs-scope-clarification": 1,
 		"already-in-held-pr": 3,
@@ -781,9 +782,11 @@
 			"checked_updated_at": "2026-11-02T16:47:46Z",
 			"body_sha256": "0b57a08da1b8d4abf3784d7265e33007d8423d10c15766e5bb2ce9d282ae24e8",
 			"human_replies_reviewed": 0,
-			"disposition": "needs-editorial-decision",
-			"catalog_paths": [],
-			"finding": "OpenIDEA includes licensed ports of IntelliJ source/algorithms and icons. An independently implemented proprietary feature target must be distinguished from a rewrite/port of the open-source original before listing. This is an eligibility question, not an allegation of unauthorized copying."
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/l0ng-ai/openidea.yaml"
+			],
+			"finding": "Accepted by the maintainer as an IntelliJ IDEA implementation; the earlier hold based on licensed reuse is withdrawn. Database tools and Spring HTTP integration cover the existing Ultimate target."
 		},
 		{
 			"issue": 241,
@@ -4911,6 +4914,42 @@
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
 			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
+		},
+		{
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/l0ng-ai/openidea.yaml",
+			"kind": "project",
+			"current_fields": {
+				"slug": "openidea",
+				"name": "OpenIDEA",
+				"authors": ["l0ng-ai"],
+				"repository": "https://github.com/l0ng-ai/openidea",
+				"originals": ["intellij-idea-ultimate"],
+				"category": "developer-tools",
+				"languages": ["TypeScript", "Rust", "Java"],
+				"platforms": ["macOS", "Windows", "Linux"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "IntelliJ-style coding with familiar keymaps, code insight, debugging, Git, database tools and an HTTP client.",
+				"description": "A native desktop IDE targeting IntelliJ IDEA workflows with a Rust core and TypeScript interface. Provides familiar keymaps, tool windows, search everywhere, code insight, debugging, Git and an integrated terminal. Includes database browsing and SQL consoles, an HTTP client with Spring endpoint discovery, and language tooling across more than 60 languages. Extensible through WebAssembly plugins, themes and language integrations.",
+				"license": "Apache-2.0",
+				"docs": "https://github.com/l0ng-ai/openidea#readme",
+				"discord_server": "https://discord.gg/2Zy4yn7gP",
+				"limitations": "The plugin API is a preview. Oracle database connections require separately installed Oracle Instant Client libraries."
+			},
+			"reviewed_revision": "8971febef73a833605f3378913f246483de24e30",
+			"availability": "Verified public repository; complete recursive tree reviewed.",
+			"sources": [
+				"https://github.com/l0ng-ai/openidea/blob/8971febef73a833605f3378913f246483de24e30/README.md",
+				"https://github.com/l0ng-ai/openidea/blob/8971febef73a833605f3378913f246483de24e30/LICENSE",
+				"https://github.com/l0ng-ai/openidea/blob/8971febef73a833605f3378913f246483de24e30/docs/databases.md",
+				"https://github.com/l0ng-ai/openidea/blob/8971febef73a833605f3378913f246483de24e30/plugins/README.md",
+				"https://github.com/l0ng-ai/openidea/blob/8971febef73a833605f3378913f246483de24e30/src/features/http-client/spring/endpoints.ts"
+			],
+			"features": "Checked editor, database, HTTP/Spring and plugin capabilities against documentation and substantive source.",
+			"maturity": "Experimental; no project-wide Alpha/Beta/Stable declaration. Plugin API is explicitly a preview.",
+			"licensing": "Apache-2.0 from LICENSE. Maintainer approved normal inclusion; no additional provenance qualification.",
+			"platforms": ["macOS", "Windows", "Linux"],
+			"runtime_verified": false
 		}
 	],
 	"requests": [
@@ -5307,6 +5346,7 @@
 		"apps/frontend/remade-wiki/src/content/catalog/requests/boris-fx/vegas-pro.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/google/picasa.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/ibm/ibm-spss-statistics.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/requests/jetbrains/intellij-idea-ultimate.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/objective-development/little-snitch.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/shapr3d/shapr3d.yaml"
 	],
@@ -5331,6 +5371,7 @@
 		"apps/frontend/remade-wiki/src/content/catalog/projects/kbarni/albumcraft.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/kingbenoitbrice-fun/creabim.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/kobaltgit/statcraft.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/projects/l0ng-ai/openidea.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/materializr-cad/materializr.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/mourty/weir.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/musacad/musacad.yaml",
@@ -5372,6 +5413,7 @@
 		"apps/frontend/remade-wiki/src/content/catalog/requests/hypertherm/pronest.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/ibm/ibm-spss-statistics.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/iterate/mountain-duck.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/requests/jetbrains/intellij-idea-ultimate.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/locktime-software/netlimiter.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/logitech/logitech-capture.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/requests/objective-development/little-snitch.yaml",
@@ -5399,5 +5441,10 @@
 		"docs/audits/2026-11-08-issue-deeper-review.json",
 		"docs/audits/2026-11-08-remaining-issues.json"
 	],
-	"validation": "Catalog validation, field lengths/references, git diff --check and commit hooks passed. CI frontend type checks, unit tests, build, catalog validation/tests, Worker validation and preview passed. Actual link artifacts show 175 successful catalog URLs, no errors or timeouts. No local test suite or third-party code executed."
+	"validation": "Catalog validation, field lengths/references, git diff --check and commit hooks passed. CI frontend type checks, unit tests, build, catalog validation/tests, Worker validation and preview passed. Actual link artifacts show 175 successful catalog URLs, no errors or timeouts. No local test suite or third-party code executed.",
+	"openidea_followup": {
+		"issue": 239,
+		"decision": "Accepted by maintainer; hold withdrawn",
+		"issue_comment_or_state_change": false
+	}
 }

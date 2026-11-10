@@ -257,13 +257,14 @@
 		{
 			"number": 239,
 			"title": "OpenIDEA",
-			"recommendation": "Hold for target and ancestry clarification",
-			"findings": "Apache-2.0 LICENSE and substantive independent Rust/TypeScript modules exist, but THIRD_PARTY_LICENSES explicitly declares adapted IntelliJ VCS algorithms and TypeScript ports of IntelliJ diff/merge implementations, plus reused icons. This is not wholly independent implementation of those subsystems. Reuse is disclosed and licensed; it is not evidence of unauthorized copying. Clarify independently implemented proprietary IntelliJ functionality rather than presenting an independently rewritten Community Edition. Current JetBrains unified distribution still distinguishes open-source builds from proprietary functionality.",
+			"recommendation": "Accepted and added to the held PR with maintainer approval",
+			"findings": "OpenIDEA is accepted as an IntelliJ IDEA implementation. Apache-2.0 licensing and substantive Rust/TypeScript implementation are documented. Its database tools and Spring-aware HTTP client address the existing Ultimate target. The previous hold based on licensed component reuse is withdrawn.",
 			"sources": [
 				"https://github.com/l0ng-ai/openidea/blob/main/THIRD_PARTY_LICENSES.md",
 				"https://github.com/l0ng-ai/openidea/blob/main/NOTICE",
 				"https://www.jetbrains.com/help/idea/intellij-idea-single-distribution.html"
-			]
+			],
+			"catalog_path": "apps/frontend/remade-wiki/src/content/catalog/projects/l0ng-ai/openidea.yaml"
 		},
 		{
 			"number": 172,
