@@ -1,0 +1,36 @@
+# Reviewed for submission #291; source revision acb813f6a7a27bee92a0a0dd7166e6b7f0144c3a.
+slug: kizamubeam
+name: KizamuBeam
+authors:
+- negurvulkan
+repository: https://github.com/negurvulkan/kizamubeam
+originals:
+- lightburn
+category: engineering
+languages:
+- TypeScript
+- Rust
+platforms:
+- Windows
+- macOS
+- Linux
+status: stable
+compatibility: partial
+summary: LightBurn-style laser design and control with vector editing, material settings, nesting and 3D assembly
+  previews.
+description: Laser design and machine-control software targeting LightBurn-style engraving and cutting workflows.
+  Combines vector/image editing, material libraries, calibration, job previews and direct control of GRBL, FluidNC,
+  grblHAL, Marlin and Smoothieware devices. Imports supported LBRN2 projects and common artwork formats, with parametric
+  parts, nesting, STL/OBJ construction, 3D assembly previews and MCP automation.
+license: GPL-3.0-or-later
+website: https://negurvulkan.github.io/kizamubeam/en/
+docs: https://github.com/negurvulkan/kizamubeam/blob/main/docs/features.md
+discord_server: https://discord.gg/SSr8VHh7EJ
+limitations: LBRN2 import does not establish complete LightBurn project or feature compatibility. Machine support
+  is limited to implemented controller protocols; arbitrary laser hardware and DSP controllers are not established
+  as compatible. macOS packages may require manual approval at first launch.
+screenshots:
+- src: https://raw.githubusercontent.com/negurvulkan/kizamubeam/acb813f6a7a27bee92a0a0dd7166e6b7f0144c3a/docs/screenshots/design-en.png
+  alt: KizamuBeam vector-design workspace with layers and laser job controls.
+- src: https://raw.githubusercontent.com/negurvulkan/kizamubeam/acb813f6a7a27bee92a0a0dd7166e6b7f0144c3a/docs/screenshots/box-3d-en.png
+  alt: KizamuBeam showing a generated finger-jointed box in its 3D assembly preview.

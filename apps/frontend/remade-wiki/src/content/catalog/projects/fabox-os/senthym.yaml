@@ -1,0 +1,32 @@
+# Reviewed for submission #287; source revision aa294fc5021e7a93c5b2d515219565e8b22e3ef8.
+slug: senthym
+name: Senthym
+authors:
+- fabox-os
+repository: https://github.com/fabox-os/Senthym
+originals:
+- spotify
+category: creative
+languages:
+- Rust
+platforms:
+- Linux
+- Windows
+- macOS
+status: experimental
+compatibility: partial
+summary: Spotify-style desktop listening with playlists, local files, lyrics, crossfade and third-party music sources.
+description: A Rust music client reproducing Spotify-style home, search, library, playlist and now-playing workflows.
+  Plays local files and music from YouTube Music, Deezer and SoundCloud, with synced lyrics, music videos and crossfade.
+  Optional Spotify integration brings in library data rather than replacing Spotify’s hosted service. Player source
+  references behavior also present in the open-source Spotui player.
+license: GPL-3.0-only
+docs: https://github.com/fabox-os/Senthym#readme
+limitations: Online playback depends on third-party services and a downloaded yt-dlp helper; availability and account
+  requirements can change. Optional Spotify library access needs a client ID. Linux receives the most testing; Windows/macOS
+  receive less, and macOS is not notarized. Full Spotify service, subscription and data compatibility is not established.
+screenshots:
+- src: https://raw.githubusercontent.com/fabox-os/Senthym/aa294fc5021e7a93c5b2d515219565e8b22e3ef8/docs/screenshots/home-and-video.webp
+  alt: Senthym home and now-playing view with a music video.
+- src: https://raw.githubusercontent.com/fabox-os/Senthym/aa294fc5021e7a93c5b2d515219565e8b22e3ef8/docs/screenshots/lyrics.webp
+  alt: Senthym showing synchronized song lyrics.

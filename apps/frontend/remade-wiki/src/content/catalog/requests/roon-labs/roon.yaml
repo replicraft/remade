@@ -1,0 +1,7 @@
+# Requested in https://github.com/replicraft/remade/issues/293.
+original: roon
+summary: A self-hosted hi-fi music library and streaming server with controllers and documented device support.
+reason: Reproduce Roon-style music-library management, rich metadata, remote control and synchronized hi-fi playback
+  from a self-hosted server. Prioritize documented interoperability with supported network players and local outputs.
+  Device/protocol support must be qualified individually; universal compatibility and Roon Ready certification are
+  not assumed.
