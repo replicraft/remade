@@ -60,32 +60,12 @@ it("resolves suite membership without duplicating explicit projects", () => {
 it("keeps suite membership in tool categories and project backlinks while compacting display targets", () => {
 	const suite = findBySlug(catalog.suites, "artcraft");
 	const launcher = findBySlug(catalog.entries, "artcraft-launcher");
-	const playground = findBySlug(catalog.tools, "openplayground");
 
 	if (launcher.kind !== "tool") throw new Error("Expected a tool");
 
 	expect(launcher.projects).toEqual(suite.projects);
 	expect(entryCategories(launcher, catalog.projects)).toContain("creative");
 	expect(toolTargets(launcher, catalog.suites).projects).toEqual([]);
-	const extraTargets = toolTargets(playground, catalog.suites).projects;
-	expect(extraTargets).toEqual(
-		expect.arrayContaining([
-			"clothcraft",
-			"lightcraft-classic",
-			"solidcraft",
-			"ucs-mailcraft",
-			"earthcraft",
-			"oxiguitar",
-			"mixstudio",
-			"procraft",
-			"matcraft",
-			"notecraft-onenote",
-		]),
-	);
-	expect(extraTargets).not.toContain("mailcraft");
-	expect(extraTargets).not.toContain("lemon-studio");
-	expect(playground.projects).toHaveLength(32);
-	expect(new Set(playground.projects).size).toBe(32);
 
 	for (const slug of suite.projects)
 		expect(

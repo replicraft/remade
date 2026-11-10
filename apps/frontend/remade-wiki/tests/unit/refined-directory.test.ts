@@ -10,6 +10,7 @@ import {
 	requestHref,
 	searchDirectory,
 } from "../../src/lib/directory";
+import { findBySlug } from "../../src/lib/presentation";
 import {
 	draftLifetime,
 	emptyDraft,
@@ -20,9 +21,11 @@ import {
 	validateDraft,
 } from "../../src/lib/request-draft";
 
+let catalog: Awaited<ReturnType<typeof loadCatalog>>;
 let records: DirectoryRecord[];
 beforeAll(async () => {
-	records = directoryRecords(await loadCatalog(), {});
+	catalog = await loadCatalog();
+	records = directoryRecords(catalog, {});
 });
 it("matches target names and aliases with deterministic project/request classifications", () => {
 	expect(
@@ -38,18 +41,22 @@ it("matches target names and aliases with deterministic project/request classifi
 	expect(normalizeQuery("  Ａ  B  ")).toBe("a b");
 	expect(searchDirectory(records, "  ")).toEqual([]);
 });
-it("includes every suite member in a tool card's complete target list", () => {
-	const tool = records.find((record) => record.id === "openplayground");
-	expect(tool?.targets).toHaveLength(32);
-	expect(tool?.targets).toEqual(
-		expect.arrayContaining([
-			{ name: "ClothCraft", href: "/projects/clothcraft/" },
-			{ name: "PhotoCraft", href: "/projects/photocraft/" },
-			{ name: "EarthCraft", href: "/projects/earthcraft/" },
-			{ name: "MailCraft", href: "/projects/ucs-mailcraft/" },
-		]),
-	);
-	expect(new Set(tool?.targets.map((target) => target.href)).size).toBe(32);
+it("includes each tool's supported projects once in its complete target list", () => {
+	for (const tool of catalog.tools) {
+		const record = records.find(
+			(entry) => entry.kind === "tool" && entry.id === tool.slug,
+		);
+
+		expect(record?.targets).toEqual(
+			tool.projects.map((slug) => ({
+				name: findBySlug(catalog.projects, slug).name,
+				href: `/projects/${slug}/`,
+			})),
+		);
+		expect(new Set(record?.targets.map((target) => target.href)).size).toBe(
+			tool.projects.length,
+		);
+	}
 });
 
 it("preserves reviewed community links and keeps tools distinct", () => {
