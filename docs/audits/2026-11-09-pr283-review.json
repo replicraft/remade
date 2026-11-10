@@ -59,7 +59,16 @@
 				"status": 200
 			}
 		],
-		"note": "Green workflow status is not treated as proof that every URL succeeded. New URL check results are pending the corrective push."
+		"note": "Previous LRTimelapse timeout was transient. Both new CI link artifacts were read: all 175 catalog URLs succeeded across the disjoint general/strict GitHub passes, with no errors or timeouts. Reachability is not runtime compatibility verification.",
+		"followup_ci": {
+			"run": "https://github.com/replicraft/remade/actions/runs/42725472529",
+			"general_successful": 67,
+			"strict_github_successful": 108,
+			"errors": 0,
+			"timeouts": 0,
+			"unique_catalog_urls": 175,
+			"artifacts_reviewed": ["catalog-report.md", "github-report.md"]
+		}
 	},
 	"policy_decisions_remaining": {
 		"awaiting_author_or_target_clarification": [120, 131, 135, 215, 288],
@@ -1363,7 +1372,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -1496,7 +1505,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -1618,7 +1627,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -1727,7 +1736,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -1800,7 +1809,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -1919,7 +1928,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2013,7 +2022,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2137,7 +2146,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2250,7 +2259,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2368,7 +2377,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2501,7 +2510,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2613,7 +2622,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2724,7 +2733,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2864,7 +2873,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -2977,7 +2986,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3077,7 +3086,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3208,7 +3217,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3319,7 +3328,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3442,7 +3451,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3560,7 +3569,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3681,7 +3690,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3784,7 +3793,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -3901,7 +3910,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4022,7 +4031,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4131,7 +4140,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4242,7 +4251,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4358,7 +4367,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4476,7 +4485,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4560,7 +4569,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4650,7 +4659,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4725,7 +4734,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4822,7 +4831,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		},
 		{
@@ -4900,7 +4909,7 @@
 			"features": "Compared README, linked gap/feature documentation and representative source with description and limitations.",
 			"licensing": "Applicable license texts and additional notices reviewed; README/source declarations supplement bare standard license templates.",
 			"platforms": "Documented build/use scope retained, with tested versus less-tested or incomplete platforms qualified.",
-			"website_check": "Official identity checked from repository/primary references; old added URLs have CI report evidence, changed/new URLs await this push CI. Interactive functionality not tested.",
+			"website_check": "Official identity compared with primary references. Full PR URL reports passed after correction (175 unique catalog URLs across general/strict GitHub passes); interactive/runtime behavior not tested.",
 			"screenshots": "Confirmed repository image paths or README-provided official external image; no local images added to the site."
 		}
 	],
@@ -5390,5 +5399,5 @@
 		"docs/audits/2026-11-08-issue-deeper-review.json",
 		"docs/audits/2026-11-08-remaining-issues.json"
 	],
-	"validation": "Catalog validator and git diff --check passed locally; commit hooks and CI results will be recorded in the PR description. No local test suite or third-party code executed."
+	"validation": "Catalog validation, field lengths/references, git diff --check and commit hooks passed. CI frontend type checks, unit tests, build, catalog validation/tests, Worker validation and preview passed. Actual link artifacts show 175 successful catalog URLs, no errors or timeouts. No local test suite or third-party code executed."
 }
