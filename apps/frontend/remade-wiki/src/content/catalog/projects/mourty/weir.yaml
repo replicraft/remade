@@ -11,7 +11,7 @@ languages:
 - Rust
 platforms:
 - Linux
-status: experimental
+status: stable
 compatibility: partial
 summary: Voicemeeter-style Linux mixing with per-output routing, voice processing, virtual devices and recording.
 description: A PipeWire mixer targeting Voicemeeter-style strips, faders, buses and separate monitor/stream mixes on Linux. Adds virtual playback/microphone devices, suppression, gate, compression, EQ, ducking, limiting, delay, surround routing, hotkeys and scenes. External effect applications can be routed in and back; optional recording uses bundled codec components.

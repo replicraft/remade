@@ -21,8 +21,9 @@ license: GPL-3.0-or-later
 website: https://sculptforge.app/
 docs: https://github.com/islandmed/SculptForge#readme
 limitations: Early release; full ZBrush project, brush, material and plug-in compatibility is not established. AI features use optional external services or separately licensed local models. Packages are unsigned, and format/hardware coverage remains limited to documented upstream evidence.
+discord_server: https://discord.gg/gWrYkEmQhH
 screenshots:
-- src: https://raw.githubusercontent.com/islandmed/SculptForge/f374512b7af68920dc5b8e1e96d07c9508351f57/website/img/bust-256.png
-  alt: SculptForge application workspace from the project documentation.
-- src: https://raw.githubusercontent.com/islandmed/SculptForge/f374512b7af68920dc5b8e1e96d07c9508351f57/docs/images/showcase.jpg
-  alt: SculptForge application workspace from the project documentation.
+- src: https://raw.githubusercontent.com/islandmed/SculptForge/3157056006baea1335a27065c25a5c625e402a28/docs/images/screenshot-sculpt.jpg
+  alt: SculptForge sculpting a detailed creature bust with brush, layer and export controls.
+- src: https://raw.githubusercontent.com/islandmed/SculptForge/3157056006baea1335a27065c25a5c625e402a28/docs/images/screenshot-game-ready.jpg
+  alt: SculptForge game asset workflow with level-of-detail generation and export tools.

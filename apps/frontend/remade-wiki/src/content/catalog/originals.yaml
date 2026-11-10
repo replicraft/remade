@@ -2917,17 +2917,20 @@
   category: "engineering"
   aliases: [eDrawings]
 - slug: kickstart
+  vendor: cableguys
   name: Kickstart
   url: https://www.kickstart-plugin.com/
   category: creative
   aliases:
   - Nicky Romero Kickstart
 - slug: voicemeeter
+  vendor: vb-audio
   name: Voicemeeter
   url: https://vb-audio.com/Voicemeeter/
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/152.
 - slug: mountain-duck
+  vendor: iterate
   name: Mountain Duck
   url: https://mountainduck.io/
   category: productivity
@@ -2938,11 +2941,13 @@
   category: games
 # Requested in https://github.com/replicraft/remade/issues/155.
 - slug: polycam
+  vendor: polycam
   name: Polycam
   url: https://poly.cam/
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/157.
 - slug: saby
+  vendor: saby
   name: Saby
   url: https://saby.ru/
   category: productivity
@@ -2953,11 +2958,13 @@
   category: games
 # Requested in https://github.com/replicraft/remade/issues/166.
 - slug: mule
+  vendor: electronic-arts
   name: M.U.L.E.
   url: https://en.wikipedia.org/wiki/M.U.L.E.
   category: games
 # Requested in https://github.com/replicraft/remade/issues/169.
 - slug: apollo
+  vendor: apollo
   name: Apollo
   url: https://www.apollo.io/
   category: productivity
@@ -2993,41 +3000,49 @@
   vendor: logitech
 # Requested in https://github.com/replicraft/remade/issues/209.
 - slug: ai-karaoke-video-creator
+  vendor: powerkaraoke
   name: AI Karaoke Video Creator
   url: https://www.powerkaraoke.com/src/prod-ai-karaoke-video-creator.php
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/220.
 - slug: emagic-sounddiver
+  vendor: emagic
   name: Emagic SoundDiver
   url: https://medias.audiofanzine.com/files/emagic-apple-sounddiver-v3-0-manual-476540.pdf
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/241.
 - slug: designdoll
+  vendor: terawell
   name: DesignDoll
   url: https://terawell.net/en/
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/242.
 - slug: abbyy-finereader
+  vendor: abbyy
   name: ABBYY FineReader
   url: https://pdf.abbyy.com/
   category: productivity
 # Requested in https://github.com/replicraft/remade/issues/245.
 - slug: netlimiter
+  vendor: locktime-software
   name: NetLimiter
   url: https://netlimiter.com/
   category: other
 # Requested in https://github.com/replicraft/remade/issues/247.
 - slug: sheetcam
+  vendor: sheetcam
   name: SheetCAM
   url: https://www.sheetcam.com/
   category: engineering
 # Requested in https://github.com/replicraft/remade/issues/261.
 - slug: hueforge
+  vendor: hueforge
   name: HueForge
   url: https://shop.thehueforge.com/
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/267.
 - slug: cyberark-pam
+  vendor: cyberark
   name: CyberArk PAM
   url: https://www.paloaltonetworks.com/idira/human/privileged-access-management
   category: developer-tools
@@ -3039,6 +3054,7 @@
   vendor: boris-fx
 # Requested in https://github.com/replicraft/remade/issues/271.
 - slug: world-creator
+  vendor: bite-the-bytes
   name: World Creator
   url: https://www.bitethebytes.com/products/world-creator
   category: creative
@@ -3050,26 +3066,52 @@
   vendor: foundry
 # Requested in https://github.com/replicraft/remade/issues/273.
 - slug: lrtimelapse
+  vendor: gunther-wegner
   name: LRTimelapse
   url: https://lrtimelapse.com/
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/278.
 - slug: total-commander
+  vendor: ghisler
   name: Total Commander
   url: https://www.ghisler.com/
   category: productivity
 # Requested in https://github.com/replicraft/remade/issues/279.
 - slug: buildbox
+  vendor: buildbox
   name: Buildbox
   url: https://buildbox.com/
   category: developer-tools
 # Requested in https://github.com/replicraft/remade/issues/281.
 - slug: higgsfield
+  vendor: higgsfield
   name: Higgsfield
   url: https://higgsfield.ai/
   category: creative
 # Requested in https://github.com/replicraft/remade/issues/286.
 - slug: design-expert
+  vendor: stat-ease
   name: Stat-Ease Design-Expert
   url: https://www.statease.com/software/design-expert/
   category: engineering
+- slug: spotify
+  name: Spotify
+  url: https://www.spotify.com/
+  category: creative
+  vendor: spotify
+- slug: heyclicky
+  name: HeyClicky
+  url: https://www.heyclicky.com/
+  category: productivity
+  vendor: heyclicky
+- slug: roon
+  name: Roon
+  url: https://roon.app/
+  category: creative
+  vendor: roon-labs
+# Additional target from https://github.com/replicraft/remade/issues/195.
+- slug: google-drive
+  vendor: google
+  name: Google Drive
+  url: https://workspace.google.com/products/drive/
+  category: productivity

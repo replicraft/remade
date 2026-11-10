@@ -14,7 +14,9 @@ description: "A Rust/egui desktop application targeting Maya 2020's layout and w
 license: MIT
 website: https://incacad.com/
 docs: https://github.com/RX-7-GTC/inca#readme
-limitations: "Maya ASCII support covers selected node types; Maya Binary (.mb) is unsupported. Full MEL, Python API and Maya plug-in compatibility are not established. Some menus and animation features remain placeholders. The website's older .ma limitation differs from current source. MIT is declared in README/Cargo metadata, but no standalone license text is included."
+limitations: Maya ASCII covers selected node types; Maya Binary (.mb), FBX blend shapes and constraints are unsupported.
+  Full MEL, Python API and Maya plug-in compatibility are not established. Some menus and animation features remain
+  placeholders. MIT is declared in README/Cargo metadata, but no standalone license text is included.
 screenshots:
   - src: https://raw.githubusercontent.com/RX-7-GTC/inca/dda105fee46bd9d6c403a6150cc37481a077061a/inca.png
     alt: "Inca's Maya-style desktop workspace with modeling viewports, shelves and a timeline."

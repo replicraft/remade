@@ -15,5 +15,5 @@ license: GPL-3.0-only
 docs: https://github.com/tw93/Mole#readme
 limitations: "Requires macOS 12 or later. Does not establish CleanMyMac feature, settings or malware-detection parity. Restricted folders can produce partial disk scans; automation must inspect scan_status. Cleanup can permanently remove data, including emptying the user's Trash by default. Windows/Linux branches are outside this macOS listing."
 screenshots:
-  - src: https://raw.githubusercontent.com/tw93/Mole/70e2e3e728808d55c774027a31e3588f5e8ab4d7/docs/img/big-mole.png
-    alt: "Mole's terminal interface showing macOS cleanup results."
+- src: https://raw.githubusercontent.com/tw93/Mole/70e2e3e728808d55c774027a31e3588f5e8ab4d7/docs/img/big-mole.png
+  alt: Mole project graphic combining its mascot with terminal cleanup results.

@@ -24,6 +24,7 @@ license: AGPL-3.0-only
 website: https://www.onlyoffice.com/desktop
 docs: https://github.com/ONLYOFFICE/DesktopEditors#readme
 limitations: Office format support does not establish full layout, macro, add-in or Microsoft service compatibility. Online collaboration requires a separately configured service. The AGPLv3 license includes additional notice/attribution terms; designated non-code content is CC BY-SA 4.0. Trademark rights are separate.
+discord_server: https://discord.gg/Hcgtf5n4uF
 screenshots:
 - src: https://raw.githubusercontent.com/ONLYOFFICE/DesktopEditors/daf8c6948148827201b2907ac1134d222fbfa7b4/screenshots/ONLYOFFICE%20Desktop%20Editors.png
   alt: ONLYOFFICE Desktop Editors document, spreadsheet and presentation workspaces.

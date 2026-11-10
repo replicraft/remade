@@ -14,6 +14,7 @@ description: "A Rust download manager targeting Internet Download Manager's inte
 license: GPL-3.0-or-later
 docs: https://github.com/anefzaoui/misterdownloadmanager#readme
 limitations: "Early software; macOS builds are experimental and have not been tried on Mac hardware by the maintainer. Linux screen readers and Flatpak browsers are unsupported. Packages are unsigned. Browser capture requires its own integration; video and archive helpers depend on external programs. IDM settings and download-state interchange are not established."
+website: https://misterdownloadmanager.com/
 screenshots:
   - src: https://raw.githubusercontent.com/anefzaoui/misterdownloadmanager/135f4f2281ce61d9bda9930ee5f3567cfa226c34/docs/images/main-light.webp
     alt: "Mister Download Manager showing download categories, toolbar and transfer list."

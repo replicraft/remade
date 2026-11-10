@@ -14,7 +14,7 @@ platforms:
 - Linux
 - macOS
 - Web
-status: alpha
+status: experimental
 compatibility: partial
 summary: AutoCAD-style DWG/DXF drafting, drawing sheets and solid modeling on desktop and web.
 description: A Rust CAD application targeting familiar AutoCAD drafting and drawing workflows. Provides command input, object snaps, layers, blocks, references, dimensions, model/paper space and plot styles. Reads and writes DWG/DXF, adds solid-modeling operations, and offers desktop printing, plugins, scripts and headless automation alongside a browser build.

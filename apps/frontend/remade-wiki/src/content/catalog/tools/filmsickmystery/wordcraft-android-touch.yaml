@@ -3,7 +3,7 @@ name: WordCraft for Android (touch fork)
 authors: [filmsickmystery]
 repository: https://github.com/FilmsickMystery/wordcraft-android-touch
 url: https://github.com/FilmsickMystery/wordcraft-android-touch/releases
-languages: [Rust, Kotlin]
+languages: [Shell, Java, Python, Rust]
 projects: [wordcraft]
 platforms: [Android]
 status: experimental

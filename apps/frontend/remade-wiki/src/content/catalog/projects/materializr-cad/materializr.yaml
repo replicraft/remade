@@ -15,6 +15,7 @@ license: GPL-3.0-only
 website: https://materializr.com/
 docs: https://github.com/materializr-cad/materializr#readme
 limitations: "Young software with rough edges; no native Shapr3D project or full feature compatibility is established. macOS packages require Apple Silicon and are not notarized. iOS availability is documented for iPad. GPLv3 includes additional app-store/SDK permissions in LICENSE-EXCEPTIONS.md; versions through 0.9.7.1 also retain their original MIT terms."
+discord_server: https://discord.gg/BRjzbMGZvE
 screenshots:
   - src: https://raw.githubusercontent.com/materializr-cad/materializr/d23741ecb7f3e985bd1f0c881d73c05e57ded7d7/docs/hero-mug.png
     alt: "Materializr modeling a mug with filleted edges, a handle and an embossed logo."
