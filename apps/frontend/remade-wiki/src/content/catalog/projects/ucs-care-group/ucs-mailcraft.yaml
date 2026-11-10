@@ -17,6 +17,7 @@ summary: "Outlook-style mail, calendars, contacts and tasks for Microsoft 365, O
 description: Native Rust implementation of classic Outlook mail, calendars, contacts and tasks, with ribbon, folder and reading panes. Supports Microsoft OAuth/Graph, shared mailboxes, IMAP/SMTP, desktop Google OAuth and preview EWS. Includes rich-text compose windows, automatic replies for Microsoft accounts, Work Offline, high contrast, rules and recurring meetings. Exchanges EML/MBOX/ICS/VCF; previews PST mail/contact import. Renders HTML without a web engine; CLI/MCP access and read-only browser JMAP.
 license: MIT OR Apache-2.0
 docs: https://github.com/UCS-Care-Group/mailcraft#readme
+website: https://mailcraft.work/
 limitations: 'Microsoft beta; other providers experimental. Google OAuth: Windows checks with a dev registration; public approval pending. EWS: Grommunio and Exchange 2019 reads; other Exchange/SmarterMail/NTLM untested. PST imports mail/contacts only; no OST/MSG/OLM, printing or S/MIME/OpenPGP. Unsigned builds; slow large/shared-mailbox sync and IMAP gaps. Browser JMAP is read-only; CORS required.'
 
 screenshots:
