@@ -1,0 +1,21 @@
+slug: materialcraft-artcraft
+name: MaterialCraft
+authors: [storytold]
+repository: https://github.com/storytold/materialcraft
+originals: [adobe-substance-3d-designer]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS, Linux, FreeBSD, Web]
+status: experimental
+compatibility: partial
+summary: Build procedural PBR materials with node graphs, primitive editing, SBS projects and live 2D/3D previews.
+description: A Rust node-based material editor offering Substance Designer-style workflows. Provides primitive and function graphs, procedural noises and patterns, live 2D/3D previews and texture-map export. Saves native SBS projects with adjacent resources or self-contained .mcraft packages. Includes CLI rendering, automation and material export for TextureCraft.
+license: MIT OR Apache-2.0
+docs: https://github.com/storytold/materialcraft#readme
+website: https://getartcraft.com/apps/materialcraft
+browser_url: https://playground.daijro.dev/head/materialcraft/
+discord_server: https://discord.gg/artcraft
+limitations: Under active development, currently focused on primitive editing and native SBS save/load. Reference-app rendering parity and full SBS library loading remain pending. The previous Rust procedural library was removed.
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/materialcraft/main/docs/images/materialcraft-workspace.png
+    alt: MaterialCraft showing a procedural node graph with 2D and 3D material previews.

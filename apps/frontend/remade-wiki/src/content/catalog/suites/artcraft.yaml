@@ -1,4 +1,4 @@
 slug: artcraft
 name: ArtCraft Suite
-description: A suite of independently developed creative and productivity apps by ArtCraft, covering image editing, vector illustration, video, photography, documents, motion graphics, design, office workflows, CAD, audio and interface prototyping.
-projects: [photocraft, vectorcraft, filmcraft, lightcraft, pdfcraft, effectcraft, designcraft, wordcraft, deckcraft, gridcraft, cadcraft, soundcraft, figcraft]
+description: A suite of independently developed creative and productivity apps by ArtCraft, covering image editing, vector illustration, video, photography, documents, motion graphics, design, office workflows, CAD, audio, interface prototyping, animation and procedural materials.
+projects: [photocraft, vectorcraft, filmcraft, lightcraft, pdfcraft, effectcraft, designcraft, wordcraft, deckcraft, gridcraft, cadcraft, soundcraft, figcraft, anicraft-artcraft, texturecraft, materialcraft-artcraft]

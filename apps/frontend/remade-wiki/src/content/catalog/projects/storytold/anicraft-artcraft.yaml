@@ -1,0 +1,19 @@
+slug: anicraft-artcraft
+name: AniCraft
+authors: [storytold]
+repository: https://github.com/storytold/anicraft
+originals: [adobe-animate]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS, Linux, FreeBSD, Web]
+status: alpha
+compatibility: partial
+summary: Animate-style vector animation with drawing tools, symbols, timelines, classic and shape tweens, and XFL/FLA import.
+description: An Adobe Animate-style 2D animation editor built in Rust with egui and a CPU vector renderer. Provides vector drawing, symbols, layers, timelines, onion skinning, classic and shape tweens, and XFL/FLA and SVG import. Exports PNG sequences, GIF, SVG, sprite sheets and Lottie, with WebM/MP4 through external ffmpeg. Includes CLI and MCP automation.
+license: MIT OR Apache-2.0
+docs: https://github.com/storytold/anicraft#readme
+discord_server: https://discord.gg/artcraft
+limitations: Early alpha, not yet intended for production animation. Audio layers, ActionScript execution, imported XFL motion tweens and a GPU renderer are missing. Frame scripts are counted on import but not retained. Upstream verification is currently on Windows; other platforms remain less verified.
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/anicraft/main/docs/images/shot-1-stage.png
+    alt: AniCraft showing a vector animation stage, layers and timeline.

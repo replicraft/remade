@@ -1,0 +1,21 @@
+slug: texturecraft
+name: TextureCraft
+authors: [storytold]
+repository: https://github.com/storytold/texturecraft
+originals: [adobe-substance-3d-painter]
+category: creative
+languages: [Rust]
+platforms: [Windows, macOS, Linux, FreeBSD, Web]
+status: experimental
+compatibility: partial
+summary: Paint layered PBR materials onto 3D models, bake mesh maps and export textures for game engines.
+description: A Rust 3D texture painting application offering Substance Painter-style workflows. Supports mesh import, texture sets and UDIM tiles, layered painting with masks, effects and smart materials, GPU mesh-map baking, a PBR viewport and path-traced rendering. Exports texture maps through presets and channel-packing templates, with CLI and MCP automation.
+license: MIT OR Apache-2.0
+docs: https://github.com/storytold/texturecraft#readme
+website: https://getartcraft.com/apps/texturecraft
+browser_url: https://playground.daijro.dev/head/texturecraft/
+discord_server: https://discord.gg/artcraft
+limitations: Under active development. Hardware ray tracing, pen tilt and pen pressure on Linux, macOS and desktop browsers remain missing. Alembic HDF5 containers and animated Alembic playback are unsupported. Translations await native-speaker review; signed releases remain pending.
+screenshots:
+  - src: https://raw.githubusercontent.com/storytold/texturecraft/main/docs/images/texturecraft-bake.png
+    alt: TextureCraft mesh-map baking controls beside a textured model.
