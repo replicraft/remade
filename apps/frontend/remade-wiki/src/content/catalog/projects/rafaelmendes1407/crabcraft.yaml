@@ -1,0 +1,33 @@
+slug: crabcraft
+name: CrabCraft
+authors:
+- rafaelmendes1407
+repository: https://github.com/RafaelMendes1407/CrabCraft
+originals:
+- rustrover
+category: developer-tools
+languages:
+- Rust
+platforms:
+- Linux
+- Windows
+status: experimental
+compatibility: partial
+summary: A native Rust IDE with code insight, refactoring, Cargo tools, debugging, Git and an integrated terminal.
+description: A Rust and egui desktop IDE offering RustRover-like workflows, built on the independently licensed
+  DotCraft codebase. Uses rust-analyzer for completion, navigation, refactoring and diagnostics, with Cargo
+  build/test tools, GDB and LLDB debugging, Git and a native terminal. Includes SSH remote development,
+  SFTP/FTPS deployment, HTTP requests, SQLite/PostgreSQL tools and optional local AI integrations.
+license: Apache-2.0 OR MIT
+docs: https://github.com/RafaelMendes1407/CrabCraft/blob/main/docs/README.md
+limitations: Early preview without claimed RustRover parity. Interactive verification is primarily on Linux;
+  Windows desktop and WSL workflows still need validation. Rust toolchain, rust-analyzer, Git and debugger
+  tools require separate installation. Docker, Dev Containers, Ferrocene and elevated execution/debugging
+  remain partial. Code insight requires explicitly trusting the project.
+screenshots:
+- src: https://raw.githubusercontent.com/RafaelMendes1407/CrabCraft/main/docs/screenshots/overview.png
+  alt: CrabCraft showing a Rust project in its native desktop editor.
+- src: https://raw.githubusercontent.com/RafaelMendes1407/CrabCraft/main/docs/screenshots/completion.png
+  alt: Rust code completion showing fields and methods in CrabCraft.
+- src: https://raw.githubusercontent.com/RafaelMendes1407/CrabCraft/main/docs/screenshots/debug.png
+  alt: CrabCraft stopped at a breakpoint with variables and inline values.

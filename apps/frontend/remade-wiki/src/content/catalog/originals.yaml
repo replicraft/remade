@@ -3133,3 +3133,8 @@
   name: Bitwig Studio
   url: https://www.bitwig.com/
   category: creative
+- slug: rustrover
+  vendor: jetbrains
+  name: RustRover
+  url: https://www.jetbrains.com/rust/
+  category: developer-tools
