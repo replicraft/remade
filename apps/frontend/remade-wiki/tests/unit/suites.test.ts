@@ -80,12 +80,12 @@ it("keeps suite membership in tool categories and project backlinks while compac
 			"procraft",
 			"matcraft",
 			"notecraft-onenote",
-			"lemon-studio",
 		]),
 	);
 	expect(extraTargets).not.toContain("mailcraft");
-	expect(playground.projects).toHaveLength(33);
-	expect(new Set(playground.projects).size).toBe(33);
+	expect(extraTargets).not.toContain("lemon-studio");
+	expect(playground.projects).toHaveLength(32);
+	expect(new Set(playground.projects).size).toBe(32);
 
 	for (const slug of suite.projects)
 		expect(

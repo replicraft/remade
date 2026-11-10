@@ -3,7 +3,6 @@ slug: lemon-studio
 name: Lemon Studio
 authors: [itsalphaneon]
 repository: https://github.com/ItsAlphaNeon/Lemon-Studio
-browser_url: https://playground.daijro.dev/lemon-studio/
 originals: [fl-studio]
 category: creative
 languages: [Rust]
@@ -13,14 +12,16 @@ compatibility: partial
 summary: "FL Studio-style music production with patterns, a piano roll, mixer routing, plugins and FLP files."
 description: A Rust implementation of FL Studio-style pattern sequencing, piano-roll editing, playlist arrangement and mixer routing. Hosts CLAP and VST3 plugins and reads and writes FLP projects while preserving unrecognized file data.
 license: GPL-3.0-or-later
-website: https://playground.daijro.dev/lemon-studio/
-docs: https://github.com/ItsAlphaNeon/Lemon-Studio#readme
+website: https://getlemonstudio.app/
+docs: https://getlemonstudio.app/wiki/
 discord_server: https://discord.gg/R9JQ9zdeH
 limitations: Pre-alpha and not yet a usable replacement DAW. FLP support is limited to newer FL Studio projects and remains unstable. Audio recording, MIDI file interchange, plugin delay compensation and many controls are missing. No macOS build or prebuilt binaries.
 screenshots:
-  - src: https://raw.githubusercontent.com/ItsAlphaNeon/Lemon-Studio/main/docs/assets/screenshot.webp
-    alt: "Lemon Studio: music arrangement and instrument panels."
-  - src: https://raw.githubusercontent.com/ItsAlphaNeon/Lemon-Studio/main/docs/assets/screenshot-piano-roll.webp
-    alt: "Lemon Studio: piano roll with melody and chord notes."
-  - src: https://raw.githubusercontent.com/ItsAlphaNeon/Lemon-Studio/277e16c55b337eadd487435b85beadfb03518c13/docs/assets/screenshot-playlist.webp
-    alt: "The playlist with a 64-bar song arranged from pattern, audio and automation clips under section markers"
+  - src: ./screenshots/lemon-studio/hero.webp
+    alt: "Lemon Studio's arranger with a piano roll window and a step-sequencer instrument rack open over a song built from pattern, audio and automation clips."
+  - src: ./screenshots/lemon-studio/arranger.webp
+    alt: "The arranger showing a 64-bar demo song of pattern, audio and automation clips under Intro, Verse, Build, Drop, Break and Outro markers."
+  - src: ./screenshots/lemon-studio/piano-roll.webp
+    alt: "The piano roll editing a piano part, with a velocity lane beneath the notes."
+  - src: ./screenshots/lemon-studio/mixer.webp
+    alt: "The mixer showing a master channel and 16 tracks, beside the selected Chords track's ten effect slots and equalizer."
