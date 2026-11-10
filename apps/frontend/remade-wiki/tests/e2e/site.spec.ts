@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import type { catalogExport } from "../../src/lib/catalog-export";
 
 for (const [previous, current, heading] of [
 	["/projects/pounce/", "/projects/filecraft/", "FileCraft"],
@@ -754,7 +755,15 @@ test("exact vendor searches offer a shortcut from home and both directories", as
 
 test("tool target hover lists include every project and dismiss with Escape", async ({
 	page,
+	request,
 }) => {
+	const response = await request.get("/data/catalog.json");
+	expect(response.ok()).toBe(true);
+	const catalog: ReturnType<typeof catalogExport> = await response.json();
+	const tool = catalog.tools.find((entry) => entry.slug === "openplayground");
+	const projectSlugs = tool?.projects ?? [];
+	expect(projectSlugs.length).toBeGreaterThan(0);
+
 	await page.goto("/explore/?q=OpenPlayground");
 	const card = page.getByRole("article").filter({
 		has: page.getByRole("heading", { name: "OpenPlayground", exact: true }),
@@ -764,13 +773,16 @@ test("tool target hover lists include every project and dismiss with Escape", as
 	await expect(list).not.toHaveAttribute("open", "");
 	await trigger.hover();
 	await expect(list).toHaveAttribute("open", "");
-	await expect(list.getByRole("link")).toHaveCount(32);
-	await expect(
-		list.getByRole("link", { name: "PhotoCraft", exact: true }),
-	).toHaveAttribute("href", "/projects/photocraft/");
-	await expect(
-		list.getByRole("link", { name: "MailCraft", exact: true }),
-	).toHaveAttribute("href", "/projects/ucs-mailcraft/");
+	await expect(list.getByRole("link")).toHaveCount(projectSlugs.length);
+	for (const slug of projectSlugs) {
+		const project = catalog.projects.find((entry) => entry.slug === slug);
+		if (!project) throw new Error(`Unknown tool project: ${slug}`);
+
+		const projectLink = list.locator(`a[href="/projects/${slug}/"]`);
+		await expect(projectLink).toHaveCount(1);
+		await expect(projectLink).toHaveText(project.name);
+	}
+
 	await page.keyboard.press("Escape");
 	await expect(list).not.toHaveAttribute("open", "");
 	await page.mouse.move(0, 0);
@@ -806,8 +818,13 @@ test("tool target lists open by tap on mobile", async ({
 			.locator("[data-tool-targets]");
 		await list.locator("summary").tap();
 		await expect(list.getByRole("link").first()).toBeVisible();
-		await list.getByRole("link", { name: "EarthCraft", exact: true }).click();
-		await expect(page).toHaveURL(/\/projects\/earthcraft\/$/);
+		const projectLink = list.getByRole("link").first();
+		const href = await projectLink.getAttribute("href");
+		expect(href).toMatch(/^\/projects\/[^/]+\/$/);
+		if (!href) throw new Error("Expected a project link");
+
+		await projectLink.click();
+		await expect(page).toHaveURL(new URL(href, page.url()).href);
 	} finally {
 		await context.close();
 	}

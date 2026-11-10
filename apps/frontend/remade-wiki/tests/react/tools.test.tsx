@@ -5,6 +5,7 @@ import RepositoryMirrors from "../../src/components/catalog/RepositoryMirrors";
 import SuitePage from "../../src/components/pages/SuitePage";
 import ToolPage from "../../src/components/pages/ToolPage";
 import { findBySlug } from "../../src/lib/presentation";
+import { toolTargets } from "../../src/lib/suites";
 
 const catalog = inject("catalog");
 const tool = findBySlug(catalog.tools, "lazymaplayers-effectcraft");
@@ -157,6 +158,8 @@ describe("suite browsing", () => {
 
 	it("puts suite support first as its own card before additional projects", async () => {
 		const playground = findBySlug(catalog.tools, "openplayground");
+		const targets = toolTargets(playground, catalog.suites);
+		const artcraft = findBySlug(targets.suites, "artcraft");
 		const screen = await render(
 			<ToolPage catalog={catalog} metadata={{}} tool={playground} />,
 		);
@@ -167,19 +170,29 @@ describe("suite browsing", () => {
 		await expect.element(suite).toHaveAttribute("href", "/suites/artcraft/");
 		await expect
 			.element(
-				screen.getByText("Includes all 13 projects in this suite.", {
-					exact: true,
-				}),
+				screen.getByText(
+					`Includes all ${artcraft.projects.length} projects in this suite.`,
+					{
+						exact: true,
+					},
+				),
 			)
 			.toBeVisible();
 		const card = suite.element().closest("article");
 		expect(card?.parentElement?.firstElementChild).toBe(card);
-		await expect
-			.element(screen.getByRole("link", { name: "EarthCraft", exact: true }))
-			.toBeVisible();
-		await expect
-			.element(screen.getByRole("link", { name: "PhotoCraft", exact: true }))
-			.not.toBeInTheDocument();
+		for (const slug of targets.projects) {
+			const project = findBySlug(catalog.projects, slug);
+			await expect
+				.element(screen.getByRole("link", { name: project.name, exact: true }))
+				.toBeVisible();
+		}
+
+		for (const slug of artcraft.projects) {
+			const project = findBySlug(catalog.projects, slug);
+			await expect
+				.element(screen.getByRole("link", { name: project.name, exact: true }))
+				.not.toBeInTheDocument();
+		}
 	});
 
 	it("shows every suite product as a linked card", async () => {
