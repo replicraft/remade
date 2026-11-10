@@ -213,13 +213,14 @@
 		{
 			"number": 215,
 			"title": "SketchForge PCB",
-			"recommendation": "Clarify target before listing",
-			"findings": "Public TypeScript circuit/board editor, AGPLv3 LICENSE. Implemented placement, routing and KiCad/Gerber export source. Current README limits placement/routing to the top side. No Arduino execution or electrical simulation found in the reviewed editor/interchange modules or README. Tinkercad Circuits is an educational circuit-simulation target, so PCB design alone does not establish a faithful match. Broader acceptance would require a clearly limited scope.",
+			"recommendation": "Accepted by maintainer as a broader Tinkercad Circuits alternative",
+			"findings": "Added SketchForge PCB with top-side routing and lack of Tinkercad-style simulation/Arduino execution stated in the listing.",
 			"sources": [
 				"https://github.com/Formsmith746/SketchForge-PCB#readme",
 				"https://github.com/Formsmith746/SketchForge-PCB/blob/main/src/lib/pcbInterchange.ts",
 				"https://www.tinkercad.com/circuits"
-			]
+			],
+			"catalog_path": "apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge-pcb.yaml"
 		},
 		{
 			"number": 255,
@@ -236,13 +237,15 @@
 		{
 			"number": 228,
 			"title": "ravynOS",
-			"recommendation": "Case-by-case compatibility-project approval",
-			"findings": "Current darwin branch openly identifies Darwin/FreeBSD foundations. Kernel/_PROVENANCE records imported Apple XNU and drivers under component APSL terms. AppKit/NSApplication.m carries separate Christopher Lloyd and Zoe Knox MIT authorship. Do not call the entire OS a clean-room macOS rewrite or treat licensed Darwin reuse as proof of unauthorized copying. A narrowly described macOS API/desktop compatibility listing is defensible subject to maintainer approval and a representative per-component license description. Binary compatibility remains a goal. Full tree was truncated; targeted component reads were used, not an exhaustive license audit.",
+			"recommendation": "Accepted by the maintainer and added to the held PR",
+			"findings": "Published clean-room contribution rules and sampled source origins support inclusion. Added for macOS application interfaces with Darwin/FreeBSD foundations, component-specific licenses and pre-alpha compatibility limits. See the focused provenance review.",
 			"sources": [
 				"https://github.com/ravynsoft/ravynos/blob/darwin/Docs/README.md",
 				"https://github.com/ravynsoft/ravynos/blob/darwin/Kernel/_PROVENANCE",
 				"https://github.com/ravynsoft/ravynos/blob/darwin/Frameworks/AppKit/NSApplication.m"
-			]
+			],
+			"followup_report": "docs/audits/2026-11-09-ravynos-provenance-review.json",
+			"catalog_path": "apps/frontend/remade-wiki/src/content/catalog/projects/ravynsoft/ravynos.yaml"
 		},
 		{
 			"number": 233,

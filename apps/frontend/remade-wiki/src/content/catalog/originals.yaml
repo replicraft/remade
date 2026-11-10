@@ -3115,3 +3115,11 @@
   name: Google Drive
   url: https://workspace.google.com/products/drive/
   category: productivity
+# Broader circuit-design target approved for SketchForge PCB in submission #215.
+- slug: autodesk-tinkercad-circuits
+  vendor: autodesk
+  name: Autodesk Tinkercad Circuits
+  url: https://www.tinkercad.com/circuits
+  category: engineering
+  aliases:
+  - Tinkercad Circuits

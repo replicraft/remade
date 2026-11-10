@@ -1,0 +1,31 @@
+# Accepted by the maintainer following the clean-room/source-origin review for #228.
+# Reviewed source revision 60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7.
+slug: ravynos
+name: ravynOS
+authors:
+- ravynsoft
+repository: https://github.com/ravynsoft/ravynos
+originals:
+- macos
+category: operating-systems
+languages:
+- C
+- C++
+- Objective-C
+- Assembly
+status: experimental
+compatibility: partial
+summary: A Darwin/FreeBSD-based operating system developing macOS-compatible APIs, Cocoa frameworks and a familiar
+  desktop.
+description: An operating system targeting macOS application interfaces and familiar desktop workflows on x86-64
+  hardware. Builds on Darwin, FreeBSD, public Apple source and independent compatibility frameworks, including Cocotron-derived
+  Cocoa implementations. Develops AppKit, graphics, WindowServer and desktop components, aiming for application
+  source compatibility and eventual binary compatibility. Current development focuses on bringing up the Darwin-based
+  system.
+license: MIT, BSD, APSL-2.0, GPL and other component licenses
+website: https://ravynos.com/
+docs: https://ravynos.com/wiki
+discord_server: https://discord.com/invite/8caJbAGNwY
+limitations: Pre-alpha. General macOS application execution is not ready; upstream reports only trivial command-line
+  binaries running. Current Darwin bring-up is incomplete, with missing framework APIs, desktop services and hardware
+  drivers. Targets x86-64; ARM support is a future goal. Components retain their individual licenses.

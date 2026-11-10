@@ -11,16 +11,14 @@
 	],
 	"counts": {
 		"awaiting-author-clarification": 3,
-		"project-added": 20,
+		"project-added": 22,
 		"insufficient-target": 21,
 		"duplicate-insufficient-target": 1,
 		"request-added": 28,
 		"outside-current-scope": 3,
 		"details-consolidated": 1,
 		"already-covered": 1,
-		"needs-target-clarification": 1,
 		"discovery-resource": 1,
-		"needs-editorial-decision": 1,
 		"duplicate-discovery-resource": 1,
 		"needs-scope-clarification": 1,
 		"already-in-held-pr": 3
@@ -551,8 +549,11 @@
 			"issue": 215,
 			"url": "https://github.com/replicraft/remade/issues/215",
 			"title": "[Catalog Suggestion] SketchForge PCB",
-			"disposition": "needs-target-clarification",
-			"note": "SketchForge-PCB contains substantive PCB-editing source and AGPL licensing, but the submitted Tinkercad Circuits target is a circuit simulation workflow. A faithful proprietary PCB target or explicit broader-alternative approval is needed."
+			"disposition": "project-added",
+			"note": "Maintainer approved the broader circuit/PCB-design scope. Added the project with supported formats, browser link, screenshot and functional limitations.",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge-pcb.yaml"
+			]
 		},
 		{
 			"issue": 218,
@@ -849,8 +850,12 @@
 			"issue": 228,
 			"url": "https://github.com/replicraft/remade/issues/228",
 			"title": "[Catalog Suggestion] ravynOS - macOS compatible OS",
-			"disposition": "needs-editorial-decision",
-			"note": "ravynOS combines a Darwin/XNU base with separately authored compatibility/framework work. It requires case-by-case compatibility-layer review and a precisely bounded proprietary target; it must not be presented as an independently reimplemented entire macOS."
+			"disposition": "project-added",
+			"note": "Maintainer approved ravynOS following the focused clean-room/source-origin review. Added for macOS application interfaces, retaining the Darwin/FreeBSD foundations, component-specific terms and pre-alpha application/hardware limitations.",
+			"followup_report": "docs/audits/2026-11-09-ravynos-provenance-review.json",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/ravynsoft/ravynos.yaml"
+			]
 		},
 		{
 			"issue": 229,

@@ -1,0 +1,626 @@
+{
+	"checked_at_utc": "2026-11-10T01:08:59.860162+00:00",
+	"repository": "https://github.com/ravynsoft/ravynos",
+	"branch": "darwin",
+	"revision": "60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7",
+	"scope": "Focused development-process, source-origin and licensing review for submission #228. No software executed or built. The maintainer subsequently approved adding ravynOS; no issue comment/state change.",
+	"conclusion": "Published development policy and sampled implementation sources support an independently authored macOS-compatibility effort using licensed open-source foundations. No evidence of translated proprietary Apple decompiler output was found in the areas reviewed. This is not an exhaustive provenance or legal certification.",
+	"chinese_wall": "The contribution rules prohibit code contributions by anyone who has ever seen Apple proprietary code. The FAQ requires public-documentation-based implementation. No evidence sufficient to independently verify a formal two-team analyst/implementer information barrier was located.",
+	"primary_sources": [
+		"https://ravynos.com/faq",
+		"https://ravynos.com/wiki",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Docs/CONTRIBUTING.md",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Docs/README.md"
+	],
+	"findings": [
+		{
+			"topic": "Contribution policy",
+			"result": "Original work must use public documentation. Contributors who have seen proprietary Apple source are prohibited from contributing code; APSL/public open-source Apple work is explicitly distinguished."
+		},
+		{
+			"topic": "Independent compatibility implementation",
+			"result": "Sampled AppKit NSApplication, Foundation NSObject, CoreGraphics CGContext, Onyx2D O2Context, WindowServer and Dock carry MIT grants to Christopher J. W. Lloyd and/or Zoe Knox. This is consistent with Cocotron-derived and ravynOS-authored compatibility work."
+		},
+		{
+			"topic": "Apple open-source foundations",
+			"result": "CoreFoundation/Security include APSL notices. The crypto adapter explicitly links its copied digest helper to the public XNU source and APPLE_LICENSE, while zeroization references mbedTLS. Apple copyright by itself does not establish leaked or proprietary source."
+		},
+		{
+			"topic": "Decompiler search hits",
+			"result": "Inspected Security requirement headers discuss round-tripping compiled code-signing requirement expressions, not translating macOS application/framework binaries. Other hits concern ncurses terminfo and LLVM development tools. No Ghidra result was returned."
+		},
+		{
+			"topic": "Reverse-engineering search hits",
+			"result": "Hits were in BSD hardware-driver documentation and an APSL Security test helper, rather than evidence of translating proprietary macOS implementations."
+		},
+		{
+			"topic": "Asset inventory",
+			"result": "SystemLibrary font filenames show Inter, URW/Nimbus/C059 and Font Awesome families. Did not find Apple system font names in that inventory; this was not a full binary-asset licensing audit."
+		},
+		{
+			"topic": "Maturity",
+			"result": "Official site labels the project pre-alpha. FAQ says general macOS app execution is not ready and only trivial CLI binaries have run. Clean-room eligibility does not imply usable macOS application compatibility."
+		},
+		{
+			"topic": "Boot documentation",
+			"result": "Wiki documents QEMU Apple-SMC emulation for booting its Darwin-based image. That configuration is not evidence of copying proprietary source; no separate legal or distribution certification was performed."
+		}
+	],
+	"source_examples": [
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/NSApplication.m",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/NSObject/NSObject.m",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreGraphics/CGContext.m",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Onyx2D/O2Context.m",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/CoreServices/WindowServer/WindowServer.m",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/CoreServices/Dock/Dock.m",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreFoundation/APPLE_LICENSE",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Security/OSX/libsecurity_codesigning/lib/reqdumper.h",
+		"https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Kernel/Extensions/corecrypto/algorithms/pdcrypto_digest_init.c"
+	],
+	"subtree_inventory": {
+		".github": {
+			"truncated": false,
+			"files": 1,
+			"docs": [],
+			"binary_paths": []
+		},
+		"CoreServices": {
+			"truncated": false,
+			"files": 1068,
+			"docs": [
+				"WindowServer/README",
+				"WindowServer/libevdev/COPYING",
+				"WindowServer/libevdev/doc/style/LICENSE",
+				"WindowServer/libevdev/doc/style/README.md",
+				"WindowServer/libinput/COPYING",
+				"WindowServer/libinput/README.md",
+				"WindowServer/libinput/doc/api/style/LICENSE",
+				"WindowServer/libinput/doc/user/contributing.rst",
+				"WindowServer/libinput/quirks/README.md",
+				"WindowServer/libxkbcommon/LICENSE",
+				"WindowServer/libxkbcommon/README.md",
+				"WindowServer/mtdev/COPYING",
+				"WindowServer/mtdev/README"
+			],
+			"binary_paths": []
+		},
+		"Docs": {
+			"truncated": false,
+			"files": 18,
+			"docs": [
+				"CONTRIBUTING.md",
+				"README.md",
+				"__OLD__/README.DE.md",
+				"__OLD__/README.FA.md",
+				"__OLD__/README.HU.md",
+				"__OLD__/README.ID.md",
+				"__OLD__/README.IT.md",
+				"__OLD__/README.KR.md",
+				"__OLD__/README.TR.md",
+				"__OLD__/README.pt_BR.md",
+				"__OLD__/README.zh_CN.md",
+				"__OLD__/README.zh_TW.md"
+			],
+			"binary_paths": []
+		},
+		"Frameworks": {
+			"truncated": false,
+			"files": 17041,
+			"docs": [
+				"AppKit/xkeyboard-config/COPYING",
+				"AppKit/xkeyboard-config/README",
+				"AppKit/xkeyboard-config/compat/README",
+				"AppKit/xkeyboard-config/docs/README.config",
+				"AppKit/xkeyboard-config/docs/README.enhancing",
+				"AppKit/xkeyboard-config/docs/README.symbols",
+				"AppKit/xkeyboard-config/geometry/README",
+				"AppKit/xkeyboard-config/keycodes/README",
+				"AppKit/xkeyboard-config/rules/README",
+				"AppKit/xkeyboard-config/types/README",
+				"CFNetwork/APPLE_LICENSE",
+				"CoreFoundation.old/LICENSE.txt",
+				"CoreFoundation/APPLE_LICENSE",
+				"CoreFoundation/README_CFLITE",
+				"CoreServices/LICENSE.txt",
+				"CoreText/fontconfig/COPYING",
+				"CoreText/fontconfig/README",
+				"CoreText/fontconfig/conf.d/README",
+				"CoreText/fontconfig/conf.d/README.in",
+				"CoreText/fontconfig/fc-lang/README",
+				"CoreText/gettext-tiny/LICENSE",
+				"CoreText/gettext-tiny/README.md",
+				"CoreText/gperf/COPYING",
+				"CoreText/gperf/README",
+				"CoreText/gperf/README.vms",
+				"CoreText/gperf/README.windows",
+				"CoreText/libiconv/COPYING",
+				"CoreText/libiconv/COPYING.LIB",
+				"CoreText/libiconv/README",
+				"CoreText/libiconv/libcharset/COPYING.LIB",
+				"CoreText/libiconv/libcharset/README",
+				"CoreText/libiconv/libcharset/tools/README",
+				"CoreText/libxml2/Copyright",
+				"CoreText/libxml2/README.md",
+				"CoreText/libxml2/README.zOS",
+				"CoreText/libxml2/fuzz/README",
+				"CoreText/libxml2/os400/README400",
+				"CoreText/libxml2/os400/iconv/README.iconv",
+				"CoreText/libxml2/python/README",
+				"CoreText/libxml2/vms/readme.vms",
+				"CoreText/libxml2/win32/Readme.txt",
+				"CoreText/xz/COPYING",
+				"CoreText/xz/COPYING.0BSD",
+				"CoreText/xz/COPYING.GPLv2",
+				"CoreText/xz/COPYING.GPLv3",
+				"CoreText/xz/COPYING.LGPLv2.1",
+				"CoreText/xz/README",
+				"CoreText/xz/build-aux/license-check.sh",
+				"CoreText/xz/debug/README",
+				"CoreText/xz/doc/examples/00_README.txt"
+			],
+			"binary_paths": []
+		},
+		"ISO": {
+			"truncated": false,
+			"files": 21,
+			"docs": ["LICENSE"],
+			"binary_paths": []
+		},
+		"Kernel": {
+			"truncated": false,
+			"files": 6395,
+			"docs": [
+				"Extensions/AppleAPIC/APPLE_LICENSE",
+				"Extensions/IOATAFamily/APPLE_LICENSE",
+				"Extensions/IOGraphics/APPLE_LICENSE",
+				"Extensions/IOHIDFamily/tools/hidScript/lua/README",
+				"Extensions/IOHIDFamily/tools/hidScript/lua/doc/readme.html",
+				"Extensions/IOPCIFamily/APPLE_LICENSE",
+				"Extensions/IOStorageFamily/APPLE_LICENSE",
+				"Extensions/corecrypto/algorithms/yarrow/readme-prnguser.txt",
+				"Extensions/hfs/APPLE_LICENSE",
+				"Extensions/hfs/README",
+				"Extensions/msdosfs/APPLE_LICENSE",
+				"Extensions/msdosfs/LiveFilesTester/ReadMe.txt",
+				"Extensions/msdosfs/LiveFilesTester/Resources/DMGs/README.txt",
+				"IOKitUser/APPLE_LICENSE",
+				"_PROVENANCE",
+				"kext_tools/APPLE_LICENSE",
+				"xnu/APPLE_LICENSE",
+				"xnu/EXTERNAL_HEADERS/README",
+				"xnu/README.md",
+				"xnu/bsd/conf/copyright",
+				"xnu/bsd/miscfs/devfs/README",
+				"xnu/config/README.DEBUG-kernel.txt",
+				"xnu/iokit/conf/copyright",
+				"xnu/libkdd/README.md",
+				"xnu/libkern/conf/copyright",
+				"xnu/libkern/kmod/README",
+				"xnu/libkern/kxld/kxld_copyright.c",
+				"xnu/libkern/kxld/tests/kextcopyright.c",
+				"xnu/libkern/zlib/README",
+				"xnu/libsa/conf/copyright",
+				"xnu/osfmk/conf/copyright",
+				"xnu/osfmk/conf/copyright.cmu",
+				"xnu/osfmk/conf/copyright.osf",
+				"xnu/osfmk/tests/README.md",
+				"xnu/pexpert/conf/copyright",
+				"xnu/security/conf/copyright.nai",
+				"xnu/tools/lldbmacros/README.md",
+				"xnu/tools/tests/MPMMTest/README",
+				"xnu/tools/tests/perf_index/README"
+			],
+			"binary_paths": []
+		},
+		"Libraries": {
+			"truncated": false,
+			"files": 6901,
+			"docs": [
+				"ICU/LICENSE",
+				"ICU/license.html",
+				"ICU/packaging/README",
+				"ICU/readme.html",
+				"ICU/source/data/cldr-icu-readme.txt",
+				"ICU/source/data/icu4j-readme.txt",
+				"ICU/source/extra/scrptrun/readme.html",
+				"ICU/source/extra/uconv/README",
+				"ICU/source/samples/coll/readme.txt",
+				"ICU/source/samples/readme.txt",
+				"ICU/source/samples/strsrch/readme.txt",
+				"ICU/source/samples/translit/README.TXT",
+				"ICU/source/samples/ugrep/readme.txt",
+				"ICU/source/test/compat/readme.txt",
+				"ICU/source/test/perf/DateFmtPerf/ReadMe.txt",
+				"ICU/source/test/perf/README",
+				"ICU/source/test/perf/collationperf/readme.html",
+				"ICU/source/test/perf/howExpensiveIs/readme.txt",
+				"ICU/source/test/testdata/break_rules/README.md",
+				"ICU/source/test/testdata/cldr/localeIdentifiers/_readme.txt",
+				"ICU/source/test/testdata/cldr/personNameTest/_readme.txt",
+				"ICU/source/test/testdata/cldr/units/_readme.txt",
+				"ICU/source/test/testdata/readme.txt",
+				"ICU/source/test/testmap/readme.txt",
+				"ICU/source/tools/gencolusb/README.md",
+				"ICU/source/tools/genren/README",
+				"ICU/source/tools/tzcode/readme.txt",
+				"ICU/testdata/message2/README.txt",
+				"Libsystem/APPLE_LICENSE",
+				"Libsystem/CommonCrypto/CCRegression/README",
+				"Libsystem/copyfile/APPLE_LICENSE",
+				"Libsystem/libdispatch/LICENSE",
+				"Libsystem/libresolv/APPLE_LICENSE",
+				"Libsystem/libsystem_c/APPLE_LICENSE",
+				"Libsystem/libsystem_c/regex/FreeBSD/COPYRIGHT",
+				"Libsystem/libsystem_c/tests/regex/README",
+				"Libsystem/libsystem_info/APPLE_LICENSE",
+				"Libsystem/libsystem_info/rpc.subproj/README",
+				"Libsystem/libsystem_notify/APPLE_LICENSE",
+				"Libsystem/libsystem_platform/LICENSE",
+				"Libsystem/removefile/LICENSE",
+				"_PROVENANCE",
+				"dyld/APPLE_LICENSE",
+				"dyld/testing/README.txt",
+				"libSystem/copyfile/APPLE_LICENSE",
+				"objc4/APPLE_LICENSE",
+				"openbsm/LICENSE",
+				"openbsm/README",
+				"zlib/LICENSE",
+				"zlib/README"
+			],
+			"binary_paths": [
+				"ICU/source/test/testdata/TestFont1.otf",
+				"objc4/test/gcfiles/libnogc.dylib",
+				"objc4/test/gcfiles/libnoobjc.dylib",
+				"objc4/test/gcfiles/librequiresgc.dylib",
+				"objc4/test/gcfiles/librequiresgc.fake.dylib",
+				"objc4/test/gcfiles/libsupportsgc.dylib"
+			]
+		},
+		"PrivateFrameworks": {
+			"truncated": false,
+			"files": 9,
+			"docs": [],
+			"binary_paths": []
+		},
+		"SysApps": {
+			"truncated": false,
+			"files": 28,
+			"docs": [],
+			"binary_paths": []
+		},
+		"SystemLibrary": {
+			"truncated": false,
+			"files": 140,
+			"docs": [],
+			"binary_paths": [
+				"Fonts/TTF/C059-BdIta.ttf",
+				"Fonts/TTF/C059-Bold.ttf",
+				"Fonts/TTF/C059-Italic.ttf",
+				"Fonts/TTF/C059-Roman.ttf",
+				"Fonts/TTF/D050000L.ttf",
+				"Fonts/TTF/Font Awesome 6 Brands-Regular-400.otf",
+				"Fonts/TTF/Font Awesome 6 Free-Regular-400.otf",
+				"Fonts/TTF/Font Awesome 6 Free-Solid-900.otf",
+				"Fonts/TTF/Inter-Black.ttf",
+				"Fonts/TTF/Inter-BlackItalic.ttf",
+				"Fonts/TTF/Inter-Bold.ttf",
+				"Fonts/TTF/Inter-BoldItalic.ttf",
+				"Fonts/TTF/Inter-ExtraBold.ttf",
+				"Fonts/TTF/Inter-ExtraBoldItalic.ttf",
+				"Fonts/TTF/Inter-ExtraLight.ttf",
+				"Fonts/TTF/Inter-ExtraLightItalic.ttf",
+				"Fonts/TTF/Inter-Italic.ttf",
+				"Fonts/TTF/Inter-Light.ttf",
+				"Fonts/TTF/Inter-LightItalic.ttf",
+				"Fonts/TTF/Inter-Medium.ttf"
+			]
+		},
+		"installravynos": {
+			"truncated": false,
+			"files": 1,
+			"docs": [],
+			"binary_paths": []
+		},
+		"tools": {
+			"truncated": false,
+			"files": 10,
+			"docs": [],
+			"binary_paths": []
+		}
+	},
+	"search_evidence": {
+		"decompiled": {
+			"total_count": 4,
+			"incomplete": false,
+			"items": [
+				{
+					"path": "BSD/share/termcap/termcap",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/BSD/share/termcap/termcap"
+				},
+				{
+					"path": "Frameworks/Security/header_symlinks/Security/SecRequirement.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Security/header_symlinks/Security/SecRequirement.h"
+				},
+				{
+					"path": "Frameworks/Security/OSX/libsecurity_codesigning/lib/SecRequirement.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Security/OSX/libsecurity_codesigning/lib/SecRequirement.h"
+				},
+				{
+					"path": "Frameworks/Security/OSX/include/security_codesigning/SecRequirement.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Security/OSX/include/security_codesigning/SecRequirement.h"
+				}
+			]
+		},
+		"decompiler": {
+			"total_count": 26,
+			"incomplete": false,
+			"items": [
+				{
+					"path": "BSD/lib/ncurses/README",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/BSD/lib/ncurses/README"
+				},
+				{
+					"path": "BSD/lib/ncurses/ANNOUNCE",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/BSD/lib/ncurses/ANNOUNCE"
+				},
+				{
+					"path": "Frameworks/Security/OSX/libsecurity_codesigning/lib/reqdumper.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Security/OSX/libsecurity_codesigning/lib/reqdumper.h"
+				},
+				{
+					"path": "BSD/lib/ncurses/announce.html.in",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/BSD/lib/ncurses/announce.html.in"
+				},
+				{
+					"path": "Frameworks/Security/OSX/include/security_codesigning/reqdumper.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Security/OSX/include/security_codesigning/reqdumper.h"
+				},
+				{
+					"path": "BSD/lib/ncurses/doc/html/announce.html",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/BSD/lib/ncurses/doc/html/announce.html"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/ELF/LTO.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/ELF/LTO.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/wasm/LTO.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/wasm/LTO.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/COFF/LTO.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/COFF/LTO.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/MachO/LTO.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/MachO/LTO.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/COFF/LTO.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/COFF/LTO.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/wasm/LTO.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/wasm/LTO.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/ELF/LTO.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/ELF/LTO.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/MachO/LTO.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/MachO/LTO.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/COFF/SymbolTable.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/COFF/SymbolTable.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/ELF/Config.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/ELF/Config.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/wasm/SymbolTable.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/wasm/SymbolTable.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/ELF/Driver.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/ELF/Driver.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/MachO/Driver.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/MachO/Driver.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/COFF/SymbolTable.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/COFF/SymbolTable.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/lld/wasm/SymbolTable.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/lld/wasm/SymbolTable.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/clang/tools/scan-build/bin/scan-build",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/clang/tools/scan-build/bin/scan-build"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/llvm-pdbutil.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/llvm-pdbutil.h"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/PrettyVariableDumper.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/PrettyVariableDumper.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/llvm-pdbutil.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/llvm-pdbutil.cpp"
+				},
+				{
+					"path": "Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/PrettyClassLayoutGraphicalDumper.cpp",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Developer/Default.xctoolchain/llvm/llvm/tools/llvm-pdbutil/PrettyClassLayoutGraphicalDumper.cpp"
+				}
+			]
+		},
+		"Ghidra": {
+			"total_count": 0,
+			"incomplete": false,
+			"items": []
+		},
+		"\"clean room\"": {
+			"total_count": 0,
+			"incomplete": false,
+			"items": []
+		},
+		"\"reverse engineered\"": {
+			"total_count": 3,
+			"incomplete": false,
+			"items": [
+				{
+					"path": "BSD/share/man/man4/hifn.4",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/BSD/share/man/man4/hifn.4"
+				},
+				{
+					"path": "BSD/share/man/man4/upgt.4",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/BSD/share/man/man4/upgt.4"
+				},
+				{
+					"path": "Frameworks/Security/keychain/ckks/tests/OctagonAPSReceiverTests.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Security/keychain/ckks/tests/OctagonAPSReceiverTests.m"
+				}
+			]
+		},
+		"\"Cocotron\"": {
+			"total_count": 33,
+			"incomplete": false,
+			"items": [
+				{
+					"path": "Docs/SourceMap.md",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Docs/SourceMap.md"
+				},
+				{
+					"path": "Frameworks/Foundation/NSBlocks.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/NSBlocks.m"
+				},
+				{
+					"path": "Frameworks/Foundation/platform_solaris/libmain.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/platform_solaris/libmain.m"
+				},
+				{
+					"path": "Frameworks/Foundation/Headers/Foundation/NSRaise.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/Headers/Foundation/NSRaise.h"
+				},
+				{
+					"path": "Frameworks/AppKit/NSPasteboard.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/NSPasteboard.h"
+				},
+				{
+					"path": "Frameworks/Foundation/platform_linux/libmain.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/platform_linux/libmain.m"
+				},
+				{
+					"path": "Frameworks/Foundation/platform_bsd/libmain.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/platform_bsd/libmain.m"
+				},
+				{
+					"path": "Frameworks/Foundation/Headers/Foundation/NSRaiseException.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/Headers/Foundation/NSRaiseException.h"
+				},
+				{
+					"path": "Frameworks/Foundation/Headers/Foundation/NSAtomicCompareAndSwap.h",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/Headers/Foundation/NSAtomicCompareAndSwap.h"
+				},
+				{
+					"path": "Frameworks/AppKit/NSCell.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/NSCell.m"
+				},
+				{
+					"path": "Frameworks/AppKit/NSGradient.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/NSGradient.m"
+				},
+				{
+					"path": "Frameworks/AppKit/NSStringDrawer.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/NSStringDrawer.m"
+				},
+				{
+					"path": "Frameworks/Onyx2D/O2PDFContext.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Onyx2D/O2PDFContext.m"
+				},
+				{
+					"path": "Frameworks/CoreFoundation.old/CFBase.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreFoundation.old/CFBase.m"
+				},
+				{
+					"path": "Frameworks/Cocoa/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Cocoa/Info.plist"
+				},
+				{
+					"path": "Frameworks/AppKit/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/Info.plist"
+				},
+				{
+					"path": "Frameworks/OpenGL/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/OpenGL/Info.plist"
+				},
+				{
+					"path": "Frameworks/CoreText/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreText/Info.plist"
+				},
+				{
+					"path": "Frameworks/CoreData/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreData/Info.plist"
+				},
+				{
+					"path": "Frameworks/CoreServices/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreServices/Info.plist"
+				},
+				{
+					"path": "Frameworks/CoreGraphics/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreGraphics/Info.plist"
+				},
+				{
+					"path": "Frameworks/Onyx2D/O2TIFFImageDirectory.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Onyx2D/O2TIFFImageDirectory.m"
+				},
+				{
+					"path": "Frameworks/AppKit/NSToolbar.subproj/NSToolbarItemView.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/NSToolbar.subproj/NSToolbarItemView.m"
+				},
+				{
+					"path": "Frameworks/Foundation/NSNumberFormatter.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/NSNumberFormatter.m"
+				},
+				{
+					"path": "Frameworks/CoreFoundation.old/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreFoundation.old/Info.plist"
+				},
+				{
+					"path": "Frameworks/ApplicationServices/Info.plist",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/ApplicationServices/Info.plist"
+				},
+				{
+					"path": "Frameworks/Foundation/platform_windows/NSPersistantDomain_win32.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/platform_windows/NSPersistantDomain_win32.m"
+				},
+				{
+					"path": "Frameworks/CoreText/CoreText.xcodeproj/project.pbxproj",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/CoreText/CoreText.xcodeproj/project.pbxproj"
+				},
+				{
+					"path": "Frameworks/AppKit/NSTextView.subproj/NSLayoutManager.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/AppKit/NSTextView.subproj/NSLayoutManager.m"
+				},
+				{
+					"path": "Frameworks/Foundation/platform_windows/NSFileManager_win32.m",
+					"url": "https://github.com/ravynsoft/ravynos/blob/60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7/Frameworks/Foundation/platform_windows/NSFileManager_win32.m"
+				}
+			]
+		}
+	},
+	"coverage_limits": [
+		"All inspected focused source subtrees returned untruncated inventories; the previous whole-repository truncation was avoided.",
+		"BSD, GNU and Developer vendored trees were not audited exhaustively; indexed repository search included those areas.",
+		"Headers, selected implementation bodies, contribution rules and public documentation were reviewed. Individual developer histories and every commit/file were not independently traced."
+	],
+	"recommendation": "Accepted by the maintainer and added to the held PR for macOS application interfaces, with Darwin/FreeBSD foundations, component-specific licenses and pre-alpha limitations.",
+	"catalog_path": "apps/frontend/remade-wiki/src/content/catalog/projects/ravynsoft/ravynos.yaml"
+}

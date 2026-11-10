@@ -10,7 +10,7 @@
 		"open_issues_accounted_for": 94,
 		"open_issue_pagination_complete": true,
 		"open_issue_set_unchanged": true,
-		"project_additions_reviewed": 33,
+		"project_additions_reviewed": 35,
 		"tool_additions_reviewed": 1,
 		"request_records_reviewed": 43,
 		"fulfilled_requests_removed": 7,
@@ -30,7 +30,8 @@
 		"Updated BananaV description with supported VEG interchange and OpenFX/VST3 scope. Removed source-versus-release editorial notes from public limitations while retaining substantive compatibility gaps.",
 		"Added official project website/community links, replaced SculptForge logo imagery with actual application views and corrected Mole image alt text.",
 		"Assigned 21 existing new originals to explicit vendor identities, registered 20 missing vendor brands and corrected Android touch tool languages.",
-		"Added approved OpenIDEA for IntelliJ IDEA Ultimate and removed its fulfilled request. Withdrew the licensed-component reuse hold without adding a provenance qualification to the listing."
+		"Added approved OpenIDEA for IntelliJ IDEA Ultimate and removed its fulfilled request. Withdrew the licensed-component reuse hold without adding a provenance qualification to the listing.",
+		"Added SketchForge PCB as an approved broader Tinkercad Circuits alternative. Added approved ravynOS following a focused clean-room/source-origin review, with Darwin/FreeBSD foundations and pre-alpha limits accurately described."
 	],
 	"url_evidence": {
 		"previous_ci_run": "https://github.com/replicraft/remade/actions/runs/42573313206",
@@ -72,27 +73,24 @@
 		}
 	},
 	"policy_decisions_remaining": {
-		"awaiting_author_or_target_clarification": [120, 131, 135, 215, 288],
-		"case_by_case_editorial_scope": [228, 262],
+		"awaiting_author_or_target_clarification": [120, 131, 135, 288],
+		"case_by_case_editorial_scope": [262],
 		"foss_rewrite_without_exception": [172, 173, 274],
 		"unspecified_driver_or_patch_targets": [149, 151, 259, 269]
 	},
 	"excluded_source_inventory_limits": {
-		"ravynsoft/ravynos": "Recursive root tree is truncated. This excluded candidate has not received an exhaustive OS source/provenance audit; the narrower Darwin/AppKit boundary remains an editorial decision. No listing added.",
 		"linked_directories_221_234": "Discovery resources, not standalone implementations. Individual unsubmitted projects from entire third-party directories were not bulk imported or silently certified."
 	},
 	"counts_by_issue_disposition": {
 		"awaiting-author-clarification": 3,
-		"project-added": 23,
+		"project-added": 25,
 		"insufficient-target": 23,
 		"duplicate-insufficient-target": 1,
 		"request-added": 30,
 		"outside-current-scope": 3,
 		"details-consolidated": 1,
 		"already-covered": 1,
-		"needs-target-clarification": 1,
 		"discovery-resource": 1,
-		"needs-editorial-decision": 1,
 		"duplicate-discovery-resource": 1,
 		"needs-scope-clarification": 1,
 		"already-in-held-pr": 3,
@@ -573,9 +571,11 @@
 			"checked_updated_at": "2026-11-02T01:06:29Z",
 			"body_sha256": "100db56662bbcf014fa20766a75f446a7b71d0b72384ead2f7cbc887886c55a2",
 			"human_replies_reviewed": 0,
-			"disposition": "needs-target-clarification",
-			"catalog_paths": [],
-			"finding": "SketchForge-PCB contains substantive PCB-editing source and AGPL licensing, but the submitted Tinkercad Circuits target is a circuit simulation workflow. A faithful proprietary PCB target or explicit broader-alternative approval is needed."
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge-pcb.yaml"
+			],
+			"finding": "Maintainer approved the broader circuit/PCB-design scope. Added the project with supported formats, browser link, screenshot and functional limitations."
 		},
 		{
 			"issue": 218,
@@ -695,9 +695,12 @@
 			"checked_updated_at": "2026-11-05T20:18:00Z",
 			"body_sha256": "8bbc904191cb823bfa467f04e4cc092cebc81e9d09bff393a7f01ec60e32e1aa",
 			"human_replies_reviewed": 0,
-			"disposition": "needs-editorial-decision",
-			"catalog_paths": [],
-			"finding": "ravynOS combines a Darwin/XNU base with separately authored compatibility/framework work. It requires case-by-case compatibility-layer review and a precisely bounded proprietary target; it must not be presented as an independently reimplemented entire macOS."
+			"disposition": "project-added",
+			"catalog_paths": [
+				"apps/frontend/remade-wiki/src/content/catalog/projects/ravynsoft/ravynos.yaml"
+			],
+			"finding": "Maintainer approved ravynOS following the focused clean-room/source-origin review. Added for macOS application interfaces, retaining the Darwin/FreeBSD foundations, component-specific terms and pre-alpha application/hardware limitations.",
+			"followup_report": "docs/audits/2026-11-09-ravynos-provenance-review.json"
 		},
 		{
 			"issue": 229,
@@ -4950,6 +4953,73 @@
 			"licensing": "Apache-2.0 from LICENSE. Maintainer approved normal inclusion; no additional provenance qualification.",
 			"platforms": ["macOS", "Windows", "Linux"],
 			"runtime_verified": false
+		},
+		{
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge-pcb.yaml",
+			"kind": "project",
+			"current_fields": {
+				"slug": "sketchforge-pcb",
+				"name": "SketchForge PCB",
+				"authors": ["formsmith746"],
+				"repository": "https://github.com/Formsmith746/SketchForge-PCB",
+				"originals": ["autodesk-tinkercad-circuits"],
+				"category": "engineering",
+				"languages": ["TypeScript"],
+				"platforms": ["Web"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "Browser-based circuit and PCB design with component libraries, routing, design checks, 3D previews and manufacturing exports.",
+				"description": "A local-first circuit and PCB workspace accepted as a broader Tinkercad Circuits alternative. Provides component values and footprints, wire/junction editing, board outlines, placement/routing tools, design checks and 3D inspection. Saves editable SFPCB projects, imports supported KiCad boards and exports KiCad 8 PCB files, Gerber packages, SVG drawings and CSV bills of materials. Optional local-development MCP tooling controls the editor.",
+				"license": "AGPL-3.0-only",
+				"website": "https://pcb.sketchforge3d.com/",
+				"browser_url": "https://pcb.sketchforge3d.com/app",
+				"docs": "https://github.com/Formsmith746/SketchForge-PCB#readme",
+				"limitations": "Component placement and drawn routing are top-side only. Focuses on circuit and PCB design; Tinkercad-style electrical simulation and Arduino execution are not implemented. Browser-local projects need backups. KiCad interchange covers supported features, and MCP integration requires a local development server.",
+				"screenshots": [
+					{
+						"src": "https://raw.githubusercontent.com/Formsmith746/SketchForge-PCB/bbbb55276faa11eb23784f4b8d7c701d03a59039/docs/media/project-7-circuit.png",
+						"alt": "SketchForge PCB circuit editor with components, connections and project controls."
+					}
+				]
+			},
+			"reviewed_revision": "bbbb55276faa11eb23784f4b8d7c701d03a59039",
+			"maturity": "Experimental; README version number does not establish Alpha/Beta/Stable.",
+			"licensing": "AGPLv3 from LICENSE",
+			"source_review": "Substantive circuit/PCB editor and export sources reviewed in the earlier complete tree; broad target now approved by maintainer.",
+			"sources": [
+				"https://github.com/Formsmith746/SketchForge-PCB/blob/bbbb55276faa11eb23784f4b8d7c701d03a59039/README.md",
+				"https://github.com/Formsmith746/SketchForge-PCB/blob/bbbb55276faa11eb23784f4b8d7c701d03a59039/LICENSE"
+			],
+			"website_check": "Homepage and /app both returned HTTP 200; homepage content identifies the PCB project despite a reused generic HTML title. Runtime editing not tested.",
+			"runtime_verified": false
+		},
+		{
+			"path": "apps/frontend/remade-wiki/src/content/catalog/projects/ravynsoft/ravynos.yaml",
+			"kind": "project",
+			"current_fields": {
+				"slug": "ravynos",
+				"name": "ravynOS",
+				"authors": ["ravynsoft"],
+				"repository": "https://github.com/ravynsoft/ravynos",
+				"originals": ["macos"],
+				"category": "operating-systems",
+				"languages": ["C", "C++", "Objective-C", "Assembly"],
+				"status": "experimental",
+				"compatibility": "partial",
+				"summary": "A Darwin/FreeBSD-based operating system developing macOS-compatible APIs, Cocoa frameworks and a familiar desktop.",
+				"description": "An operating system targeting macOS application interfaces and familiar desktop workflows on x86-64 hardware. Builds on Darwin, FreeBSD, public Apple source and independent compatibility frameworks, including Cocotron-derived Cocoa implementations. Develops AppKit, graphics, WindowServer and desktop components, aiming for application source compatibility and eventual binary compatibility. Current development focuses on bringing up the Darwin-based system.",
+				"license": "MIT, BSD, APSL-2.0, GPL and other component licenses",
+				"website": "https://ravynos.com/",
+				"docs": "https://ravynos.com/wiki",
+				"discord_server": "https://discord.com/invite/8caJbAGNwY",
+				"limitations": "Pre-alpha. General macOS application execution is not ready; upstream reports only trivial command-line binaries running. Current Darwin bring-up is incomplete, with missing framework APIs, desktop services and hardware drivers. Targets x86-64; ARM support is a future goal. Components retain their individual licenses."
+			},
+			"reviewed_revision": "60aa4ff4b16a54ef8cc1a9ea656b8a827b3419b7",
+			"source_review_report": "docs/audits/2026-11-09-ravynos-provenance-review.json",
+			"maturity": "Experimental: official site says pre-alpha; source includes meaningful kernel/framework implementation.",
+			"licensing": "Per-file MIT/BSD/APSL notices and other component licenses; not represented as a single-license OS.",
+			"platform_scope": "x86-64 operating system, with current VM bring-up and incomplete real-hardware/application support. ARM is future work.",
+			"runtime_verified": false
 		}
 	],
 	"requests": [
@@ -5362,6 +5432,7 @@
 		"apps/frontend/remade-wiki/src/content/catalog/projects/dslapelis/linuxmeeter.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/fabox-os/picasso-suite.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/fabox-os/senthym.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge-pcb.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/formsmith746/sketchforge.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/francisreboucas/constructcraft.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/hakanseven12/open-cad-studio.yaml",
@@ -5380,6 +5451,7 @@
 		"apps/frontend/remade-wiki/src/content/catalog/projects/objective-see/lulu.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/onlyoffice/onlyoffice-desktop.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/qymis-tech/qymcad.yaml",
+		"apps/frontend/remade-wiki/src/content/catalog/projects/ravynsoft/ravynos.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/rx-7-gtc/inca.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/sawhorse3d/sawhorse.yaml",
 		"apps/frontend/remade-wiki/src/content/catalog/projects/tw93/mole.yaml",
@@ -5439,7 +5511,8 @@
 		"apps/frontend/remade-wiki/src/content/catalog/vendors.yaml",
 		"docs/audits/2026-11-08-duplicate-resolutions.json",
 		"docs/audits/2026-11-08-issue-deeper-review.json",
-		"docs/audits/2026-11-08-remaining-issues.json"
+		"docs/audits/2026-11-08-remaining-issues.json",
+		"docs/audits/2026-11-09-ravynos-provenance-review.json"
 	],
 	"validation": "Catalog validation, field lengths/references, git diff --check and commit hooks passed. CI frontend type checks, unit tests, build, catalog validation/tests, Worker validation and preview passed. Actual link artifacts show 175 successful catalog URLs, no errors or timeouts. No local test suite or third-party code executed.",
 	"openidea_followup": {
