@@ -1,0 +1,19 @@
+# Scope and limitations are maintainer-reported in the repository README and docs/PARITY.md.
+slug: sketchcraft
+name: SketchCraft
+authors: [jasonsutter87]
+repository: https://github.com/jasonsutter87/sketchcraft
+originals: [sketchup]
+category: engineering
+languages: [Rust, TypeScript]
+platforms: [macOS, Windows, Linux]
+status: experimental
+compatibility: partial
+summary: SketchUp-style push/pull modeler with matching tools and default shortcuts, SKP import, drawing sheets, a CLI and an MCP server.
+description: A desktop push/pull 3D modeler that follows SketchUp's workflow, with lines, arcs, offset, Follow Me, groups, components, tags, inference snapping, typed exact values, Solid Tools, Sandbox, styles, section cuts and drawing sheets. Its keyboard shortcuts match SketchUp's defaults. It reads SKP files (versions 6 to 8 and 2013 onward) with independently written readers, plus DXF, OBJ, FBX and point clouds. A Rust engine drives a Tauri desktop app, a command-line tool and an MCP server.
+license: MIT
+docs: https://github.com/jasonsutter87/sketchcraft#readme
+limitations: Compatibility is maintainer-reported; feature coverage is tracked in docs/PARITY.md. SketchUp Ruby extensions and full SKP round-trip fidelity are not claimed. DWG and IFC need a separately installed free helper. Release builds are not yet code-signed for macOS or Windows.
+screenshots:
+  - src: https://raw.githubusercontent.com/jasonsutter87/sketchcraft/main/docs/craftsman_street.png
+    alt: A Craftsman house modeled in SketchCraft.
